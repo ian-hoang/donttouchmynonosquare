@@ -294,7 +294,6 @@ def main() -> None:
     cap = R.capacity(prim.result, mkt, prim.summary["sharpe"], prim.summary["gross_sharpe"],
                      prim.summary["ann_vol"], p.cost_bps_stock)
     stress = R.stress_table(net, mkt)
-    spreads = R.spread_estimates(mkt, sorted(ev_all["ticker"].unique()) + ["SPY"], s["sample_start"], s["is_end"])
     per_ceo = (prim.result.events[prim.result.events["sized"]]
                .merge(ev_all[["event_id", "ceo_id"]], on="event_id")
                .groupby("ceo_id").agg(n=("event_id", "size"), pnl=("pnl_contrib", "sum"),
@@ -303,7 +302,7 @@ def main() -> None:
     # ---------------- out-of-sample (sealed)
     oos_daily, oos_summary = None, None
     if a.unlock_oos:
-        why = R.config_hash(strat, spec)
+        why = R.config_hash(strat, spec, json.loads((ROOT / "config" / "oos_plan.json").read_text()))
         reason = oos_lock_check(why, a.relock)
         oe = R.evaluate("PRIMARY_OOS", ev_all, mkt, p, "OOS", strat)
         oe2 = R.evaluate("PRIMARY_OOS_x2", ev_all, mkt, p.with_(cost_multiplier=2.0), "OOS", strat, factors=False)
@@ -312,6 +311,27 @@ def main() -> None:
         oos_summary = {**oe.summary, "sharpe_costs_x2": oe2.summary["sharpe"],
                        "event_tests": R.event_tests(ev_all[~is_mask & (ev_all["sample"] == "OOS")],
                                                     cars[ev_all["sample"] == "OOS"], H)}
+        # post-hoc candidates declared in config/oos_plan.json before this run (evaluated once, reported side by side)
+        plan = json.loads((ROOT / "config" / "oos_plan.json").read_text())
+        oos_summary["candidates"] = {}
+        for c in plan["post_hoc_candidates"]:
+            spec_c = c["spec"]
+            if "signal_variant" in spec_c:
+                v = spec_c["signal_variant"]
+                sp_v = R.signal_params(strat, min_modalities=1, min_features=2) if v.endswith("_only") else sp
+                ev_c = R.make_events(feat, build_signals(feat, R.modify_spec(spec, v), sp_v), mkt, strat)
+                p_c = p
+            else:
+                ev_c, p_c = ev_all, p.with_(**spec_c)
+            ce = R.evaluate(c["name"] + "_OOS", ev_c, mkt, p_c, "OOS", strat)
+            ce2 = R.evaluate(c["name"] + "_OOS_x2", ev_c, mkt, p_c.with_(cost_multiplier=2.0), "OOS", strat, factors=False)
+            ci = R.evaluate(c["name"] + "_IS", ev_c, mkt, p_c, "IS", strat, factors=False)
+            oos_summary["candidates"][c["name"]] = {"oos": ce.summary, "oos_sharpe_costs_x2": ce2.summary["sharpe"],
+                                                    "is_sharpe": ci.summary["sharpe"],
+                                                    "oos_daily": ce.result.daily[(ce.result.daily.index >= pd.Timestamp(s["oos_start"])) &
+                                                                                 (ce.result.daily.index <= pd.Timestamp(s["oos_end"]))]}
+        cand_daily = {k: v.pop("oos_daily") for k, v in oos_summary["candidates"].items()}
+        pd.DataFrame(cand_daily).to_csv(RES / "oos_candidates_daily.csv")
         log = RES / "oos_log.md"
         if not log.exists():
             log.write_text("# Out-of-sample evaluations (append-only)\n\n| time | git | config | reason | sharpe |\n|---|---|---|---|---|\n")
@@ -330,13 +350,12 @@ def main() -> None:
                                 "excluded_near_earnings": int(len(ev_incl) - len(ev_all))},
            "primary_IS": prim.summary, "costs_x2_IS": x2.summary, "extra": extra, "event_tests_IS": ev_tests,
            "runup_control": runup, "volatility_mechanism_IS": vol_mech, "claims_exploratory_IS": claims, "folk_placebo": {"summary": folk_eval.summary, "event_tests": folk_tests},
-           "dsr": dsr, "capacity": cap, "stress": stress.to_dict("records"), "spreads": spreads.to_dict("records"), "nulls": {k: {"mean": float(v.mean()), "p_ge_actual": float((v >= prim.summary["sharpe"]).mean())}
+           "dsr": dsr, "capacity": cap, "stress": stress.to_dict("records"), "nulls": {k: {"mean": float(v.mean()), "p_ge_actual": float((v >= prim.summary["sharpe"]).mean())}
                                                  for k, v in nulls.items()},
            "by_year": by_year.round(5).to_dict(), "oos": oos_summary}
     (RES / "summary.json").write_text(json.dumps(out, indent=2, default=str))
     robust.to_csv(RES / "robustness.csv", index=False)
     stress.to_csv(RES / "stress_windows.csv", index=False)
-    spreads.to_csv(RES / "spread_estimates.csv", index=False)
     decay.to_csv(RES / "alpha_decay.csv", index=False)
     per_ceo.to_csv(RES / "per_ceo.csv")
     ev_all.drop(columns=["video_ids"]).assign(**cars[["car_1", "car_5", f"car_{H}"]]).to_csv(RES / "events.csv", index=False)
@@ -372,7 +391,6 @@ def main() -> None:
            "", "## Robustness (in-sample, all logged as trials)", robust.round(3).to_markdown(index=False),
            "", "## Alpha decay", decay.round(3).to_markdown(index=False),
            "", "## Stress windows", stress.round(4).to_markdown(index=False),
-           "", "## Cost justification: Abdi-Ranaldo effective spreads (bps), IS period", spreads.round(2).to_markdown(index=False),
            "", "## By year (net)", by_year.round(4).to_frame("return").to_markdown(),
            "", "## Per CEO", per_ceo.round(4).to_markdown()]
     (RES / "summary.md").write_text("\n".join(md))

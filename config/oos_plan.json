@@ -1,0 +1,22 @@
+{
+  "written": "2026-10-03 ~02:45 ET, after the in-sample analysis and BEFORE any out-of-sample evaluation",
+  "headline": "PRIMARY",
+  "headline_note": "The pre-registered specification (HYPOTHESIS.md, config/strategy.json v1.0) is the headline and is reported whatever its out-of-sample result. In-sample it failed its own kill condition (FF5+UMD alpha t = 0.09 < 1).",
+  "post_hoc_candidates": [
+    {
+      "name": "voice_only",
+      "why": "In-sample the voice block was the only modality with a positive Sharpe (0.22). Theory points the same way: vocal cues are the most diagnostic deception channel for observers (Bond & DePaulo 2006: 63% audio vs 52% video) and executive vocal affect predicts outcomes (Mayew & Venkatachalam 2012). Selected after seeing in-sample results, so it is labeled post-hoc and its in-sample Sharpe is deflated over every logged trial.",
+      "spec": {"signal_variant": "voice_only"}
+    },
+    {
+      "name": "hedge_QQQ",
+      "why": "Pre-declared robustness variant. Most of the universe is large-cap tech, so a Nasdaq-100 hedge removes sector noise that the SPY hedge leaves in (in-sample Sharpe 0.22 vs 0.07). Selected after seeing in-sample results; labeled post-hoc.",
+      "spec": {"hedge": "QQQ"}
+    }
+  ],
+  "rules": [
+    "Each strategy is evaluated on 2024-10-01..2026-09-30 exactly once, with the same code and costs as in-sample.",
+    "No candidate is added, dropped or modified after the out-of-sample run; results/oos_log.md records the run.",
+    "The note reports all three out-of-sample results side by side, with the primary as the headline."
+  ]
+}

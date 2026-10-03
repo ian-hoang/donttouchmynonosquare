@@ -1,13 +1,15 @@
 <pagebreak>
 ## References
 <div class="refs">
-Abdi, F., & Ranaldo, A. (2017). A simple estimation of bid-ask spreads from daily close, high, and low prices. RFS 30(12).
+Almgren, R., Thum, C., Hauptmann, E., & Li, H. (2005). Direct estimation of equity market impact. Risk 18(7).
 
 Bailey, D., & López de Prado, M. (2014). The deflated Sharpe ratio. JPM 40(5).
 
 Bailey, D., Borwein, J., López de Prado, M., & Zhu, Q. (2017). The probability of backtest overfitting. J. Computational Finance.
 
 Bond, C., & DePaulo, B. (2006). Accuracy of deception judgments. PSPR 10(3).
+
+D'Avolio, G. (2002). The market for borrowing stock. JFE 66(2–3).
 
 DellaVigna, S., & Pollet, J. (2009). Investor inattention and Friday earnings announcements. JF 64(2).
 
