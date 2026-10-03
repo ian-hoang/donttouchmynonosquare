@@ -42,3 +42,17 @@ Databento XNAS.ITCH `ohlcv-1m` (from 2018-05), minute windows cached locally and
 S versus the hedged entry-to-close return, and the mean signed return with a date-clustered t-statistic, for (a); the
 track IS/OOS split is reported. **Supports H4** if IC > 0 and the signed return is positive with t > 2 in (a), net of
 costs. Small samples are expected; we report them as they come out.
+
+## H5: the intraday tell, on every other CEO (fresh minute data)
+Registered Sat 2026-10-03 ~05:08 ET, after H4 (Musk + Karp) showed a positive rank IC in every subset (0.12 to 0.30)
+but no significance (n = 72, t = 0.71), and **before any minute data for the CEOs below is fetched**.
+**Events.** Every curated video of the other 39 CEO stints (18 original CEOs excluding Musk and Karp, plus the 21 H2
+stints) uploaded on or after 2018-05-02 (Databento XNAS.ITCH start), excluding earnings calls, with a valid TELL signal
+from the frozen spec. Both release types pooled (primary); YouTube-native and TV reported separately.
+**Trade (identical to H4 except the hedge).** Decision = upload + 30 min; enter at the first regular-session minute
+at/after decision (else the next open); exit at that session's close; hedge with **SPY** minute bars at the 252-day
+daily beta (the universe is not tech-only); costs **3 bps per side** on the stock and 0.5 bp on SPY.
+**Primary test.** Spearman rank IC between S and the hedged entry-to-close return over all events; one-sided p-value
+from 2,000 within-CEO permutations of S. **Supports H5** if IC > 0 and p < 0.05. **Trading result reported alongside:**
+equal-weight sign(S) per event, net bps per trade, date-clustered t, and an annualized daily-portfolio Sharpe.
+Evaluated once. Musk and Karp (H4) are excluded so H5 uses no event seen before.

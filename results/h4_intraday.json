@@ -1,0 +1,39 @@
+{
+  "a_native": {
+    "n": 72,
+    "ic": 0.17523775836438635,
+    "mean_signed_net_bps": 14.580036655767866,
+    "t_date_clustered": 0.7070810916870297
+  },
+  "b_tv": {
+    "n": 48,
+    "ic": 0.23336697061936443,
+    "mean_signed_net_bps": 22.097995696350047,
+    "t_date_clustered": 0.19104272307322243
+  },
+  "a_native_IS": {
+    "n": 48,
+    "ic": 0.22167340632909127,
+    "mean_signed_net_bps": -18.74784124553481,
+    "t_date_clustered": -0.6924415782531435
+  },
+  "a_native_OOS": {
+    "n": 24,
+    "ic": 0.18869565217391301,
+    "mean_signed_net_bps": 81.23579245837321,
+    "t_date_clustered": 1.62494010117316
+  },
+  "musk_a": {
+    "n": 40,
+    "ic": 0.12308269632190491,
+    "mean_signed_net_bps": -7.964671302238245,
+    "t_date_clustered": 0.0046695238033555185
+  },
+  "karp_a": {
+    "n": 32,
+    "ic": 0.2987536656891495,
+    "mean_signed_net_bps": 42.760921603275506,
+    "t_date_clustered": 0.9559345016180792
+  },
+  "supports_H4": false
+}
