@@ -9,6 +9,22 @@ return over the next 20 trading days. The hypothesis, signal weights and every t
 > 2006). We measure behavioral stress and incongruence against a person's own history, using only cues with
 > meta-analytic support, and we report whatever the data say.
 
+## Headline results
+
+<!-- RESULTS:START -->
+| | In-sample (2016-01 – 2024-09) | Out-of-sample (2024-10 – 2026-09, evaluated once) |
+|---|---|---|
+| Events traded | 661 | 234 |
+| Annualized return (net) | 0.3% | -3.7% |
+| Volatility | 9.5% | 10.0% |
+| Sharpe, net (gross) | 0.07 (0.20) | -0.33 (-0.17) |
+| Sharpe, costs ×2 | -0.04 | -0.47 |
+| Max drawdown | -33.3% | -14.2% |
+| Turnover (× capital / yr) | 34.13 | 44.81 |
+
+Deflated Sharpe 0.15 over 23 logged trials · FOLK placebo Sharpe -0.11 · config `7ed7a3b4554c` · full report: `results/summary.md`
+<!-- RESULTS:END -->
+
 ## Reproduce the headline numbers (judges start here)
 
 ```bash

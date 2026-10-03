@@ -117,8 +117,18 @@ def md(text: str) -> str:
 def main() -> None:
     vals = flatten(json.loads((RES / "summary.json").read_text()))
     parts = []
+    def tables(text: str) -> str:
+        if "{{STRESS_TABLE}}" in text and (RES / "stress_windows.csv").exists():
+            import pandas as pd
+            st = pd.read_csv(RES / "stress_windows.csv")
+            rows = ["| window | dates | strategy | SPY | strategy max DD |", "|---|---|---|---|---|"]
+            rows += [f"| {r.window} | {r.start} to {r.end} | {100*r.strategy:.1f}% | {100*r.spy:.1f}% | {100*r.strategy_max_dd:.1f}% |"
+                     for r in st.itertuples()]
+            text = text.replace("{{STRESS_TABLE}}", "\n".join(rows))
+        return text
+
     for p in sorted(SEC.glob("*.md")):
-        parts.append(md(fill(p.read_text(), vals)))
+        parts.append(md(fill(tables(p.read_text()), vals)))
     html = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{''.join(parts)}</body></html>"
     out_html = ROOT / "note" / "PokerFace_quant_note.html"
     out_html.write_text(html)

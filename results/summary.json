@@ -1,6 +1,6 @@
 {
   "config_hash": "7ed7a3b4554c",
-  "git": "f50df46",
+  "git": "75edb6a",
   "price_source": "yfinance",
   "price_fingerprint": "dd92ad1a0c4f386b",
   "funnel": {
@@ -155,44 +155,44 @@
   },
   "claims_exploratory_IS": {
     "available": true,
-    "n": 110,
-    "share_with_denial": 0.6181818181818182,
-    "leak_rate_speaker_identifiable": 0.8818181818181818,
-    "car_denial": -0.015086581075890948,
-    "n_denial": 68,
+    "n": 656,
+    "share_with_denial": 0.5640243902439024,
+    "leak_rate_speaker_identifiable": 0.7682926829268293,
+    "car_denial": 0.008568794567078552,
+    "n_denial": 370,
     "ci_denial": [
-      -0.029053223029944307,
-      0.0014734018463976272
+      0.00023080672695053255,
+      0.01728590218808882
     ],
-    "car_no_denial": 0.017341430933388025,
-    "n_no_denial": 42,
+    "car_no_denial": 0.008675082741875948,
+    "n_no_denial": 286,
     "ci_no_denial": [
-      0.000311498896746481,
-      0.059403111220929256
+      -0.003509087526549949,
+      0.022830995180629973
     ],
-    "car_denial_high_tell": -0.039931193445589465,
-    "n_denial_high_tell": 23,
+    "car_denial_high_tell": 0.010836999343262209,
+    "n_denial_high_tell": 121,
     "ci_denial_high_tell": [
-      -0.07587352487196236,
-      -0.012736233245547006
+      -0.00743162654715045,
+      0.02635393464216567
     ],
-    "car_denial_low_tell": -0.01716228104597637,
-    "n_denial_low_tell": 20,
+    "car_denial_low_tell": -8.207470654168384e-05,
+    "n_denial_low_tell": 117,
     "ci_denial_low_tell": [
-      -0.03254789004153772,
-      0.008923290155341851
+      -0.009755228039694518,
+      0.011633562819082642
     ],
-    "car_promises_high_tell": -0.02218570506123339,
-    "n_promises_high_tell": 11,
+    "car_promises_high_tell": 0.008639672553501815,
+    "n_promises_high_tell": 102,
     "ci_promises_high_tell": [
-      -0.07872609786213314,
-      0.004633029264704123
+      -0.013230002747268677,
+      0.024189557619128544
     ],
-    "car_promises_low_tell": -0.011169271122085144,
-    "n_promises_low_tell": 16,
+    "car_promises_low_tell": -0.0077999516984720895,
+    "n_promises_low_tell": 111,
     "ci_promises_low_tell": [
-      -0.029157641887939522,
-      0.026190076015597266
+      -0.022104252885808223,
+      0.005275491687106535
     ]
   },
   "folk_placebo": {

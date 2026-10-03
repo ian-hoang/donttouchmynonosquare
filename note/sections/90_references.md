@@ -1,6 +1,7 @@
 <pagebreak>
 ## References
 <div class="refs">
+
 Almgren, R., Thum, C., Hauptmann, E., & Li, H. (2005). Direct estimation of equity market impact. Risk 18(7).
 
 Bailey, D., & López de Prado, M. (2014). The deflated Sharpe ratio. JPM 40(5).
