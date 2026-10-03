@@ -9,6 +9,11 @@ data/cache/
 # Your personal trial log. Report the count in the note; the file itself stays local.
 results/ledger.csv
 
+# Intraday trial logs and licensed quote/fill-derived local research output.
+results/micro/ledger.jsonl
+results/micro/demo_ledger.jsonl
+results/micro/runs/
+
 .venv/
 __pycache__/
 .pytest_cache/
