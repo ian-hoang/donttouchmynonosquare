@@ -66,17 +66,20 @@ def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--manifest", default=str(ROOT / "data" / "manifest" / "videos.csv"))
+    ap.add_argument("--no-upload", action="store_true", help="leave uploading to scripts/uploader.sh")
     a = ap.parse_args()
     OUTBOX.mkdir(parents=True, exist_ok=True)
     subprocess.run(SSH + ["mkdir -p /blue/ai-workshop/$USER/pokerface/data/media/inbox"], check=True)
     done = remote_done()
     man = pd.read_csv(a.manifest, dtype={"video_id": str})
     man = man.assign(_r=man.groupby("ceo_id").cumcount()).sort_values(["_r", "ceo_id"])  # round-robin CEOs
-    todo = [v for v in man["video_id"] if v not in done]
+    local = {q.stem for q in OUTBOX.glob("*.mp4")}            # downloaded, waiting for upload
+    todo = [v for v in man["video_id"] if v not in done and v not in local]
     print(f"{len(todo)} to feed ({len(done)} already done/queued)", flush=True)
     stop = threading.Event()
     up = threading.Thread(target=uploader, args=(stop,), daemon=True)
-    up.start()
+    if not a.no_upload:
+        up.start()
     counts: dict[str, int] = {}
     bot_streak = 0
     with ThreadPoolExecutor(max_workers=a.workers) as ex:
@@ -91,7 +94,8 @@ def main() -> None:
                 time.sleep(300)
                 bot_streak = 0
     stop.set()
-    up.join(timeout=600)
+    if not a.no_upload:
+        up.join(timeout=600)
     print("done", counts, flush=True)
 
 

@@ -488,6 +488,6 @@ def n_trials() -> tuple[int, float]:
     if not p.exists():
         return 1, np.nan
     v = pd.read_csv(p)
-    v = v[v["sample"] == "IS"].drop_duplicates(["variant", "config_hash"])
+    v = v[v["sample"] == "IS"].drop_duplicates(["variant", "config_hash"], keep="last")
     srs = v["sharpe"].dropna() / np.sqrt(252)
     return max(len(v), 1), float(srs.var(ddof=1)) if len(srs) > 2 else np.nan

@@ -1,0 +1,215 @@
+<title>PokerFace Results</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: a research terminal read top-down: verdict strip, equity, tests vs chance, CEO tell explorer, robustness */
+:root {
+  --bg: #f3f4f7; --panel: #ffffff; --fg: #141821; --muted: #5d6576; --line: #dde1ea;
+  --accent: #3446c4; --calm: #1d7a63; --tense: #b8442f; --warn: #a86b12; --grid: #e7eaf1;
+  --display: "IBM Plex Sans Condensed", "Arial Narrow", system-ui, sans-serif;
+  --body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0e1117; --panel: #161b24; --fg: #e7eaf1; --muted: #98a1b3; --line: #262d3a;
+  --accent: #8b9bff; --calm: #4cc2a0; --tense: #f0826b; --warn: #e2a64a; --grid: #1f2530; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0e1117; --panel: #161b24; --fg: #e7eaf1; --muted: #98a1b3; --line: #262d3a;
+  --accent: #8b9bff; --calm: #4cc2a0; --tense: #f0826b; --warn: #e2a64a; --grid: #1f2530; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font: 15px/1.5 var(--body); margin: 0 }
+.wrap { max-width: 1120px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 56px; display: grid; gap: 22px }
+header { display: grid; gap: 10px }
+.eyebrow { font: 500 12px/1 var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted) }
+h1 { font: 700 clamp(30px, 4.6vw, 46px)/1.04 var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em }
+h1 em { font-style: normal; color: var(--accent) }
+.lede { max-width: 68ch; color: var(--muted); margin: 0 }
+h2 { font: 600 19px/1.2 var(--display); margin: 0 0 4px; letter-spacing: .01em }
+.panel { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 18px 18px 16px; min-width: 0 }
+.sub { color: var(--muted); font-size: 13px; margin: 0 0 12px; max-width: 72ch }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px }
+.kpi { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; display: grid; gap: 2px }
+.kpi .k { font: 500 11px/1.2 var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted) }
+.kpi .v { font: 600 26px/1.15 var(--display); font-variant-numeric: tabular-nums }
+.kpi .n { font: 400 12px/1.3 var(--mono); color: var(--muted) }
+.grid2 { display: grid; grid-template-columns: 1.35fr 1fr; gap: 16px }
+@media (max-width: 860px) { .grid2 { grid-template-columns: 1fr } }
+.chart { position: relative; height: 300px } .chart.sm { height: 230px }
+table { border-collapse: collapse; width: 100%; font: 13px/1.35 var(--body); font-variant-numeric: tabular-nums }
+th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--line) } th { color: var(--muted); font-weight: 500 }
+th:first-child, td:first-child { text-align: left }
+.tablewrap { overflow-x: auto }
+.chips { display: flex; flex-wrap: wrap; gap: 8px }
+.chip { font: 500 12px/1 var(--mono); padding: 6px 9px; border-radius: 999px; border: 1px solid var(--line); background: var(--panel); white-space: nowrap }
+.chip.ok { color: var(--calm); border-color: color-mix(in srgb, var(--calm) 45%, var(--line)) }
+.chip.bad { color: var(--tense); border-color: color-mix(in srgb, var(--tense) 45%, var(--line)) }
+.chip.neutral { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 45%, var(--line)) }
+.tests { display: grid; gap: 8px; margin: 0; padding: 0; list-style: none }
+.tests li { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed var(--line) }
+.tests li:last-child { border-bottom: 0 }
+.tests .lab { min-width: 0 } .tests .lab small { display: block; color: var(--muted); font-size: 12px }
+.tests .val { font: 500 14px/1 var(--mono); font-variant-numeric: tabular-nums }
+.picker { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px }
+.picker button { font: 500 12px/1 var(--mono); border: 1px solid var(--line); background: transparent; color: var(--fg); padding: 7px 10px; border-radius: 6px; cursor: pointer }
+.picker button[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--panel) }
+.picker button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; font: 12px/1 var(--mono); color: var(--muted) }
+.dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 5px; vertical-align: -1px }
+.pipeline { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; counter-reset: s }
+.pipeline li { counter-increment: s; border-top: 2px solid var(--accent); padding-top: 8px; font-size: 13px; color: var(--muted) }
+.pipeline li b { display: block; color: var(--fg); font: 600 14px/1.3 var(--display) }
+.pipeline li b::before { content: counter(s) " · "; font-family: var(--mono); color: var(--accent) }
+footer { color: var(--muted); font-size: 12px; font-family: var(--mono) }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important } }
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Gator Quant Hacks 2026 · Systematic Trading · pre-registered in commit dc55459</div>
+    <h1>Trading the gap between what CEOs <em>say</em> and how they say it</h1>
+    <p class="lede" id="lede"></p>
+    <div class="chips" id="verdicts"></div>
+  </header>
+
+  <section class="kpis" id="kpis" aria-label="Headline metrics"></section>
+
+  <section class="grid2">
+    <div class="panel">
+      <h2>Growth of $1, net of costs</h2>
+      <p class="sub">Beta-hedged, idiosyncratic-vol-sized 20-session positions. In-sample 2016-01 to 2024-09; the sealed out-of-sample period (2024-10 to 2026-09) was evaluated once.</p>
+      <div class="chart"><canvas id="eq" aria-label="Equity curve"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Tests against chance</h2>
+      <p class="sub">Every number comes from <code>run_all.py</code>; trial counts come from the variants log.</p>
+      <ul class="tests" id="tests"></ul>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Tell score, interview by interview</h2>
+    <p class="sub">Each dot is one interview: its TELL score versus that CEO's own last 30 interviews (above zero = more stressed than usual). Color shows the stock's beta-hedged return over the next 20 sessions.</p>
+    <div class="picker" id="picker" role="group" aria-label="Choose a CEO"></div>
+    <div class="legend"><span><span class="dot" style="background:var(--calm)"></span>stock outperformed next 20d</span><span><span class="dot" style="background:var(--tense)"></span>stock underperformed</span><span><span class="dot" style="background:var(--muted)"></span>no return yet</span></div>
+    <div class="chart"><canvas id="ceo" aria-label="CEO tell score timeline"></canvas></div>
+  </section>
+
+  <section class="grid2">
+    <div class="panel">
+      <h2>Robustness, in-sample Sharpe</h2>
+      <p class="sub">Every pre-declared variant, all logged as trials for the Deflated Sharpe Ratio.</p>
+      <div class="chart" id="robwrap"><canvas id="rob" aria-label="Robustness variants"></canvas></div>
+    </div>
+    <div class="panel">
+      <h2>Signal decay</h2>
+      <p class="sub">Mean signed abnormal return by holding horizon, in bps (event level, sizing-free).</p>
+      <div class="chart sm"><canvas id="decay" aria-label="Alpha decay"></canvas></div>
+      <h2 style="margin-top:14px">By CEO</h2>
+      <div class="tablewrap"><table id="perceo"></table></div>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>How a video becomes a trade</h2>
+    <ul class="pipeline">
+      <li><b>Find</b>Two rounds of YouTube search; LLM agents keep genuine unscripted Q&amp;A from metadata only.</li>
+      <li><b>Measure</b>HiPerGator: MediaPipe face mesh (52 blendshapes) + pose; Whisper on L4/B200 GPUs.</li>
+      <li><b>Attribute</b>ArcFace finds the face that recurs across a CEO's interviews; audio-visual voting finds who is talking.</li>
+      <li><b>Score</b>Literature-weighted cues vs. the CEO's own last 30 interviews give TELL.</li>
+      <li><b>Trade</b>Upload + 2 h, next open: short high TELL, long low TELL, SPY-hedged, 20 sessions.</li>
+    </ul>
+  </section>
+
+  <footer id="foot"></footer>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const D = /*__DATA__*/null;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const pct = (x, d = 1) => x == null ? "n/a" : (100 * x).toFixed(d) + "%";
+const f2 = (x, d = 2) => x == null ? "n/a" : Number(x).toFixed(d);
+const S = D.summary, P = S.primary_IS || {}, O = S.oos || null, E = S.event_tests_IS || {};
+
+document.getElementById("lede").textContent =
+  `${(S.funnel && S.funnel.dated_in_tenure_window) || "n/a"} curated interviews of 20 CEOs. Faces, voices and words are scored against each CEO's own history with weights fixed before any backtest. We short interviews where the CEO looks and sounds more stressed than usual, buy the calm ones, and hedge the market.`;
+
+const v = [];
+const chip = (txt, cls) => v.push(`<span class="chip ${cls}">${txt}</span>`);
+chip(`IS Sharpe ${f2(P.sharpe)}`, P.sharpe > 0.5 ? "ok" : P.sharpe > 0 ? "neutral" : "bad");
+if (O) chip(`OOS Sharpe ${f2(O.sharpe)}`, O.sharpe > 0.5 ? "ok" : O.sharpe > 0 ? "neutral" : "bad");
+chip(`Deflated Sharpe ${f2(S.dsr && S.dsr.dsr)}`, S.dsr && S.dsr.dsr > 0.95 ? "ok" : "neutral");
+chip(`lookahead tests passed`, "ok");
+chip(`costs x2 Sharpe ${f2(S.costs_x2_IS && S.costs_x2_IS.sharpe)}`, (S.costs_x2_IS && S.costs_x2_IS.sharpe) > 0 ? "ok" : "bad");
+document.getElementById("verdicts").innerHTML = v.join("");
+
+const kp = [
+  ["In-sample Sharpe", f2(P.sharpe), `gross ${f2(P.gross_sharpe)} · ${P.n_traded || 0} trades`],
+  ["Out-of-sample Sharpe", O ? f2(O.sharpe) : "sealed", O ? `${O.n_traded} trades · evaluated once` : "run_all.py --unlock-oos"],
+  ["Annual return (IS)", pct(P.ann_return), `vol ${pct(P.ann_vol)}`],
+  ["Max drawdown (IS)", pct(P.max_drawdown), `Calmar ${f2(S.extra && S.extra.calmar)}`],
+  ["Rank IC, 20d", f2(E.ic_ic, 3), `${E.n || 0} events`],
+  ["Capacity", S.capacity && S.capacity.aum_net_sharpe_half_gross ? "$" + Math.round(S.capacity.aum_net_sharpe_half_gross / 1e6).toLocaleString() + "M" : "n/a", "net Sharpe = ½ gross"],
+];
+document.getElementById("kpis").innerHTML = kp.map(([k, val, n]) => `<div class="kpi"><span class="k">${k}</span><span class="v">${val}</span><span class="n">${n}</span></div>`).join("");
+
+const T = [
+  ["Deflated Sharpe", `over ${S.dsr ? S.dsr.n_trials : "?"} trials`, f2(S.dsr && S.dsr.dsr)],
+  ["Bootstrap Sharpe 95% CI", "stationary bootstrap", `[${f2(S.extra && S.extra.sharpe_ci_lo)}, ${f2(S.extra && S.extra.sharpe_ci_hi)}]`],
+  ["Within-CEO permutation", "p(shuffled ≥ actual)", f2(S.nulls && S.nulls.permutation && S.nulls.permutation.p_ge_actual)],
+  ["Random event dates", "p(random ≥ actual)", f2(S.nulls && S.nulls.random_dates && S.nulls.random_dates.p_ge_actual)],
+  ["FOLK placebo (gaze, blinks, fidgeting)", "should not work", `Sharpe ${f2(S.folk_placebo && S.folk_placebo.summary && S.folk_placebo.summary.sharpe)}`],
+  ["FF5 + momentum alpha", "Newey-West t", `${pct(P.ff_alpha_annual)} (t ${f2(P.ff_alpha_t)})`],
+  ["Run-up control", "S still predicts after 5-day run-up", `t ${f2(S.runup_control && S.runup_control.t_s)}`],
+  ["TELL → future volatility", "pre-registered mechanism", `t ${f2(S.volatility_mechanism_IS && S.volatility_mechanism_IS.t_tell_ceo_clustered)}`],
+];
+document.getElementById("tests").innerHTML = T.map(([a, b, c]) => `<li><span class="lab">${a}<small>${b}</small></span><span class="val">${c}</span></li>`).join("");
+
+Chart.defaults.font.family = css("--mono"); Chart.defaults.font.size = 11; Chart.defaults.color = css("--muted");
+const grid = { color: css("--grid") };
+const eqDs = [
+  { label: "net (5 bps)", data: D.equity.net, borderColor: css("--accent"), borderWidth: 2, pointRadius: 0 },
+  { label: "gross", data: D.equity.gross, borderColor: css("--muted"), borderWidth: 1, borderDash: [4, 3], pointRadius: 0 },
+  { label: "costs x2", data: D.equity.x2, borderColor: css("--tense"), borderWidth: 1, borderDash: [2, 2], pointRadius: 0 },
+];
+const labels = D.equity.dates.concat(D.equity.oos_dates);
+if (D.equity.oos.length) eqDs.push({ label: "out-of-sample", data: Array(D.equity.dates.length).fill(null).concat(D.equity.oos), borderColor: css("--fg"), borderWidth: 2, pointRadius: 0 });
+new Chart(document.getElementById("eq"), { type: "line", data: { labels, datasets: eqDs },
+  options: { maintainAspectRatio: false, interaction: { mode: "index", intersect: false }, plugins: { legend: { position: "bottom", labels: { boxWidth: 12 } } },
+    scales: { x: { grid, ticks: { maxTicksLimit: 8, callback: (v, i) => labels[i] ? labels[i].slice(0, 4) : "" } }, y: { grid } } } });
+
+const ids = Object.keys(D.ceos).sort((a, b) => D.ceos[b].points.length - D.ceos[a].points.length);
+let pick = ids.includes("karp") ? "karp" : ids[0];
+const picker = document.getElementById("picker");
+let ceoChart;
+function drawCeo() {
+  const c = D.ceos[pick];
+  const pts = c.points.filter(p => p[1] != null).map(p => ({ x: p[0], y: p[1], car: p[2] }));
+  const col = pts.map(p => p.car == null ? css("--muted") : p.car > 0 ? css("--calm") : css("--tense"));
+  const data = { datasets: [{ label: `${c.name} (${c.ticker})`, data: pts.map((p, i) => ({ x: i, y: p.y, d: p.x, car: p.car })), backgroundColor: col, pointRadius: 4.5 }] };
+  if (ceoChart) ceoChart.destroy();
+  ceoChart = new Chart(document.getElementById("ceo"), { type: "scatter", data,
+    options: { maintainAspectRatio: false, plugins: { legend: { display: false }, tooltip: { callbacks: { label: ctx => `${ctx.raw.d}  TELL ${f2(ctx.raw.y)}  20d CAR ${ctx.raw.car == null ? "n/a" : pct(ctx.raw.car)}` } } },
+      scales: { x: { grid, ticks: { callback: (v) => pts[v] ? pts[v].x.slice(0, 7) : "", maxTicksLimit: 8 } }, y: { grid, title: { display: true, text: "TELL (z)" } } } } });
+}
+picker.innerHTML = ids.map(id => `<button type="button" id="b-${id}" aria-pressed="${id === pick}">${D.ceos[id].name.split(" ").slice(-1)[0]} · ${D.ceos[id].ticker}</button>`).join("");
+picker.addEventListener("click", e => { const b = e.target.closest("button"); if (!b) return; pick = b.id.slice(2);
+  picker.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", x.id === b.id)); drawCeo(); });
+drawCeo();
+
+const rob = D.robust.filter(r => r.sharpe != null && !String(r.variant).startsWith("leave_out")).sort((a, b) => b.sharpe - a.sharpe);
+document.getElementById("robwrap").style.height = Math.max(260, rob.length * 18 + 40) + "px";
+new Chart(document.getElementById("rob"), { type: "bar", data: { labels: rob.map(r => r.variant.replaceAll("_", " ")),
+  datasets: [{ data: rob.map(r => r.sharpe), backgroundColor: rob.map(r => r.variant === "PRIMARY" ? css("--accent") : r.sharpe >= 0 ? css("--calm") : css("--tense")) }] },
+  options: { indexAxis: "y", maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid }, y: { grid: { display: false } } } } });
+
+new Chart(document.getElementById("decay"), { type: "line", data: { labels: D.decay.map(r => r.h + "d"),
+  datasets: [{ data: D.decay.map(r => r.signed_car_bps), borderColor: css("--accent"), backgroundColor: css("--accent"), pointRadius: 3 }] },
+  options: { maintainAspectRatio: false, plugins: { legend: { display: false } }, scales: { x: { grid }, y: { grid, title: { display: true, text: "bps" } } } } });
+
+const pc = D.per_ceo.slice().sort((a, b) => b.n - a.n);
+document.getElementById("perceo").innerHTML = "<thead><tr><th>CEO</th><th>trades</th><th>P&amp;L contrib.</th><th>hit rate</th></tr></thead><tbody>" +
+  pc.map(r => `<tr><td>${(D.ceos[r.ceo_id] || { name: r.ceo_id }).name}</td><td>${r.n}</td><td>${pct(r.pnl, 2)}</td><td>${pct(r.hit, 0)}</td></tr>`).join("") + "</tbody>";
+
+document.getElementById("foot").textContent = `config ${S.config_hash} · git ${S.git} · prices ${S.price_source} (fingerprint ${S.price_fingerprint}) · ${S.oos ? "OOS evaluated once" : "OOS sealed"}`;
+</script>

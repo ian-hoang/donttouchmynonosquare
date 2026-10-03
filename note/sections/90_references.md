@@ -27,7 +27,9 @@ Hobson, J., Mayew, W., & Venkatachalam, M. (2012). Analyzing speech to detect fi
 
 Hu, A., & Ma, S. Persuading investors: a video-based study. Journal of Finance (forthcoming).
 
-Kim, Y., & Meschke, F. CEO interviews on CNBC. Working paper.
+Kim, Y., & Meschke, F. CEO interviews on CNBC. SSRN 2339529.
+
+Koo, Teoh, Yoo & Zhao (2026). Detecting deception in CEO interviews: modal incongruence. Working paper.
 
 Larcker, D., & Zakolyukina, A. (2012). Detecting deceptive discussions in conference calls. JAR 50(2).
 

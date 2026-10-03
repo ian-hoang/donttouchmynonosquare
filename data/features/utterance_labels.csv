@@ -1,0 +1,301 @@
+video_id,n_utterances,factual_claims,numeric_claims,denials,forward_promises,hedges,deflections,mean_certainty,mean_specificity,strongest_denial,speaker_identifiable
+UpbGbKQsTjc,18,9,0,3,0,6,0,1.5,1.2,it wasn't like I had some really sophisticated analysis of the market potential. There was no market for it.,True
+O1l2eFW4L0A,3,2,1,0,0,0,0,2.0,1.3,,True
+wnsISRjd96I,13,6,2,0,1,2,0,1.8,1.2,,True
+kagVCXIPIlQ,13,9,4,3,1,3,0,2.1,1.5,"I don't think of myself as like, you know, a Wall Street hedge fund",True
+gViZVohbVV0,11,6,3,1,3,4,0,1.9,1.2,it's never as bad as it seems when everyone's saying that crypto is over,True
+TB0yceuXmrI,22,14,6,2,0,3,0,2.0,1.4,"honestly, it's not that risky.",True
+GUhDXUA4mfQ,5,3,0,0,1,2,0,1.8,1.3,,True
+dUV4sS9FEYg,19,12,6,2,4,3,0,2.2,1.7,But I don't think we get our unfair share.,True
+HEk69X969kI,19,8,2,3,2,6,0,1.6,1.0,we're not geniuses and we're not bad people. We're just regular people trying to build something good in the world.,True
+Rd0ERmXnCkI,16,8,2,1,1,4,0,1.7,1.2,I don't think that's the right model.,True
+dueFaHFulVA,24,19,6,4,3,2,0,2.4,1.9,We never operated our own market maker or hedge fund in the way that FTX did,True
+jOMHI-1D12I,3,3,0,2,2,0,1,2.3,1.7,But we haven't seen any margin compression yet.,True
+yHi7g_Tq3DU,1,1,0,0,0,0,0,2.0,1.0,,False
+Qqaf2hxce_4,10,9,4,3,2,1,1,2.5,2.0,"Well, I'm not sure I agree with that.",True
+KgUlxorY0Vc,9,8,3,1,1,2,0,2.2,1.5,But it didn't affect any of the assets held underneath.,True
+kd2suQdv-04,8,6,2,1,3,2,0,2.2,1.6,"We are not intending to become a bank, but we are intending to become people's primary financial account.",True
+tknKfhjoFvo,6,5,3,0,3,2,1,2.2,2.0,,True
+ZkYISplbK-E,11,8,4,1,5,3,1,2.2,1.8,,True
+dl9ruFvPlsw,9,6,1,1,3,4,3,2.0,1.4,,True
+--MNL1w3ADk,22,13,3,0,3,3,0,2.3,1.2,,True
+YGA_zQPJeFM,4,3,1,0,2,1,0,2.3,1.7,,True
+C0Byaj-Mszk,16,10,2,0,5,4,2,2.0,1.5,,True
+mSToBYLSSew,20,13,4,0,4,2,0,2.2,1.4,,True
+NK9kBiZTRqw,20,7,0,0,0,6,1,1.7,0.8,,True
+HeFwIsrtgVQ,1,1,0,0,0,0,0,1.8,0.8,,False
+RG_rvYbNrYU,4,4,3,0,1,0,0,2.5,2.0,,True
+Vq_7hZW5jc4,14,10,3,1,1,1,1,2.4,1.7,We're careful not to comment on what the Senate should do in terms of markup or not,True
+l8FC-D3Jimw,10,8,1,2,4,1,1,2.4,1.6,"I wouldn't say we blocked it. In fact, nobody, I think, in the crypto space has been working harder on this",True
+WcrPOElyjiI,24,18,4,1,2,6,0,2.2,1.7,,True
+jmdf35zSdA8,32,22,5,0,4,4,0,2.2,1.5,,True
+_Li43_E0APg,19,9,2,3,7,8,1,1.6,1.2,I don't think it'll be that simple where it's just AI wakes up and decides. to step on us,True
+m_xMSPc7vww,34,20,4,5,4,5,4,2.2,1.9,"So we're not asking for lighter rules, actually.",True
+isd2y37j8v4,15,8,5,0,6,5,0,1.9,1.4,,True
+VHGVaKVTqzU,16,12,4,0,8,5,2,2.1,2.1,,True
+uLDK4l_-gUE,22,16,6,1,9,4,0,2.2,2.2,I don't share that concern strongly.,True
+YRURzpw2a8Q,24,16,5,2,6,6,1,2.1,1.8,"I think if you asked the CFTC, they would say we are a very serious and rigorous regulator.",True
+SwiI2CUtwMg,5,3,0,0,3,2,2,1.8,1.3,,True
+dwAQ_c3TQB4,15,8,2,1,5,2,1,2.3,1.5,we're not dabbling with it. We're committed.,True
+rd43svmATi4,4,3,1,0,2,1,2,2.2,1.2,,False
+B9nmtNeDUKM,3,2,1,0,1,2,2,1.7,1.0,,False
+RK7gGfMWxYE,2,2,2,0,0,0,1,2.5,2.0,,True
+ENW4ygOhCnY,9,5,1,1,4,2,3,2.0,1.2,I don't have any future product news right now,True
+tyoq1Tz7cSc,22,10,2,0,1,4,2,2.0,1.0,,True
+YdHP_VlyOZQ,5,3,1,1,1,0,0,2.5,1.2,"We haven't changed anything, but we continue to look at ways we can improve",False
+j7QxprRD1kw,8,6,3,1,4,4,3,2.0,1.6,this is not at odds.,True
+qu7dN_FRZUg,18,11,3,1,5,4,0,2.0,1.5,I wouldn't call it a worry as much as an understanding,True
+f8HXi-lZbEc,22,10,2,1,2,5,2,2.0,1.2,,True
+scek4oBwZMI,10,7,2,1,4,4,2,1.9,1.4,I don't have anything to announce today,True
+eszrbvODpXs,14,9,1,1,0,3,1,2.1,1.3,I didn't name it.,True
+-lEK_EvLyqo,19,12,5,1,5,3,0,2.2,1.7,I wouldn't call it a worry as much as an understanding,True
+peyxNLOWrsw,22,9,3,0,6,0,0,2.8,1.2,,True
+EjNw2Z-nJjc,4,3,0,0,3,1,0,2.4,1.3,,True
+OrbuuBGUXTs,15,11,4,2,3,3,2,2.2,1.5,"No, not at all.",True
+No91BxGQxKw,16,11,3,0,3,4,0,2.1,1.7,,True
+k6DKnFoPmEc,9,7,2,0,4,1,1,2.4,1.5,,True
+D0OmKufbzU8,3,2,0,1,0,0,0,2.5,0.8,We're not seeing that.,False
+2U0AFo0Yy6E,19,12,2,0,2,2,1,2.2,1.3,,True
+eos35rsoH18,2,1,1,0,0,0,0,1.5,1.0,,False
+J6fLQWa3qkc,3,2,0,0,0,1,0,2.2,0.8,,False
+ODFjJ00ksWw,18,12,4,0,5,3,1,2.3,1.5,,True
+AI9exq-stjI,15,8,2,0,8,2,2,2.0,1.4,,True
+Rdeiq-CXtos,14,8,1,1,4,2,0,2.2,1.2,"Actually, no. That announcement was incredibly well received.",True
+TxMPo_omNYM,3,0,0,0,0,0,1,2.0,0.5,,True
+7zJOBhm1EBM,11,9,1,2,4,2,2,2.2,1.2,I don't think it will.,True
+go6ets9wjAg,4,3,1,0,3,0,0,2.3,1.3,,True
+gnCVPgPWGeQ,4,2,1,0,2,0,0,2.3,1.0,,True
+tMuOv6JXtLQ,5,2,1,0,2,1,0,2.3,1.0,,True
+DpjV6pYOQww,1,0,0,0,0,0,0,1.0,0.3,,False
+Zbe-jhyQviE,9,4,0,0,0,3,0,1.8,0.8,,True
+ldzdz9UvLjI,2,2,1,0,2,0,0,2.5,1.8,,True
+612LzxcyJrk,16,12,1,0,8,3,1,2.3,1.4,,True
+HiYmvD5COwY,14,11,2,1,8,2,0,2.3,1.5,They're not hybrids. All electric.,True
+Lq_mbmKBEmQ,10,4,0,0,0,3,0,1.8,0.8,,True
+ipZKJtFQK7E,20,13,3,1,9,5,1,2.0,1.2,"No, but again, I think we're maybe not the industry to look at because of the constraints that we've had.",True
+Pjb9aZPpoD8,1,0,0,0,0,0,0,0.0,0.0,,False
+wcQCaWqnoew,10,7,2,0,4,2,0,2.0,1.4,,True
+Ht3vxrUUpJE,3,3,1,0,1,1,0,2.3,1.7,,True
+7RikjlrtcV0,4,2,1,0,0,1,0,2.0,0.9,,False
+1sdVccHGxHU,1,1,0,0,0,0,0,2.0,0.7,,False
+MN1K0_I2Q88,7,6,2,0,4,3,1,2.0,1.5,,True
+njwPfcGtq8o,3,3,1,1,1,1,0,2.3,1.5,So we didn't need to be here.,True
+MVBwTJTfWAw,7,6,3,1,3,0,1,2.5,1.8,"Actually, no. The demands which have been said, and we said for the life of the contract, the initial demands were over [NUM] billion.",True
+Ot4QAAPLlt4,14,6,1,0,3,2,1,1.9,1.0,,True
+AeWWmARalVQ,15,6,1,0,2,3,1,1.9,1.0,,True
+ER38NhoD7qo,1,1,0,0,0,0,0,2.0,0.6,,False
+dHTSzwfqsMU,14,11,2,1,8,3,2,2.2,1.5,"Make no mistake, we are still [NUM] % committed to autonomy",True
+VNaMxT8rGtA,8,7,0,2,4,2,1,2.1,1.4,We're not making any specific production schedule changes based on that.,True
+_Dm9bIoD89o,8,7,1,0,2,1,0,2.4,1.5,,True
+YxnSb44n6I4,4,4,1,0,1,0,0,2.3,1.5,,True
+uaaoz1EEqf4,15,13,5,0,5,3,2,2.2,1.6,,True
+YaSt89Zy8AA,12,9,3,0,4,4,3,2.0,1.4,,True
+Oaq9X7jLLQ8,12,9,0,0,0,1,0,2.5,1.5,,True
+RSZSGa9if8k,12,8,4,1,3,5,2,2.0,1.4,"Well, I don't think it's shifted our mission. Again, I think we still think EVs are the end game.",True
+aLlNGBzHDaE,6,4,0,0,0,0,0,2.6,1.6,,True
+WpocDIgk-6I,10,8,2,0,2,2,2,2.3,1.5,,True
+cBUpbDDszEY,9,0,0,0,0,0,0,1.0,0.5,,True
+FV9NY-LmrkY,7,5,2,0,0,1,0,2.7,1.5,,True
+-SCnjIywD3c,14,12,7,0,1,0,1,2.7,1.8,,True
+SE1yart2_Ec,5,3,2,0,1,0,0,2.7,1.4,,True
+wnpWljT5cQo,24,16,4,0,1,3,0,2.4,1.4,,True
+VPV0idcPJ0s,27,20,8,2,1,1,2,2.4,1.7,I'm not involved in editorial.,True
+ZrrtKM78iN8,26,14,3,0,2,1,0,2.3,1.2,,True
+NqANxJphRXo,20,13,1,0,2,2,0,2.3,1.3,,True
+BnTL0dzLiwc,4,4,0,0,0,1,0,2.0,0.8,,False
+TtNrCJCwwlc,14,9,0,0,1,2,0,2.0,1.0,,True
+tOGK1nlHdFo,25,14,4,4,1,3,1,2.3,1.6,"No, [PERSON], I will never do a device like that. Absolutely not.",True
+HTVrlPoQjM8,10,7,0,3,3,1,2,2.3,1.7,I've said I'm not a Republican or a Democrat. I can work with anyone.,True
+5LuGyJzZxeI,14,13,9,3,3,1,4,2.7,2.3,We've raised our guidance for the year. We've raised our margins for the year. And we've raised our cash flow for the year.,True
+8OgROKGh13I,2,2,2,0,1,0,0,2.8,2.4,,True
+GdByUYvwXp8,6,4,0,0,0,0,1,2.5,1.2,,True
+TMbGHKcuxPk,7,5,2,0,2,1,0,2.3,1.4,,True
+TCFmJKR6qA0,3,2,1,1,0,0,2,2.3,1.2,"You know, that isn't exactly what's happening.",True
+lxyLwglsd8o,5,4,0,0,0,0,1,2.5,1.6,,True
+yK2zzcjp2As,24,13,2,3,3,2,2,2.4,1.5,I don't agree with that view at all.,True
+_ng8xQ-SNGc,38,26,3,1,0,3,0,2.5,1.5,And I'm not doing an advertisement for them.,True
+4IQStrUnUKM,16,10,0,4,2,4,2,2.2,1.4,"No, to me and we feel this very deeply we think privacy is a fundamental human right.",True
+2ZfGBGmEpRQ,32,18,2,3,1,2,0,2.3,1.4,We do not run the company for people that want to make a quick buck.,True
+629XzLgO6ac,22,10,1,3,0,3,1,2.3,1.2,[COMPANY] doesn't give [NUM] to a political campaign. This is not what we're about.,False
+VD1cP8SK3Q0,14,7,0,3,2,3,3,2.0,1.1,"Whoever's telling you that, it's a bunch of bomb. We try to keep as much of your information on that device as possible.",True
+fl5xurWyV2o,18,10,1,4,1,2,1,2.4,1.2,I did not do it for other CEOs to come out. It wasn't even in my mind.,True
+lHUz63xFyyw,14,10,5,0,1,1,2,2.8,1.6,,True
+MU-SXaFpSts,23,8,0,2,2,6,1,2.0,1.0,[COMPANY] doesn't have a PAC.,True
+AwvLymAA2CM,20,10,1,4,3,5,3,2.3,1.2,I don't think anybody reasonable is going to come to the conclusion that [COMPANY]'s a monopoly.,True
+UU6MtPwT_5c,22,8,0,1,3,3,2,2.5,1.0,I've made a rule of not having any favorites.,True
+HM9r6Q_jFCE,29,12,2,2,1,7,3,2.2,1.2,"I don't know about the estimates, Andrew, so I can't testify to those kind of numbers.",True
+sdvzYtgmIjs,7,3,0,1,0,1,0,2.5,0.9,"trying to be a regulator, Kara. All we're trying to do is give people the ability to make the decision for themselves.",True
+JXQYO8poXC8,14,8,0,0,0,1,0,2.5,0.8,,True
+nPKZp3MDlLw,16,8,1,1,3,3,1,2.2,1.1,"there's some things that I have access to that other people don't have access to, and so I'm not doing that.",True
+GeS57u3fAvk,16,8,1,1,3,3,1,2.2,1.1,"there's some things that I have access to that other people don't have access to, and so I'm not doing that.",True
+m4RVTK7iU1c,21,13,1,0,0,2,0,2.5,1.0,,True
+CMLiMsjwBWI,13,7,1,0,2,2,0,2.4,1.0,,True
+jbWwM6vfeYo,29,12,1,2,1,3,0,2.5,0.8,So it's not a thing about revenues and profits. Those are outcomes or results of doing things great. They're not the purpose.,True
+B3hEg3R1hOQ,1,1,0,0,0,0,0,2.5,0.8,,False
+xLqUXIwPGUo,38,22,3,1,1,3,0,2.5,1.1,,True
+PjehoUu48rY,7,5,3,2,2,1,2,2.6,1.4,I'm not a political person.,True
+LS-tDwZRveM,1,0,0,0,0,1,1,1.5,0.5,,False
+AFFNWoJ2LOM,15,10,4,2,3,3,1,2.3,1.6,,False
+BgYQj4gVkWQ,23,14,4,4,3,4,2,2.4,1.5,"We're not booming because of all of the issues that we've self-created, you know, and that have slowed down growth.",True
+lDLo0NbYC3s,15,10,4,2,4,3,1,2.3,1.8,We're not going for a market rate here.,True
+8iU_HvAial4,3,1,0,0,0,1,0,2.0,0.8,,False
+CxJXO352x-g,22,13,5,2,3,4,2,2.2,1.6,"And regulation, I'm not going to say about regulation.",True
+CD58agCdh6M,15,9,3,4,3,3,1,2.4,1.5,"Look, we are not here saying throw out Doc Frank, not here to go back to the good old times.",True
+AUs0JFY57Wc,19,11,3,2,3,4,2,2.2,1.4,"But that's not the best part, the most important part of leadership.",False
+OwV9scyr35o,16,11,5,5,3,2,1,2.5,1.9,"No, if you buy this account, it does not allow an overdraft.",True
+2FCKISGoxV4,13,6,1,0,2,3,1,2.1,1.0,,False
+n9bGm6ry2mc,17,11,3,2,2,4,1,2.3,1.5,"No, I just, you know, [NUM] basis points in the great scheme of things doesn't mean anything.",True
+-nUs_ppctB4,15,10,3,0,3,3,0,2.3,1.6,,False
+mwnAGlNX9sk,29,16,6,2,5,7,2,2.2,1.5,,False
+yKtw4of-j0E,24,14,5,3,5,6,2,2.1,1.5,"Again, that's not a [NUM] forecast.",False
+ZDKNxdzK3m4,20,11,4,1,4,4,2,2.2,1.5,"Well, obviously, that's not taking place anymore.",False
+2REdbQasKX4,17,14,6,3,3,2,1,2.3,1.4,I'm not talking about banks.,True
+Xh6l39k3ngE,28,22,6,1,0,3,0,2.4,1.5,,True
+VsvrJENks2s,2,1,0,1,0,0,0,2.5,1.0,This is not AI.,False
+pgTBJ8olCGY,16,12,5,4,3,5,2,1.9,1.3,"I don't agree with everything the administration is doing, so I'm not arguing that point.",True
+5yRVGBAekOg,15,11,1,2,0,1,0,2.5,1.4,There's no corporate bullshit in it.,True
+fuVy852nqmM,26,18,6,4,5,2,1,2.5,1.5,We don't pander to Wall Street about quarterly earnings or stuff like that. I've never spent any time of that in my life.,True
+TEhy1JtzxIc,15,11,4,4,4,4,1,2.2,1.4,We're not going to kill all of our employees tomorrow because of AI. We're just not like that.,True
+O5EZhHKCYqU,24,16,6,5,3,6,3,2.0,1.4,Do I agree with everything in the Trump administration? Of course not.,True
+3zfckiyxA74,13,10,6,2,3,3,1,2.3,1.5,"Chairman of the Fed, I'd put in the absolutely, positively, no chance, no way, no how for any reason.",True
+yeWNeT8FS9g,20,14,6,2,5,6,0,2.0,1.5,I wouldn't put that in the systemic category.,True
+xA8unjqXBxw,4,3,1,3,2,1,0,2.5,1.3,"No, it wasn't a threat at all.",True
+Wan7sLrKCk8,1,1,0,0,0,0,0,2.5,0.8,,False
+ndwSflR-t4s,24,16,6,5,3,9,3,1.8,1.2,I'm not supporting or not supporting.,True
+m5THZW1HR5s,38,26,3,3,1,2,0,2.5,1.3,It's not that minor.,True
+NIcX_mW4Bqw,30,20,6,4,6,10,2,1.9,1.3,I don't think China's going to give any major demands. I don't think we're going to make major demands.,True
+FekQrBGyTis,30,18,4,5,5,4,1,2.5,1.4,We're not worried. We think it should just be fair.,True
+IPMZuC2FktI,15,11,4,2,3,3,1,2.4,1.7,"No, a threat is when I'm threatening you.",True
+Hw6IXuBEUAg,27,14,7,3,3,9,2,2.0,1.5,I have been very consistent. We are buying back the stock at these levels.,True
+rWsfAOxvOwI,3,2,1,0,0,1,0,2.3,1.3,,True
+vpUhkXOY0EI,23,15,5,3,3,2,1,2.5,1.6,we didn't need it at all. And you didn't need it at all.,True
+h8Q6Qv7gA70,8,7,3,1,2,0,1,2.8,2.0,"Well, we disagree. This is something we've studied.",True
+U2rVbqI-gus,5,3,1,0,0,1,0,1.8,1.0,,True
+_lE4YVlS2vw,4,2,0,0,0,1,0,1.8,0.8,,False
+ChsTWj4h_80,17,13,6,2,6,3,0,2.5,1.8,So I don't think everyone's going to have full-size trucks. I don't think everyone's going to have electric commercial vans.,True
+yd23850h9zc,11,8,3,0,3,1,0,2.6,1.7,,True
+s6eq8ABvyYQ,20,18,9,1,3,1,0,2.7,1.9,"These big, huge, enormous EVs. They're never going to make money.",True
+PGx7AyD9okg,26,14,6,1,0,2,0,2.3,1.4,,True
+2O3boF8ibDg,17,14,2,1,0,2,0,2.3,1.5,,True
+D9L1pwSqQeg,8,8,4,4,4,1,1,2.6,1.8,[COMPANY] has never made a statement about being all electric.,True
+Pa2p7D5SXaA,24,17,7,2,5,7,2,2.0,1.7,We're not going to allow these to be mothballed.,True
+7h6A4xfwjCU,16,12,6,1,5,3,0,2.3,1.8,"We do not import it, but our competitors do.",True
+C1A14Y4YpLk,7,3,0,0,0,1,0,2.2,1.2,,True
+qpf0d8IblIA,16,11,5,2,7,1,1,2.5,1.9,"There are no gas guzzlers in our future at [COMPANY],",True
+AyprsWbJ4lc,17,8,2,0,3,4,2,2.0,1.4,,True
+9wbiBWE-TXY,24,8,3,0,3,3,0,2.2,1.3,,True
+clPLerL4MyU,16,10,2,0,0,1,0,2.3,1.3,,True
+C_eab7I-H4U,12,4,0,0,0,2,0,1.8,0.8,,True
+PGiCc48olnk,27,19,5,2,3,3,0,2.4,1.6,There's no real competition from [OTHER_COMPANY] or [OTHER_COMPANY] or [COMPANY] with what we've seen from China.,True
+N_j2yI7xzCc,5,4,2,0,4,1,1,2.5,2.0,,True
+_y-GWcsK6Ag,13,9,4,0,5,2,0,2.4,1.8,,True
+Zt2jpdHw574,9,6,2,0,1,3,2,2.0,1.4,,True
+0m4hlWx7oRk,1,0,0,0,0,0,0,1.0,0.0,,False
+Sk0RbTVa71o,10,7,3,0,5,0,0,2.7,1.6,,True
+f-DKyqx0sak,5,3,0,0,0,1,0,2.0,0.8,,False
+bpm1_98gxXg,20,15,3,0,0,1,0,2.4,1.2,,True
+tLcOKaPxWyA,10,8,6,2,4,2,0,2.6,2.3,"And I said, Senator, no.",True
+pHBPKkB-_3Q,10,9,7,1,4,3,0,2.4,2.2,,True
+0PrmrMQ9gJU,13,8,2,0,4,3,0,2.3,1.9,,True
+DpJqRHFYUqk,1,1,0,0,0,0,0,2.5,1.5,,False
+y6NfxiemvHg,20,14,3,2,1,1,0,2.6,1.8,,True
+Pkj-BLHs6dE,26,14,2,3,1,4,2,2.2,1.6,,True
+lXLBTBBil2U,50,38,8,3,0,3,0,2.6,1.8,,True
+8Pfa8kPjUio,24,14,2,3,0,2,2,2.5,1.4,I don't love every day... of my job i don't think every day brings me joy nor does joy have to be the definition of a good day,True
+0c8i4T9BSqY,55,42,6,2,0,3,0,2.6,1.9,,True
+8FOdAc_i_tM,38,24,3,4,2,3,1,2.6,1.6,They're not based on a hunch or it's not based on a taste or it's on fundamental principles of computer science.,True
+CxysykYyRG8,11,10,3,0,1,1,0,2.5,1.8,,True
+hoDYYCyxMuE,10,9,0,0,1,0,0,2.7,1.5,,True
+Hrbq66XqtCo,32,20,1,3,8,2,1,2.6,1.6,And so I doubt that it will happen.,True
+tsQB0n0YV3k,24,18,5,1,3,2,1,2.5,1.7,,True
+2UpQbeAZuqA,28,18,3,1,4,1,1,2.6,1.5,,True
+ZEL0EAVtCTY,20,10,3,0,0,2,0,2.2,1.5,,True
+Yy3JH6dDugc,17,12,2,0,4,2,0,2.5,1.6,,True
+I4B37S1dyQQ,20,14,6,0,0,0,0,2.6,1.7,,True
+k9V45BFeNeU,7,3,0,1,0,0,1,2.3,1.0,I didn't have no conversation related to that.,True
+HjurAWAr_nY,23,14,3,2,3,1,0,2.7,1.3,"AI will destroy jobs, which is fundamentally wrong.",True
+4RcDsN7Epm0,7,4,1,0,2,1,0,2.3,1.3,,True
+nc0VKAg8n6w,24,15,4,1,0,3,0,2.3,1.6,Not really.,True
+s76eXRlMJhc,11,8,4,5,0,2,0,2.6,1.8,"The notion that [COMPANY] is in any way sexualizing children, quite frankly, is preposterous and inaccurate.",True
+0njWM4pzmlw,12,8,2,0,2,3,0,2.2,1.4,,True
+8pSxx1e5n34,21,10,2,2,1,4,4,2.0,1.2,That reporting is completely inaccurate.,True
+srDb6vj3w-Q,7,6,2,0,4,2,1,2.4,2.0,,True
+6J9-RpVrq_Q,9,5,1,2,0,1,1,2.4,1.1,infusing messaging as a sort of a number one priority in our films and TV shows is not what we're up to,True
+w1PqgPMmVdY,20,13,2,0,0,3,0,2.3,1.3,,True
+s5rHIot8hkk,25,14,3,1,0,3,0,2.3,1.2,"I don't think we have a monopoly on it, by the way.",True
+E3KHW8hU1Go,20,10,1,0,0,2,0,2.2,1.3,,True
+9deikC8spSM,5,4,3,1,3,1,0,2.2,1.8,we're not pinning down a date yet.,True
+FhrcJ-BvCbg,7,6,2,0,4,0,0,2.5,1.7,,True
+j59LuGCqFwY,14,5,0,1,2,3,0,2.0,1.2,i'm not really interested in in turning to him for advice per se,True
+IIkwtjGrADQ,7,4,0,0,1,0,0,2.5,1.2,,True
+wSpDFQyVtfw,22,10,3,0,1,1,0,2.3,1.3,,True
+roKzFMaqk5s,8,5,3,0,0,2,0,2.0,1.6,,True
+RiseH15-ZUo,11,8,4,2,1,0,1,2.5,2.0,So that data is not really accurate.,True
+I3Tc0T_adSU,29,14,6,1,6,2,0,2.2,1.5,"Well, I don't really think of it that way.",True
+pei7or9-ON0,19,10,2,1,2,3,1,2.0,1.4,I think there was some misreporting that was going on the last few weeks.,True
+Tgrih3Ngop8,5,3,2,0,2,1,1,2.3,1.6,,True
+XHGogTfFo_I,16,10,3,2,7,1,0,2.4,1.7,We think they're wrong on the facts and the law.,True
+uxEL9tBDzlE,16,9,1,0,3,3,0,2.0,1.5,,True
+37cjW96CuQ8,9,5,1,1,3,5,0,1.5,1.0,we haven't seen any change in consumer behavior in a meaningful,True
+9AT61oa40-c,5,3,1,0,2,1,0,2.3,1.2,,True
+C7jjkeX89P0,9,4,1,0,2,2,0,1.8,1.5,,True
+lw3FbOspa-o,8,6,1,1,3,3,1,1.9,1.5,"I don't think that wipes out all those jobs, but I think we'll still have plenty of people in those roles.",True
+_I669Jlajqw,16,13,5,1,6,4,2,2.1,1.9,"there are a lot of rumors about us and about lots of other companies, and we don't comment on those.",True
+EaWAUFrlbRQ,5,5,3,0,1,1,0,2.3,2.2,,True
+hjjHdys2Ph4,13,8,1,1,0,1,1,2.4,1.2,We still roughly have the same number of people we did a year ago.,True
+FNrOWWSbz3A,27,9,1,0,1,2,0,1.6,0.9,,True
+sgl6YSpfwRw,15,8,1,3,4,3,1,2.3,1.2,So I don't think the war is likely to end in Ukraine.,True
+08wadxp9FnQ,11,3,0,0,0,2,0,1.5,0.8,,True
+KZWB5XGZy-Q,19,8,4,0,3,2,0,2.0,1.2,,True
+QdqHf71Tep0,17,6,1,0,0,1,1,2.3,1.0,,True
+zv_HnVsb4qk,4,1,1,0,0,0,0,2.0,0.8,,False
+Y-IH7EVrBbQ,11,4,1,3,0,1,1,2.1,0.9,"I didn't say we could easily do it, and I'm not calling BS on that. I'm actually saying it's a very, very hard problem.",True
+HabEH_Yu4wI,7,6,3,3,2,1,2,2.5,1.5,Are you going to take legal action? Nope.,True
+wWxWTfjTR5A,8,6,1,4,2,1,1,2.5,1.2,I am against discrimination. I'm not saying you're saying this,True
+RG9fdLzxTaw,5,2,1,0,0,0,0,2.0,0.7,,True
+8i-ys9faa74,1,0,0,0,0,0,0,1.0,0.2,,False
+_fqxZKdb3J0,22,10,0,1,0,4,1,2.0,1.2,I was always against interventions. I'm not a neocon.,True
+S9V-5VQ_Epg,13,8,2,2,0,2,2,2.4,1.2,"Well, no. No, no. They are magical at a certain kind of thing, allowing you to write, for example, code.",True
+wdyKBzBxM6w,15,8,1,2,3,3,1,2.3,1.5,But I'm not repping buying this product.,True
+xMRY3dC6Cyk,16,9,5,2,5,3,3,2.2,1.7,"I wasn't expecting it any time short term. This is, I'm here to stay. I'm here to build a big company.",True
+6CLXH6CrU_w,19,11,6,2,4,3,2,2.2,1.7,"No, ride-sharing is more profitable in most markets. It's the more mature part of the business.",True
+9eth8Ulz8Fs,12,7,3,1,1,2,4,2.2,1.2,I don't think it's being on an [COMPANY] or not,True
+HIzlvDHem0A,9,5,0,0,0,1,0,1.8,1.0,,True
+2B8gABDfh7I,38,18,1,4,1,7,1,1.9,1.2,But I'm not religious. I believe in the power of humanity.,True
+0Scbc8WMwAU,29,14,3,2,9,6,1,2.3,1.4,"while I don't think that personal cars are going to disappear, personal car ownership is going to disappear",True
+gI54n3yBVs4,11,7,3,2,2,3,2,2.2,1.4,"No, not specifically. And again, I think what's different about [COMPANY] is how local we are.",True
+xTSIQbephAo,5,5,3,1,2,2,0,2.5,2.0,we don't see any signs of that weakening at this point.,True
+AK4hrrlCNUA,4,3,1,0,1,0,0,2.3,1.3,,True
+X2dskoZaR_I,2,2,2,0,0,0,0,2.5,2.0,,True
+ufwYag7NcqY,9,7,5,2,6,2,1,2.4,1.9,I don't think we're going to be looking for acquisitions.,True
+5HXNttbnllQ,13,8,1,1,3,3,1,2.2,1.4,,True
+HUiHChiaJ6o,11,6,3,0,1,1,1,2.3,1.4,,True
+CbJHGwQ-3n8,6,3,0,0,0,0,0,2.3,1.0,,False
+6zP1WwF7NzM,10,8,4,0,2,0,0,2.5,1.5,,True
+YIokM_4i1i0,2,0,0,0,0,1,0,1.5,0.5,,False
+VAUt2j6juHU,7,6,1,0,0,1,0,2.3,1.3,,True
+G6DOhioBfyY,18,11,2,1,9,3,1,2.3,1.8,I'm not [NUM] % sure what that means.,True
+DwYNdeNOY-M,1,0,0,1,0,0,0,2.5,0.5,I don't think at all that that means that we don't care about people.,False
+tAY3JKcqNcU,2,0,0,0,0,1,1,2.0,0.5,,False
+dsYoC-eqCj8,10,6,1,0,3,2,0,2.2,1.3,,False
+OuvrZFJLXSk,8,2,0,1,0,2,0,1.8,0.8,I don't think economic growth is always a positive,False
+AV-UbWBnl0g,7,3,0,0,5,4,0,1.9,1.2,,False
+62g-cJC7to0,14,9,1,2,3,1,1,2.6,1.5,just because we don't want to be determining what is true and false,False
+eAagtcAup0o,25,10,3,1,12,6,0,2.1,1.2,"It's not that it's going to replace all physical things, of course not.",False
+VHT3VH8PPz4,25,14,3,1,10,4,0,2.2,1.5,"So they're not going to be augmented reality glasses, but they're going to be smart glasses",True
+sbry2ajNd1g,2,2,1,0,0,1,1,2.0,1.3,,False
+tszveicEfKA,19,11,4,0,7,6,1,1.8,1.5,,True
+HAokbZvCLD8,29,14,3,1,4,3,1,2.0,1.4,I don't think we're making a dent in [OTHER_COMPANY] yet.,True
+El19o1Ib-HE,13,8,1,2,3,3,0,2.1,1.4,I don't actually think that any um company a metaverse isn't a thing that a company builds,True
+v1NOLLfZYs8,4,2,0,0,0,3,1,1.7,1.0,,False
+YQKsdR1wgK8,8,5,1,0,2,2,0,2.0,1.3,,True
+5wk5WPONF7c,14,11,7,2,7,4,1,2.2,1.9,I don't think [OTHER_COMPANY] regrets building the [PRODUCT].,True
+MVYrJJNdrEg,15,9,2,1,4,4,0,1.9,1.4,it's not going to be like we roll it out and one day everyone has a Kodak avatar.,True
+xQqsvRHjas4,16,10,3,2,6,3,1,2.3,1.5,I just don't think that the future is written on this yet.,True
+QciJ9ubeLQk,4,0,0,0,1,0,1,1.5,0.5,,False
+oX7OduG1YmI,17,10,2,0,7,3,0,2.2,1.4,,True
+R91_oQ4smys,3,1,0,0,0,1,1,1.5,0.8,,False
+wMW7-yk296U,17,10,2,3,5,4,1,2.1,1.3,I don't think we're gonna get to a state where people are using the friends tab more than they're using newsfeed,True
+zbfOkhrgxH0,2,1,0,1,0,0,0,2.0,0.5,"no, you guys are totally missing this.",False
+gF12Xn3C-0c,14,7,1,0,8,4,0,1.9,1.2,,False
+bnccgwAo9dU,14,4,0,1,0,3,2,1.8,0.6,I just don't like any kind of chemicals or anything like that.,False

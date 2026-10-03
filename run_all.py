@@ -319,6 +319,7 @@ def main() -> None:
             fh.write(f"| {datetime.now().isoformat(timespec='seconds')} | {git_hash()} | {why} | {reason} | "
                      f"{fmt(oe.summary['sharpe'])} |\n")
         (RES / "oos_summary.json").write_text(json.dumps(oos_summary, indent=2, default=str))
+        oos_daily.to_frame("net").to_csv(RES / "oos_daily.csv")
 
     # ---------------- outputs
     figures({"summary": prim.summary, "net": net, "gross": gross, "net_x2": net_x2}, ev_all, cars, decay, nulls,

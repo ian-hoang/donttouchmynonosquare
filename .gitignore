@@ -29,3 +29,5 @@ data/market/*.parquet
 data/cache/
 data/media/
 *.flac
+
+note/.body_only.*

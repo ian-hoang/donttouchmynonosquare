@@ -27,7 +27,7 @@ p { margin: 3pt 0 5pt; text-align: justify; } ul { margin: 2pt 0 5pt 16pt; paddi
 table { border-collapse: collapse; font-size: 10pt; margin: 4pt 0 6pt; width: 100%; }
 th, td { border-bottom: 0.4pt solid #bbb; padding: 1.5pt 4pt; text-align: right; }
 th:first-child, td:first-child { text-align: left; } thead th { border-bottom: 0.8pt solid #333; }
-figure { margin: 4pt 0 6pt; text-align: center; } figure img { max-width: 100%; }
+figure { margin: 4pt 0 6pt; text-align: center; } figure img { max-width: 100%; max-height: 2.5in; }
 figcaption { font-size: 9.5pt; color: #333; text-align: left; } .two { display: flex; gap: 8pt; }
 .two figure { flex: 1; } .refs p { font-size: 9.5pt; text-align: left; margin: 1pt 0; }
 .pb { page-break-before: always; } code { font-size: 9.5pt; }
@@ -109,6 +109,7 @@ def md(text: str) -> str:
             html.append(f"<p>{' '.join(para)}</p>")
         i += 1
     out = "\n".join(html)
+    out = re.sub(r"`([^`]+)`", r"<code>\1</code>", out)
     out = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", out)
     return re.sub(r"(?<![*\w])\*(?!\s)(.+?)(?<!\s)\*(?!\w)", r"<i>\1</i>", out)
 
@@ -124,6 +125,16 @@ def main() -> None:
     pdf = ROOT / "note" / "PokerFace_quant_note.pdf"
     subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
                     f"--print-to-pdf={pdf}", out_html.as_uri()], check=True, capture_output=True)
+    # page-limit check: render the main body alone (sections before 90_references) and count pages
+    body = [md(fill(q.read_text(), vals)) for q in sorted(SEC.glob("*.md")) if q.name < "90"]
+    tmp = ROOT / "note" / ".body_only.html"
+    tmp.write_text(f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{''.join(body)}</body></html>")
+    bpdf = ROOT / "note" / ".body_only.pdf"
+    subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer", f"--print-to-pdf={bpdf}",
+                    tmp.as_uri()], check=True, capture_output=True)
+    n_body = len(re.findall(rb"/Type\s*/Page[^s]", bpdf.read_bytes()))
+    n_all = len(re.findall(rb"/Type\s*/Page[^s]", pdf.read_bytes()))
+    print(f"main body: {n_body} pages (limit 5) | full PDF incl. references + appendix: {n_all} pages")
     missing = re.findall(r"\[([a-zA-Z0-9_.\-]+)\?\]", html)
     print("wrote", pdf, "| unresolved placeholders:", sorted(set(missing)) or "none")
 
