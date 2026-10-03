@@ -1,0 +1,14 @@
+{
+  "universe": "original",
+  "sample": "OOS",
+  "n_events": 220,
+  "n_ceos": 18,
+  "mean_event_car": -0.0005550267709907287,
+  "mean_random_day_car": 0.0021236886000520648,
+  "mean_excess": -0.0026787153710427954,
+  "ci95": [
+    -0.014962481815354006,
+    0.01046492575378207
+  ],
+  "supports_h3_here": false
+}

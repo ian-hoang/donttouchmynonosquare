@@ -112,6 +112,12 @@ footer { color: var(--muted); font-size: 12px; font-family: var(--mono) }
   </section>
 
   <section class="panel">
+    <h2>Every follow-up test</h2>
+    <p class="sub">Registered in HYPOTHESIS_2.md after the primary failed, each committed before its data were collected or opened.</p>
+    <div class="tablewrap"><table id="follow"></table></div>
+  </section>
+
+  <section class="panel">
     <h2>How a video becomes a trade</h2>
     <ul class="pipeline">
       <li><b>Find</b>Two rounds of YouTube search; LLM agents keep genuine unscripted Q&amp;A from metadata only.</li>
@@ -215,5 +221,7 @@ const pc = D.per_ceo.slice().sort((a, b) => b.n - a.n);
 document.getElementById("perceo").innerHTML = "<thead><tr><th>CEO</th><th>trades</th><th>P&amp;L contrib.</th><th>hit rate</th></tr></thead><tbody>" +
   pc.map(r => `<tr><td>${(D.ceos[r.ceo_id] || { name: r.ceo_id }).name}</td><td>${r.n}</td><td>${pct(r.pnl, 2)}</td><td>${pct(r.hit, 0)}</td></tr>`).join("") + "</tbody>";
 
+document.getElementById("follow").innerHTML = "<thead><tr><th>Test</th><th>What it measures</th><th>Result</th><th>Verdict</th></tr></thead><tbody>" +
+  (D.followups || []).map(r => `<tr><td>${r[0]}</td><td style="text-align:left">${r[1]}</td><td>${r[2]}</td><td><span class="chip ${r[3] === "pass" ? "ok" : "bad"}">${r[3]}</span></td></tr>`).join("") + "</tbody>";
 document.getElementById("foot").textContent = `config ${S.config_hash} · git ${S.git} · prices ${S.price_source} (fingerprint ${S.price_fingerprint}) · ${S.oos ? "OOS evaluated once" : "OOS sealed"}`;
 </script>

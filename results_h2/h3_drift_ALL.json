@@ -1,0 +1,14 @@
+{
+  "universe": "_h2",
+  "sample": "ALL",
+  "n_events": 437,
+  "n_ceos": 21,
+  "mean_event_car": 0.008862665430152437,
+  "mean_random_day_car": 0.007102962348619084,
+  "mean_excess": 0.0017597030815333526,
+  "ci95": [
+    -0.008526610539282518,
+    0.013279824475459003
+  ],
+  "supports_h3_here": false
+}

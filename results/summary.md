@@ -1,5 +1,5 @@
 # PokerFace results (IS + OOS)
-Generated 2026-10-03 02:43 | git 75edb6a | config 7ed7a3b4554c | prices yfinance (fingerprint dd92ad1a0c4f386b)
+Generated 2026-10-03 02:58 | git 36ee8a6 | config 7ed7a3b4554c | prices yfinance (fingerprint dd92ad1a0c4f386b)
 
 Events: {'total': 901, 'IS': 667, 'OOS': 234, 'excluded_near_earnings': 142} | QC: {'videos_in': 1813, 'after_identity_qc': 1596, 'face_ok': 1369, 'voice_ok': 1296, 'text_ok': 1341}
 

@@ -27,6 +27,30 @@ def safe(x):
     return x
 
 
+def followups() -> list:
+    """Every test registered after the primary failed, read from its own result file."""
+    rows = []
+    j = lambda p: json.loads(p.read_text()) if p.exists() else None
+    o = j(RES / "overfit_study.json")
+    if o:
+        rows.append(["Best of 192 optimized variants", f"in-sample {o['best_is_sharpe']:.2f} vs {o['best_dsr']['sr_star_annual']:.2f} expected from luck; PBO {100*o['pbo']['pbo']:.0f}%", f"{o['winner_oos_sharpe']:.2f} out-of-sample", "fail"])
+    w = j(RES / "walk_forward.json")
+    if w:
+        rows.append(["Walk-forward optimization", "each year trades the best variant of all prior years", f"Sharpe {w['walk_forward_all']['sharpe']:.2f}", "fail"])
+    h2 = j(ROOT / "results_h2" / "summary.json")
+    if h2 and h2.get("oos"):
+        rows.append(["H2: same signal, 20 less-watched CEOs", f"{h2['primary_IS']['n_traded']}+{h2['oos']['n_traded']} trades; IC {h2['event_tests_IS'].get('ic_ic', 0):.3f} / {h2['oos']['event_tests'].get('ic_ic', 0):.3f}", f"Sharpe {h2['primary_IS']['sharpe']:.2f} / {h2['oos']['sharpe']:.2f}", "fail"])
+    for f, lab in ((RES / "h3_drift_OOS.json", "H3: post-interview drift (original, sealed window)"), (ROOT / "results_h2" / "h3_drift_ALL.json", "H3: post-interview drift (H2 universe)")):
+        h = j(f)
+        if h:
+            rows.append([lab, f"excess 20d CAR vs same stocks on random days, CI [{100*h['ci95'][0]:.1f}%, {100*h['ci95'][1]:.1f}%]", f"{100*h['mean_excess']:.2f}%", "pass" if h["supports_h3_here"] else "fail"])
+    h4 = j(RES / "h4_intraday.json")
+    if h4 and h4.get("a_native", {}).get("n", 0) >= 5:
+        a = h4["a_native"]
+        rows.append(["H4: intraday reaction, Musk + Karp (1-min bars)", f"{a['n']} YouTube-native videos; IC {a['ic']:.3f}, t {a['t_date_clustered']:.2f}", f"{a['mean_signed_net_bps']:.1f} bps/trade", "pass" if h4.get("supports_H4") else "fail"])
+    return rows
+
+
 def main() -> None:
     s = json.loads((RES / "summary.json").read_text())
     daily = pd.read_csv(RES / "daily_returns_IS.csv", index_col=0, parse_dates=True)
@@ -56,6 +80,7 @@ def main() -> None:
         "decay": safe(pd.read_csv(RES / "alpha_decay.csv").to_dict("records")),
         "per_ceo": safe(pd.read_csv(RES / "per_ceo.csv").to_dict("records")),
         "ceos": ceos,
+        "followups": followups(),
     }
     tpl = (ROOT / "scripts" / "dashboard_template.html").read_text()
     out = RES / "dashboard.html"

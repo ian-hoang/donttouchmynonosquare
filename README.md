@@ -25,6 +25,18 @@ return over the next 20 trading days. The hypothesis, signal weights and every t
 Deflated Sharpe 0.15 over 23 logged trials · FOLK placebo Sharpe -0.11 · config `7ed7a3b4554c` · full report: `results/summary.md`
 <!-- RESULTS:END -->
 
+## Follow-up tests (registered in `HYPOTHESIS_2.md` after the primary failed)
+
+| Test | Result | Verdict |
+|---|---|---|
+| Best of 192 in-sample variants | in-sample Sharpe 0.32 (luck alone: 0.66), PBO 86%, **-0.87 out-of-sample** | fail |
+| Walk-forward optimization 2018–2026 | Sharpe -0.54 | fail |
+| H2: same frozen signal, 20 less-watched CEOs (`PF_UNIVERSE=_h2`, `results_h2/`) | Sharpe 0.14 (2016–2024-09) / -0.92 (2024-10+); IC -0.004 / -0.212 | fail |
+| H3: post-interview drift vs same stocks on random days | -0.27% (original, sealed window), 0.18% (H2); both CIs include 0 | fail |
+
+Since October 2024 the score's sign has reversed in both universes (pooled rank IC −0.12): stressed-looking CEOs' stocks
+did *better*. Every holdout is used, so we report this as the next hypothesis to pre-register, not as a strategy.
+
 ## Reproduce the headline numbers (judges start here)
 
 ```bash
