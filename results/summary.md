@@ -1,18 +1,18 @@
-# PokerFace results (in-sample only; OOS sealed)
-Generated 2026-10-03 02:40 | git 070a190 | config 7ed7a3b4554c | prices yfinance (fingerprint dd92ad1a0c4f386b)
+# PokerFace results (IS + OOS)
+Generated 2026-10-03 02:41 | git f50df46 | config 7ed7a3b4554c | prices yfinance (fingerprint dd92ad1a0c4f386b)
 
 Events: {'total': 901, 'IS': 667, 'OOS': 234, 'excluded_near_earnings': 142} | QC: {'videos_in': 1813, 'after_identity_qc': 1596, 'face_ok': 1369, 'voice_ok': 1296, 'text_ok': 1341}
 
-| metric | in-sample | 
-|---|---|
-| annualized return (net) | 0.25% |
-| volatility | 9.53% |
-| Sharpe (net) | 0.07 |
-| Sharpe (gross) | 0.20 |
-| max drawdown | -33.31% |
-| Calmar | 0.01 |
-| turnover (x/yr) | 34.13 |
-| events traded | 661 |
+| metric | in-sample | out-of-sample |
+|---|---|---|
+| annualized return (net) | 0.25% | -3.71% |
+| volatility | 9.53% | 9.95% |
+| Sharpe (net) | 0.07 | -0.33 |
+| Sharpe (gross) | 0.20 | -0.17 |
+| max drawdown | -33.31% | -14.21% |
+| Calmar | 0.01 | -0.26 |
+| turnover (x/yr) | 34.13 | 44.81 |
+| events traded | 661 | 234 |
 
 Costs x2 Sharpe (IS): -0.04 | DSR: 0.15 over 23 trials | PSR(>0): 0.59 | bootstrap Sharpe CI: [-0.57, 0.72]
 FF5+Mom alpha: 0.27% (t = 0.09), R2 0.01
