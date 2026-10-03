@@ -37,8 +37,12 @@ python run_all.py --unlock-oos   # the sealed out-of-sample evaluation (already 
 
 `run_all.py` runs the lookahead test suite first and refuses to print numbers if it fails. It reads the committed
 per-video features (`data/features/video_features.csv`), so judges do not need to re-process video.
-`data/market/download_meta.json` holds a fingerprint of the price data so you can confirm you downloaded the
-same history we used.
+`data/market/download_meta.json` holds a fingerprint of the price data. Yahoo's adjusted prices carry tiny floating-point
+noise between downloads, so the hash can differ while every reported number stays the same.
+
+**Reproduction check (2026-10-03 02:49 ET):** a fresh clone, a clean `uv` environment, `python data/download.py` and
+`python run_all.py --unlock-oos` reproduced every headline number exactly (in-sample net Sharpe 0.07, 661 trades;
+out-of-sample −0.3302; candidates −0.233 and −0.1522). The rerun is logged as `reproduction` in `results/oos_log.md`.
 
 ## How it works
 
