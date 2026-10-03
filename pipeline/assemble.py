@@ -146,6 +146,7 @@ def identity_pass(video_id: str, face_path: Path) -> dict:
         emb = embed_crops(f)
         cl, summ = cluster_tracks(f, emb)
         f["cluster"] = cl
+        (CACHE / "identity").mkdir(parents=True, exist_ok=True)
         f.drop(columns=["crop_jpg"]).to_parquet(CACHE / "identity" / f"{video_id}.faces.parquet")
         res = {"video_id": video_id, "clusters": summ, "n_frames": int(f["t_ms"].nunique())}
     out_json.parent.mkdir(parents=True, exist_ok=True)
@@ -290,13 +291,47 @@ def attribute_words(words: list[dict], faces: pd.DataFrame, target_cluster: int)
             ceo = max(score, key=score.get)
             ceo_words = [w for w in words if w.get("speaker") == ceo]
             return ceo_words, {"attr_method": "diarized", "ceo_speaker": ceo, "ceo_speaker_mouth_match": score[ceo]}
-    ceo_words = []
-    for w in words:
-        if w.get("type") == "audio_event":
+    # Visual path: vote per utterance (words separated by < 1 s), not per word. An utterance is the CEO's when,
+    # over the frames it spans, the target is talking in most frames where the target is visible, the target is
+    # visible in at least 40% of them, and no other identity is talking more often than the target.
+    words = [w for w in words if w.get("type") != "audio_event"]
+    oth = others.sort_values("t_ms")
+    oth_act = {}
+    for cl, g in oth.groupby("cluster"):
+        g = g.drop_duplicates("t_ms").reset_index(drop=True)
+        a = mouth_activity(g).to_numpy()
+        oth_act[cl] = (g["t_ms"].to_numpy(), a)
+
+    def other_talking(ms: float) -> bool:
+        for t_o, a_o in oth_act.values():
+            j = np.searchsorted(t_o, ms)
+            for k in (j - 1, j):
+                if 0 <= k < len(t_o) and abs(t_o[k] - ms) <= 300 and np.isfinite(a_o[k]) and a_o[k] >= thr:
+                    return True
+        return False
+
+    utts, cur = [], []
+    for w in words:   # split at pauses > 0.6 s and cap each voting unit at 15 s
+        if cur and (w["start"] - cur[-1]["end"] > 0.6 or w["end"] - cur[0]["start"] > 15.0):
+            utts.append(cur)
+            cur = []
+        cur.append(w)
+    if cur:
+        utts.append(cur)
+    ceo_words, n_vote = [], 0
+    for u in utts:
+        grid = np.arange(1000 * u[0]["start"], 1000 * u[-1]["end"] + 1, 250.0)
+        lab = np.array([target_talking(ms) for ms in grid])
+        vis = lab >= 0
+        if vis.mean() < 0.4:
             continue
-        if target_talking(1000 * (w["start"] + w["end"]) / 2) == 1:
-            ceo_words.append(w)
-    return ceo_words, {"attr_method": "visual", "mouth_thr": thr}
+        tgt_talk = (lab == 1).sum()
+        oth_talk = sum(other_talking(ms) for ms in grid[~(lab == 1)])
+        if tgt_talk >= 0.5 * vis.sum() and tgt_talk >= oth_talk:
+            ceo_words.extend(u)
+            n_vote += 1
+    return ceo_words, {"attr_method": "visual_utterance", "mouth_thr": thr, "n_utterances": len(utts),
+                       "n_ceo_utterances": n_vote}
 
 
 def speech_segments(ceo_words: list[dict], max_gap: float = 0.6) -> list[tuple[float, float]]:
@@ -334,13 +369,19 @@ def assemble_video(video_id: str, ceo_ref: np.ndarray | None, face_dir: Path, au
     pose_path = face_dir / f"{video_id}.pose.parquet"
     pose = pd.read_parquet(pose_path) if pose_path.exists() else None
     row.update(face_cues(tgt, pose))
-    lo, hi = window
-    w_in = [w for w in words if lo <= w["start"] <= hi]
+    lo, hi = window   # absolute video seconds; stored frames and audio are relative to `lo`
+    w_in = [{**w, "start": w["start"] - lo, "end": w["end"] - lo} for w in words if lo <= w["start"] <= hi]
     ceo_words, attr = attribute_words(w_in, faces, k)
     row.update(attr)
     row["n_words_window"] = len(w_in)
     segs = speech_segments(ceo_words)
     speech_s = float(sum(b - a for a, b in segs))
+    if ceo_words:   # CEO-only text for the utterance-labeling agent (local cache; transcripts are never committed)
+        tdir = CACHE / "ceo_text"
+        tdir.mkdir(parents=True, exist_ok=True)
+        (tdir / f"{video_id}.json").write_text(json.dumps(
+            [{"start": round(a, 2), "end": round(b, 2),
+              "text": " ".join(w["text"] for w in ceo_words if a <= w["start"] <= b)} for a, b in segs]))
     row["ceo_speech_s"] = speech_s
     row.update(text_features(" ".join(w["text"] for w in ceo_words), speech_seconds=speech_s))
     row.update(timing_features(w_in, attr.get("ceo_speaker")) if attr.get("attr_method") == "diarized"

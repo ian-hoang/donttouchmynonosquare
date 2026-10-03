@@ -36,6 +36,7 @@ class BTParams:
     borrow_bps_annual_hedge: float = 25.0
     cost_multiplier: float = 1.0           # 2.0 for the "costs doubled" robustness row
     dd_brake: float = 0.0                  # >0: halve exposure while running drawdown exceeds this
+    overlap: str = "replace"               # "replace": a new event closes the name's open position; "stack": add up
     beta_clip: tuple = (0.3, 2.5)
 
     def to_dict(self) -> dict:
@@ -80,6 +81,16 @@ def run_backtest(open_px: pd.DataFrame, close_px: pd.DataFrame, events: pd.DataF
     col = {t: j for j, t in enumerate(instruments)}
     R = r_oo.reindex(columns=instruments).fillna(0.0).values
 
+    # with overlap="replace", an event's holding window ends early at the next event in the same name
+    next_entry: dict = {}
+    if p.overlap == "replace":
+        ev_sorted = events.dropna(subset=["entry"]).sort_values("entry")
+        for tkr, g in ev_sorted.groupby("ticker"):
+            idx = [pos.get(e) for e in g["entry"]]
+            for k, eid in enumerate(g["event_id"]):
+                later = [j for j in idx[k + 1:] if j is not None and idx[k] is not None and j > idx[k]]
+                next_entry[eid] = later[0] if later else None
+
     rows = []
     stock_legs = np.zeros((n_days, len(instruments)))
     hedge_by_name = np.zeros((n_days, len(instruments)))           # hedge leg attributed to each name
@@ -119,6 +130,8 @@ def run_backtest(open_px: pd.DataFrame, close_px: pd.DataFrame, events: pd.DataF
         s = float(np.clip(ev.signal, -p.signal_cap, p.signal_cap)) / p.signal_cap
         w = float(np.clip(s * p.target_vol_per_event / idio_ann, -p.max_weight_per_event, p.max_weight_per_event))
         i1 = min(i0 + p.horizon, n_days)                            # exclusive
+        if next_entry.get(ev.event_id) is not None:
+            i1 = min(i1, next_entry[ev.event_id])
         stock_legs[i0:i1, col[ev.ticker]] += w
         if hedge:
             hedge_by_name[i0:i1, col[ev.ticker]] += -beta * w

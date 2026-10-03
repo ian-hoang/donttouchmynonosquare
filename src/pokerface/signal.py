@@ -31,7 +31,8 @@ class SignalParams:
     min_prior: int = 5        # burn-in: need this many prior videos
     z_clip: float = 3.0
     min_pool: int = 20        # prior tell scores needed to standardize T
-    min_features: int = 3     # need at least this many scorable features in a video
+    min_features: int = 5     # need at least this many scorable features in a video (pre-registered)
+    min_modalities: int = 2   # ... spread across at least this many of face/voice/text
 
 
 def load_spec(path: Path | str = ROOT / "config" / "signal_spec.json") -> dict:
@@ -107,8 +108,10 @@ def tell_score(z: pd.DataFrame, spec: dict, p: SignalParams = SignalParams()) ->
             num[ok] += inc["weight"] * term[ok]
             den[ok] += inc["weight"]
             res["incongruence"] = term
-    res["tell"] = (num / den.replace(0, np.nan)).where(n_feat >= p.min_features)
+    n_mod = sum(res[f"m_{m}"].notna().astype(int) for m in spec["modalities"])
+    res["tell"] = (num / den.replace(0, np.nan)).where((n_feat >= p.min_features) & (n_mod >= p.min_modalities))
     res["n_features"] = n_feat
+    res["n_modalities"] = n_mod
     return res
 
 

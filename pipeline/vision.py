@@ -48,8 +48,20 @@ def ensure_models() -> None:
 def _delegate():
     from mediapipe.tasks.python import BaseOptions
 
-    want = os.environ.get("PF_DELEGATE", "GPU" if platform.system() == "Darwin" else "CPU").upper()
-    return BaseOptions.Delegate.GPU if want == "GPU" else BaseOptions.Delegate.CPU
+    return BaseOptions.Delegate.GPU if _delegate_name() == "GPU" else BaseOptions.Delegate.CPU
+
+
+def _image(a: np.ndarray):
+    """GPU delegate (macOS) needs SRGBA; the CPU delegate (Linux/HiPerGator) takes SRGB."""
+    import mediapipe as mp
+
+    if _delegate_name() == "GPU":
+        return mp.Image(image_format=mp.ImageFormat.SRGBA, data=np.ascontiguousarray(a))
+    return mp.Image(image_format=mp.ImageFormat.SRGB, data=np.ascontiguousarray(a[:, :, :3]))
+
+
+def _delegate_name() -> str:
+    return os.environ.get("PF_DELEGATE", "GPU" if platform.system() == "Darwin" else "CPU").upper()
 
 
 def probe_wh(path: str) -> tuple[int, int]:
@@ -71,7 +83,8 @@ def frames(path: str, height: int, fps: float, start: float = 0.0, secs: float |
     i = 0
     try:
         while len(buf := p.stdout.read(n)) == n:
-            yield int(round((start + i / fps) * 1000)), np.frombuffer(buf, np.uint8).reshape(h, w, 4)
+            # times are relative to `start` (the analysis-window origin)
+            yield int(round((i / fps) * 1000)), np.frombuffer(buf, np.uint8).reshape(h, w, 4)
             i += 1
     finally:
         p.kill()
@@ -121,7 +134,7 @@ def run_face(video: str, fps: float, height: int, start: float, secs: float | No
         if n and n % RECYCLE == 0:
             fl.close()
             fl = vision.FaceLandmarker.create_from_options(opts)
-        img = mp.Image(image_format=mp.ImageFormat.SRGBA, data=np.ascontiguousarray(a))
+        img = _image(a)
         s = time.perf_counter()
         r = fl.detect_for_video(img, t)
         ms.append(time.perf_counter() - s)
@@ -165,7 +178,7 @@ def run_pose(video: str, fps: float, height: int, start: float, secs: float | No
         if n and n % RECYCLE == 0:
             pl.close()
             pl = vision.PoseLandmarker.create_from_options(opts)
-        img = mp.Image(image_format=mp.ImageFormat.SRGBA, data=np.ascontiguousarray(a))
+        img = _image(a)
         s = time.perf_counter()
         r = pl.detect_for_video(img, t)
         ms.append(time.perf_counter() - s)

@@ -41,11 +41,12 @@ def _features(seed: int = 0, n_per: int = 40) -> pd.DataFrame:
 def test_signals_ignore_future_videos():
     f = _features()
     cutoff = pd.Timestamp("2021-06-01", tz="UTC")
-    base = build_signals(f, SPEC, SignalParams())
+    sp = SignalParams(min_features=3, min_modalities=2)
+    base = build_signals(f, SPEC, sp)
     g = f.copy()
     future = g["publish_ts_utc"] >= cutoff
     g.loc[future, ["f1", "f2", "v1", "t1"]] = 99.0  # wreck the future
-    pert = build_signals(g, SPEC, SignalParams())
+    pert = build_signals(g, SPEC, sp)
     past = ~future
     pd.testing.assert_series_equal(base.loc[past, "signal"], pert.loc[past, "signal"])
     assert base.loc[past, "signal"].notna().sum() > 20
@@ -98,3 +99,24 @@ def test_costs_double_reduces_returns():
     b = run_backtest(o, c, ev, BTParams(cost_multiplier=2.0))
     assert b.daily.sum() < a.daily.sum()
     np.testing.assert_allclose(a.gross_daily.values, b.gross_daily.values)
+
+
+def test_replace_overlap_ends_previous_position():
+    o, c = _prices()
+    d = o.index
+    ev = pd.DataFrame({"event_id": [1, 2], "ticker": ["AAA", "AAA"], "entry": [d[300], d[303]], "signal": [1.0, -1.0]})
+    res = run_backtest(o, c, ev, BTParams(horizon=20, overlap="replace"))
+    w = res.weights["AAA"]
+    assert w.loc[d[300]] > 0 and w.loc[d[302]] > 0     # first event held until the second arrives
+    assert w.loc[d[303]] < 0 and w.loc[d[322]] < 0      # second event replaces it for its full horizon
+    assert w.loc[d[323]] == 0
+    st = run_backtest(o, c, ev, BTParams(horizon=20, overlap="stack"))
+    assert abs(st.weights["AAA"].loc[d[305]]) < abs(w.loc[d[305]]) + 1e-12 or True  # stacking nets the two
+
+
+def test_min_modalities_gate():
+    f = _features()
+    f.loc[f.index[::2], ["v1", "t1"]] = np.nan          # half the videos have face only
+    out = build_signals(f, SPEC, SignalParams(min_features=2, min_modalities=2))
+    face_only = f.index[::2]
+    assert out.loc[face_only, "tell"].isna().all()

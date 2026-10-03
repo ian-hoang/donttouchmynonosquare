@@ -28,13 +28,14 @@ VIS = ROOT / "data" / "cache" / "vision"
 AUD = ROOT / "data" / "cache" / "audio"
 LOCK = ROOT / "data" / "cache" / "locks"
 PY = sys.executable
+# HiPerGator's ffmpeg has no TLS, so there we download the whole (small, 360p) file and cut locally.
+SECTIONS = os.environ.get("PF_SECTIONS", "1") == "1"
 
 
 def _yt(video_id: str, fmt: str, out: Path) -> Path | None:
     import yt_dlp
 
     opts = {"format": fmt, "outtmpl": str(out) + ".%(ext)s", "quiet": True, "no_warnings": True,
-            "download_ranges": yt_dlp.utils.download_range_func(None, [(WIN_START, WIN_START + WIN_SECS)]),
             "force_keyframes_at_cuts": False, "noplaylist": True, "retries": 3, "socket_timeout": 30,
             "concurrent_fragment_downloads": 4,
     }
@@ -44,6 +45,8 @@ def _yt(video_id: str, fmt: str, out: Path) -> Path | None:
     if client != "default":
         opts["extractor_args"] = {"youtube": {"player_client": [client]}}
     opts["merge_output_format"] = "mp4"
+    if SECTIONS:  # ffmpeg with TLS (Mac): fetch only the analysis window
+        opts["download_ranges"] = yt_dlp.utils.download_range_func(None, [(WIN_START, WIN_START + WIN_SECS)])
     with yt_dlp.YoutubeDL(opts) as ydl:
         ydl.download([f"https://www.youtube.com/watch?v={video_id}"])
     hits = sorted(out.parent.glob(out.name + ".*"))
@@ -57,6 +60,8 @@ def process(video_id: str) -> dict:
     if done.exists() and (AUD / f"{video_id}.flac").exists():
         return {"video_id": video_id, "status": "cached"}
     lock = LOCK / f"{video_id}.lock"
+    if lock.exists() and time.time() - lock.stat().st_mtime > 3600:   # stale lock from a crashed worker
+        lock.unlink(missing_ok=True)
     try:
         fd = os.open(lock, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
         os.close(fd)
@@ -70,15 +75,18 @@ def process(video_id: str) -> dict:
         apath = vpath
         if vpath is None:
             raise RuntimeError("download failed")
+        t0 = 0 if SECTIONS else WIN_START          # where the analysis window starts inside the file
         r = subprocess.run([PY, str(ROOT / "pipeline" / "vision.py"), str(vpath), str(VIS / video_id),
-                            "--start", "0", "--secs", str(WIN_SECS)], capture_output=True, text=True, timeout=1800)
+                            "--start", str(t0), "--secs", str(WIN_SECS)], capture_output=True, text=True, timeout=1800)
         if r.returncode != 0:
             raise RuntimeError("vision: " + r.stderr[-300:])
-        subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-i", str(apath), "-t", str(WIN_SECS),
-                        "-ac", "1", "-ar", "16000", str(AUD / f"{video_id}.flac")], check=True)
+        subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-ss", str(t0), "-i", str(apath), "-t", str(WIN_SECS),
+                        "-ac", "1", "-ar", "16000", "-f", "flac", str(AUD / f"{video_id}.flac.part")], check=True)
+        (AUD / f"{video_id}.flac.part").rename(AUD / f"{video_id}.flac")   # atomic: readers never see a partial file
         try:
-            from transcribe import captions_words
-            captions_words(video_id)
+            if os.environ.get("PF_CAPTIONS", "1") == "1":   # off on HiPerGator (YouTube 429s); Whisper there
+                from transcribe import captions_words
+                captions_words(video_id)
         except Exception as e:  # captions are optional (whisper/scribe fallback later)
             print(f"[{video_id}] captions: {str(e)[:100]}")
         return {"video_id": video_id, "status": "ok", "secs": round(time.time() - t0, 1)}
