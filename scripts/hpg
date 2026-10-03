@@ -1,0 +1,3 @@
+#!/bin/sh
+# Run a command on HiPerGator over the user's already-authenticated SSH master connection.
+exec ssh -o ControlPath="$HOME/.ssh/cm-hpg" -o BatchMode=yes ojasvamishra@hpg.rc.ufl.edu "$@"

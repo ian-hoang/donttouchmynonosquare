@@ -24,8 +24,11 @@ Host hpg
    master connection persists for 18h). After that, `ssh hpg <command>` and `rsync ... hpg:` run without
    prompting, which is how the pipeline drives the cluster.
 
-3. Tell Claude the SLURM account / QOS the hackathon gave you (`showAssoc $USER` or
-   `sacctmgr show assoc user=$USER format=account,qos` prints it).
+3. Hackathon allocation (UF Research Computing email, 2026-10-01): user `ojasvamishra`, group/account
+   **`ai-workshop`** (`--account=ai-workshop --qos=ai-workshop`), storage under `/blue/ai-workshop/`.
+   The group shares **250 NCUs, 5 GPUs and 2 TB of Blue storage across all participants**. We request at
+   most 48 cores and 1 GPU at a time, cap wall time, and delete media as soon as it is processed.
+   The HiPerGator New User Training is mandatory before first use.
 
 ## What the pipeline does on HPG
 ```

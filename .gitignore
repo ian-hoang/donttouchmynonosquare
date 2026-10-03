@@ -19,8 +19,13 @@ data/cache/
 *.dbn
 *.dbn.zst
 .massive_cache/
-models/*.task
-models/*.onnx
+models/
 
 # downloaded market data (recreate with: python data/download.py)
 data/market/*.parquet
+
+# research scratch + caches
+.scratch/
+data/cache/
+data/media/
+*.flac
