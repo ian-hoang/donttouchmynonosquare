@@ -75,12 +75,12 @@ def process(video_id: str) -> dict:
         apath = vpath
         if vpath is None:
             raise RuntimeError("download failed")
-        t0 = 0 if SECTIONS else WIN_START          # where the analysis window starts inside the file
+        w0 = 0 if SECTIONS else WIN_START          # where the analysis window starts inside the file
         r = subprocess.run([PY, str(ROOT / "pipeline" / "vision.py"), str(vpath), str(VIS / video_id),
-                            "--start", str(t0), "--secs", str(WIN_SECS)], capture_output=True, text=True, timeout=1800)
+                            "--start", str(w0), "--secs", str(WIN_SECS)], capture_output=True, text=True, timeout=1800)
         if r.returncode != 0:
             raise RuntimeError("vision: " + r.stderr[-300:])
-        subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-ss", str(t0), "-i", str(apath), "-t", str(WIN_SECS),
+        subprocess.run(["ffmpeg", "-v", "error", "-nostdin", "-y", "-ss", str(w0), "-i", str(apath), "-t", str(WIN_SECS),
                         "-ac", "1", "-ar", "16000", "-f", "flac", str(AUD / f"{video_id}.flac.part")], check=True)
         (AUD / f"{video_id}.flac.part").rename(AUD / f"{video_id}.flac")   # atomic: readers never see a partial file
         try:

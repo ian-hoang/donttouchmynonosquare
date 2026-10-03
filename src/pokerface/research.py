@@ -355,6 +355,122 @@ def runup_control(ev: pd.DataFrame, cars: pd.DataFrame, mkt: Market, horizon: in
             "corr_s_runup": float(d["s"].corr(d["runup"]))}
 
 
+def volatility_mechanism(ev: pd.DataFrame, mkt: Market, horizon: int = 20, pre: int = 60, hedge: str = "SPY") -> dict:
+    """Pre-registered prediction 6: high TELL predicts higher subsequent idiosyncratic volatility.
+    y = log(RV_idio[entry, entry+h-1] / RV_idio[entry-pre, entry-1]); residuals use the pre-window beta vs SPY.
+    OLS of y on TELL with CEO-clustered standard errors, plus a rank correlation."""
+    import statsmodels.api as sm
+
+    r = mkt.close.pct_change()
+    pos = {d: i for i, d in enumerate(mkt.close.index)}
+    ys, tells, ceos = [], [], []
+    for e in ev.itertuples(index=False):
+        i0 = pos.get(e.entry)
+        if i0 is None or i0 < pre + 5 or i0 + horizon >= len(r) or e.ticker not in r or not np.isfinite(e.tell):
+            continue
+        y_pre, x_pre = r[e.ticker].values[i0 - pre:i0], r[hedge].values[i0 - pre:i0]
+        m = np.isfinite(y_pre) & np.isfinite(x_pre)
+        if m.sum() < 40:
+            continue
+        b = np.cov(y_pre[m], x_pre[m])[0, 1] / np.var(x_pre[m], ddof=1)
+        res_pre = y_pre[m] - b * x_pre[m]
+        y_post, x_post = r[e.ticker].values[i0:i0 + horizon], r[hedge].values[i0:i0 + horizon]
+        mp = np.isfinite(y_post) & np.isfinite(x_post)
+        res_post = y_post[mp] - b * x_post[mp]
+        if res_pre.std() <= 0 or res_post.std() <= 0:
+            continue
+        ys.append(np.log(res_post.std() / res_pre.std()))
+        tells.append(e.tell)
+        ceos.append(e.ceo_id)
+    d = pd.DataFrame({"y": ys, "tell": tells, "ceo": ceos})
+    if len(d) < 30:
+        return {"n": int(len(d))}
+    fit = sm.OLS(d["y"], sm.add_constant(d[["tell"]])).fit(cov_type="cluster", cov_kwds={"groups": pd.factorize(d["ceo"])[0]})
+    q = pd.qcut(d["tell"].rank(method="first"), 3, labels=["low", "mid", "high"])
+    return {"n": int(len(d)), "beta_tell": float(fit.params["tell"]), "t_tell_ceo_clustered": float(fit.tvalues["tell"]),
+            "spearman": float(sps.spearmanr(d["tell"], d["y"]).statistic),
+            "mean_log_rv_ratio_by_tell_tercile": d.groupby(q, observed=True)["y"].mean().round(4).to_dict()}
+
+
+def claims_analysis(ev: pd.DataFrame, cars: pd.DataFrame, horizon: int, seed: int = 5) -> dict:
+    """EXPLORATORY (not pre-registered): what the CEO says (LLM labels on masked transcripts) x how stressed
+    they sound (TELL). Event-level 20-day beta-hedged CAR by denial presence and by denial x TELL tercile, with
+    CEO-clustered bootstrap CIs. Labels: data/features/utterance_labels.csv."""
+    p = ROOT / "data" / "features" / "utterance_labels.csv"
+    if not p.exists():
+        return {"available": False}
+    lab = pd.read_csv(p, dtype={"video_id": str})
+    first = ev["video_ids"].str.split(",").str[0]
+    d = ev.assign(video_id=first.values, car=cars[f"car_{horizon}"].values).merge(lab, on="video_id", how="inner")
+    if len(d) < 40:
+        return {"available": True, "n": int(len(d))}
+    d["has_denial"] = d["denials"] > 0
+    d["tell_t"] = pd.qcut(d["tell"].rank(method="first"), 3, labels=["low", "mid", "high"])
+    rng = np.random.default_rng(seed)
+
+    def ci(x: pd.DataFrame) -> list:
+        g = [v["car"].values for _, v in x.groupby("ceo_id")]
+        if len(g) < 3:
+            return [float("nan"), float("nan")]
+        b = [np.concatenate([g[i] for i in rng.integers(len(g), size=len(g))]).mean() for _ in range(2000)]
+        return [float(np.quantile(b, 0.025)), float(np.quantile(b, 0.975))]
+
+    out = {"available": True, "n": int(len(d)), "share_with_denial": float(d["has_denial"].mean()),
+           "leak_rate_speaker_identifiable": float(d["speaker_identifiable"].astype(str).str.lower().eq("true").mean())}
+    for k, sub in {"denial": d[d["has_denial"]], "no_denial": d[~d["has_denial"]],
+                   "denial_high_tell": d[d["has_denial"] & (d["tell_t"] == "high")],
+                   "denial_low_tell": d[d["has_denial"] & (d["tell_t"] == "low")],
+                   "promises_high_tell": d[(d["forward_promises"] > d["forward_promises"].median()) & (d["tell_t"] == "high")],
+                   "promises_low_tell": d[(d["forward_promises"] > d["forward_promises"].median()) & (d["tell_t"] == "low")]}.items():
+        out[f"car_{k}"] = float(sub["car"].mean()) if len(sub) else float("nan")
+        out[f"n_{k}"] = int(len(sub))
+        out[f"ci_{k}"] = ci(sub) if len(sub) >= 10 else [float("nan"), float("nan")]
+    return out
+
+
+STRESS_WINDOWS = {
+    "2018Q4 selloff": ("2018-10-01", "2018-12-24"),
+    "COVID crash": ("2020-02-19", "2020-03-23"),
+    "2022 bear market": ("2022-01-03", "2022-10-12"),
+    "SVB crisis": ("2023-03-08", "2023-03-24"),
+    "Aug-2024 vol spike": ("2024-07-16", "2024-08-07"),
+}
+
+
+def stress_table(r: pd.Series, mkt: Market) -> pd.DataFrame:
+    spy = mkt.open["SPY"].shift(-1) / mkt.open["SPY"] - 1
+    rows = []
+    for name, (a, b) in STRESS_WINDOWS.items():
+        m = (r.index >= pd.Timestamp(a)) & (r.index <= pd.Timestamp(b))
+        if not m.any():
+            continue
+        rs, sp = r[m].fillna(0), spy.reindex(r.index)[m].fillna(0)
+        rows.append({"window": name, "start": a, "end": b, "strategy": float((1 + rs).prod() - 1),
+                     "spy": float((1 + sp).prod() - 1), "strategy_max_dd": S.max_drawdown(rs),
+                     "days_with_position": int((rs != 0).sum())})
+    return pd.DataFrame(rows)
+
+
+def spread_estimates(mkt: Market, tickers: list[str], start: str, end: str) -> pd.DataFrame:
+    """Abdi & Ranaldo (2017) close-high-low effective spread estimator from daily bars (no quote data needed):
+    s^2 = 4 E[(c_t - eta_t)(c_t - eta_{t+1})], eta = (log high + log low) / 2, monthly windows, negatives set to 0."""
+    px = pd.read_parquet(ROOT / "data" / "market" / f"prices_{mkt.source}.parquet")
+    out = []
+    for t in tickers:
+        if t not in px["Close"]:
+            continue
+        h, l, c = (np.log(px[f][t]) for f in ("High", "Low", "Close"))
+        sl = slice(pd.Timestamp(start), pd.Timestamp(end))
+        h, l, c = h.loc[sl], l.loc[sl], c.loc[sl]
+        eta = (h + l) / 2
+        prod = (c - eta) * (c - eta.shift(-1))
+        monthly = prod.groupby(prod.index.to_period("M")).mean()
+        s = np.sqrt((4 * monthly).clip(lower=0))
+        out.append({"ticker": t, "effective_spread_bps_median": float(s.median() * 1e4),
+                    "half_spread_bps_median": float(s.median() * 1e4 / 2)})
+    return pd.DataFrame(out)
+
+
 # ----------------------------------------------------------------------------- variants log (DSR trial count)
 
 def log_variant(name: str, cfg_hash: str, summ: dict, sample: str = "IS") -> None:

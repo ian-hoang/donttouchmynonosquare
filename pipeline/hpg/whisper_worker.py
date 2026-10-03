@@ -22,7 +22,7 @@ OUT = ROOT / "data" / "cache" / "transcripts"
 
 
 def stage_a_running() -> bool:
-    r = subprocess.run(["squeue", "--me", "-h", "-n", "pf-stageA"], capture_output=True, text=True)
+    r = subprocess.run(["squeue", "--me", "-h", "-n", "pf-stageA,pf-poll"], capture_output=True, text=True)
     return bool(r.stdout.strip())
 
 

@@ -34,30 +34,38 @@ def transcript(video_id: str) -> tuple[list[dict], str, tuple[float, float]]:
     return [], "none", (0, WIN_SECS)
 
 
+def _ident(v: str):
+    return v, identity_pass(v, VIS / f"{v}.face.parquet")
+
+
+def _assemble(args):
+    v, ref = args
+    words, backend, window = transcript(v)
+    try:
+        return assemble_video(v, np.asarray(ref) if ref is not None else None, VIS,
+                              AUD / f"{v}.flac" if (AUD / f"{v}.flac").exists() else None, words, backend, window)
+    except Exception as e:
+        return {"video_id": v, "qc_fail": f"assemble_error: {str(e)[:120]}"}
+
+
 def main() -> None:
+    import os
+    from concurrent.futures import ProcessPoolExecutor
+
+    os.environ.setdefault("OMP_NUM_THREADS", "2")
+    workers = int(os.environ.get("PF_ASSEMBLE_WORKERS", "4"))
     man = pd.read_csv(ROOT / "data" / "manifest" / "videos.csv", dtype={"video_id": str})
     ready = [v for v in man["video_id"] if (VIS / f"{v}.vision.json").exists() and (VIS / f"{v}.face.parquet").exists()]
     print(f"{len(ready)} of {len(man)} videos have vision output", flush=True)
-    ident = {}
-    for i, v in enumerate(ready):
-        ident[v] = identity_pass(v, VIS / f"{v}.face.parquet")
-        if (i + 1) % 50 == 0:
-            print(f"  identity {i + 1}/{len(ready)}", flush=True)
+    with ProcessPoolExecutor(max_workers=workers) as ex:
+        ident = dict(ex.map(_ident, ready, chunksize=4))
+    print(f"  identity done for {len(ident)} videos", flush=True)
     video_ceo = dict(zip(man["video_id"], man["ceo_id"]))
     refs = build_references(ident, video_ceo)
     (CACHE / "identity" / "ceo_references.json").write_text(json.dumps(refs))
     print("CEO references:", sorted(refs), flush=True)
-    rows = []
-    for v in ready:
-        words, backend, window = transcript(v)
-        ref = refs.get(video_ceo[v])
-        try:
-            row = assemble_video(v, np.asarray(ref) if ref is not None else None, VIS,
-                                 AUD / f"{v}.flac" if (AUD / f"{v}.flac").exists() else None,
-                                 words, backend, window)
-        except Exception as e:
-            row = {"video_id": v, "qc_fail": f"assemble_error: {str(e)[:120]}"}
-        rows.append(row)
+    with ProcessPoolExecutor(max_workers=workers) as ex:
+        rows = list(ex.map(_assemble, [(v, refs.get(video_ceo[v])) for v in ready], chunksize=4))
     feats = man.merge(pd.DataFrame(rows), on="video_id", how="inner")
     out = ROOT / "data" / "features" / "video_features.csv"
     out.parent.mkdir(parents=True, exist_ok=True)

@@ -168,6 +168,22 @@ def case_frame(ceo, ev_all, mkt):
     return pd.concat([out.reset_index(drop=True), px], axis=1)
 
 
+def corpus_funnel(feat_raw: pd.DataFrame, qc: dict, ev_all: pd.DataFrame) -> dict:
+    m = ROOT / "data" / "manifest"
+    n = lambda f: int(len(pd.read_csv(m / f, usecols=[0]))) if (m / f).exists() else None
+    lab = pd.read_csv(m / "curation_labels.csv", dtype={"video_id": str})
+    return {"search_hits_round1": n("candidates_raw.csv"),
+            "search_hits_round2": n("candidates_years.csv"),
+            "rule_prefiltered": n("candidates_for_curation.csv"),
+            "agent_curated_keep": int(lab["keep"].astype(str).str.lower().eq("true").sum()),
+            "dated_in_tenure_window": n("videos.csv"),
+            "processed": int(len(feat_raw)),
+            "identity_qc_pass": qc["after_identity_qc"],
+            "events_IS": int((ev_all["sample"] == "IS").sum()),
+            "events_OOS": int((ev_all["sample"] == "OOS").sum()),
+            "ceos_with_events": int(ev_all["ceo_id"].nunique())}
+
+
 def oos_lock_check(cfg_hash: str, relock: str | None) -> str:
     p = RES / "oos_log.md"
     if p.exists():
@@ -221,6 +237,8 @@ def main() -> None:
     ev_tests = R.event_tests(ev_all[is_mask], cars[is_mask], H)
     decay = R.alpha_decay(ev_all[is_mask], cars[is_mask])
     runup = R.runup_control(ev_all[is_mask], cars[is_mask], mkt, H)
+    vol_mech = R.volatility_mechanism(ev_all[is_mask], mkt, horizon=H)
+    claims = R.claims_analysis(ev_all[is_mask], cars[is_mask], H)          # exploratory, labeled as such
     spy = mkt.open["SPY"].shift(-1) / mkt.open["SPY"] - 1
     extra = {"calmar": S.calmar(net), "information_ratio_vs_spy": S.information_ratio(net, spy),
              **S.stationary_bootstrap_sharpe(net, n_boot=500 if a.fast else 2000), **R.tail_stats(net),
@@ -248,6 +266,9 @@ def main() -> None:
         add(f"horizon_{h}", ev_all, p.with_(horizon=h))
     add("hedge_QQQ", ev_all, p.with_(hedge="QQQ"))
     add("earnings_included", ev_incl, p)
+    # benchmarks: the unconditional interview effect (Kim & Meschke reversal) with no TELL information
+    add("benchmark_short_every_interview", ev_all.assign(signal=-1.0), p)
+    add("benchmark_long_every_interview", ev_all.assign(signal=1.0), p)
     short_only = ev_all.assign(signal=ev_all["signal"].clip(upper=0))
     add("short_only", short_only, p)
     add("stack_overlap", ev_all, p.with_(overlap="stack"))
@@ -265,13 +286,15 @@ def main() -> None:
 
     # ---------------- nulls
     nd = 60 if a.fast else 300
-    nulls = {"within-CEO permutation": R.permutation_null(ev_all, mkt, p, "IS", strat, n=nd),
-             "random event dates": R.pseudo_event_null(ev_all, mkt, p, "IS", strat, n=nd)}
+    nulls = {"permutation": R.permutation_null(ev_all, mkt, p, "IS", strat, n=nd),
+             "random_dates": R.pseudo_event_null(ev_all, mkt, p, "IS", strat, n=nd)}
     trials, var_sr = R.n_trials()
     dsr = S.deflated_sharpe(net, trials, var_sr)
     by_year = (1 + net).groupby(net.index.year).prod() - 1
     cap = R.capacity(prim.result, mkt, prim.summary["sharpe"], prim.summary["gross_sharpe"],
                      prim.summary["ann_vol"], p.cost_bps_stock)
+    stress = R.stress_table(net, mkt)
+    spreads = R.spread_estimates(mkt, sorted(ev_all["ticker"].unique()) + ["SPY"], s["sample_start"], s["is_end"])
     per_ceo = (prim.result.events[prim.result.events["sized"]]
                .merge(ev_all[["event_id", "ceo_id"]], on="event_id")
                .groupby("ceo_id").agg(n=("event_id", "size"), pnl=("pnl_contrib", "sum"),
@@ -301,16 +324,18 @@ def main() -> None:
     figures({"summary": prim.summary, "net": net, "gross": gross, "net_x2": net_x2}, ev_all, cars, decay, nulls,
             robust, {c: case_frame(c, ev_all, mkt) for c in strat["case_studies"]}, oos_daily)
     out = {"config_hash": cfg, "git": git_hash(), "price_source": mkt.source, "price_fingerprint": mkt.fingerprint,
-           "qc": qc, "events": {"total": int(len(ev_all)), "IS": int(is_mask.sum()),
+           "funnel": corpus_funnel(feat_raw, qc, ev_all), "qc": qc, "events": {"total": int(len(ev_all)), "IS": int(is_mask.sum()),
                                 "OOS": int((ev_all["sample"] == "OOS").sum()),
                                 "excluded_near_earnings": int(len(ev_incl) - len(ev_all))},
            "primary_IS": prim.summary, "costs_x2_IS": x2.summary, "extra": extra, "event_tests_IS": ev_tests,
-           "runup_control": runup, "folk_placebo": {"summary": folk_eval.summary, "event_tests": folk_tests},
-           "dsr": dsr, "capacity": cap, "nulls": {k: {"mean": float(v.mean()), "p_ge_actual": float((v >= prim.summary["sharpe"]).mean())}
+           "runup_control": runup, "volatility_mechanism_IS": vol_mech, "claims_exploratory_IS": claims, "folk_placebo": {"summary": folk_eval.summary, "event_tests": folk_tests},
+           "dsr": dsr, "capacity": cap, "stress": stress.to_dict("records"), "spreads": spreads.to_dict("records"), "nulls": {k: {"mean": float(v.mean()), "p_ge_actual": float((v >= prim.summary["sharpe"]).mean())}
                                                  for k, v in nulls.items()},
            "by_year": by_year.round(5).to_dict(), "oos": oos_summary}
     (RES / "summary.json").write_text(json.dumps(out, indent=2, default=str))
     robust.to_csv(RES / "robustness.csv", index=False)
+    stress.to_csv(RES / "stress_windows.csv", index=False)
+    spreads.to_csv(RES / "spread_estimates.csv", index=False)
     decay.to_csv(RES / "alpha_decay.csv", index=False)
     per_ceo.to_csv(RES / "per_ceo.csv")
     ev_all.drop(columns=["video_ids"]).assign(**cars[["car_1", "car_5", f"car_{H}"]]).to_csv(RES / "events.csv", index=False)
@@ -339,11 +364,14 @@ def main() -> None:
            f"Event IC (rank, {H}d): {fmt(ev_tests.get('ic_ic'), nd=3)} | tercile spread: {fmt(ev_tests.get('spread_long_minus_short'), True)} "
            f"CEO-clustered CI {ev_tests.get('spread_ci_ceo')} | hit rate {fmt(ev_tests.get('hit_rate'), True)}",
            f"Run-up control: beta_S t = {fmt(runup.get('t_s'))}, corr(S, run-up) = {fmt(runup.get('corr_s_runup'))}",
+           f"Volatility mechanism (pred. 6): beta {fmt(vol_mech.get('beta_tell'), nd=3)}, CEO-clustered t = {fmt(vol_mech.get('t_tell_ceo_clustered'))}, n = {vol_mech.get('n')}",
            f"FOLK placebo Sharpe: {fmt(folk_eval.summary['sharpe'])} | IC {fmt(folk_tests.get('ic_ic'), nd=3)}",
            f"Nulls: " + ", ".join(f"{k} p = {v['p_ge_actual']:.2f}" for k, v in out["nulls"].items()),
            f"Capacity (net Sharpe = half gross): ${cap.get('aum_net_sharpe_half_gross', float('nan'))/1e6:,.0f}M",
            "", "## Robustness (in-sample, all logged as trials)", robust.round(3).to_markdown(index=False),
            "", "## Alpha decay", decay.round(3).to_markdown(index=False),
+           "", "## Stress windows", stress.round(4).to_markdown(index=False),
+           "", "## Cost justification: Abdi-Ranaldo effective spreads (bps), IS period", spreads.round(2).to_markdown(index=False),
            "", "## By year (net)", by_year.round(4).to_frame("return").to_markdown(),
            "", "## Per CEO", per_ceo.round(4).to_markdown()]
     (RES / "summary.md").write_text("\n".join(md))
