@@ -1,7 +1,7 @@
 # TASKS
 
 > **STATUS UPDATE (Claude, 2026-10-03 01:00 ET).** Much of the table below is stale. Current state:
-> - Pre-registration DONE: `HYPOTHESIS.md`, `docs/RULEBOOK.md`, `config/signal_spec.json`, `config/strategy.json` committed in `dc55459` before any real-returns backtest. Post-registration changes: `docs/DEVIATIONS.md`.
+> - Pre-registration DONE: `HYPOTHESIS.md`, `docs/RULEBOOK.md`, `config/signal_spec.json`, `config/strategy.json` committed in `6fe0912` before any real-returns backtest. Post-registration changes: `docs/DEVIATIONS.md`.
 > - Decision D1 resolved: multi-CEO (20) primary, with Karp + Musk as pre-committed case studies.
 > - Corpus DONE: 2 search rounds, 5,531 candidates labeled by curation agents, 1,833 curated in-tenure interviews (1,382 in-sample / 451 OOS).
 > - HiPerGator: Slurm arrays running (`pipeline/hpg/`). YouTube bot-checks the cluster's IPs, so the Mac downloads (`pipeline/feeder.py`) and HPG computes (`stage_a_poll.py`, regular + burst QOS); Whisper large-v3-turbo on L4/B200 GPUs.

@@ -1,4 +1,4 @@
-# Deviations from the pre-registration (dc55459)
+# Deviations from the pre-registration (6fe0912)
 
 Every change made after the pre-registration commit is listed here with its time, reason, and whether
 it could have been informed by returns. The quant note summarizes this file.

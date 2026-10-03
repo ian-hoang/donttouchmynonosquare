@@ -3,7 +3,7 @@
 **Gator Quant Hacks 2026 · Systematic Trading track.** We measure facial, vocal and verbal stress in public
 CEO interviews, relative to each CEO's own baseline, and test whether it predicts the stock's beta-hedged
 return over the next 20 trading days. The hypothesis, signal weights and every trading rule were committed
-**before any backtest on real returns** ([`HYPOTHESIS.md`](HYPOTHESIS.md), commit `dc55459`).
+**before any backtest on real returns** ([`HYPOTHESIS.md`](HYPOTHESIS.md), commit `6fe0912`).
 
 > We do not claim to detect lies. Human lie detection from demeanor is about 54% accurate (Bond & DePaulo
 > 2006). We measure behavioral stress and incongruence against a person's own history, using only cues with
@@ -64,7 +64,7 @@ data/features/video_features.csv ─► baseline z-scores (CEO's own last 30 int
 
 | Track rule | How it is enforced |
 |---|---|
-| Hypothesis before results | `HYPOTHESIS.md`, `config/*.json` committed in `dc55459` before any real-returns backtest |
+| Hypothesis before results | `HYPOTHESIS.md`, `config/*.json` committed in `6fe0912` before any real-returns backtest |
 | No lookahead | Signals use only strictly earlier videos; entry is the first open ≥ 2 h after upload; betas and vols use strictly earlier sessions. `tests/test_no_lookahead.py` wrecks all future data and asserts nothing earlier changes, and `run_all.py` refuses to run if it fails |
 | Out-of-sample = last 2 years, evaluated once | `config/strategy.json`; `run_all.py --unlock-oos` appends to `results/oos_log.md` and refuses re-tuning without a disclosed `--relock` reason |
 | Net of costs, and costs ×2 | 5 bps/side stocks, 1 bp SPY, 30 bps/yr borrow; costs ×2 in every table; Abdi-Ranaldo spread estimates justify the level |
