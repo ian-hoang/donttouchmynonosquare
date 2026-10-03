@@ -1,0 +1,22 @@
+ceo_id,name,ticker,tenure_start,tenure_end,listed_start,search_name
+narayen,Shantanu Narayen,ADBE,2007-12-01,,1986-08-20,Shantanu Narayen
+mcdermott,Bill McDermott,NOW,2019-11-15,,2012-06-29,Bill McDermott
+robbins,Chuck Robbins,CSCO,2015-07-26,,1990-02-16,Chuck Robbins
+bastian,Ed Bastian,DAL,2016-05-02,,2007-05-03,Ed Bastian
+niccol_cmg,Brian Niccol,CMG,2018-03-05,2024-08-13,2006-01-26,Brian Niccol
+niccol_sbux,Brian Niccol,SBUX,2024-09-09,,1992-06-26,Brian Niccol
+chesky,Brian Chesky,ABNB,2008-06-27,,2020-12-10,Brian Chesky
+tenev,Vlad Tenev,HOOD,2013-11-22,,2021-07-29,Vlad Tenev
+green,Jeff Green,TTD,2009-11-01,,2016-09-21,Jeff Green
+ek,Daniel Ek,SPOT,2006-04-23,2026-01-01,2018-04-03,Daniel Ek
+xu,Tony Xu,DASH,2013-05-01,,2020-12-09,Tony Xu
+lawson,Jeff Lawson,TWLO,2008-04-01,2024-01-08,2016-06-23,Jeff Lawson
+schulman,Dan Schulman,PYPL,2015-07-17,2023-09-27,2015-07-20,Dan Schulman
+bancel,Stephane Bancel,MRNA,2011-10-01,,2018-12-07,Stephane Bancel
+spiegel,Evan Spiegel,SNAP,2012-05-01,,2017-03-02,Evan Spiegel
+prince,Matthew Prince,NET,2009-07-01,,2019-09-13,Matthew Prince
+baszucki,David Baszucki,RBLX,2004-03-01,,2021-03-10,David Baszucki
+fink,Larry Fink,BLK,1988-03-09,,1999-10-01,Larry Fink
+dell,Michael Dell,DELL,2016-09-07,,2018-12-28,Michael Dell
+arora,Nikesh Arora,PANW,2018-06-06,,2012-07-20,Nikesh Arora
+kurtz,George Kurtz,CRWD,2011-08-01,,2019-06-12,George Kurtz
