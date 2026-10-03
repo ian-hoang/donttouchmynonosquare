@@ -17,7 +17,7 @@ import pandas as pd
 
 LAST, SNAPSHOT, TOB, MBP, BAD_RECV, BAD_BOOK = 128, 32, 64, 16, 8, 4
 FLOWS = ("buy_volume", "sell_volume", "trade_volume", "bid_add", "ask_add",
-         "bid_cancel", "ask_cancel", "bid_priority_cancel", "ask_priority_cancel")
+         "bid_cancel", "ask_cancel", "bid_priority_cancel", "ask_priority_cancel", "unattributed_fill_volume")
 
 
 @dataclass(slots=True)
@@ -83,8 +83,12 @@ class Book:
                 flow["buy_volume" if side == "B" else "sell_volume"] = size
         elif action == "F":
             if oid not in self.orders:
-                raise ValueError("Fill for unknown resting order: incomplete MBO history")
-            self.filled[oid] += size
+                # Trade Summary can attribute a fill to a transient/non-displayed
+                # order that never has an A/M/C in the displayed book. F never
+                # creates an order or another trade. Log and quarantine its bar.
+                flow["unattributed_fill_volume"] += size
+            else:
+                self.filled[oid] += size
         elif action == "N":
             pass
         elif action in ("A", "C", "M"):
@@ -252,6 +256,8 @@ def mbo_features_iter(chunks, *, interval="1s", max_quote_age="2s",
                     interrupted = True
                 event_complete = bool(flags & LAST)
                 increments = book.apply(str(action), str(side), float(price), size, oid)
+                if increments.get("unattributed_fill_volume", 0):
+                    interrupted = True
                 if not flags & SNAPSHOT:
                     for key, val in increments.items():
                         pending[key] += val
@@ -292,6 +298,7 @@ def synthetic_features(n=3600, seed=7):
     frame["bid_size"], frame["ask_size"] = rng.integers(20, 100, (2, n))
     for c in FLOWS:
         frame[c] = rng.poisson(3, n).astype(float)
+    frame["unattributed_fill_volume"] = 0.0
     frame["trade_volume"] = frame.buy_volume + frame.sell_volume
     frame["signed_volume"] = frame.buy_volume - frame.sell_volume
     for side in ("bid", "ask"):

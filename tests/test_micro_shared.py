@@ -100,14 +100,41 @@ def test_priority_cancel_is_quantity_ahead_and_size_increase_loses_priority():
     assert book.apply("C", "B", 100, 2, 2)["bid_priority_cancel"] == 2
 
 
-def test_unknown_fills_and_incomplete_streams_fail():
+def test_nondisplayed_fill_never_creates_an_order_but_unknown_cancel_fails():
     book = Book()
-    with pytest.raises(ValueError, match="unknown"):
-        book.apply("F", "A", 100, 1, 123)
+    flow = book.apply("F", "A", 100, 1, 123)
+    assert flow["unattributed_fill_volume"] == 1
+    assert not book.orders
     frame = events([(1.1, "C", "B", 100, 1, 999, LAST),
                     (2.1, "N", "N", np.nan, 0, 0, LAST)])
     with pytest.raises(ValueError, match="unknown"):
         mbo_features(frame)
+
+
+def test_transient_trade_fill_pair_is_logged_without_phantom_order_or_double_volume():
+    frame = events([(1.1, "T", "A", 100, 1, 123, 0),
+                    (1.1, "F", "B", 100, 1, 1, 0),
+                    (1.1, "T", "B", 100, 1, 456, 0),
+                    (1.1, "F", "A", 100, 1, 123, 0),
+                    (1.1, "C", "B", 100, 1, 1, LAST),
+                    (2.1, "N", "N", np.nan, 0, 0, LAST),
+                    (3.1, "N", "N", np.nan, 0, 0, LAST)])
+    features = mbo_features(frame)
+    assert features.trade_volume.iloc[1] == 2
+    assert features.signed_volume.iloc[1] == 0
+    assert features.unattributed_fill_volume.iloc[1] == 1
+    assert not features.valid.iloc[1]
+    assert features.valid.iloc[2]
+    assert features.ask.iloc[2] == 100.25
+    assert features.bid_size.iloc[2] == 9
+    assert features.bid_cancel.sum() == 0
+
+
+def test_unseen_fill_does_not_suppress_later_visible_cancel_for_reused_id():
+    book = Book()
+    book.apply("F", "A", 100.25, 5, 123)
+    book.apply("A", "A", 100.25, 5, 123)
+    assert book.apply("C", "A", 100.25, 5, 123)["ask_cancel"] == 5
 
 
 def test_reset_discards_flows_and_invalidates_whole_reset_bar():

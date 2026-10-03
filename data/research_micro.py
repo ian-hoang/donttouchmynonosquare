@@ -153,12 +153,14 @@ def prepare(config, only=None):
                 yield chunk
 
         frame = mbo_features_iter(chunks(), interval=config["interval"], max_quote_age=config["max_quote_age"])
+        unattributed = float(frame.unattributed_fill_volume.sum())
         frame = frame.tz_convert(config["session_tz"]).between_time(config["session_start"], config["session_end"]).tz_convert("UTC")
         if len(frame) != 3601:
             raise ValueError(f"Expected exactly 3601 opening-hour grid rows, found {len(frame)} on {day}")
         frame.to_csv(target, compression="gzip", index_label="ts_decision")
         info = dict(day=day, source_sha256=checksum(path), feature_sha256=checksum(target),
                     replay_hash=replay_hash, records=records, rows=len(frame), valid_fraction=float(frame.valid.mean()),
+                    unattributed_fill_volume_before_session_filter=unattributed,
                     seconds=round(time.monotonic() - started, 2))
         manifest.write_text(json.dumps(info, indent=2))
         print(json.dumps(info), flush=True)

@@ -98,6 +98,10 @@ Real data has not yet been downloaded or evaluated by these prototypes.
   reductions are excluded too: cancellation weighting is a conservative proxy, not trader identity.
 - Gaps, resets, stale or crossed quotes reset strategy history. Unknown-side trades count in total
   volume, never guessed signed flow. Replay maintains the direct book, not additional implied liquidity.
+  A fill can reference transient/non-displayed liquidity with no visible Add. Such a fill creates
+  no order, trade volume, cancellation volume, or future fill credit; its volume is audited and
+  its completed bar is invalidated. Unknown Cancel/Modify messages still fail closed. This was
+  corrected during the first real-data validation, before any strategy P&L was inspected.
 - `gqh/microengine.py` buys at a later sampled ask and sells at a later sampled bid. It charges spread,
   fees and additional slippage on every side; double-cost stress doubles all three. It never earns
   the price change before entry. It checks displayed size but does not model passive fills, market
