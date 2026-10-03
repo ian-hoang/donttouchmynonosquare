@@ -61,6 +61,39 @@ def worst_month(r: pd.Series) -> float:
     return float(m.min())
 
 
+def calmar(r: pd.Series) -> float:
+    mdd = max_drawdown(r)
+    return float(annualized_return(r) / abs(mdd)) if mdd < 0 else float("nan")
+
+
+def information_ratio(r: pd.Series, benchmark: pd.Series) -> float:
+    """Annualized mean active return over tracking error (strategy minus benchmark)."""
+    a = pd.concat([pd.Series(r), pd.Series(benchmark)], axis=1, join="inner").dropna()
+    if len(a) < 20:
+        return float("nan")
+    act = a.iloc[:, 0] - a.iloc[:, 1]
+    sd = act.std(ddof=1)
+    return float(act.mean() / sd * math.sqrt(TRADING_DAYS)) if sd > 0 else float("nan")
+
+
+def information_coefficient(signal: pd.Series, outcome: pd.Series, groups: pd.Series | None = None) -> dict:
+    """Spearman rank IC between event signals and realized abnormal returns (+ t-stat over groups)."""
+    df = pd.DataFrame({"s": signal.values, "y": outcome.values,
+                       "g": groups.values if groups is not None else 0}).dropna()
+    if len(df) < 10:
+        return {"ic": float("nan"), "n": int(len(df))}
+    ic = float(sps.spearmanr(df["s"], df["y"]).statistic)
+    out = {"ic": ic, "n": int(len(df)), "ic_t_naive": ic * math.sqrt(max(len(df) - 2, 1)) / math.sqrt(max(1 - ic * ic, 1e-12))}
+    if groups is not None:
+        per = [sps.spearmanr(g["s"], g["y"]).statistic for _, g in df.groupby("g") if len(g) >= 8]
+        per = [x for x in per if np.isfinite(x)]
+        if len(per) >= 3:
+            out["ic_mean_by_group"] = float(np.mean(per))
+            out["ic_t_by_group"] = float(np.mean(per) / (np.std(per, ddof=1) / math.sqrt(len(per)))) if np.std(per) > 0 else float("nan")
+            out["n_groups"] = len(per)
+    return out
+
+
 def summarize(r: pd.Series, turnover_per_year: float | None = None, label: str = "") -> dict:
     """The minimum the track asks for: ann. return, vol, Sharpe, max DD, turnover (+ extras)."""
     r = pd.Series(r).dropna()
@@ -74,6 +107,7 @@ def summarize(r: pd.Series, turnover_per_year: float | None = None, label: str =
         "ann_vol": annualized_vol(r),
         "sharpe": sharpe(r),
         "max_drawdown": max_drawdown(r),
+        "calmar": calmar(r),
         "worst_month": worst_month(r),
         "skew": float(sps.skew(r, bias=False)) if len(r) > 2 else float("nan"),
         "kurtosis": float(sps.kurtosis(r, fisher=False, bias=False)) if len(r) > 3 else float("nan"),

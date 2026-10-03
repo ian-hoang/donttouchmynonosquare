@@ -1,0 +1,52 @@
+{
+  "version": "1.0",
+  "modalities": {
+    "face": {
+      "weight": 1.0,
+      "features": [
+        {"name": "fc_chin_raise", "sign": 1, "weight": 0.25, "source": "DePaulo et al. 2003 Psych Bull cue 033 chin raise (AU17): d=+0.25 [0.12, 0.37], k=4"},
+        {"name": "fc_lip_press", "sign": 1, "weight": 0.16, "source": "DePaulo et al. 2003 cue 011 presses lips (AU23/24): d=+0.16 [0.01, 0.30], k=4"},
+        {"name": "fc_pleasant", "sign": -1, "weight": 0.12, "source": "DePaulo et al. 2003 cue 054 facial pleasantness: d=-0.12 [-0.22, -0.02], k=13"},
+        {"name": "fc_gesture_energy", "sign": -1, "weight": 0.085, "source": "Illustrators: mean(|d|) of DePaulo et al. 2003 cue 018 d=-0.14 [-0.24, -0.04], k=16 and Sporer & Schwandt 2007 |d|=0.03 (via Levine 2018 Table 1)"}
+      ]
+    },
+    "voice": {
+      "weight": 1.0,
+      "features": [
+        {"name": "voc_f0_mean_st", "sign": 1, "weight": 0.195, "source": "Pitch: mean(|d|) of DePaulo et al. 2003 cue 063 d=+0.21 [0.08, 0.34], k=12 and Sporer & Schwandt 2006 d=+0.18 (via Levine 2018 Table 1)"},
+        {"name": "voc_jitter", "sign": 1, "weight": 0.087, "source": "Vocal tension, DePaulo et al. 2003 cue 062 d=+0.26 [0.13, 0.39], k=10 (rater impression), split equally over 3 acoustic proxies; the acoustic mapping is an assumption"},
+        {"name": "voc_shimmer_db", "sign": 1, "weight": 0.087, "source": "Vocal tension proxy (see voc_jitter): 0.26/3"},
+        {"name": "voc_hnr_db", "sign": -1, "weight": 0.087, "source": "Vocal tension proxy (see voc_jitter): 0.26/3; lower HNR = rougher, strained voice"},
+        {"name": "voc_response_latency_s", "sign": 1, "weight": 0.115, "source": "Response latency: mean(|d|) of DePaulo et al. 2003 cue 009 d=+0.02 [-0.06, 0.10], k=32 and Sporer & Schwandt 2006 d=+0.21 (via Levine 2018 Table 1)"}
+      ]
+    },
+    "text": {
+      "weight": 1.0,
+      "features": [
+        {"name": "txt_negation", "sign": 1, "weight": 0.15, "source": "Hauch et al. 2015 PSPR Table 1 cue 17 negations (software-coded): g=-0.15 [-0.22, -0.09], k=20 (negative g = more in lies)"},
+        {"name": "txt_third_plural", "sign": 1, "weight": 0.10, "source": "Hauch et al. 2015 Table 1 cue 25 total third-person pronouns: g=-0.10 [-0.16, -0.04], k=26 (distancing); Larcker & Zakolyukina 2012 working-paper sign (+) UNVERIFIED"},
+        {"name": "txt_anxiety", "sign": -1, "weight": 0.07, "source": "Larcker & Zakolyukina 2012 JAR: deceptive CEOs use fewer anxiety words (abstract, VERIFIED); weight = Hauch et al. 2015 cue 18.3 anxiety g=+0.07 (n.s., same direction)"},
+        {"name": "txt_numbers", "sign": -1, "weight": 0.05, "source": "Hauch et al. 2015 cue 33 numbers (software-coded): g=+0.05 [-0.03, 0.13], k=12 (matched operationalization, n.s.); construct support DePaulo et al. 2003 cue 004 details d=-0.30 [-0.38, -0.21], k=24"},
+        {"name": "txt_general_knowledge", "sign": 1, "weight": 0.15, "source": "Larcker & Zakolyukina 2012 JAR: deceptive CEOs and CFOs make more references to general knowledge (abstract, VERIFIED); no meta-analytic d, default 0.15"},
+        {"name": "txt_shareholder_value", "sign": -1, "weight": 0.15, "source": "Larcker & Zakolyukina 2012 JAR: fewer references to shareholder value (abstract, VERIFIED); no meta-analytic d, default 0.15"},
+        {"name": "txt_extreme_positive", "sign": 1, "weight": 0.15, "source": "Larcker & Zakolyukina 2012 JAR: deceptive CEOs use more extreme positive emotion words (abstract, VERIFIED); no meta-analytic d, default 0.15"}
+      ]
+    }
+  },
+  "incongruence": {
+    "verbal_positive": "txt_lm_net_tone",
+    "nonverbal_modality": "face",
+    "weight": 1.0
+  },
+  "excluded_folk_cues": [
+    {"name": "fc_gaze_aversion", "cue": "gaze aversion", "d": 0.03, "ci": [-0.11, 0.16], "k": 6, "source": "DePaulo et al. 2003 cue 028; listed as a non-diagnostic believed cue in Vrij, Hartwig & Granhag 2019 Table 2"},
+    {"name": "fc_blink_per_min", "cue": "blinking", "d": 0.07, "ci": [-0.01, 0.14], "k": 17, "source": "DePaulo et al. 2003 cue 066; Sporer & Schwandt 2007 |d|=0.01"},
+    {"name": "fc_self_touch", "cue": "self-fidgeting / facial fidgeting (self-touch)", "d": -0.01, "ci": [-0.09, 0.08], "k": 18, "source": "DePaulo et al. 2003 cue 068 (facial fidgeting cue 069 d=+0.08 [-0.09, 0.25], k=7); Vrij et al. 2019 Table 2"},
+    {"name": "fc_head_motion", "cue": "head movements (undifferentiated)", "d": -0.02, "ci": [-0.12, 0.08], "k": 14, "source": "DePaulo et al. 2003 cue 045; Sporer & Schwandt 2007 |d|=0.12"},
+    {"name": "fc_smile_frac", "cue": "smiling (undifferentiated)", "d": 0.00, "ci": [-0.07, 0.07], "k": 27, "source": "DePaulo et al. 2003 cue 058; Sporer & Schwandt 2007 |d|=0.06"},
+    {"name": "voc_pause_per_min", "cue": "silent pauses", "d": 0.01, "ci": [-0.09, 0.11], "k": 15, "source": "DePaulo et al. 2003 cue 037"},
+    {"name": "txt_filler", "cue": "filled pauses (um/uh)", "d": 0.00, "ci": [-0.08, 0.08], "k": 16, "source": "DePaulo et al. 2003 cue 038; falls to about -0.13 for motivated senders"},
+    {"name": "txt_words_per_min", "cue": "rate of speaking", "d": 0.07, "ci": [-0.03, 0.16], "k": 23, "source": "DePaulo et al. 2003 cue 010"}
+  ],
+  "notes": "Frozen v1.0, 2026-10-02 ~23:55 ET, written before any backtest; see docs/research/literature.md sections A-D. Sign +1 = the feature rises under deception/stress and so raises the tell score. Weight rule, applied mechanically: (1) |g| from a meta-analysis that used the same operationalization as our feature (software word counts: Hauch et al. 2015); else (2) construct-level |d| from DePaulo et al. 2003, averaged with Sporer & Schwandt 2006/2007 where both exist; else (3) 0.15 for signs that are significant only in the in-domain CEO study (Larcker & Zakolyukina 2012), which has no d. The 0.15 default sits above the DePaulo median |d| of 0.10 because L&Z is the only evidence from executives; the consequence is that L&Z-only text cues outweigh lab-measured text cues, which we accept and disclose. Inclusion rule: the cue's CI excludes zero in at least one meta-analysis for the construct, or its sign is significant in L&Z. Modality weights are equal (face = voice = text = incongruence = 1.0), so each is 25% when all are present; Bond & DePaulo 2006 (human judges: audio 63% vs video 52%) concerns human accuracy, not machine-measured cue validity, so it is not treated as strong evidence for unequal weights. fc_gesture_energy sits in the face block because assemble.py names it fc_; it requires fc_hands_visible >= 0.5. Incongruence as implemented in src/pokerface/signal.py is max(z(txt_lm_net_tone),0) * max(m_face,0): upbeat words while the face shows tension (Koo, Teoh, Yoo & Zhao 2026 modal incongruence; DePaulo 2003 genuine smiles d=-0.70, k=2, when faking positive affect). txt_lm_net_tone is used rather than txt_extreme_positive so that the incongruence term does not double count a text-block feature. Excluded for reasons other than folklore: fc_duchenne_frac (k=2, conditional on feigned positive affect; it motivates the incongruence term instead), fc_brow_down (DePaulo cue 056 d=+0.04, n.s.), txt_first_singular (DePaulo self-references d=-0.03 n.s.; Hauch cue 21 g=-0.06 n.s., wrong direction), txt_hedge/txt_hedge_word/txt_lm_uncertainty/txt_lm_weak_modal (Hauch cue 12: liars use FEWER tentative words, g=+0.13 [0.06, 0.20], while DePaulo rated uncertainty is +0.30 and finance links LM uncertainty to risk, so the sign conflicts), txt_certainty (Hauch cue 14 g=-0.06 n.s.), txt_lm_positive (L&Z non-extreme positive is not separable from extreme positive with our lists; Hauch cue 19.1 g=-0.07 n.s.), txt_lm_negative/txt_extreme_negative (DePaulo negative statements +0.21 conflicts with L&Z CEO signs), txt_type_token_ratio (Hauch cue 03 g=+0.14 is significant, but our TTR is computed on up to the first 1000 tokens and is length-confounded; a moving-average TTR would be needed), txt_denial (our own list, no published d), voc_loudness (DePaulo cue 032 d=-0.05 n.s.). The excluded folk cues are kept as columns and combined into a pre-registered FOLK placebo (equal-weight mean of their z-scores, sign +1) that is predicted to have no return predictability."
+}

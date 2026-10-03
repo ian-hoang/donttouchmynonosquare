@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "frozen": "2026-10-02, before any backtest on real returns (see HYPOTHESIS.md section 2)",
+  "samples": {
+    "sample_start": "2016-01-01",
+    "is_end": "2024-09-30",
+    "oos_start": "2024-10-01",
+    "oos_end": "2026-09-30",
+    "oos_rule": "most recent 2 years (20% of 10.75y = 2.15y > 2y cap); evaluated once via run_all.py --unlock-oos"
+  },
+  "events": {
+    "decision_buffer_hours": 2,
+    "entry": "first regular-session open strictly after decision time",
+    "same_entry_session": "average signals of one CEO's videos with the same entry session",
+    "overlap": "replace",
+    "exclude_earnings_window_sessions": 2
+  },
+  "signal": {
+    "spec": "config/signal_spec.json",
+    "baseline_window": 30,
+    "min_prior": 5,
+    "z_clip": 3.0,
+    "min_pool": 20,
+    "min_features": 5,
+    "min_modalities": 2
+  },
+  "qc": {
+    "min_id_cos": 0.35,
+    "min_face_minutes": 1.0,
+    "gesture_requires_hands_visible": 0.5,
+    "min_ceo_words": 150,
+    "min_ceo_speech_seconds": 60
+  },
+  "backtest": {
+    "horizon": 20,
+    "hedge": "SPY",
+    "signal_cap": 2.0,
+    "target_vol_per_event": 0.10,
+    "max_weight_per_event": 0.35,
+    "max_weight_per_name": 0.50,
+    "max_gross": 2.0,
+    "beta_lookback": 252,
+    "vol_lookback": 63,
+    "min_history": 120,
+    "cost_bps_stock": 5.0,
+    "cost_bps_hedge": 1.0,
+    "borrow_bps_annual_stock": 30.0,
+    "borrow_bps_annual_hedge": 25.0,
+    "dd_brake": 0.0
+  },
+  "robustness_predeclared": {
+    "horizons": [1, 2, 3, 5, 10, 40, 60],
+    "hedge_alt": "QQQ",
+    "variants": ["earnings_included", "short_only", "stack_overlap", "no_incongruence", "equal_feature_weights",
+                 "face_only", "voice_only", "text_only", "dd_brake_0.10", "costs_x2", "leave_one_ceo_out",
+                 "by_year", "ml_walkforward_ridge_secondary", "folk_placebo"]
+  },
+  "case_studies": ["musk", "karp"]
+}
