@@ -1,0 +1,132 @@
+{
+  "name": "Frozen ESU6 opening-hour feasibility experiment",
+  "symbol": "ESU6",
+  "instrument_id": 42140870,
+  "dataset": "GLBX.MDP3",
+  "schema": "mbo",
+  "sessions": [
+    "2026-08-03",
+    "2026-08-04",
+    "2026-08-05",
+    "2026-08-06",
+    "2026-08-07",
+    "2026-08-10",
+    "2026-08-11",
+    "2026-08-12",
+    "2026-08-13",
+    "2026-08-14",
+    "2026-08-17",
+    "2026-08-18",
+    "2026-08-19",
+    "2026-08-20",
+    "2026-08-21",
+    "2026-08-24",
+    "2026-08-25",
+    "2026-08-26",
+    "2026-08-27",
+    "2026-08-28",
+    "2026-08-31",
+    "2026-09-01",
+    "2026-09-02",
+    "2026-09-03",
+    "2026-09-04"
+  ],
+  "holdout_start": "2026-08-29T04:42:00+00:00",
+  "interval": "1s",
+  "max_quote_age": "2s",
+  "session_tz": "America/New_York",
+  "session_start": "09:30",
+  "session_end": "10:30",
+  "parameters": {
+    "liquidity_fatigue": {
+      "lookback": 60,
+      "burst_multiple": 2.5,
+      "imbalance_threshold": 0.6,
+      "min_volume": 1.0,
+      "min_depth_drop": 0.1,
+      "recovery_bars": 5,
+      "recovery_fraction": 0.9,
+      "history_events": 3,
+      "comparable_ratio": 2.0,
+      "event_max_age": 600,
+      "refill_drop": 0.2,
+      "recovery_delay": 1.0,
+      "impact_growth": 0.25,
+      "min_components": 2,
+      "hold_bars": 10
+    },
+    "queue_sacrifice": {
+      "window": 10,
+      "threshold": 0.5,
+      "min_cancel_qty": 20.0
+    },
+    "missing_beat": {
+      "cadence_bars": 6,
+      "window_bars": 2,
+      "cycles": 3,
+      "min_burst_volume": 20.0,
+      "min_directional_share": 0.8,
+      "repeat_min_ratio": 0.5,
+      "missing_fraction": 0.2,
+      "retention_fraction": 0.5,
+      "min_displacement_ticks": 1.0,
+      "tick_size": 0.25,
+      "hold_bars": 3
+    }
+  },
+  "execution": {
+    "tick_size": 0.25,
+    "multiplier": 50.0,
+    "fee_per_side": 2.5,
+    "slippage_ticks": 1.0,
+    "latency_ms": 100.0,
+    "max_spread_ticks": 4.0,
+    "max_hold_seconds": 30.0,
+    "stop_loss_dollars": 100.0,
+    "daily_loss_dollars": 300.0,
+    "capital": 100000.0
+  },
+  "scenarios": [
+    {
+      "name": "base",
+      "cost_mult": 1.0,
+      "overrides": {}
+    },
+    {
+      "name": "double_cost",
+      "cost_mult": 2.0,
+      "overrides": {}
+    },
+    {
+      "name": "latency_3s",
+      "cost_mult": 1.0,
+      "overrides": {
+        "latency_ms": 3000.0
+      }
+    },
+    {
+      "name": "spread_only",
+      "cost_mult": 1.0,
+      "overrides": {
+        "fee_per_side": 0.0,
+        "slippage_ticks": 0.0
+      }
+    }
+  ],
+  "evidence": {
+    "min_sessions": 20,
+    "min_closed_episodes": 100,
+    "bootstrap_block_sessions": 5,
+    "bootstrap_repetitions": 5000,
+    "seed": 1729,
+    "claim": "Exploratory screening only; no validated alpha without future replication and controls"
+  },
+  "source_evidence": {
+    "fifo": "Databento 2026-08-03 ESU6 definition match_algorithm=F",
+    "tick_size": 0.25,
+    "point_value_usd": 50.0,
+    "point_value_source": "CME E-mini contract specs and definition unit_of_measure_qty=50; contract_multiplier sentinel ignored",
+    "fees": "Assumed $2.50 per contract per side, not an authenticated broker fee schedule"
+  },
+  "budget_usd": 20.0
+}
