@@ -1,0 +1,16 @@
+# Secrets: never commit
+.env
+
+# Licensed raw data stays out of the public repo (data/download.py fetches it)
+data/cache/
+*.dbn
+*.dbn.zst
+
+# Your personal trial log. Report the count in the note; the file itself stays local.
+results/ledger.csv
+
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
