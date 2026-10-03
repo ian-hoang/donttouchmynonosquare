@@ -45,6 +45,8 @@ uv pip install -r requirements.txt
 python data/download.py          # prices (Yahoo, adjusted), Fama-French factors, SEC earnings dates (~1 min, free)
 python run_all.py                # in-sample report: results/summary.md + figures (~2 min)
 python run_all.py --unlock-oos   # the sealed out-of-sample evaluation (already run once; see results/oos_log.md)
+PF_UNIVERSE=_h2 python run_all.py --unlock-oos   # H2: same frozen signal on 20 less-watched CEOs -> results_h2/
+python scripts/overfit_study.py && python scripts/walk_forward.py && python scripts/h3_drift.py --sample OOS
 ```
 
 `run_all.py` runs the lookahead test suite first and refuses to print numbers if it fails. It reads the committed
