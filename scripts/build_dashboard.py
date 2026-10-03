@@ -48,6 +48,10 @@ def followups() -> list:
     if h4 and h4.get("a_native", {}).get("n", 0) >= 5:
         a = h4["a_native"]
         rows.append(["H4: intraday reaction, Musk + Karp (1-min bars)", f"{a['n']} YouTube-native videos; IC {a['ic']:.3f}, t {a['t_date_clustered']:.2f}", f"{a['mean_signed_net_bps']:.1f} bps/trade", "pass" if h4.get("supports_H4") else "fail"])
+    h5 = j(RES / "h5_intraday.json")
+    if h5 and h5.get("primary"):
+        a = h5["primary"]
+        rows.append(["H5: intraday reaction, 39 other CEO stints (1-min bars)", f"{a['n']} videos; IC {a['ic']:.3f}, permutation p {a['perm_p_one_sided']:.3f}; daily Sharpe {a['daily_sharpe']:.2f}", f"{a['mean_signed_net_bps']:.1f} bps/trade", "pass" if h5.get("supports_H5") else "fail"])
     return rows
 
 

@@ -33,9 +33,12 @@ Deflated Sharpe 0.15 over 23 logged trials · FOLK placebo Sharpe -0.11 · confi
 | Walk-forward optimization 2018–2026 | Sharpe -0.54 | fail |
 | H2: same frozen signal, 20 less-watched CEOs (`PF_UNIVERSE=_h2`, `results_h2/`) | Sharpe 0.14 (2016–2024-09) / -0.92 (2024-10+); IC -0.004 / -0.212 | fail |
 | H3: post-interview drift vs same stocks on random days | -0.27% (original, sealed window), 0.18% (H2); both CIs include 0 | fail |
+| H4: same-day reaction on 1-minute bars, Musk + Karp | 72 videos; IC +0.175, t 0.71, +14.6 bps/trade | fail (not significant) |
+| H5: the same intraday rule on the other 39 CEO stints | 1,592 videos; IC -0.011, permutation p 0.66, -11.7 bps/trade, daily Sharpe -0.49 | fail |
 
 Since October 2024 the score's sign has reversed in both universes (pooled rank IC −0.12): stressed-looking CEOs' stocks
 did *better*. Every holdout is used, so we report this as the next hypothesis to pre-register, not as a strategy.
+The positive H4 intraday IC on Musk and Karp did not survive 1,592 fresh events (H5), so it was small-sample noise.
 
 ## Reproduce the headline numbers (judges start here)
 
@@ -47,6 +50,7 @@ python run_all.py                # in-sample report: results/summary.md + figure
 python run_all.py --unlock-oos   # the sealed out-of-sample evaluation (already run once; see results/oos_log.md)
 PF_UNIVERSE=_h2 python run_all.py --unlock-oos   # H2: same frozen signal on 20 less-watched CEOs -> results_h2/
 python scripts/overfit_study.py && python scripts/walk_forward.py && python scripts/h3_drift.py --sample OOS
+python scripts/h4_intraday.py && python scripts/h5_intraday.py   # H4/H5: need DATABENTO_API_KEY in .env (paid 1-minute bars, not committed)
 ```
 
 `run_all.py` runs the lookahead test suite first and refuses to print numbers if it fails. It reads the committed

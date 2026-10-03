@@ -9,3 +9,5 @@ yfinance==1.7.0
 requests==2.34.2
 tabulate==0.10.0
 pytest==9.1.1
+# optional: H4/H5 intraday tests (paid Databento key in .env)
+databento==0.87.0

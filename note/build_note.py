@@ -37,13 +37,15 @@ figcaption { font-size: 9.5pt; color: #333; text-align: left; } .two { display: 
 def _fmt(v, kind="f2"):
     if v is None:
         return "n/a"
+    if isinstance(v, (list, tuple)):
+        return "[" + ", ".join(_fmt(x, kind) for x in v) + "]"
     try:
         v = float(v)
     except (TypeError, ValueError):
         return str(v)
     if v != v:
         return "n/a"
-    return {"pct": f"{100 * v:.1f}%", "pct2": f"{100 * v:.2f}%", "f2": f"{v:.2f}", "f3": f"{v:.3f}",
+    return {"pct": f"{100 * v:.1f}%", "pct2": f"{100 * v:.2f}%", "f1": f"{v:.1f}", "f2": f"{v:.2f}", "f3": f"{v:.3f}",
             "int": f"{int(round(v)):,}", "bps": f"{1e4 * v:.0f} bps", "musd": f"${v / 1e6:,.0f}M"}[kind]
 
 
@@ -117,7 +119,7 @@ def md(text: str) -> str:
 def main() -> None:
     vals = flatten(json.loads((RES / "summary.json").read_text()))
     for key, fname in (("overfit", "overfit_study.json"), ("wf", "walk_forward.json"), ("h3oos", "h3_drift_OOS.json"),
-                       ("h4", "h4_intraday.json")):
+                       ("h4", "h4_intraday.json"), ("h5", "h5_intraday.json")):
         if (RES / fname).exists():
             vals.update(flatten(json.loads((RES / fname).read_text()), key + "."))
     h2 = ROOT / "results_h2" / "summary.json"
