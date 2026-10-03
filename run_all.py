@@ -28,7 +28,7 @@ from pokerface import research as R  # noqa: E402
 from pokerface import stats as S  # noqa: E402
 from pokerface.signal import build_signals  # noqa: E402
 
-RES = ROOT / "results"
+RES = R.RESULTS                      # results/ or results_h2/ (PF_UNIVERSE)
 FIG = RES / "figures"
 
 
@@ -170,13 +170,14 @@ def case_frame(ceo, ev_all, mkt):
 
 def corpus_funnel(feat_raw: pd.DataFrame, qc: dict, ev_all: pd.DataFrame) -> dict:
     m = ROOT / "data" / "manifest"
+    U = R.UNIVERSE
     n = lambda f: int(len(pd.read_csv(m / f, usecols=[0]))) if (m / f).exists() else None
-    lab = pd.read_csv(m / "curation_labels.csv", dtype={"video_id": str})
+    lab = pd.read_csv(m / f"curation_labels{U}.csv", dtype={"video_id": str})
     return {"search_hits_round1": n("candidates_raw.csv"),
             "search_hits_round2": n("candidates_years.csv"),
-            "rule_prefiltered": n("candidates_for_curation.csv"),
+            "rule_prefiltered": n(f"candidates_for_curation{U}.csv"),
             "agent_curated_keep": int(lab["keep"].astype(str).str.lower().eq("true").sum()),
-            "dated_in_tenure_window": n("videos.csv"),
+            "dated_in_tenure_window": n(f"videos{U}.csv"),
             "processed": int(len(feat_raw)),
             "identity_qc_pass": qc["after_identity_qc"],
             "events_IS": int((ev_all["sample"] == "IS").sum()),

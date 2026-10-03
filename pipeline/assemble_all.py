@@ -15,6 +15,7 @@ import numpy as np
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+U = __import__("os").environ.get("PF_UNIVERSE", "")   # "" original universe, "_h2" Hypothesis 2
 sys.path.insert(0, str(ROOT / "pipeline"))
 from assemble import assemble_video, build_references, identity_pass  # noqa: E402
 from run_local import WIN_SECS, WIN_START  # noqa: E402
@@ -54,7 +55,7 @@ def main() -> None:
 
     os.environ.setdefault("OMP_NUM_THREADS", "2")
     workers = int(os.environ.get("PF_ASSEMBLE_WORKERS", "4"))
-    man = pd.read_csv(ROOT / "data" / "manifest" / "videos.csv", dtype={"video_id": str})
+    man = pd.read_csv(ROOT / "data" / "manifest" / f"videos{U}.csv", dtype={"video_id": str})
     ready = [v for v in man["video_id"] if (VIS / f"{v}.vision.json").exists() and (VIS / f"{v}.face.parquet").exists()]
     print(f"{len(ready)} of {len(man)} videos have vision output", flush=True)
     with ProcessPoolExecutor(max_workers=workers) as ex:
@@ -67,7 +68,7 @@ def main() -> None:
     with ProcessPoolExecutor(max_workers=workers) as ex:
         rows = list(ex.map(_assemble, [(v, refs.get(video_ceo[v])) for v in ready], chunksize=4))
     feats = man.merge(pd.DataFrame(rows), on="video_id", how="inner")
-    out = ROOT / "data" / "features" / "video_features.csv"
+    out = ROOT / "data" / "features" / f"video_features{U}.csv"
     out.parent.mkdir(parents=True, exist_ok=True)
     feats.to_csv(out, index=False)
     ok = feats["qc_fail"].isna() if "qc_fail" in feats else pd.Series(True, index=feats.index)

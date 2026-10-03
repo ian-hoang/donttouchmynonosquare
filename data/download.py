@@ -33,7 +33,9 @@ START = "2015-01-01"   # one year of pre-sample history for betas/vols before th
 
 
 def universe() -> pd.DataFrame:
-    return pd.read_csv(ROOT / "config" / "universe.csv", dtype=str)
+    """Union of every universe file (original 20 CEOs + the H2 follow-up universe, if present)."""
+    files = sorted((ROOT / "config").glob("universe*.csv"))
+    return pd.concat([pd.read_csv(f, dtype=str) for f in files], ignore_index=True)
 
 
 def all_tickers() -> list[str]:

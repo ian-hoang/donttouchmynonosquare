@@ -116,6 +116,14 @@ def md(text: str) -> str:
 
 def main() -> None:
     vals = flatten(json.loads((RES / "summary.json").read_text()))
+    for key, fname in (("overfit", "overfit_study.json"), ("wf", "walk_forward.json"), ("h3oos", "h3_drift_OOS.json")):
+        if (RES / fname).exists():
+            vals.update(flatten(json.loads((RES / fname).read_text()), key + "."))
+    h2 = ROOT / "results_h2" / "summary.json"
+    if h2.exists():
+        vals.update(flatten(json.loads(h2.read_text()), "h2."))
+    if (ROOT / "results_h2" / "h3_drift_ALL.json").exists():
+        vals.update(flatten(json.loads((ROOT / "results_h2" / "h3_drift_ALL.json").read_text()), "h3h2."))
     parts = []
     def tables(text: str) -> str:
         if "{{STRESS_TABLE}}" in text and (RES / "stress_windows.csv").exists():

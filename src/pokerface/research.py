@@ -20,7 +20,8 @@ from .events import entry_session, near_earnings
 from .signal import SignalParams, build_signals
 
 ROOT = Path(__file__).resolve().parents[2]
-RESULTS = ROOT / "results"
+UNIVERSE = __import__("os").environ.get("PF_UNIVERSE", "")      # "" = original 20 CEOs, "_h2" = Hypothesis 2 universe
+RESULTS = ROOT / f"results{UNIVERSE}"
 FACE_PREFIX, VOICE_PREFIX, TEXT_PREFIX = "fc_", "voc_", "txt_"
 
 
@@ -81,7 +82,7 @@ def load_market(source: str = "yfinance") -> Market:
 
 
 def load_features() -> pd.DataFrame:
-    f = pd.read_csv(ROOT / "data" / "features" / "video_features.csv", dtype={"video_id": str})
+    f = pd.read_csv(ROOT / "data" / "features" / f"video_features{UNIVERSE}.csv", dtype={"video_id": str})
     f["publish_ts_utc"] = pd.to_datetime(f["publish_ts_utc"], utc=True)
     return f
 

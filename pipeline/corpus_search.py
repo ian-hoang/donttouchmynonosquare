@@ -17,6 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+U = __import__("os").environ.get("PF_UNIVERSE", "")   # "" original universe, "_h2" Hypothesis 2
 TEMPLATES = ["{name} interview {year}", "{name} CNBC {year}", "{name} Bloomberg interview {year}",
              "{name} full interview {year}"]
 
@@ -39,11 +40,11 @@ def search(query: str, n: int = 40) -> list[dict]:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--years", default="2016-2024")
-    ap.add_argument("--out", default=str(ROOT / "data" / "manifest" / "candidates_years.csv"))
+    ap.add_argument("--out", default=str(ROOT / "data" / "manifest" / f"candidates_years{U}.csv"))
     ap.add_argument("--workers", type=int, default=3)
     a = ap.parse_args()
     y0, y1 = map(int, a.years.split("-"))
-    uni = pd.read_csv(ROOT / "config" / "universe.csv", dtype=str)
+    uni = pd.read_csv(ROOT / "config" / f"universe{U}.csv", dtype=str)
     jobs = []
     for u in uni.itertuples():
         start = max(y0, int(str(u.tenure_start)[:4]), int(str(u.listed_start)[:4]))

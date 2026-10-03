@@ -1,0 +1,21 @@
+{
+  "n_strategies": 192,
+  "best_variant": "text_only|-|h20|SPY",
+  "best_is_sharpe": 0.31695934958210564,
+  "median_is_sharpe": -0.21596709518482216,
+  "share_positive_is": 0.125,
+  "best_dsr": {
+    "n_trials": 192,
+    "sr_annual": 0.31695934958210564,
+    "sr_star_annual": 0.6633870798000495,
+    "dsr": 0.1534569445399695,
+    "psr_vs_zero": 0.8250563674982636
+  },
+  "pbo": {
+    "pbo": 0.8571428571428571,
+    "n_combinations": 252,
+    "median_logit": -0.9713505090571827
+  },
+  "winner_oos_sharpe": -0.8658549461321637,
+  "winner_oos_ann_return": -0.09637828978290075
+}

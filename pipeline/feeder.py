@@ -17,6 +17,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+U = __import__("os").environ.get("PF_UNIVERSE", "")   # "" original universe, "_h2" Hypothesis 2
 sys.path.insert(0, str(ROOT / "pipeline"))
 from run_local import WIN_SECS, WIN_START  # noqa: E402
 
@@ -65,7 +66,7 @@ def uploader(stop: threading.Event) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--workers", type=int, default=4)
-    ap.add_argument("--manifest", default=str(ROOT / "data" / "manifest" / "videos.csv"))
+    ap.add_argument("--manifest", default=str(ROOT / "data" / "manifest" / f"videos{U}.csv"))
     ap.add_argument("--no-upload", action="store_true", help="leave uploading to scripts/uploader.sh")
     a = ap.parse_args()
     OUTBOX.mkdir(parents=True, exist_ok=True)

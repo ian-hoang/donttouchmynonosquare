@@ -19,6 +19,7 @@ from pathlib import Path
 import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[1]
+U = __import__("os").environ.get("PF_UNIVERSE", "")   # "" original universe, "_h2" Hypothesis 2
 QA_TYPES = {"tv_interview", "podcast_interview", "fireside_or_conference_qa", "panel", "earnings_call"}
 SAMPLE_START, SAMPLE_END = "2016-01-01", "2026-09-30"
 
@@ -40,9 +41,9 @@ def load_meta(ids) -> pd.DataFrame:
 
 
 def build() -> pd.DataFrame:
-    cand = pd.read_csv(ROOT / "data" / "manifest" / "candidates_for_curation.csv", dtype={"video_id": str})
-    lab = pd.read_csv(ROOT / "data" / "manifest" / "curation_labels.csv", dtype={"video_id": str})
-    uni = pd.read_csv(ROOT / "config" / "universe.csv", dtype=str)
+    cand = pd.read_csv(ROOT / "data" / "manifest" / f"candidates_for_curation{U}.csv", dtype={"video_id": str})
+    lab = pd.read_csv(ROOT / "data" / "manifest" / f"curation_labels{U}.csv", dtype={"video_id": str})
+    uni = pd.read_csv(ROOT / "config" / f"universe{U}.csv", dtype=str)
     df = cand.merge(lab, on="video_id", how="inner")
     df = df[df["keep"].astype(str).str.lower().eq("true") & df["content_type"].isin(QA_TYPES)
             & ~df["wrong_tenure_or_role"].astype(str).str.lower().eq("true")]
@@ -62,7 +63,7 @@ def build() -> pd.DataFrame:
     cols = ["video_id", "ceo_id", "ceo", "ticker", "title", "channel", "content_type", "publish_ts_utc",
             "duration_s", "view_count", "has_auto_en", "confidence"]
     out = df[cols].sort_values(["ceo_id", "publish_ts_utc"]).reset_index(drop=True)
-    out.to_csv(ROOT / "data" / "manifest" / "videos.csv", index=False)
+    out.to_csv(ROOT / "data" / "manifest" / f"videos{U}.csv", index=False)
     return out
 
 
