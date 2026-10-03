@@ -163,7 +163,7 @@ def _env(key: str) -> str | None:
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--source", choices=["yfinance", "databento"], default="yfinance")
-    ap.add_argument("--end", default=pd.Timestamp.today().normalize().date().isoformat())
+    ap.add_argument("--end", default="2026-10-02", help="exclusive; fixed so everyone downloads the same history")
     ap.add_argument("--skip", nargs="*", default=[], help="any of: prices factors earnings")
     a = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
