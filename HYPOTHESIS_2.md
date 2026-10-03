@@ -28,3 +28,17 @@ CAR after interviews minus the mean CAR of the same names on matched random sess
 CEO-clustered bootstrap. Evaluated once on (a) the original universe's sealed window 2024-10-01..2026-09-30, where this
 signal has never been evaluated, and (b) the full H2 universe. **Supports H3** only if the excess CAR is positive with a
 CI excluding zero in both.
+
+## H4: intraday reaction to Musk and Karp videos (1-minute bars)
+Registered Sat 2026-10-03 ~03:05 ET, before any minute data is fetched. **Motivation.** TSLA and PLTR are the most
+retail-driven names in the universe; if a video's information is absorbed within hours, the daily open-to-open test
+cannot see it. **Events.** Every curated Musk (TSLA) and Karp (PLTR) video in `data/manifest/videos.csv` with a valid TELL
+signal, split by release type: (a) *YouTube-native* releases (content type podcast_interview, or the uploader is the
+original publisher of a fireside/conference video), where upload time is the release time; (b) TV clips, where the
+broadcast happened before the upload (reported separately, expected to show nothing). **Trade.** Decision = upload +
+30 minutes; enter at the first regular-session minute after decision (or the next open), exit at that session's close.
+Hedge with QQQ minute bars at the 252-day daily beta. Costs 2 bps per side on TSLA/PLTR, 0.5 bp on QQQ. Data:
+Databento XNAS.ITCH `ohlcv-1m` (from 2018-05), minute windows cached locally and never committed. **Test.** Rank IC of
+S versus the hedged entry-to-close return, and the mean signed return with a date-clustered t-statistic, for (a); the
+track IS/OOS split is reported. **Supports H4** if IC > 0 and the signed return is positive with t > 2 in (a), net of
+costs. Small samples are expected; we report them as they come out.
