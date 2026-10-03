@@ -1,0 +1,16 @@
+{
+  "prices": {
+    "source": "yfinance",
+    "rows": 2954,
+    "start": "2015-01-02",
+    "end": "2026-10-01",
+    "fingerprint": "dd92ad1a0c4f386b"
+  },
+  "factors": {
+    "rows": 15897,
+    "end": "2026-08-31"
+  },
+  "earnings": {
+    "rows": 918
+  }
+}

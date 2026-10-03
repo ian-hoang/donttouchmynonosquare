@@ -1,0 +1,32 @@
+event,ticker,date,ret1d_%,abn1d_vs_SPY_%,ret_5d_cum_%
+TSLA funding-secured tweet day,TSLA,2018-08-07,10.99,10.66,4.22
+TSLA SEC suit filed 9/27 -> 9/28,TSLA,2018-09-28,-13.9,-13.91,-8.35
+TSLA Autonomy Day next day,TSLA,2019-04-23,0.44,-0.46,-8.1
+TSLA Reuters Model2 report,TSLA,2024-04-05,-3.63,-4.67,2.04
+TSLA Q4'25 call (S/X end) next day,TSLA,2026-01-29,-3.45,-3.25,-5.9
+TSLA Aug-2022 sale Form4 next day,TSLA,2022-08-10,3.89,1.79,8.2
+TSLA Nov-2022 sale Form4 next day,TSLA,2022-11-09,-7.17,-5.11,1.63
+TSLA Dec-2022 sale Form4 next day,TSLA,2022-12-15,0.55,3.0,-12.26
+TSLA May-2019 capital raise ann.,TSLA,2019-05-02,4.31,4.53,4.63
+NVDA Q3FY19 miss next day,NVDA,2018-11-16,-18.76,-19.02,-28.36
+NVDA SEC order day,NVDA,2022-05-06,-0.9,-0.3,-14.16
+AAPL guidance cut next day,AAPL,2019-01-03,-9.96,-7.57,-2.92
+JPM whale loss next day,JPM,2012-05-11,-9.28,-8.98,-16.72
+BA Forkner msgs,BA,2019-10-18,-6.79,-6.35,-6.64
+BA ET302 crash Monday,BA,2019-03-11,-5.33,-6.78,-10.31
+BA SEC settlement,BA,2022-09-22,-3.2,-2.36,-6.87
+WFC CFPB fine,WFC,2016-09-08,0.26,0.49,-6.53
+WFC Stumpf resigns next day,WFC,2016-10-13,-1.26,-0.93,-0.13
+META CA Monday,META,2018-03-19,-6.77,-5.42,-13.89
+META WSJ Instagram,META,2021-09-14,0.01,0.54,-5.53
+META Haugen 60min Monday,META,2021-10-04,-4.89,-3.6,-3.78
+NKLA Hindenburg,NKLA,2020-09-10,,,
+NKLA Milton resigns Monday,NKLA,2020-09-21,,,
+RIDE Hindenburg,RIDE,2021-03-12,,,
+RIDE Burns resigns,RIDE,2021-06-14,,,
+LK fabrication disclosure,LKNCY,2020-04-02,-75.57,-77.88,-83.24
+SIVB capital raise/ run,SIVB,2023-03-09,,,
+PTON Tread+ recall,PTON,2021-05-05,-14.56,-14.59,-5.88
+SMCI 10-K delay,SMCI,2024-08-28,-19.02,-18.44,-22.67
+SMCI EY resigns,SMCI,2024-10-30,-32.68,-32.37,-43.61
+COIN layoffs,COIN,2022-06-14,-0.83,-0.53,10.54

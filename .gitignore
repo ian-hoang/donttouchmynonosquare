@@ -1,0 +1,26 @@
+# secrets
+.env
+# local env / scratch
+.venv/
+.scratch/
+.install.log
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store
+# raw media + licensed raw market data never get committed
+data/raw/
+data/media/
+data/cache/
+*.mp4
+*.webm
+*.m4a
+*.wav
+*.dbn
+*.dbn.zst
+.massive_cache/
+models/*.task
+models/*.onnx
+
+# downloaded market data (recreate with: python data/download.py)
+data/market/*.parquet
