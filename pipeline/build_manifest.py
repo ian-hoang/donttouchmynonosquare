@@ -49,6 +49,15 @@ def build() -> pd.DataFrame:
             & ~df["wrong_tenure_or_role"].astype(str).str.lower().eq("true")]
     meta = load_meta(df["video_id"])
     df = df.merge(meta, on="video_id", how="inner")
+    # a CEO with several stints (e.g. Niccol: CMG, then SBUX): route each video to the stint covering its upload date
+    multi = uni.groupby("name").filter(lambda g: len(g) > 1)
+    for name, g in multi.groupby("name"):
+        rows = df["ceo"] == name
+        for r in g.itertuples():
+            lo = pd.Timestamp(r.tenure_start, tz="UTC")
+            hi = pd.Timestamp(r.tenure_end, tz="UTC") if isinstance(r.tenure_end, str) and r.tenure_end else pd.Timestamp("2100-01-01", tz="UTC")
+            hit = rows & (df["publish_ts_utc"] >= lo) & (df["publish_ts_utc"] <= hi)
+            df.loc[hit, ["ceo_id", "ticker"]] = [r.ceo_id, r.ticker]
     df = df.merge(uni[["ceo_id", "tenure_start", "tenure_end", "listed_start"]], on="ceo_id", how="left")
     d = df["publish_ts_utc"].dt.tz_convert(None)
     lo = pd.concat([pd.to_datetime(df["tenure_start"]), pd.to_datetime(df["listed_start"]),

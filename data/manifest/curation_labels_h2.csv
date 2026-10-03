@@ -1,0 +1,2539 @@
+video_id,keep,content_type,reupload_suspected,wrong_tenure_or_role,confidence,reason
+vPvnzWoK24Q,True,podcast_interview,False,False,0.9,Nikhil Kamath long-form podcast
+yco9JP0PyLM,True,fireside_or_conference_qa,False,False,0.9,Sequoia onstage conversation
+q7sSi9h6nYM,True,fireside_or_conference_qa,False,False,0.85,All-In Summit interview
+i__brXrfgVs,True,podcast_interview,False,False,0.8,Humans of Bombay long interview
+dXjXL410jh4,False,about_the_ceo_not_by,False,False,0.9,NDTV success-story package about him
+v4GN1q7HX1Y,True,podcast_interview,False,False,0.9,20VC podcast
+CwfbyFTx69E,True,podcast_interview,False,False,0.85,Sky Sports podcast interview
+1SExW_Erpz0,False,speech_or_lecture,False,False,0.7,Short INKtalks talk
+_v_ryYwmfM0,True,podcast_interview,False,False,0.9,Sourcery podcast interview
+YKaEn1_T6vA,False,about_the_ceo_not_by,False,False,0.9,Hindi story about him
+aeyZQL4v-XA,True,tv_interview,False,False,0.95,CNBC Cramer interview
+Tt0CuFKB18I,True,tv_interview,False,False,0.95,CNBC interview
+WXH5Zg7HAcI,True,podcast_interview,False,False,0.9,NBIM podcast
+pWTlzwUtzds,True,tv_interview,False,False,0.95,CNBC interview
+oHTfoAP4Il0,False,keynote_or_presentation,False,False,0.95,Ignite keynote
+V62W6cEBXMI,True,tv_interview,False,False,0.9,Mad Money interview
+jc-qgtf46bY,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+dl2ReZwcd9Y,True,tv_interview,False,False,0.95,CNBC earnings interview
+5jG7iVI08O0,True,podcast_interview,False,False,0.9,Kleiner Perkins Grit podcast
+fTCOCTigxwY,True,podcast_interview,False,False,0.9,20VC podcast
+1JvI4giU7d8,True,fireside_or_conference_qa,False,False,0.6,"Foundation onstage conversation, likely Q&A"
+MIPmmEncmos,False,keynote_or_presentation,False,True,0.95,Google CBO keynote 2011
+U2Sz-S1C6QY,True,tv_interview,False,False,0.95,CNBC Cramer earnings interview
+L8lu4-KWp2Q,False,other,False,False,0.95,"Different person, internship video"
+Uo25GgdMAWs,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+yFHFYFvZcvE,True,podcast_interview,False,False,0.9,No Priors podcast
+7BFjOV4sXqc,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+mxBX7jiYnew,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+H8gIqqMroQc,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+TGSJKqDQU50,True,tv_interview,False,False,0.95,CNBC interview
+_z5acveB6qs,True,tv_interview,False,False,0.95,CNBC Cramer results interview
+aykoBDLhsLQ,False,speech_or_lecture,False,False,0.9,"Gala honoree event, no Q&A"
+iNlYaDQ1oms,False,other,False,False,0.95,Different person Nikesh Khatri
+RZ3OpJTeXVQ,True,tv_interview,False,False,0.9,CNBC-TV18 On The Record interview
+Sfbf3qjm-QQ,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+6vqdXobeTBY,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+LOVS04ELjmU,True,tv_interview,False,False,0.8,theCUBE Ignite22 interview
+tWA1K_VT9t8,False,tv_interview,False,True,0.95,Google SVP era
+d7auJLd0HS4,False,other,True,True,0.85,"Google-era chat, small channel"
+uMTWPPeuSrY,True,other,False,False,0.5,"Alumni foundation Q&A, date uncertain"
+13unhClYrDY,False,keynote_or_presentation,False,True,0.95,SoftBank era keynote
+hs40x7FxwI0,True,tv_interview,False,False,0.95,CNBC interview
+mOX3o19QbdI,False,other,False,False,0.95,Different person Nimish Arora
+3-_aHArRIVk,True,tv_interview,False,False,0.95,CNBC interview
+C0du5HWKjPE,True,fireside_or_conference_qa,False,False,0.9,Axios onstage interview
+y5OF-3tHxiI,False,fireside_or_conference_qa,False,True,0.9,Google-era conclave talk
+J5AXHhRnN4A,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+5OLtPnfR3E0,False,keynote_or_presentation,False,True,0.95,Google-era keynote 2011
+mYgcHAS2A7g,False,about_the_ceo_not_by,False,False,0.95,Commentary about multiple CEOs
+ayxTihKjBXI,False,other,False,False,0.95,Different person Samir Arora
+CaMrqG-L2T4,False,fireside_or_conference_qa,False,True,0.95,SoftBank era DLD12
+95pSeEgLX2I,True,fireside_or_conference_qa,False,False,0.6,TiEcon 2024 conversation with Shailesh Rao
+K_rdZ2KHlz8,True,tv_interview,False,False,0.9,CNBC-TV18 On The Record
+MCFhyfoHfS4,True,panel,False,False,0.55,TiEcon 2021 keynote conversation as CEO
+G8QBhUaPKhA,True,tv_interview,False,False,0.8,Business Today interview
+Zohw1xdh5_w,True,fireside_or_conference_qa,False,False,0.9,NightDragon fireside chat
+XTNc4rcTW7eHw4,False,product_launch_or_promo,False,False,0.5,Short company promo segment
+2QaPXGDd8ek,False,tv_interview,False,True,0.6,Likely Google-era ET interview
+Iq_C_DTqLiM,False,fireside_or_conference_qa,False,True,0.95,DLD10 Google era
+_lX-8xjOtE4,False,fireside_or_conference_qa,False,True,0.95,Conclave 2010 Google era
+dFXRYbUnYUc,False,speech_or_lecture,False,True,0.95,Google SVP Zeitgeist
+2BXGxTiaEIU,False,other,False,False,0.95,Different person Nikhil Arora
+j_96Xh1p6w4,True,tv_interview,False,False,0.9,CNBC-TV18 Davos interview
+lPxK7WIp86I,False,other,False,False,0.99,"Bhojpuri song, unrelated"
+7-xGAjdjnb0,False,speech_or_lecture,False,False,0.5,"Cluster event talk, likely presentation"
+9uspXLIXJIo,True,tv_interview,False,False,0.9,CNBC-TV18 Davos interview
+TmjgPFlHMDk,False,speech_or_lecture,False,True,0.95,Google era AdAsia 2011
+OAxybghJOO4,True,tv_interview,False,False,0.8,ET Now IEC 2022 interview
+lSZ1QbsrtXw,True,tv_interview,False,False,0.9,CNBC-TV18 Davos interview
+ecU4iD2PQCU,False,other,False,True,0.6,"Agency channel, likely Google era"
+ihcwz1ads1U,False,tv_interview,False,True,0.95,Google era Bloomberg
+G8E8hcppGU8,False,tv_interview,True,True,0.95,"2012 Google era, re-upload"
+tZ_sqfubzp0,False,tv_interview,False,True,0.95,Google era Businessworld
+1cm_FifoRVI,True,tv_interview,False,False,0.9,CNBC-TV18 exclusive interview
+-dO-4KlCYhE,False,other,False,False,0.95,Different person Nikesh Shukla
+HSrUSTiKqLw,True,tv_interview,False,False,0.65,CNBC-TV18 show with his interview segment
+t0a1N_z_7wI,False,tv_interview,True,True,0.95,Google era Davos Direct
+G5E1tcpdunw,False,tv_interview,True,True,0.95,Google era re-upload
+opRn3nZjPPE,False,tv_interview,True,True,0.95,Google era re-upload
+9gL6aMMqo5o,False,speech_or_lecture,False,False,0.9,"Convocation event, no Q&A"
+uWJe87rwj7w,False,other,False,False,0.95,Different person Nikhil Arora
+b3inK20gzb0,True,tv_interview,False,False,0.9,CNBC-TV18 On The Record
+4-MeciIP6ns,True,tv_interview,False,False,0.9,Bloomberg interview
+7qiXzJqmjQw,True,tv_interview,False,False,0.9,CNBC-TV18 On The Record
+Ipo9KAN909E,False,other,False,False,0.55,Short Hindi news clip
+obXrSoLOD-k,True,panel,False,False,0.5,"Panel recap with Chambers, CEO speaks substantially"
+vHDz6VLgRUU,False,fireside_or_conference_qa,False,True,0.95,Conclave 2010 Google era
+6_-DPm2yjrE,True,other,False,False,0.5,"Alumni foundation Q&A, duplicate, date uncertain"
+GCmkcYSklB4,False,about_the_ceo_not_by,False,False,0.95,Salary explainer about him
+9viCTD_4baQ,False,tv_interview,True,True,0.95,Google era re-upload
+U7h1h84kl1s,False,about_the_ceo_not_by,False,False,0.95,History explainer channel
+iaMhuJ6kxT4,False,fireside_or_conference_qa,True,False,0.8,RSA session re-uploaded by aggregator
+-we2rcktS2A,False,other,False,False,0.95,Different person Nikhil Arora
+1XqiBjdLHbk,False,about_the_ceo_not_by,False,False,0.95,Hindi bio explainer
+4H5zSe-QtY0,False,speech_or_lecture,False,False,0.55,"Conference talk, likely presentation"
+p5ghcLkgKqo,False,about_the_ceo_not_by,False,False,0.95,Commentator video about pay
+jG3oIcsM0rM,False,earnings_call,True,False,0.85,Audio earnings call re-upload
+cYPMZE1pcBo,False,speech_or_lecture,True,True,0.95,2009 Google era
+Zk5WWDU-T1k,False,tv_interview,True,True,0.9,Google era re-upload
+YMtwPv8KSEA,False,ai_or_fake_suspected,False,False,0.9,Motivational channel
+YsPDHgU3D2M,False,about_the_ceo_not_by,False,False,0.95,Explainer about him
+ccIwFkRve-4,False,compilation_or_reupload,True,False,0.75,"Small channel, likely re-upload"
+dRDinmJ1W-o,False,other,False,False,0.95,Different person Punit Arora
+SP08wihsJkY,True,tv_interview,False,False,0.95,CNBC TV interview with CEO
+RsgYEUQpQEo,True,tv_interview,False,False,0.95,CNBC TV interview
+kcg4IjxlKLk,True,tv_interview,False,False,0.8,"Radio-Canada interview, French language"
+BwdpElhTmV4,False,speech_or_lecture,False,False,0.95,"TEDx scripted talk, no Q&A"
+iS-HhepWt1I,True,podcast_interview,False,False,0.85,Rubenstein long-form interview
+OZaWVSS0JCQ,True,tv_interview,False,False,0.95,CNBC interview
+T8rRVWRMnvM,True,fireside_or_conference_qa,False,False,0.6,"University symposium talk, likely Q&A"
+wBzpxBd2me0,True,tv_interview,False,False,0.95,CNBC interview
+Bq_rXiFLK70,True,tv_interview,False,False,0.95,CNBC earnings interview
+1jrWjNEJiTA,True,tv_interview,False,False,0.95,CNBC interview
+8oVRYQe2bX8,True,tv_interview,False,False,0.95,CNBC interview
+-P53wVGfvjw,True,fireside_or_conference_qa,False,False,0.9,Harvard speaker series Q&A
+o_7XvBOkX8o,True,tv_interview,False,False,0.95,CNBC interview
+cxnl0wXbiEQ,True,tv_interview,False,False,0.95,CNBC interview
+EYR5wE0q06s,True,fireside_or_conference_qa,False,False,0.85,Morgan Stanley hosted interview
+A2TqddTc-2A,True,tv_interview,False,False,0.8,Canal+ TV interview
+7wut3jRNZrA,False,compilation_or_reupload,True,False,0.9,Commentary channel clip of Senate hearing
+lOTqmlqsKd4,True,fireside_or_conference_qa,False,False,0.8,"Flagship CEO chat, conversational"
+pSYT6pFdmVU,True,tv_interview,False,False,0.95,Yahoo Finance interview
+e70gBOMfOuI,True,fireside_or_conference_qa,False,False,0.8,Flagship CEO chat
+uNWogEfflW8,True,tv_interview,False,False,0.95,CNBC interview
+ZPR_ksxiXag,True,fireside_or_conference_qa,False,False,0.9,"Newsweek conversation, long-form"
+4qvz5dD88Fg,True,tv_interview,False,False,0.95,CNBC interview
+XOejSKDKvbY,True,fireside_or_conference_qa,False,False,0.9,FII onstage interview
+jARHx3xXU1E,True,tv_interview,False,False,0.9,BFM Business interview
+r697fAwdHzM,True,fireside_or_conference_qa,False,False,0.8,Flagship CEO chat
+Uw3nntS2wG8,True,fireside_or_conference_qa,False,False,0.85,"Mirabaud long discussion, CEO answers"
+TCMRz3Q9RMI,True,tv_interview,False,False,0.9,Davos conversation CNBC-TV18
+JZZW1nuQj2Q,True,tv_interview,False,False,0.6,Short interview on Asia growth
+v09IajzVPG0,True,fireside_or_conference_qa,False,False,0.9,Executives club Q&A
+QRpSn-UIiPo,True,fireside_or_conference_qa,False,False,0.9,Onstage conversation with Ginkgo CEO
+i6pEfWk4qfE,True,fireside_or_conference_qa,False,False,0.8,Flagship CEO chat
+LN2JqGQ-WTQ,True,tv_interview,False,False,0.7,Regional event interview
+Nk6i_5GJEk4,True,panel,False,False,0.8,HLTH general session panel
+hyGeM2wXxAA,True,tv_interview,False,False,0.9,BFM Business interview
+ESi9Yq4XniE,True,fireside_or_conference_qa,False,False,0.6,"College talk, likely Q&A"
+YmwdH3PDuI4,True,podcast_interview,False,False,0.7,Labiotech interview 2015
+sWVSigN1hns,True,fireside_or_conference_qa,False,False,0.7,Bpifrance event interview
+wLjdoOx3vTA,True,fireside_or_conference_qa,False,False,0.9,CNBC Events onstage interview
+N5GHneXwJ10,True,podcast_interview,False,False,0.85,Long-form podcast interview
+yBmhQJFrur4,True,fireside_or_conference_qa,False,False,0.9,WMIF fireside chat
+xPYLQyeswig,True,fireside_or_conference_qa,False,False,0.8,Conference live conversation
+y0G5Q0Et1CU,True,podcast_interview,False,False,0.8,Hosted guest interview
+KKYZB3TKqfg,False,other,True,False,0.6,"Individual's channel, unclear content on AI leadership"
+9eRY9KR3CHY,False,compilation_or_reupload,True,False,0.9,Commentary channel on billionaires
+LfjbLU9r0CQ,False,other,False,False,0.95,"Nicolas Bancel, different person"
+0uhgYJwFbfk,True,podcast_interview,False,False,0.8,"Oral history interview, long-form"
+XNxK_JtQqgo,False,compilation_or_reupload,True,False,0.85,Re-upload of CentraleSupelec talk by other channel
+NLktSvjmTFc,True,podcast_interview,False,False,0.9,Bloomberg interview
+sLAeuMlkYi8,False,product_launch_or_promo,False,False,0.8,"Foundation campaign message, scripted"
+gAqn9iJ6V54,True,tv_interview,False,False,0.6,"Radio interview, long, may be audio-only"
+o1UHz7JZJ6U,True,podcast_interview,False,False,0.9,Bloomberg interview
+93A6wqALFWg,False,compilation_or_reupload,True,False,0.9,Sensational clip by commentary channel
+qERSzwwC1nU,True,podcast_interview,False,False,0.9,Bloomberg interview
+LZY-Ayp9FWo,True,podcast_interview,False,False,0.7,BCG interview with Bastian
+ywyBkewwcP0,True,tv_interview,False,False,0.95,CNBC interview
+mHhvIZvLeC4,True,tv_interview,False,False,0.95,CNBC interview
+1ZwrFuEobyw,True,tv_interview,False,False,0.85,WSB-TV one-on-one
+AZZ37Elujic,True,podcast_interview,False,False,0.9,Long-form podcast
+ihW-XSO6pqc,True,fireside_or_conference_qa,False,False,0.9,Economic Club Q&A
+YFL9DjJ_HBY,True,tv_interview,False,False,0.95,CNBC interview
+OqqUxvgxIAc,True,tv_interview,False,False,0.95,CNBC interview
+JH4VUGv6yzg,True,podcast_interview,False,False,0.9,Rubenstein Show interview
+CV8V6oqP4pw,False,keynote_or_presentation,False,False,0.95,"CES keynote, scripted"
+Rzaq_WUiAi8,True,tv_interview,False,False,0.9,Yahoo Finance interview
+q8EetswPR6g,True,tv_interview,False,False,0.95,CNBC interview
+pa5wer0KKY4,False,other,False,False,0.9,"Law firm deposition footage, not interview"
+Efa6O3BKnHA,True,tv_interview,False,False,0.95,CNBC interview
+FeFRmb08ep4,True,fireside_or_conference_qa,False,False,0.9,Code 2019 full interview
+ExVdhMYej-U,True,tv_interview,False,False,0.95,CNBC interview
+DXPwWVHFzRQ,True,tv_interview,False,False,0.95,CNBC interview
+p9IX0b85nfw,True,podcast_interview,False,False,0.9,Novak podcast interview
+oqKYgmmek8w,True,podcast_interview,False,False,0.9,Grey Matter interview
+vAZU5gg4-Rw,True,tv_interview,False,False,0.95,CNBC interview
+nM3H8vs3WR8,True,tv_interview,False,False,0.95,CNBC interview
+M1KFg6edqro,True,fireside_or_conference_qa,False,False,0.85,HBR conversation
+bv2pF_KrolI,True,tv_interview,False,False,0.95,CNBC interview
+cSlbLmnwn5k,True,tv_interview,False,False,0.95,CNBC interview
+h4DuZmuH26A,False,keynote_or_presentation,True,False,0.95,CES keynote re-upload
+D0F9qlFPBsc,True,tv_interview,False,False,0.95,CNBC interview
+v1ynwNuu1Kg,True,podcast_interview,False,False,0.85,Podcast interview
+HHyCLKPKFgY,True,tv_interview,False,False,0.95,CBS Mornings interview
+r7RAr5zddMg,True,podcast_interview,False,False,0.8,"Airline channel chat, CEO Q&A"
+agSCX45xu9Q,True,fireside_or_conference_qa,False,False,0.9,Washington Post Live interview
+aaoP6frXxGo,True,fireside_or_conference_qa,False,False,0.7,University talk likely with Q&A
+lU3L6HZPOXI,True,tv_interview,False,False,0.95,CNBC interview
+XJ5E5rB--Eg,True,fireside_or_conference_qa,False,False,0.85,Skift official onstage interview
+qyOJRpiJ550,False,speech_or_lecture,False,False,0.95,"Commencement address, scripted"
+RG0--EkAOLg,True,tv_interview,False,False,0.95,CNBC interview
+pOgVDNv1IuI,True,tv_interview,False,False,0.95,CNBC interview
+smGWdMU_3AA,True,tv_interview,False,False,0.95,CNBC interview
+Au_r7QEPjb8,True,tv_interview,False,False,0.9,CNBC interview
+kbPAYmo5uyM,True,fireside_or_conference_qa,False,False,0.85,Goldman conference interview
+1yCAtBZ-6-0,True,tv_interview,False,False,0.75,APEX interview with CEO
+o2UNTJoO0QI,True,fireside_or_conference_qa,False,False,0.9,Economic Club Q&A
+uR1LfFmBB7A,True,fireside_or_conference_qa,False,False,0.85,WSJ onstage interview
+BJTcDULX5mc,True,tv_interview,False,False,0.95,CNBC interview
+_i5cpYMZGTk,True,tv_interview,False,False,0.95,CNBC full interview
+4SpvTAfgRq0,False,product_launch_or_promo,True,False,0.95,Scripted safety video re-upload
+tSTUBCtwL2k,True,tv_interview,False,False,0.95,CNBC interview
+Gv9YL96uqbg,True,tv_interview,False,False,0.95,CNBC full interview
+PBdUWDKl-jY,True,tv_interview,False,False,0.95,CNBC interview
+Lb2r-PTadK0,True,tv_interview,False,False,0.85,"Marketplace conversation, short"
+XhLaKKxfCIc,True,tv_interview,False,False,0.95,CNBC full interview
+7oDN26QYFok,False,other,False,False,0.9,Law firm deposition footage
+F8ybOFYVBQg,True,fireside_or_conference_qa,False,False,0.9,Washington Post Live interview
+VIN_k5PJtL4,True,fireside_or_conference_qa,False,False,0.85,Operation HOPE conversation
+7DslH0SuwjQ,True,panel,False,False,0.85,SXSW featured conversation
+1WrAkAulX34,True,fireside_or_conference_qa,False,False,0.85,UCLA Anderson conversation
+sp8NNZXFwuo,True,fireside_or_conference_qa,False,False,0.85,Skift official onstage interview
+-RsBK2-NxvU,True,fireside_or_conference_qa,False,False,0.85,Operation HOPE conversation
+UteLxht2kQo,True,tv_interview,False,False,0.95,CNBC interview
+cGkMdSZ-2jw,True,tv_interview,False,False,0.9,Bloomberg TV interview
+udFIQs2OwZk,True,tv_interview,False,False,0.9,Yahoo Finance interview
+irAnBUCRFCA,True,fireside_or_conference_qa,False,False,0.75,Church business breakfast conversation
+Bx7BuKliXzA,False,keynote_or_presentation,True,False,0.95,CES keynote re-upload
+XzdUb9Gads4,False,about_the_ceo_not_by,False,False,0.85,Third-party commentary on behaviors
+HdxAmCplqRw,True,tv_interview,False,False,0.95,CNBC full interview
+Yz3m_e9jIBk,True,tv_interview,False,False,0.85,WSB-TV interview
+7d1PgKX8LQs,True,tv_interview,False,False,0.9,Bloomberg TV interview
+axfkebxpjPg,True,tv_interview,False,False,0.9,Yahoo Finance interview
+Mr4cOT2FpvQ,True,fireside_or_conference_qa,False,False,0.85,GBTA one-on-one onstage
+yCSRauvbVts,True,fireside_or_conference_qa,False,False,0.75,Amex conversation with CEO
+jdzsGyzbW9g,True,fireside_or_conference_qa,False,False,0.85,Chief Executives Club Q&A
+ofHAx1V2bnU,True,tv_interview,False,False,0.9,Yahoo Finance interview
+YKeiVBtFIlc,True,tv_interview,False,False,0.95,CNBC interview
+On2jtg9V3y0,True,fireside_or_conference_qa,False,False,0.8,Press Club speech with Q&A
+awXtIIiKj1c,True,fireside_or_conference_qa,False,False,0.85,University conversation
+k9Z0yU1utFg,True,tv_interview,False,False,0.95,CNBC interview
+kaSbBxrkvco,True,podcast_interview,False,False,0.85,LinkedIn News interview
+0CXQvmzTJd0,True,fireside_or_conference_qa,False,False,0.85,Sorkin conversation
+kwPHzaPANzE,True,podcast_interview,False,False,0.8,LinkedIn News interview (duplicate)
+GAgMvbobspA,True,tv_interview,False,False,0.9,Yahoo Finance exclusive
+7lc3b-Hx8x4,False,fireside_or_conference_qa,False,True,0.9,"2014 luncheon, Bastian not yet CEO"
+8ZmoWUetVgM,False,speech_or_lecture,False,False,0.6,"Named lecture, likely scripted talk"
+vwr7qIWnhYY,True,podcast_interview,False,False,0.85,Barron's Streetwise interview
+bNVeNkymfnE,True,tv_interview,False,False,0.9,CNBC interview
+3diduPMYyIs,True,fireside_or_conference_qa,False,False,0.8,In-conversation interview
+k1Nq_3_6KY8,True,podcast_interview,False,False,0.9,Podcast interview
+zOoXWsGDs60,True,fireside_or_conference_qa,False,False,0.8,Operation HOPE conversation
+EIU4AEwq5cg,True,tv_interview,False,False,0.9,Yahoo Finance interview
+zb7MUDtf7OE,False,other,False,True,0.9,"Titled Delta President, not CEO"
+WBDrEXlOFnA,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+vE4YxpaJkZc,True,podcast_interview,False,False,0.8,"Novak podcast clip, short"
+iMGChlmo4gk,True,panel,False,False,0.8,Two-CEO conversation event
+m-Ns9A37bEc,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+-yMXl48Mujg,False,keynote_or_presentation,True,False,0.95,CES keynote re-upload
+EHI24x309nA,True,fireside_or_conference_qa,False,False,0.8,Operation HOPE conversation
+jERx_6RPTTc,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+KPSHejdx4aE,False,speech_or_lecture,False,False,0.85,"Short festival story, not Q&A"
+EOwoHRv1T5s,True,fireside_or_conference_qa,False,False,0.85,Yale CEO speaker series Q&A
+v2hohDWMaW0,True,podcast_interview,False,False,0.85,Podcast interview
+Mg_1dhIzhjM,True,podcast_interview,False,False,0.85,Morning radio/podcast interview
+19pvf01duRw,True,panel,False,False,0.8,FII debate panel
+VsLQjI4u21o,False,product_launch_or_promo,False,False,0.85,Short honoree profile video
+dpnf6243xbk,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+Toqd6ReTF7k,True,tv_interview,False,False,0.85,"Local TV interview, May 2016 as CEO"
+NZQruLyDtC4,True,tv_interview,False,False,0.75,Interview by Larry Gulko
+xeOASIjE-ZY,True,podcast_interview,False,False,0.85,Morning X interview part 2
+vE1YTuVxE2M,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+q7XrL5dP_UA,True,fireside_or_conference_qa,False,False,0.8,Speaker series conversation
+C_bkRCHq59Y,True,fireside_or_conference_qa,False,False,0.7,"Wings Club luncheon, likely Q&A"
+rkl-6uhSnJE,True,podcast_interview,False,False,0.9,Bloomberg Talks interview
+mlqry2fYFhk,False,compilation_or_reupload,True,False,0.85,Skift session re-uploaded by third party
+LSxBRtGwZNM,True,tv_interview,False,False,0.8,Local TV show with CEO segment
+pWcms7RqFG4,False,other,False,False,0.95,"Different person, Irvan Bastian Arief"
+tZxP-BSYgI4,False,speech_or_lecture,False,False,0.8,Short dinner remarks
+xa0waIFwTqc,True,podcast_interview,False,False,0.75,Long interview by Larry Gulko
+7g5ejgNtBh8,False,compilation_or_reupload,True,False,0.7,"Duplicate of CBS Mornings clip, 14 views"
+nc8WYvVeFzQ,False,about_the_ceo_not_by,False,False,0.95,Gaming YouTuber commentary about CEO
+seUHQOIHqws,False,about_the_ceo_not_by,False,False,0.95,Commentary channel clickbait
+Ottd6M_kHGA,False,about_the_ceo_not_by,False,False,0.95,Commentary channel clickbait
+emrUpsZgs-c,False,about_the_ceo_not_by,False,False,0.95,YouTuber commentary
+Vw9j_bZYVbY,False,about_the_ceo_not_by,False,False,0.95,Hypothetical fan video
+iXyJILMTAmw,False,keynote_or_presentation,False,False,0.95,"RDC keynote, scripted"
+lX81y1wzxcw,False,product_launch_or_promo,False,False,0.85,Short recruiting promo
+mh3ExGzhnBE,False,about_the_ceo_not_by,False,False,0.9,Commentary on clip
+k_zWuH6t0PA,True,podcast_interview,False,False,0.8,Community Q&A show with CEO answering
+5cIyhIWxaGE,False,keynote_or_presentation,False,False,0.9,"Conference presentation, not Q&A"
+p6Hi9lhE_cI,True,tv_interview,False,False,0.65,Official channel interview with CEO
+-ltUt5-Zrro,True,tv_interview,False,False,0.95,Bloomberg Studio interview
+LYjtr3_yvtA,False,about_the_ceo_not_by,False,False,0.95,Reaction commentary
+A7EvJIn3uj4,True,tv_interview,False,False,0.95,CNBC interview
+SF2P4yy94A8,False,about_the_ceo_not_by,False,False,0.95,Clickbait commentary
+px9NW3UjX_k,True,podcast_interview,False,False,0.9,Podcast interview with CEO
+Si6XXZJ6ESA,False,about_the_ceo_not_by,False,False,0.95,Meme commentary
+DB9F-B24e5E,True,podcast_interview,False,False,0.9,The Verge long-form interview
+jsopTTR-kZo,False,about_the_ceo_not_by,False,False,0.95,Clickbait commentary
+nm1vf3AQhAM,True,fireside_or_conference_qa,False,False,0.95,Stanford GSB fireside Q&A
+osuOwvEhVfQ,False,other,False,False,0.45,Senra narrated biography episode likely
+3Q68k1HR6zQ,True,tv_interview,False,False,0.95,CNBC interview
+dqg31yD1IMg,True,tv_interview,False,False,0.95,CNBC earnings interview
+FBfAq-uL-Rs,False,about_the_ceo_not_by,False,False,0.95,Fan commentary
+fpOApB-utmM,False,compilation_or_reupload,True,False,0.8,Fan channel repost of tour Q&A
+8gZ8JRRNPz4,False,compilation_or_reupload,True,False,0.75,Short aggregator profile clip
+nPvybVtdB3Q,False,other,False,False,0.98,"Different person, David Marcus"
+TDSFQOSpPBQ,False,other,False,False,0.55,"Short lifestyle feature, not Q&A"
+uoFps-YflHY,True,tv_interview,False,False,0.95,CNBC interview
+rI3qkePyWp0,True,tv_interview,False,False,0.95,CNBC Cramer interview
+rD3m8UdT5Hc,False,keynote_or_presentation,True,False,0.85,Fan clip of RDC stage segment
+AFbvV4c9-x8,True,podcast_interview,False,False,0.85,Long-form podcast interview
+IhT_wnz3DAs,True,tv_interview,False,False,0.95,CNBC interview
+PDr5pc9pgy4,True,tv_interview,False,False,0.95,CNBC earnings interview
+li3PbPWlRZg,False,about_the_ceo_not_by,False,False,0.95,Spanish commentary video
+--tih3VteIc,False,about_the_ceo_not_by,False,False,0.95,Commentary channel
+Xk9b2-CU7U8,True,podcast_interview,False,False,0.95,Rob Lowe podcast interview
+KL7WBjAuTMg,True,podcast_interview,False,False,0.95,Conversations with Tyler interview
+RirqAH2m1HY,True,fireside_or_conference_qa,False,False,0.9,a16z conversation
+s5V_6IWlMyA,False,about_the_ceo_not_by,False,False,0.95,Meme news clip
+umG0jBTRWh8,False,other,False,False,0.9,"Analyst segment, CEO absent"
+kKmlPfKcprc,False,compilation_or_reupload,True,False,0.95,Fan clip of dancing
+EzPzvTwqyfQ,False,compilation_or_reupload,True,False,0.7,Small channel short interview repost
+ZA60prxO-5E,True,fireside_or_conference_qa,False,False,0.85,GameDaily Connect conference interview
+9MxyI5D81Wo,False,about_the_ceo_not_by,False,False,0.95,Meme commentary
+dA9nSUKqXko,True,tv_interview,False,False,0.5,Official channel short interview
+fXxn8vv1W0Q,False,ai_or_fake_suspected,False,False,0.8,Dubious fan 'real interview' title
+ZYpv4wW2va4,False,about_the_ceo_not_by,False,False,0.95,Meme video
+YIHA16MqaBQ,False,about_the_ceo_not_by,False,False,0.95,Commentary channel
+jrsC-fu8I2w,True,fireside_or_conference_qa,False,False,0.8,GameDaily Connect onstage talk
+-_y2KuOUXps,False,ai_or_fake_suspected,False,False,0.95,Scam rumor spam
+wFBKP9UXXk4,False,about_the_ceo_not_by,False,False,0.95,Commentary
+o_WGzSIXmwk,True,tv_interview,False,False,0.9,Bloomberg interview
+_dlJy57Wldo,False,about_the_ceo_not_by,False,False,0.95,Clickbait commentary
+riYYpfULLxM,False,other,True,False,0.8,CEO is interviewer; fan upload
+IWy35bAHiLA,False,speech_or_lecture,True,False,0.85,Fan upload of 2011 talk
+pHsZsp4QIp0,False,compilation_or_reupload,True,False,0.8,Small channel repost of old interview
+4DEU5FNp33w,False,about_the_ceo_not_by,False,False,0.95,Biography profile series
+xxtVkaZm-jA,False,about_the_ceo_not_by,False,False,0.95,Biography channel
+OWIgn6sxhmI,True,tv_interview,False,False,0.9,Bloomberg earnings interview
+lw2p9WDL_Oo,False,about_the_ceo_not_by,False,False,0.9,Community news commentary
+x6RpzHTTowg,True,tv_interview,False,False,0.9,Bloomberg interview
+rztuvNiM0r8,False,about_the_ceo_not_by,False,False,0.95,Games showcase video
+bgTiHR84W78,True,tv_interview,False,False,0.9,Bloomberg interview
+RBY_NY63Gtc,True,tv_interview,False,False,0.9,Bloomberg interview
+Qi684FywV6o,False,compilation_or_reupload,True,False,0.98,Meme loop of keynote
+_iXw1XwH80Y,False,about_the_ceo_not_by,False,False,0.98,Discord prank story
+fi2LRzYufpQ,False,ai_or_fake_suspected,False,False,0.8,Gaming channel dubious live show
+erdYjOm2YQs,True,tv_interview,False,False,0.9,Bloomberg earnings interview
+naTena_hAiU,False,about_the_ceo_not_by,False,False,0.95,Commentary
+1WdnVHhC1n4,False,ai_or_fake_suspected,False,False,0.95,Free Robux spam
+ZVgVrLleXb4,False,about_the_ceo_not_by,False,False,0.95,Teen rant content
+ld3VgwniFpM,False,about_the_ceo_not_by,False,False,0.95,Clickbait rumor
+jn62CYHTa58,False,compilation_or_reupload,True,False,0.9,Fan reupload of CNBC Squawk Box
+HSZMq0Oocac,True,tv_interview,False,False,0.5,Official channel short interview
+V6h_EDcj12k,True,fireside_or_conference_qa,False,False,0.95,"Stanford GSB onstage Q&A, official host"
+XcG2oTrAAlg,False,compilation_or_reupload,True,False,0.85,Clips channel excerpt of longer interview
+4ef0juAMqoE,True,podcast_interview,False,False,0.95,Lenny's Podcast long-form interview
+g5GaBnavBrY,True,podcast_interview,False,False,0.95,Jay Shetty long-form podcast
+Dkfijg7s76o,True,fireside_or_conference_qa,False,False,0.8,"Figma Config conversation, official channel"
+zH0TjlhIpp4,True,tv_interview,False,False,0.95,CNBC TV interview
+JDLlnztmavg,True,tv_interview,False,False,0.7,"Ellen show interview, original channel"
+GP0f3M57uao,True,podcast_interview,False,False,0.9,Rubenstein Show interview
+aFOGlNL39xs,True,podcast_interview,False,False,0.9,Art of Hiring long-form interview
+R2s3OAa86k8,True,tv_interview,False,False,0.95,CNN interview
+ViqxJY_AG_w,True,podcast_interview,False,False,0.9,Social Radars podcast interview
+6_tRZMzb94Q,True,podcast_interview,False,False,0.95,Simon Sinek podcast full episode
+iNfOfBH_F08,True,fireside_or_conference_qa,False,False,0.85,"ET NOW summit conversation, original outlet"
+QDdGZcBujow,False,compilation_or_reupload,False,False,0.8,4-minute clip excerpt
+wbyZylCbACg,True,fireside_or_conference_qa,False,False,0.95,DealBook onstage interview
+_XA74fS8tGM,True,podcast_interview,False,False,0.85,Masters of Scale interview
+qZQM17Qa1RM,True,tv_interview,False,False,0.95,CNBC IPO-day interview
+lrFZr6Ih7cU,True,tv_interview,False,False,0.95,CNBC interview
+IodbsQV8dFE,True,podcast_interview,False,False,0.95,"Prof G conversation, original"
+isP3eik9iDk,True,tv_interview,False,False,0.95,Bloomberg Tech interview
+dPp9zc6SIHY,True,fireside_or_conference_qa,False,False,0.8,"Commonwealth Club conversation, 2011 founder-CEO"
+TKz9Aohljvw,True,fireside_or_conference_qa,False,False,0.85,Greylock fireside conversation
+aVTasjlJKM0,True,tv_interview,False,False,0.95,CNBC interview
+5qu50lXHR7w,True,fireside_or_conference_qa,False,False,0.9,Fortune Global Forum onstage interview
+vEcACMyz3Rc,False,compilation_or_reupload,True,False,0.9,Fan channel short retelling/reupload
+oC2KMh8zvDw,True,podcast_interview,False,False,0.85,"Podcast interview, host channel"
+o3wo8Y1QVZk,True,podcast_interview,False,False,0.95,Jordan Harbinger full interview
+MPIgtYdolic,False,other,False,False,0.7,"Gimmick test format, short branded content"
+ZHlnd7oClbQ,True,tv_interview,False,False,0.95,CNBC interview
+3fmulfbLdmA,False,compilation_or_reupload,False,False,0.85,Multi-guest year-end compilation
+ntvueIsgQwc,False,compilation_or_reupload,True,False,0.9,Aggregator short clip
+FqKIq9Z6Njg,True,tv_interview,False,False,0.95,Bloomberg Studio 1.0 interview
+rB71Cg1dD48,True,fireside_or_conference_qa,False,False,0.9,Skift Global Forum onstage interview
+R5_ypwiRIyo,False,about_the_ceo_not_by,False,False,0.85,"Guest is mentor Chip Conley, not Chesky"
+2-qTBfq9wC8,True,tv_interview,False,False,0.95,CNBC interview
+_a9XfJDYKYc,True,fireside_or_conference_qa,False,False,0.9,Skift Global Forum interview
+DabuIUaFS4o,True,podcast_interview,False,False,0.9,GDIY long-form podcast
+nJMGDlG6nJo,True,tv_interview,False,False,0.9,NDTV Walk The Talk interview
+znmcXLnwpbM,True,tv_interview,False,False,0.9,MS NOW TV interview
+5szUkjOudmA,True,fireside_or_conference_qa,False,False,0.9,Skift Global Forum interview
+_xLWz18Y7Zk,True,tv_interview,False,False,0.95,CNBC interview
+0iBxWzmZG-M,False,compilation_or_reupload,False,False,0.85,Podcast clips channel excerpt
+s3IhbJDFs5E,True,fireside_or_conference_qa,False,False,0.9,Masters of Scale Summit onstage
+Vl-HKW4aE20,True,tv_interview,False,False,0.95,CNBC interview
+PckaA8lkvPY,True,tv_interview,False,False,0.95,CNBC interview
+D4T1k9SJFds,False,about_the_ceo_not_by,False,False,0.9,Commentator channel about CEO
+TG7zfVfnzW4,True,tv_interview,False,False,0.95,CNBC interview
+pkLNZ7Mbg6U,True,tv_interview,False,False,0.95,CNBC interview
+zamp3pkbCDA,False,compilation_or_reupload,True,False,0.85,Aggregator short clip
+sGSpCAtEwRo,True,fireside_or_conference_qa,False,False,0.85,"TIME interview/onstage, original outlet"
+u4L7GDJFTrk,True,tv_interview,False,False,0.95,CBS Mornings interview
+8i8CB4do8xU,True,tv_interview,False,False,0.95,CBS Mornings interview
+SYXrS7gmNtc,True,podcast_interview,False,False,0.9,Social Radars full episode
+qxUIVCmUfKk,False,about_the_ceo_not_by,False,False,0.9,Commentator reaction channel
+jo4Ze2c_hAY,True,fireside_or_conference_qa,False,False,0.9,Masters of Scale Summit onstage
+5IyQIhnwjOU,True,fireside_or_conference_qa,False,False,0.9,"DealBook onstage interview, CNBC"
+zXzOlPQofCQ,True,podcast_interview,False,False,0.9,Rapid Response one-on-one interview
+5OXLs8wIZkY,True,fireside_or_conference_qa,False,False,0.85,STATION F onstage conversation
+RyV6LrgqghU,True,fireside_or_conference_qa,False,False,0.9,"Full fireside chat, original outlet"
+n0RzXz6tteE,True,tv_interview,False,False,0.95,Bloomberg TV interview
+N5BqowY7KYk,True,podcast_interview,False,False,0.85,Will Media long-form interview
+pn55Y7xXP6Q,False,other,False,False,0.95,"About Brian Armstrong, different person"
+EDjUTzE8M1I,True,podcast_interview,False,False,0.9,"Sequoia interview, official channel"
+LAGkMcMzWUc,True,tv_interview,False,False,0.95,CBS Mornings interview
+BCQ3PaHCz_A,True,tv_interview,False,False,0.95,CNBC interview
+ORNBkZ9UrJk,True,tv_interview,False,False,0.95,CBS Mornings interview
+Q75-dDkegL8,True,tv_interview,False,False,0.95,CNBC interview
+XOPRXz-Vkog,True,tv_interview,False,False,0.9,NBC News interview
+Yh4okQ7d3Qk,True,tv_interview,False,False,0.95,Bloomberg TV IPO interview
+QrygOfgZbGU,False,compilation_or_reupload,True,False,0.85,Motivational channel stitched clips
+3QEhUzF8Ka8,True,tv_interview,False,False,0.85,Drew Barrymore Show interview
+VuHYeKMBwVo,False,product_launch_or_promo,False,False,0.6,Live product launch event coverage
+evcjN-w95EY,True,podcast_interview,False,False,0.9,TBPN live interview
+FZUg_3y8x24,False,speech_or_lecture,False,False,0.95,"Award ceremony presentation, no Q&A"
+xpp2hawRbAc,False,compilation_or_reupload,True,False,0.9,Startup Archive clip of other interview
+MeBYmLSLFRg,True,tv_interview,False,False,0.9,Bloomberg Live interview
+gMvM3g0_ebA,False,compilation_or_reupload,True,False,0.9,Startup Archive clip of other interview
+s1t-kJQYR-8,True,podcast_interview,False,False,0.85,TWiST full conversation
+p-hy-TIK0cU,True,tv_interview,False,False,0.95,CNBC interview
+lnjTTsan1cE,True,tv_interview,False,False,0.9,CNBC-TV18 exclusive interview
+zYJ_oQNVqNw,False,about_the_ceo_not_by,False,False,0.9,Commentator take on interview
+hBXGtv5C40U,True,tv_interview,False,False,0.95,Yahoo Finance interview
+bEo9V4fojes,True,fireside_or_conference_qa,False,False,0.85,The Atlantic onstage interview
+AbEDi2r-UCE,False,keynote_or_presentation,False,False,0.8,Company event keynote on stage
+zRxNOPJqnVw,True,fireside_or_conference_qa,False,False,0.9,Reuters in-conversation event
+4fE8UGmyqvk,True,tv_interview,False,False,0.85,"Diario Financiero interview, original outlet"
+KVNuHzxrWqI,False,podcast_interview,False,False,0.9,"Audio only, no face on camera"
+XtRj4bjBxIU,False,speech_or_lecture,True,False,0.9,"Host address reupload, not Q&A"
+zw32cZq7az4,False,about_the_ceo_not_by,False,False,0.75,"Podcast retelling story, not direct CEO Q&A"
+WS08GVnSHLI,False,compilation_or_reupload,True,False,0.95,Reupload of Stanford GSB talk
+JTNNLX8yECw,False,about_the_ceo_not_by,False,False,0.9,Narrated success-story package
+ODvpZRQjzfA,False,product_launch_or_promo,False,False,0.8,Icons product launch coverage
+0AK_AZcCLdE,True,fireside_or_conference_qa,False,False,0.85,"LinkedIn live Q&A, original publisher"
+LwDyW7tTVs4,True,tv_interview,False,False,0.85,CNBC-TV18 interview short
+ES2EldfdbiY,False,compilation_or_reupload,True,False,0.85,Aggregator short clip
+r1giQ9bDfSM,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+zA1qDOOJhdQ,True,fireside_or_conference_qa,False,False,0.85,"WTTC Hotseat Q&A, official channel"
+qm4T8k5dJZY,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+Eq3eN3kOnew,True,fireside_or_conference_qa,False,False,0.7,Conversation with Steve Case despite keynote label
+8WTwulRBiZ0,False,compilation_or_reupload,True,False,0.9,Short clip by VC channel
+Rro2c6wD2Ns,False,speech_or_lecture,True,False,0.9,"Host address reupload, not Q&A"
+p0XNPgrTc24,False,compilation_or_reupload,True,False,0.9,Commentary channel stitched clips
+TYJwROZtzu8,False,compilation_or_reupload,True,False,0.85,Motivational short clip
+nydxm-58bLY,False,about_the_ceo_not_by,False,False,0.85,Startup lessons commentary channel
+s9eXgl1MrpA,True,tv_interview,False,False,0.6,CNBC-TV18 interview around Icons launch
+cma72BpHY2M,True,podcast_interview,False,False,0.8,Podcast episode interview
+328yz47YSDQ,False,compilation_or_reupload,False,False,0.85,Multi-guest roundup episode
+tu2izZjS-BE,False,compilation_or_reupload,True,False,0.9,Reupload of Economic Club event
+aXTC2R28TFM,True,podcast_interview,False,False,0.85,Design Matters long-form interview
+cf0Jlt8ruSA,False,compilation_or_reupload,True,False,0.9,Reupload of Cramer interview
+0BzSXbA2AZ4,True,tv_interview,False,False,0.85,Bloomberg Linea interview
+9cns_Mll_nE,False,about_the_ceo_not_by,True,False,0.85,Generic small channel profile/clip
+Fjjxn_7JbS4,False,compilation_or_reupload,True,False,0.9,Reupload of old early-days interview
+v6By8C2IDeA,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+kEvNyxl6aqs,True,tv_interview,False,False,0.75,PTI news agency interview
+DMYybbDngYc,True,fireside_or_conference_qa,False,False,0.85,ET Global Business Summit conversation
+1ZoiLdGXIDA,False,compilation_or_reupload,True,False,0.9,Spammy aggregator reupload
+_ZYislpPQBI,False,compilation_or_reupload,True,False,0.85,Japanese commentary/reupload channel
+GDUsnv8PLnA,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+oQVu1spWE1I,False,about_the_ceo_not_by,False,False,0.9,Analysis channel of Q&A
+2tRLrvJJEvQ,False,compilation_or_reupload,False,False,0.9,"Commentary/storytelling analysis channel, not a Q&A"
+k8sqd2uCS5o,False,compilation_or_reupload,True,False,0.8,"Short aggregator clip, original publisher unknown"
+jj140BkC34M,False,about_the_ceo_not_by,False,False,0.95,"Booking Airbnb listing, not CEO interview"
+-3iCND1DXxM,False,compilation_or_reupload,True,False,0.85,Fortune interview reuploaded by unrelated channel
+0ozQkHu7zkU,False,speech_or_lecture,True,False,0.85,"Stanford lecture reupload, fan channel"
+M_UUb6KA2s0,True,tv_interview,False,False,0.9,"Bloomberg interview, original outlet"
+yVQZhAJcjD4,True,podcast_interview,False,False,0.8,Long-form podcast episode with Chesky
+JsfvIXMVAg0,False,compilation_or_reupload,True,False,0.75,"2011 archive clip, pre-IPO, aggregator"
+LXHWJnWNrcM,True,tv_interview,False,False,0.9,"Bloomberg interview, original outlet"
+E_si38M2jW8,False,fireside_or_conference_qa,True,False,0.6,"Fast Company onstage chat, third-party uploader"
+lqOY6f3GPyE,True,tv_interview,False,False,0.8,"PTI news interview, likely original"
+UvWhvd96ysE,False,about_the_ceo_not_by,False,False,0.85,Skift analysis about Chesky
+OJxqtj-GaEM,True,fireside_or_conference_qa,False,False,0.85,"Skift conference interview, original publisher"
+vHfiFBuEmJQ,False,compilation_or_reupload,True,False,0.8,"Generic finance channel, likely compiled or reupload"
+2Ij5_0Gsnwk,False,compilation_or_reupload,True,False,0.85,Short career-advice clip excerpt
+vgNSoKiloVw,False,about_the_ceo_not_by,False,False,0.95,Reaction video
+VmXf3cMiSgk,False,keynote_or_presentation,True,False,0.85,"2012 keynote, pre-IPO, aggregator"
+Y2r19E1ZHkc,False,fireside_or_conference_qa,True,False,0.8,"2015 Code reupload, pre-IPO, aggregator"
+5_H_dKxnycI,False,compilation_or_reupload,False,False,0.85,"Playbook summary channel, not original"
+y5c73Lf-KNI,False,compilation_or_reupload,True,False,0.85,Fortune interview reupload by aggregator
+-ZXNgkTCpDg,False,speech_or_lecture,True,False,0.9,Lecture reupload by aggregator
+58nYWj32gzg,False,ai_or_fake_suspected,False,False,0.8,Documentary-style promo hashtag title
+x750j3IIric,False,about_the_ceo_not_by,False,False,0.95,Commentary on interview
+FGnQQJc-DJs,False,other,False,False,0.8,"Obscure influencer series, likely not genuine Q&A"
+cLl3jvRRW6U,False,other,True,False,0.6,"Small channel, unclear original, likely excerpt"
+EJ1V-nFp5qI,False,about_the_ceo_not_by,False,False,0.85,Thrivetime host commentary on founder mode
+JKx63FZZAV8,False,compilation_or_reupload,True,False,0.8,Blueprint channel excerpt of others' content
+GHYo1Ekj0mg,True,podcast_interview,False,False,0.75,"Podcast rebroadcast by Clever, Chesky interview"
+M0tw_WZQlbk,False,compilation_or_reupload,True,False,0.8,Personal channel clip of someone else's interview
+RFvHF6RqK-0,False,compilation_or_reupload,True,False,0.9,Short commentary clip
+msoJc3P0SNo,False,compilation_or_reupload,True,False,0.8,"Aggregator reupload, mixed guests"
+TjOKRPubifA,False,compilation_or_reupload,True,False,0.85,Short personal-channel excerpt
+w3Td67CdWNI,False,about_the_ceo_not_by,False,False,0.85,Documentary-style explainer about Dell
+ZWsRcDLHRV0,False,panel,False,False,0.9,"CNN pundit debate about Dell, CEO absent"
+_3C0LK3rG6c,False,about_the_ceo_not_by,False,False,0.95,Hindi biography video
+tZ9hEbASODA,False,about_the_ceo_not_by,False,False,0.95,Commentary channel about Dell
+uaBvJlHevAQ,True,fireside_or_conference_qa,False,False,0.85,Economic Club of Washington Q&A
+9y7TTU1jIvk,True,podcast_interview,False,False,0.8,"All-In live conversation, Dell speaks substantially"
+qYyJVRRTLlk,True,fireside_or_conference_qa,False,False,0.85,Goldman Sachs conference chat
+MxOMEckLpm0,False,other,False,False,0.98,"Michael Bloomberg, different person"
+L59wnuI7od4,False,other,False,False,0.98,"Michael Barr Fed topic, not Dell"
+SCiZPY70l1c,True,tv_interview,False,False,0.85,theCUBE interview with Dell
+pmhyaoBAbJM,False,other,False,False,0.98,"Bloomberg politics, different person"
+9WSsLSq40Yw,False,compilation_or_reupload,True,False,0.55,"Senra channel, likely narration or reupload"
+iKu-MoTz7s8,False,other,False,False,0.98,"Bloomberg speech, different person"
+5CtAG0gcu90,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2024
+8llmJ-1YqUI,False,compilation_or_reupload,False,False,0.8,Forbes lessons compilation
+Hlc5_Usndks,False,speech_or_lecture,True,False,0.85,Speech on aggregator channel
+DikE9G91c_I,False,other,False,False,0.98,"Bloomberg, different person"
+DAuTl1jgvWY,False,other,False,False,0.98,"Bloomberg, different person"
+JlyjChhBkbY,False,speech_or_lecture,True,False,0.9,"Scripted event speeches, news re-stream"
+uB1fEC3e0OI,False,other,False,False,0.95,Different Dell executive
+f_PRPpWA_Tg,False,other,False,False,0.85,News package announcement
+WPfzXXgkY2o,False,other,False,False,0.95,Other Dell executives
+69j-tgjjZ8M,False,about_the_ceo_not_by,False,False,0.95,Founders podcast narrates biography
+dG1WSP72mnY,True,podcast_interview,False,False,0.9,Long-form podcast with Dell
+PqLDohvyx8Y,True,fireside_or_conference_qa,False,False,0.85,UCTV conversation with Dell
+ntDUEK2FeKw,False,panel,False,False,0.95,"Analyst podcast, CEO absent"
+wFwrtcj7HHM,False,other,False,False,0.95,Other Dell executive
+B7fu7eLIjeo,True,podcast_interview,False,False,0.95,Tim Ferriss interview with Dell
+fZqnIAWgb7g,True,podcast_interview,False,False,0.8,TWiST episode with Dell interview segment
+wGzaJP3KWrw,False,other,False,False,0.98,"Bloomberg, different person"
+DZolizt9ZXg,False,panel,False,False,0.95,"Analyst podcast, CEO absent"
+srijRBNL1uo,True,tv_interview,False,False,0.9,CNBC Cramer sit-down with Dell
+yjlQMsioRJM,False,other,False,False,0.95,Other executives
+SppDoXm6tpg,False,other,False,False,0.9,"Show close, hosts only"
+VSpZIIS0wNI,False,panel,False,False,0.9,Analyst segment
+8Sefrm9tLoE,False,panel,False,False,0.95,"Analyst podcast, CEO absent"
+mjupuQPwLFA,False,panel,False,False,0.95,"Analyst podcast, CEO absent"
+3yzKQ4jRmkM,False,other,False,False,0.9,"Partnership discussion, not Dell CEO"
+b5pLumXjM3s,False,other,False,False,0.95,Intel executive
+lTHucH8Xej8,False,other,False,False,0.95,Other Dell executive
+TI_T1v60Wzg,False,other,False,False,0.95,Other company executives
+gOr9ksIrpPQ,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2026
+AqgPuXYxLGU,False,other,False,False,0.9,Other Dell executive
+bENxzw8NN_s,False,other,False,False,0.95,Other Dell executives
+NcGfnxA-eF4,False,compilation_or_reupload,True,False,0.7,"Aggregator channel, original unknown"
+xDu7ea-Pk_E,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2022
+H04MuaLu_Sk,False,panel,False,False,0.9,Analyst podcast episode
+ECHvExPngGU,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2025
+HsUWP874bNU,False,other,False,False,0.98,"Emil Michael, different person"
+CRrskzZf7L8,True,tv_interview,False,False,0.9,Mad Money interview with Dell
+Xve8tTUOI5s,False,tv_interview,False,False,0.95,"Zach Dell, different person"
+4f_C-ChB1Rg,True,podcast_interview,False,False,0.95,Jay Shetty podcast with Dell
+JaID2co8KVg,False,other,False,False,0.9,Cramer commentary
+4Mq7G_6nles,False,other,False,False,0.9,Analyst commentary
+76299Or-gOo,True,tv_interview,False,False,0.85,CNBC extended Dell interview
+czSKIEu31Jc,True,fireside_or_conference_qa,False,False,0.85,Fortune onstage interview
+fRcLXqhLVCg,True,tv_interview,False,False,0.9,CNBC interview with Dell
+yAcyYciZRfU,False,other,False,False,0.98,"Michael Corbat, different person"
+3c-dW7xZLks,True,tv_interview,False,False,0.95,CNBC full Dell interview
+x3PWqC9rfZM,False,other,False,False,0.95,Other Dell executive
+ZgCtvZx40iE,False,other,False,False,0.95,Other Dell executive
+HIjeWyvR5so,False,other,False,False,0.98,"Lorne Michaels, different person"
+msPLYsaoNM8,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2020
+byshsWWzW7o,False,other,False,False,0.9,Analyst stock calls
+fwD8qabnL4Y,False,other,False,False,0.95,Other executives
+M5F1_hRg3tA,False,other,False,False,0.95,Other Dell executive
+zTYCfGHDCyA,False,other,False,False,0.95,Other executives
+fYj6hCyOIAU,False,other,False,False,0.95,Other executives
+N4DKC9bS1wE,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2018
+973pl47-CLQ,False,about_the_ceo_not_by,False,False,0.95,Telugu success story
+ouwjkjaLVWk,False,panel,False,False,0.7,Multi-leader advice compilation
+eozcHd8qu1g,False,other,False,False,0.98,"Bloomberg commencement, different person"
+IKca_1yL-l8,False,other,False,False,0.95,Other Dell executive
+35Ieo-M9XHg,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2021
+r-tnOvBzobI,False,other,False,False,0.95,IREN CEO interview
+Q3gBk6p1MTE,False,other,False,False,0.98,"Bloomberg, different person"
+f8lqxT2nx2Q,True,tv_interview,False,False,0.8,CBS Mornings interview with Dell
+vtYSSyJOO-0,False,compilation_or_reupload,False,False,0.7,Forbes summit package
+q8r8E23saPg,False,other,False,False,0.9,"Analyst interviews, not Dell CEO"
+d4LRtEj9Vh4,False,other,False,False,0.95,Other executives
+_V0397ZXvAw,False,speech_or_lecture,True,False,0.9,"White House announcement, no Q&A"
+dBtjNPTQbjQ,True,tv_interview,False,False,0.9,CNBC interview with Dell
+QZnUzmOGflY,False,other,False,False,0.95,"Jeff Clarke, not CEO"
+-l4Ce9nXWUg,True,tv_interview,False,False,0.9,CNBC interview with Dell
+_LCJl7KHvgc,True,tv_interview,False,False,0.9,CNBC interview with Dell
+95aMuM0ZJa4,True,podcast_interview,False,False,0.7,Official TWiST clip of interview
+axFKUZYZmd0,False,other,False,False,0.95,Options analysis segment
+QLKm8-s1cnY,False,other,False,False,0.95,Cramer lightning round
+V_nQiPPtGfo,False,other,False,False,0.95,Other Dell executive
+AU-B8a-KVIM,False,other,False,False,0.95,Other executives
+xvidT8PHUKk,False,other,False,False,0.95,Daily news show
+dqaGIwAtWHU,False,other,False,False,0.9,"News report, CEO not speaking"
+yxHHkOvDIqA,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2018
+XQF4DWaKZuw,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2019
+X5_Ztm5HhcY,True,tv_interview,False,False,0.9,CNBC Squawk Box interview
+ZFjunaABUQI,True,tv_interview,False,False,0.9,CNBC earnings interview with Dell
+Cjd63vyaVPA,False,panel,False,False,0.95,Commentary about Dell
+vI4BHzhoeB0,False,other,False,False,0.95,Cramer commentary
+yRxZDlU48Gw,True,tv_interview,False,False,0.9,CNBC interview with Dell
+xURBvO0HSYY,False,other,False,False,0.95,Other executives
+i4-GHo6KslA,False,other,False,False,0.95,Analyst special report
+gxLEeO3q_vk,False,other,False,False,0.6,News package about book
+IHU9aCuzp2g,True,tv_interview,False,False,0.9,CNBC interview with Dell
+-mbZ1YK5OcA,False,other,False,False,0.95,Chart analysis segment
+ABFEG4os82g,False,panel,False,False,0.6,"Multi-person event, Dell speaks partially"
+lrwwrOlYej0,False,other,False,False,0.98,"Michael Rubin, different person"
+3qebsVNVg90,False,other,False,False,0.95,Networking product discussion
+H2oonkOZkzY,False,other,False,True,0.95,"Gelsinger of VMware, not Dell"
+joZ9GuJXBJw,False,other,False,False,0.98,Milken pardon topic
+RYlFPWPYkYU,False,other,False,False,0.7,Likely other Dell executive on guidance
+jaaDki7pQWE,False,compilation_or_reupload,False,False,0.9,Highlights clip of podcast
+WyTBtNo2wZA,False,other,False,False,0.98,"Bloomberg, different person"
+HXTSLlAwnj0,False,panel,False,False,0.9,Analyst podcast episode
+s1C8jL8KH00,True,tv_interview,False,False,0.85,Bloomberg interview with Dell
+nNXMQpK6q-I,True,tv_interview,False,False,0.8,Bloomberg interview with Dell
+DyKk87C-C0U,False,compilation_or_reupload,True,False,0.9,1991 interview on unrelated music channel
+qEsUVYC02gw,True,tv_interview,False,False,0.85,theCUBE interview with Dell 2019
+UR1WFAdCMuA,False,other,False,False,0.95,"Icahn interview, not Dell"
+jLVFpi_sw88,False,other,False,False,0.95,Analyst commentary
+Yk8ZsLYjnFg,False,panel,False,False,0.9,"White House roundtable, CEO brief"
+qPA4taec1vQ,False,other,False,False,0.9,"Michael Bloomberg remarks, different person"
+aGJvKyidPqQ,False,keynote_or_presentation,False,False,0.6,"Summit coverage, CEO Q&A unclear"
+64lcqWQTIKo,False,other,False,False,0.95,"Arougheti of Ares, different CEO"
+P_K3F9sOx6U,False,podcast_interview,False,False,0.85,"Analyst podcast on earnings, no CEO"
+eDR0ANTXamw,True,tv_interview,False,False,0.9,CNBC interview with Michael Dell
+uc2n9OtjtMA,False,tv_interview,False,False,0.95,"Nathanson, different person"
+trGPc0bGA00,False,tv_interview,False,False,0.9,"Scott Bils, not the CEO"
+bIQdVIBMa3k,False,other,False,False,0.7,Generic Cube event coverage
+-KDUezuO_Zo,False,tv_interview,False,False,0.95,"Kantrowitz interview, different person"
+GYO8yivJ0JA,True,fireside_or_conference_qa,False,False,0.9,Washington Post Live interview with Dell
+dry3mBpiRJE,False,about_the_ceo_not_by,False,False,0.9,Biography explainer channel
+gD7FoqN2fpQ,False,tv_interview,False,False,0.9,"John Roese, not the CEO"
+R9gcN_gm4po,False,tv_interview,False,False,0.95,"Froman, different person"
+wkzmUnd19KU,False,tv_interview,False,False,0.9,"Microsoft guests, not the CEO"
+VHrCZ54F46Y,True,fireside_or_conference_qa,False,False,0.9,Economic Club of NY Q&A with Dell
+8y3A4d9UpOQ,False,keynote_or_presentation,False,False,0.85,Conference keynote
+voCBD6F73E4,False,tv_interview,False,False,0.9,"Jenn Saavedra, not the CEO"
+vfG8oCe0Ye8,True,panel,False,False,0.8,SXSW session with Dell as main speaker
+liaFTJC063s,False,other,False,False,0.9,Analyst keynote commentary
+sJMSt4rqvUk,False,tv_interview,False,False,0.9,"CFO interview, not CEO"
+mhjuib_a4wA,False,other,False,False,0.9,Preview commentary
+fAYt8QpBKJM,False,compilation_or_reupload,True,False,0.85,"Random channel, multiple leaders, reupload"
+oTI_yHtGeTU,False,other,True,False,0.8,"Dell interviewing Shuttleworth, reupload"
+Mj4ED0jjogU,False,about_the_ceo_not_by,False,False,0.9,Commentary on leadership principles
+s--z7DxA9b8,False,about_the_ceo_not_by,False,False,0.95,Lifestyle promo video
+wl-hEDkt43Y,True,tv_interview,False,False,0.9,Bloomberg Tech interview with Dell
+5-vNmVor6Ug,True,tv_interview,False,False,0.85,theCUBE interview with Michael Dell
+77_dPXNo9Ao,True,fireside_or_conference_qa,False,False,0.7,TIME conversation with the Dells
+u1kUSUR1clM,True,tv_interview,False,False,0.85,Yahoo Finance interview with Dell
+mqZwq0PUo4E,True,tv_interview,False,False,0.9,CNBC interview with Dell
+SkG61vPUzx4,True,tv_interview,False,False,0.85,RSAC TV interview with Dell
+T-E-ruI2zxQ,False,tv_interview,False,False,0.9,"JJ Davis, not the CEO"
+XeA8zxq1CjA,False,tv_interview,False,False,0.9,"Midha, not the CEO"
+OZBGtWntAfg,False,other,False,False,0.95,"Arougheti, different CEO"
+DIcr_A1q8qg,True,tv_interview,False,False,0.85,ABC News interview with Dell
+JKZhrXjQFys,True,podcast_interview,False,False,0.85,Academy of Achievement full interview
+z-2h89T2hFA,False,other,False,False,0.85,"News segment about Dell, no CEO Q&A"
+-Qo1MC4Bx4Q,True,podcast_interview,False,False,0.9,Daily Stoic long-form podcast with Dell
+HA0-8gxi5Ic,False,other,False,False,0.8,"Press event rebroadcast, multiple speakers"
+7VAkP4kYA6g,False,compilation_or_reupload,True,False,0.8,Fan channel reupload of Dell and Benioff
+hi5yeuLnCLU,True,podcast_interview,False,False,0.7,Schawbel podcast interview with Dell
+uLlikSk5p3Q,True,tv_interview,False,False,0.9,CNBC interview with Dell
+2AtbUWNtrxc,False,other,False,False,0.95,"Arougheti, different CEO"
+wsddXPC-jLQ,False,podcast_interview,False,False,0.95,"Bilello, different person"
+ifXKESa4-0c,False,other,False,False,0.75,"Company interview, not clearly the CEO"
+DVeDyDONl3Y,False,podcast_interview,False,False,0.95,"Bloomberg episode, different person"
+AM9w7vl4IjQ,True,tv_interview,False,False,0.85,NDTV Talking Heads interview with Dell
+AstlDd2lUkU,True,fireside_or_conference_qa,False,False,0.9,Brown University conversation with Dell
+0dnC4ipknqk,False,other,False,False,0.75,"Press announcement event, not Q&A"
+7JbYrFvo3kw,False,other,False,False,0.9,Analyst keynote commentary
+oDfp_mvZeKA,False,tv_interview,False,False,0.9,"Karen Quintos, not the CEO"
+8A64iKNOTbc,False,other,False,False,0.9,WNBA news segment
+dU9NK_r9VKI,False,tv_interview,False,False,0.9,Other Dell executives
+Bg-uHJY6E-o,False,product_launch_or_promo,False,False,0.65,Vendor promo clip
+l_NrBEGEbSY,False,tv_interview,False,False,0.9,"CFO interview, not CEO"
+HU8bpmP0VqA,True,fireside_or_conference_qa,False,False,0.55,"Startup talk Q&A with Dell, uncertain channel"
+52O8YN6xEBA,True,podcast_interview,False,False,0.7,Mark Thompson interview with Dell
+BkFDmmWjToQ,False,other,False,False,0.9,Awards event
+EHjlp6EmsqU,False,tv_interview,False,False,0.95,"Nemeroff, different person"
+OlwHOtRf7E4,False,other,False,False,0.85,News report on deal
+j_sZJaODDh4,False,tv_interview,False,False,0.9,"Michael Morton, not the CEO"
+aIykmASlbEM,False,other,True,False,0.9,Awards event duplicate
+NTkpwkH3F8,False,podcast_interview,False,False,0.95,"Michael Lee, different person"
+8UUe6lyJfXo,False,tv_interview,False,False,0.9,"Burd interview, not CEO"
+HZqqTGKXg2o,False,podcast_interview,False,False,0.95,"About Bloomberg, different person"
+--ZTgILm-eM,True,podcast_interview,False,False,0.7,Mark Thompson interview with Dell
+orQxs0BSYbU,True,tv_interview,False,False,0.85,ETtech interview with Dell
+G46dVdyAfgI,True,tv_interview,False,False,0.9,CNBC Davos interview with Dell
+QNoxvnynVWA,True,panel,False,False,0.85,SXSW conversation with Dell
+voV6pCIiJz0,False,tv_interview,False,False,0.9,"Tom Sweet CFO, not CEO"
+AHNoa3Zlct4,False,tv_interview,False,False,0.9,"Sam Burd, not the CEO"
+gsTCy0v5H80,False,other,False,False,0.85,News report on deal
+Wv-YBHRovb0,False,tv_interview,False,False,0.95,"Arougheti, different CEO"
+JuTbXi7VLBA,False,panel,False,False,0.9,"Experts debate, no Dell"
+D25XtbnCAXQ,False,other,False,False,0.9,News package
+Mr-WB6TLjDY,False,keynote_or_presentation,True,False,0.9,Keynote clip reupload
+6P-p1ObOuAU,False,tv_interview,False,False,0.9,"Erin Banks, not the CEO"
+iabcq5SQ3u4,False,tv_interview,False,False,0.9,"Dell CSO, not CEO"
+54DE8nzQVb4,False,other,False,False,0.85,News package on bid
+bNGGdkn3J8c,True,tv_interview,False,False,0.8,CRN interview with Dell
+x63bribbRYo,False,other,False,False,0.9,News package about Hurd
+doUN1nbMYuo,False,about_the_ceo_not_by,False,False,0.8,Commentary-style episode about Dell
+dTefqKyOHLk,False,other,False,False,0.9,Hardware announcements overview
+x4gTeB-FDCc,False,speech_or_lecture,False,False,0.95,"About Bloomberg, different person"
+oFmQ4XeJr1Y,False,other,False,False,0.85,Event kickoff coverage
+1jdLXQZ-RO4,False,about_the_ceo_not_by,False,False,0.9,Explainer about Dell
+h8cnfzo70yw,False,about_the_ceo_not_by,False,False,0.95,Biography explainer
+sRtn6OiebRs,False,other,False,False,0.85,"Analysis segment, no CEO"
+ElCZhYDLEf8,True,fireside_or_conference_qa,False,False,0.85,Chief Executives Club Q&A with Dell
+R2AZYvtboUU,False,tv_interview,False,False,0.7,"Regional exec likely, not CEO"
+FJf-U5JQfdg,True,tv_interview,False,False,0.9,Bloomberg Tech interview with Dell
+ohzV9ltTzI8,False,other,False,False,0.85,News package
+hqv5DWnv2Lk,False,other,False,False,0.8,Regional forum coverage
+JiFZ78kd8Wo,False,other,False,False,0.8,"Company feature, CEO unclear"
+nPwfoz-bPts,False,other,True,False,0.85,Presidential event rebroadcast
+9eLfQGHOL_g,False,other,False,False,0.98,"Different Michael Dell, bandleader"
+QpoC6SdD-5c,False,tv_interview,False,False,0.9,"Bask Iyer, not the CEO"
+i4Pu6f6TQOo,False,about_the_ceo_not_by,False,False,0.85,Commentary outlook video
+S7nh4RCVRKw,False,compilation_or_reupload,True,False,0.95,"Saylor reupload, different person"
+A4pbowu7fvw,False,podcast_interview,False,False,0.95,"Intrator, different CEO"
+y4P4mVW2HsY,True,fireside_or_conference_qa,False,False,0.85,Conversation with Dell at tech summit
+zJh4F33tKWY,False,about_the_ceo_not_by,False,False,0.9,Motivational tips compilation
+nikUqfsx-MY,False,compilation_or_reupload,True,False,0.75,Aggregator channel clip of Safian chat
+0t56pVLXKKQ,False,about_the_ceo_not_by,False,False,0.95,Explainer channel
+aiuj29v3DG0,False,other,False,False,0.85,"Analyst segment, no CEO"
+kEJj3-i6htA,False,other,False,False,0.85,Awards event feature
+GS_mRX11tk8,True,podcast_interview,False,False,0.9,Bloomberg Talks interview with Dell
+ra6WXzEog0c,False,product_launch_or_promo,False,False,0.8,Reseller promo
+jTc6uOwAa8I,False,fireside_or_conference_qa,False,False,0.95,"Adam Dell, different person"
+Dh6QB5Gy8Qc,True,fireside_or_conference_qa,False,False,0.85,CNBC forum interview with Dell
+aRTCjpw-VPM,False,compilation_or_reupload,True,False,0.9,Fan channel reupload
+w-ZEuHLXIAE,False,product_launch_or_promo,False,False,0.85,Partner promo
+MbGtvph1GZY,False,compilation_or_reupload,True,False,0.85,Opening event clip by random channel
+oCXn4d6Rhro,False,other,False,False,0.9,"Event segment, not CEO Q&A"
+QoLhZWgaJvY,False,product_launch_or_promo,False,False,0.85,Customer session promo
+JANHOmQd5Rs,True,tv_interview,False,False,0.85,ET Now interview with Dell
+ct4tWEjRos8,False,tv_interview,False,False,0.75,"Dell exec, not clearly the CEO"
+FWrtKGpLR3k,False,about_the_ceo_not_by,False,False,0.9,Biography series episode
+0pgzQGhHpkI,False,keynote_or_presentation,False,False,0.85,Keynote recap
+gPlFOrKraJg,False,other,False,False,0.98,"Different Michael Dell, audio book editor"
+hZK0tnEDuTk,False,keynote_or_presentation,True,False,0.9,"Satya Nadella speaking, not Dell; fan reupload"
+g5bO4Ra7M2I,False,about_the_ceo_not_by,False,False,0.95,Interview with a different Dell employee
+hxysog-YK1g,True,podcast_interview,False,False,0.7,Podcast episode featuring Michael Dell on partner channel
+LTVvEi2GdWQ,True,fireside_or_conference_qa,False,False,0.75,Bill George conversation with Michael Dell
+wVekg4xDX3s,True,fireside_or_conference_qa,False,False,0.55,"University entrepreneurship center talk, likely Q&A"
+H51FT-yv_tg,False,tv_interview,False,False,0.9,"Dell's Felice, not Michael Dell"
+V743zOqOyV4,False,other,False,False,0.95,"Different Michael, Dell employee"
+Na6OHd_aS-U,True,fireside_or_conference_qa,False,False,0.85,Web Summit onstage conversation with Dell
+QxuzscZHfFQ,True,tv_interview,False,False,0.9,CNBC TV interview with Michael Dell
+aHz3fNIQYYw,False,tv_interview,False,False,0.95,"Chuck Whitten, not Michael Dell"
+w97shJtusWQ,False,keynote_or_presentation,False,False,0.6,"Summit spotlight, likely keynote or promo"
+C8PrxlHE5Ms,False,tv_interview,False,False,0.9,"Foulkes interview, not Michael Dell"
+ByN-AekMsbw,False,about_the_ceo_not_by,False,False,0.95,Lessons commentary about Dell
+bwrqaDzk450,False,tv_interview,False,False,0.7,"Short Bloomberg clip, likely other Dell executive"
+Gr5tMGmmA00,False,about_the_ceo_not_by,False,False,0.95,Lessons listicle channel
+8fJGVEBvFq0,True,fireside_or_conference_qa,False,False,0.9,Churchill Club interview at Computer History Museum
+MIoLI251G7U,False,about_the_ceo_not_by,False,False,0.95,Motivational channel about Dell
+NozI6T-tWd4,False,other,False,False,0.9,Vlog-style event coverage
+DzUeuVwxuSw,False,about_the_ceo_not_by,False,False,0.95,Commentary story video
+batW34zacJ4,False,earnings_call,False,False,0.85,"AlphaStreet earnings call, audio not CEO on camera"
+9MGjsUNKHQY,False,fireside_or_conference_qa,True,False,0.6,Likely re-upload of Web Summit conversation
+Wa7OgesdJAs,False,about_the_ceo_not_by,False,False,0.95,Success story commentary
+nRHLHvG_Ss0,False,other,False,False,0.9,Event vlog
+8ww6wyif9Dg,False,other,False,False,0.9,Business show exhibitor video
+lfpuYfxjvJk,False,podcast_interview,False,False,0.9,Analyst podcast discussing companies
+dNGRMyMW198,False,tv_interview,True,False,0.65,Archive channel reupload of 2008 TV interview
+EUmg3OP0Ig,False,podcast_interview,False,False,0.95,Podcast with other Dell employee
+KZdtBQX9IOU,False,compilation_or_reupload,True,False,0.7,"Generic title, individual channel reupload"
+Hm-godWk4iI,True,fireside_or_conference_qa,False,False,0.85,"FiRe conference conversation, original publisher"
+PMQG2A7ENzg,False,about_the_ceo_not_by,False,False,0.95,Biography video
+E2t7TtS9K-Q,False,other,False,False,0.95,Different person
+z0favGSTLdI,False,about_the_ceo_not_by,False,False,0.95,Biography video
+lsaLdiYEfNs,False,tv_interview,False,False,0.95,"Analyst interview, not Dell"
+IlaNRARVNM4,False,about_the_ceo_not_by,False,False,0.95,Explainer about Dell
+xVUKtCo9Jw8,False,other,False,False,0.8,ITEXPO interview with a Dell rep
+mQfEu3SmFWQ,False,panel,False,False,0.85,"Canalys forum, other Dell exec"
+rALCT0fYp60,False,compilation_or_reupload,True,False,0.7,Inspiration channel clip
+p1g5pTtztb8,False,about_the_ceo_not_by,False,False,0.95,Explainer about Dell
+9cVTMklkxhM,False,about_the_ceo_not_by,False,False,0.95,Explainer about Dell
+-cDDhzKnVPc,False,tv_interview,True,False,0.8,Aggregator reupload of Bloomberg interview
+Clf35PC1CsY,False,other,False,False,0.95,"Different Mike Dell, spycops inquiry"
+5GCakJ5HIjQ,False,tv_interview,True,False,0.8,Aggregator reupload of TV interview
+7-JGME5f3j0,True,tv_interview,False,False,0.55,"Exclusive interview with Michael Dell, plausible original"
+6DMa15N-fp4,False,other,False,False,0.95,"Different person, Michael Ellison"
+5woYNu3Ufis,False,panel,False,False,0.85,"Canalys forum, other Dell exec"
+FA_T8yr47iE,True,tv_interview,False,False,0.7,Journalist forum interview with Michael Dell
+rh6YuUGL-oc,False,about_the_ceo_not_by,False,False,0.95,Life journey summary channel
+Jx85cK7mRi8,False,about_the_ceo_not_by,False,False,0.95,Documentary about Dell
+c6CAM4YWMhw,False,other,False,False,0.95,"Different Mike Dell, spycops inquiry"
+s0Sw6WxuB68,False,tv_interview,True,False,0.8,Aggregator reupload of TV interview
+Dol76tKPEkk,False,keynote_or_presentation,True,False,0.9,"Jeff Clarke, not Michael Dell"
+BjyoF7z64r8,False,compilation_or_reupload,True,False,0.7,Untitled personal channel short clip
+EYOMU1J04us,False,about_the_ceo_not_by,False,False,0.9,Lessons compilation
+QF53sDa51x4,False,ai_or_fake_suspected,True,False,0.9,Motivational channel repackaging Jay Shetty
+sLZHn653ZdI,False,other,False,False,0.95,"Other speakers, not Michael Dell"
+mJ7-u7kVuN8,False,compilation_or_reupload,True,False,0.8,Throwback reupload channel
+TnwNiriDtPc,False,ai_or_fake_suspected,False,False,0.85,Motivational channel
+wuQtShD2P0U,False,other,False,False,0.95,Different Mike Dell
+LBd2tG5aGs8,False,other,False,False,0.95,"Different person, Michael O'Dell"
+2fDzCWNS3ig,False,other,False,False,0.99,"Music video, unrelated"
+vCIu7Ja_TE0,False,ai_or_fake_suspected,False,False,0.97,"Motivational Sinek channel, not Ek"
+lmyZMtPVodo,False,speech_or_lecture,False,False,0.98,Simon Sinek TED talk
+_A04U9cwC2A,False,other,False,False,0.7,Sports news package on Arsenal bid
+jf1TXJ7zoJA,False,about_the_ceo_not_by,False,False,0.95,Pundit discussion about Ek
+XtHA9VyjeaM,False,about_the_ceo_not_by,False,False,0.9,Sports news analysis about bid
+AVDzQ76vIuQ,False,about_the_ceo_not_by,False,False,0.95,Hindi commentary about Spotify
+fLHzEYuvufk,True,podcast_interview,False,False,0.6,Official TWiST clip of Ek interview
+MSz3YSmiJbs,True,tv_interview,False,False,0.75,CNBC interview with Ek
+USxCtB-3F3U,False,about_the_ceo_not_by,False,False,0.95,Fan channel talking about Ek
+cdQ7mippAiU,True,fireside_or_conference_qa,False,False,0.97,Code 2018 full interview
+2QkQSofGxTw,True,podcast_interview,False,False,0.85,iJustine interview with Ek
+YCZOzRi8qOA,False,keynote_or_presentation,False,False,0.9,Scripted event intro
+ZR0hIRS_6Tk,True,fireside_or_conference_qa,False,False,0.8,WSJ conversation Ek and Parker
+e4E5cvG8C_c,False,keynote_or_presentation,False,False,0.95,Investor day scripted remarks
+k0C0EKh75ao,False,about_the_ceo_not_by,False,False,0.97,Netflix series summary
+OzPGGiEi-dY,True,tv_interview,False,False,0.95,Canal+ Clique full interview
+5iLbbuEecJU,True,podcast_interview,False,False,0.97,Acquired long-form interview
+DICLqGAELMc,True,podcast_interview,False,False,0.97,Tim Ferriss Show
+HetjBaCMpcY,False,other,False,False,0.85,Short Bloomberg profile package
+_0hKOXowDN8,True,podcast_interview,False,False,0.97,TWiST full interview
+dxN0d1jrN4A,True,tv_interview,False,False,0.95,CBS Mornings extended interview
+Nps7hHoWVn8,True,fireside_or_conference_qa,False,False,0.85,Stanford eCorner talk with Q&A
+T47-nj3puVA,False,about_the_ceo_not_by,False,False,0.9,Forbes short profile
+u8PCb5TUeDg,True,tv_interview,False,False,0.9,CNBC earnings interview
+nsjLFrIzsAw,False,other,False,False,0.99,Video game experiment
+5dm1PZrjT1w,False,about_the_ceo_not_by,False,False,0.97,Fan Q&A about takeover
+ubLoa1Eq_bA,True,tv_interview,False,False,0.92,Bloomberg Tech studio interview
+OYOsxYQjPf4,False,about_the_ceo_not_by,False,False,0.95,Sports commentary on bid
+21WaxCKksqw,True,panel,False,False,0.85,Slush founders panel
+Kx1lPyQ9B1g,False,about_the_ceo_not_by,False,False,0.97,Fan channel commentary
+AoYAEOr2R_s,True,podcast_interview,False,False,0.93,NBIM In Good Company interview
+OqH-bvrWwfc,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+-U5P-L4-rAQ,False,about_the_ceo_not_by,False,False,0.9,Forbes news explainer
+-DuekVrTPvk,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+Zubb2ICtzhA,False,other,False,False,0.5,Short school talk excerpt
+2AxsMIGE4A4,False,about_the_ceo_not_by,False,False,0.95,Cramer commentary
+fivxmOnn6Ng,True,panel,False,False,0.8,Vanity Fair panel with Ek
+pG4IOCTcBjw,False,other,False,False,0.99,Video game experiment
+er3A5RM28GM,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+dz7UGXbXA28,False,about_the_ceo_not_by,False,False,0.95,Routine explainer
+gFsjRq4EiJQ,True,tv_interview,False,False,0.9,CNBC interview on Gimlet
+dri5ioyPzOk,False,about_the_ceo_not_by,False,False,0.97,Message addressed to Ek
+sXbxzkDJOzo,False,compilation_or_reupload,False,False,0.8,Short Stanford excerpt clip
+eK-wIL2GmBg,False,other,False,False,0.99,Different person Daniel Lubetzky
+Q8m8M86UpgU,False,about_the_ceo_not_by,False,False,0.98,Fan news show
+iVGKZEy0_h4,False,keynote_or_presentation,False,False,0.95,Scripted closing remarks
+MN299PmzrEc,False,about_the_ceo_not_by,False,False,0.9,Commentator video
+0DT1SKEvoYs,False,other,False,False,0.9,Clubhouse podcast not Ek interview
+0enxeYqcflI,True,tv_interview,False,False,0.8,CBS News interview
+VWGOsp0x_n8,False,about_the_ceo_not_by,False,False,0.98,Animated biography
+fDL-InC8sKc,False,other,True,False,0.5,"Unclear small channel, part 1 of 4"
+IoiSWRS7Q-c,False,compilation_or_reupload,False,False,0.8,Short Stanford excerpt
+LSooqXGHvC4,False,about_the_ceo_not_by,False,False,0.9,Netflix series cast interview
+MOVtnvj0Qmw,True,tv_interview,False,False,0.85,Skavlan talk show interview
+P90gDsjZmks,False,compilation_or_reupload,True,False,0.9,Re-upload of Stanford talk
+wIXj0uYkt9M,False,about_the_ceo_not_by,False,False,0.97,Podcast about takeover
+scD6Gk4tkY0,True,tv_interview,False,False,0.93,MD Meets one-on-one interview
+VuxFqJUODjc,False,about_the_ceo_not_by,False,False,0.98,Fan live news
+NSAPBfQcx_M,False,other,False,False,0.9,Generic Bloomberg daily show
+VS77n4_FjCU,True,fireside_or_conference_qa,False,False,0.8,VentureBeat conversation Parker and Ek
+ibFu4GUtji8,False,compilation_or_reupload,False,False,0.6,Very short clip
+1abYzuqKBZ0,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+7WAKVPy3hA4,False,compilation_or_reupload,False,False,0.6,Very short clip
+P0on0cbOTh0,False,about_the_ceo_not_by,False,False,0.98,Investor commentary
+YwReffazpT4,True,fireside_or_conference_qa,False,False,0.93,Politico Playbook Live interview
+dIz9kZithxU,False,about_the_ceo_not_by,False,False,0.98,Gossip clickbait channel
+EGBaglyHwXA,True,fireside_or_conference_qa,False,False,0.85,SIME conference interview
+iYJ6pl0vTMs,True,podcast_interview,False,False,0.85,Swedish long-form conversation
+h-CkZ77d1d4,False,compilation_or_reupload,True,False,0.9,Fan channel reupload of CNBC
+7He8FiM3gDM,False,other,True,False,0.8,Unknown tiny channel
+o2kPhV6OE1c,False,other,False,False,0.98,Different person Danielle Lee
+XZbd7gPZ6F0,False,about_the_ceo_not_by,False,False,0.97,Explainer about Ek
+W0L_peh3hkc,False,compilation_or_reupload,False,False,0.8,Short Stanford excerpt
+l7Qf1lmNTrU,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+vcaty93Qhj4,False,other,False,False,0.97,About Sofia Ek
+c1N8bhWrhX4,False,about_the_ceo_not_by,False,True,0.95,Commentary on Ek resigning as CEO
+3eksstKTVdM,True,podcast_interview,False,False,0.9,Masters of Scale interview
+seFp4tff3Ss,False,about_the_ceo_not_by,False,False,0.98,Clickbait gossip channel
+-SNZ2uHzzFM,False,about_the_ceo_not_by,False,False,0.97,Stock commentary
+I_7xfFVjLhY,False,compilation_or_reupload,False,False,0.8,Short Stanford excerpt
+NJ912gk4FAI,True,fireside_or_conference_qa,False,False,0.7,"SXSW keynote interview, official channel"
+pHiC36buTkE,False,other,False,False,0.9,Award news piece
+yLjn6YFBt3o,False,compilation_or_reupload,True,False,0.85,Aggregator channel reupload
+PzLdfyUs7zs,False,about_the_ceo_not_by,False,False,0.97,Former CFO talking about Ek
+GAgElRM8gm4,True,podcast_interview,False,False,0.8,Swedish podcast episode
+ym38wRgWkRA,False,compilation_or_reupload,True,False,0.85,Startup Archive clip aggregator
+BumH1RBpzZU,False,about_the_ceo_not_by,False,False,0.97,Fan news show
+pV99Fg6TjA4,True,fireside_or_conference_qa,False,False,0.8,IAB MIXX onstage interview
+sK493LlBt44,False,about_the_ceo_not_by,False,False,0.9,Commentary on artist pay
+KJKLy-jt4gg,False,about_the_ceo_not_by,False,False,0.97,Biography video
+_kTji2U00RQ,False,compilation_or_reupload,True,False,0.9,Fan channel reupload
+loRro-MeMKo,False,other,False,False,0.85,Brief red carpet clip
+Z0lz1VfK7OE,False,compilation_or_reupload,True,False,0.8,Short SXSW clip reupload
+HajdzoBe9eg,False,about_the_ceo_not_by,False,False,0.98,Listicle about Ek
+GreU-4TVVQ0,False,compilation_or_reupload,True,False,0.7,"Split part of event video, aggregator"
+MGZ2Ylu0Of4,False,about_the_ceo_not_by,False,False,0.97,Explainer about Ek
+v-1xMhEbmKA,False,compilation_or_reupload,True,False,0.7,"Split part of event video, aggregator"
+aRGpEf2G-zs,False,other,False,False,0.95,Generic CNBC news segment
+2EzjbjIVyQw,False,compilation_or_reupload,True,False,0.7,"Split part of event video, aggregator"
+yQkZevCwiqI,False,about_the_ceo_not_by,False,False,0.97,News roundup
+avljHMPFjSM,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+weYuJXTjs8U,False,compilation_or_reupload,False,False,0.8,Short Stanford excerpt
+kkOI_Nxf2rw,False,about_the_ceo_not_by,False,False,0.95,Clickbait biography
+83UCMpLVjYM,False,about_the_ceo_not_by,False,False,0.98,Net worth video
+2qYIWbKbAkQ,True,fireside_or_conference_qa,False,False,0.85,Summit09 in-conversation Q&A
+isv6s0tFW1U,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+qrzC4C6t9Xw,False,compilation_or_reupload,True,False,0.9,Reupload of Swedish podcast
+jALuRP19ZJQ,False,about_the_ceo_not_by,False,False,0.97,Explainer about Ek
+lhGGNdc5rnw,False,about_the_ceo_not_by,False,False,0.97,Fan commentary
+8ORRhoNHhG4,False,about_the_ceo_not_by,False,False,0.98,Football podcast
+nm_NP0DVLXY,False,about_the_ceo_not_by,False,False,0.98,Football podcast
+1SZzXYkEriM,True,fireside_or_conference_qa,False,False,0.5,Full Glasshouse fireside chat
+64XN9Hg9eUo,False,other,False,False,0.8,Short news retrospective
+hfHFr_dt_2c,False,about_the_ceo_not_by,False,False,0.98,Fan commentary
+px1SrMaARz8,False,about_the_ceo_not_by,False,False,0.98,Fan commentary
+vTtxneFiqdM,False,about_the_ceo_not_by,False,False,0.98,Fan commentary
+FNUg1Zjs7QQ,True,tv_interview,False,False,0.7,"Interview with Ek, 22 minutes"
+_IJiLhA5c0k,False,other,False,False,0.99,Unrelated Sikkim briefing
+4Hg0jdIAVv8,False,about_the_ceo_not_by,False,False,0.95,Biography compilation
+-BNrDl6o8M4,False,about_the_ceo_not_by,False,False,0.95,Sports commentary about Arsenal bid
+nChOt3iwLPc,False,about_the_ceo_not_by,False,False,0.95,Fan podcast discussing Arsenal rumor
+08KrG0IiqLU,False,other,False,False,0.85,News package on stepping down
+Kq6NbBYY4E4,False,compilation_or_reupload,True,False,0.8,Fan channel clip from Senra podcast
+gOmTZws4OLQ,False,about_the_ceo_not_by,False,False,0.95,Biography commentary channel
+GapX3LIKk94,False,ai_or_fake_suspected,False,False,0.85,"Story channel, likely AI narration"
+sqkJVO-9qhM,False,about_the_ceo_not_by,False,False,0.97,Football roundup
+8NRcYR04At4,False,other,False,False,0.85,"Commentary, not an interview"
+vzPVL7Am9Eo,False,earnings_call,True,False,0.85,Audio earnings call aggregator
+PFDneO5VMg0,False,about_the_ceo_not_by,False,False,0.95,Investor commentary on earnings
+g9RH3xiUAwI,False,about_the_ceo_not_by,False,False,0.9,Narrated history series
+DSdk24Vi_ZQ,False,other,False,False,0.7,"Obscure channel, short, unclear person"
+xayHaCeFIdM,False,about_the_ceo_not_by,False,False,0.9,Podcast news roundup
+08BfSGoHQMk,False,other,False,False,0.98,Audiobook preview
+FiukqEu-aUs,False,other,False,False,0.99,Unrelated Hindi programme
+vaHbwnrOtww,False,other,False,False,0.8,"Short clip, not Q&A"
+JA8gHjU3IAM,False,about_the_ceo_not_by,False,False,0.95,News brief about Helsing
+uCa-t-xt2Vk,False,other,False,False,0.99,Unrelated person
+x0sWolwQ_Q0,False,compilation_or_reupload,True,False,0.7,"2009 interview re-upload, subtitled"
+6KeW706Nnko,False,other,False,False,0.8,Short clip on bands
+3r02asZJpGQ,False,about_the_ceo_not_by,False,False,0.97,News brief on Neko funding
+j9wHONwv9a8,False,about_the_ceo_not_by,False,False,0.9,Music news commentary
+mcv1l_tc0dA,False,about_the_ceo_not_by,False,False,0.97,Sports commentary
+Um1qp7o8N1I,False,about_the_ceo_not_by,False,False,0.85,Obscure biography channel
+OL-78WJd7Vw,True,tv_interview,False,False,0.55,Short interview by original interviewer channel
+R9WWSRfTNoQ,False,about_the_ceo_not_by,False,False,0.95,Arsenal takeover commentary
+QoPO1wLMhGY,False,about_the_ceo_not_by,False,False,0.97,Success listicle
+-kuJcpUZ2fg,False,ai_or_fake_suspected,False,False,0.85,Motivational commentary channel
+4r30jCpHkZs,False,about_the_ceo_not_by,False,False,0.85,Leadership profile series
+pCNPENewwZQ,False,about_the_ceo_not_by,False,False,0.98,Gossip commentary
+YuTNl7cAG8I,False,about_the_ceo_not_by,False,False,0.97,News brief on Helsing
+u9JN4srb2QQ,False,about_the_ceo_not_by,False,False,0.95,Trending news package
+9YqsuhxZRbA,False,about_the_ceo_not_by,False,False,0.95,Industry news roundup
+VvtJUaoYXxc,False,other,False,False,0.7,"Possibly different Daniel Ek, unclear"
+Gnn6grbcC14,False,other,False,False,0.95,Unrelated content
+DU_5ECylaqY,False,other,False,False,0.99,"Book content, unrelated"
+SDzPiOXSKkQ,False,about_the_ceo_not_by,False,False,0.95,Biography narration
+ZO8XGmUA0bM,False,about_the_ceo_not_by,False,False,0.95,Documentary about CEO
+S0PDBjvFLrU,True,tv_interview,False,False,0.85,CNBC-TV18 onstage interview with Fink
+-LPit2bEWAo,True,tv_interview,False,False,0.95,CNBC interview
+NpozSuoNqYA,False,panel,False,False,0.8,"Multi-speaker FII montage/panel, Fink minor"
+D4d1GzgnhkI,True,podcast_interview,False,False,0.9,Forbes interview
+xRCEXPXfeL4,True,tv_interview,False,False,0.95,CNBC interview
+se1bcqMYg8g,True,tv_interview,False,False,0.95,CNBC interview
+HM-ILBFSviw,True,tv_interview,False,False,0.95,CNBC interview
+tRZOrHDosWg,True,tv_interview,False,False,0.95,Bloomberg full interview
+PSVpth7uqb4,True,fireside_or_conference_qa,False,False,0.9,NYT onstage interview
+BnNbZmE3beA,True,tv_interview,False,False,0.95,Bloomberg TV interview
+HeFwIsrtgVQ,True,fireside_or_conference_qa,False,False,0.9,NYT DealBook onstage conversation
+BMHri_jZx64,True,tv_interview,False,False,0.95,CNBC interview
+2l2yrFHnQ1M,True,podcast_interview,False,False,0.6,"Forbes interview clip, short"
+DcKiUpZxZJk,True,tv_interview,False,False,0.95,Fox Business interview
+_CN1TcQgQwg,True,tv_interview,False,False,0.95,CNBC interview
+f8FrvkJt4nk,True,tv_interview,False,False,0.95,CNBC interview
+A2OszEjl_-8,True,tv_interview,False,False,0.95,CNBC interview
+q_j-jRttfV0,True,fireside_or_conference_qa,False,False,0.85,Economic Club fireside Q&A
+Mi3q_upPjBM,True,tv_interview,False,False,0.95,CNBC interview
+hOz19yUXWlE,True,tv_interview,False,False,0.95,Bloomberg TV interview
+OXuOPEsTQ0k,True,tv_interview,False,False,0.95,Bloomberg TV interview
+NIyPwq83vG8,True,tv_interview,False,False,0.95,Fox Business interview
+4f_dXsroDyM,True,tv_interview,False,False,0.95,CNBC interview
+cTT_FlYYNtU,True,tv_interview,False,False,0.95,CNBC interview
+HTveRlW7QPo,True,tv_interview,False,False,0.95,Bloomberg TV interview
+cBNo3-AdbM4,False,compilation_or_reupload,True,False,0.9,Swan Bitcoin re-post of CNBC clip
+NYXo79k3qqg,True,tv_interview,False,False,0.95,CNBC interview
+Ck0VOPZVnbU,True,tv_interview,False,False,0.95,CNBC interview
+NSkLseKnXkQ,True,tv_interview,False,False,0.95,Bloomberg TV interview
+QaR2MQ__A1Y,True,tv_interview,False,False,0.95,CNBC interview
+cX4FvW_Ph_s,True,tv_interview,False,False,0.95,Fox Business interview
+XWwotSf0sbE,False,about_the_ceo_not_by,False,False,0.95,Crypto commentator clickbait
+68xavt308Bo,True,tv_interview,False,False,0.95,CNBC interview
+Zt37lEKol_o,True,tv_interview,False,False,0.85,Bloomberg interview with Gates and Fink
+N9pFWp35rKA,False,compilation_or_reupload,True,False,0.7,"Advisor channel, likely repackaged clips"
+fqBHcbkl_Zo,True,tv_interview,False,False,0.95,CNBC interview
+evUL4vA-9eo,False,compilation_or_reupload,True,False,0.85,Aggregator highlights of WEF session
+3O4pnwq6ddY,True,tv_interview,False,False,0.95,Fox Business interview
+YETCqbovL50,True,tv_interview,False,False,0.95,CNBC interview
+Hskr-WPZKzQ,False,compilation_or_reupload,True,False,0.85,Aggregator re-upload of WEF session
+ChmRWyye3nM,True,fireside_or_conference_qa,False,False,0.9,Citi official fireside chat
+R-cLxFOo7xg,True,fireside_or_conference_qa,False,False,0.9,CERAWeek onstage conversation
+N5L2WZpjeV8,True,tv_interview,False,False,0.8,CNBC-TV18 interview
+NvmjtT_ChfZo,True,tv_interview,False,False,0.95,CNBC interview
+YH-026ctLis,True,tv_interview,False,False,0.95,CNBC interview
+2taqmOs-eBg,True,fireside_or_conference_qa,False,False,0.85,iCapital conversation
+UaAH9_3MwXc,True,fireside_or_conference_qa,False,False,0.9,Milken conversation
+xAsWTIE0XxA,True,tv_interview,False,False,0.95,Bloomberg TV interview
+AV5NDuGZ6No,True,tv_interview,False,False,0.95,CNBC interview
+icuKbYrJ2cE,True,tv_interview,False,False,0.95,CNBC interview
+kLDHoyNKX4o,True,tv_interview,False,False,0.95,Bloomberg TV interview
+ulU_tw81dAk,True,tv_interview,False,False,0.95,CNBC interview
+VbNj5n3pcqc,True,tv_interview,False,False,0.95,CNBC interview
+0ACds3PkhiY,True,tv_interview,False,False,0.95,CNBC interview
+pn2F-XkCLMg,True,fireside_or_conference_qa,False,False,0.85,Economic Club Chicago Q&A
+WpGIp4gOrGI,True,tv_interview,False,False,0.95,CNBC interview
+stWb1S6_qo,True,tv_interview,False,False,0.95,CNBC full interview
+j0hk6Vavaek,True,tv_interview,False,False,0.95,CNBC full interview
+4qhpva-Qj5Q,True,tv_interview,False,False,0.7,Davos interview hosted by Deutsche Bank
+z37e_CD986A,True,tv_interview,False,False,0.95,CNBC one-on-one
+Q8WmhWQ8MIM,True,tv_interview,False,False,0.95,CNBC interview
+5whx4NE1yto,True,tv_interview,False,False,0.95,CNBC interview
+dENVfz5F7N8,False,other,False,False,0.95,Cramer commentary about Fink
+pfVdM3W7r4E,True,tv_interview,False,False,0.9,Bloomberg interview
+4zkSls5pBfM,False,other,False,False,0.8,News package on annual letter
+6NJIX-sJjaw,True,tv_interview,False,False,0.95,CNBC interview
+nvRaeY9sRBg,True,tv_interview,False,False,0.95,CNBC interview
+yEgo08b19E8,True,tv_interview,False,False,0.95,CNBC interview
+ZGNgPLq2KHA,False,about_the_ceo_not_by,False,False,0.95,Documentary about CEO
+7ujfkH9JTPQ,True,tv_interview,False,False,0.95,Bloomberg TV interview
+vg7Fhrh_bkk,True,tv_interview,False,False,0.95,CNBC interview
+4piOwG5sLyg,False,about_the_ceo_not_by,False,False,0.95,Sonnenfeld commentary about Fink
+3-xn6J1hpy0,True,tv_interview,False,False,0.95,Bloomberg TV interview
+4YlpMoRtXLk,False,about_the_ceo_not_by,False,False,0.95,The Hill explainer about Fink
+_iUYhEATYQE,True,tv_interview,False,False,0.9,Bloomberg interview
+GXjxY5sHEsg,True,tv_interview,False,False,0.95,CNBC interview
+ADjVZ-k4cwo,True,tv_interview,False,False,0.95,CNBC interview
+S1eC1YfuoZ0,True,tv_interview,False,False,0.95,CNBC interview
+pYtEukvKjLc,True,tv_interview,False,False,0.95,CNBC interview
+8zAOEwLzaUg,False,ai_or_fake_suspected,False,False,0.9,"Clickbait crypto channel, likely misattributed"
+mw9l6M_RdNM,False,ai_or_fake_suspected,False,False,0.9,"Clickbait crypto channel, likely misattributed"
+LBoCO_mNbj8,False,compilation_or_reupload,False,False,0.8,Highlights package of multi-person panel
+8VaMCA-Wo7c,True,fireside_or_conference_qa,False,False,0.85,Economist event interview
+omv2JHiMLD4,True,tv_interview,False,False,0.95,Bloomberg TV interview
+YF3e2Jhse4Q,False,about_the_ceo_not_by,False,False,0.95,Documentary clip about Fink
+NOh7-ieoFVo,True,tv_interview,False,False,0.95,CNBC full interview
+1I7G8-VUxX8,True,tv_interview,False,False,0.95,CNBC interview
+7A6Rus4dWHQ,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live interview
+sRinurVbUeM,True,fireside_or_conference_qa,False,False,0.85,UCLA speaker series Q&A
+UojxXuNu2J0,False,about_the_ceo_not_by,False,False,0.95,Crypto news channel commentary
+YKbe6UqRVlU,True,tv_interview,False,False,0.95,CNBC interview
+hDng6NmvGk4,True,tv_interview,False,False,0.85,Bloomberg interview
+i00ZPGy7K4k,True,tv_interview,False,False,0.95,CNBC interview
+euPgaxwT9_M,True,podcast_interview,False,False,0.9,Bloomberg Talks podcast interview
+Yq7ksqq7hsY,True,fireside_or_conference_qa,False,False,0.85,UCLA Anderson onstage discussion
+11O0xjTN4lg,True,tv_interview,False,False,0.95,CNBC full interview
+w9O-tl7zMK8,False,compilation_or_reupload,True,False,0.85,Fan finance channel re-upload
+OL2dubQ0_CQ,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live interview
+2vG5ZllHJtg,True,tv_interview,False,False,0.95,Bloomberg TV interview
+lEt8_-abpX0,True,fireside_or_conference_qa,False,False,0.85,Semafor summit conversation
+QNaDVfTMcpU,False,about_the_ceo_not_by,False,False,0.9,Icahn speaking about Fink
+kqaoaOoUCH0,True,tv_interview,False,False,0.95,Bloomberg TV interview
+xonE-gNf76c,True,fireside_or_conference_qa,False,False,0.9,Official JioBlackRock conversation
+PzfoghnWyA4,True,tv_interview,False,False,0.85,Bloomberg two-guest interview
+2L7_dnoQmBQ,True,tv_interview,False,False,0.95,CNBC interview
+KxnX8CNLgN4,True,fireside_or_conference_qa,False,False,0.75,BBVA official conversation
+0tR1YrZj_kg,False,about_the_ceo_not_by,False,False,0.95,Crypto promo commentary
+2WvGlns9Jx4,True,tv_interview,False,False,0.95,CNBC interview
+pSZBOVHczxI,True,tv_interview,False,False,0.95,Bloomberg TV interview
+dyumUMOh4Zw,True,tv_interview,False,False,0.95,CNBC interview
+bG8fjs4wilI,True,tv_interview,False,False,0.95,Fox Business interview
+QjLmhvjRS9Y,True,tv_interview,False,False,0.95,CNBC interview
+c76-7ezhr74,False,about_the_ceo_not_by,False,False,0.95,Stock commentary channel
+eqU_M3DWc98,True,tv_interview,False,False,0.95,Bloomberg TV interview
+FpDcJN0HBnA,False,other,False,False,0.75,Short news segment about net worth
+1Y9mtzYTCEI,True,tv_interview,False,False,0.85,NDTV Big Interview
+4G1elCk8KwA,True,panel,False,False,0.65,CNBC-moderated COP26 panel with Fink
+72fwlCXy1bw,True,tv_interview,False,False,0.95,Bloomberg TV interview
+JtHHnBUmc0g,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live interview
+wTD1Sk9j_KI,True,fireside_or_conference_qa,False,False,0.85,CNBC-TV18 live fireside chat with Ambani
+9LNx4t6Kf5M,True,fireside_or_conference_qa,False,False,0.75,News18 live broadcast of fireside chat
+yopT7XOCiQ0,True,tv_interview,False,False,0.9,CNBC interview
+e-rQghwuXyw,True,tv_interview,False,False,0.9,Bloomberg TV interview
+2UU21Wm2-Bc,False,about_the_ceo_not_by,False,False,0.85,Commentator channel video about Fink
+7IV4Zu_rQ4g,True,tv_interview,False,False,0.9,CNBC earnings interview
+TKkyGlCdC0Y,True,fireside_or_conference_qa,False,False,0.9,FII onstage conversation
+pI3kP27CIdg,False,other,False,False,0.9,"Joshua Fink, different person"
+BLsKMTZEWn4,False,about_the_ceo_not_by,False,False,0.8,HBR case discussion about Fink
+nadP1qCo7MU,True,fireside_or_conference_qa,False,False,0.85,UCLA onstage conversation with Ressler
+YosXoLI4Xm4,True,tv_interview,False,False,0.9,Bloomberg TV interview
+csnBnBFjWR8,True,tv_interview,False,False,0.9,CNBC interview
+v9IEGbxl6fo,True,tv_interview,False,False,0.95,CNBC full interview
+QoZNeHjagt4,False,compilation_or_reupload,True,False,0.8,"Fan channel re-upload, 36 min"
+f-d-qPmmEl0,True,fireside_or_conference_qa,False,False,0.85,Official BlackRock conversation
+ybjiMG8S9Gk,True,tv_interview,False,False,0.9,Squawk Box interview
+D7Q8aoGIgl4,True,tv_interview,False,False,0.9,CNBC interview
+jMgZJ2SROmM,True,podcast_interview,False,False,0.85,Bloomberg Talks interview
+u_fg5FdB7J4,True,tv_interview,False,False,0.9,Fox Business interview
+7gSt8bkw30w,False,compilation_or_reupload,True,False,0.7,Bloomberg clip on Rubenstein channel
+b_ahAvpYZAk,False,podcast_interview,False,False,0.8,"Audio only, no face on camera"
+-vmsGZqshoY,True,fireside_or_conference_qa,False,False,0.6,WKF forum interview by original organizer
+GaqDqzLJ238,False,compilation_or_reupload,True,False,0.85,Obscure channel re-upload
+i--rj0ZfCdA,False,compilation_or_reupload,True,False,0.7,Yahoo Finance interview reposted by UCLA
+jDhZWecE5EA,False,other,False,False,0.98,"Rat Fink, unrelated"
+Iu4kE2Hjjro,True,tv_interview,False,False,0.9,CNBC earnings interview
+_Lm2sVZPOAk,False,compilation_or_reupload,True,False,0.7,Bloomberg clip on Rubenstein channel
+efBDkENbm80,True,tv_interview,False,False,0.9,Bloomberg TV interview
+o2jU3g0iIXM,True,tv_interview,False,False,0.9,CNBC interview
+YkbZxaWo8C4,False,about_the_ceo_not_by,True,False,0.8,Crypto news show commentary
+9f-NuLziGfU,True,fireside_or_conference_qa,False,False,0.85,Paulson Institute conversation
+a1-Qr4pJfL4,False,about_the_ceo_not_by,False,False,0.95,"Analyst criticizes Fink, not Fink"
+sBE7ah8mrg4,True,tv_interview,False,False,0.9,CNBC interview
+qbHOccfCV_4,True,tv_interview,False,False,0.9,Yahoo Finance interview
+EKiaa3YMons,False,compilation_or_reupload,True,False,0.85,Fox clip re-posted by aggregator
+azCLJCrjkjo,True,fireside_or_conference_qa,False,False,0.65,News outlet live broadcast of Ambani chat
+zeQcLEfp86o,True,tv_interview,False,False,0.9,Bloomberg TV interview
+kgav63UgV3U,False,about_the_ceo_not_by,True,False,0.9,Crypto commentary channel reaction
+Hi9zPXjTa9I,True,tv_interview,False,False,0.9,CNBC interview
+xURZdN8wCkE,False,about_the_ceo_not_by,True,False,0.8,Podcast commentary on Fink interview
+rNHWrssczaw,True,tv_interview,False,False,0.9,CNBC interview
+K8ygODHrcFc,True,fireside_or_conference_qa,False,False,0.85,Brookings onstage conversation
+N16wRk4vwsQ,False,about_the_ceo_not_by,False,False,0.9,Gasparino talking about Fink
+H0emAtvBD7Y,True,tv_interview,False,False,0.9,Bloomberg TV interview
+uLVbNPHVj5I,True,fireside_or_conference_qa,False,False,0.8,Onstage conversation with Kashkari
+RLGj9l5z8Y0,True,tv_interview,False,False,0.65,Interview posted by affiliate DSP BlackRock
+Og86EEE9tGk,True,tv_interview,False,False,0.9,Bloomberg TV interview
+spWFFgRI6-g,True,tv_interview,False,False,0.9,CNBC interview
+ezIk9Z-wybg,True,tv_interview,False,False,0.9,CNBC interview
+RN-8OD63ag4,True,fireside_or_conference_qa,False,False,0.95,CFR conversation with Q&A
+0tQ7vSgwDkU,True,fireside_or_conference_qa,False,False,0.8,Economic Club conversation excerpt
+xSnlD8imOb8,True,tv_interview,False,False,0.9,Fox Business interview
+btiazhR9TRU,True,fireside_or_conference_qa,False,False,0.85,CNBC-TV18 Ambani-Fink chat
+E2HKVadE-co,True,tv_interview,False,False,0.9,CNBC interview
+MkWoN-SB9yw,True,fireside_or_conference_qa,False,False,0.8,APG official conversation
+6Hi1C1pzGAU,False,about_the_ceo_not_by,False,False,0.95,Analyst market call about Fink
+nhNaCcMDysc,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live onstage interview
+yJiCeZ_0E7A,False,compilation_or_reupload,True,False,0.9,OTC channel re-upload of CNBC
+EKLHMtwAuGs,True,tv_interview,False,False,0.9,CNBC earnings interview
+wUkV3jH6CJ4,False,compilation_or_reupload,True,False,0.8,Aggregator channel re-upload
+HEUP3Jh8YfY,True,tv_interview,False,False,0.9,Bloomberg TV interview
+wVkeMXmboHg,False,compilation_or_reupload,True,False,0.8,CoinDesk clip of CNBC interview
+Gy5VWzJLXyc,False,compilation_or_reupload,True,False,0.95,Multi-year stitched compilation
+Kw6O14m3OXw,True,fireside_or_conference_qa,False,False,0.85,CNBC-TV18 Ambani-Fink chat clip
+dAs1E6FzBi0,True,panel,False,False,0.65,UCLA conference session with Fink
+yW6fSoUhJKw,False,compilation_or_reupload,True,False,0.6,CNBC clip posted by affiliate
+4bhE6fThZgY,True,tv_interview,False,False,0.9,CNBC interview
+GLb0vpkM38A,True,fireside_or_conference_qa,False,False,0.8,CNBC-TV18 Ambani-Fink chat clip
+6hKbAk9h4Js,True,tv_interview,False,False,0.85,Bloomberg interview
+_1bi735_fdE,False,compilation_or_reupload,False,False,0.95,Multi-guest podcast bonus compilation
+USuwpZQVZ8I,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live onstage interview
+oNkKFNtAu78,True,podcast_interview,False,False,0.85,Bloomberg Talks interview
+1eZtHOTU8zQ,False,compilation_or_reupload,True,False,0.8,"Third-party clip, misspelled title"
+6pidd2AinJo,True,podcast_interview,False,False,0.85,Bloomberg Talks interview
+P650u4eINcw,False,other,False,False,0.85,Produced profile package
+EsAyr3WcrfE,True,podcast_interview,False,False,0.85,Bloomberg Talks interview
+IFjSj7uxLSE,True,tv_interview,False,False,0.9,CNBC interview
+NK92HhKKFto,False,other,False,False,0.98,"Eric Fink, different person"
+8T2LR5AXH1g,False,other,False,False,0.95,"Boxing, different Larry Fink"
+PvBhX9qAfBM,False,compilation_or_reupload,True,False,0.8,Fan channel edited video
+BkR_fn53Na4,False,speech_or_lecture,False,False,0.55,"Short conference excerpt, likely remarks"
+6qcCNM1vmjE,True,tv_interview,False,False,0.65,Interview part 2 by affiliate
+9QVrm-ZqRL4,False,other,False,False,0.95,"Photographer Larry Fink, different person"
+CuZb5UKoQVA,True,tv_interview,False,False,0.9,Bloomberg TV interview
+-a050vEQizw,False,compilation_or_reupload,True,False,0.85,Crypto fan channel clip of CNBC
+ApnYCRqCLiU,False,about_the_ceo_not_by,False,False,0.9,Commentary channel about Fink
+wIxCnZ0b8ho,False,compilation_or_reupload,True,False,0.9,OTC channel re-upload of CNBC
+6QXVCqcDmX4,False,about_the_ceo_not_by,False,False,0.95,"Summary of letter, not interview"
+MWI1HSDutrY,False,about_the_ceo_not_by,False,False,0.95,Biography video about Fink
+KvADAysgZzg,False,other,False,False,0.55,"Ambiguous bare title, likely different or profile"
+fvqoiW7sA2Y,True,tv_interview,False,False,0.6,Fox Business segment with Fink
+MB_QBr3mZrA,False,compilation_or_reupload,True,False,0.8,Aggregator re-upload of Fink interview
+IWKvkfWroEE,False,compilation_or_reupload,True,False,0.85,Clickbait aggregator channel
+3VCkg5zDFh8,False,speech_or_lecture,False,False,0.95,Fink introducing a speaker
+y4BDgtGxlNY,False,compilation_or_reupload,True,False,0.85,Third-party clip of letter quote
+rzpyHV68aKQ,False,about_the_ceo_not_by,False,False,0.95,Commentary on Fink letter
+sxMG3p088rc,True,tv_interview,False,False,0.85,CNBC-TV18 interview
+VjNXjG1Sayo,False,compilation_or_reupload,True,False,0.8,Fan channel re-upload of Davos
+YRQl4OWFGeM,False,compilation_or_reupload,True,False,0.85,Re-upload of Charlie Rose episode
+QHjm-HPa21Y,False,speech_or_lecture,False,False,0.95,Fink introducing a speaker
+MBnqI3OlpQY,False,compilation_or_reupload,True,False,0.8,Aggregator clip of news interview
+BAfUc3HqxmE,False,compilation_or_reupload,True,False,0.8,Individual re-upload of AIC interview
+4ffgZoU6_1s,True,fireside_or_conference_qa,False,False,0.8,Economic Club onstage conversation
+72EZpMqtVq8,False,about_the_ceo_not_by,False,False,0.95,Story video about BlackRock
+mw4DI28e1N8,False,earnings_call,True,False,0.9,"Audio earnings call, aggregator channel"
+kWGiZaIfhQw,False,about_the_ceo_not_by,False,False,0.95,Summary of letter by advisory firm
+LxDv3oIkmbA,True,podcast_interview,False,False,0.5,"Podcast episode featuring Fink, video uncertain"
+Btfy-duqfC4,False,about_the_ceo_not_by,False,False,0.95,Documentary about Fink
+oSxTGU139cM,False,other,True,False,0.8,Obscure individual channel clip
+090vz4zc8_8,False,about_the_ceo_not_by,True,False,0.9,Commentary channel on Fink and Vanguard
+gMXb6I3p_-4,False,compilation_or_reupload,True,False,0.9,Key moments clip channel
+74bRqiMC4sA,False,earnings_call,True,False,0.9,"Audio earnings call, aggregator channel"
+i-TSYC7CgQQ,False,other,False,False,0.9,Course introduction segment
+Hp1OqXcBIAI,False,about_the_ceo_not_by,True,False,0.9,Clickbait commentary channel
+orMkXuLzHNE,False,compilation_or_reupload,True,False,0.85,Fan re-upload of Davos; Musk interviewing
+mz7NkVTJwm0,False,compilation_or_reupload,True,False,0.9,Clickbait crypto re-upload
+-qRnjlubr0Q,False,about_the_ceo_not_by,False,False,0.95,Crypto podcast discussing Fink
+ctVALmMAld0,False,compilation_or_reupload,True,False,0.85,Fan re-upload of WEF session
+jt8sEB9HJsg,False,ai_or_fake_suspected,False,False,0.95,AI-generated deep research video
+Vp3ZbtN_eOI,False,about_the_ceo_not_by,True,False,0.9,Clickbait commentary channel
+W2msh0jut2Y,False,other,False,False,0.99,Music video
+Af2ygn68Pi4,False,other,False,False,0.99,Unrelated person
+tfAhTtBlb2Q,False,other,False,False,0.99,"Bezos documentary, wrong person"
+z3rpSoXGKHY,False,other,False,False,0.99,Different person
+9_0KVBvEfW0,False,other,False,False,0.99,Different person
+D7sSnfjvWKo,False,other,False,False,0.99,Different person
+BtDSF1UDMOY,False,other,False,False,0.99,Different person
+h-COaT67g-s,False,other,False,False,0.99,NBA player Jeff Green
+FypuO0L3Zdk,False,other,False,False,0.99,Different person
+54Jt9NdGz1o,False,other,False,False,0.99,"Jeff Currie, different person"
+m59MdxUePIU,False,other,False,False,0.99,NBA player
+a9SpkKwJbkQ,False,other,False,False,0.99,Different person
+Y14fZQKXb9c,False,other,False,False,0.99,Different person
+48In79LWrio,False,other,False,False,0.99,"Einhorn interview, not Green"
+T4OTLpFD9jw,False,other,False,False,0.99,NBA highlights
+xD5jwSxj4Co,False,other,False,False,0.99,NBA player
+OC60YWGlzas,False,keynote_or_presentation,False,False,0.95,Scripted Kokai keynote
+tuCzwCMIDtc,False,other,False,False,0.99,Different person
+NcAKXy4QYm4,False,other,False,False,0.99,NBA player
+fN3lnkoBj68,False,other,False,False,0.99,"Jeff Greene, different person"
+hmBp1O8KvbU,False,other,False,False,0.99,Music
+SApqpkZKRZE,False,other,False,False,0.99,NASCAR Jeff Green
+RjMd6ibqxv0,False,other,False,False,0.99,Different person
+O8fAWTMuROM,False,other,False,False,0.99,Bezos
+k8OtcaUBzdQ,False,other,False,False,0.99,NBA presser
+ZeuT2WrVtFY,False,other,False,False,0.99,Unrelated documentary
+LFe-7BmXC3Y,False,keynote_or_presentation,False,False,0.7,"Conference keynote talk, likely scripted"
+C5BQIUiSgeI,False,other,False,False,0.99,Bezos book Q&A
+-IKiBjrus7M,False,other,False,False,0.99,NBA player
+42YyZhLW1Fs,False,other,False,False,0.99,NBA player
+g6uAHhrd_5k,False,other,False,False,0.99,David Green Hobby Lobby
+b8aIjjOZ9ao,False,other,False,False,0.99,NBA player
+BYHDx5XqqGI,False,other,False,False,0.99,Politics
+lFJ0dWp0L_c,False,other,False,False,0.99,Dan Ives
+ZlibvAYlor8,False,other,False,False,0.99,Jeff Passan
+CHQTdU-mYh4,False,other,False,False,0.99,Comedian
+9XYf9VAtSzE,False,other,False,False,0.99,Greensill news
+JHTgCwhOAYk,False,other,False,False,0.99,NBA player
+ck8vRWhMGP0,False,other,False,False,0.99,Music
+ZlVz4x1Lf3c,False,other,False,False,0.99,Chevron CEO
+hO939KoOWew,False,other,False,False,0.99,Unrelated news
+TNVWl4E65t4,False,other,False,False,0.99,NBA
+2z9GsYIlHNU,False,other,False,False,0.9,"Unclear, likely different Jeff Green"
+9OI1DD_798o,False,other,False,False,0.99,Bezos
+xSB2tStuaVM,False,other,False,False,0.99,NBA
+a3lOGdsLksw,False,other,False,False,0.99,NASCAR driver
+ONk9NfNCLco,False,other,False,False,0.99,NBA
+FjOW7CkVAL4,True,tv_interview,False,False,0.9,"TTD CEO on Mad Money, official channel"
+lJ6WP9K0Frk,False,tv_interview,False,False,0.99,"Jeff Shell, different person"
+VCbQ95z-xrM,True,tv_interview,False,False,0.95,CNBC interview with TTD CEO
+4blYV55VQYk,True,tv_interview,False,False,0.95,CNBC interview with TTD CEO
+PaPaPdsB1_0,False,other,False,False,0.99,NBA
+WFfNQe7gAKw,False,other,False,False,0.99,Jalen Green
+LaDPO_EIdew,False,other,False,False,0.99,NBA
+rGAzC3HCUjA,False,other,False,False,0.99,Goldblum
+pYIBiRFBlMw,False,other,False,False,0.99,NBA
+tZg3zJY2pSA,False,product_launch_or_promo,False,False,0.9,Product announcement presentation
+crJgKiGQw10,False,other,False,False,0.99,Greenspan obituary
+3GGb6jyyTvs,False,other,False,False,0.99,NBA
+YUbnImfcf0g,False,other,False,False,0.99,Energy stocks news
+Hyr_IrqwQP0,False,other,False,False,0.99,Michael Green
+OvRH66oU6g8,False,other,False,False,0.99,Jalen Green
+AEeCt8Mv6gA,False,other,False,False,0.99,Different person
+0s7Ve0TlwMo,False,other,False,False,0.99,NBA
+5ifNoHHPCoA,False,other,False,False,0.99,NBA
+0zVYa0NVd_g,False,other,False,False,0.99,Musk news
+UteiyX2td6Y,True,tv_interview,False,False,0.95,CNBC interview with TTD CEO
+u9QFDMdQ2uU,False,other,False,False,0.99,Hornets exec
+IfcO6SVPenk,False,other,False,False,0.99,Bloomberg Green show
+p_0WDurz6p4,True,tv_interview,False,False,0.95,CNBC interview with TTD CEO
+vETHyXdK0b4,False,other,False,False,0.99,NBA
+iAvdjGl-Vfw,True,podcast_interview,False,False,0.85,Adtech podcast with TTD CEO
+N3ovwDkEdC0,True,fireside_or_conference_qa,False,False,0.85,"In-conversation session, company channel"
+eBprqeCvqzM,False,keynote_or_presentation,False,False,0.9,Explicit keynote
+66nKDooInp0,False,other,False,False,0.99,NBA
+vxo7FLIet8o,False,other,False,False,0.99,Green Thumb IPO
+jCPi7eQSxUk,False,other,False,False,0.99,"Jeff Weiner, different person"
+3E6koQLwUpY,False,other,False,False,0.99,Dr. Jeffrey Green
+SXG9KEOI9hU,False,other,False,False,0.99,Different person
+7RKybU9nrZc,False,other,False,False,0.99,NASCAR
+lRVHS_HgjtQ,False,other,False,False,0.99,Jeff Jordan
+h-2w0NT46gA,False,other,False,False,0.99,NBA
+NqOLaGtGWRA,False,other,False,False,0.99,Exxon news
+Cs9bLF2AEL4,False,other,False,False,0.99,NBA
+k9f0ia4HH9g,False,other,False,False,0.99,Macy's CEO
+baVZ6a6CBTE,False,other,False,False,0.99,Hornets exec
+flRoCP58sJc,True,tv_interview,False,False,0.8,ExchangeWire interview with TTD CEO
+mXYIy3yKuy0,False,other,False,False,0.99,Different person
+qaR59KQn3SE,False,other,False,False,0.99,Talk show
+LEUZ9i4x-XQ,False,other,False,False,0.99,NBA
+z4q5BDpP2P0,False,other,False,False,0.99,Lyft founder
+uMr7j-X1lko,True,tv_interview,False,False,0.95,TTD CEO on CNBC Closing Bell
+yCM3bDWx0NU,True,fireside_or_conference_qa,False,False,0.95,Fireside chat with TTD CEO
+t6vbN1pBFrA,False,other,False,False,0.99,Megan Greene
+ek2zHlPcJrA,False,other,False,False,0.99,Macy's CEO
+MxXH-dYj-h8,False,other,False,False,0.99,NBA
+gkwTTvy2-TU,False,other,False,False,0.99,Mitchell Green
+4iL0sg0kpD8,False,other,False,False,0.99,NBA
+QF9vOo8sDPY,False,other,False,False,0.99,NBA
+bKGe4GwEtIw,False,other,False,False,0.99,College football
+EoRF6vJYTtQ,False,other,False,False,0.99,NBA
+44Z1CFhkBBY,False,other,False,False,0.99,NBA
+Q6Mk3FlUH28,False,other,False,False,0.99,Energy analyst Greene
+fT0s9Gk1Pdc,False,other,False,False,0.99,Bloomberg Green show
+CkMSuYVzws0,False,other,False,False,0.99,NBA
+Fpfn_GVEXDc,False,other,False,False,0.99,NBA
+mWSYFaSztZs,False,other,False,False,0.99,NBA
+ewvGiVeUQqs,False,other,False,False,0.99,NBA
+K-EoT-AB8n8,False,other,False,False,0.99,NBA
+Jl4bFMklZbw,False,other,False,False,0.99,Music
+QJcyWuVn2dc,False,other,False,False,0.99,Exxon news
+XpO2TCvF8F0,False,other,False,False,0.99,NBA
+d2a-Rqe-QXw,False,other,False,False,0.99,Bloomberg Green show
+eLcC-ZCpbio,False,other,False,False,0.99,NBA
+wnAp1gDRL4k,False,other,False,False,0.99,NBA
+ezlIsHenWqs,False,other,False,False,0.99,Gold card news
+d7XivdyZpfw,False,other,False,False,0.99,Comedian
+OYZjPMDE_h8,False,other,False,False,0.99,NBA
+ikEuNZV7CeI,False,other,False,False,0.99,Jeff Vinik
+ZGDidSdKk00,False,other,False,False,0.99,"Phil Green, bank CEO"
+HgIFLYps30U,False,other,False,False,0.8,"Unknown guest, not clearly TTD CEO"
+jUXG3XdhaYU,False,other,False,False,0.95,Different person Jeffrey Huge
+SBTolg_5K3U,False,other,False,False,0.97,NBA player Jeff Green
+AC3He8DO9fY,False,other,False,False,0.97,NBA player Jeff Green
+sdpBcTV7ouc,False,other,False,False,0.97,Different person Jeff Hafley
+jOzorWgs2Mw,False,other,False,False,0.97,"Different person, Cousteau interview"
+UYCtALLHMkE,False,other,False,False,0.97,NBA player Jeff Green
+hNJUB1W7GMg,False,other,False,False,0.97,Different person Aicha Evans
+gEKcR34tp2Q,False,other,False,False,0.97,NBA player Jeff Green
+47AxrCjsQ9Y,False,other,False,False,0.97,NBA player Jeff Green
+Dc_nQsVlU14,False,other,False,False,0.97,Different person Jeff Immelt
+QkZli4QHTJU,True,fireside_or_conference_qa,False,False,0.9,"TTD CEO fireside chat, ATS Singapore"
+dXEQVRW6Ke8,False,podcast_interview,False,False,0.97,Different person Jeff Greene
+wOaZjThdn08,False,other,False,False,0.97,NBA player Jeff Green
+qji7wtssyCo,True,fireside_or_conference_qa,False,False,0.7,"TTD CEO at LUMA summit, likely onstage chat"
+vpLujFvk9Hg,False,compilation_or_reupload,True,False,0.95,"Jeff Greene investor, reupload"
+RNjYGnO41Yk,False,other,False,False,0.97,NBA player Jeff Green
+oBc2sXVhw-4,False,other,False,False,0.97,NBA player Jeff Green
+a6AELu-KRmg,False,tv_interview,False,False,0.97,Different CEO Enel Starace
+05yToRlbrv0,False,other,False,False,0.97,NBA player Jeff Green
+NH5F6Z9df5s,False,other,False,False,0.97,Different person Jeff Hapeman
+RrPW8oXlQEc,False,other,False,False,0.97,"Garage door owner, different person"
+VA68GY1TpUA,False,other,False,False,0.97,NBA player Jeff Green
+cP-1fsXmpEY,False,other,False,False,0.97,NBA player Jeff Green
+Cp-nTQPF-sI,False,other,False,False,0.97,NBA player Jeff Green
+PYYMfbNBZug,False,other,False,False,0.97,NBA player Jeff Green
+oNUeTHHHEpM,False,other,False,False,0.97,NBA player Jeff Green
+WyAm9CnTTA4,False,tv_interview,False,False,0.97,Different person Diane Greene
+9I3_Jt5M1Dc,False,other,False,False,0.97,Football coach Jeff Traylor
+3oRhkQh39-k,False,tv_interview,False,False,0.97,Different person Jeff Singer
+-oszxBUPNtU,False,tv_interview,False,False,0.97,Different person Jeff Smith
+HyXFAXWqqkw,False,other,False,False,0.97,NBA player Jeff Green
+6BGqrmBH_6k,False,other,False,False,0.97,NBA player Jeff Green
+O49wSZ41f3o,False,other,False,False,0.95,"Actor/other Jeff Green, not TTD"
+baZ79IVwGZM,False,other,False,False,0.97,NBA player Jeff Green
+Bk5L9tHFX2Q,False,other,False,False,0.97,NBA player Jeff Green
+lVmMWD7TEQg,False,tv_interview,False,False,0.97,Different person Jeff Wilke
+UE2fFAtL9Uk,False,tv_interview,False,False,0.97,Different person Jeff Greene politician
+y60-SUexn4w,False,other,True,False,0.97,"Joshua Green journalist, unrelated"
+JS-AXncDujo,False,podcast_interview,False,False,0.97,Different people Tommy Green
+exi-UdCWELc,False,other,False,False,0.97,NBA player Jeff Green
+ZjO42g0aa_c,False,other,False,False,0.97,NBA player Jeff Green
+iVNYvBN4a1Y,False,other,False,False,0.97,NBA player Jeff Green
+HDcYkOZUvmc,False,other,False,False,0.97,NBA player Jeff Green
+WboIgo6Lmoo,False,fireside_or_conference_qa,False,False,0.95,Different person Jeff Jones
+Qf-sAEntATk,False,tv_interview,False,False,0.97,"Different people, Green Party candidate"
+oCkQM52qE0I,False,other,False,False,0.97,NBA player Jeff Green
+fjGa_eB_TdY,False,other,False,False,0.97,NBA player Jeff Green
+Vv_NEZ-JTlg,False,other,False,False,0.97,Brewery owner Jeff Green
+NIhWSQ9gMko,False,other,False,False,0.97,NBA player Jeff Green
+U91rwLKHD1U,False,other,False,False,0.97,NBA player Jeff Green
+G_heVqBlXjE,False,other,False,False,0.97,NBA player Jeff Green
+KYrZU9jSU5E,False,other,False,False,0.97,NBA player Jeff Green
+I-rPv2VOAn0,False,other,False,False,0.97,NBA player Jeff Green
+DiI2xPZPpTM,False,other,False,False,0.97,NBA player Jeff Green
+eL2ytVExSog,False,other,False,False,0.97,NBA player Jeff Green
+z4YcWfZIc_Q,True,fireside_or_conference_qa,False,False,0.92,"TTD founder CEO fireside chat, 61 min"
+-EK_GHvOUps,False,other,False,False,0.97,"Bloomberg Green briefing, unrelated"
+LAycRuUI45c,False,other,False,False,0.97,"Green hydrogen segment, unrelated"
+83b_ciSw3gg,False,other,False,False,0.97,NBA player Jeff Green
+z1xYwkL7dVE,False,podcast_interview,False,False,0.97,NBA player Jeff Green
+M41d26lwzO0,False,other,False,False,0.97,"Jill Stein, Green Party"
+-25BPCqa0_g,False,other,False,False,0.97,NBA player Jeff Green
+UmwxpvVbB_k,False,other,False,False,0.97,NBA player Jeff Green
+p_Rxcfoy-0M,False,other,False,False,0.97,NBA player Jeff Green
+g0M6ogXZZtM,False,other,False,False,0.97,NBA player Jeff Green
+HxaSZf7M8WE,False,podcast_interview,False,False,0.95,"Racing podcast, different Jeff Green"
+n6ojM-SDYgY,False,other,False,False,0.97,"Green revolution lecture, unrelated"
+brfX-W73U84,False,other,False,False,0.95,"Different Jeff Green, Elton John"
+biAk1W7unA0,False,other,False,False,0.97,NBA player Jeff Green
+PyAS73xI1DA,False,podcast_interview,False,False,0.97,Hoya legend NBA player
+R_N6kNN0gBY,False,other,False,False,0.97,NBA player Jeff Green
+vxf4DS-GA0g,False,other,False,False,0.97,NBA player Jeff Green
+zOw9FbMoIKI,False,podcast_interview,False,False,0.97,Brooklyn Nets player
+Hfd11XdDVOQ,False,podcast_interview,False,False,0.9,"Faith podcast, likely NBA player"
+SXLLFbqKQd0,False,other,False,False,0.97,NBA player Jeff Green
+p5geYH8OYRU,False,other,False,False,0.97,"Real estate Jeff Green, different person"
+DkavxmSpRbw,False,other,False,False,0.97,About NBA player Jeff Green
+39Fxf_vsUnI,False,other,False,False,0.97,NBA player Jeff Green
+ZwxF_hzOgjc,False,other,False,False,0.97,NBA player Jeff Green
+mw1KVGXaBGs,False,other,False,False,0.95,"Oral history, different Jeffrey Green"
+IzqZDqJ6LEM,False,other,False,False,0.97,"Jeff Teague, different person"
+spUM--bSN88,False,other,False,False,0.97,"Market segment, unrelated"
+K6nSj1iJh_Y,False,other,False,False,0.97,NBA player Jeff Green
+ugEW7Yo7XKA,False,other,False,False,0.97,NBA player Jeff Green
+zeEZVuIgVaQ,False,other,False,False,0.97,NBA player Jeff Green
+P8fuyL7jkLc,False,other,False,False,0.97,"Radio show, unrelated"
+vbN94HUz4cY,False,other,False,False,0.97,NBA player Jeff Green
+6POkh4loVXk,False,other,False,False,0.97,"Jazz guitarist, different person"
+vtRx_cEQGnA,False,podcast_interview,False,False,0.9,"Patent inventor Jeff Green, different person"
+knc_MSy-ISc,False,other,False,False,0.97,NBA player Jeff Green
+pvGMOZDsf48,False,other,False,False,0.97,NBA highlights
+SVLd2c2Wvfg,False,other,False,False,0.97,NBA player Jeff Green
+2t0PNxoNAw8,False,other,False,False,0.97,NBA player Jeff Green
+qroefE7eLc4,False,podcast_interview,False,False,0.9,"Secure destruction Jeff Green, different person"
+Jl1Qrd7lC2Y,False,other,False,False,0.97,NBA player Jeff Green
+UMRg496L6wE,False,other,False,False,0.97,"Green tech segment, unrelated"
+MsHXLqsiGh4,False,other,False,False,0.97,NBA player Jeff Green
+USIOhG1H26k,False,podcast_interview,False,False,0.9,"Retirement podcast, different person"
+BEUiadNwswM,False,other,False,False,0.97,College football postgame
+afDWUl8qElg,False,other,False,False,0.97,"Radio show, unrelated"
+7Tx1TCw0joc,False,other,False,False,0.97,NBA player Jeff Green
+e7ux_aKuqC4,False,other,False,False,0.97,NBA player Jeff Green
+f-_cPqKKK5s,False,other,False,False,0.95,"Local community profile, different person"
+ATBvDke63ec,False,other,False,False,0.97,Different person Jeff Clauson
+BYJjTgmzg6U,False,other,False,False,0.97,"Film production, unrelated"
+HSgl4ssgZZE,False,product_launch_or_promo,False,False,0.8,Speaker bureau promo
+dynRsrmEcPY,False,other,False,False,0.97,NBA player Jeff Green
+9uLPMHQDSxQ,False,other,False,False,0.97,"Radio show, unrelated"
+R31W1MSzEWE,False,other,False,False,0.9,"MADE Oakland, likely different person"
+ariEwtUMmao,False,other,False,False,0.97,"Film production, unrelated"
+SR-_nKBy48w,False,other,False,False,0.97,"NBA postgame, multiple people"
+tP_EcK_wmLA,False,other,False,False,0.97,"Radio interview, unrelated"
+2WJCMHKoSC4,False,podcast_interview,False,False,0.97,Comedian Jeff Green
+SpVdWRHEaH8,False,other,False,False,0.97,NBA player Jeff Green
+FRr3JC4EckA,False,podcast_interview,False,False,0.95,Unrelated personal podcast
+nlkyZ0K5vDc,False,podcast_interview,False,False,0.97,"Jeff Green CIO at Strike, different person"
+uzHamYE5b9k,False,other,False,False,0.97,Unrelated show
+HhBBF48nzms,False,other,False,False,0.97,Unrelated show
+mImTrtI0TA0,False,other,False,False,0.97,NBA player Jeff Green
+6LhIrwOd_Sc,False,other,False,False,0.99,"NBA player Jeff Green, not Trade Desk CEO"
+n9qBC_HQtrc,False,other,False,False,0.99,"NBA player Jeff Green, wrong person"
+E-jpjBq97lo,False,other,False,False,0.95,"Different Jeffrey Green, Ohio history show"
+NUH5yg-QnTM,False,other,False,False,0.97,"Unrelated Jeffing Jeffrey Show, wrong person"
+u8qkuj69jjY,False,other,False,False,0.98,"NBA player Jeff Green clip, wrong person"
+Bt3Og0434To,True,fireside_or_conference_qa,False,False,0.6,"RSAC 2025 session with Kurtz, likely moderated conversation"
+9aOpIoxDZM0,True,fireside_or_conference_qa,False,False,0.7,Goldman Sachs official interview-style talk
+xySnsTQLqB8,False,other,False,False,0.6,"Sky News package of outage apology, not Q&A"
+MtA4Zf2Pies,True,fireside_or_conference_qa,False,False,0.9,Montgomery Summit fireside chat
+0RXgiGwqNzk,True,podcast_interview,False,False,0.85,Accel Spotlight On interview
+T0qiJMh94Sk,True,podcast_interview,False,False,0.85,Accel long-form interview
+SimnTGmj4DA,True,tv_interview,False,False,0.85,theCUBE interview
+qjbHfYzoL9w,True,podcast_interview,False,False,0.7,Official conversation series with Hamilton
+uTEC061Meto,True,tv_interview,False,False,0.95,CNBC interview
+wSqct-eP-fM,True,podcast_interview,False,False,0.9,The Compound podcast interview
+EcOnv_iVwAs,True,tv_interview,False,False,0.95,CNBC Cramer interview
+BieKd0EgfRQ,True,tv_interview,False,False,0.95,CNBC Cramer interview
+PbmesheplxI,True,tv_interview,False,False,0.95,CNBC full Cramer interview
+jTHyx9mkmX0,True,tv_interview,False,False,0.95,CNBC Cramer interview
+8hEQAXINXgQ,False,other,False,False,0.98,"Esther George, Fed official, different person"
+oRP95b1w_c0,True,fireside_or_conference_qa,False,False,0.8,"Conversation with Dan Ives, official channel"
+aiV5U_XThis,True,tv_interview,False,False,0.95,CNBC interview
+bOQwNZYhTxQ,True,tv_interview,False,False,0.95,CNBC interview
+_rhG0X4QJDo,False,keynote_or_presentation,False,False,0.95,Keynote presentation
+g00vreBaPmk,True,tv_interview,False,False,0.85,theCUBE interview
+_l8VDU9kcRA,True,tv_interview,False,False,0.85,theCUBE interview
+qFyzbsRg3mY,True,tv_interview,False,False,0.95,CNBC Cramer interview
+I5lCk2gLcAk,True,tv_interview,False,False,0.95,CNBC Cramer interview
+Xo_ipCVQkyI,True,tv_interview,False,False,0.85,theCUBE interview
+bkkcgt22Co4,True,tv_interview,False,False,0.95,CNBC interview
+u0Nw6QugZOs,True,tv_interview,False,False,0.95,CNBC Cramer interview
+X4ZOqQHkbXU,True,tv_interview,False,False,0.95,CNBC Cramer interview
+JqIm9FLrpuM,True,tv_interview,False,False,0.95,CNBC Cramer interview
+v8NPUfs_80I,True,tv_interview,False,False,0.9,CNBC IPO interview
+hrUP0nQSBQk,True,tv_interview,False,False,0.85,theCUBE interview
+_u4j9_v8g8o,True,tv_interview,False,False,0.85,theCUBE interview
+yY7W6Osm-ps,False,other,False,False,0.95,"Howard Kurtz, media critic, different person"
+H0uLnRCHEd8,False,other,False,False,0.99,"About George Marshall, unrelated"
+ykJxmUgbfUM,True,tv_interview,False,False,0.95,CNBC full interview
+VrjkQiYUjAc,True,tv_interview,False,False,0.95,CNBC interview
+g2-gbzXrNBE,False,other,False,False,0.99,"George Will, different person"
+MJcvz47OpTA,True,tv_interview,False,False,0.8,CNBC conversation with Toto Wolff
+gZh7hoTZVtw,False,product_launch_or_promo,False,False,0.85,Promo safety car segment
+WeZR7gPBRd4,False,other,False,False,0.8,"Racing driver post-race interview, not CEO topic"
+J6uqduwPQkE,False,product_launch_or_promo,False,False,0.95,"Release video blog, scripted"
+BLZ_cbRB_xU,True,fireside_or_conference_qa,False,False,0.9,Virtual fireside chat
+2273owai2pE,True,tv_interview,False,False,0.95,CNBC interview
+MzY47K13V4I,False,keynote_or_presentation,False,True,0.9,"2011 keynote, McAfee era, not CEO"
+7oi8khK9iqg,True,podcast_interview,False,False,0.7,"Accel interview, RSA preview version"
+WtmX-a-cayQ,True,fireside_or_conference_qa,False,False,0.5,"Evolve 2017 conference session, likely conversation"
+VfZt1XbDNng,True,fireside_or_conference_qa,False,False,0.9,Fireside chat
+D1IeiqiiTu8,False,fireside_or_conference_qa,False,False,0.55,"Short 5-minute clip, 2015"
+YzxlGyl_X_w,True,tv_interview,False,False,0.85,Nasdaq interview
+jRyhdYLt5LY,False,fireside_or_conference_qa,False,False,0.5,Very short summit clip
+FKYR-l3Mj60,False,ai_or_fake_suspected,True,False,0.95,Reverse speech manipulated re-upload
+RpLpTtyQWqA,False,other,False,False,0.99,"Gary Kurtz, Star Wars producer"
+4R7FMowXxFw,True,tv_interview,False,False,0.8,CRN interview
+_8enKSvUkHo,False,other,False,False,0.5,"Obscure VirtuPort profile, format unclear"
+m25FeVEiY1w,True,podcast_interview,False,False,0.55,"Podcast conversation, Kurtz was President and CEO"
+rljEBcJdo74,False,other,False,False,0.9,Real estate commentary about him
+infSVIQqC9w,False,other,False,False,0.7,Racing outlet short clip
+SIu1QBv2YfM,False,other,False,False,0.98,"Sports betting, different person"
+WCPkt-O7aQY,False,other,False,False,0.99,"Brian Kurtz, marketer"
+r4LWluIjyf4,False,other,False,False,0.9,Obscure rough documentary cut
+bZq8DDJjH8E,False,other,False,False,0.99,"Brian Kurtz, marketer"
+kNIB5BaSVU8,False,other,False,False,0.99,"Brian Kurtz, marketer"
+FPQVVssbl0M,False,other,False,False,0.99,"Comedian Preacher Lawson, different person"
+Cy9MF4ISbcU,True,fireside_or_conference_qa,False,False,0.8,Goldman Sachs channel CEO interview
+VCmlaeRVmdc,False,other,False,False,0.99,Jeff Bridges sitcom clip
+ZOpKZJd3diY,False,other,False,False,0.99,"Different people, 92Y event"
+kthdH1CInWI,False,other,False,False,0.99,Unrelated vlog
+h6KtHq2-6F0,True,fireside_or_conference_qa,False,False,0.9,SaaStr fireside with Twilio CEO
+0CKI8Jah-Po,True,fireside_or_conference_qa,False,False,0.85,First Round interview with Lawson
+2Q86UjKU4uI,True,podcast_interview,False,False,0.95,"TWiST podcast interview, original channel"
+7fTSViQ0K0U,True,podcast_interview,False,False,0.95,TWiST long-form interview
+3gjhHBILda8,True,podcast_interview,False,False,0.9,Making Markets podcast with Lawson
+jOZSuH1kwOU,False,other,False,False,0.99,Unrelated vlog podcast
+oS5X_C7X5Pk,False,other,False,False,0.99,Unrelated vlog podcast
+szXqJ2IIk8U,True,fireside_or_conference_qa,False,False,0.6,"Collision stage conversation, likely interview"
+xwXgMM_9tP4,False,other,False,False,0.99,Unrelated vlog podcast
+oiHXqLxpOO4,False,other,False,False,0.97,"MMA fighter, different person"
+N6_Bj5uCRs4,True,fireside_or_conference_qa,False,False,0.95,"Code Enterprise full interview, Kara Swisher"
+BmS7uBZDO68,True,tv_interview,False,False,0.95,CNBC interview
+HCwIhHO62Sk,False,other,False,False,0.99,"Football, unrelated"
+fLSjai1Ng6k,False,other,False,False,0.99,"Different Lawson, cannabis"
+GBsxl61qRB4,False,other,False,False,0.99,Unrelated vlog podcast
+TtxxmZYdU9M,False,other,False,False,0.99,Unrelated vlog podcast
+Szqz0lTI2eI,False,other,False,False,0.99,Unrelated vlog podcast
+U_eQK9UR8ao,True,podcast_interview,False,False,0.8,NFX conversation with Lawson
+F7ZV0aWdBMg,False,other,False,False,0.99,"Hockey house tour, unrelated"
+HJDeoKaSFpU,False,other,False,False,0.99,"NFL coach, unrelated"
+-Q0PmVN_o6g,False,compilation_or_reupload,False,False,0.99,Unrelated vlog compilation
+IEa5zSBLWuw,True,tv_interview,False,False,0.95,CNBC interview
+bbZqt4Xhcvk,False,other,False,False,0.99,"Film actors, unrelated"
+qVQQFhj3F-Q,True,tv_interview,False,False,0.95,CNBC Mad Money interview
+r0ejZ_rFoGg,False,product_launch_or_promo,False,False,0.8,AWS customer story promo
+-iXVBpw-y70,False,other,False,False,0.99,"Casey Anthony case, unrelated"
+jrOSbIVr38o,False,keynote_or_presentation,False,False,0.9,Conference keynote
+K6RnvjJTbDc,False,other,False,False,0.6,"Obscure channel, unclear identity"
+41C3BE6Vi50,True,fireside_or_conference_qa,False,False,0.85,SaaStr fireside Q&A
+hnd4PlypC_U,True,fireside_or_conference_qa,False,False,0.95,TechCrunch Disrupt onstage interview
+3aTTOg-W4t8,True,podcast_interview,False,False,0.85,Podcast interview with Lawson
+WMooyftmsJA,False,other,False,False,0.99,"About Bezos, unrelated"
+RkOgvks35co,False,other,False,False,0.99,"Artists, unrelated"
+yPoPxSLqRsQ,False,other,False,False,0.99,Actor Richard Lawson
+PGDBt5RTuUg,False,product_launch_or_promo,False,False,0.85,"Book tips promo, not Q&A"
+vpICAfJqgrk,False,other,False,False,0.99,"Musician, different person"
+6OEmqCJ2wJk,True,fireside_or_conference_qa,False,False,0.85,Greylock conversation with Lawson
+ZpkVdQ91ZFA,False,other,False,False,0.99,Actor Richard Lawson
+c7-TDG9sqSI,True,tv_interview,False,False,0.95,CNBC interview
+FlsaF0xmoVg,True,tv_interview,False,False,0.95,Bloomberg Tech interview
+eZbx0__-Now,False,other,False,False,0.99,Actress Jayme Lawson
+CKCrDYPLFUs,False,other,False,False,0.99,"NFL player, unrelated"
+FFum7InalhE,True,tv_interview,False,False,0.75,Inc. interview with Lawson
+ebGAw3gnyF4,True,tv_interview,False,False,0.95,CNBC interview
+h0Z8RfEnMUE,True,fireside_or_conference_qa,False,False,0.85,Post Seed long fireside
+7uoJjY5c-tU,True,fireside_or_conference_qa,False,False,0.6,"Conference talk, likely interview format"
+lfyGeR48MUU,False,other,False,False,0.99,"Author Eugenides, unrelated"
+2h9GAnA4UoU,False,other,False,False,0.99,"BJJ match, different person"
+ptDuWLMjD98,True,fireside_or_conference_qa,False,False,0.5,"Investor meeting, likely Q&A format"
+cACmA06obv0,False,other,False,False,0.99,"MMA fighter, different person"
+yYrkUsHyJWg,True,podcast_interview,False,False,0.9,NFX interview with Lawson
+GRLXoK2Rmr8,True,panel,False,False,0.7,"Twilio panel with Lawson, Immelt, Stein"
+pd0NWhCMDUc,True,podcast_interview,False,False,0.85,Ben Folds podcast interview
+I1U-z30pj1Y,False,other,False,False,0.9,"Award acceptance, not Q&A"
+lInTrM00dZw,True,podcast_interview,False,False,0.8,web2Point0tv interview part 1
+wH9SVNgmsR4,True,fireside_or_conference_qa,False,False,0.85,TechCrunch onstage conversation
+nh7abI5oMg4,True,panel,False,False,0.85,"Web Summit IPO panel, Lawson featured"
+ZAKn9qkYEwU,True,fireside_or_conference_qa,False,False,0.85,Meetup fireside with Lawson
+kshxbc5jVXg,True,fireside_or_conference_qa,False,False,0.7,Web Summit stage talk/interview
+w5X-c1iq160,False,other,False,False,0.99,"Gym owner, different person"
+3NkGZyjMCjw,True,fireside_or_conference_qa,False,False,0.6,PagerDuty conversation with Lawson
+94eOlBhy18Y,True,tv_interview,False,False,0.7,Ben Kepes short interview
+2JANEYwOT14,True,fireside_or_conference_qa,False,False,0.9,Startup Grind fireside
+feUxU8P3OFc,True,tv_interview,False,False,0.7,Short interview with Twilio CEO
+ZrzJDJztV40,True,tv_interview,False,False,0.75,Data 2.0 interview with Lawson
+a3eX_T11xxc,True,tv_interview,False,False,0.6,Techco short interview
+PHsA9_wttWo,False,compilation_or_reupload,True,False,0.7,Fan channel repost of Twilio/Kutcher event
+jxlDn4W3Mtw,False,about_the_ceo_not_by,False,False,0.9,Commentary about Lawson's communication skills
+uf7Gk8Mcrnw,False,other,False,False,0.99,"Dr. Lawson, different person"
+SPLzGQDwPWI,False,other,False,False,0.99,"Magazine panel, no Lawson"
+7hdqjmVNiRk,False,other,False,False,0.99,"Jeff Immelt interview, wrong person"
+Y-ghsCVkG6M,True,fireside_or_conference_qa,False,False,0.65,Fable interview with Twilio CEO
+wHC6JKkVAKQ,True,podcast_interview,False,False,0.75,web2Point0tv interview part 2
+Fr1gN4JPO-I,False,other,False,False,0.99,"Cyclist, different person"
+yzUG6Ta_8pg,False,other,False,False,0.99,"2011 congressional, different person"
+vmA83d3T1v4,True,fireside_or_conference_qa,False,False,0.95,SIGNAL fireside chat with Eric Ries
+p-M9VayfTI4,True,fireside_or_conference_qa,False,False,0.85,VentureBeat onstage interview
+bmLQjS5e3kk,True,panel,False,False,0.8,Panel discussion with Lawson
+QQWgGTcidWs,False,other,False,False,0.99,"Paranormal detective, different person"
+2HXWVtcGjFw,False,other,False,False,0.99,"Paranormal, different person"
+2SZgruqLVGs,True,fireside_or_conference_qa,False,False,0.85,Conference conversation with Lawson
+eqOblnNBsj0,True,fireside_or_conference_qa,False,False,0.7,"CEO conversation on equity, likely Q&A"
+79HFvDAADqc,True,podcast_interview,False,False,0.65,TWiST official clips of interview
+gygBpGQNTYI,True,fireside_or_conference_qa,False,False,0.7,Collision 2015 stage session
+A3CayeyH9r4,False,product_launch_or_promo,False,False,0.95,Audiobook preview
+DDLCrHEx7ls,False,other,False,False,0.5,"Obscure consultancy, likely different Jeff Lawson"
+nzcnN_HnEvA,False,other,False,False,0.99,"Guitarist, different person"
+u1Su9PBAqvg,True,podcast_interview,False,False,0.65,TWiST official clip of interview
+jowo-2PVa_M,True,fireside_or_conference_qa,False,False,0.85,eToro webinar conversation with CEO
+WummdFMGTHw,False,other,False,False,0.99,"Jeff Schox, different person"
+nP3uO4bGbnc,False,earnings_call,True,False,0.85,"Aggregator earnings call, likely audio only"
+mD4aCT5m374,False,other,False,False,0.99,"Photographer, different person"
+hjN7EG9VhvY,False,ai_or_fake_suspected,False,False,0.85,Junk or spam upload
+hm8zTn_6d04,True,podcast_interview,False,False,0.65,TWiST official clip of interview
+OstisUT5MxY,False,compilation_or_reupload,True,False,0.9,"News snippet repost, about CEO"
+xQVpTGr4WYk,False,other,False,False,0.99,Different people
+xdlyk6MSHws,False,other,False,False,0.99,Different person
+yQ6ZdCabofQ,False,compilation_or_reupload,True,False,0.9,Re-upload of Techco interview
+DNhlYc7nKPo,False,other,False,False,0.99,"Malcolm Lawson, different person"
+on40BNZHUr4,False,tv_interview,False,True,0.8,"SAP CEO era, not ServiceNow"
+yr12KP1eDus,False,other,False,False,0.98,"Sean McDermott, different person"
+1j_5UTKMDNg,False,other,False,False,0.98,"Sean McDermott, different person"
+safrkd-jpJc,False,other,False,False,0.98,"Clintons interview, not McDermott"
+Jkl033U2-OA,True,podcast_interview,False,False,0.95,Acquired podcast with ServiceNow CEO
+8ctR4dOUiUY,False,other,False,False,0.98,"Sean McDermott, different person"
+yztMEkLD-kU,True,tv_interview,False,False,0.95,"CNBC Cramer interview, ServiceNow CEO"
+VSQOElJEu-w,True,podcast_interview,False,False,0.8,Rubenstein Show interview with McDermott
+PiZVZ5SJenw,False,tv_interview,False,True,0.85,"SAP step-down, not ServiceNow CEO"
+oTx1aXS_KG4,False,other,False,False,0.98,Sean McDermott press conference
+G0FTeBb7l80,False,other,False,False,0.98,Sean McDermott NFL story
+2x_gx4xMROE,False,tv_interview,False,False,0.95,"Rubenstein on Powell, not McDermott"
+gJfzbTTBdVk,True,podcast_interview,False,False,0.9,"Making Markets podcast, ServiceNow CEO"
+Iy0KaTmoz14,False,keynote_or_presentation,False,False,0.85,"Keynote stage segment, scripted"
+gyMI0qgnBZg,False,compilation_or_reupload,False,True,0.8,"Short promo-style clip, SAP era"
+szYB96QcO8s,False,compilation_or_reupload,False,True,0.85,SAP CEO era short clip
+BD-3DIUEVZM,True,tv_interview,False,False,0.8,CNBC incoming ServiceNow CEO interview
+CVEJtZqEzmU,True,tv_interview,False,False,0.95,CNBC Cramer one-on-one
+zgbSTdoGvIY,False,other,False,False,0.98,Sean McDermott press conference
+fbFEQeXlmLk,True,tv_interview,False,False,0.95,CNBC interview on Armis deal
+C2UEIY8jTVE,False,fireside_or_conference_qa,False,True,0.85,SAP CEO era
+1jvWeR4YtNs,True,tv_interview,False,False,0.9,"Forbes interview, ServiceNow CEO"
+bZUaFXo36FM,True,tv_interview,False,False,0.95,"CNBC interview, ServiceNow"
+2Y_yfYGmxDE,True,tv_interview,False,False,0.95,"CNBC interview, ServiceNow AI"
+JJ9qJSW9oGU,False,other,False,False,0.98,Sean McDermott interview
+Sp0C8xBoepM,True,tv_interview,False,False,0.95,"CNBC interview, ServiceNow"
+X_mF1YFqn8s,True,tv_interview,False,False,0.95,"CNBC interview, ServiceNow 2020"
+Ah0TEU6VCiQ,True,podcast_interview,False,False,0.95,Kleiner Perkins Grit podcast
+Nv1WjWasEU8,False,other,False,False,0.98,Sean McDermott
+0wx2f1YcscI,False,other,False,False,0.98,Sean McDermott
+Ri0QwqK5uxw,True,tv_interview,False,False,0.9,"CNBC interview, ServiceNow AI"
+2oyVniLcaOo,True,tv_interview,False,False,0.85,Fox Business interview
+I4PwlMlLUbY,False,other,False,False,0.98,Sean McDermott
+dCke680AEBc,False,other,False,False,0.98,Sean McDermott
+mLaWU84lQAc,True,tv_interview,False,False,0.9,"CNBC earnings interview, ServiceNow"
+POYGrih4aek,True,podcast_interview,False,False,0.95,Kleiner Perkins long-form interview
+RYEXtyzkt38,True,tv_interview,False,False,0.85,"CNBC cloud outlook, ServiceNow era"
+9LMba6ke0fc,False,other,False,False,0.98,Sean McDermott
+eZCWfNQ790c,False,tv_interview,False,True,0.9,SAP CEO era
+tWQDRhcwR5E,False,other,False,False,0.98,"Bills show, not CEO"
+HhuqhTRS19A,False,other,False,False,0.98,Sean McDermott
+lmoqA4bU4y0,True,tv_interview,False,False,0.9,"CNBC full interview, ServiceNow CEO"
+lCHc3AfF4Lg,False,fireside_or_conference_qa,False,True,0.9,2019 SAP CEO era
+imZiUpBqXUI,True,fireside_or_conference_qa,False,False,0.7,"Protocol interview, likely ServiceNow era"
+bJc9aFNcEaM,False,fireside_or_conference_qa,False,True,0.9,SAP-era TechCrunch chat
+LYudpr6eEAQ,False,other,False,False,0.98,"McDermott International, oil company"
+fMufscZhaUs,True,podcast_interview,False,False,0.6,Long-form podcast with McDermott
+72SszJJtFzQ,True,tv_interview,False,False,0.95,Bloomberg interview on Armis
+KIJdycH3d9o,False,tv_interview,False,False,0.95,"Coupa CEO, different person"
+vR0CLXcEVGs,False,fireside_or_conference_qa,False,True,0.9,SAP CEO era
+J1WC9ejC2IY,False,tv_interview,False,True,0.9,SAP earnings interview
+WycsPv3qdsw,False,other,False,False,0.98,Sean McDermott
+XDGrji099xs,False,fireside_or_conference_qa,False,True,0.9,SAP CEO era
+jn0VYIRdUE0,False,other,False,False,0.98,Sean McDermott
+MB_l3KB2wcs,True,tv_interview,False,False,0.9,"CNBC earnings interview, ServiceNow 2020"
+l8I0bZ4LWJk,False,other,False,False,0.98,Sean McDermott
+ZQPTyiw8YJ4,False,other,False,False,0.98,Sean McDermott
+UVyOSTavUs0,True,podcast_interview,False,False,0.6,"Rubenstein interview clip, original channel"
+GNeFiq5FDts,False,other,False,False,0.98,Sean McDermott
+zcbRvTMasns,True,podcast_interview,False,False,0.8,"Rubenstein interview, ServiceNow CEO"
+ddwNeu3PK_E,True,tv_interview,False,False,0.95,"CNBC International interview, ServiceNow"
+aQqJPa-1D7w,False,tv_interview,False,False,0.95,"Bill.com founder, different person"
+6C9veieQ3HQ,False,other,False,False,0.98,Sean McDermott
+g1gpKgugII0,False,other,False,False,0.98,Sean McDermott
+pXJvKZQNgg8,False,speech_or_lecture,False,True,0.9,SAP co-CEO awards speech
+sax0QG1E1M0,False,tv_interview,False,True,0.9,SAP CEO era
+BOghSlX_v0E,True,fireside_or_conference_qa,False,False,0.85,"Summit conversation, ServiceNow CEO"
+Xd0dLxeDLE8,False,tv_interview,False,True,0.8,Titled 'former CEO' of SAP
+st034zQcIeI,False,other,False,False,0.98,Sean McDermott
+u5KPtU4DiJI,False,fireside_or_conference_qa,False,True,0.9,SAP-era Qualtrics Q&A
+t-uCZI1bMEY,True,fireside_or_conference_qa,False,False,0.95,"Montgomery Summit fireside, ServiceNow"
+OySRal5PqTg,False,keynote_or_presentation,False,True,0.9,SAP-era keynote speech
+H5C4dvDOPhY,False,tv_interview,False,True,0.9,"SAP co-CEOs, not McDermott"
+Q5-LsPm9DPg,True,fireside_or_conference_qa,False,False,0.95,"Okta CEO fireside, ServiceNow CEO"
+dcSuai62rto,False,fireside_or_conference_qa,False,True,0.9,SAP co-CEO era
+Waf91FzQsas,False,product_launch_or_promo,False,True,0.8,"Short promo, SAP era"
+o1B1fCz18Ys,True,fireside_or_conference_qa,False,False,0.9,"CFR conversation, ServiceNow CEO"
+zER4a8ljyIk,False,other,False,False,0.98,Sean McDermott
+wPSeqKqFoqE,True,tv_interview,False,False,0.9,"Bloomberg earnings interview, ServiceNow"
+TumNn2w3mTU,False,keynote_or_presentation,False,True,0.9,SAP-era summit speech
+JH-1oEOMWc8,False,panel,False,False,0.85,Analyst commentary about McDermott
+LfJTAFpKY8k,False,tv_interview,False,False,0.95,"Coupa CEO, different person"
+mo0mrdpnI4w,True,podcast_interview,False,False,0.9,NYSE podcast with ServiceNow CEO
+-9tX3CYzHco,True,fireside_or_conference_qa,False,False,0.85,CNBC Events livestream conversation
+4yelMKbDhY0,False,other,False,False,0.98,Sean McDermott
+XSWBKWeZZAk,False,other,False,False,0.98,Bills coaches show
+K-HGEH8r6x8,False,tv_interview,False,True,0.9,SAP co-CEO era
+nNzhBFZb2qg,False,tv_interview,False,True,0.85,SAP Americas era
+_1DLDh3GL3c,False,tv_interview,True,True,0.9,SAP co-CEO 2010 re-upload
+3oBm_IeIOE8,False,speech_or_lecture,False,False,0.5,"Named lecture, likely speech format"
+lg--okCOEUs,False,podcast_interview,False,False,0.8,"Soccer podcast, McDermott is minor guest"
+ANM6wWDsAC4,False,product_launch_or_promo,False,True,0.75,"Short promo-style insights, SAP era"
+EJakn_ex-vQ,False,fireside_or_conference_qa,False,True,0.9,SAP CEO era
+wGPA8VI7cB4,False,tv_interview,False,True,0.9,SAP CEO era
+WDYXBDSYM4o,False,other,False,False,0.98,"Jon McDermott, different person"
+mJk7eX9hjFE,False,speech_or_lecture,False,True,0.85,"2016 award speech, SAP era"
+vr9w0G_tCJk,False,other,False,False,0.6,"Small channel, likely different Bill McDermott"
+MU0L2fLbVSo,False,other,False,False,0.98,Sean McDermott
+fQz_REid2Rg,True,tv_interview,False,False,0.9,"Bloomberg Talks long interview, ServiceNow"
+kLmMsCfaZRU,False,fireside_or_conference_qa,False,True,0.8,"Titled CEO of SAP, SAP era"
+zH4NkXNOKZQ,False,tv_interview,False,True,0.9,SAP CEO era
+slzvDKZWySE,False,other,False,False,0.85,"Local soccer news, not CEO Q&A"
+K_jAI_c1zKc,False,tv_interview,False,True,0.9,SAP CEO era
+ZeG8Ed_wXiU,False,fireside_or_conference_qa,False,True,0.9,SAP co-CEO era
+SdQpDQl4QbU,False,about_the_ceo_not_by,False,False,0.9,Analyst commentary about CEO
+DyAsjbcEEWs,False,earnings_call,True,False,0.85,Audio earnings call on aggregator channel
+UMSESl0pBU0,False,keynote_or_presentation,True,True,0.9,SAP Sapphire keynote clip
+BrGm0RCKkz8,False,compilation_or_reupload,True,False,0.9,Japanese commentary channel
+dxQoz7OYh84,False,tv_interview,True,True,0.85,"SAP CEO era, individual channel"
+R4DjePhrzoo,False,compilation_or_reupload,True,False,0.9,Re-upload of keynote segment
+1yY-0Cz41TM,False,about_the_ceo_not_by,False,False,0.9,Analyst commentary about CEO
+AkUtYsv1ZVQ,False,product_launch_or_promo,False,True,0.8,"Short promo clip, SAP era"
+yI0nn3HWYbQ,False,ai_or_fake_suspected,False,False,0.9,"Analysis channel, AI-style hype"
+LIqP9NwSUGg,False,tv_interview,False,True,0.85,SAP-era Bloomberg clip
+DtD5H6aQADs,False,compilation_or_reupload,True,False,0.9,Japanese commentary channel
+hYud9EKO5t4,False,other,False,False,0.7,"Student channel short, uncertain person"
+F3-fHMVUeq8,False,other,False,False,0.8,"Career Paths, likely different McDermott"
+Vo2N6yQyFYU,False,podcast_interview,False,False,0.95,"Profitability coach, different person"
+UHsdTzh7rLE,False,podcast_interview,False,False,0.95,"Profitability coach, different person"
+U3nbc6A5kMA,False,podcast_interview,False,False,0.95,"Profitability coach, different person"
+E9OIHdodp3c,False,podcast_interview,False,False,0.7,Business RadioX host is likely a different Bill McDermott
+-DwVOh02hms,False,podcast_interview,False,False,0.85,"McDermott Financial Solutions: different person, not ServiceNow CEO"
+a9DzNEHfNWY,False,other,False,False,0.95,"Different person (Shantanu Maheshwari), not Adobe CEO"
+bWuFe-pM13I,True,podcast_interview,False,False,0.6,"HP-hosted interview with Ryan Patel, CEO answers questions"
+cJz0cEdTv5E,True,fireside_or_conference_qa,False,False,0.9,Stanford GSB fireside conversation
+gS71Iqt8_5Y,False,about_the_ceo_not_by,False,False,0.9,Commentary channel about the CEO
+5b6pZ4Ja6qk,True,fireside_or_conference_qa,False,False,0.85,USISPF fireside chat
+8VueqAzXo1M,True,tv_interview,False,False,0.95,CNBC TV interview
+NVvYjtmPMqY,True,tv_interview,False,False,0.95,CNBC TV interview
+k8S7UCN4cBk,True,tv_interview,False,False,0.95,CNBC TV interview
+GZlrlkXftJs,True,tv_interview,False,False,0.95,CNBC TV interview
+QbGk9C5GuDU,True,tv_interview,False,False,0.95,CNBC one-on-one with Cramer
+ZYfHLwwlyP0,True,panel,False,False,0.75,CNBC multi-CEO interview at Ignite
+Ey0q5CmIV1E,True,podcast_interview,False,False,0.9,Long-form NBIM podcast
+AkV45Zhz4eo,False,speech_or_lecture,False,False,0.7,"Summit inauguration livestream, mostly speeches"
+Eudi3f9lEVQ,False,compilation_or_reupload,True,False,0.7,"Short clip from small channel, original unknown"
+TA_Iy1YZi-U,True,tv_interview,False,False,0.95,CNBC full interview
+Uh3pFteCNl0,True,tv_interview,False,False,0.95,CNBC interview
+Bu4XDh5HFEw,True,tv_interview,False,False,0.95,CNBC interview
+IVMPVvpyrts,False,about_the_ceo_not_by,False,False,0.9,"Analyst discussing departure, not CEO"
+z091ANUH4Fw,False,speech_or_lecture,False,False,0.95,TEDx talk
+Jw6A6cQ4Y6g,False,speech_or_lecture,False,False,0.95,Commencement address
+SEKxiiE88ss,True,tv_interview,False,False,0.8,CNBC full interview with three CEOs
+t3K67YIXFEs,True,tv_interview,False,False,0.95,CNBC interview
+HZJQ49h2h-s,True,fireside_or_conference_qa,False,False,0.8,CDT interview conversation
+DSicPPB3yrA,True,tv_interview,False,False,0.95,CNBC interview
+0vSmAYS1TPc,True,tv_interview,False,False,0.9,CNBC-TV18 Global Dialogues interview
+tvZ6vKKGPRY,True,tv_interview,False,False,0.95,CNBC interview
+85Hpl1j7Gzk,True,tv_interview,False,False,0.95,CNBC interview
+XuRnrXNGpmk,False,other,False,False,0.75,"News report on step-down, not CEO Q&A"
+TLubyaTbRbs,True,tv_interview,False,False,0.95,CNBC interview
+TCFv4-dUMkU,False,keynote_or_presentation,False,False,0.85,Summit keynote highlights
+k44TLLWOhqA,True,tv_interview,False,False,0.95,CNBC interview
+C0BTYF6XVWw,True,fireside_or_conference_qa,False,False,0.85,"Web 2.0 Summit onstage interview, O'Reilly"
+KERNN8BBWWk,False,other,False,False,0.9,Brief doorstep remark about Modi meeting
+r2opk4QVV-w,True,tv_interview,False,False,0.95,CNBC full interview
+onzpHRErKfQ,False,other,False,False,0.85,Awards ceremony segment
+II6_mHkHBiM,True,tv_interview,False,False,0.9,CNBC-TV18 long interview
+2fLW2Gaw2Fg,True,tv_interview,False,False,0.95,CNBC interview
+otnu3xYiFQE,True,podcast_interview,False,False,0.7,Short CDT interview with CEO
+0-4w_VBenCs,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+WCGbaaw_Wso,True,tv_interview,False,False,0.95,CNBC interview
+wG3I0so96M4,True,fireside_or_conference_qa,False,False,0.75,Haas speaker series with Q&A
+B3cV4SZhjDY,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+WhWm9FW_mDo,False,about_the_ceo_not_by,False,False,0.95,Case study commentary channel
+U23MHUMPeFg,True,tv_interview,False,False,0.95,CNBC interview
+HuQTYsCpzFU,True,fireside_or_conference_qa,False,False,0.85,Fortune Brainstorm Tech onstage session
+mgW3rstLNGE,True,fireside_or_conference_qa,False,False,0.75,Silicon Slopes summit conversation
+m43usQm_X44,False,compilation_or_reupload,True,False,0.8,Part-1 clip on unknown personal channel
+N4xqDdi7nvU,True,tv_interview,False,False,0.9,Yahoo Finance interview
+ocYb-PHe1bs,False,other,False,False,0.9,News clip of Modi meeting
+ZTUWtzVhNf4,False,about_the_ceo_not_by,False,False,0.9,Inspirational commentary channel
+__SzxBg7Awc,True,tv_interview,False,False,0.95,CNBC exclusive interview
+KyP5L9zmeaE,False,product_launch_or_promo,False,False,0.8,Henkel corporate promo meeting
+RsSdvcPNCZM,True,tv_interview,False,False,0.9,CNBC-TV18 exclusive interview
+hFfoYbF-4M0,True,tv_interview,False,False,0.85,CNBC-TV18 interview
+mGBKqvXxGW0,True,tv_interview,False,False,0.9,CNBC-TV18 Global Dialogues
+4eC9o51iQ3I,False,compilation_or_reupload,True,False,0.75,Short soundbite clip from aggregator channel
+K0i79KZE7GA,True,fireside_or_conference_qa,False,False,0.6,"Purdue lecture series, likely conversation format"
+da8xrGPNIik,True,podcast_interview,False,False,0.5,"Titled interview with CEO, individual channel"
+Thqy0JcxGuA,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+MUHIe0Q34-c,False,keynote_or_presentation,True,False,0.9,Ignite keynote segment on aggregator
+NuaO55fpiWg,True,tv_interview,False,False,0.95,CNBC interview
+jfU3DCH2gT4,True,tv_interview,False,False,0.9,CNBC-TV18 Shereen Bhan interview
+x5hj3yiruDc,True,tv_interview,False,False,0.9,CNBC-TV18 Global Dialogues
+-CZQpqjDZqQ,False,compilation_or_reupload,False,False,0.8,"Multi-topic news show, CEO only a segment"
+F5mDoS6z4AM,True,panel,False,False,0.7,CNBC-TV18 live B20 conversation with Brad Smith
+Y5uNSIN0OiU,True,tv_interview,False,False,0.85,Economic Times interview
+R0bdSxJVKYE,False,other,False,False,0.85,Regional news package about remarks
+Qkt_2GQwl-I,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+bdGZ4Lk7De4,False,about_the_ceo_not_by,False,False,0.9,Profile video about the CEO
+KWosp_dJfsY,False,compilation_or_reupload,True,False,0.8,Summit Q&A re-uploaded by individual channel
+4lTY0hmMXv4,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+WlN8Tdy5DVs,True,tv_interview,False,False,0.9,CNBC-TV18 Shereen Bhan conversation
+bR4DJCy35E8,False,compilation_or_reupload,False,False,0.8,"Multi-topic news show, CEO only a segment"
+vb46oIG6LVc,True,fireside_or_conference_qa,False,False,0.5,"Guest lecture, likely includes Q&A"
+A-DbatkSixU,True,tv_interview,False,False,0.85,CNBC-TV18 Trendspotting interview
+AoTwt6_1tR0,True,tv_interview,False,False,0.85,ET Now interview
+Bj7GKSwYc18,True,panel,False,False,0.7,SIEPR summit conversation with Gelsinger
+KT3kV7ZTO9I,True,tv_interview,False,False,0.9,CNBC-TV18 exclusive interview
+0eUrN9U5vdU,False,keynote_or_presentation,False,False,0.9,Event intro remarks
+4SDSRUee4zI,False,keynote_or_presentation,False,False,0.95,Keynote address
+OdgifsJnv5Y,False,compilation_or_reupload,True,False,0.8,Short Summit clip on individual channel
+84iL9_L6ljw,False,keynote_or_presentation,False,False,0.9,Grand keynote
+PvXSNQqHhRc,False,compilation_or_reupload,True,False,0.8,"Short clip, aggregator channel"
+KLVtB0eEV2Q,False,compilation_or_reupload,True,False,0.95,Korean-subtitled reupload of CNBC interview
+GmQCaL4r_gY,False,keynote_or_presentation,False,False,0.9,Grand keynote
+k9i_EdV5cQA,False,about_the_ceo_not_by,False,False,0.9,Commentary channel about the CEO
+TuBgMe5ZopM,True,fireside_or_conference_qa,False,False,0.7,TiE summit Q&A by NTV Business
+O7tGC0XgsO0,True,podcast_interview,False,False,0.5,"Interview with Adobe CEO, small channel"
+8NdGFQYnRNU,True,tv_interview,False,False,0.85,CNBC-TV18 Trendspotting part 2
+AB7M2vi5b9M,False,about_the_ceo_not_by,False,False,0.9,Success story commentary
+1sDi5xvl0DI,False,other,True,False,0.85,"Brief remark after Modi meeting, news clip"
+FRNQ7Rss4vI,False,about_the_ceo_not_by,False,False,0.9,Summary by investing channel
+ONl0BFN7Jo4,False,earnings_call,True,False,0.85,"Audio earnings call reupload, not on-camera"
+xeWL1u9VzUk,False,about_the_ceo_not_by,False,False,0.9,Commentary channel about the CEO
+PJRQZGmPjfE,True,fireside_or_conference_qa,False,False,0.85,Goldman Sachs conference interview with Chipotle CEO
+Um0UBfSOaU0,False,other,False,True,0.85,News segment on Starbucks appointment
+cDXNCuRJYnU,False,tv_interview,False,True,0.9,"Starbucks CEO era, not CMG CEO"
+4G2uBlsPAGA,False,tv_interview,False,True,0.9,"Starbucks CEO era, not CMG CEO"
+Ua-pmaXM60Y,False,about_the_ceo_not_by,False,True,0.9,Hindi news commentary about Starbucks CEO
+PLki65is_3Q,False,tv_interview,False,False,0.9,"Interviewee is Mellody Hobson, not Niccol"
+QBF0vYptckc,True,tv_interview,False,False,0.9,CNBC interview with new Chipotle CEO
+Hx0Q3R8eLxU,True,tv_interview,False,False,0.9,CNBC Cramer sit-down with Chipotle CEO
+FwubSlGCcAk,False,tv_interview,False,True,0.9,"Starbucks CEO era, not CMG CEO"
+0wpV7pl5z3U,True,tv_interview,False,False,0.85,ABC News interview with Chipotle CEO
+akddi7tYIIs,True,tv_interview,False,False,0.9,"CNBC interview, Chipotle CEO"
+GAiBJIEt1x0,False,tv_interview,False,True,0.9,"Starbucks CEO era, not CMG CEO"
+zA2dDbQy1UI,False,other,False,True,0.9,News package on Starbucks appointment
+vHyKxOXJ0sQ,True,fireside_or_conference_qa,False,False,0.8,Booth speaker series onstage conversation
+UAfcpmjyAFs,True,tv_interview,False,False,0.9,"CNBC Cramer one-on-one, Chipotle CEO"
+3WW7DRpGc8A,False,about_the_ceo_not_by,False,True,0.9,News about Starbucks commute
+zDruADxuIkQ,False,tv_interview,False,False,0.9,"Analyst interview, not the CEO"
+7v3p9jHLtLs,False,tv_interview,False,True,0.9,"Starbucks CEO era, not CMG CEO"
+9kYRDJgCF_A,False,about_the_ceo_not_by,False,False,0.9,Cramer commentary about the CEO
+ejE4Sf2TdiU,True,tv_interview,False,False,0.85,"Yahoo Finance interview, Chipotle CEO"
+jFR9_JI2EJM,False,about_the_ceo_not_by,False,False,0.6,"Short piece about CEO, likely not Q&A"
+tVdV6j2_rnA,False,other,False,True,0.9,News report on Starbucks change
+apYynm4VACs,True,tv_interview,False,False,0.9,"CNBC full interview, Chipotle CEO"
+_vhy0qT8nsQ,True,tv_interview,False,False,0.9,"CNBC earnings interview, Chipotle CEO"
+_KdoS6UZVCk,False,tv_interview,False,True,0.9,"Audio-only, Starbucks CEO era"
+QpLHNmNUM0o,True,tv_interview,False,False,0.9,"CNBC interview, Chipotle CEO"
+d4n4zDrOq7Y,False,other,False,True,0.9,Starbucks CEO era package
+HuhSSz6pwSg,True,fireside_or_conference_qa,False,False,0.9,"Washington Post Live interview, Chipotle CEO"
+NW1FqAZzCps,True,tv_interview,False,False,0.9,"CNBC interview, Chipotle CEO"
+siE2iDloR7Y,False,tv_interview,False,False,0.9,"Analyst interview, not the CEO"
+TDYC4_ft-EA,False,tv_interview,False,True,0.9,Analyst interview about Starbucks
+Bqx5sKwW-fM,True,tv_interview,False,False,0.9,"CNBC interview, Chipotle CEO"
+GaFI-DsCfPs,False,other,False,True,0.9,News report on Starbucks change
+XPu7Wptfbuk,False,compilation_or_reupload,False,False,0.75,Leadership lessons compilation by third party
+504eSvCPFnc,False,other,False,False,0.95,"Different person, Brian Cornell of Target"
+_I3ERzyahyE,True,tv_interview,False,False,0.85,Barron's Streetwise interview with Chipotle CEO
+9YQWkczL-ZM,False,other,False,False,0.95,"Different person, Brian Chesky of Airbnb"
+J5wJ8OU1o,True,podcast_interview,False,False,0.85,QSR magazine podcast with Chipotle CEO
+v7rVSlVWSgI,False,other,False,True,0.9,News report on Starbucks change
+5w3duw3edRA,True,panel,False,False,0.6,Panel with CEO as substantial speaker
+84QtyrgJ2dk,False,about_the_ceo_not_by,False,True,0.9,Accountants' podcast commenting on news
+hWCIpEI8cU4,False,other,False,False,0.95,"Different person, Brian Nichols"
+CoypdSAnCa0,False,compilation_or_reupload,True,False,0.7,"Award video on individual's channel, not original"
+0j1Xgcx4CBg,True,tv_interview,False,False,0.85,"Bloomberg Talks interview, Chipotle CEO"
+ttok4nbEHBs,True,tv_interview,False,False,0.85,"Bloomberg Talks interview, Chipotle CEO"
+N3pyoYDufbE,False,other,False,False,0.9,Breaking news channel report
+Lt0TSEGnsds,False,earnings_call,True,False,0.85,"Audio earnings call re-upload, not on camera"
+p7DdjABgCe8,False,earnings_call,True,False,0.85,"Audio earnings call re-upload, not on camera"
+jSjlMXzPGso,False,other,False,True,0.9,Short news clip on Starbucks change
+XetnzQxDu6U,True,tv_interview,False,False,0.95,CNBC interview with Niccol
+N8MajsPAEpk,True,podcast_interview,False,False,0.93,Semafor long-form interview
+zoUp3770jd8,True,tv_interview,False,False,0.95,CNBC interview
+hmUVbTq43js,True,fireside_or_conference_qa,False,False,0.93,WSJ onstage interview
+kJxONRGhEPs,True,tv_interview,False,False,0.95,CNBC interview
+borVasSx1ck,True,tv_interview,False,False,0.95,CNBC interview
+tIbpLe4DGEU,True,podcast_interview,False,False,0.92,Rapid Response interview
+EWj7HykbYyg,True,tv_interview,False,False,0.95,CNBC interview
+3DkxWWKXWIQ,True,podcast_interview,False,False,0.85,T-Mobile conversation series interview
+nDn9gWgvmpw,True,tv_interview,False,False,0.95,CNBC interview
+8yv7jcFSPK0,False,other,False,False,0.85,"Cramer commentary about CEO, not CEO Q&A"
+TWAV3XzprSU,True,tv_interview,False,False,0.95,CNBC interview
+1NXY_AMItEU,False,tv_interview,False,False,0.95,"Analyst interview, not the CEO"
+nLSvBJLXKcE,True,tv_interview,False,False,0.9,CNBC earnings interview
+ugIS3qcngx0,True,tv_interview,False,False,0.75,"Local news interview, likely CEO Q&A"
+12DjrCJ6M1E,False,tv_interview,False,False,0.95,"Analyst interview, not the CEO"
+kgrcpTxTIb0,True,tv_interview,False,False,0.85,Bloomberg interview with Niccol
+w4s-EK4DINg,True,tv_interview,False,False,0.85,Bloomberg interview with Niccol
+5NKgIKpwQoA,False,other,False,False,0.9,News package about layoffs
+V2EMBVlYTAE,True,tv_interview,False,False,0.85,Bloomberg interview with Niccol
+daRfE6AzmYY,True,tv_interview,False,False,0.85,Bloomberg interview with Niccol
+eADCPGvYOm8,False,compilation_or_reupload,True,False,0.95,Re-upload of CNBC clip
+EcR8aze9Eog,False,compilation_or_reupload,True,False,0.97,Fan channel re-upload of CNBC
+-njJ0nzNIXw,False,compilation_or_reupload,True,False,0.95,Aggregator re-upload of Cramer segment
+IuUDRU9-HRk,False,other,False,False,0.99,"Music video, unrelated"
+luZyMQjPTkM,False,other,False,False,0.99,"Music video, unrelated"
+ulOLYnOthIw,False,other,False,False,0.99,"Music video, unrelated"
+1NarDEEhOsM,False,other,False,False,0.99,"Musician Prince performance, different person"
+YMa8cDRSfnM,False,other,False,False,0.99,"Talent show audition, unrelated"
+xh7AYrl944Y,False,other,False,False,0.99,"Music video, unrelated"
+qptmCjvsE28,False,other,False,False,0.99,"Musician Prince, different person"
+h-vqdeI9qFw,False,other,False,False,0.99,"Musician Prince, different person"
+cWIa-hoYZjA,False,other,False,False,0.99,"Matthew Perry, different person"
+_OXbrsuhl8I,False,other,False,False,0.99,"Joseph Prince preacher, different person"
+j5osaBtgVuk,False,other,False,False,0.99,"Actor Matt Smith, different person"
+VZDNpoi1MCk,False,other,False,False,0.99,"About musician Prince, different person"
+d_VCrQAwxtI,False,other,False,False,0.99,"Music commentary, unrelated"
+I7od5qvwOH8,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+lYLH5AXzxv0,False,other,False,False,0.99,"Matt Bellamy, different person"
+SgS8PcDciZI,False,other,False,False,0.99,"Prince Andrew, different person"
+kDd3he-O0mU,False,other,False,False,0.99,Dr. Fink on musician Prince
+aGA6mAZVpLo,False,other,False,False,0.99,"Prince Harry commentary, unrelated"
+h1JPPxV3r28,False,other,False,False,0.99,"Prince Andrew topic, unrelated"
+PFkCly450s0,False,other,False,False,0.99,"Talent show, unrelated"
+R7eAsA-SiMk,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+BvMPy9iv9Q8,False,other,False,False,0.99,"Prince Harry commentary, unrelated"
+7stXsZqjP28,False,other,False,False,0.99,"Prince Harry topic, unrelated"
+amMYnDr3EzI,False,other,False,False,0.99,"Royal family commentary, unrelated"
+0qq4xv4cnwc,False,other,False,False,0.99,"Prince Harry commentary, unrelated"
+_uicgho4TME,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+5JH60GGQlgM,False,other,False,False,0.99,Dr. Fink on musician Prince
+hzceFdsQlNs,False,other,False,False,0.99,Mac Miller on musician Prince
+oJ_pH9w6KKk,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+WSfigNZW7_M,False,other,False,False,0.99,"Prince Reza Pahlavi, different person"
+6pAb934lDpM,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+ZyL07ua04Oo,False,other,False,False,0.99,"McConaughey briefing, different person"
+3Vuk2lbpkFc,False,other,False,False,0.99,"Talent show reupload, unrelated"
+bd8C2e3GVX8,False,other,False,False,0.99,"Prince Andrew topic, unrelated"
+2ZvqNB0Qp08,False,other,False,False,0.99,"Bonnie Prince Billy, different person"
+uWLp9YHfWCQ,False,other,False,False,0.99,"Prince Harry, different person"
+3SoVLYHtnpQ,False,other,False,False,0.99,Dr. Fink on musician Prince
+lsnnM0ATI5M,False,other,False,False,0.99,"Soca music video, unrelated"
+RPJMFN74VS4,False,other,False,False,0.99,"Joseph Prince sermon, different person"
+H5C9EL3C82Y,True,fireside_or_conference_qa,False,False,0.95,Axios Live conversation with Cloudflare CEO
+QLAmz7L1YFk,False,other,False,False,0.99,"Erik Prince topic, different person"
+oTLKoq0feqY,False,other,False,False,0.99,"Prince Harry news, unrelated"
+usGHTGWIzy8,False,other,False,False,0.99,"Musician Prince's bandmate, unrelated"
+3z_rC8Xq5ZI,False,other,False,False,0.99,"Royal commentary, unrelated"
+XWZQhN0JprU,False,other,False,False,0.99,"Musician Prince podcast, unrelated"
+6dMtMTAllu0,False,other,False,False,0.99,"Prince William, different person"
+CdJKFhlmPFg,False,other,False,False,0.99,"Prince Andrew topic, unrelated"
+pqryD9EwxD0,False,other,False,False,0.99,Dr. Fink on musician Prince
+3km2UI-TrKY,False,other,False,False,0.99,Dr. Fink on musician Prince
+jMyYv2OdfE8,False,other,False,False,0.99,"Prince William, different person"
+AvlxkyzCY44,False,other,False,False,0.99,"Prince Ermias, different person"
+l58rp7JoVYQ,True,fireside_or_conference_qa,False,False,0.85,YC Startup School talk with Cloudflare founders
+eXq_IRcykao,True,podcast_interview,False,False,0.97,20VC long-form podcast with Cloudflare CEO
+Uyq9jBYnAG8,False,other,False,False,0.99,"Royal gossip, unrelated"
+3ZXZ3NV59oU,False,other,False,False,0.99,"Music video, unrelated"
+I5m27tO78Ek,True,fireside_or_conference_qa,False,False,0.8,Cloudflare official conversation with founders
+D_3RC6FrnSI,False,other,False,False,0.99,Dr. Fink on musician Prince
+0ZbOoangGz8,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+T9WZJfdRXqc,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+m1wio7sDDBA,True,panel,False,False,0.7,"Web Summit panel including Prince, official channel"
+ZVWxDPqaMi4,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+lozF4v7qF3c,True,tv_interview,False,False,0.97,Bloomberg Live interview with Cloudflare CEO
+ydA6t3OZfxk,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+XMhKLK6FsWM,False,other,False,False,0.99,"Guitarist interview, different person"
+NEIYrP0tOFY,False,other,False,False,0.99,Matt Fink on musician Prince
+x52YmZrELh0,False,other,False,False,0.99,"Musical curtain call, unrelated"
+jIezWS5vB0A,True,fireside_or_conference_qa,False,False,0.93,TechCrunch onstage interview with Prince
+EECax8f3kPI,False,other,False,False,0.99,Matt Fink on musician Prince
+By4IWzdeiRM,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+ANkmktYsKBM,True,fireside_or_conference_qa,False,False,0.95,Fireside chat with Cloudflare CEO
+e99v_LbI6Dw,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+2mHDmc05iN8,True,tv_interview,False,False,0.97,CNBC interview with Cloudflare CEO
+N13-7Et9qeA,False,other,False,False,0.99,"Pepe Willie, musician Prince topic"
+8vEdN-RfIMc,True,podcast_interview,False,False,0.93,Rapid Response interview with Cloudflare CEO
+qRH5K484hJ8,False,other,False,False,0.99,"Wrestler Prince Albert, different person"
+foLaxdLTGQA,False,other,False,False,0.99,GSHARP on musician Prince
+bhO-3nftzDU,False,other,False,False,0.99,"Royal biographer, unrelated"
+fJC5A8HQdzU,True,podcast_interview,False,False,0.8,20VC official short clip of interview
+30QNAMBdkbc,True,fireside_or_conference_qa,False,False,0.9,Knight Foundation interview with Prince
+Jei0oEaGO8c,False,other,False,False,0.99,"Hockey show, unrelated"
+OLm5IP6UyYs,True,podcast_interview,False,False,0.93,Slow Hunch podcast with Cloudflare CEO
+57hbBGnaxqw,False,other,False,False,0.99,"Tony Prince DJ, different person"
+phms28R9eXw,False,other,False,False,0.99,"College football show, unrelated"
+mNnIqUIRfPo,False,other,False,False,0.99,"Prince William, different person"
+8v14qMDxeGo,True,fireside_or_conference_qa,False,False,0.93,Collision conference onstage interview
+63IjxNgxqw0,True,fireside_or_conference_qa,False,False,0.93,Pear VC conversation with Prince
+wVASQuaXqUY,True,fireside_or_conference_qa,False,False,0.8,"Long Cloudflare talk with CEO, likely Q&A"
+wIfRA28CRio,True,podcast_interview,False,False,0.8,20VC official clip of interview
+31nMAS77_bo,False,other,False,False,0.99,Matt Fink on musician Prince
+hQbn2UUy680,False,other,False,False,0.99,Matt Fink on musician Prince
+AzZBSXEsdOY,False,other,False,False,0.99,"Musician interview, different person"
+jlVJotsgUOY,False,other,False,False,0.95,"Different Mathew Prince, Vail Resorts"
+62JRLrd_Ng4,True,podcast_interview,False,False,0.8,20VC official clip of interview
+NnaTroXMHro,False,other,False,False,0.99,"Band interview, unrelated"
+NMnJ4uF00v0,False,other,False,False,0.99,"Bonnie Prince Billy, different person"
+ByD15V_FN9Y,False,other,False,False,0.99,"Travis Prince, different person"
+QlqM_nCVciQ,True,fireside_or_conference_qa,False,False,0.93,Fireside chat with Cloudflare CEO
+SP_Scfxpk3U,True,fireside_or_conference_qa,False,False,0.7,"Twilio conference session, may be talk"
+hxQqOkOzAMw,False,other,False,False,0.99,"Afterlife podcast, unrelated"
+LGxexm-Mzsc,True,tv_interview,False,False,0.88,Hub Davos interview with Cloudflare CEO
+QlvylnQZOpc,False,other,False,False,0.99,"Prince Mathew Atiyo, different person"
+c-h6P5YDr3o,False,other,False,False,0.99,"Tabletop game interviews, unrelated"
+W8IE-knB-uE,True,tv_interview,False,False,0.75,Short interview with CloudFlare CEO
+pWoWEICLXaQ,False,other,False,False,0.99,"Prince Judge Matthew, different person"
+4_UpXRxm2Y8,False,other,False,False,0.99,"Tabletop game interview, unrelated"
+ED2yH3SvHPs,False,other,False,False,0.99,"Baseball interview, different person"
+LThljRvNkno,False,other,False,False,0.99,"School event, unrelated"
+4yWVQMFmZuQ,False,other,False,False,0.97,"Matt Prince of Taco Bell, different person"
+hS2_aIq8vZs,False,other,False,False,0.99,"Comedy podcast, unrelated"
+8fAeeDoi3JY,False,other,False,False,0.99,"Local politics show, unrelated"
+HsUdp1uhVI8,False,other,True,False,0.99,"Musician Prince interview, different person"
+xgMFcUKSIzg,False,other,True,False,0.99,"Musician Prince interview, different person"
+5W6fP_OKgWA,True,fireside_or_conference_qa,False,False,0.9,TechCrunch Italy onstage session with Prince
+LP4_8YbF7S0,False,other,False,False,0.99,"Prince Mathews Thomas, different person"
+Zyho_0jjT7I,True,fireside_or_conference_qa,False,False,0.8,"Montgomery Summit interview, short"
+U4X0yqPSdDc,True,fireside_or_conference_qa,False,False,0.85,"Speaker series with Prince, likely Q&A"
+P2D8D0oSpUw,False,other,False,False,0.99,Dr Fink on musician Prince
+KybKGWuJYHg,False,other,False,False,0.99,Unrelated personal video
+tj4khLjuJ30,False,other,False,False,0.97,"Matt Prince of Taco Bell, different person"
+FLTDFxVTHUU,False,earnings_call,True,False,0.9,"Aggregator earnings call audio, not CEO on camera"
+0UpjhadkaYA,False,other,False,False,0.98,"Different person, unrelated podcast"
+xa9xnfUEoDE,False,other,False,False,0.98,"Different Prince Victor Matthew, Nigerian TV"
+4B_c2gNn03Q,False,other,False,False,0.98,Unrelated entertainment video
+aaRKQevTk0M,False,other,False,False,0.98,"Game developer interview, different person"
+anZ0oAMRBcc,True,fireside_or_conference_qa,False,False,0.8,Cloudflare CEO onstage conversation at summit
+FoY-T5b34sk,False,other,False,False,0.98,"Different Matt Prince, fitness"
+IhrYDIdpi98,False,other,False,False,0.98,"Different person, recruiter"
+SThMq-yt1_8,False,podcast_interview,False,False,0.95,"Taco Bell Matt Prince, not Cloudflare"
+59d0TNGgeDw,False,earnings_call,True,False,0.85,"Aggregator audio earnings call, not on-camera"
+ToOZdw-WAz0,False,other,False,False,0.98,Unrelated music podcast
+8_4xHAjgp1w,False,other,False,False,0.98,Unrelated radio interview
+VoJLYFIQSfE,False,other,False,False,0.98,"Political talk radio, unrelated"
+ZZ0lGQU5LLs,False,podcast_interview,False,False,0.95,"Taco Bell Matt Prince, not Cloudflare"
+ddbJlgOZ5no,False,other,False,False,0.99,Musician Prince tribute radio
+bfw78y4l5wk,False,other,False,False,0.99,Musician Prince biographer
+sZTZD6vp8A8,False,other,False,False,0.99,Religious Rev Prince Matthew
+NsM9JXTNd_w,False,other,False,False,0.99,Unrelated religious video
+Oro3TD1QJ9A,False,podcast_interview,False,False,0.9,"Different Matt Prince, small space podcast"
+FxL8ig5k-hU,False,other,False,False,0.95,"Coffee livestream, different Matthew Prince"
+U9vCvP-k75Y,False,other,False,False,0.97,"Different Chuck, March Madness sports segment"
+xP8aIANSm6k,False,other,False,False,0.98,"Chuck Palahniuk, different person"
+X0QyREoybbY,True,tv_interview,False,False,0.9,CNBC Cramer interview with Robbins
+VoT_4PEh15w,True,tv_interview,False,False,0.8,Six Five Davos interview
+iSzmKhhZbrQ,True,tv_interview,False,False,0.95,CNBC interview
+KDYKGE6f8Pw,True,tv_interview,False,False,0.95,CNBC interview
+v8v3TRgNtgM,True,tv_interview,False,False,0.95,CNBC interview
+7xcStnd38Jw,True,tv_interview,False,False,0.95,CNBC interview
+VbNc8LBYtJw,True,tv_interview,False,False,0.95,CNBC Cramer interview
+hMr00er41F8,True,tv_interview,False,False,0.95,CNBC interview
+gJAldnoNcpw,True,tv_interview,False,False,0.95,CNBC interview
+bcJf3xbdYyo,True,tv_interview,False,False,0.95,CNBC interview
+YaG8KMSXqUs,True,fireside_or_conference_qa,False,False,0.6,"Fortt-hosted onstage conversation, official channel"
+xbKF3pHT3MA,True,tv_interview,False,False,0.95,CNBC interview
+l2G_hc14eY0,True,tv_interview,False,False,0.8,Light Reading CEO chat
+nxW9VK5AacI,False,keynote_or_presentation,False,False,0.7,"Full keynote, shared stage"
+Sca6pervFaU,True,podcast_interview,False,False,0.95,Decoder long-form interview
+sVb2XTR8qxg,False,product_launch_or_promo,False,False,0.9,Scripted welcome/intro
+iwN3NQafSmg,True,tv_interview,False,False,0.95,CNBC interview
+I1v5m1rUOTM,True,tv_interview,False,False,0.95,CNBC interview
+VJkhOhyqC1g,True,tv_interview,False,False,0.95,CNBC interview
+qPkLVjPVJXI,True,tv_interview,False,False,0.95,Mad Money interview
+hvBwYPhUMPA,True,tv_interview,False,False,0.95,CNBC full interview
+MQIQgqhiAy8,True,fireside_or_conference_qa,False,False,0.85,HBR long-form conversation
+Q-6Q40bliwI,True,tv_interview,False,False,0.95,CNBC interview
+EJVpTPiOVLg,False,product_launch_or_promo,False,False,0.8,"Behind-the-scenes feature, not Q&A"
+wNDPs3xQKAE,True,tv_interview,False,False,0.95,CNBC interview
+9sv2iAAiK7Y,True,tv_interview,False,False,0.95,Mad Money interview
+4mZJKJ4haFY,False,tv_interview,False,False,0.7,"Chambers is the speaker, not Robbins"
+cIPFo9cYhRI,True,tv_interview,False,False,0.95,CNBC-TV18 exclusive interview
+kq0h0vFCq_E,True,tv_interview,False,False,0.9,Bloomberg interview
+Dm83K_a7iGk,True,tv_interview,False,False,0.95,CNBC Davos interview
+9cPtneAFJM0,True,tv_interview,False,False,0.95,CNBC interview
+mLUPv_yscLA,True,tv_interview,False,False,0.9,Bloomberg interview
+hVLtPE02egY,False,other,False,False,0.7,Short Fortune feature package
+O2TArZL51BE,True,tv_interview,False,False,0.95,CNBC interview
+shew4Grlqj8,True,tv_interview,False,False,0.95,CNBC interview
+R9Ngwv76LVU,True,tv_interview,False,False,0.95,Yahoo Finance interview
+zCR515Y1Q8Y,False,about_the_ceo_not_by,True,False,0.85,Commentary channel about leadership style
+dgySEYuTH9M,True,fireside_or_conference_qa,False,False,0.85,GPTW CEO conversation
+Xl9RWLnVJrc,True,fireside_or_conference_qa,False,False,0.95,Semafor onstage interview
+QlgKm8XSXzk,True,tv_interview,False,False,0.95,CNBC interview
+MV7QOqBNjBs,True,tv_interview,False,False,0.9,CNBC-TV18 interview
+tV4T3ZwrI9k,False,compilation_or_reupload,True,False,0.8,"Obscure channel, dubious Pharrell interview re-upload"
+zEPUf0OxpMA,True,tv_interview,False,False,0.95,CNBC-TV18 exclusive
+zIfWcSdpH5w,True,tv_interview,False,False,0.9,CNBC-TV18 live dialogue
+RUUoaO2W6KI,True,tv_interview,False,False,0.95,CNBC-TV18 exclusive interview
+Syn2lkQyG4w,True,tv_interview,False,False,0.95,Bloomberg TV interview
+yKU7zkldMUw,True,tv_interview,False,False,0.9,CNBC-TV18 conversation
+5mHupwmRiY4,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live onstage interview
+Gafj_eOMlo4,True,tv_interview,False,False,0.95,Mad Money interview
+Vi8ntg2GTxw,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live interview
+TV3njg8HzAQ,True,tv_interview,False,False,0.95,CNBC-TV18 interview
+NXeEyOKAOkc,False,other,False,False,0.9,Different Robbins on local podcast
+d6Jk8o-mWvQ,True,tv_interview,False,False,0.95,CNBC interview
+i24Cg1MjQpM,True,tv_interview,False,False,0.95,Bloomberg interview
+0Hdc6CFx0D0,True,tv_interview,False,False,0.6,Trade-press short interview
+sZR1z8D3W90,False,panel,False,False,0.6,"Multi-speaker advocacy event, CEO minor"
+MteDt7u52uQ,True,fireside_or_conference_qa,False,False,0.95,Washington Post Live interview
+sjxc6NXZEn4,True,tv_interview,False,False,0.85,PTI exclusive interview
+B3O1olUdTLI,True,fireside_or_conference_qa,False,False,0.85,CNBC summit onstage conversation
+Jz9jT-TLsOs,True,tv_interview,False,False,0.95,CNBC interview
+ZG0mlsoffDY,True,tv_interview,False,False,0.95,Bloomberg interview
+HEbhTaTBNy8,True,tv_interview,False,False,0.95,CNBC interview
+F-BkXybCAvg,False,keynote_or_presentation,True,False,0.95,Cisco Live keynote
+cHIxVoKOZCY,False,keynote_or_presentation,False,False,0.95,Keynote speech
+UGiv4vcs3nM,True,fireside_or_conference_qa,False,False,0.85,Fireside chat with Tamron Hall
+9LUDotbUS6I,True,tv_interview,False,False,0.6,Trade-press short interview
+TpyIeJZcjGQ,False,panel,False,False,0.75,"Short panel clip, multiple speakers"
+xngY4dWC6-Q,True,tv_interview,False,False,0.95,CNBC-TV18 interview
+YKMSpINd4hg,True,fireside_or_conference_qa,False,False,0.9,Bloomberg Live interview
+KAcumkRjbBo,True,tv_interview,False,False,0.95,CNBC interview
+5y6IY1Bh9PI,False,about_the_ceo_not_by,False,False,0.95,"Commentary, unrelated people"
+1vHG-0InZYU,False,keynote_or_presentation,False,False,0.75,"Cisco Live event clip, not Q&A"
+CnTnSNuunX4,False,keynote_or_presentation,False,False,0.8,Cisco Live 2015 stage segment with Chambers
+XHaLC8wquSI,False,other,True,False,0.98,"Tony Robbins, different person"
+eOep_RSveLg,True,tv_interview,False,False,0.85,Light Reading video interview
+Ntlfi_vHDvM,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+AcZnK4lPGwg,False,other,False,False,0.98,"Jairek Robbins, different person"
+dD9AZDBMFC4,True,tv_interview,False,False,0.7,Company channel posting CNBC-TV18 interview
+JjxfeX9CXVE,True,fireside_or_conference_qa,False,False,0.9,Semafor event interview
+c0CUimxx52M,False,other,False,False,0.95,"Unrelated local channel, different person"
+_eGYhg1r6Fw,True,tv_interview,False,False,0.6,CRN short interview
+lJo6aehKwM0,False,about_the_ceo_not_by,False,False,0.85,Tribute video about someone
+ddS-fqOU-kg,False,compilation_or_reupload,True,False,0.9,Aggregator re-upload of CNBC
+nHffum-gync,True,tv_interview,False,False,0.9,Bloomberg Talks interview
+WysbVPMQ91U,True,tv_interview,False,False,0.55,Press Q&A in Delhi
+M0tExyotqIU,False,other,False,False,0.99,"Peter Robbins, voice actor"
+_mPlN12OViw,False,other,False,False,0.98,"Mike Robbins, different person"
+09GRcaIBTdc,True,podcast_interview,False,False,0.8,Video podcast featuring Robbins
+W_8zOKLe4Yw,False,keynote_or_presentation,False,False,0.7,"Vivatech talk, scripted"
+CZFHwzN3dIQ,True,tv_interview,False,False,0.9,Bloomberg Talks interview
+dE1NPtDwnNQ,True,tv_interview,False,False,0.55,Trade-press short interview
+sbpHe5mDXj4,False,about_the_ceo_not_by,True,False,0.8,Third-party channel about turnaround
+QUhguR8f_vA,False,other,False,False,0.98,"Mike Robbins, different person"
+y75g86DaovM,False,earnings_call,True,False,0.9,Audio earnings call aggregator
+-oRR5jQ0d3w,True,tv_interview,False,False,0.55,Trade-press short interview
+YgH9Vx8hGYw,False,other,False,False,0.99,"Chuck Staton, different person"
+-cKI13D2LQE,False,other,False,False,0.98,"Mike Robbins, different person"
+yw2exRL9W3M,False,other,False,False,0.99,"Chuck Barnard, different person"
+MppXGvSi2-Y,False,other,False,False,0.99,"Different Chuck, unrelated podcast"
+Zc83U54i27E,True,podcast_interview,False,False,0.8,Salesforce interview series with Schulman as guest
+4q_jVu5T80g,True,fireside_or_conference_qa,False,False,0.8,"Talks at GS conversation, official channel"
+ll3eS9G6DZw,False,other,False,False,0.99,"Different person, Ekaterina Schulmann"
+29BYxvvF1iM,False,other,False,False,0.99,"Different person, John Schulman"
+JO6dMPYhtPE,True,tv_interview,False,False,0.9,CNBC full interview with PayPal CEO
+Q06HWJmPpZA,True,fireside_or_conference_qa,False,False,0.8,"BPI conversation with Garlinghouse, original host"
+KDsqwf7PEwM,False,other,False,False,0.99,"Different person, Daniel Schulman author"
+9bXSKs6aXFo,False,tv_interview,False,True,0.95,Titled Former PayPal CEO
+GEZWmkQ9BEc,False,speech_or_lecture,False,True,0.6,"PopTech talk, likely pre-PayPal era, no Q&A"
+nAM9uKJpDxM,True,tv_interview,False,False,0.9,CNBC Davos interview with PayPal CEO
+fsQm7n3kwqc,True,tv_interview,False,False,0.9,"Mad Money interview, CNBC"
+6ZnsUZzaIwQ,False,other,False,False,0.99,"Different person, Cava CEO Brett Schulman"
+9natDeXD-E0,True,fireside_or_conference_qa,False,False,0.9,CFR CEO speaker series Q&A
+vsBcDjhjo-o,False,other,False,False,0.99,"Different person, drummer Mark Schulman"
+60VHkUoViGo,True,tv_interview,False,False,0.8,CNBC Make It interview on pay gap
+IhJ48UxsONg,False,other,False,True,0.9,"Verizon CEO news package, not PYPL"
+riq9DzV2veY,True,tv_interview,False,False,0.9,"Mad Money interview, CNBC"
+HM9QCBiFyL8,False,other,False,False,0.95,"Biotech Schulman, different person"
+GZqREmD4SkA,True,tv_interview,False,False,0.9,CNBC interview with PayPal CEO
+wTwy0LHXE1U,True,tv_interview,False,False,0.9,"Mad Money interview, CNBC"
+nTIuqoBRaX4,True,tv_interview,False,False,0.9,CNBC interview on mobile payments
+u0sy9G4sxHs,False,speech_or_lecture,False,False,0.9,"Commencement address, scripted"
+tRB6cnG5gPA,True,fireside_or_conference_qa,False,False,0.8,Operation HOPE conversation
+v1_sTe_h7HU,True,fireside_or_conference_qa,False,False,0.75,Cleveland Clinic hour-long conversation
+YKWtZkzjApc,True,fireside_or_conference_qa,False,False,0.85,Haas speaker series with Q&A
+HPt03GU-mvU,False,keynote_or_presentation,False,True,0.95,"AmEx executive keynote, not PayPal CEO"
+-w5n1YOjliQ,True,tv_interview,False,False,0.9,"Mad Money interview, CNBC"
+8089MkXjAf4,True,fireside_or_conference_qa,False,False,0.75,Conference conversation on superapps
+L8qqE5JgnZc,True,fireside_or_conference_qa,False,False,0.75,JFF conversation with PayPal CEO
+zhy4LViIf5U,False,speech_or_lecture,False,False,0.9,Convocation speech
+SlbHgig5oso,True,fireside_or_conference_qa,False,False,0.85,Economist CEO interview
+suCfnosqomY,True,podcast_interview,False,False,0.85,TED Business podcast interview
+iqv18iuz3V0,False,keynote_or_presentation,False,False,0.8,Keynote address
+SMJkbgOqvYc,True,fireside_or_conference_qa,False,False,0.85,"Langone speaker series, long Q&A"
+N_ZDmwuFNQo,True,fireside_or_conference_qa,False,False,0.6,"NEXUS conversation, likely moderated"
+xLIkw-WA2po,True,fireside_or_conference_qa,False,False,0.9,CFR conversation with Q&A
+HTXbrpXbT_M,False,other,False,False,0.99,"Different person, Sarah Schulman"
+z8XmmGqAGv0,False,speech_or_lecture,False,False,0.9,"Short UN remarks, scripted"
+P4ic0davRmY,False,podcast_interview,False,True,0.95,"Verizon CEO era, not PYPL"
+wSCRxhRPMsA,False,other,False,False,0.99,"Different person, Sarah Schulman"
+j7xxrz-TmvQ,False,other,False,False,0.95,"Bills Backers documentary, different Dan Schulman"
+KWiH3LmN9VQ,True,fireside_or_conference_qa,False,False,0.85,Conference Board conversation with CEO
+PRUCDOio8Ro,False,compilation_or_reupload,True,False,0.9,Re-upload of BPI event by other channel
+iC6huMNjmsM,True,fireside_or_conference_qa,False,False,0.8,Financial Health Network leadership conversation
+kecHoW_AjGc,False,other,False,False,0.99,"Different person, Todd Schulman"
+nNaOii_8l9s,True,podcast_interview,False,False,0.85,Chris Brummer interview on own channel
+AclRUfUD9ms,True,fireside_or_conference_qa,False,False,0.8,Operation HOPE conversation
+scCcdgeqGOU,False,speech_or_lecture,False,False,0.9,Award acceptance remarks
+KmPNKKGzWiQ,True,podcast_interview,False,False,0.9,"TED Interview podcast, long-form"
+F2CRpFyTT3k,False,compilation_or_reupload,True,False,0.9,Fan channel clip of other interview
+ElyeCfyQ8_M,False,speech_or_lecture,False,False,0.9,Award acceptance segment
+E2Llh_L2BIM,False,compilation_or_reupload,True,False,0.9,Aggregator re-upload of CNBC clip
+EFCM4Oe-vPw,False,speech_or_lecture,False,False,0.9,"Award remarks, scripted"
+_3wx9E8em_c,True,fireside_or_conference_qa,False,False,0.8,Brown Advisory conversation with CEO
+syfOOVkwCyw,False,ai_or_fake_suspected,False,False,0.95,"Clickbait commentary channel, likely AI"
+R9K1UIM-MJs,False,speech_or_lecture,False,True,0.6,"PopTech talk, likely pre-PayPal, no Q&A"
+mhXBDwRlW9g,False,other,False,False,0.99,"Different person, Jason Schulman"
+pR1lBZiHM18,False,other,False,False,0.99,"Different person, Koch author"
+18HrYdL0wEQ,False,other,False,False,0.6,"Dutch event, mixed speakers, uncertain"
+jxTB1BjNgro,False,ai_or_fake_suspected,False,False,0.95,"Clickbait commentary channel, likely AI"
+xaX9grTsr8I,False,compilation_or_reupload,True,False,0.9,Aggregator re-upload of CNBC clip
+71k5naZbk5k,False,keynote_or_presentation,False,False,0.85,Keynote delivery
+JWgaBRuW5gg,False,compilation_or_reupload,True,False,0.95,Music channel re-upload of TED Interview
+Ho8Q_ebYgZc,False,tv_interview,False,False,0.9,"Kimmel interview of Miranda Kerr, not Spiegel"
+ZwGT4kF54N8,True,tv_interview,False,False,0.9,"Bloomberg The Circuit interview, original outlet"
+dwLATNZ8E40,False,other,False,False,0.9,Kerr wedding gossip segment
+AqPHordzhdw,True,fireside_or_conference_qa,False,False,0.9,Code 2015 onstage interview
+wtDvZkSBC_c,False,other,False,False,0.95,Celebrity gossip video
+GmY7GmMuwmc,True,podcast_interview,False,False,0.7,Mo Show podcast interview
+SQYBLeV6sbM,True,fireside_or_conference_qa,False,False,0.95,Code 2018 full interview
+0IYBJXS-1t8,False,compilation_or_reupload,True,False,0.7,"Commentary-style channel, likely stitched clips"
+RUTzOZd_wLU,True,fireside_or_conference_qa,False,False,0.85,"FII conference conversation, original publisher"
+PQiKv-GCQ-w,True,fireside_or_conference_qa,False,False,0.85,Goldman Sachs channel conversation
+t5XvDe6CFDI,True,fireside_or_conference_qa,False,False,0.9,Vanity Fair summit onstage interview
+-7Yol5vX5xw,True,podcast_interview,False,False,0.95,Lenny's Podcast long-form
+ZZUjym-Q6cI,True,fireside_or_conference_qa,False,False,0.8,Code 2018 clip from original publisher
+t4ypjcmO0Ck,True,tv_interview,False,False,0.9,CNBC Cannes interview
+CVjv2Yqbg_A,False,other,False,False,0.9,Senate hearing testimony news clip
+Z9CQuPcop7c,True,fireside_or_conference_qa,False,False,0.95,Code 2022 full interview
+rKpH5iFGsoA,True,tv_interview,False,False,0.85,ET Now TV interview
+BrilzVUk5xM,True,fireside_or_conference_qa,False,False,0.95,WSJ Tech Live onstage interview
+Sr6n-9mzYnk,False,about_the_ceo_not_by,False,False,0.9,Senra narrates book summary about him
+kfa99s656V0,False,other,False,False,0.9,News package on loan donation
+qYgps-hnHik,False,about_the_ceo_not_by,False,False,0.75,Produced profile package
+h9OzwbeQ_6g,True,tv_interview,False,False,0.9,CNBC interview on Specs
+t_cJrmAJa84,True,tv_interview,False,False,0.95,CNBC full post-earnings interview
+UY8ZQKG998o,True,tv_interview,False,False,0.9,CBS Mornings interview
+8lbQST3DdMQ,True,tv_interview,False,False,0.8,TODAY interview on privacy
+tAAv8ecj408,True,fireside_or_conference_qa,False,False,0.6,Official channel conversation with developer
+8fZNK-M-77I,True,podcast_interview,False,False,0.95,Cheeky Pint long-form interview
+Azoymy7J7-A,True,fireside_or_conference_qa,False,False,0.9,TechCrunch onstage interview
+D9aTjMCZftw,True,tv_interview,False,False,0.9,CNBC interview
+jUi6Xp8v790,True,tv_interview,False,False,0.9,CNBC interview
+U5CqUXb4vi4,True,tv_interview,False,False,0.95,CNBC full exclusive interview
+7S7vN0l_ROE,False,other,False,False,0.8,Vlog episode about Israel trip
+_b-AxXPuUc0,True,tv_interview,False,False,0.9,CNBC interview
+lBKpupV_L4M,False,compilation_or_reupload,True,False,0.75,Unknown channel re-upload of others' content
+C0f0TM2yut8,False,other,False,False,0.95,Celebrity news slideshow
+v1vbs0DO52M,False,other,False,False,0.9,"Donation announcement, not Q&A"
+5dfhIHCxXZk,True,fireside_or_conference_qa,False,False,0.8,Disrupt 2013 onstage interview
+I8-cwI2AZYI,False,other,False,False,0.95,Gossip commentary channel
+VqsHEYlcahw,False,about_the_ceo_not_by,False,False,0.95,Analyst commenting on Spiegel
+Xkc5XOpbAq8,True,fireside_or_conference_qa,False,False,0.85,Kleiner Perkins conversation on Spectacles
+rW8mDQYrOnw,True,panel,False,False,0.7,"DLD panel, original conference channel"
+MMTcDg8pjBY,True,tv_interview,False,False,0.9,CNBC earnings interview
+ZR31vp0ir2o,True,tv_interview,False,False,0.8,Business Today exclusive interview
+_uWmiVRDLoE,False,compilation_or_reupload,True,False,0.7,"Dubious channel, likely re-upload or AI"
+N_GV9BWdBmY,False,podcast_interview,False,False,0.95,Guest is Caroline Spiegel
+wBTMw6PNsL0,False,about_the_ceo_not_by,False,False,0.85,Reported news package about him
+zSV5oYM86UI,False,about_the_ceo_not_by,False,False,0.95,Commentary on Snapchat
+WYT2TjoF0Q8,False,about_the_ceo_not_by,False,False,0.95,Inc. commentary calling for his exit
+QGC3cKONu5Q,False,keynote_or_presentation,False,False,0.95,Opening remarks keynote
+6gRMUKfyIJo,True,tv_interview,False,False,0.9,CNBC interview
+gFg7Z-gRDHo,True,tv_interview,False,False,0.9,CNBC interview
+d8e2qV3Kt2k,True,tv_interview,False,False,0.9,CNBC interview
+0oHkugtdHnY,True,fireside_or_conference_qa,False,False,0.8,Murthy conversation on official Snapchat channel
+70rsQ9NE_Ek,True,fireside_or_conference_qa,False,False,0.95,CFR conversation with Q&A
+-I6-jd5ESqw,False,podcast_interview,False,False,0.95,Guest is Jack Brody
+yW_HtFkQwQU,True,fireside_or_conference_qa,False,False,0.7,ExcelinEd conversation with Jeb Bush
+eYSHiWS9w8A,True,fireside_or_conference_qa,False,False,0.6,"University conversation, likely with Q&A"
+TpMdmjT0AA0,True,tv_interview,False,False,0.9,CNBC exclusive interview
+Q49rfO_Gvqw,True,podcast_interview,False,False,0.85,Futurology Podcast interview
+FspTxi9onjk,False,other,False,False,0.95,Unrelated fan Q&A about different Evan
+heg9D6Rx7Eg,False,compilation_or_reupload,True,False,0.65,Daily Mail news clip of Cannes session
+MQ-H5CHgKWM,False,compilation_or_reupload,True,False,0.8,Small channel clip compilation
+n_lC6O6uM5s,True,tv_interview,False,False,0.9,CNBC interview
+l2iHUQePRyo,False,other,False,False,0.95,"Evan Williams, different person"
+pW3dGXrqgJg,True,fireside_or_conference_qa,False,False,0.9,"Axios interview, original outlet"
+ObTcc8YqR5I,False,about_the_ceo_not_by,False,False,0.95,Success rules motivational video
+2CSn5yUDRmI,False,about_the_ceo_not_by,False,False,0.95,Biography video
+0VfcxxSo49c,True,tv_interview,False,False,0.9,CNBC interview
+y3K6x523Xto,False,compilation_or_reupload,True,False,0.9,Startup Archive clip of other interview
+ItVfydAb8dM,True,fireside_or_conference_qa,False,False,0.85,Tony Blair Institute conversation
+P1vBCDjx-OY,False,other,False,False,0.85,Blogger recounting Israel trip
+cuz67AbFdCA,False,speech_or_lecture,False,False,0.95,Honorary doctorate speech
+KlbhOfMgnJU,False,keynote_or_presentation,False,False,0.9,Hackathon keynote speech
+aBMMehJjtpU,False,speech_or_lecture,False,False,0.8,"Short presenter remarks, no Q&A"
+4Zp9mDWXJMo,False,about_the_ceo_not_by,False,False,0.95,Clickbait commentary channel
+eDIloGMan3I,True,tv_interview,False,False,0.85,CNBC TV18 interview
+70jBoxGqJx8,True,fireside_or_conference_qa,False,False,0.8,CNBC Events onstage conversation
+8aWoh6nEGDs,False,compilation_or_reupload,True,False,0.8,Small channel re-upload
+wmT3Et0FMv8,False,about_the_ceo_not_by,False,False,0.95,Biography channel
+8_CkUe6c-aw,False,podcast_interview,False,False,0.85,"Audio only, not on camera"
+rgLhGKwVRbw,True,panel,False,False,0.75,"LACMA conversation, original host"
+DhPKAj1H23E,False,podcast_interview,False,False,0.95,Guest is Caroline Spiegel
+9N0O_SQuf0Y,False,about_the_ceo_not_by,False,False,0.95,Commentary podcast about him
+v6mdGNY_0lA,True,podcast_interview,False,False,0.9,Bloomberg Circuit podcast video interview
+UQVp-yG08SI,True,fireside_or_conference_qa,False,False,0.75,Signal conference conversation
+maHHN2wjuGg,False,other,False,False,0.95,"Evan Osnos book talk, different person"
+tyj0SftZ9ro,True,tv_interview,False,False,0.9,CNBC interview
+8RRpO9umlpA,False,compilation_or_reupload,True,False,0.95,Podcast digest summary
+KG3g5xrvA2k,True,fireside_or_conference_qa,False,False,0.75,Signal 2015 conference interview
+f6vAV9GCKgg,False,compilation_or_reupload,True,False,0.9,Startup Archive clip
+STohXQIq_lg,False,other,False,False,0.95,Commentary on India remark
+rg8wzNgFy1k,False,about_the_ceo_not_by,False,False,0.95,Net worth video
+9YcPCNIpLdo,False,about_the_ceo_not_by,False,False,0.95,Animated biography
+Gfk7KbjQLOA,True,tv_interview,False,False,0.85,CNBC TV18 interview
+qqQvwK_UQVk,False,compilation_or_reupload,True,False,0.8,VC channel re-upload of CNBC clip
+hFsw2gmsWZc,False,about_the_ceo_not_by,False,False,0.95,Billionaire biography video
+k-kIU0vzdpg,False,about_the_ceo_not_by,False,False,0.95,French commentary about his life
+LUvaQ6orpoA,False,compilation_or_reupload,True,False,0.95,Highlights re-upload
+MLRkLAg_QRc,False,compilation_or_reupload,True,False,0.65,"Tiny channel, likely re-upload"
+5yCM6fzEXc4,False,about_the_ceo_not_by,False,False,0.95,Things you didn't know listicle
+mbyN_9d3pnc,False,about_the_ceo_not_by,False,False,0.95,Commentary video
+MUWdQmPEHqQ,False,earnings_call,False,False,0.9,Audio earnings call aggregator
+LhMj3Yh054c,False,earnings_call,False,False,0.9,Audio earnings call aggregator
+QGhtL_UAMv0,False,ai_or_fake_suspected,False,False,0.9,"Spoof title, joke channel"
+K-HBS1iavtQ,False,other,False,False,0.9,"Rumor/controversy clip, unreliable"
+gx3hs_O8bZs,False,about_the_ceo_not_by,False,False,0.95,Stories channel biography
+POVKOYQWZS4,False,other,False,False,0.9,Clickbait exposed commentary
+Xfof-dXgF24,False,about_the_ceo_not_by,False,False,0.8,Spanish commentary video
+7A8zkWbd4d0,False,earnings_call,False,False,0.9,Audio earnings call aggregator
+AZtT44qgv8s,False,compilation_or_reupload,True,False,0.85,Unrelated company channel re-upload
+2ud4W5urmks,False,about_the_ceo_not_by,False,False,0.95,Motivational blueprint channel
+DGlsw1EiF_o,False,compilation_or_reupload,True,False,0.75,Tiny channel re-upload
+TT1Lf6VoUWI,False,about_the_ceo_not_by,False,False,0.95,Biography facts video
+eurhZtzNCzw,False,compilation_or_reupload,True,False,0.9,"Mislabeled re-upload, unrelated channel"
+cU_8wvHx-3w,False,compilation_or_reupload,True,False,0.85,Tiny channel re-upload of news piece
+qN939uh98iM,False,compilation_or_reupload,True,False,0.95,Re-upload of Bloomberg package
+rtdRu_EHDHI,False,ai_or_fake_suspected,False,False,0.9,AI-generated deep dive channel
+jC3wh4aOg-g,False,about_the_ceo_not_by,False,False,0.95,Documentary-style commentary
+Vpy1i6zn5d4,False,compilation_or_reupload,True,False,0.9,Clickbait clip of Lenny interview
+z5Uz9K0GtHQ,False,compilation_or_reupload,True,False,0.95,Re-upload of CNBC clip
+pS7uDgrP6EE,False,about_the_ceo_not_by,False,False,0.95,News channel gossip about Spiegel; not him speaking
+6fs_lyGn4YA,True,tv_interview,False,False,0.9,CNN Cuomo interview with CEO
+cuCcchMOsKE,True,tv_interview,False,False,0.9,CNBC TV interview
+LqoJApzkaPU,True,podcast_interview,False,False,0.85,"Barstool live Q&A, original channel"
+F6n7b_MkZwI,True,fireside_or_conference_qa,False,False,0.9,Sequoia long-form conversation
+5AQpkz-YhkQ,True,podcast_interview,False,False,0.9,All-In podcast interview
+TOugX8Y-bC4,False,compilation_or_reupload,False,False,0.6,"Clips channel, host story not full Q&A"
+muio0sMXT4Q,False,compilation_or_reupload,True,False,0.6,CNBC repackaging of Barstool interview
+SYYccbE0zC8,True,tv_interview,False,False,0.9,CNBC interview
+HopEdff0RCU,True,podcast_interview,False,False,0.9,All-In podcast interview
+R7Ukyc1Nd3U,True,tv_interview,False,False,0.9,CNBC interview
+-3dNJAwxI0U,True,fireside_or_conference_qa,False,False,0.8,Official conversation with Ackman
+HCHHkRlPjB0,False,about_the_ceo_not_by,False,False,0.85,Cramer commentary about CEO
+_F8SfqaYeq4,True,podcast_interview,False,False,0.9,Cheeky Pint long-form interview
+MP7KAuOiRqA,True,tv_interview,False,False,0.9,CNBC Cramer interview
+yXPyh9V5J_M,True,podcast_interview,False,False,0.9,Raoul Pal long-form interview
+QtMetki094U,True,tv_interview,False,False,0.8,Rubenstein Bloomberg interview
+A0pl4vuKLDE,True,tv_interview,False,False,0.9,CNBC interview
+lIgMkTkjdDM,True,podcast_interview,False,False,0.85,Earn Your Leisure long interview
+SSL487Dp2CA,True,podcast_interview,False,False,0.9,Pompliano podcast interview
+xQFIG3ai8sA,False,compilation_or_reupload,True,False,0.8,Clips channel excerpt of podcast
+YmGI5be0NUo,True,tv_interview,False,False,0.9,CNBC interview
+hDLX1ShOKxc,True,tv_interview,False,False,0.9,CNBC IPO interview
+MpoKCzJVrU0,True,tv_interview,False,False,0.85,CNBC interview
+7ULpNj-wzYE,True,tv_interview,False,False,0.9,CNBC interview
+ArXE97SUY1Q,True,podcast_interview,False,False,0.85,Basis Points podcast interview
+3uwewm8IIl4,True,fireside_or_conference_qa,False,False,0.8,Official conversation with Gerstner
+jReZeeWwKnA,False,about_the_ceo_not_by,False,False,0.85,Crypto commentator reaction video
+mVylNQ0p97w,False,about_the_ceo_not_by,False,False,0.7,Future Investing commentary on vision
+LrEzknmEzaE,True,podcast_interview,False,False,0.8,Sit-down interview
+LlVa6SAFJzI,True,fireside_or_conference_qa,False,False,0.9,Official fireside chat
+HXS3bikeGe4,False,other,False,False,0.8,Congressional hearing clip
+Jwu6F4TMYCo,True,tv_interview,False,False,0.9,Bloomberg TV interview
+CAi6HoyGaB8,True,podcast_interview,False,False,0.9,20VC long-form interview
+Em25dLAxqDE,False,about_the_ceo_not_by,False,False,0.85,Crypto commentator video
+IGv1zNOj86c,False,other,False,False,0.8,Congressional hearing clip
+3DG6vkiRk_Q,True,tv_interview,False,False,0.9,CNBC interview
+MgOj1AQ9JqE,True,tv_interview,False,False,0.9,CNBC Cramer interview
+gQTMFV0c9ZE,True,tv_interview,False,False,0.9,CNBC interview
+aPm8wj5J2UE,True,podcast_interview,False,False,0.8,"Summation podcast, CEO with cofounder"
+Cvi7sJseB5Q,True,tv_interview,False,False,0.9,CNBC interview
+-DvM1mogbjY,True,tv_interview,False,False,0.9,CNBC interview
+4fCBwwBPHNc,True,tv_interview,False,False,0.9,CNBC interview
+BZwsXCyIdgs,False,other,True,False,0.8,Congressional hearing clip
+OlRSu5uXQmY,False,compilation_or_reupload,True,False,0.8,Clips channel excerpt
+7cvVgxJYb-I,True,podcast_interview,False,False,0.9,Sourcery interview
+Q_zA8DXfq7A,True,tv_interview,False,False,0.9,Bloomberg TV interview
+WI2J4cv1Cy8,False,about_the_ceo_not_by,False,False,0.75,Commentary channel on CEO vision
+0jbbinhLAlw,True,podcast_interview,False,False,0.9,Knowledge Project long interview
+752hmk3IdcY,True,tv_interview,False,False,0.9,CBS News interview
+_grMSbaHLrY,True,tv_interview,False,False,0.9,CNBC interview
+6HCkgjJFguo,False,other,False,False,0.8,Congressional hearing clip
+Ovp3N-102LQ,True,podcast_interview,False,False,0.85,Bankless live interview
+rgrB314ucg,False,about_the_ceo_not_by,True,False,0.8,Commentary channel on CNBC segments
+msOF9zIv2Oc,True,tv_interview,False,False,0.9,CNBC interview
+P9FsbGqj4sY,True,tv_interview,False,False,0.9,CNBC interview
+n0ZPBNFAvA0,True,tv_interview,False,False,0.9,CNBC earnings interview
+6UYUQfxtjFo,True,tv_interview,False,False,0.9,CNBC full interview
+pxolJ9ijVVc,True,podcast_interview,False,False,0.9,Bankless interview
+MKw850489GA,True,podcast_interview,False,False,0.85,Thinking Crypto interview
+UKUCkwr3Ip8,True,podcast_interview,False,False,0.85,Stocktwits conversation with Lindzon
+i8hJ9LwGvqU,False,other,True,False,0.8,"Hearing clip, congressman focus"
+hpRPYVVO4uU,True,fireside_or_conference_qa,False,False,0.85,Index Ventures conversation
+Q0LlDbpbHr8,True,podcast_interview,False,False,0.85,Long-form podcast
+iwlBGAfavO4,False,other,False,False,0.8,Congressional hearing clip
+_AnmddVaLEo,True,tv_interview,False,False,0.9,CNBC interview
+1p4-12k_EbE,True,podcast_interview,False,False,0.9,TWiST interview
+J2pL0dLO_cg,True,tv_interview,False,False,0.9,CNBC interview
+P_N4xtd8EyM,True,podcast_interview,False,False,0.85,Stocktwits interview
+LTjs7s6tHHY,True,podcast_interview,False,False,0.8,Exclusive interview by creator
+gXkA8VJPohE,True,fireside_or_conference_qa,False,False,0.85,Official fireside chat
+UWs3Vg7atvw,True,fireside_or_conference_qa,False,False,0.9,Barron's conference interview
+GTGrD14cT1A,True,tv_interview,False,False,0.9,CNBC interview
+WMGvmbO9l_s,True,podcast_interview,False,False,0.55,"Short interview clip on Rollup, likely original"
+UH7HtR20AF8,True,podcast_interview,False,False,0.85,Creator interview with CEO
+DmpRLICIwfg,False,about_the_ceo_not_by,False,False,0.85,Commentary channel
+aSYPc8xsLbU,True,fireside_or_conference_qa,False,False,0.9,Stanford speaker series Q&A
+1ZT21aiGZ_g,True,tv_interview,False,False,0.9,Bloomberg Studio interview
+ljI_O210W3U,True,podcast_interview,False,False,0.9,Odd Lots interview
+uAATDJdupx4,True,podcast_interview,False,False,0.85,Rick Rubin conversation
+JycRIvYRDY,False,about_the_ceo_not_by,False,False,0.7,Future Investing commentary channel
+UDz3FVuRURQ,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+XcJaW_XBulE,True,podcast_interview,False,False,0.8,"HaiKhuu interview, original channel"
+udJo1mnHMk0,True,fireside_or_conference_qa,False,False,0.9,TOKEN2049 official conversation
+xO4DfwwkZNw,True,tv_interview,False,False,0.9,Bloomberg TV interview
+6FzsO0MMdog,True,tv_interview,False,False,0.9,Bloomberg TV interview
+acQwymTcCvM,True,podcast_interview,False,False,0.85,Rick Rubin conversation part 2
+7fKgOSxhTPw,True,podcast_interview,False,False,0.85,"Unchained podcast, two guests"
+ZvT3YCfKP5g,False,about_the_ceo_not_by,False,False,0.9,Critic commentary video
+-PGfmOqkkxw,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+OSySnYaXkEM,False,compilation_or_reupload,True,False,0.6,"Aggregator account, likely repost"
+wDq8JZnJzFc,False,compilation_or_reupload,True,False,0.85,Clips channel excerpt
+hb4q15CLzro,True,fireside_or_conference_qa,False,False,0.9,TechCrunch Disrupt onstage interview
+q88Kxf4-uqg,True,podcast_interview,False,False,0.7,"Show interview, long format"
+FrdU7QwhqJ8,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+bgJBujBNEEU,True,fireside_or_conference_qa,False,False,0.9,CNBC D50 onstage interview
+Em1fmXArjEY,True,fireside_or_conference_qa,False,False,0.8,Operation HOPE conversation
+YixQEsev3F4,True,podcast_interview,False,False,0.7,Creator interview with CEO
+vLCCv8qaN7c,False,about_the_ceo_not_by,False,False,0.85,Investor commentary on stock
+Au4zRasHF3g,False,other,False,False,0.8,Congressional hearing clip
+kql5cG0pXZw,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+zPlADObeAYA,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+Gr1AhNYUNuc,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+T4z9Ee26QHo,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+T_vogqTQSzA,True,podcast_interview,False,False,0.7,Creator interview with CEO
+Jv5l_j8b9mM,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+v03mwcWszr4,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+3qTu_X8cpxg,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+beXS4gPkH7o,False,other,True,False,0.85,Hearing clip on small channel
+BCa52f_XtP4,True,podcast_interview,False,False,0.75,Live show interview
+MpHTQZ0gIus,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+3S-2mf07JSE,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+2I8j1JtMaKE,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+5TxNu9Gab7Y,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+5ua0RIRNMGg,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+utXe-j2NrWk,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+0Rx3i6WuICc,False,compilation_or_reupload,True,False,0.85,Fan channel Clubhouse reupload
+HAVzOqLfl7I,False,other,True,False,0.85,Congress testimony reupload
+aXkAd-6dPqw,False,compilation_or_reupload,True,False,0.7,Short clip on small channel
+vUJophBO36g,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+CVKftN0Y1tg,True,tv_interview,False,False,0.85,Bloomberg Talks interview
+uI8tVtcagx0,False,about_the_ceo_not_by,False,False,0.9,Commentary channel about Munger vs Robinhood
+RN2mic27Z-s,True,tv_interview,False,False,0.9,Bloomberg interview with Tenev on earnings
+Z16CYdo11HU,False,other,False,False,0.5,"Small stock-report channel, unclear source and format"
+2qz_QlZBUHQ,False,compilation_or_reupload,True,False,0.8,Clip re-upload by aggregator with editorial framing
+p_Pc2o8VXGY,False,compilation_or_reupload,True,False,0.85,CNBC interview re-uploaded by Nomad Investors
+-MF7H7MUl5w,False,compilation_or_reupload,True,False,0.8,Clips channel re-upload of someone else's interview
+k5tPQBfz8Cc,False,compilation_or_reupload,True,False,0.8,"Generic aggregator channel, includes Baiju Bhatt"
+XF9a18vxLdw,False,panel,False,False,0.6,"Multi-CEO social-media recap show, not Q&A"
+2PMieMhsvss,False,compilation_or_reupload,True,False,0.8,"Fan re-upload of Clubhouse session, Musk-led"
+3k2YxxE1kBM,False,compilation_or_reupload,True,False,0.85,Clips channel excerpt of Earn Your Leisure
+W1X9KsSo0bA,False,compilation_or_reupload,True,False,0.85,Individual re-upload of Clubhouse audio session
+VRScyT9UdHo,False,compilation_or_reupload,True,False,0.85,Diligent Wealth re-upload of CNN interview
+gNexyjibR9M,False,compilation_or_reupload,True,False,0.75,"Clubhouse recording re-upload, not on camera"
+WkQO_cL5gg4,False,compilation_or_reupload,True,False,0.85,Fan channel re-upload of Clubhouse session
+WWAtDta0Drk,False,compilation_or_reupload,True,False,0.85,Aggregator re-upload of news interview
+_dTqLa8fov0,False,compilation_or_reupload,True,False,0.85,Diligent Wealth re-upload with editorial framing
+wrGy9HV_qqQ,False,compilation_or_reupload,True,False,0.8,Retail Invests re-upload of Bloomberg segment
+kzR3TcMBr0c,False,compilation_or_reupload,True,False,0.85,Individual channel re-upload of CNBC segment
+7Ek4IClo-5k,False,podcast_interview,False,False,0.5,"Obscure channel, likely reupload of Bestie Guestie episode"
+tDcNftMKqQM,False,other,False,False,0.97,"Different person, artist Sun Xun"
+hcFpZCw2vYY,False,other,False,False,0.95,"Different Tony, viral man from China"
+a5BOqbypw3w,False,about_the_ceo_not_by,False,False,0.6,"Short profile-style narrative, not clear Q&A"
+5TidMV_ux_4,True,fireside_or_conference_qa,False,False,0.9,Stanford GSB official CEO interview
+akABpZUgNU8,True,tv_interview,False,False,0.95,CNBC interview with Xu
+a8LWEMD9VJA,False,about_the_ceo_not_by,False,False,0.85,"Senra narrated profile, not interview"
+SYiT76vQw34,False,other,False,False,0.97,"Different person, Tony Seba"
+APi2uRMtSEs,False,other,False,False,0.95,"Shark Tank, different Tony Xu"
+bPnAEy1smZ8,False,other,False,False,0.95,"Shark Tank, different Tony Xu"
+UY2CuC1FjUA,False,other,False,False,0.97,"Different person, Tony Dwyer"
+VwvrZphtg2I,True,fireside_or_conference_qa,False,False,0.88,Stripe long-form conversation with Xu
+-O-rH9aePh8,True,tv_interview,False,False,0.95,CNBC interview on Deliveroo deal
+-70xtYBgLG8,True,podcast_interview,False,False,0.92,NBIM official podcast interview with Xu
+Is6umaN3ClM,False,other,False,False,0.95,"Shark Tank, different Tony Xu"
+62tqRB2bHOg,False,compilation_or_reupload,True,False,0.65,"Short aggregator-style clip, original unclear"
+UcKS84zpOoo,False,about_the_ceo_not_by,False,False,0.9,Spanish commentary analyzing an interview
+KAfjq267r68,True,fireside_or_conference_qa,False,False,0.75,speedrun official interview with Xu
+TimNeLRcKho,True,podcast_interview,False,False,0.88,Rideshare Guy interview with Xu
+SBDB377koyE,True,tv_interview,False,False,0.95,CNBC interview with Xu
+x9U_Q0OdXvU,True,fireside_or_conference_qa,False,False,0.92,Startup Grind fireside chat
+QmL_qxx_k4k,True,tv_interview,False,False,0.95,CNBC interview with Xu
+ZvlkI6wcTek,True,tv_interview,False,False,0.95,CNBC interview with Xu
+Ty8dxqQB6BA,True,fireside_or_conference_qa,False,False,0.9,Khosla Ventures conversation with Rabois
+9XLY56Pm8Sw,True,podcast_interview,False,False,0.92,Sequoia official long-form interview
+C8WqC2jnMTI,True,tv_interview,False,False,0.95,CNBC interview with Xu
+Q9irSqkLPRI,True,tv_interview,False,False,0.95,CNBC earnings interview with Xu
+qeblnjeOYtI,True,podcast_interview,False,False,0.92,NPR How I Built This interview
+VjluKd2Ld4g,False,about_the_ceo_not_by,False,False,0.95,Driver commentary attacking Xu
+VhrYyciCn0k,True,tv_interview,False,False,0.7,Bloomberg Tech casual interview with Xu
+I6AtMohp3Is,True,tv_interview,False,False,0.92,Bloomberg Studio interview with Xu
+zP7DMcrZn9w,True,panel,False,False,0.65,"ESPN panel conversation, Xu speaks substantially"
+K_70yQTXIds,True,fireside_or_conference_qa,False,False,0.88,Slush onstage conversation with Xu
+L2ACZqmAiF4,False,other,False,False,0.97,"Vail Resorts CEO, wrong person"
+YkTdihD-Oy4,False,about_the_ceo_not_by,False,False,0.95,Fan vlog asking for help meeting CEO
+vdnJxTtENcA,False,other,False,False,0.97,"Different person, Tony Pasquariello"
+VNfipjK3Gro,True,fireside_or_conference_qa,False,False,0.75,Berkeley official lecture series with Q&A
+xrx94ghgUQI,True,tv_interview,False,False,0.95,CNBC earnings interview with Xu
+DEaXobic7CU,True,fireside_or_conference_qa,False,False,0.9,TechCrunch onstage interview
+cwmg2h0oirk,True,podcast_interview,False,False,0.9,Glue Guys podcast interview
+Cy986meqbL8,False,keynote_or_presentation,False,False,0.8,"Titled keynote, likely scripted"
+7GDPkTfsWQ8,False,about_the_ceo_not_by,False,False,0.95,Fan vlog about receiving care package
+S_d-seW9bfI,False,other,False,False,0.98,"Blinken interview, wrong person"
+IaqhimqC1_I,False,about_the_ceo_not_by,False,False,0.97,Driver clickbait commentary
+vGkOMGd0uSw,False,about_the_ceo_not_by,False,False,0.97,Gig news commentary on protest
+lTu81TwMiIw,False,about_the_ceo_not_by,False,False,0.95,Driver commentary channel
+qhEKx6LbW_A,False,about_the_ceo_not_by,False,False,0.95,"Driver vlog, not CEO interview"
+FJOCVC-Kb3M,False,other,False,False,0.98,"Uber CLO Tony West, wrong person"
+Hiy7VmJnuTM,False,product_launch_or_promo,False,False,0.8,Short VC firm promo testimonial
+7oUhaHtN_5I,True,tv_interview,False,False,0.92,Bloomberg Tech IPO interview with Xu
+I8e3ZuxQwaU,False,about_the_ceo_not_by,False,False,0.97,Driver clickbait commentary
+Zj389-Sh0i4,False,product_launch_or_promo,False,False,0.7,"Company-produced promo series, Xu not interviewee"
+45-C1IbrpBQ,False,about_the_ceo_not_by,False,False,0.97,Commentary on CEO by driver
+e_7jPy4S09M,True,fireside_or_conference_qa,False,False,0.9,Groceryshop onstage interview with Jon Fortt
+poLL-3AwI3Q,True,fireside_or_conference_qa,False,False,0.9,"Fireside chat with Xu, official host"
+cvwMrO5EoHs,False,other,False,False,0.98,"WeRide CEO Tony Han, wrong person"
+cJjqOJuHcMs,False,about_the_ceo_not_by,False,False,0.97,Clickbait commentary on firing rumors
+Gco9vUY3G4s,False,about_the_ceo_not_by,False,False,0.97,Commentary about protest
+xjFaugnVCdA,False,about_the_ceo_not_by,False,False,0.97,Commentary video about CEO
+QouWgaQXyDc,False,about_the_ceo_not_by,False,False,0.97,Driver rant
+EqQ7QWAYc3M,False,about_the_ceo_not_by,False,False,0.97,Reaction vlog
+-cCBJyzECtQ,False,about_the_ceo_not_by,False,False,0.97,Commentary on Meta board news
+atTAD7t8N44,True,panel,False,False,0.6,Crossover VC original panel with Xu
+Jj0DMw-G6vY,False,about_the_ceo_not_by,False,False,0.97,Driver vlog
+CqBY3y2cXUw,False,speech_or_lecture,False,False,0.97,"High school valedictorian, different person"
+8dWc1k2B_qM,False,about_the_ceo_not_by,False,False,0.95,Commentary on IPO
+UoNDKMoeT84,False,about_the_ceo_not_by,False,False,0.97,Commentary on protest
+7A6lqb_P_0E,False,about_the_ceo_not_by,False,False,0.95,Narrated biography channel
+gXzqgF_R568,False,about_the_ceo_not_by,False,False,0.98,Customer order complaint vlog
+y_59Xc-MOoo,False,about_the_ceo_not_by,False,False,0.95,Motivational narrated biography
+8mnt2Srf8QE,False,about_the_ceo_not_by,False,False,0.97,Commentary video
+7GxY5-wj8XE,False,about_the_ceo_not_by,False,False,0.97,Driver commentary
+WBsp3fBqfgI,False,about_the_ceo_not_by,False,False,0.95,Analyst news commentary
+60-IP64Kxz0,False,about_the_ceo_not_by,False,False,0.98,Driver rant
+mkdbzj0KG5w,False,about_the_ceo_not_by,False,False,0.98,Driver rant
+pBkZjIhpIFY,False,about_the_ceo_not_by,False,False,0.95,Spammy commentary
+h8t3wyZo2MI,False,other,False,False,0.95,"Different Mr. Xu, Singpoli Group"
+rR7T0RjNYmc,False,other,False,False,0.9,"Random personal livestream, likely different person"
+kJ9kKC68JcE,False,other,False,False,0.9,"Obscure user upload, unverifiable"
+g_6fcXiTg-U,False,compilation_or_reupload,True,False,0.85,Aggregator re-upload of CNBC segment
+EAojLqSxP8E,False,about_the_ceo_not_by,False,False,0.95,Korean commentary about strategy
+5iwzJtga_0s,False,about_the_ceo_not_by,False,False,0.95,Portuguese investing channel commentary

@@ -116,7 +116,8 @@ def md(text: str) -> str:
 
 def main() -> None:
     vals = flatten(json.loads((RES / "summary.json").read_text()))
-    for key, fname in (("overfit", "overfit_study.json"), ("wf", "walk_forward.json"), ("h3oos", "h3_drift_OOS.json")):
+    for key, fname in (("overfit", "overfit_study.json"), ("wf", "walk_forward.json"), ("h3oos", "h3_drift_OOS.json"),
+                       ("h4", "h4_intraday.json")):
         if (RES / fname).exists():
             vals.update(flatten(json.loads((RES / fname).read_text()), key + "."))
     h2 = ROOT / "results_h2" / "summary.json"
@@ -136,6 +137,8 @@ def main() -> None:
         return text
 
     for p in sorted(SEC.glob("*.md")):
+        if p.name.startswith("05b") and not (ROOT / "results_h2" / "summary.json").exists():
+            continue
         parts.append(md(fill(tables(p.read_text()), vals)))
     html = f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{''.join(parts)}</body></html>"
     out_html = ROOT / "note" / "PokerFace_quant_note.html"
@@ -144,7 +147,8 @@ def main() -> None:
     subprocess.run([CHROME, "--headless=new", "--disable-gpu", "--no-pdf-header-footer",
                     f"--print-to-pdf={pdf}", out_html.as_uri()], check=True, capture_output=True)
     # page-limit check: render the main body alone (sections before 90_references) and count pages
-    body = [md(fill(q.read_text(), vals)) for q in sorted(SEC.glob("*.md")) if q.name < "90"]
+    body = [md(fill(tables(q.read_text()), vals)) for q in sorted(SEC.glob("*.md")) if q.name < "90"
+            and not (q.name.startswith("05b") and not (ROOT / "results_h2" / "summary.json").exists())]
     tmp = ROOT / "note" / ".body_only.html"
     tmp.write_text(f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}</style></head><body>{''.join(body)}</body></html>")
     bpdf = ROOT / "note" / ".body_only.pdf"
