@@ -1,0 +1,68 @@
+Daily closes: 453,604 rows, 2807 contracts, 2010-06-07 -> 2026-09-30
+Dropped 29 contracts without an outright contract name
+Dropped 47 contracts whose name-based expiry contradicts their data: PL:118274=PLX0, PL:124412=PLH1, PL:125799=PLQ1, PL:134576=PLQ0, PL:13910=PLZ3, PL:1553=PLG0, PL:1608=PLH8, PL:162556=PLZ0, PL:199=PLZ7, PL:22420=PLM1, PL:24472=PLU6, PL:37749=PLM2 ...
+Contracts with names: 2731; per root: CL=202, NG=202, HO=201, RB=201, HG=198, GC=196, SI=191, PL=168, PA=157, ZM=137, ZL=137, GF=135, HE=135, ZS=121, LE=104, ZC=88, ZW=88, KE=70
+Month-ends: 196 (2010-06-30 -> 2026-09-30)
+Average roots per month with each field: RB=16.7, BM=17.0, Skew=17.8, ret=17.8
+
+Holding months: 183 (2011-07-29 -> 2026-09-30); exits with no price (return set to 0): 0
+Average monthly cost: 0.081%
+
+=== PRIMARY: composite long-short (top 4 / bottom 4, inverse-vol), mean monthly GROSS return ===
+    n=183  mean_%=0.647  t=1.502  t_nw3=1.477  hit=0.557  sharpe_ann=0.385  ann_%=7.767
+
+=== TRADE ===
+    gross   n=183  mean_%=0.647  t=1.502  t_nw3=1.477  hit=0.557  sharpe_ann=0.385  ann_%=7.767
+    net     n=183  mean_%=0.566  t=1.313  t_nw3=1.291  hit=0.552  sharpe_ann=0.336  ann_%=6.794
+    net_2x  n=183  mean_%=0.485  t=1.125  t_nw3=1.105  hit=0.552  sharpe_ann=0.288  ann_%=5.820
+
+VERDICT (pre-registered rule): FAIL   [primary NW t>=2: False, net>0: True, net 2x>0: True]
+
+=== By sample (composite) ===
+  in-sample (held before 2024-10)    gross n=159  mean_%=0.551  t=1.189  t_nw3=1.163  hit=0.541  sharpe_ann=0.327  ann_%=6.616
+                                     net   n=159  mean_%=0.470  t=1.014  t_nw3=0.991  hit=0.535  sharpe_ann=0.278  ann_%=5.640
+  OOS (held from 2024-10)            gross n=24  mean_%=1.283  t=1.084  t_nw3=1.128  hit=0.667  sharpe_ann=0.767  ann_%=15.391
+                                     net   n=24  mean_%=1.203  t=1.015  t_nw3=1.056  hit=0.667  sharpe_ann=0.718  ann_%=14.433
+  2011-2019                          gross n=102  mean_%=0.319  t=0.628  t_nw3=0.602  hit=0.529  sharpe_ann=0.216  ann_%=3.825
+                                     net   n=102  mean_%=0.236  t=0.465  t_nw3=0.445  hit=0.520  sharpe_ann=0.159  ann_%=2.827
+  2020-2026                          gross n=81  mean_%=1.061  t=1.441  t_nw3=1.470  hit=0.593  sharpe_ann=0.555  ann_%=12.730
+                                     net   n=81  mean_%=0.982  t=1.334  t_nw3=1.360  hit=0.593  sharpe_ann=0.513  ann_%=11.788
+
+=== By calendar year (composite, % per year: gross / net) ===
+  2011: gross   +4.1%  net   +3.8%  (n 6)
+  2012: gross   -7.0%  net   -7.7%  (n 12)
+  2013: gross   -2.4%  net   -3.3%  (n 12)
+  2014: gross  -23.7%  net  -24.6%  (n 12)
+  2015: gross  +36.9%  net  +35.8%  (n 12)
+  2016: gross   +9.1%  net   +7.9%  (n 12)
+  2017: gross  +33.1%  net  +31.9%  (n 12)
+  2018: gross  -40.8%  net  -42.0%  (n 12)
+  2019: gross  +23.3%  net  +22.2%  (n 12)
+  2020: gross  +10.6%  net   +9.2%  (n 12)
+  2021: gross  +19.5%  net  +18.7%  (n 12)
+  2022: gross  +41.8%  net  +41.1%  (n 12)
+  2023: gross  -11.7%  net  -12.5%  (n 12)
+  2024: gross   +4.4%  net   +3.5%  (n 12)
+  2025: gross   +8.4%  net   +7.3%  (n 12)
+  2026: gross  +12.9%  net  +12.2%  (n 9)
+
+=== Robustness (reported only) ===
+  RB                       gross n=183  mean_%=0.172  t=0.432  t_nw3=0.438  hit=0.514  sharpe_ann=0.111  ann_%=2.066
+                           net   n=183  mean_%=0.085  t=0.213  t_nw3=0.215  hit=0.508  sharpe_ann=0.054  ann_%=1.017
+  BM                       gross n=183  mean_%=0.681  t=1.767  t_nw3=1.644  hit=0.525  sharpe_ann=0.452  ann_%=8.172
+                           net   n=183  mean_%=0.599  t=1.554  t_nw3=1.446  hit=0.525  sharpe_ann=0.398  ann_%=7.186
+  -Skew                    gross n=183  mean_%=0.672  t=1.512  t_nw3=1.434  hit=0.530  sharpe_ann=0.387  ann_%=8.062
+                           net   n=183  mean_%=0.602  t=1.356  t_nw3=1.286  hit=0.519  sharpe_ann=0.347  ann_%=7.229
+  RB tercile EW            gross n=183  mean_%=0.111  t=0.285  t_nw3=0.303  hit=0.497  sharpe_ann=0.073  ann_%=1.334
+                           net   n=183  mean_%=0.024  t=0.062  t_nw3=0.066  hit=0.481  sharpe_ann=0.016  ann_%=0.290
+  composite ex-livestock   gross n=183  mean_%=1.020  t=2.219  t_nw3=2.356  hit=0.574  sharpe_ann=0.568  ann_%=12.237
+                           net   n=183  mean_%=0.937  t=2.039  t_nw3=2.165  hit=0.574  sharpe_ann=0.522  ann_%=11.241
+  RB top/bottom 4 2020-2026 (fresh OOS)    gross n=81  mean_%=0.338  t=0.589  t_nw3=0.645  hit=0.556  sharpe_ann=0.227  ann_%=4.060
+  RB tercile EW 2020-2026 (fresh OOS)      gross n=81  mean_%=0.401  t=0.670  t_nw3=0.703  hit=0.494  sharpe_ann=0.258  ann_%=4.815
+  long-only EW all roots   gross n=183  mean_%=0.258  t=0.907  t_nw3=0.837  hit=0.508  sharpe_ann=0.232  ann_%=3.093
+
+  Correlation of the single-signal long-short returns:
+         RB    BM  -Skew
+RB     1.00  0.28   0.10
+BM     0.28  1.00   0.18
+-Skew  0.10  0.18   1.00
