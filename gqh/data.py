@@ -5,6 +5,7 @@ from __future__ import annotations
 import hashlib
 import json
 import os
+import time
 
 import numpy as np
 import pandas as pd
@@ -34,6 +35,10 @@ def databento(dataset: str, symbols, schema: str, start, end, stype_in: str = "r
                    start=str(start), end=str(end), stype_in=stype_in)
     key = hashlib.sha1(json.dumps(request, sort_keys=True).encode()).hexdigest()[:12]
     path = CACHE / f"{dataset}_{schema}_{key}.dbn.zst"
+    part = path.with_name(path.name + ".part")
+    # Another process is downloading the same request: wait for it instead of paying twice
+    while not path.exists() and part.exists() and time.time() - part.stat().st_mtime < 120:
+        time.sleep(5)
     if not path.exists():
         client = _client()
         cost = client.metadata.get_cost(**request)
@@ -43,10 +48,35 @@ def databento(dataset: str, symbols, schema: str, start, end, stype_in: str = "r
                                "Narrow the symbols or dates, or raise the limit in .env if you mean it.")
         print(f"Downloading {dataset} {schema} {symbols} {start}..{end} (${cost:.2f})")
         CACHE.mkdir(parents=True, exist_ok=True)
-        part = path.with_name(path.name + ".part")
-        client.timeseries.get_range(**request, path=part)
+        for attempt in range(4):
+            try:
+                part.unlink(missing_ok=True)  # stale partial from a failed stream; the client won't overwrite it
+                client.timeseries.get_range(**request, path=part)
+                break
+            except Exception as e:  # server timeouts on long requests: wait and retry
+                if attempt == 3:
+                    raise
+                print(f"Retrying {dataset} {schema} {start}..{end} after {type(e).__name__}", flush=True)
+                time.sleep(15 * (attempt + 1))
         part.rename(path)
     return db.DBNStore.from_file(path).to_df()
+
+
+def databento_chunked(dataset: str, symbols, schema: str, start, end, stype_in: str = "raw_symbol",
+                      workers: int = 6) -> pd.DataFrame:
+    """Same as databento(), split into calendar-year requests downloaded in parallel.
+
+    Long histories download much faster this way; each year is cached (and guarded) separately.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
+    edges = [pd.Timestamp(start)] + [pd.Timestamp(f"{y}-01-01") for y in
+                                     range(pd.Timestamp(start).year + 1, pd.Timestamp(end).year + 1)]
+    edges = [e for e in edges if e < pd.Timestamp(end)] + [pd.Timestamp(end)]
+    chunks = [(a.strftime("%Y-%m-%d"), b.strftime("%Y-%m-%d")) for a, b in zip(edges[:-1], edges[1:])]
+    with ThreadPoolExecutor(workers) as pool:
+        frames = list(pool.map(lambda c: databento(dataset, symbols, schema, c[0], c[1], stype_in), chunks))
+    return pd.concat([f for f in frames if len(f)]).sort_index()
 
 
 def price(dataset: str, symbols, schema: str, start, end, stype_in: str = "raw_symbol") -> dict:
@@ -63,9 +93,41 @@ def available(dataset: str) -> dict:
     return {"range": client.metadata.get_dataset_range(dataset), "schemas": client.metadata.list_schemas(dataset)}
 
 
+def instrument_symbols(dataset: str, parent: str, start, end) -> dict[int, str]:
+    """instrument_id -> raw symbol for every contract under a parent (e.g. "CL.FUT").
+
+    Uses Databento's symbology API (free), one year at a time, cached in data/cache/.
+    """
+    path = CACHE / f"symbols_{dataset}_{parent}_{start}_{end}.json"
+    if path.exists():
+        return {int(k): v for k, v in json.loads(path.read_text()).items()}
+    client, out = _client(), {}
+    for year in range(pd.Timestamp(start).year, pd.Timestamp(end).year + 1):
+        lo = max(pd.Timestamp(start), pd.Timestamp(f"{year}-01-01"))
+        hi = min(pd.Timestamp(end), pd.Timestamp(f"{year + 1}-01-01"))
+        if lo >= hi:
+            continue
+        r = client.symbology.resolve(dataset=dataset, symbols=[parent], stype_in="parent", stype_out="instrument_id",
+                                     start_date=lo.date(), end_date=hi.date())
+        for raw, intervals in r["result"].items():
+            for iv in intervals:
+                out[int(iv["s"])] = raw
+    CACHE.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(out))
+    return out
+
+
 def panel(bars: pd.DataFrame, field: str = "close") -> pd.DataFrame:
     """Databento bars (one row per symbol per timestamp) -> one column per symbol."""
     return bars.reset_index().pivot_table(index="ts_event", columns="symbol", values=field)
+
+
+def stamp_bar_end(bars: pd.DataFrame, bar: str) -> pd.DataFrame:
+    """Re-index Databento bars by when they END ("1m", "1h", ...). ts_event marks the bar's start, so a 12:00
+    hourly bar closes at 13:00; stamping by end time keeps event-time logic free of lookahead."""
+    out = bars.copy()
+    out.index = out.index + pd.Timedelta(bar.replace("m", "min"))
+    return out
 
 
 def session_daily(bars: pd.DataFrame, tz: str = "America/New_York", open_time: str = "09:30",
