@@ -1,0 +1,33 @@
+# Secrets: never commit
+.env
+
+# Licensed raw data stays out of the public repo (data/download.py fetches it)
+data/cache/
+*.dbn
+*.dbn.zst
+
+# Your personal trial log. Report the count in the note; the file itself stays local.
+results/ledger.csv
+
+# Intraday trial logs and licensed quote/fill-derived local research output.
+results/micro/ledger.jsonl
+results/micro/demo_ledger.jsonl
+results/micro/runs/
+
+.venv/
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+
+# Massive 8-K challenge: API key and licensed raw API responses stay local
+massive/.env
+massive/.massive_cache/
+
+# Raw third-party / licensed data dumps and pickles stay local (track rule: no licensed raw data in the repo)
+*.pkl
+alpha_ideas/kalshi_cpi/raw/
+research/sp500_alpha/intraday/daily_corrected.json
+research/sp500_alpha/intraday/frozen_daily.json
+research/stock_loan_alpha/data_audit/paired_quote_examples.json
+vrp/out/features_*.csv

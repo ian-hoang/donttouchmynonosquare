@@ -1,0 +1,272 @@
+{
+  "zn_cost_bp_per_side": 1.542792792792793,
+  "coverage": {
+    "events_listed": 63,
+    "events_used": 57,
+    "exclusions": [
+      [
+        "CPI-21JUN",
+        "excluded: 1 strike(s) with a trade before the cut-off (1 market(s) listed)"
+      ],
+      [
+        "CPI-21JUL",
+        "excluded: 1 strike(s) with a trade before the cut-off (1 market(s) listed)"
+      ],
+      [
+        "CPI-21AUG",
+        "excluded: 1 strike(s) with a trade before the cut-off (1 market(s) listed)"
+      ],
+      [
+        "CPI-21SEP",
+        "excluded: 1 strike(s) with a trade before the cut-off (1 market(s) listed)"
+      ],
+      [
+        "CPI-22FEB",
+        "excluded: median above top strike"
+      ],
+      [
+        "KXCPI-25OCT",
+        "excluded: BLS never published this month (2025 shutdown)"
+      ]
+    ],
+    "first_release": "2021-11-10",
+    "last_release": "2026-09-11",
+    "strikes_used_median": 8.0,
+    "monotone_fixes_total": 66,
+    "events_with_monotone_fix": 24,
+    "newest_strike_trade_age_h_median": 8.010570519166667,
+    "oldest_strike_trade_age_h_median": 138.35306837472223,
+    "release_day_volume_ratio_min": 1.1880904546336755,
+    "release_day_volume_ratio_median": 3.0437411040086952,
+    "release_days_with_volume_ratio_below_1.5": [
+      "CPI-21OCT",
+      "KXCPI-26FEB",
+      "KXCPI-26MAR"
+    ]
+  },
+  "primary": {
+    "n": 57,
+    "slope": 1.0612641408980632,
+    "slope_se": 0.14962813941001474,
+    "t": 7.092677520970577,
+    "t_hc1": 7.239158777754886,
+    "intercept": -0.005121869860160225,
+    "r2": 0.4777129400676623
+  },
+  "trade": {
+    "n": 57,
+    "gross_mean_bp": -1.3742107314779697,
+    "gross_t": -0.20544383710631373,
+    "net_mean_bp": -4.459796317063557,
+    "net_t": -0.6667373839416357,
+    "hit_rate": 0.5263157894736842,
+    "net_total_bp": -254.20839007262273,
+    "long_share": 0.45614035087719296
+  },
+  "verdict": "FAIL",
+  "placebo": {
+    "event_days_mean_abs_bp": 37.62887270480357,
+    "event_days_std_bp": 50.41701294638998,
+    "placebo_days_n": 1200,
+    "placebo_days_mean_bp": -0.6240978516048472,
+    "placebo_days_mean_abs_bp": 15.448079058570707,
+    "placebo_days_std_bp": 21.0916390045885,
+    "placebo_trade_mean_bp": -0.1919469335087144,
+    "placebo_trade_t": -0.16898074995455037
+  },
+  "accuracy": {
+    "crowd_median": {
+      "mae": 0.08508641406438801,
+      "rmse": 0.11843044988208612,
+      "bias": -0.005421964559941797,
+      "exact_after_rounding": 0.42105263157894735
+    },
+    "crowd_mean": {
+      "mae": 0.08839870320833046,
+      "rmse": 0.1238705630830326,
+      "bias": -0.006332619552914156,
+      "exact_after_rounding": 0.45614035087719296
+    },
+    "nowcast": {
+      "mae": 0.12548805248559652,
+      "rmse": 0.1637782481223321,
+      "bias": -0.010320338965956665,
+      "exact_after_rounding": 0.3157894736842105
+    },
+    "crowd_median_label_scale": {
+      "mae": 0.09690436769071277,
+      "rmse": 0.1264261642354111,
+      "bias": 0.04457803544005821,
+      "exact_after_rounding": 0.3157894736842105
+    }
+  },
+  "robustness": {
+    "mean_instead_of_median": {
+      "ols": {
+        "n": 57,
+        "slope": 1.0386051133752998,
+        "slope_se": 0.1619738235070138,
+        "t": 6.412178776099127,
+        "t_hc1": 6.954294025781914,
+        "intercept": -0.00617867319286476,
+        "r2": 0.4277749903851116
+      },
+      "trade": {
+        "n": 57,
+        "gross_mean_bp": 0.24127897992117747,
+        "gross_t": 0.036057923221431976,
+        "net_mean_bp": -2.8443066056644084,
+        "net_t": -0.4250672364362777,
+        "hit_rate": 0.5614035087719298,
+        "net_total_bp": -162.12547652287128,
+        "long_share": 0.45614035087719296
+      }
+    },
+    "label_scale_median_no_correction": {
+      "ols": {
+        "n": 57,
+        "slope": 1.061264140898063,
+        "slope_se": 0.14962813941001474,
+        "t": 7.092677520970575,
+        "t_hc1": 7.239158777754885,
+        "intercept": 0.04794133718474296,
+        "r2": 0.4777129400676623
+      },
+      "trade": {
+        "n": 57,
+        "gross_mean_bp": 8.027695796852827,
+        "gross_t": 1.2154046887011416,
+        "net_mean_bp": 4.942110211267239,
+        "net_t": 0.748242593498229,
+        "hit_rate": 0.6140350877192983,
+        "net_total_bp": 281.70028204223263,
+        "long_share": 0.7192982456140351
+      }
+    },
+    "drop_shutdown_delayed": {
+      "dropped": [
+        "KXCPI-25SEP",
+        "KXCPI-25NOV"
+      ],
+      "ols": {
+        "n": 55,
+        "slope": 1.0598762185097712,
+        "slope_se": 0.15261074067429503,
+        "t": 6.944964776573497,
+        "t_hc1": 7.15583545312731,
+        "intercept": -0.0032670320947847196,
+        "r2": 0.4764529051014368
+      },
+      "trade": {
+        "n": 55,
+        "gross_mean_bp": -1.5251875088995785,
+        "gross_t": -0.219996962633687,
+        "net_mean_bp": -4.6107730944851655,
+        "net_t": -0.6650697506116604,
+        "hit_rate": 0.5272727272727272,
+        "net_total_bp": -253.5925201966841,
+        "long_share": 0.45454545454545453
+      }
+    },
+    "core_cpi": {
+      "n_events_listed": 50,
+      "exclusions": [
+        [
+          "KXCPICORE-25OCT",
+          "excluded: BLS never published this month (2025 shutdown)"
+        ]
+      ],
+      "first_release": "2022-07-13",
+      "last_release": "2026-09-11",
+      "ols": {
+        "n": 50,
+        "slope": 0.6411984162276736,
+        "slope_se": 0.1627141064590373,
+        "t": 3.9406443004933505,
+        "t_hc1": 3.569172971269125,
+        "intercept": -0.018699314382937406,
+        "r2": 0.24443571176615153
+      },
+      "trade": {
+        "n": 50,
+        "gross_mean_bp": -1.478502815292183,
+        "gross_t": -0.2019096256295044,
+        "net_mean_bp": -4.564088400877768,
+        "net_t": -0.6232882148277001,
+        "hit_rate": 0.48,
+        "net_total_bp": -228.2044200438884,
+        "long_share": 0.6
+      },
+      "accuracy": {
+        "crowd_median": {
+          "mae": 0.07591210914969643,
+          "rmse": 0.10290661806326339,
+          "bias": -0.01034855812978917,
+          "exact_after_rounding": 0.46
+        },
+        "crowd_mean": {
+          "mae": 0.08357112856484569,
+          "rmse": 0.109141653921614,
+          "bias": -0.02257671477580958,
+          "exact_after_rounding": 0.4
+        },
+        "nowcast": {
+          "mae": 0.09204081706226436,
+          "rmse": 0.11716771344058105,
+          "bias": -0.033622580962551024,
+          "exact_after_rounding": 0.36
+        },
+        "crowd_median_label_scale": {
+          "mae": 0.088661457485046,
+          "rmse": 0.10979488252300035,
+          "bias": 0.03965144187021083,
+          "exact_after_rounding": 0.3
+        }
+      }
+    }
+  },
+  "post_hoc_diagnostics_not_preregistered": {
+    "primary_slope_2021_2023": {
+      "n": 25,
+      "slope": 1.1211445494833128,
+      "slope_se": 0.22292903226713814,
+      "t": 5.029154516491301,
+      "t_hc1": 5.852334049690635,
+      "intercept": 0.015380990704872446,
+      "r2": 0.5237345356716013
+    },
+    "primary_slope_2024_2026": {
+      "n": 32,
+      "slope": 1.0671558620451855,
+      "slope_se": 0.2624354469730025,
+      "t": 4.066355648042343,
+      "t_hc1": 3.5515233860852717,
+      "intercept": -0.019362049432192614,
+      "r2": 0.35532738893477167
+    },
+    "spearman_d_vs_nowcast_error": 0.7358698470313715,
+    "always_long_zn_on_release_days": {
+      "gross_mean_bp": 3.1919668642498236,
+      "net_mean_bp": 0.10638127866423774,
+      "t": 0.477989867697667
+    },
+    "zn_ret_bp_on_surprise_vs_crowd": {
+      "n": 57,
+      "slope": -291.054137961807,
+      "slope_se": 41.2775329892995,
+      "t": -7.051151483235634,
+      "t_hc1": -5.342311882975842,
+      "intercept": 1.613881643196497,
+      "r2": 0.4747835826725859
+    },
+    "zn_ret_bp_on_d": {
+      "n": 57,
+      "slope": -26.541118103208937,
+      "slope_se": 63.19822108440861,
+      "t": -0.4199662213238593,
+      "t_hc1": -0.4408315825324935,
+      "intercept": 3.0619585306260424,
+      "r2": 0.0031965064365807594
+    }
+  }
+}

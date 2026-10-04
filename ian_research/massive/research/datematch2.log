@@ -1,0 +1,30 @@
+  combo:deal_signed: 100/264 keys, 1s
+  combo:deal_signed: 200/264 keys, 3s
+  combo:deal_signed: 264/264 keys, 4s
+
+combo:deal_signed: 53 events; busiest months: 2024-07 (5), 2025-05 (5), 2025-02 (4), 2025-08 (4), 2025-03 (4)
+  combo:debt_offering: 100/1429 keys, 1s
+  combo:debt_offering: 200/1429 keys, 3s
+  combo:debt_offering: 300/1429 keys, 4s
+  combo:debt_offering: 400/1429 keys, 5s
+  combo:debt_offering: 500/1429 keys, 7s
+  combo:debt_offering: 600/1429 keys, 8s
+  combo:debt_offering: 700/1429 keys, 10s
+  combo:debt_offering: 800/1429 keys, 12s
+  combo:debt_offering: 900/1429 keys, 14s
+  combo:debt_offering: 1000/1429 keys, 15s
+  combo:debt_offering: 1100/1429 keys, 17s
+  combo:debt_offering: 1200/1429 keys, 18s
+  combo:debt_offering: 1300/1429 keys, 19s
+  combo:debt_offering: 1400/1429 keys, 21s
+  combo:debt_offering: 1429/1429 keys, 21s
+
+combo:debt_offering: 292 events; busiest months: 2025-05 (27), 2025-02 (23), 2025-09 (18), 2024-05 (18), 2025-03 (18)
+  acquisition_agreement: 100/145 keys, 4s
+  acquisition_agreement: 145/145 keys, 5s
+
+acquisition_agreement: 29 events; busiest months: 2025-05 (5), 2025-08 (3), 2025-03 (2), 2024-07 (2), 2025-06 (2)
+  merger_agreement: 100/135 keys, 4s
+  merger_agreement: 135/135 keys, 6s
+
+merger_agreement: 27 events; busiest months: 2024-07 (4), 2024-09 (3), 2025-02 (3), 2025-12 (3), 2024-02 (2)

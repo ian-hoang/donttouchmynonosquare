@@ -1,0 +1,23 @@
+[project]
+name = "gqh-strategy"
+version = "0.1.0"
+description = "Shared research harness for the Gator Quant Hacks Systematic Trading track"
+requires-python = ">=3.11"
+dependencies = [
+    "databento",
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+    "pandas>=2.2",
+    "python-dotenv>=1.0",
+    "statsmodels>=0.14",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]

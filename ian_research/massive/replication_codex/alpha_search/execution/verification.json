@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "checked_at_utc": "2026-10-03T07:19:40.697231+00:00",
+  "events": 45,
+  "peers": 2300,
+  "valid_trades": 2322,
+  "valid_quotes": 4667,
+  "event_seed_pairs": 900,
+  "frozen_sources_unchanged": true,
+  "spec_code_unchanged": false,
+  "reporting_only_amendment_applied": true
+}

@@ -1,0 +1,58 @@
+{
+  "spec_sha256": "0727ffd4cc7e448d94bf8623570bf5d993defce87ceb2d985f119acee1dcd00a",
+  "engine_sha256": "8b368d65932b5cfda91e78690662c8ad181e48583c1f1c9a7ac9defd211121c2",
+  "events": [
+    {
+      "ticker": "MSFT",
+      "filing_date": "2024-12-11",
+      "accession_number": "0001193125-24-275524",
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Full filing places unrelated annual-meeting results and vote tables in Item5.07 before Item7.01 announces a new ~$800m Cruise impairment and ~$0.09 quarterly EPS reduction not included in prior guidance. No earlier adverse heading or summary.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312524275524/d865252d8k.htm"
+      ],
+      "adverse_type": "investment_impairment",
+      "routine_item": "5.07",
+      "adverse_item": "7.01",
+      "full_source_reviewed": true,
+      "id": "buried:MSFT:2024-12-11"
+    }
+  ],
+  "controls": {
+    "buried:MSFT:2024-12-11": [
+      {
+        "ticker": "PLTR",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "INTU",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "NOW",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-10-11",
+        "role": "issuer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-09-12",
+        "role": "issuer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-08-13",
+        "role": "issuer"
+      }
+    ]
+  },
+  "exclusions": []
+}

@@ -1,0 +1,48 @@
+{
+  "primary_rules": 3,
+  "primary_horizon": 21,
+  "period": "2024-2025 development",
+  "headline_bucket": "3-6m",
+  "sensitivity_buckets": [
+    "1m",
+    "2m"
+  ],
+  "delays": [
+    1,
+    2,
+    3
+  ],
+  "otm_grid": [
+    0.03,
+    0.05,
+    0.1
+  ],
+  "long_call_strike": "ATM; OTM grid irrelevant",
+  "cost_haircuts": [
+    0,
+    0.025,
+    0.05,
+    0.1
+  ],
+  "all_horizons": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    21,
+    42,
+    63,
+    "exp"
+  ],
+  "observed_result_cells": 1900,
+  "no_selected_best_parameter": true,
+  "oos_run": false,
+  "prior_shared_research": "Existing unrelated scans were not used as strategy outcomes here; no claim of uncontaminated global research history.",
+  "extra_comparisons": [
+    "source-quality liquidity subset",
+    "supplementary credit disclosure-day controls",
+    "balanced event cohorts"
+  ],
+  "code_sha256": "5b634a01a7df59f28fd59674cfa96550eb810886a9fe35f9b52b76e5ed59e60f"
+}

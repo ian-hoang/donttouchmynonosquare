@@ -1,0 +1,8 @@
+{
+  "frozen_at_utc": "2026-10-03T16:53:55.511056+00:00",
+  "status": "one post-source-audit correctness comparison, not pristine primary and not parameter optimization",
+  "source": "https://concretumgroup.com/python-backtesting-beat-the-market-an-effective-intraday-momentum-strategy-for-the-sp500-etf-spy/",
+  "change": "Use cumulativevolume-weightedHLC3 asauthorimplementation; reducepreviousdailyclosebycurrentexdatecashdividend. Allotherfrozenrulesandcostsunchanged. Preserveoriginalresults.",
+  "motivation": "Read after reviewerobservedvendorvwoutsideOHLC. Suchmismatchcanbelegitimateeligibilitydifference; notproofofcorruption. AuthorVWAPdefinitiondiffersfrominitialinterpretation.",
+  "limitation": "HistoricalRESTfinalOHLCVmayincludelatecorrections; this doesnotestablishsignal-timeavailability."
+}

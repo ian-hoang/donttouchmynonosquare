@@ -1,0 +1,202 @@
+{
+  "spec": "compensation_spec.json",
+  "signal": "compensation_goalpost_relaxation",
+  "strategy": "collar",
+  "status": "no_verified_positive_signals_partial_full_source_coverage",
+  "events": [],
+  "controls": [],
+  "unclassified": [
+    {
+      "ticker": "ADBE",
+      "filing_date": "2025-01-30",
+      "accession_number": "0000796343-25-000036",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000036.txt",
+      "supporting_text_sha256": "3d722b76fae1514606cb736de5746dc85320977def4f80b6ebc610b7e40652a9",
+      "classification": "unclassified",
+      "reason": "The NNS component changes from Digital Media net-new annualized recurring revenue and guidance-based goals to ending ARR growth and committee-set goals. The payout grids have different denominators/metrics, so a lower percentage in the 2025 grid is not a comparable lower hurdle. The rTSR component is unchanged but does not establish all material hurdles.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634325000036/adbe-20250124.htm",
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634325000036/adbeex101-13025.htm",
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634324000024/adbeex10212624.htm"
+      ],
+      "facts": {
+        "same_metric_duration_units": false,
+        "rTSR_2024_and_2025_threshold_percentile": 25,
+        "rTSR_2024_and_2025_target_percentile": 55,
+        "rTSR_2024_and_2025_maximum_percentile": 90,
+        "rTSR_component_weight_percent": 50,
+        "rTSR_duration_years": 3,
+        "unverified_material_hurdle": "NNS component targets; changed NNS metric and denominator"
+      }
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2025-07-02",
+      "accession_number": "0000002488-25-000099",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000099.txt",
+      "supporting_text_sha256": "4967b932798a1be4dd6da33db311d8141e6e94ae1eeeb6e34783cf1b393488b9",
+      "classification": "unclassified",
+      "reason": "Both annual LTI descriptions disclose payout ranges and EPS modifier tiers, but not numerical rTSR or EPS performance thresholds for those tiers. Payout percentages are not performance hurdles; the EPS baseline also differs. Neither event nor strict control can be verified.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248825000099/amd-20250627.htm",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248824000109/amd-20240627.htm"
+      ],
+      "facts": {
+        "rTSR_payout_percent_range": [
+          0,
+          200
+        ],
+        "EPS_modifier_percent_options": [
+          0,
+          25,
+          50
+        ],
+        "duration_years": 3,
+        "EPS_comparison_current": "FY2027 vs target FY2025 EPS",
+        "EPS_comparison_prior": "FY2026 vs FY2024 EPS",
+        "numeric_performance_hurdles_published_in_reviewed_documents": false
+      }
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2025-03-05",
+      "accession_number": "0001053507-25-000039",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000039.txt",
+      "supporting_text_sha256": "3c45df2a4a62ab903164f1033b6293c4e99e7c46580d55785207494c6a1efbf4",
+      "classification": "unclassified",
+      "reason": "Paired annual compensation disclosures give salary and bonus opportunity amounts but no same-tier numerical operating-performance thresholds. These amounts cannot substitute for the required hurdles.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000039/amt-20250227.htm",
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000015/amt-20240228.htm"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2025-02-07",
+      "accession_number": "0000927628-25-000044",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000044.txt",
+      "supporting_text_sha256": "a02f63a4bdc03e2932479785906156693a5783acd58f5e599ce81151ad7044aa",
+      "classification": "unclassified",
+      "reason": "The 2025 program describes financial performance shares based on dividends plus tangible book-value growth and adjusted ROTCE, relative to financial peers, but the reviewed filing does not supply the numerical performance hurdles. Similarity language is not verification of every material hurdle; the 2024 primary filing could not be recovered.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/000092762825000044/cof-20250204.htm"
+      ],
+      "facts": {
+        "duration_years": 3,
+        "financial_PSU_payout_percent_range": [
+          0,
+          150
+        ],
+        "prior_primary_source_status": "unavailable via public web directory/index/main attempts",
+        "prior_accession_number": "0000927628-24-000034"
+      }
+    },
+    {
+      "ticker": "FDX",
+      "filing_date": "2025-10-02",
+      "accession_number": "0001193125-25-228346",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1048911/0001193125-25-228346.txt",
+      "supporting_text_sha256": "f302ea5062a7d8fbc6323524f4b7acf882d5e44f5e1b82429c95a5455609fd7b",
+      "classification": "unclassified",
+      "reason": "The recurring cash plan supplies metric weights and payout caps, not numerical operating-income, cost-saving or service thresholds. A separate one-time PSU grant has published operating-margin hurdles but no comparable prior award, so cannot be used as a relaxation signal.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1048911/000119312525228346/d64398d8k.htm"
+      ],
+      "facts": {
+        "annual_cash_metric_weights_percent": {
+          "adjusted_operating_income": 50,
+          "structural_cost_reduction": 25,
+          "on_time_service": 25
+        },
+        "one_time_PSU_margin_improvement_bp_at_payout": {
+          "25_percent": 100,
+          "50_percent": 200,
+          "100_percent": 300,
+          "150_percent": 400
+        },
+        "one_time_PSU_measurement": "FY2028 vs FY2025; excludes FedEx Freight",
+        "annual_cash_numeric_hurdles_in_source": false
+      }
+    },
+    {
+      "ticker": "JPM",
+      "filing_date": "2025-01-23",
+      "accession_number": "0000019617-25-000056",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/19617/0000019617-25-000056.txt",
+      "supporting_text_sha256": "c5515fc69e0248954433b0ab55a5a9e293833bc49d31882c81c4c6cdcc0b2499",
+      "classification": "unclassified",
+      "reason": "The prior/current main filings state structurally consistent ROTCE-based PSU design but do not supply numeric absolute/relative performance thresholds. Higher total compensation is an award amount, not a lower business hurdle.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/19617/000001961725000056/jpm-20250121.htm",
+        "https://www.sec.gov/Archives/edgar/data/19617/000001961724000109/jpm-20240116.htm"
+      ],
+      "facts": {
+        "numeric_performance_hurdles_in_reviewed_documents": false
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "filing_date": "2025-03-07",
+      "accession_number": "0001045810-25-000039",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1045810/0001045810-25-000039.txt",
+      "supporting_text_sha256": "d3bf12e81f8bef910987f0e3c320a770e71ba56f2bd8dabafee55cdef0c33d65",
+      "classification": "unclassified",
+      "reason": "Both fiscal-year cash plans use threshold/base/stretch revenue levels, but the public exhibits omit those numerical levels. Unchanged payout formulas alone are not a verified unchanged-hurdle control; later proxy disclosures cannot be backdated to this 8-K.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000039/nvda-20250303.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000039/ex101-fy26variablecompensa.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000069/exhibit101-fy25variablecom.htm"
+      ],
+      "facts": {
+        "threshold_payout_percent": 50,
+        "base_payout_percent": 100,
+        "maximum_payout_percent": 200,
+        "numeric_revenue_levels_published": false
+      }
+    }
+  ],
+  "audit_counts": {
+    "candidate_filings": 174,
+    "supporting_text_screened": 174,
+    "filings_with_primary_source_terms_reviewed": 18,
+    "unique_primary_documents_reviewed": 22,
+    "events": 0,
+    "controls": 0,
+    "by_classification": {
+      "excluded": 6,
+      "prior_context": 67,
+      "screened_out": 94,
+      "unclassified": 7
+    }
+  },
+  "limitations": [
+    "Zero verified positives means the strict verified manifest cannot support a backtest of this hypothesis; it does not establish that the economic signal never occurs.",
+    "Full-source coverage is partial. Unreviewed full filings could contain omitted terms; screened-out supporting texts are not verified unchanged-hurdle controls.",
+    "Many performance targets are not numerically published in the contemporaneous 8-K/exhibits. Payout opportunities, award counts, metric weights and formulas are not interchangeable with performance hurdles.",
+    "No later proxy or amended filing is backdated. No market outcomes or 2026 filings were examined for these labels.",
+    "The 2024 COF primary document could not be recovered via available public web paths. Current COF numeric hurdle levels are also missing.",
+    "ADBE metric/denominator changes and PFE measurement-window changes remain excluded/unclassified under the frozen economics; the rules were not loosened to create trades."
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "supplementary benchmark specified after price processing but before viewing any credit-return results",
+  "reason": "The frozen 10-session exclusion buffer around monthly credit reports leaves zero ordinary-date controls for both COF triggers. The incomplete sponsor tag calendar also misses some actual AXP monthly reports.",
+  "comparison": "Compare with up to five nearest non-trigger monthly credit-report filings for the same issuer and calendar year, requiring comparable unflagged portfolios. These are disclosure-day controls, NOT ordinary days.",
+  "selection": "Absolute calendar-date distance, deterministic, no return information; remove qualifying triggers and reports within 30 days of a trigger to reduce event overlap.",
+  "claim": "Supplementary descriptive comparison only. Does not replace or repair the missing frozen ordinary-day benchmark. No multiplicity-adjusted or out-of-sample alpha claim."
+}

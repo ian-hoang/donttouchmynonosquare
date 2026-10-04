@@ -1,0 +1,58 @@
+{
+  "as_of": "2026-10-03",
+  "scope": "All immediate *.json files in massive/.massive_cache; only first result field signatures classified. Quote/aggregate date bounds inspect first and last records per payload.",
+  "files": 190077,
+  "bytes": 3583856448,
+  "payload_counts": {
+    "option_aggregate_payloads": 111932,
+    "nbbo_quote_payloads": 51909,
+    "empty_results": 8467,
+    "option_contract_payloads": 17437,
+    "filing_payloads": 329,
+    "other_aggregate_payloads": 1,
+    "other_payloads": 2
+  },
+  "date_bounds_utc": {
+    "option_aggregate_payloads_utc_dates": [
+      "2023-12-19",
+      "2026-10-02"
+    ],
+    "nbbo_quote_utc_dates": [
+      "2024-01-03",
+      "2026-08-12"
+    ],
+    "other_aggregate_payloads_utc_dates": [
+      "2024-01-02",
+      "2025-12-31"
+    ]
+  },
+  "example_paths": {
+    "option_aggregate_payloads": "massive/.massive_cache/00009f5b200d71d83ba5e4c9cfc6a512835b0ca7.json",
+    "nbbo_quote_payloads": "massive/.massive_cache/0000e7e6516c939823d6d79945dda6067fc04227.json",
+    "option_contract_payloads": "massive/.massive_cache/0003760370b22d23dc11cde28500ef3626926800.json",
+    "filing_payloads": "massive/.massive_cache/00f3c85ef5e942e5a2e36494023b74b1631d3820.json",
+    "other_aggregate_payloads": "massive/.massive_cache/238eff7f3a90a0a6502a3556ef421f25a926b7e8.json",
+    "other_payloads": "massive/.massive_cache/83f6971081a5a8a5b7b5303788540a0b54cdec0a.json"
+  },
+  "borrow_field_matches": [],
+  "borrow_fields_searched": [
+    "borrow_fee",
+    "borrow_rate",
+    "fee_rate",
+    "lendable_inventory",
+    "lendable_shares",
+    "loan_quantity",
+    "loan_rate",
+    "locate_id",
+    "rebate_rate",
+    "recall_date",
+    "shortable_shares"
+  ],
+  "limitations": [
+    "No credential files or environment variables read.",
+    "Zero recognized borrow fields is an inventory finding, not proof no lending information exists in every possible free-text disclosure.",
+    "Quote date coverage is not a synchronized stock/options panel, does not identify recall events, and does not establish executable size.",
+    "Asset class of quote payloads without request ticker is deliberately not guessed.",
+    "This script makes no network requests."
+  ]
+}

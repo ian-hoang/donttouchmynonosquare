@@ -1,0 +1,15 @@
+{
+  ".gitignore": "a51104264729e7b362ea8c739de0ada29ba6e4f6047580ec3a3fd330ad20fd47",
+  "DATA_REQUIREMENTS.txt": "4a2818e309def1e7c9f81ba1f093f8599210980f4736e4abc0a0532dbb42b152",
+  "PROTOCOL.json": "b1d6df9559c7a20cc241128ba9b313978e2950f63abc65027155cfd36862da9c",
+  "REPORT.txt": "218ab42a21a828295d6275c16a18646472309781d657b7a7f97c30ebf481fe39",
+  "cashflow.py": "5265c937aa66fcc463d542ffdeda8fa5a77f5547c2a030e71aec249f9ea844e7",
+  "data_audit/REPORT.txt": "c0293b515aad202f022211ce481f77b24d9ad34dc868beff92a5b474cd344938",
+  "data_audit/cache_inventory.json": "837df3a879f085b19c2825de60ac51aca964276d99b4e3186ef37fdee9020eb2",
+  "data_audit/inventory_cache.py": "d4b49b4b39f8f23f5475bb6b67adc7853ca6de5f1e157fa06b6511d5acbc8d8a",
+  "data_audit/paired_quote_examples.json": "48ad666c8b259231057bf092d80fbe43e58a36fd98361ea27cdf7a430c2132bd",
+  "economics.txt": "4651de54ffba5212226ac2811e4192332303ffa65eb752216d13235b045440cb",
+  "sources.json": "a851395cecf0dfc1ddbf283ce951666bc9ee6cf1ce3431ba0640f8eda21c8bd3",
+  "test_cashflow.py": "bb9e39d07dca0b55e3db8253c82032a19114b7ab60f73f610d76306f0217911b",
+  "verification.json": "acd1df77156efe2b63fbced8c4aec4743d8cf232dad5a4d7f147e14f9a811c81"
+}

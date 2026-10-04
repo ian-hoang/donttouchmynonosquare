@@ -1,0 +1,17 @@
+{
+  "history": [
+    {
+      "strategy": "roll_oi",
+      "params": {
+        "legs": "RL",
+        "sizing": "residual",
+        "roll_dte": 25,
+        "liq_dte": 5,
+        "cycles": 24
+      },
+      "code": "c74ce37418",
+      "time": "2026-10-02T22:51:53",
+      "reason": "first evaluation"
+    }
+  ]
+}

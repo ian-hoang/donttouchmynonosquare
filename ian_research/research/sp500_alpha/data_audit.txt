@@ -1,0 +1,51 @@
+S&P 500 alpha data audit — 2026-10-03
+Scope: local metadata, source code and previous research conclusions. No new market-performance screen, API download, data purchase, secret reading or transaction.
+
+BEST READY-TO-USE INPUTS
+
+1) SPY daily OHLCV, long history
+Path: data/cache/world_cup/aggs_SPY.json
+Format: JSON list, 5,470 entries, 2005-01-03 through 2026-09-30.
+Fields: o,h,l,c,v,vw,t,n; t is epoch milliseconds at local market-date midnight (05:00 or 04:00 UTC).
+Source provenance: alpha_ideas/world_cup/fetch.py fetched Massive /v2/aggs/ticker/SPY/range/1/day/2005-01-01/2026-09-30, adjusted=true.
+Dividends: data/cache/world_cup/dividends_SPY.json, 94 records, ex_dividend_date and cash_amount; declaration_date exists for some records only. Dividends must be added to held-share returns when appropriate; OHLC adjusted=true is split-adjusted rather than dividend total-return data.
+Splits: data/cache/world_cup/splits_SPY.json is an empty list (SPY no historical split records in this cached payload).
+OHLC are aggregate trade prices, not simultaneous executable bid/ask quotes. Opening/closing strategy fills and slippage remain modeling assumptions.
+
+2) ES hourly futures, long history
+17 local yearly files under data/cache/GLBX.MDP3_ohlcv-1h_*.dbn.zst with DBN metadata symbols exactly ['ES.v.0','ES.v.1'].
+Request: dataset GLBX.MDP3, symbols ['ES.v.0','ES.v.1'], schema ohlcv-1h, start 2010-06-07, end 2026-10-01, stype_in continuous; split at calendar-year boundaries.
+Actual data: 189,516 rows, timestamps 2010-06-07 00:00 UTC to 2026-09-30 23:00 UTC.
+Front volume rank: 97,256 hourly rows, 67 instrument IDs; second rank: 92,260 rows, 68 instrument IDs.
+No duplicate timestamps within each symbol and no OHLC NaNs among present rows. Missing bars/holiday coverage are not ruled out.
+Fields: rtype,publisher_id,instrument_id,open,high,low,close,volume,symbol. Index ts_event.
+Cache-only loader: enumerate *.dbn.zst, DBNStore.from_file, inspect metadata.symbols before to_df. Existing loader/provenance: alpha_ideas/t1_shift/run.py, ES_REQ and _fully_cached. Import gqh.data if using its cache-key generator; do not permit loader cache-miss path to buy additional data.
+Critical: ts_event is bar START. A 15:00 hourly bar closes at 16:00. An hourly 09:00 bar cannot supply a 09:30 open. gqh.data.stamp_bar_end() handles end timestamps. Use America/New_York local times with DST conversion and proper exchange holiday/early-close handling.
+Roll handling: gqh.data.roll_safe_returns() compares same instrument_id at prior timestamp, using second rank for overlap. Do not calculate pct_change on a concatenated front-contract price series across rolls. A close-to-open holding must likewise use the same outright contract across both endpoints or explicitly model the roll trade.
+All top-level GLBX minute caches were inspected for ES symbols; no long ES minute history was identified. ESU6 raw microstructure data exist under data/cache/micro_opening_2026 for August 2026; this is too short for a long-history independent study.
+
+3) ETF daily closing panel, sector/benchmark cross checks
+Path pattern: data/cache/massive_grouped/grouped_YYYY.parquet, 2005 through 2026.
+Fields: date,ticker,close,volume,vwap,close_raw. No open/high/low.
+Read only desired names with pyarrow.parquet.read_table(path, columns=..., filters=[('ticker','in',names)]).
+SPY, IWM, XLB, XLE, XLF, XLI, XLK, XLP, XLU, XLV, XLY, IEF, SHY, TLT: each 5,470 rows, 2005-01-03 through 2026-09-30.
+QQQ: 3,904 rows, 2011-03-23 through 2026-09-30. Earlier ticker history requires QQQQ resolution; do not silently backfill from a current-name universe.
+XLC: 2,082 rows from 2018-06-19. XLRE: 2,753 rows from 2015-10-08. BIL: 4,866 rows from 2007-05-30.
+Provenance: alpha_ideas/smooth_losers/fetch_data.py. close and vwap from adjusted=true aggregates; close_raw from adjusted=false. Dividends are separate.
+No historical point-in-time S&P 500 constituent/weight panel was established in this audit. Avoid relabeling a present-day member universe as historical S&P 500.
+
+4) Risk-free and factor controls
+File data/cache/F-F_Research_Data_Factors_daily_CSV.zip has 26,317 daily observations, 1926-07-01 through 2026-08-31.
+Columns Mkt-RF, SMB, HML, RF, quoted in percentage points. Loader gqh.analysis._french_csv('ff3') divides by 100 and reads cache without a network request. gqh.analysis.french_factors() additionally joins cached momentum.
+September 2026 RF is missing. Freeze comparison to 2026-08-31, obtain a separate financing series, or explicitly state an approximation; do not silently set missing RF to zero. Futures excess returns are not to have the full risk-free rate subtracted again as though they were funded SPY total returns; cash collateral and funding convention must be consistent.
+
+5) More recent shorter SPY data
+research/tsa_alpha/prices/SPY.json is Yahoo chart payload with quote OHLC and adjclose: 1,949 dates, 2019-01-02 through 2026-10-02. Has dividend events. Useful cross-source daily sanity check, not a separate independent history. Earlier TSA research already used these dates.
+
+RELEVANT PREVIOUS RESULTS, TO AVOID REPACKAGING FAILURES
+- alpha_ideas/t1_shift/results.md: ES/ZN balanced-fund front-running replication, 2010-07-02–2023-03-17 net Sharpe 0.44; 2023-03-20–2026-09-30 net Sharpe -0.04. T+1 settlement-shift idea failed corroborating placebo/signed/earlier-settlement-switch checks. Month-end calendar-only OOS net Sharpe 0.28 was not statistically convincing.
+- alpha_ideas/month_end_extension/results.md: bond-index supply-scaling idea FAIL. Generic UB month-end rally existed in that sample, but the proposed issuance size filter did not add reliable incremental prediction; not an S&P strategy.
+- alpha_ideas/smooth_losers/results.md: smooth-loser PreTOM enhancement FAIL, primary t +0.22 vs predicted negative. Smooth WML PreTOM net Sharpe 0.32 at stated costs; plain PreTOM WML 0.24. Published momentum seasonal pattern partially replicated, novel smoothness twist did not.
+- research/tsa_alpha/REPORT.txt: TSA acceleration airlines minus SPY version was rejected in prior task; not suitable for relabeling as an index-alpha discovery.
+
+No alpha profitability claim is made by this data audit.

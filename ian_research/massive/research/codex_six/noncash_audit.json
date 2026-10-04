@@ -1,0 +1,690 @@
+[
+  {
+    "ticker": "BA",
+    "filing_date": "2025-06-04",
+    "accession_number": "0000012927-25-000041",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Criminal monetary penalty includes remaining cash payment.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000041.txt"
+    ],
+    "supporting_text": [
+      "Pursuant to the NPA, the Company is subject to a $487.2 million overall criminal monetary penalty, $243.6 million of which was paid in 2021 pursuant to the DPA and the remaining $243.6 million of which was included in amounts expensed by the Company in 2024 pursuant to the proposed plea agreement between the Company and the Department filed with the U.S. District Court for the Northern District of Texas on July 24, 2024."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "JPM",
+    "filing_date": "2024-05-06",
+    "accession_number": "0000019617-24-000330",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Gain rather than loss; outside frozen signal.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/19617/0000019617-24-000330.txt"
+    ],
+    "supporting_text": [
+      "Visa's acceptance has resulted in a gain for the Firm of approximately $8 billion relating to the Visa Class C common stock, which is held at fair value."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "INTC",
+    "filing_date": "2024-10-31",
+    "accession_number": "0000050863-24-000147",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Exit of manufacturing capabilities and leased assets; explicit operating restructuring.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000147.txt"
+    ],
+    "supporting_text": [
+      "In connection with the Company's decision to exit and outsource manufacturing capabilities for internal-use test hardware, the Company is recognizing pre-tax impairment charges of $442 million in the third quarter of 2024 for certain construction in progress assets. The Company is recognizing $86 million of non-cash impairments for operating leased assets and related leasehold improvements in the third quarter of 2024."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "INTC",
+    "filing_date": "2025-07-24",
+    "accession_number": "0000050863-25-000107",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Exit of business lines and real estate; explicit operating change.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt"
+    ],
+    "supporting_text": [
+      "The Company is recognizing non-cash asset impairment charges of $416 million in the second quarter of 2025, resulting from the exit of certain non-core lines of business and the consolidation and exit of certain real estate properties."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "MMM",
+    "filing_date": "2025-05-12",
+    "accession_number": "0000066740-25-000046",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Settlement payments explicitly extend through 2050; real future cash obligations.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000046.txt"
+    ],
+    "supporting_text": [
+      "3M expects to record a pre-tax charge of approximately $285 million in the second quarter of 2025 and intends to reflect it as an adjustment in arriving at non-GAAP results. This pre-tax charge includes approximately $210 million for the settlement for Chamber Works and other elements of the settlement, representing the present value of payments beginning in 2026 over 8 years and approximately $75 million for existing and future PFAS-related claims by the State of New Jersey, representing the present value of payments starting in 2030 and running through 2050."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "BAC",
+    "filing_date": "2024-01-08",
+    "accession_number": "0000070858-24-000006",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Full 8-K confirms technical BSBY hedge-accounting cessation and later income reversal, but only nominal economic impact is stated, cash terms change, and CET1 falls 8bp. Strict unchanged-cash/no-new-obligation evidence is insufficient.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000006.txt",
+      "https://www.sec.gov/Archives/edgar/data/70858/000007085824000006/bac-20240108.htm"
+    ],
+    "supporting_text": [
+      "the Corporation recognized a net non-cash, pretax charge of approximately $1.6 billion in the quarter ending December 31, 2023 (the \"Charge\") presented in revenue through market making and similar activities."
+    ],
+    "review_scope": "Full contemporaneous SEC 8-K reviewed via web.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "BAC",
+    "filing_date": "2024-02-02",
+    "accession_number": "0000070858-24-000027",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Repeats previously disclosed BSBY charge alongside an actual FDIC special assessment; not a new isolated mechanical charge.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt"
+    ],
+    "supporting_text": [
+      "Full year results included two notable items related to the Federal Deposit Insurance Corporation special assessment ($2.1 billion pre-tax) and the Bloomberg Short-Term Bank Yield Index cessation-related charge ($1.6 billion pre-tax) incurred in the fourth quarter totaling $3.7 billion pre-tax, or $2.8 billion after-tax."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "PG",
+    "filing_date": "2024-01-23",
+    "accession_number": "0000080424-24-000015",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Gillette intangible carrying value reduced; available evidence does not establish purely technical cause.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt"
+    ],
+    "supporting_text": [
+      "The Company recognized in the three months ended December 31, 2023, a non-cash, after-tax impairment charge of $1.0 billion ($1.3 billion before tax) to adjust the carrying value of the Gillette intangible asset acquired as part of the Company's 2005 acquisition of The Gillette Company."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "PG",
+    "filing_date": "2025-06-05",
+    "accession_number": "0000080424-25-000050",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Restructuring program explicitly includes predominantly cash charges.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000050.txt"
+    ],
+    "supporting_text": [
+      "In connection with this announcement, the Company expects to record a total non-core charge of $1.0 to $1.6 billion before tax over the course of the two-year program. The Company expects 25% of these charges to be non-cash."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "SO",
+    "filing_date": "2024-10-31",
+    "accession_number": "0000092122-24-000091",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Impairment of discontinued development project.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/3153/0000092122-24-000091.txt"
+    ],
+    "supporting_text": [
+      "The exhibit also includes earnings and earnings per share for the three-month and nine-month periods ended September 30, 2024, excluding an impairment loss associated with the discontinued development of a multi-use commercial facility at Alabama Power Company."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "CVX",
+    "filing_date": "2024-01-02",
+    "accession_number": "0000093410-24-000002",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Lower expected investment and inherited decommissioning obligations imply real operating/cash effects.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000002.txt"
+    ],
+    "supporting_text": [
+      "In addition, the Company will be recognizing a loss related to abandonment and decommissioning obligations from previously sold oil and gas production assets in the U.S. Gulf of Mexico, as companies that purchased these assets have filed for protection under Chapter 11 of the U.S. Bankruptcy Code, and we believe it is now probable and estimable that a portion of these obligations will revert to the Company.",
+      "Chevron Corporation announced that for fourth quarter 2023, the Company will be impairing a portion of its U.S. upstream assets, primarily in California, due to continuing regulatory challenges in the state that have resulted in lower anticipated future investment levels in its business plans."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "CVX",
+    "filing_date": "2025-09-25",
+    "accession_number": "0000093410-25-000098",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Severance and transaction costs explicitly generate cash outflows.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000098.txt"
+    ],
+    "supporting_text": [
+      "Approximately half of the cash outflows associated with the severance and other transaction costs related to the Hess acquisition are expected to occur in third quarter 2025, and the remainder is expected within the next 12 months. Adjusted earnings exclude severance and other transaction costs of $(350)-(450) million."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "RTX",
+    "filing_date": "2024-08-30",
+    "accession_number": "0000101829-24-000031",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Settlement installments are cash payments.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000031.txt"
+    ],
+    "supporting_text": [
+      "The $100 million portion of the settlement that is not subject to suspension, which was accrued by the Company in the second quarter ended June 30, 2024, will be paid in installments, with $34 million paid in September 2024, $33 million paid by August 29, 2025, and $33 million paid by August 29, 2026."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "RTX",
+    "filing_date": "2024-10-16",
+    "accession_number": "0000101829-24-000033",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Penalties, forfeiture and restitution require specified near-term payments.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000033.txt"
+    ],
+    "supporting_text": [
+      "DPA-1 provides for a criminal monetary penalty and forfeiture of $282 million to be paid to the DOJ within 10 business days. The SEC's administrative cease and desist order provides for a $102 million payment to the SEC. DPA-2 provides for a criminal penalty in the amount of $147 million to be paid within 10 business days, and the FCA Settlement Agreement provides for an FCA settlement payment in the amount of $428 million, which includes restitution, plus interest, to be paid within 7 calendar days."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "JNJ",
+    "filing_date": "2024-05-01",
+    "accession_number": "0000200406-24-000048",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Incremental reserve funds actual litigation settlements.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/200406/0000200406-24-000048.txt"
+    ],
+    "supporting_text": [
+      "To account for these settlements and the contemplated comprehensive resolution through the Proposed Plan, the Company recorded an incremental charge of approximately $2.7 billion, for a total reserve as of the first fiscal quarter 2024 at a present value of approximately $11 billion (nominal value of approximately $13.7 billion)."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "SCHW",
+    "filing_date": "2024-01-17",
+    "accession_number": "0000316709-24-000011",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Mixed restructuring/acquisition integration costs and amortization; not isolated technical loss.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/316709/0000316709-24-000011.txt"
+    ],
+    "supporting_text": [
+      "Restructuring costs required to effect these savings totaled $495 million, while acquisition and integration-related costs and amortization of acquired intangibles were $401 million and $534 million, respectively."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "NKE",
+    "filing_date": "2025-07-28",
+    "accession_number": "0000320187-25-000053",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Correction of overstated product purchase obligations, not an actual noncash loss.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000053.txt"
+    ],
+    "supporting_text": [
+      "NIKE, Inc. is voluntarily filing this Current Report on Form 8-K to correct an error relating to the amount of the Company's product purchase obligations as of May 31, 2025 as disclosed in the Company's Annual Report on Form 10-K. The amount was overstated in the Annual Report. As corrected, as of May 31, 2025, the Company had product purchase obligations of approximately $5 billion, all of which are payable within the next 12 months."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2024-01-17",
+    "accession_number": "0000732712-24-000003",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Business-unit fair value below carrying value; noncash designation alone does not pass.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000003.txt"
+    ],
+    "supporting_text": [
+      "The impairment test determined that the fair value of the Business reporting unit was less than its carrying value. As a result, in the fourth quarter of 2023, Verizon recorded a non-cash goodwill impairment charge of approximately $5.8 billion (before and after-tax), resulting in the goodwill balance of the Business reporting unit of $1.7 billion as of December 31, 2023."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2024-01-23",
+    "accession_number": "0000732712-24-000007",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Previously disclosed cessation of asset use and transformation; real operating change and repeated event.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000007.txt"
+    ],
+    "supporting_text": [
+      "Asset rationalization recorded during the second quarter of 2023 relates to certain real estate and non-strategic assets that we made a decision to cease use of as part of our transformation initiatives. Asset rationalization recorded during the fourth quarter of 2023 primarily relates to Verizon Business network assets that we made a decision to cease use of as part of our continued transformation initiatives."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2024-03-06",
+    "accession_number": "0000732712-24-000015",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Pension settlement credit rather than loss; outside frozen signal.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000015.txt"
+    ],
+    "supporting_text": [
+      "As a result of the transaction, Verizon expects to recognize a one-time non-cash pension settlement credit in the first quarter of 2024. The actual amount of the credit will depend on finalization of the actuarial and other assumptions."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2024-04-22",
+    "accession_number": "0000732712-24-000025",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Repeats prior asset-use cessation; not a new mechanical charge.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000025.txt"
+    ],
+    "supporting_text": [
+      "Asset rationalization recorded during the second quarter of 2023 relates to certain real estate and non-strategic assets that we made a decision to cease use of as part of our transformation initiatives. Asset rationalization recorded during the fourth quarter of 2023 primarily relates to Verizon Business network assets that we made a decision to cease use of as part of our continued transformation initiatives."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2024-10-22",
+    "accession_number": "0000732712-24-000062",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Employee separations and business exits have operating/cash implications.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000062.txt"
+    ],
+    "supporting_text": [
+      "Severance charges recorded during 2024 relate to separations under our voluntary separation program for select U.S.-based management employees as well as other headcount reduction initiatives. Asset and business rationalization recorded during 2024 predominately relates to the decision to cease use of certain real estate assets and exit non-strategic portions of certain businesses, as part of our continued transformation initiatives."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "VZ",
+    "filing_date": "2025-01-24",
+    "accession_number": "0000732712-25-000003",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Repeats prior employee separations and business exits.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000003.txt"
+    ],
+    "supporting_text": [
+      "Severance charges recorded during 2024 relate to separations under our voluntary separation program for select U.S.-based management employees as well as other headcount reduction initiatives. Asset and business rationalization recorded during 2024 predominately relates to the decision to cease use of certain real estate assets and exit non-strategic portions of certain businesses, as part of our continued transformation initiatives."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "T",
+    "filing_date": "2024-01-24",
+    "accession_number": "0000732717-24-000004",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Mixed pension remeasurement and restructuring/impairment; available evidence lacks affirmative unchanged-cash statement for an isolated adjustment.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000004.txt"
+    ],
+    "supporting_text": [
+      "Fourth-quarter 2023 earnings per diluted share includes amounts totaling to $(2.6) billion (pre-tax) resulting from the following significant items (per share): $(0.18) from a loss on actuarial remeasurement of pension and postretirement benefit plan assets and obligations, $(0.06) from restructuring and impairment charges, $(0.03) from our proportionate share of DIRECTV intangible amortization."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "T",
+    "filing_date": "2024-04-24",
+    "accession_number": "0000732717-24-000016",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Held-for-sale and equity-investment impairment accompanies deployment restructuring; no isolated mechanical cause.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000016.txt"
+    ],
+    "supporting_text": [
+      "Other income (expense) - net in the first quarter was $0.5 billion compared to $0.9 billion in the comparable 2023 period. The decrease reflects lower pension and postretirement benefit credits in 2024, and impairments recognized on a held-for-sale business and an equity investment in a Latin America satellite business.",
+      "First-quarter 2024 income per diluted share included amounts totaling $0.7 billion (pre-tax), or $(0.08) per share, resulting from the following significant items: $(0.06) per share from restructuring charges related to our Open RAN deployment and noncash impairment charges and $(0.03) per share from our proportionate share of DIRECTV intangible amortization."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "T",
+    "filing_date": "2025-01-27",
+    "accession_number": "0000732717-25-000005",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Mixed prior goodwill impairment, restructuring and pension remeasurement; not new isolated mechanical disclosure.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/732717/0000732717-25-000005.txt"
+    ],
+    "supporting_text": [
+      "Full-year 2024 expense increases were primarily due to a $4.4 billion noncash goodwill impairment recorded in the third quarter of 2024. Also contributing to higher operating expenses was higher depreciation expense from accelerated depreciation on wireless network equipment associated with our network modernization efforts.",
+      "Full-year 2024 earnings per diluted share was $1.49 and included the following significant items (per share): $(0.72) from restructuring and impairment charges, $(0.09) from our proportionate share of DIRECTV intangible amortization and $(0.01) from a loss on actuarial remeasurement of pension and postretirement benefit plan assets and obligations."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "SBUX",
+    "filing_date": "2025-09-25",
+    "accession_number": "0000829224-25-000067",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Store closures, employee separations and lease costs; explicit operating/cash consequences.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000067.txt"
+    ],
+    "supporting_text": [
+      "Of the total restructuring charges incurred, the Company estimates a breakdown of approximately $150 million related to employee separation benefits, approximately $400 million related to the disposal and impairment of company-operated store assets, and approximately $450 million primarily associated with accelerated amortization of ROU lease assets and other lease costs due to store closures prior to the end of contractual lease terms. These restructuring charges will result in estimated non-cash charges of approximately $400 million related to asset impairment and disposal."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "LMT",
+    "filing_date": "2025-12-18",
+    "accession_number": "0000936468-25-000057",
+    "signal": "mechanical_noncash_loss_no_new_cash_obligation",
+    "strategy": "cash_secured_put",
+    "reason": "Existing pension annuity buy-in contracts converted to buy-out contracts, transferring about $900m of pension obligations without additional company costs or contributions. The $480m noncash nonoperating charge accelerates recognition of actuarial losses already in equity; no operating deterioration is disclosed in this filing.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/936468/000093646825000057/lmt-20251218.htm"
+    ],
+    "source_evidence": {
+      "mechanical_cause": "Accelerated recognition of pre-existing actuarial losses after conversion of previously purchased annuity contracts.",
+      "cash_evidence": "Item 8.01 explicitly states no additional costs or funding contributions required by Lockheed Martin.",
+      "outlook_evidence": "Charge was absent from prior 2025 financial outlook; filing calls it non-operating but does not explicitly reaffirm the entire operating outlook. This is recorded as missing corroboration, not an assumed reaffirmation.",
+      "full_source_review": "Entire contemporaneous 8-K reviewed via web.",
+      "source_locator": "Item 8.01, paragraphs 1-4"
+    },
+    "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+    "horizon_limitation": "Entry late December 2025; most prescribed exits lie beyond the 2025-12-31 research cutoff and must remain censored without fetching 2026 outcomes.",
+    "classification": "economic_signal"
+  },
+  {
+    "ticker": "C",
+    "filing_date": "2024-01-10",
+    "accession_number": "0001104659-24-002981",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "FX translation loss accompanies actual FDIC assessment; Argentina devaluation changes economics. Not an isolated harmless accounting adjustment.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/831001/0001104659-24-002981.txt"
+    ],
+    "supporting_text": [
+      "Citi recorded an approximate $1.7 billion charge to operating expenses in the quarter (previously estimated to be up to $1.5 billion) related to the Federal Deposit Insurance Corporation special assessment.",
+      "Citi recorded an approximate $880 million translation loss in revenues in Argentina in the quarter, as a result of the recent devaluation of the Argentine peso."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "IBM",
+    "filing_date": "2024-09-11",
+    "accession_number": "0001104659-24-098942",
+    "signal": "mechanical_noncash_loss_no_new_cash_obligation",
+    "strategy": "cash_secured_put",
+    "reason": "Pension annuity purchase transfers existing obligations using existing plan assets; no company cash contribution. The $2.7bn pretax settlement charge does not affect operating profit or free cash flow. Full contemporaneous 8-K discloses no concurrent operating deterioration.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/51143/000110465924098942/tm2423753d1_8k.htm"
+    ],
+    "source_evidence": {
+      "mechanical_cause": "Existing plan assets purchase an annuity transferring approximately $6bn of existing pension obligations to Prudential; one-time pension settlement accounting recognizes $2.7bn pretax expense.",
+      "cash_evidence": "Item 8.01 explicitly states no cash contribution was required from IBM.",
+      "outlook_evidence": "Item 8.01 explicitly excludes an impact on Q3 or full-year 2024 operating non-GAAP profit or free cash flow.",
+      "full_source_review": "Entire contemporaneous 8-K reviewed via web; SEC acceptance 2024-09-11 16:30:29 means after close.",
+      "source_locator": "Item 8.01, paragraphs 1-4"
+    },
+    "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+    "classification": "economic_signal"
+  },
+  {
+    "ticker": "C",
+    "filing_date": "2025-09-24",
+    "accession_number": "0001104659-25-092977",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Goodwill write-down follows a transaction bid below carrying value; actual asset-value evidence, not purely mechanical.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-092977.txt"
+    ],
+    "supporting_text": [
+      "On September 24, 2025, Citi incurred a non-cash goodwill impairment of approximately USD 726 million within Other operating expenses on the applicable reporting unit within All Other\u2014Legacy Franchises. Citi concluded, in connection with the agreed-upon bid received from Fernando Chico Pardo, that the fair value of the reporting unit was less than its carrying value, based on a quantitative test."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "C",
+    "filing_date": "2025-12-29",
+    "accession_number": "0001104659-25-124865",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Mixed held-for-sale loss includes translation and actual disposal economics; no affirmative unchanged-obligation statement in available evidence.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-124865.txt"
+    ],
+    "supporting_text": [
+      "The 'held for sale' accounting treatment results in a pre-tax loss on sale for the fourth quarter 2025 of approximately $1.2 billion ($1.1 billion after-tax), which is recognized as a reduction of Other Revenue through a valuation allowance. The loss on sale consists of (i) an approximate $1.6 billion related to the currency translation adjustment (CTA) losses that will also remain in Accumulated Other Comprehensive Income (AOCI) until closing, partially offset by (ii) an approximate $0.2 billion expected benefit from the future derecognition of its fully reserved net investment, and (iii) an approximate $0.2 billion of expected proceeds of the future sale."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "AAPL",
+    "filing_date": "2024-09-10",
+    "accession_number": "0001140361-24-040659",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Actual tax charge following legal decision; no affirmative mechanical/no-new-cash evidence.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/320193/0001140361-24-040659.txt"
+    ],
+    "supporting_text": [
+      "As a result, the Company expects to record a one-time income tax charge in its fourth fiscal quarter ending September 28, 2024, of up to approximately $10 billion, which will increase the Company's effective tax rate for the quarter."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "DIS",
+    "filing_date": "2024-02-28",
+    "accession_number": "0001193125-24-049404",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Business fair-value and goodwill write-downs associated with disposal; noncash alone does not establish harmlessness.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1744489/0001193125-24-049404.txt"
+    ],
+    "supporting_text": [
+      "In the current quarter, the Company currently expects to record non-cash pre-tax impairment charges estimated to be between $1.8 billion to $2.4 billion, approximately half of which reflects a write-down of the net assets of Star India, in order to adjust them to fair value (less estimated transaction costs) pursuant to held-for-sale accounting, and approximately half of which reflects a write-down of goodwill at the entertainment linear networks reporting unit."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "GM",
+    "filing_date": "2024-12-04",
+    "accession_number": "0001193125-24-270298",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "New China JV forecast, plant closures and restructuring reflect explicit deterioration.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt"
+    ],
+    "supporting_text": [
+      "On December 2, 2024, the Audit Committee of the Board of Directors of the Company concluded a material impairment of the Company's interest in SGM was required based on a determination that a material loss in value of our investments in certain of the China JVs is other than temporary in light of the finalization of a new business forecast and certain restructuring actions that SGM is finalizing.",
+      "The Company expects to (i) record an other than temporary impairment of our equity interest in the China JVs in the range of $2.6\u20132.9 billion in the three months ending December 31, 2024, and (ii) recognize additional equity losses of approximately $2.7 billion resulting from the implementation of SGM's restructuring plan, which include impairment charges to be recognized by the China JVs related to plant closures and portfolio optimization."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "MSFT",
+    "filing_date": "2024-12-11",
+    "accession_number": "0001193125-24-275524",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Cruise investment impaired because development funding ceased; real deterioration.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt"
+    ],
+    "supporting_text": [
+      "In January 2021, Microsoft announced a minority investment in Cruise, an autonomous vehicle company. On December 10, 2024, GM announced its intent to realign its autonomous driving strategy, no longer fund Cruise's robotaxi development work, and pursue the acquisition of minority investor shares. As a result, we expect to record an impairment charge of approximately $800 million in the second quarter of fiscal year 2025. It is estimated to have a negative impact of approximately $0.09 to second quarter diluted earnings per share."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "PM",
+    "filing_date": "2024-09-17",
+    "accession_number": "0001413329-24-000160",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Actual disposal loss with working-capital adjustments; no purely technical/no-new-cash support.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000160.txt"
+    ],
+    "supporting_text": [
+      "In connection with the approval of the Sale by the Company's Board of Directors on September 12, 2024, the Company expects to record an estimated loss of approximately $220 million associated with the Sale during the third quarter of 2024, subject to working capital and other adjustments."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "GM",
+    "filing_date": "2025-10-14",
+    "accession_number": "0001467858-25-000136",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "EV demand/capacity realignment and contract cancellation fees include explicit cash impact.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt"
+    ],
+    "supporting_text": [
+      "In addition, the Company has incurred charges of $0.4 billion, primarily related to contract cancellation fees and commercial settlements associated with EV-related investments, which will have a cash impact. The reassessment of our EV capacity and manufacturing footprint, including our investments in our battery component manufacturing, is ongoing, and it is reasonably possible that we will recognize additional future material cash and non-cash charges.",
+      "On October 7, 2025, the Audit Committee of the Company's Board of Directors approved charges of $1.6 billion in GM North America (GMNA) in the three months ended September 30, 2025, based on a planned strategic realignment of our EV capacity and manufacturing footprint to consumer demand. These charges include non-cash impairment and other charges of $1.2 billion as a result of adjustments to our EV capacity."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "ABBV",
+    "filing_date": "2025-01-06",
+    "accession_number": "0001551152-25-000002",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Acquired R&D/milestone expense; supporting text does not establish mechanical cause or no new cash obligation.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000002.txt"
+    ],
+    "supporting_text": [
+      "Reported GAAP earnings and adjusted non-GAAP earnings for the fourth quarter of 2024 are expected to include acquired IPR&D and milestones expense of $1.6 billion on a pre-tax basis, representing an unfavorable impact of $0.88 to both GAAP diluted earnings per share and adjusted non-GAAP diluted earnings per share."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "ABBV",
+    "filing_date": "2025-01-10",
+    "accession_number": "0001551152-25-000006",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Drug intangible impairment explicitly follows revised cash flows; not merely accounting presentation.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000006.txt"
+    ],
+    "supporting_text": [
+      "On January 9, 2025, AbbVie determined that it will record an impairment charge related to the emraclidine intangible asset acquired as part of the acquisition of Cerevel Therapeutics Holdings, Inc. Based on the revised cash flows, the company estimates a non-cash after-tax intangible asset impairment charge of approximately $3.5 billion."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  },
+  {
+    "ticker": "ABBV",
+    "filing_date": "2025-04-03",
+    "accession_number": "0001551152-25-000023",
+    "signal": "unclassified",
+    "strategy": "cash_secured_put",
+    "reason": "Acquired R&D/milestone expense; supporting text does not establish mechanical cause or no new cash obligation.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000023.txt"
+    ],
+    "supporting_text": [
+      "Reported GAAP earnings and adjusted non-GAAP earnings for the first quarter of 2025 are expected to include acquired IPR&D and milestones expense of $248 million on a pre-tax basis, representing an unfavorable impact of $0.13 to both GAAP diluted earnings per share and adjusted non-GAAP diluted earnings per share."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "unclassified"
+  },
+  {
+    "ticker": "GOOGL",
+    "filing_date": "2025-09-05",
+    "accession_number": "0001652044-25-000074",
+    "signal": "other_charge_control",
+    "strategy": "cash_secured_put",
+    "reason": "Actual regulatory fine and cease-and-desist order.",
+    "sources": [
+      "https://www.sec.gov/Archives/edgar/data/1652044/0001652044-25-000074.txt"
+    ],
+    "supporting_text": [
+      "The EC decision imposes a \u20ac2.95 billion fine and directs Google to cease and desist the alleged 'self-preferencing' practices. Alphabet expects that it will accrue the fine in the third quarter of 2025."
+    ],
+    "review_scope": "All cached contemporaneous supporting-text rows reviewed; rejection may be established directly from this evidence. Full source required for any accepted event.",
+    "classification": "control"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "independent_ledger_max_nav_difference": 0.0,
+  "independent_completed_trade_cashflow_max_difference": 0.0,
+  "fully_flat_day_max_absolute_excess": 0.0,
+  "max_entry_notional_fraction": 0.9999000099990003,
+  "prefix_replay": [
+    {
+      "cutoff": "2011-12-30",
+      "max_difference": 0.0
+    },
+    {
+      "cutoff": "2016-12-30",
+      "max_difference": 0.0
+    },
+    {
+      "cutoff": "2021-12-31",
+      "max_difference": 0.0
+    },
+    {
+      "cutoff": "2023-12-29",
+      "max_difference": 0.0
+    },
+    {
+      "cutoff": "2025-12-31",
+      "max_difference": 0.0
+    }
+  ],
+  "held_session_count_range": [
+    1,
+    5
+  ],
+  "completed_trades": 279,
+  "final_open_trade": {
+    "entry_date": "2026-10-01",
+    "entry_open": 764.3599853515625,
+    "shares": 0.004044203005834114,
+    "entry_fee": 0.0003091226950298109,
+    "dividends": 0.0,
+    "held_sessions": 2,
+    "status": "open_marked_at_final_close",
+    "mark_date": "2026-10-02",
+    "mark_close": 769.6400146484375,
+    "pending_next_open": "exit",
+    "security_net_pnl_marked": 0.021044387658284248
+  },
+  "dividend_approximation": "Cash credited ex-date instead of later actual payment date; no dividend paid to openingex-datebuyers; dividendpaid to pre-ex-date holders exitingex-dateopen."
+}

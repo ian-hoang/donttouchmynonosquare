@@ -1,0 +1,13 @@
+{
+  "as_of": "2026-10-03",
+  "scope": "Execution economics; not market data or a performance backtest",
+  "sources": [
+    {"id": "S1", "publisher": "BlackRock", "publication_date": "2021-12-14", "title": "Comment on enhanced proxy-voting reporting", "url": "https://www.blackrock.com/corporate/literature/publication/sec-enhanced-reporting-proxy-votes-registered-management-investment-companies-reporting-executive-compensation-votes-institutional-investment-managers-121421.pdf", "use": "Recall/record-date mechanism and limitations; does not establish options alpha"},
+    {"id": "S2", "publisher": "Options Industry Council", "title": "Put/Call Parity", "url": "https://www.optionseducation.org/advancedconcepts/put-call-parity", "use": "Reversal definition and frictionless parity caveats"},
+    {"id": "S3", "publisher": "Interactive Brokers", "title": "Short Sale Cost", "url": "https://www.interactivebrokers.com/en/pricing/short-sale-cost.php?menu=A", "use": "Separate borrow fees and short-proceeds interest; settled-position basis"},
+    {"id": "S4", "publisher": "Interactive Brokers", "title": "About Pre-Borrows", "url": "https://www.interactivebrokers.co.uk/en/software/tws.bak/usersguidebook/specializedorderentry/about_pre-borrows.htm", "use": "Indicative vs actual floating rates, collateral conventions and dividend compensation", "limitation": "Legacy program documentation; verify current/historical institutional agreement"},
+    {"id": "S5", "publisher": "Interactive Brokers", "title": "Returns/Recalls/Rerates", "url": "https://www.interactivebrokers.co.uk/en/software/tws.bak/usersguidebook/specializedorderentry/returns_recalls_rerates.htm", "use": "Recall and return mechanics", "limitation": "Legacy documentation; actual agreement controls"},
+    {"id": "S6", "publisher": "Options Industry Council", "title": "Exercising Options", "url": "https://www.optionseducation.org/optionsoverview/exercising-options", "use": "Exercise, assignment and expiration uncertainty"},
+    {"id": "S7", "publisher": "Options Industry Council", "title": "Options Exercise FAQ", "url": "https://www.optionseducation.org/referencelibrary/faq/options-exercise", "use": "Broker restrictions and exercise during trading halts"}
+  ]
+}

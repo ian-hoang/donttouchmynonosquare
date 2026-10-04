@@ -1,0 +1,34 @@
+[
+  {
+    "ticker": "MDT",
+    "filing_date": "2025-05-21",
+    "decision": "include: Jennifer Kirk controller resignation followed by Sean Salmon cardiovascular-head departure",
+    "accession_number": "0001613103-25-000078",
+    "filing_url": "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000078.txt",
+    "prior_filing_dates": [
+      "2025-03-17"
+    ],
+    "prior_sources": [
+      "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000034.txt"
+    ],
+    "source_text_sha256": "bbaed6f0a074ecd7ef0fa40da126629b0b7f2a4384de3d0ca162e11414a1893e",
+    "strategy": "collar",
+    "signal": "departures"
+  },
+  {
+    "ticker": "PYPL",
+    "filing_date": "2024-02-12",
+    "decision": "include: Peggy Alford sales departure followed by Aaron Karczmer enterprise-services departure",
+    "accession_number": "0001193125-24-032073",
+    "filing_url": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-032073.txt",
+    "prior_filing_dates": [
+      "2024-01-08"
+    ],
+    "prior_sources": [
+      "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-004471.txt"
+    ],
+    "source_text_sha256": "c182bb5d6cf67d14e62585d827ee51c517d60d4e6de401e00208c4b113f18553",
+    "strategy": "collar",
+    "signal": "departures"
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-10-03T02:14:29",
+  "rule_file": "hypotheses/FINAL_RULE.md",
+  "approved_by": "Ian (chat, 2026-10-03)",
+  "window": [
+    "2026-01-01",
+    "2026-08-31"
+  ],
+  "pass_rule": "h=10: sold-call mean net of measured costs > 0 AND mean gap over quiet same-day peers > 0",
+  "code_sha256": {
+    "eightk.py": "9ac099d2109a15e82c69343ff8160b10e5649815280b8c433c637a4d1e670f8d",
+    "research/oos_deal.py": "cf4f67f490d95e8482e75cbcc106ce64363fdc1b13927dc2d0fb91400c2b2721",
+    "research/costs.py": "416319db3de95a6412ff88c16a9526afd38f22814f5ec8931a16d5a85234ea97",
+    "research/ideas2.py": "d91ab213f9983b2ebc72c84c4c3ae502564f64ec731f5993eac56d2be437085f",
+    "research/scan.py": "c80ccd265737707b4b260dbf123af505dc0df4db72984733afbcec6566a5483b",
+    "hypotheses/FINAL_RULE.md": "4bb4996cd6ff296532a07b9a42eae608f29c41bd65b8bb3d31c6bcc51b3d9537"
+  },
+  "run_at": "2026-10-03T02:15:14",
+  "passed": true,
+  "primary": {
+    "horizon": "10",
+    "sold_call_net_mean": 0.007526164031457293,
+    "gap_vs_peers_mean": 0.01187670319976204,
+    "n": 15
+  }
+}

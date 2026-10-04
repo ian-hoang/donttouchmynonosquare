@@ -1,0 +1,12 @@
+{
+  "scope": "Corrections made after inspecting preliminary research outputs; signal membership and primary trade parameters were unchanged.",
+  "changes": [
+    "Starter near-expiry spot search could fail after eight adjacent strikes around a chain median. Added a fixed broad strike-grid fallback using ONLY the pre-filing date; no future outcome is used to find the spot proxy.",
+    "Removed an unnecessary requirement that the chosen 3-6month ATM pair trade on the pre-filing date. Contract selection already uses pre-filing chain metadata and an independent same-session near-expiry spot proxy. Every traded leg still requires same-session entry and exit marks.",
+    "Fixed cost audit metadata for non-5% sensitivity rows. Actual net/gross arithmetic was already correct; independent recomputation verified it.",
+    "Added precise capital-basis labels and included entry costs in long-call premium-return denominator. Headline stock-equivalent returns were unaffected.",
+    "Stored raw option observation details under the ignored Massive cache directory. Public research outputs contain aggregate results and source-reviewed event annotations."
+  ],
+  "credit_benchmark_amendment": "See credit_controls_spec.json: supplemental non-trigger disclosure-day comparison addresses missing ordinary-day controls. It is exploratory and does not replace the frozen primary benchmark.",
+  "negative_result_policy": "Do not reinterpret a positive cell among many sensitivity/horizon cells as discovered alpha. No out-of-sample evaluation authorized by the research rule until a final strategy is fixed."
+}

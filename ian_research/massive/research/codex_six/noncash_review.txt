@@ -1,0 +1,169 @@
+[0] AAPL 2024-09-10 0001140361-24-040659
+material_charge_or_gain: As a result, the Company expects to record a one-time income tax charge in its fourth fiscal quarter ending September 28, 2024, of up to approximately $10 billion, which will increase the Company's effective tax rate for the quarter.
+URL: https://www.sec.gov/Archives/edgar/data/320193/0001140361-24-040659.txt
+
+[1] ABBV 2025-01-06 0001551152-25-000002
+material_charge_or_gain: Reported GAAP earnings and adjusted non-GAAP earnings for the fourth quarter of 2024 are expected to include acquired IPR&D and milestones expense of $1.6 billion on a pre-tax basis, representing an unfavorable impact of $0.88 to both GAAP diluted earnings per share and adjusted non-GAAP diluted earnings per share.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000002.txt
+
+[2] ABBV 2025-01-10 0001551152-25-000006
+asset_impairment: On January 9, 2025, AbbVie determined that it will record an impairment charge related to the emraclidine intangible asset acquired as part of the acquisition of Cerevel Therapeutics Holdings, Inc. Based on the revised cash flows, the company estimates a non-cash after-tax intangible asset impairment charge of approximately $3.5 billion.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000006.txt
+
+[3] ABBV 2025-04-03 0001551152-25-000023
+material_charge_or_gain: Reported GAAP earnings and adjusted non-GAAP earnings for the first quarter of 2025 are expected to include acquired IPR&D and milestones expense of $248 million on a pre-tax basis, representing an unfavorable impact of $0.13 to both GAAP diluted earnings per share and adjusted non-GAAP diluted earnings per share.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000023.txt
+
+[4] BA 2025-06-04 0000012927-25-000041
+material_charge_or_gain: Pursuant to the NPA, the Company is subject to a $487.2 million overall criminal monetary penalty, $243.6 million of which was paid in 2021 pursuant to the DPA and the remaining $243.6 million of which was included in amounts expensed by the Company in 2024 pursuant to the proposed plea agreement between the Company and the Department filed with the U.S. District Court for the Northern District of Texas on July 24, 2024.
+URL: https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000041.txt
+
+[5] BAC 2024-01-08 0000070858-24-000006
+material_charge_or_gain: the Corporation recognized a net non-cash, pretax charge of approximately $1.6 billion in the quarter ending December 31, 2023 (the "Charge") presented in revenue through market making and similar activities.
+URL: https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000006.txt
+
+[6] BAC 2024-02-02 0000070858-24-000027
+material_charge_or_gain: Full year results included two notable items related to the Federal Deposit Insurance Corporation special assessment ($2.1 billion pre-tax) and the Bloomberg Short-Term Bank Yield Index cessation-related charge ($1.6 billion pre-tax) incurred in the fourth quarter totaling $3.7 billion pre-tax, or $2.8 billion after-tax.
+URL: https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt
+
+[7] C 2024-01-10 0001104659-24-002981
+material_charge_or_gain: Citi recorded an approximate $1.7 billion charge to operating expenses in the quarter (previously estimated to be up to $1.5 billion) related to the Federal Deposit Insurance Corporation special assessment.
+material_charge_or_gain: Citi recorded an approximate $880 million translation loss in revenues in Argentina in the quarter, as a result of the recent devaluation of the Argentine peso.
+URL: https://www.sec.gov/Archives/edgar/data/831001/0001104659-24-002981.txt
+
+[8] C 2025-09-24 0001104659-25-092977
+goodwill_impairment: On September 24, 2025, Citi incurred a non-cash goodwill impairment of approximately USD 726 million within Other operating expenses on the applicable reporting unit within All Other—Legacy Franchises. Citi concluded, in connection with the agreed-upon bid received from Fernando Chico Pardo, that the fair value of the reporting unit was less than its carrying value, based on a quantitative test.
+URL: https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-092977.txt
+
+[9] C 2025-12-29 0001104659-25-124865
+material_charge_or_gain: The 'held for sale' accounting treatment results in a pre-tax loss on sale for the fourth quarter 2025 of approximately $1.2 billion ($1.1 billion after-tax), which is recognized as a reduction of Other Revenue through a valuation allowance. The loss on sale consists of (i) an approximate $1.6 billion related to the currency translation adjustment (CTA) losses that will also remain in Accumulated Other Comprehensive Income (AOCI) until closing, partially offset by (ii) an approximate $0.2 billion expected benefit from the future derecognition of its fully reserved net investment, and (iii) an approximate $0.2 billion of expected proceeds of the future sale.
+URL: https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-124865.txt
+
+[10] CVX 2024-01-02 0000093410-24-000002
+material_charge_or_gain: In addition, the Company will be recognizing a loss related to abandonment and decommissioning obligations from previously sold oil and gas production assets in the U.S. Gulf of Mexico, as companies that purchased these assets have filed for protection under Chapter 11 of the U.S. Bankruptcy Code, and we believe it is now probable and estimable that a portion of these obligations will revert to the Company.
+asset_impairment: Chevron Corporation announced that for fourth quarter 2023, the Company will be impairing a portion of its U.S. upstream assets, primarily in California, due to continuing regulatory challenges in the state that have resulted in lower anticipated future investment levels in its business plans.
+URL: https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000002.txt
+
+[11] CVX 2025-09-25 0000093410-25-000098
+material_charge_or_gain: Approximately half of the cash outflows associated with the severance and other transaction costs related to the Hess acquisition are expected to occur in third quarter 2025, and the remainder is expected within the next 12 months. Adjusted earnings exclude severance and other transaction costs of $(350)-(450) million.
+URL: https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000098.txt
+
+[12] DIS 2024-02-28 0001193125-24-049404
+asset_impairment: In the current quarter, the Company currently expects to record non-cash pre-tax impairment charges estimated to be between $1.8 billion to $2.4 billion, approximately half of which reflects a write-down of the net assets of Star India, in order to adjust them to fair value (less estimated transaction costs) pursuant to held-for-sale accounting, and approximately half of which reflects a write-down of goodwill at the entertainment linear networks reporting unit.
+URL: https://www.sec.gov/Archives/edgar/data/1744489/0001193125-24-049404.txt
+
+[13] GM 2024-12-04 0001193125-24-270298
+investment_impairment: On December 2, 2024, the Audit Committee of the Board of Directors of the Company concluded a material impairment of the Company's interest in SGM was required based on a determination that a material loss in value of our investments in certain of the China JVs is other than temporary in light of the finalization of a new business forecast and certain restructuring actions that SGM is finalizing.
+material_charge_or_gain: The Company expects to (i) record an other than temporary impairment of our equity interest in the China JVs in the range of $2.6–2.9 billion in the three months ending December 31, 2024, and (ii) recognize additional equity losses of approximately $2.7 billion resulting from the implementation of SGM's restructuring plan, which include impairment charges to be recognized by the China JVs related to plant closures and portfolio optimization.
+URL: https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt
+
+[14] GM 2025-10-14 0001467858-25-000136
+material_charge_or_gain: In addition, the Company has incurred charges of $0.4 billion, primarily related to contract cancellation fees and commercial settlements associated with EV-related investments, which will have a cash impact. The reassessment of our EV capacity and manufacturing footprint, including our investments in our battery component manufacturing, is ongoing, and it is reasonably possible that we will recognize additional future material cash and non-cash charges.
+asset_impairment: On October 7, 2025, the Audit Committee of the Company's Board of Directors approved charges of $1.6 billion in GM North America (GMNA) in the three months ended September 30, 2025, based on a planned strategic realignment of our EV capacity and manufacturing footprint to consumer demand. These charges include non-cash impairment and other charges of $1.2 billion as a result of adjustments to our EV capacity.
+URL: https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt
+
+[15] GOOGL 2025-09-05 0001652044-25-000074
+material_charge_or_gain: The EC decision imposes a €2.95 billion fine and directs Google to cease and desist the alleged 'self-preferencing' practices. Alphabet expects that it will accrue the fine in the third quarter of 2025.
+URL: https://www.sec.gov/Archives/edgar/data/1652044/0001652044-25-000074.txt
+
+[16] IBM 2024-09-11 0001104659-24-098942
+material_charge_or_gain: As a result of the transaction, the Company expects to recognize a one-time non-cash pre-tax pension settlement charge of approximately $2.7 billion ($2.0 billion net of tax) in the third quarter of 2024.
+URL: https://www.sec.gov/Archives/edgar/data/51143/0001104659-24-098942.txt
+
+[17] INTC 2024-10-31 0000050863-24-000147
+asset_impairment: In connection with the Company's decision to exit and outsource manufacturing capabilities for internal-use test hardware, the Company is recognizing pre-tax impairment charges of $442 million in the third quarter of 2024 for certain construction in progress assets. The Company is recognizing $86 million of non-cash impairments for operating leased assets and related leasehold improvements in the third quarter of 2024.
+URL: https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000147.txt
+
+[18] INTC 2025-07-24 0000050863-25-000107
+asset_impairment: The Company is recognizing non-cash asset impairment charges of $416 million in the second quarter of 2025, resulting from the exit of certain non-core lines of business and the consolidation and exit of certain real estate properties.
+URL: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt
+
+[19] JNJ 2024-05-01 0000200406-24-000048
+material_charge_or_gain: To account for these settlements and the contemplated comprehensive resolution through the Proposed Plan, the Company recorded an incremental charge of approximately $2.7 billion, for a total reserve as of the first fiscal quarter 2024 at a present value of approximately $11 billion (nominal value of approximately $13.7 billion).
+URL: https://www.sec.gov/Archives/edgar/data/200406/0000200406-24-000048.txt
+
+[20] JPM 2024-05-06 0000019617-24-000330
+material_charge_or_gain: Visa's acceptance has resulted in a gain for the Firm of approximately $8 billion relating to the Visa Class C common stock, which is held at fair value.
+URL: https://www.sec.gov/Archives/edgar/data/19617/0000019617-24-000330.txt
+
+[21] LMT 2025-12-18 0000936468-25-000057
+material_charge_or_gain: In connection with the transactions, the Company expects to recognize a non-cash, non-operating pretax settlement charge of approximately $480 million in the fourth quarter of 2025, which reflects the accelerated recognition of actuarial losses for the affected plan that were included in stockholders' equity.
+URL: https://www.sec.gov/Archives/edgar/data/936468/0000936468-25-000057.txt
+
+[22] MMM 2025-05-12 0000066740-25-000046
+material_charge_or_gain: 3M expects to record a pre-tax charge of approximately $285 million in the second quarter of 2025 and intends to reflect it as an adjustment in arriving at non-GAAP results. This pre-tax charge includes approximately $210 million for the settlement for Chamber Works and other elements of the settlement, representing the present value of payments beginning in 2026 over 8 years and approximately $75 million for existing and future PFAS-related claims by the State of New Jersey, representing the present value of payments starting in 2030 and running through 2050.
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000046.txt
+
+[23] MSFT 2024-12-11 0001193125-24-275524
+investment_impairment: In January 2021, Microsoft announced a minority investment in Cruise, an autonomous vehicle company. On December 10, 2024, GM announced its intent to realign its autonomous driving strategy, no longer fund Cruise's robotaxi development work, and pursue the acquisition of minority investor shares. As a result, we expect to record an impairment charge of approximately $800 million in the second quarter of fiscal year 2025. It is estimated to have a negative impact of approximately $0.09 to second quarter diluted earnings per share.
+URL: https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt
+
+[24] PG 2024-01-23 0000080424-24-000015
+asset_impairment: The Company recognized in the three months ended December 31, 2023, a non-cash, after-tax impairment charge of $1.0 billion ($1.3 billion before tax) to adjust the carrying value of the Gillette intangible asset acquired as part of the Company's 2005 acquisition of The Gillette Company.
+URL: https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt
+
+[25] PG 2025-06-05 0000080424-25-000050
+material_charge_or_gain: In connection with this announcement, the Company expects to record a total non-core charge of $1.0 to $1.6 billion before tax over the course of the two-year program. The Company expects 25% of these charges to be non-cash.
+URL: https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000050.txt
+
+[26] PM 2024-09-17 0001413329-24-000160
+material_charge_or_gain: In connection with the approval of the Sale by the Company's Board of Directors on September 12, 2024, the Company expects to record an estimated loss of approximately $220 million associated with the Sale during the third quarter of 2024, subject to working capital and other adjustments.
+URL: https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000160.txt
+
+[27] RTX 2024-08-30 0000101829-24-000031
+material_charge_or_gain: The $100 million portion of the settlement that is not subject to suspension, which was accrued by the Company in the second quarter ended June 30, 2024, will be paid in installments, with $34 million paid in September 2024, $33 million paid by August 29, 2025, and $33 million paid by August 29, 2026.
+URL: https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000031.txt
+
+[28] RTX 2024-10-16 0000101829-24-000033
+material_charge_or_gain: DPA-1 provides for a criminal monetary penalty and forfeiture of $282 million to be paid to the DOJ within 10 business days. The SEC's administrative cease and desist order provides for a $102 million payment to the SEC. DPA-2 provides for a criminal penalty in the amount of $147 million to be paid within 10 business days, and the FCA Settlement Agreement provides for an FCA settlement payment in the amount of $428 million, which includes restitution, plus interest, to be paid within 7 calendar days.
+URL: https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000033.txt
+
+[29] SBUX 2025-09-25 0000829224-25-000067
+asset_impairment: Of the total restructuring charges incurred, the Company estimates a breakdown of approximately $150 million related to employee separation benefits, approximately $400 million related to the disposal and impairment of company-operated store assets, and approximately $450 million primarily associated with accelerated amortization of ROU lease assets and other lease costs due to store closures prior to the end of contractual lease terms. These restructuring charges will result in estimated non-cash charges of approximately $400 million related to asset impairment and disposal.
+URL: https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000067.txt
+
+[30] SCHW 2024-01-17 0000316709-24-000011
+material_charge_or_gain: Restructuring costs required to effect these savings totaled $495 million, while acquisition and integration-related costs and amortization of acquired intangibles were $401 million and $534 million, respectively.
+URL: https://www.sec.gov/Archives/edgar/data/316709/0000316709-24-000011.txt
+
+[31] SO 2024-10-31 0000092122-24-000091
+asset_impairment: The exhibit also includes earnings and earnings per share for the three-month and nine-month periods ended September 30, 2024, excluding an impairment loss associated with the discontinued development of a multi-use commercial facility at Alabama Power Company.
+URL: https://www.sec.gov/Archives/edgar/data/3153/0000092122-24-000091.txt
+
+[32] T 2024-01-24 0000732717-24-000004
+material_charge_or_gain: Fourth-quarter 2023 earnings per diluted share includes amounts totaling to $(2.6) billion (pre-tax) resulting from the following significant items (per share): $(0.18) from a loss on actuarial remeasurement of pension and postretirement benefit plan assets and obligations, $(0.06) from restructuring and impairment charges, $(0.03) from our proportionate share of DIRECTV intangible amortization.
+URL: https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000004.txt
+
+[33] T 2024-04-24 0000732717-24-000016
+asset_impairment: Other income (expense) - net in the first quarter was $0.5 billion compared to $0.9 billion in the comparable 2023 period. The decrease reflects lower pension and postretirement benefit credits in 2024, and impairments recognized on a held-for-sale business and an equity investment in a Latin America satellite business.
+material_charge_or_gain: First-quarter 2024 income per diluted share included amounts totaling $0.7 billion (pre-tax), or $(0.08) per share, resulting from the following significant items: $(0.06) per share from restructuring charges related to our Open RAN deployment and noncash impairment charges and $(0.03) per share from our proportionate share of DIRECTV intangible amortization.
+URL: https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000016.txt
+
+[34] T 2025-01-27 0000732717-25-000005
+goodwill_impairment: Full-year 2024 expense increases were primarily due to a $4.4 billion noncash goodwill impairment recorded in the third quarter of 2024. Also contributing to higher operating expenses was higher depreciation expense from accelerated depreciation on wireless network equipment associated with our network modernization efforts.
+material_charge_or_gain: Full-year 2024 earnings per diluted share was $1.49 and included the following significant items (per share): $(0.72) from restructuring and impairment charges, $(0.09) from our proportionate share of DIRECTV intangible amortization and $(0.01) from a loss on actuarial remeasurement of pension and postretirement benefit plan assets and obligations.
+URL: https://www.sec.gov/Archives/edgar/data/732717/0000732717-25-000005.txt
+
+[35] VZ 2024-01-17 0000732712-24-000003
+goodwill_impairment: The impairment test determined that the fair value of the Business reporting unit was less than its carrying value. As a result, in the fourth quarter of 2023, Verizon recorded a non-cash goodwill impairment charge of approximately $5.8 billion (before and after-tax), resulting in the goodwill balance of the Business reporting unit of $1.7 billion as of December 31, 2023.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000003.txt
+
+[36] VZ 2024-01-23 0000732712-24-000007
+asset_impairment: Asset rationalization recorded during the second quarter of 2023 relates to certain real estate and non-strategic assets that we made a decision to cease use of as part of our transformation initiatives. Asset rationalization recorded during the fourth quarter of 2023 primarily relates to Verizon Business network assets that we made a decision to cease use of as part of our continued transformation initiatives.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000007.txt
+
+[37] VZ 2024-03-06 0000732712-24-000015
+material_charge_or_gain: As a result of the transaction, Verizon expects to recognize a one-time non-cash pension settlement credit in the first quarter of 2024. The actual amount of the credit will depend on finalization of the actuarial and other assumptions.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000015.txt
+
+[38] VZ 2024-04-22 0000732712-24-000025
+asset_impairment: Asset rationalization recorded during the second quarter of 2023 relates to certain real estate and non-strategic assets that we made a decision to cease use of as part of our transformation initiatives. Asset rationalization recorded during the fourth quarter of 2023 primarily relates to Verizon Business network assets that we made a decision to cease use of as part of our continued transformation initiatives.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000025.txt
+
+[39] VZ 2024-10-22 0000732712-24-000062
+material_charge_or_gain: Severance charges recorded during 2024 relate to separations under our voluntary separation program for select U.S.-based management employees as well as other headcount reduction initiatives. Asset and business rationalization recorded during 2024 predominately relates to the decision to cease use of certain real estate assets and exit non-strategic portions of certain businesses, as part of our continued transformation initiatives.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000062.txt
+
+[40] VZ 2025-01-24 0000732712-25-000003
+material_charge_or_gain: Severance charges recorded during 2024 relate to separations under our voluntary separation program for select U.S.-based management employees as well as other headcount reduction initiatives. Asset and business rationalization recorded during 2024 predominately relates to the decision to cease use of certain real estate assets and exit non-strategic portions of certain businesses, as part of our continued transformation initiatives.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000003.txt

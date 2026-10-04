@@ -1,0 +1,272 @@
+{
+  "coverage": {
+    "rows": 5724,
+    "assets": [
+      "XLB",
+      "XLE",
+      "XLF",
+      "XLI",
+      "XLK",
+      "XLP",
+      "XLU",
+      "XLV",
+      "XLY",
+      "SPY"
+    ],
+    "missing_prices": 0,
+    "first": "2004-01-02",
+    "last": "2026-10-02"
+  },
+  "corporate_action_adjustments": {
+    "XLB": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.012244650370307752,
+      "worst_adjustment_dates": [
+        {
+          "date": "2004-04-28",
+          "residual_bps": 0.012244650370307752
+        },
+        {
+          "date": "2004-07-28",
+          "residual_bps": 0.01153472800052846
+        },
+        {
+          "date": "2011-01-07",
+          "residual_bps": 0.011527695542579153
+        }
+      ]
+    },
+    "XLE": {
+      "rows": 5724,
+      "dividend_events": 92,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.01024913572011954,
+      "worst_adjustment_dates": [
+        {
+          "date": "2013-05-24",
+          "residual_bps": 0.01024913572011954
+        },
+        {
+          "date": "2012-07-05",
+          "residual_bps": 0.010229984307441597
+        },
+        {
+          "date": "2006-07-05",
+          "residual_bps": 0.010007829138736213
+        }
+      ]
+    },
+    "XLF": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.011831786703719871,
+      "worst_adjustment_dates": [
+        {
+          "date": "2004-09-28",
+          "residual_bps": 0.011831786703719871
+        },
+        {
+          "date": "2004-08-19",
+          "residual_bps": 0.01123467823216373
+        },
+        {
+          "date": "2005-06-06",
+          "residual_bps": 0.011172858023211774
+        }
+      ]
+    },
+    "XLI": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 0,
+      "max_adjustment_residual_bps": 0.01075749499479528,
+      "worst_adjustment_dates": [
+        {
+          "date": "2004-09-09",
+          "residual_bps": 0.01075749499479528
+        },
+        {
+          "date": "2004-05-17",
+          "residual_bps": 0.009370793928598076
+        },
+        {
+          "date": "2004-02-26",
+          "residual_bps": 0.009177435320584237
+        }
+      ]
+    },
+    "XLK": {
+      "rows": 5724,
+      "dividend_events": 82,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.01077934739468489,
+      "worst_adjustment_dates": [
+        {
+          "date": "2004-09-30",
+          "residual_bps": 0.01077934739468489
+        },
+        {
+          "date": "2006-04-07",
+          "residual_bps": 0.01066719270581551
+        },
+        {
+          "date": "2007-06-18",
+          "residual_bps": 0.009788855253045625
+        }
+      ]
+    },
+    "XLP": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 0,
+      "max_adjustment_residual_bps": 0.010683098419228543,
+      "worst_adjustment_dates": [
+        {
+          "date": "2005-06-23",
+          "residual_bps": 0.010683098419228543
+        },
+        {
+          "date": "2009-07-15",
+          "residual_bps": 0.010240837493569188
+        },
+        {
+          "date": "2006-04-04",
+          "residual_bps": 0.009675100232087175
+        }
+      ]
+    },
+    "XLU": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.011547910024889418,
+      "worst_adjustment_dates": [
+        {
+          "date": "2009-03-10",
+          "residual_bps": 0.011547910024889418
+        },
+        {
+          "date": "2009-08-06",
+          "residual_bps": 0.010378051491510831
+        },
+        {
+          "date": "2007-04-02",
+          "residual_bps": 0.010100255538603164
+        }
+      ]
+    },
+    "XLV": {
+      "rows": 5724,
+      "dividend_events": 92,
+      "split_events": 0,
+      "max_adjustment_residual_bps": 0.010386940348938722,
+      "worst_adjustment_dates": [
+        {
+          "date": "2007-12-04",
+          "residual_bps": 0.010386940348938722
+        },
+        {
+          "date": "2009-11-12",
+          "residual_bps": 0.009689317481686999
+        },
+        {
+          "date": "2012-06-13",
+          "residual_bps": 0.009390494233318947
+        }
+      ]
+    },
+    "XLY": {
+      "rows": 5724,
+      "dividend_events": 91,
+      "split_events": 1,
+      "max_adjustment_residual_bps": 0.011424338185461735,
+      "worst_adjustment_dates": [
+        {
+          "date": "2007-02-02",
+          "residual_bps": 0.011424338185461735
+        },
+        {
+          "date": "2010-12-22",
+          "residual_bps": 0.010827655656520108
+        },
+        {
+          "date": "2007-06-11",
+          "residual_bps": 0.010306964790540718
+        }
+      ]
+    },
+    "SPY": {
+      "rows": 5724,
+      "dividend_events": 92,
+      "split_events": 0,
+      "max_adjustment_residual_bps": 0.011133644370886486,
+      "worst_adjustment_dates": [
+        {
+          "date": "2009-04-17",
+          "residual_bps": 0.011133644370886486
+        },
+        {
+          "date": "2009-04-16",
+          "residual_bps": 0.009831660516823604
+        },
+        {
+          "date": "2013-06-26",
+          "residual_bps": 0.009251064800874786
+        }
+      ]
+    }
+  },
+  "cases": {
+    "residual_reversal_1day": {
+      "independent_max_abs_pnl_error": 0.0,
+      "prefix_lengths_passed": [
+        600,
+        3000,
+        5000
+      ],
+      "max_signal_model_beta": 2.0816681711721685e-16,
+      "all_active_signal_gross_equal1": true,
+      "first_entry_close": "2005-01-05",
+      "first_return_close": "2005-01-06"
+    },
+    "residual_reversal_5day": {
+      "independent_max_abs_pnl_error": 0.0,
+      "prefix_lengths_passed": [
+        600,
+        3000,
+        5000
+      ],
+      "max_signal_model_beta": 1.734723475976807e-16,
+      "all_active_signal_gross_equal1": true,
+      "first_entry_close": "2005-01-11",
+      "first_return_close": "2005-01-12"
+    },
+    "raw_reversal_1day": {
+      "independent_max_abs_pnl_error": 0.0,
+      "prefix_lengths_passed": [
+        600,
+        3000,
+        5000
+      ],
+      "max_signal_model_beta": 1.942890293094024e-16,
+      "all_active_signal_gross_equal1": true,
+      "first_entry_close": "2005-01-05",
+      "first_return_close": "2005-01-06"
+    },
+    "raw_reversal_5day": {
+      "independent_max_abs_pnl_error": 0.0,
+      "prefix_lengths_passed": [
+        600,
+        3000,
+        5000
+      ],
+      "max_signal_model_beta": 1.942890293094024e-16,
+      "all_active_signal_gross_equal1": true,
+      "first_entry_close": "2005-01-05",
+      "first_return_close": "2005-01-06"
+    }
+  }
+}

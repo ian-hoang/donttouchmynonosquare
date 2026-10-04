@@ -1,0 +1,33 @@
+anchors with O in 2021-07-01..2026-03-31: 31,210; late signals (E+3): 6,375 (20.4%); late signals (E+5): 2,950
+late signals released within 60 trading days: 80.7%; median holding days 3
+delay of the eventual release (days after E) for E+3 signals:
+count    5147.0
+mean       12.3
+std        13.5
+min         4.0
+10%         6.0
+25%         7.0
+50%         7.0
+75%        10.0
+90%        28.0
+max        91.0
+
+all releases vs E (days): share early<=-7 7.6%, on-time |d|<=3 65.9%, late>=7 13.8%; N 31,499
+signals by year of O: {2021: 554, 2022: 1082, 2023: 1168, 2024: 1704, 2025: 1564, 2026: 303}
+
+random late signals:
+  BBWI   anchor 2022-08-18 E Thu 2023-08-17 O Tue 08-22 -> released True 2023-08-23 delay 6.0
+  BNGO   anchor 2024-03-06 E Wed 2025-03-05 O Mon 03-10 -> released True 2025-04-01 delay 27.0
+  TE     anchor 2024-02-29 E Thu 2025-02-27 O Tue 03-04 -> released True 2025-03-17 delay 18.0
+  PVH    anchor 2023-06-01 E Thu 2024-05-30 O Tue 06-04 -> released True 2024-06-05 delay 6.0
+  MCRB   anchor 2023-08-08 E Tue 2024-08-06 O Fri 08-09 -> released True 2024-08-13 delay 7.0
+  MATX   anchor 2024-05-01 E Wed 2025-04-30 O Mon 05-05 -> released True 2025-05-06 delay 6.0
+  ACAD   anchor 2023-08-03 E Thu 2024-08-01 O Tue 08-06 -> released True 2024-08-07 delay 6.0
+  POWI   anchor 2021-07-30 E Fri 2022-07-29 O Wed 08-03 -> released True 2022-08-05 delay 7.0
+  PBCT   anchor 2022-01-21 E Fri 2023-01-20 O Wed 01-25 -> released False  delay nan
+  IRDM   anchor 2021-07-20 E Tue 2022-07-19 O Fri 07-22 -> released True 2022-07-26 delay 7.0
+  XLNX   anchor 2021-07-28 E Wed 2022-07-27 O Mon 08-01 -> released False  delay nan
+  OMF    anchor 2023-10-25 E Wed 2024-10-23 O Mon 10-28 -> released True 2024-10-30 delay 7.0
+  AYX    anchor 2023-11-06 E Mon 2024-11-04 O Thu 11-07 -> released False  delay nan
+  GAN    anchor 2024-11-08 E Fri 2025-11-07 O Wed 11-12 -> released False  delay nan
+  CTXS   anchor 2021-01-19 E Tue 2022-01-18 O Fri 01-21 -> released True 2022-01-31 delay 13.0

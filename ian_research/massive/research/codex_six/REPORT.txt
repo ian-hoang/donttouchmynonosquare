@@ -1,0 +1,121 @@
+SIX FILING IDEAS: DEVELOPMENT TEST
+
+Window: 2024-2025 only. No 2026 outcome requests or holdout evaluation.
+Primary: 3-6 month options, 5% OTM, second-session entry, 21-session exit.
+Buy ask/sell bid at entry and reverse at exit, plus $0.65 per contract per side.
+Five minutes before exchange close; quotes no more than five minutes old with positive displayed sizes.
+Results are per-trade stock-equivalent notional returns, not annualized Sharpe or a funded portfolio.
+Long-stock strategies use a paid synthetic-stock approximation. Overlay P&L is shown separately.
+Zero qualifying events means not testable under this exact rule, not evidence the idea loses money.
+
+GOVERNANCE
+  Text-qualified candidates: 7; gate-passing: 7
+  Primary usable trades: 6 across 6 issuers
+  Net full-strategy return: +4.03%; option overlay: -2.00%
+  Same-date peer edge: +3.53% (paired n=6)
+  Same-issuer ordinary-date edge: +4.49%
+  Comparable filing-family edge: -0.04%
+  Source coverage: 58 comparable issuer pairs; 7 triggers and 51 verified nontriggers. Four other issuers excluded for missing pay votes or an incomparable contested election, plus one duplicate filing.
+  governance:BAC:2025-04-24: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:GS:2025-04-24: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:PFE:2025-04-28: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:GE:2025-05-09: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:CVS:2025-05-20: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:UNH:2025-06-04: text-only signal; primary usable=True; drops=[]; attrition=[]
+  governance:FDX:2025-10-02: text-only signal; primary usable=False; drops=[]; attrition=['No selected 3-6m option panel']
+  Descriptive issuer-bootstrap 95% interval for full net mean: [+0.02%, +7.73%]. Small sample; not search-adjusted.
+  Fixed 21-session sensitivity cells: 18; full mean range [+2.79%, +6.66%]; overlay range [-2.60%, -1.16%]. Cohorts differ; no winner selected.
+  All horizons: sessions | usable | full net | option overlay | peer edge
+      1 |   6 | -0.72% | -0.23% | +0.57%
+      2 |   6 | -0.21% | -0.35% | +0.78%
+      3 |   6 | +0.57% | -0.65% | +1.42%
+      5 |   6 | +1.03% | -0.75% | +1.42%
+     10 |   6 | +2.29% | -1.18% | +2.26%
+     21 |   6 | +4.03% | -2.00% | +3.53%
+     42 |   5 | +4.63% | -0.52% | +1.00%
+     63 |   2 | +8.72% | -4.39% | n/a
+    exp |   0 | unavailable under date/expiry/fresh-quote filters
+
+COMPENSATION
+  Text-qualified candidates: 0; gate-passing: 0
+  Primary usable trades: 0 across 0 issuers
+  Net full-strategy return: n/a; option overlay: n/a
+  Same-date peer edge: n/a (paired n=0)
+  Same-issuer ordinary-date edge: n/a
+  Comparable filing-family edge: n/a
+  Source coverage: 174 candidate excerpts screened; 22 primary documents across 18 filings reviewed; seven recurring-program cases remain unclassified. No comparable verified relaxation; full-source coverage is partial.
+  Verdict: no verified qualifying events; exact trading hypothesis not backtestable from this verified manifest.
+
+DURATION
+  Text-qualified candidates: 0; gate-passing: 0
+  Primary usable trades: 0 across 0 issuers
+  Net full-strategy return: n/a; option overlay: n/a
+  Same-date peer edge: n/a (paired n=0)
+  Same-issuer ordinary-date edge: n/a
+  Comparable filing-family edge: n/a
+  Source coverage: 110 adverse candidate excerpts screened; 24 full main filings plus supporting release/exhibits reviewed. Not exhaustive full-text parsing of the whole universe.
+  Verdict: no verified qualifying events; exact trading hypothesis not backtestable from this verified manifest.
+
+GUIDANCE
+  Text-qualified candidates: 0; gate-passing: 0
+  Primary usable trades: 0 across 0 issuers
+  Net full-strategy return: n/a; option overlay: n/a
+  Same-date peer edge: n/a (paired n=0)
+  Same-issuer ordinary-date edge: n/a
+  Comparable filing-family edge: n/a
+  Source coverage: 60 candidate filings; 18 full sources reviewed; 17 comparable controls and 43 unclassified. No verified positive is not proof of nonoccurrence.
+  Verdict: no verified qualifying events; exact trading hypothesis not backtestable from this verified manifest.
+
+NONCASH
+  Text-qualified candidates: 2; gate-passing: 0
+  Primary usable trades: 0 across 0 issuers
+  Net full-strategy return: n/a; option overlay: n/a
+  Same-date peer edge: n/a (paired n=0)
+  Same-issuer ordinary-date edge: n/a
+  Comparable filing-family edge: n/a
+  Source coverage: 42 candidate filings; two source-confirmed mechanical noncash events. Both failed the original price-richness gate.
+  noncash:IBM:2024-09-11: downside-insurance richness condition fails; primary usable=False; drops=[]; attrition=[]
+  noncash:LMT:2025-12-18: downside-insurance richness condition fails; primary usable=False; drops=[]; attrition=['21-session exit crosses 2025-12-31 cutoff']
+
+BURIED
+  Text-qualified candidates: 1; gate-passing: 1
+  Primary usable trades: 1 across 1 issuers
+  Net full-strategy return: -1.73%; option overlay: +3.60%
+  Same-date peer edge: +0.20% (paired n=1)
+  Same-issuer ordinary-date edge: -1.73%
+  Comparable filing-family edge: -1.96%
+  Source coverage: 110 adverse candidate excerpts screened; 24 full main filings plus supporting release/exhibits reviewed. Not exhaustive full-text parsing of the whole universe.
+  buried:MSFT:2024-12-11: text-only signal; primary usable=True; drops=[]; attrition=[]
+  Fixed 21-session sensitivity cells: 18; full mean range [-4.59%, -1.17%]; overlay range [+1.11%, +4.57%]. Cohorts differ; no winner selected.
+  All horizons: sessions | usable | full net | option overlay | peer edge
+      1 |   1 | -0.08% | -0.64% | +0.89%
+      2 |   1 | +0.29% | -1.36% | +1.29%
+      3 |   1 | -0.73% | +0.67% | +1.28%
+      5 |   1 | -0.95% | +1.84% | +0.93%
+     10 |   1 | -1.68% | +3.46% | -0.27%
+     21 |   1 | -1.73% | +3.60% | +0.20%
+     42 |   1 | -3.77% | +5.65% | -3.88%
+     63 |   1 | -5.28% | +8.83% | -7.60%
+    exp |   0 | unavailable under date/expiry/fresh-quote filters
+
+INTERPRETATION LIMITS
+All six are exploratory additions to prior research; the shared project has already examined roughly 2,000 cells.
+The text review is source-based but screening depends on sponsor excerpts; missed untagged content cannot be ruled out.
+Current/backfilled tags lack historical availability timestamps. A two-session delay does not prove point-in-time label availability.
+Controls exclude known nearby filings; missing earnings and news coverage means quiet is only a proxy.
+Quote crossing is a simulation for small size, not a guaranteed fill. No assignment, early exercise, exact dividends, stock borrow or endogenous funding model.
+IV features are European model proxies on American options; conclusions require validation with appropriate dividends and exercise modeling.
+For any future gate-passing event, controls would also need matching IV conditions to isolate text-specific alpha; here both gated ideas have zero trades.
+Overlapping events and small samples prevent interpreting event-average returns as portfolio Sharpe or validated alpha.
+No optional parameter is selected as a winner, and the 2026 holdout remains unopened.
+
+Engineering audit: removed future filings from price-gate peer selection and reran final results; summaries require current spec, code and source hashes and never pool outdated partial runs.
+Reproduction from repo root:
+  massive/.venv/bin/python massive/research/codex_six/engine.py
+  massive/.venv/bin/python massive/research/codex_six/engine.py --signals governance buried --sensitivity
+  massive/.venv/bin/python massive/research/codex_six/confounds.py
+  massive/.venv/bin/python massive/research/codex_six/summarize.py
+  massive/.venv/bin/python massive/research/codex_six/verify_outputs.py
+Full source/exclusion audits are in the corresponding *_audit.json and *_spec.json files.
+
+Prefiling trend diagnostic: 5/6 measured governance issuers had already fallen over the preceding 42 sessions; mean -13.21%. This is descriptive, not a causal regression or a retuned signal.

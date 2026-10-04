@@ -1,0 +1,240 @@
+[0] ABBV 2024-01-05 0001551152-24-000002
+guidance_issuance_or_update: AbbVie's full-year 2023 adjusted diluted earnings per share guidance range, including the impact of fourth quarter 2023 acquired IPR&D and milestones expense, is $11.04 - $11.08. AbbVie's fourth quarter 2023 adjusted diluted earnings per share guidance range, including the impact of fourth quarter 2023 acquired IPR&D and milestones expense, is $2.72 - $2.76.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000002.txt
+
+[1] ABBV 2024-04-03 0001551152-24-000013
+guidance_issuance_or_update: AbbVie's full-year 2024 adjusted diluted earnings per share guidance range, including the impact of first quarter 2024 acquired IPR&D and milestones expense, is $10.97 - $11.17. AbbVie's first quarter 2024 adjusted diluted earnings per share guidance range, including the impact of first quarter 2024 acquired IPR&D and milestones expense, is $2.18 - $2.22.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000013.txt
+
+[2] ABBV 2024-07-03 0001551152-24-000024
+guidance_issuance_or_update: AbbVie's full-year 2024 adjusted diluted earnings per share guidance range, including the impact of second quarter 2024 acquired IPR&D and milestones expense, is $10.61 - $10.81. AbbVie's second quarter 2024 adjusted diluted earnings per share guidance range, including the impact of second quarter 2024 acquired IPR&D and milestones expense, is $2.53 - $2.57.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000024.txt
+
+[3] ABBV 2024-10-03 0001551152-24-000033
+guidance_issuance_or_update: AbbVie's full-year 2024 adjusted diluted earnings per share guidance range, including the impact of third quarter 2024 acquired IPR&D and milestones expense, is $10.67 - $10.87. AbbVie's third quarter 2024 adjusted diluted earnings per share guidance range, including the impact of third quarter 2024 acquired IPR&D and milestones expense, is $2.88 - $2.92.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000033.txt
+
+[4] ABBV 2025-01-06 0001551152-25-000002
+guidance_issuance_or_update: AbbVie's full-year 2024 adjusted diluted earnings per share guidance range, including the impact of fourth quarter 2024 acquired IPR&D and milestones expense, is $10.02 - $10.06. AbbVie's fourth quarter 2024 adjusted diluted earnings per share guidance range, including the impact of fourth quarter 2024 acquired IPR&D and milestones expense, is $2.06 - $2.10.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000002.txt
+
+[5] ABBV 2025-04-03 0001551152-25-000023
+guidance_issuance_or_update: AbbVie's full-year 2025 adjusted diluted earnings per share guidance range, including the impact of first quarter 2025 acquired IPR&D and milestones expense, is $11.99 - $12.19. AbbVie's first quarter 2025 adjusted diluted earnings per share guidance range, including the impact of first quarter 2025 acquired IPR&D and milestones expense, is $2.34 - $2.38.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000023.txt
+
+[6] ABBV 2025-07-03 0001551152-25-000034
+guidance_issuance_or_update: AbbVie's full-year 2025 adjusted diluted earnings per share guidance range, including the impact of second quarter 2025 acquired IPR&D and milestones expense, is $11.67 - $11.87. AbbVie's second quarter 2025 adjusted diluted earnings per share guidance range, including the impact of second quarter 2025 acquired IPR&D and milestones expense, is $2.84 - $2.88.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000034.txt
+
+[7] ABBV 2025-10-03 0001551152-25-000043
+guidance_issuance_or_update: AbbVie's full-year 2025 adjusted diluted earnings per share guidance range, including the impact of third quarter 2025 acquired IPR&D and milestones expense, is $10.38 - $10.58. AbbVie's third quarter 2025 adjusted diluted earnings per share guidance range, including the impact of third quarter 2025 acquired IPR&D and milestones expense, is $1.74 - $1.78.
+URL: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000043.txt
+
+[8] ADBE 2025-06-12 0000796343-25-000064
+guidance_issuance_or_update: Press release issued on June 12, 2025 entitled "Adobe Reports Record Revenue in Q2 and Raises FY25 Revenue and EPS Targets"
+URL: https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000064.txt
+
+[9] ADBE 2025-09-11 0000796343-25-000102
+guidance_issuance_or_update: Press release issued on September 11, 2025 entitled "Adobe Raises FY25 Digital Media ARR Growth, Total Revenue, and EPS Targets"
+URL: https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000102.txt
+
+[10] AMD 2024-04-30 0000002488-24-000054
+guidance_issuance_or_update: For the second quarter of 2024, AMD expects revenue to be approximately $5.7 billion, plus or minus $300 million. At the mid-point of the revenue range, this represents year-over-year growth of approximately 6% and sequential growth of approximately 4%. Non-GAAP gross margin is expected to be approximately 53%.
+URL: https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000054.txt
+
+[11] CAT 2025-08-28 0001104659-25-084800
+guidance_issuance_or_update: Based on the changes and clarifications announced since August 5, 2025 and expected to be in place as of August 31, 2025, the Company now expects the net impact from incremental tariffs introduced in 2025 will be between approximately $500 million to $600 million for the third quarter and approximately $1.5 to $1.8 billion for 2025. Including the net impact from incremental tariffs, the Company now expects its full year adjusted operating profit margin to be near the bottom of the target margin range.
+URL: https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-084800.txt
+
+[12] CRM 2025-10-16 0001108524-25-000168
+guidance_issuance_or_update: Salesforce, Inc. (the "Company") issued a press release regarding its Investor Day event at Dreamforce, announcing, among other things, a new long-term revenue target and a new profitable growth framework.
+URL: https://www.sec.gov/Archives/edgar/data/1108524/0001108524-25-000168.txt
+
+[13] CVS 2024-01-05 0000947871-24-000009
+guidance_issuance_or_update: The Company will reaffirm its previously announced full-year 2024 GAAP diluted EPS guidance of at least $7.26, its full-year 2024 Adjusted EPS guidance of at least $8.50 and its full-year 2024 cash flow from operations guidance of at least $12.5 billion.
+guidance_issuance_or_update: During the meetings and webcast, the senior management team will reaffirm the Company's previously announced full-year 2023 GAAP diluted earnings per share ('EPS') guidance range of $6.37 to $6.61 and its full-year 2023 Adjusted EPS guidance range of $8.50 to $8.70. The Company expects its full-year 2023 Adjusted EPS to be in the upper half of the guidance range.
+URL: https://www.sec.gov/Archives/edgar/data/64803/0000947871-24-000009.txt
+
+[14] CVS 2024-03-05 0000064803-24-000009
+guidance_issuance_or_update: During the meetings and webcast, the senior management team will reaffirm the Company's previously announced full-year 2024 GAAP diluted earnings per share ('EPS') guidance of at least $7.06, its full-year 2024 Adjusted EPS guidance of at least $8.30, and its full-year 2024 cash flow from operations guidance of at least $12.0 billion.
+URL: https://www.sec.gov/Archives/edgar/data/64803/0000064803-24-000009.txt
+
+[15] CVS 2025-12-09 0000064803-25-000082
+guidance_issuance_or_update: CVS Health Corporation issued a press release that, among other things, discussed its strategic priorities, updated its 2025 full-year financial guidance and provided its 2026 full-year financial guidance.
+URL: https://www.sec.gov/Archives/edgar/data/64803/0000064803-25-000082.txt
+
+[16] DHR 2024-01-08 0000313616-24-000004
+guidance_issuance_or_update: Danaher Corporation issued a press release regarding the Company's anticipated financial performance for the fourth quarter of 2023 and the presentation slides contain certain information regarding Danaher's anticipated financial performance for 2023.
+URL: https://www.sec.gov/Archives/edgar/data/313616/0000313616-24-000004.txt
+
+[17] GM 2025-05-01 0001467858-25-000093
+guidance_issuance_or_update: On May 1, 2025, General Motors Company (the "Company") updated its 2025 full-year earnings guidance as follows: Net income attributable to stockholders $8.2 billion - $10.1 billion, EBIT-adjusted $10.0 billion - $12.5 billion, Automotive operating cash flow $17.3 billion - $20.8 billion, and EPS-diluted $8.82 - $10.57.
+URL: https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000093.txt
+
+[18] HON 2024-06-03 0000773840-24-000066
+guidance_issuance_or_update: announced the completion of the acquisition of the Global Access Solutions business of Carrier Global Corporation and updated its 2024 outlook and issued the press release attached hereto as Exhibit 99
+URL: https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000066.txt
+
+[19] HON 2024-12-02 0000773840-24-000102
+guidance_issuance_or_update: On December 2, 2024, Honeywell International Inc. issued the press release attached hereto as Exhibit 99 which, among other things, includes an update to the Company's full-year sales, organic growth, segment margin, adjusted earnings per share, operating cash flow, and free cash flow guidance.
+URL: https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000102.txt
+
+[20] INTC 2024-05-08 0000050863-24-000086
+guidance_issuance_or_update: the Company expects revenue for the second quarter of 2024 to remain in the original range of $12.5 billion to $13.5 billion, but below the midpoint. For full year 2024, the Company continues to expect revenue and earnings per share to grow year-over-year compared to 2023.
+URL: https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000086.txt
+
+[21] INTC 2025-01-30 0000050863-25-000004
+guidance_issuance_or_update: On January 30, 2025, Intel Corporation issued a press release announcing the financial results of its fourth quarter ended December 28, 2024 and forward-looking statements relating to its first quarter of 2025.
+URL: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000004.txt
+
+[22] INTC 2025-09-15 0000050863-25-000153
+guidance_issuance_or_update: Intel has revised its full-year 2025 non-GAAP operating expense target to $16.8 billion (from $17 billion) to reflect the deconsolidation of Altera. Intel's full-year 2026 operating expense target of $16 billion remains unchanged.
+URL: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000153.txt
+
+[23] INTU 2024-11-21 0000896878-24-000051
+guidance_issuance_or_update: On November 21, 2024, Intuit Inc. announced its financial results for the fiscal quarter ended October 31, 2024 and provided forward-looking guidance.
+URL: https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000051.txt
+
+[24] INTU 2025-05-22 0000896878-25-000020
+guidance_issuance_or_update: On May 22, 2025, Intuit Inc. announced its financial results for the fiscal quarter ended April 30, 2025 and provided forward-looking guidance.
+URL: https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000020.txt
+
+[25] INTU 2025-08-21 0000896878-25-000031
+guidance_issuance_or_update: On August 21, 2025, Intuit Inc. announced its financial results for the fiscal quarter and year ended July 31, 2025 and provided forward-looking guidance.
+URL: https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000031.txt
+
+[26] LMT 2024-07-19 0000936468-24-000088
+guidance_issuance_or_update: Our expectation remains that we will continue with a production rate of 156 aircraft per year and deliver between 75 and 110 aircraft in the second half of 2024, primarily in the TR-3 configuration.
+URL: https://www.sec.gov/Archives/edgar/data/936468/0000936468-24-000088.txt
+
+[27] MA 2024-11-13 0001141391-24-000211
+guidance_issuance_or_update: On November 13, 2024, Mastercard Incorporated (the "Company") provided its performance objectives for 2025-2027 as follows: Net revenue compound annual growth rate ("CAGR") % High-end of low-double-digits; Annual operating margin percentage Minimum 55%; Earnings per share CAGR % Mid-teens
+URL: https://www.sec.gov/Archives/edgar/data/1141391/0001141391-24-000211.txt
+
+[28] MET 2024-01-31 0001099219-24-000028
+guidance_issuance_or_update: Based on the forward yield curve as of December 31, 2023, we expect long-term interest rates to remain largely unchanged in 2024 with the yield curve steepening, as short-term interest rates decline... we expect to maintain the two-year average annual ratio of free cash flow to adjusted earnings, excluding total notable items, at 65% to 75%... we are maintaining our target for adjusted return on equity, excluding accumulated other comprehensive income other than foreign currency translation adjustments and total notable items, of 13% to 15% over the near-term.
+URL: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000028.txt
+
+[29] MET 2025-02-05 0001099219-25-000039
+guidance_issuance_or_update: Based on the forward yield curve as of December 31, 2024, we expect long-term interest rates to remain stable in 2025 with the yield curve steepening, as short-term interest rates decline. We expect to maintain this holding company cash target. We have also returned a total of approximately $21.0 billion to shareholders from 2020 through 2024, and we expect to generate approximately $25.0 billion in free cash flow over the next five years.
+URL: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt
+
+[30] MET 2025-09-22 0001099219-25-000222
+guidance_issuance_or_update: Based on preliminary results received to date, for the quarter ended September 30, 2025, the Company estimates that its variable investment income will meet its quarterly target of $425 million (pre-tax) (based on full-year 2025 guidance of approximately $1.7 billion (pre-tax)).
+URL: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000222.txt
+
+[31] MET 2025-12-22 0001099219-25-000239
+guidance_issuance_or_update: for the quarter ending December 31, 2025, the Company estimates that its variable investment income will be approximately $385 million to $435 million (pre-tax), relative to its quarterly target of $425 million (pre-tax) (based on full-year 2025 guidance of approximately $1.7 billion (pre-tax)). Additionally, for its outlook in 2026, the Company will incorporate an assumed 9% annual return on its private equity portfolio, which would contribute to $1.6 billion (pre-tax) of total estimated variable investment income for full year 2026.
+URL: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000239.txt
+
+[32] MMM 2024-01-23 0000066740-24-000005
+guidance_issuance_or_update: 3M Company issued a press release reporting fourth-quarter and full-year 2023 financial results and provided its 2024 financial outlook
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000005.txt
+
+[33] MMM 2024-04-30 0000066740-24-000051
+guidance_issuance_or_update: 3M Company issued a press release reporting first-quarter financial results and initiating its full-year 2024 guidance reflecting completion of Solventum spin
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000051.txt
+
+[34] MMM 2024-07-26 0000066740-24-000077
+guidance_issuance_or_update: On July 26, 2024, 3M Company issued a press release reporting second-quarter financial results and updating its full-year 2024 guidance
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000077.txt
+
+[35] MMM 2024-10-22 0000066740-24-000098
+guidance_issuance_or_update: On October 22, 2024, 3M Company issued a press release reporting third-quarter financial results and updating its full-year 2024 guidance
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000098.txt
+
+[36] MMM 2025-01-21 0000066740-25-000002
+guidance_issuance_or_update: 3M Company issued a press release reporting fourth-quarter and full-year 2024 results and provided its 2025 financial guidance
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000002.txt
+
+[37] MMM 2025-07-18 0000066740-25-000061
+guidance_issuance_or_update: On July 18, 2025, 3M Company issued a press release reporting second-quarter 2025 financial results and updating its full-year 2025 guidance
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000061.txt
+
+[38] MMM 2025-10-21 0000066740-25-000086
+guidance_issuance_or_update: On October 21, 2025, 3M Company issued a press release reporting third-quarter 2025 financial results and updating its full-year 2025 guidance
+URL: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000086.txt
+
+[39] NEE 2024-06-11 0000753308-24-000035
+guidance_issuance_or_update: NEE is reaffirming its adjusted earnings per share expectations for 2024, 2025 and 2026, and introducing its adjusted earnings per share expectations for 2027. NEE continues to expect adjusted earnings per share for 2024, 2025 and 2026 to be in the range of $3.23 to $3.43, $3.45 to $3.70 and $3.63 to $4.00, respectively, and now expects 2027 adjusted earnings per share to be in the range of $3.85 to $4.32.
+URL: https://www.sec.gov/Archives/edgar/data/753308/0000753308-24-000035.txt
+
+[40] NEE 2025-12-08 0000753308-25-000064
+guidance_issuance_or_update: NEE now expects adjusted earnings per share for 2025 and 2026 to be between $3.62 and $3.70 and between $3.92 and $4.02, respectively, and expects compound annual growth in adjusted earnings per share of at least 8% annually through 2032, based on the expected 2025 adjusted earnings per share range. In addition, NEE is targeting long-term adjusted earnings per share growth of at least 8% through 2035.
+URL: https://www.sec.gov/Archives/edgar/data/753308/0000753308-25-000064.txt
+
+[41] PEP 2025-12-08 0000077476-25-000059
+guidance_issuance_or_update: On December 8, 2025, PepsiCo, Inc. issued a press release announcing priorities to enhance shareholder value and providing preliminary 2026 financial outlook.
+URL: https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000059.txt
+
+[42] PFE 2024-12-17 0000078003-24-000195
+guidance_issuance_or_update: On December 17, 2024, Pfizer Inc. issued a press release that provided its full-year 2025 guidance and reaffirmed its full-year 2024 financial guidance.
+URL: https://www.sec.gov/Archives/edgar/data/78003/0000078003-24-000195.txt
+
+[43] PFE 2025-12-16 0000078003-25-000167
+guidance_issuance_or_update: On December 16, 2025, Pfizer Inc. issued a press release that provided its full-year 2026 guidance and revised its full-year 2025 Revenue guidance while reaffirming all other components of its full-year 2025 financial guidance.
+URL: https://www.sec.gov/Archives/edgar/data/78003/0000078003-25-000167.txt
+
+[44] PG 2024-01-23 0000080424-24-000015
+guidance_issuance_or_update: FY 2024 (Estimate) | +2% to +4% | +1% to +2% | +4% to +5% for organic sales growth guidance, and Core EPS Growth guidance of +8% to +9% with Currency-Neutral Core EPS Growth of 15% to +16%.
+URL: https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt
+
+[45] PG 2024-04-19 0000080424-24-000048
+guidance_issuance_or_update: FY 2024 (Estimate) | +2% to +4% | +1% to +2% | +4% to +5% for organic sales growth guidance, and FY 2024 (Estimate) | +1% to +2% | +9% | +10% to +11% for Core EPS growth guidance
+URL: https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000048.txt
+
+[46] PYPL 2025-02-25 0001193125-25-034283
+guidance_issuance_or_update: The Company issued a press release which, among other things, reaffirms the Company's full year 2025 financial guidance and provides an outlook by 2027 and for other periods.
+URL: https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-034283.txt
+
+[47] SO 2024-02-01 0000092122-24-000003
+guidance_issuance_or_update: Georgia Power now projects that the Unit 4 in-service date will occur during the second quarter 2024. This schedule extension is not expected to affect the total project capital cost forecast; however, any extension of the in-service date beyond the second quarter 2024 is estimated to result in additional base capital costs for Georgia Power of up to $15 million per month, which would be charged to income.
+URL: https://www.sec.gov/Archives/edgar/data/92122/0000092122-24-000003.txt
+
+[48] TMUS 2024-04-25 0001283699-24-000062
+guidance_issuance_or_update: Press release, dated April 25, 2024, entitled "T-Mobile Delivers Industry-Leading Customer, Service Revenue and Profitability Growth in Q1 2024, and Raises 2024 Guidance"
+URL: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000062.txt
+
+[49] TMUS 2024-07-31 0001283699-24-000109
+guidance_issuance_or_update: Press release, dated July 31, 2024, entitled "T-Mobile Delivers Industry-Leading Growth in Customers, Service Revenues and Profitability in Q2, Raises 2024 Customer and Cash Flow Guidance"
+URL: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000109.txt
+
+[50] TMUS 2024-10-23 0001283699-24-000141
+guidance_issuance_or_update: Press release, dated October 23, 2024, entitled "T-Mobile Delivers Industry-Leading Growth in Customers, Service Revenues, Profitability and Cash Flows in Q3, Raises 2024 Guidance Across the Board"
+URL: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000141.txt
+
+[51] TMUS 2025-07-23 0001283699-25-000116
+guidance_issuance_or_update: Press release, dated July 23, 2025, entitled "T-Mobile Delivers Record Quarter with Outsized Customer and Financial Growth, and Raises Full Year 2025 Guidance"
+URL: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000116.txt
+
+[52] TMUS 2025-10-23 0001283699-25-000153
+guidance_issuance_or_update: Press release entitled "T-Mobile Delivers Record Customer Growth, Fueled By Widening Differentiation and Focus on Durable and Profitable Financial Growth, Raises Guidance Across the Board"
+URL: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000153.txt
+
+[53] UBER 2024-02-14 0001552781-24-000039
+guidance_issuance_or_update: Over the next three years, the Company expects: Gross Bookings growth in the mid to high teens (CAGR), Adjusted EBITDA growth in the high 30s to 40% (CAGR), Free cash flow as a percentage of Adjusted EBITDA to be 90% or higher annually
+URL: https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000039.txt
+
+[54] UBER 2024-05-14 0001552781-24-000318
+guidance_issuance_or_update: We expect the acquisition to contribute at least $150 million annualized run-rate of Delivery Adjusted EBITDA, inclusive of synergies, to our business within 12 months of closing.
+URL: https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000318.txt
+
+[55] UNH 2024-12-03 0000731766-24-000338
+guidance_issuance_or_update: UnitedHealth Group Incorporated (the "Company") issued a press release regarding its 2024 financial outlook and initial projections for 2025.
+URL: https://www.sec.gov/Archives/edgar/data/731766/0000731766-24-000338.txt
+
+[56] UNH 2025-09-08 0000731766-25-000245
+guidance_issuance_or_update: Senior leaders from UnitedHealth Group Incorporated (the "Company") will be meeting with investors and analysts between September 8, 2025 and September 10, 2025, during which the Company intends to reaffirm our adjusted 2025 earnings per share expectations previously disclosed by the Company on July 29, 2025.
+URL: https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000245.txt
+
+[57] UNP 2024-09-19 0001437749-24-029518
+guidance_issuance_or_update: expect revenue (excluding fuel surcharge revenue) will grow faster than volume (excluding coal) which will outpace the markets the Company serves over the next 3 years; anticipate pricing dollars will be accretive to operating ratio starting in 2025; maintain an industry leading operating ratio; forecast an earnings per share compound annual growth rate in the high single to low double digit range
+URL: https://www.sec.gov/Archives/edgar/data/100885/0001437749-24-029518.txt
+
+[58] USB 2024-03-05 0000036104-24-000028
+guidance_issuance_or_update: Mr. Stern confirmed full year net interest income guidance expectations of $16.6 billion, to up slightly, fee revenue being up mid-single digits for the full year, and core expenses being flat on a year-over-year basis. He also confirmed first quarter net interest income expectations of between $4.0 billion and $4.1 billion.
+URL: https://www.sec.gov/Archives/edgar/data/36104/0000036104-24-000028.txt
+
+[59] VZ 2025-03-11 0000732712-25-000010
+guidance_issuance_or_update: Verizon announced that it expected that Verizon Consumer Group (Consumer) postpaid phone net additions for the first quarter of 2025 would be affected by (i) 3-5 basis points of churn incremental to the prior year period attributable to recent pricing actions and (ii) postpaid phone gross additions that are flat to slightly down from the prior year period.
+URL: https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000010.txt

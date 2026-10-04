@@ -1,0 +1,19 @@
+{
+  "strategy_id": "persistent_operational_risk_v1",
+  "frozen_before_labels_and_outcomes": true,
+  "universe": "Existing codex_three.data.disclosures cached top-100 2024-2025 survey only",
+  "signal": "duration",
+  "strategy": "protective_put",
+  "economic_rule": "An already occurring, adverse operational interruption or impairment whose ongoing exposure explicitly lasts to an identifiable future date 60 through 180 calendar days after the filing. The option term-structure gate is evaluated separately by the parent researcher.",
+  "required": [
+    "Specific actual adverse operational condition, not a hypothetical risk factor or generic forward-looking warning",
+    "Explicit stated remaining horizon or dated expected resolution that can be mapped without hindsight to risk_end_date",
+    "Risk_end_date 60-180 calendar days after filing date",
+    "Full public filing or exhibit confirms the source and horizon"
+  ],
+  "excluded": ["Ordinary bond maturities or financing dates", "Executive notice or severance periods", "Routine projected restructuring completion without ongoing adverse operating impairment", "Merger completion or regulatory review schedules", "Historical completed disruption", "Date derived from subsequent outcomes", "Indefinite or unstated duration"],
+  "candidate_screen": "Review all disclosure excerpts for actual adverse operational terms; search horizons broadly in every row; inspect full filings and exhibits for all plausible operating-risk candidates even if excerpt lacks horizon.",
+  "controls": "Same adverse operating-risk candidate pool with full-source review but no explicit qualifying horizon; these are nontrigger controls, not an automatically causal matched sample.",
+  "no_price_data": true,
+  "no_2026": true
+}

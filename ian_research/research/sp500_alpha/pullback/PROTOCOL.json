@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "frozen_utc": "2026-10-03T16:55:17.799509+00:00",
+  "selection_context": "Eighth primary hypothesis in this SP500 search, added after other families failed; 2024-2026 prices have already been inspected for other strategies. Historical holdout is not pristine across the broader research program. No new variants after results.",
+  "hypothesis": "Long-only SPY pullback in established uptrend; original research rule, not a published-paper replication.",
+  "entry_signal": "At close t: adjusted_close[t]/adjusted_close[t-3]-1 < -1.5 * std(last20 daily adjusted-close returns ending t-1,ddof1), AND adjusted_close[t] > mean(last200 adjusted closes including t). Buy at next regular-session open.",
+  "exit_signal": "While held, at every close including entry day, queue exit for next regular-session open if adjusted close>=mean(last5 adjusted closes including t), OR 5 held sessions completed. Entry session counts1; exit may occur after a weekend after fifth close.",
+  "positions": "Long only, at most1position, fixed shares bought using allavailablecash net of entrycost. No leverage, no overlappingtrades. After exit, only thatdaysclose may signal a newnextdayentry. Ignore entrysignalswhileheld. Startflat Jan3,2005; 2004data only warms indicators.",
+  "costs": {
+    "base_bps_per_side": 1,
+    "stress_bps_per_side": 3
+  },
+  "cash": "Cash earns exp(lagged DGS3MO annual decimal yield * actual elapsed UTC days/365)-1. Use observation from strictly before previoussessiondate, ffilled, known before overnight holding. Split actualprevclose-to-currentopen and currentopen-to-close accrual so capital spentatopen earns onlyovernightcash. Benchmark applies same rate to allcapital for full close-to-close interval. Daily excess=portfolio total return minus cashbenchmark return.",
+  "dividends": "Yahoo unadjusted OHLC plus ex-date dividend amounts drivecash ledger. Heldshares cominginto ex-date receive dividendcash beforeopen; newex-dateopenbuyers do not. Ex-date cashcredit approximates actuallaterpaydate; common totalreturn convention, explicitly not payment-date financing proof. SPY split absence verified in source events. Adjustedclose drives signals only.",
+  "end_boundaries": "Continuousledger acrossdevelopment/validation/holdout; no forcedliquidation at splits orfinaldatasetdate. Final holdings marked officialclose and any pending exit flagged; unrealizedmarkedP&L included, no assumedpostcutofffill.",
+  "periods": {
+    "development": [
+      "2005-01-01",
+      "2021-12-31"
+    ],
+    "validation": [
+      "2022-01-01",
+      "2023-12-31"
+    ],
+    "holdout": [
+      "2024-01-01",
+      "2026-10-02"
+    ]
+  },
+  "comparisons": "Alwayslongfixedshares SPY from firstsimulatedopen using samecash/dividend/costledger. UnderlyingSPY daily totalreturn for marketbeta/HACalpha diagnostics.",
+  "statistics": "Retain alltradingsessions includingflatdays.252annualSharpe ofdailyexcess, arithmeticannualexcess, actualtotalwealthCAGR/maxdrawdown, annualexcessvol, exposure, entries/exits, HACmean/marketalpha lag5, stationarybootstrapmean10block2000repseed731CI. No post-resultparameterselection.",
+  "verification": "Price-prefix causal replay on fixedcalendarcutoffs, independentholdingcashledger reconstruction for complete and open trades, exacttradecashflow assertions, no negativecashorleveragedentry.",
+  "gate": "Positive validationandholdoutmeanexcess, holdoutSharpe>=0.75, positiveholdoutstressmean and holdouttwo-sidedHACmeanp<0.05; parentmustcorrectforwiderhypothesissearch.",
+  "data_files": [
+    "../sectors/data/SPY.json",
+    "../sectors/data/DGS3MO.csv"
+  ]
+}

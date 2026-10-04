@@ -1,0 +1,38 @@
+{
+  "strategy_id": "liquidity_runway_v1",
+  "frozen_at_utc": "2026-10-03T05:24:41.285787+00:00",
+  "returns_seen": false,
+  "option_prices_seen": false,
+  "window": [
+    "2024-01-01",
+    "2025-12-31"
+  ],
+  "hypothesis": "After an effective revolving-credit maturity extension that preserves or increases committed capacity, a cash-secured put has higher net returns than matched ordinary-day cash-secured puts.",
+  "universe": "Sponsor top-100 tickers already present in the cached disclosure survey",
+  "candidate_tag": "credit_facility",
+  "unit": "one issuer per filing date",
+  "strategy": "cash_secured_put",
+  "include_rules": [
+    "Supporting text from the filing (all tags allowed) must establish an executed revolving-credit extension or replacement, effective by filing date.",
+    "Maturity improvement must be explicit or follow from the known old expiration and stated new term. A generic newly established facility without that comparison does not qualify.",
+    "Old and new committed capacity must be quantifiable and nondecreasing. A maturity amendment to an existing explicitly sized facility, with no disclosed capacity reduction, counts as preserving that stated commitment but is flagged as an amendment-capacity proxy.",
+    "Earlier cached 2024-2025 disclosure text may establish an old facility only if its date precedes the event and its size, agreement date, and description identify the same facility.",
+    "An explicit increase plus actual maturity extension may qualify when the old exact maturity date is absent; do not invent that date.",
+    "For replacement of multiple facilities, aggregate old commitments only when the filing explicitly links their termination to the replacement."
+  ],
+  "exclude_rules": [
+    "Acquisition-linked financing or completed acquisition in the same filing.",
+    "Future-effective or conditional execution, optional unexercised extensions, term loans alone, commercial-paper programs alone.",
+    "Missing evidence for maturity improvement or committed-capacity comparison.",
+    "A stated commitment reduction; additional optional accordions are not committed capacity."
+  ],
+  "entry_note": "Root pricing harness uses next-trading-session-or-later entry and fixed costs; no same-day availability claim.",
+  "contract_note": "Fixed sponsor 5 percent OTM 3-6 month cash-secured put; root reports prescribed horizons and sensitivity without selecting best.",
+  "audit_method": "Human reading of preexisting event excerpts, locked before returns; offline extractor joins frozen accession annotations to cached source records. This is not an automated NLP classifier.",
+  "limitations": [
+    "Retrospectively generated sponsor labels, not archived point-in-time labels.",
+    "Excerpts may omit amendments or conditions; qualifiers explicitly record inference versus direct statement.",
+    "No claim that this dataset measures a material reduction in refinancing risk.",
+    "Small qualifying sample and repeated issuers limit inference."
+  ]
+}

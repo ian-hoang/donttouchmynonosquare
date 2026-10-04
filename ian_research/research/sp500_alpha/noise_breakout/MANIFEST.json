@@ -1,0 +1,16 @@
+{
+  "SOURCE_DEFINITION_PROTOCOL.json": "38c3b4854e2fe1c89e566f12c2cc88bc046bc6f83143ddbed743f669e9662893",
+  "test_engine.py": "edd233d49c886029ab51ace493d795525b2481f68e0984a549018117e070d650",
+  "run.py": "c0c08aa00c7e2d12a6cd103561743aef95125ed2105cad908e93431d9e49f186",
+  "daily.json": "ded5b40b05db36869e8da34f31d04c3f09a8487d7496299ccb0aed8fa996f701",
+  "PROTOCOL_before_rate_source_amendment.json": "71728ac3a1904a105520274bd6aedc44a3af54e7ee2df76ec4361f6a75977774",
+  "source_definition_results.json": "02e1fcbf531aa6f8b56b181099492011cbcb736797e314dc0a0a7bc56b895dda",
+  "results.json": "e0b747861b9677ac489e3a224772e9114be2cd80e6b4bab966e2173a338488af",
+  "source_definition_daily.json": "3c71da00becdcb7933285290c4d5a15f1a11fdf567b9e805265b4b0d8136628d",
+  "source_definition_output.txt": "02e1fcbf531aa6f8b56b181099492011cbcb736797e314dc0a0a7bc56b895dda",
+  "REPORT.txt": "fed0069245ba88a7b94967996c5dffd8833566862b3fd16078c0470fc66d4ae0",
+  "PROTOCOL.json": "aad99721e8550bb2a2c86227e70d93971637bfe1aaa47bd02e448b3685f33cd0",
+  "source_definition_check.py": "74db4dc34a2885f78ba1c1585f3815be205ae48c3aaeec389e55d890dbe14db8",
+  "run_output.txt": "ae3826584c8321bd5159a6fc7f75802505f7902e4647b00d567166fa2bee1ce8",
+  "ledger.json": "77c36c5b472987dd574b75587b27447ccfa7d3c04f3cdcace4f5be8c5f5a41de"
+}

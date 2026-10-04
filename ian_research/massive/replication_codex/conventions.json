@@ -1,0 +1,14 @@
+{
+  "implementation_source": "User's frozen spec only; do not import or read existing harness/research until own numbers are produced",
+  "universe": "Use the 99 literal listed tickers; heading says100. Do not add UNH or any other ticker to repair heading.",
+  "ticker_aliases": "Query BRK.B and BRK/B for ticker-filtered disclosure histories and option metadata; deduplicate returned contracts by option ticker.",
+  "initial_spot_lookback": "Endpoint range t_pre minus7 calendar days through t_pre inclusive. Last available close; no3session age filter for this step.",
+  "ties": "Nearest strike chooses lower on ties; expiry chooses earlier on equal distance to120days. Missing-strike retry chooses nearest untried tocurrentstrike. Preserve last successful estimate if laterattempts fail.",
+  "multiple_tickers_per_cik_day": "Choose lexicographically first universe ticker after exploding, report any such ambiguous CIK-days. Never change based on returns.",
+  "standard_deviation": "Sample standard deviation, ddof=1; per-trade Sharpe is mean/sample std without annualization.",
+  "seeds": [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+  "peer_draws": "For each seed initialize Python random.Random(seed); sample6 from sortedeligible list for each unique kept filing date in ascendingdate order continuously2024-2026. Same date uses onebasket across issuers. Drawbeforeknowingpeerpricevalidity; never refillmissing peers. Priceonlydrawsneededforvalid event dates. Meanuses availablevalidpeertrades; report missingcounts.",
+  "costs": "Exactly twice entry halfspread. No exitquote substitution, nocommissions, no stricter freshness/size filters. This reproduces a modeled cost, not actual executable trade prices.",
+  "periods": "Windows classifybyfilingdate.2024-25 events may exit in2026 and Aug2026 events may exit inSep2026, subject tolastcompleted session. This follows frozen rule; no arbitrary window-end censoring.",
+  "fixed_rule": "No parameter, source selection or eligibility rule will be tuned to referencecounts or returns. Implementation defects corrected with notes."
+}

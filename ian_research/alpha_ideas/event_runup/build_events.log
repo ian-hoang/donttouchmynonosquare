@@ -1,0 +1,35 @@
+8-K 2.02 filings 51,775 (2019-01-02 → 2026-10-02); episodes 49,814; multi-filing episodes 3.7%
+quarterly events (prev episode 50–130 days earlier): 45,232 (dropped 4,582: first-in-data 1,887, off-cadence 2,695)
+case-2 events to classify with hourly bars: 17,923 (case-1 events: 25,005)
+classified 17,923 in 47s
+
+case-2 timing v2 (used): {'amc': 17522, nan: 2303, 'earlier': 356, 'nobars': 45}
+case-2 timing v1 (pre-registered ratio rule): {'amc': 14786, 'earlier': 3092, nan: 2303, 'nobars': 45}
+'earlier' share by acceptance hour (timing): {16: '2% of 11690', 17: '5% of 1070', 18: '1% of 282', 19: '2% of 148', 20: '1% of 4162', 21: '1% of 2544', 22: '4% of 244', 23: '2% of 86'}
+'earlier' share by acceptance hour (timing_v1): {16: '15% of 11690', 17: '20% of 1070', 18: '23% of 282', 19: '16% of 148', 20: '14% of 4162', 21: '14% of 2544', 22: '27% of 244', 23: '17% of 86'}
+events by year of X: {2020: 5685, 2021: 6065, 2022: 6366, 2023: 6238, 2024: 6158, 2025: 6058, 2026: 4507}
+
+spot checks (case 2, v1 and v2 disagree):
+  disagreements: 2,764
+  SOLV   accepted 2025-02-27 16:12  rAH    2.9 rPM    5.2  xAH +0.014 xPM +0.001  v1 earlier -> v2 amc
+  CARG   accepted 2025-08-07 20:11  rAH    8.5 rPM   14.9  xAH +0.081 xPM +0.002  v1 earlier -> v2 amc
+  DV     accepted 2026-02-26 21:16  rAH    1.9 rPM   21.5  xAH +0.004 xPM +0.001  v1 earlier -> v2 amc
+  STAG   accepted 2025-02-12 16:09  rAH    0.3 rPM    2.4  xAH -0.002 xPM +0.000  v1 earlier -> v2 amc
+  EBC    accepted 2026-07-23 16:34  rAH    1.0 rPM    9.8  xAH +0.000 xPM +0.002  v1 earlier -> v2 amc
+  WELL   accepted 2024-10-28 16:09  rAH    0.5 rPM    4.7  xAH -0.011 xPM +0.000  v1 earlier -> v2 amc
+  PTC    accepted 2026-05-06 16:02  rAH    3.0 rPM    3.7  xAH +0.017 xPM +0.000  v1 earlier -> v2 amc
+  WTS    accepted 2026-08-05 20:34  rAH    2.1 rPM   10.0  xAH +0.007 xPM +0.008  v1 earlier -> v2 amc
+  ABCL   accepted 2023-05-04 16:39  rAH    1.3 rPM    4.4  xAH +0.003 xPM +0.001  v1 earlier -> v2 amc
+  CNC    accepted 2021-02-08 20:18  rAH    1.9 rPM   11.8  xAH +0.016 xPM +0.002  v1 earlier -> v2 amc
+
+spot checks (case 2, labelled 'earlier' by v2):
+  COSM   accepted 2023-08-15 16:05  xAH +0.051 xPM +0.687
+  GWH    accepted 2022-02-24 16:23  xAH +0.001 xPM +0.021
+  CLSK   accepted 2023-05-10 20:06  xAH +0.007 xPM +0.026
+  MOD    accepted 2026-05-26 20:23  xAH +0.156 xPM +0.228
+  ANGI   accepted 2021-10-12 16:21  xAH +0.026 xPM +0.058
+  VUZI   accepted 2026-08-17 16:30  xAH +0.022 xPM +0.032
+  CLF    accepted 2025-02-03 22:26  xAH +0.006 xPM +0.037
+  SCHW   accepted 2025-07-18 16:20  xAH +0.003 xPM +0.036
+  OMC    accepted 2025-04-15 16:07  xAH +0.004 xPM +0.043
+  GOGO   accepted 2025-11-06 21:09  xAH -0.011 xPM +0.021

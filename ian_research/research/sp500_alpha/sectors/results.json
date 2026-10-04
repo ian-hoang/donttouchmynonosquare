@@ -1,0 +1,879 @@
+{
+  "computed_utc": "2026-10-03T16:45:43.305331+00:00",
+  "protocol_sha256": "c004cead724617620f78db8d1056d66bd1d18ea41dc7de0e9c51fa2174749196",
+  "method": "Fixed-capital arithmetic excess P&L, $1 gross target, next-close entry, cash benchmark plus2% short carry and all-leg turnover costs. Period slices inherit live positions; only first inception entry and final2026-10-02 liquidation are charged, without artificial liquidations at2021/2023 boundaries.",
+  "results": {
+    "residual_reversal_1day": {
+      "role": "hypothesis",
+      "periods": {
+        "development": {
+          "gross_excess": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": 0.8219559854001992,
+            "daily_mean_bps": 0.3261730100794441,
+            "annual_vol_pct": 5.615980637021883,
+            "sharpe": 0.14636018863413977,
+            "fixed_capital_max_drawdown_pct": -16.5015654477739,
+            "average_daily_one_way_turnover": 1.337442169055158,
+            "annual_one_way_turnover": 337.0354266018998,
+            "average_short_exposure": 0.5033897154295839,
+            "break_even_one_way_bps_after_borrow": -0.055857646199019756,
+            "sum_fixed_capital_pnl_pct": 13.960204831400208
+          },
+          "net_base": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -6.9289685881946435,
+            "daily_mean_bps": -2.749590709601049,
+            "annual_vol_pct": 5.620269854521459,
+            "sharpe": -1.2328533624805131,
+            "fixed_capital_max_drawdown_pct": -117.68248237092465,
+            "average_daily_one_way_turnover": 1.337442169055158,
+            "annual_one_way_turnover": 337.0354266018998,
+            "average_short_exposure": 0.5033897154295839,
+            "break_even_one_way_bps_after_borrow": -0.055857646199019756,
+            "sum_fixed_capital_pnl_pct": -117.68248237092489
+          },
+          "net_stress": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -17.040031386251634,
+            "daily_mean_bps": -6.761917216766522,
+            "annual_vol_pct": 5.631802506159035,
+            "sharpe": -3.0256798542946712,
+            "fixed_capital_max_drawdown_pct": -289.41005687760645,
+            "average_daily_one_way_turnover": 1.337442169055158,
+            "annual_one_way_turnover": 337.0354266018998,
+            "average_short_exposure": 0.5033897154295839,
+            "break_even_one_way_bps_after_borrow": -0.055857646199019756,
+            "sum_fixed_capital_pnl_pct": -289.41005687760713
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91830,
+            "annual_mean_pct_ci95": [
+              -9.722865686732762,
+              -4.0682165818471745
+            ],
+            "sharpe_ci95": [
+              -1.7805079283406444,
+              -0.6961953292896484
+            ],
+            "fraction_mean_le_zero": 1.0,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.8234489374251215,
+            "alpha_t": -5.1511222106415335,
+            "alpha_two_sided_p": 2.589323829649501e-07,
+            "SPY_beta": 0.0174133099576862
+          }
+        },
+        "validation": {
+          "gross_excess": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": 0.28052835327507214,
+            "daily_mean_bps": 0.11132077510915563,
+            "annual_vol_pct": 6.196568536577029,
+            "sharpe": 0.045271564676348346,
+            "fixed_capital_max_drawdown_pct": -7.491012077419007,
+            "average_daily_one_way_turnover": 1.3116388490671913,
+            "annual_one_way_turnover": 330.5329899649322,
+            "average_short_exposure": 0.5002217647670099,
+            "break_even_one_way_bps_after_borrow": -0.2182250397150261,
+            "sum_fixed_capital_pnl_pct": 0.5577170832968696
+          },
+          "net_base": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -7.331965547920882,
+            "daily_mean_bps": -2.909510138063842,
+            "annual_vol_pct": 6.194276993573265,
+            "sharpe": -1.183667691245968,
+            "fixed_capital_max_drawdown_pct": -19.62243098169631,
+            "average_daily_one_way_turnover": 1.3116388490671913,
+            "annual_one_way_turnover": 330.5329899649322,
+            "average_short_exposure": 0.5002217647670099,
+            "break_even_one_way_bps_after_borrow": -0.2182250397150261,
+            "sum_fixed_capital_pnl_pct": -14.57664579169985
+          },
+          "net_stress": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -17.247955246868848,
+            "daily_mean_bps": -6.844426685265415,
+            "annual_vol_pct": 6.193860832956907,
+            "sharpe": -2.784685628565341,
+            "fixed_capital_max_drawdown_pct": -35.59701729655605,
+            "average_daily_one_way_turnover": 1.3116388490671913,
+            "annual_one_way_turnover": 330.5329899649322,
+            "average_short_exposure": 0.5002217647670099,
+            "break_even_one_way_bps_after_borrow": -0.2182250397150261,
+            "sum_fixed_capital_pnl_pct": -34.290577693179735
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91831,
+            "annual_mean_pct_ci95": [
+              -15.959904727911892,
+              1.0873355751411018
+            ],
+            "sharpe_ci95": [
+              -2.505107395290797,
+              0.1799737210708586
+            ],
+            "fraction_mean_le_zero": 0.9547,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.9095794650192177,
+            "alpha_t": -1.6883560920395622,
+            "alpha_two_sided_p": 0.09134289371871605,
+            "SPY_beta": -0.0010325289510207062
+          }
+        },
+        "holdout": {
+          "gross_excess": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 1.0000295686674998,
+            "daily_mean_bps": 0.39683713042361113,
+            "annual_vol_pct": 5.242548042813342,
+            "sharpe": 0.19075258071089563,
+            "fixed_capital_max_drawdown_pct": -7.4377765907464495,
+            "average_daily_one_way_turnover": 1.3220216905885225,
+            "annual_one_way_turnover": 333.14946602830764,
+            "average_short_exposure": 0.5032253749254764,
+            "break_even_one_way_bps_after_borrow": -0.004051199669801769,
+            "sum_fixed_capital_pnl_pct": 2.742144571227153
+          },
+          "net_base": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -6.6764858706338375,
+            "daily_mean_bps": -2.6493991550134277,
+            "annual_vol_pct": 5.24669018728902,
+            "sharpe": -1.2725138386880048,
+            "fixed_capital_max_drawdown_pct": -20.01603151773771,
+            "average_daily_one_way_turnover": 1.3220216905885225,
+            "annual_one_way_turnover": 333.14946602830764,
+            "average_short_exposure": 0.5032253749254764,
+            "break_even_one_way_bps_after_borrow": -0.004051199669801769,
+            "sum_fixed_capital_pnl_pct": -18.307348161142787
+          },
+          "net_stress": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -16.67096985148307,
+            "daily_mean_bps": -6.615464226778995,
+            "annual_vol_pct": 5.254409515092388,
+            "sharpe": -3.1727580051761426,
+            "fixed_capital_max_drawdown_pct": -45.71285780704287,
+            "average_daily_one_way_turnover": 1.3220216905885225,
+            "annual_one_way_turnover": 333.14946602830764,
+            "average_short_exposure": 0.5032253749254764,
+            "break_even_one_way_bps_after_borrow": -0.004051199669801769,
+            "sum_fixed_capital_pnl_pct": -45.71285780704286
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91832,
+            "annual_mean_pct_ci95": [
+              -11.713926156070858,
+              -1.478902347847055
+            ],
+            "sharpe_ci95": [
+              -2.2992587687910895,
+              -0.27465704583065104
+            ],
+            "fraction_mean_le_zero": 0.995,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.8336294289936634,
+            "alpha_t": -2.789816397401466,
+            "alpha_two_sided_p": 0.005273793901737115,
+            "SPY_beta": 0.029999982344526162
+          }
+        }
+      }
+    },
+    "residual_reversal_5day": {
+      "role": "hypothesis",
+      "periods": {
+        "development": {
+          "gross_excess": {
+            "n": 4280,
+            "active_days": 4273,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": 1.0695645585163636,
+            "daily_mean_bps": 0.42443038036363634,
+            "annual_vol_pct": 5.850146838697201,
+            "sharpe": 0.18282695939210825,
+            "fixed_capital_max_drawdown_pct": -12.87135230618907,
+            "average_daily_one_way_turnover": 0.6352096265174875,
+            "annual_one_way_turnover": 160.07282588240685,
+            "average_short_exposure": 0.5053762906722141,
+            "break_even_one_way_bps_after_borrow": 0.0354206865390163,
+            "sum_fixed_capital_pnl_pct": 18.165620279563637
+          },
+          "net_base": {
+            "n": 4280,
+            "active_days": 4273,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -3.1447576237581853,
+            "daily_mean_bps": -1.247919691967534,
+            "annual_vol_pct": 5.8526669377256795,
+            "sharpe": -0.5373204484757891,
+            "fixed_capital_max_drawdown_pct": -54.24102120709632,
+            "average_daily_one_way_turnover": 0.6352096265174875,
+            "annual_one_way_turnover": 160.07282588240685,
+            "average_short_exposure": 0.5053762906722141,
+            "break_even_one_way_bps_after_borrow": 0.0354206865390163,
+            "sum_fixed_capital_pnl_pct": -53.41096281621045
+          },
+          "net_stress": {
+            "n": 4280,
+            "active_days": 4273,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -7.94694240023039,
+            "daily_mean_bps": -3.153548571519996,
+            "annual_vol_pct": 5.858096206259999,
+            "sharpe": -1.356574238527909,
+            "fixed_capital_max_drawdown_pct": -135.59504776461552,
+            "average_daily_one_way_turnover": 0.6352096265174875,
+            "annual_one_way_turnover": 160.07282588240685,
+            "average_short_exposure": 0.5053762906722141,
+            "break_even_one_way_bps_after_borrow": 0.0354206865390163,
+            "sum_fixed_capital_pnl_pct": -134.97187886105584
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91840,
+            "annual_mean_pct_ci95": [
+              -5.775855095485858,
+              -0.4509673766909736
+            ],
+            "sharpe_ci95": [
+              -1.0130753170701983,
+              -0.07470327603433205
+            ],
+            "fraction_mean_le_zero": 0.9875,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -1.3872006375127857,
+            "alpha_t": -2.6302094163211818,
+            "alpha_two_sided_p": 0.008533228519610874,
+            "SPY_beta": 0.032837807613745884
+          }
+        },
+        "validation": {
+          "gross_excess": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -3.3180426375744325,
+            "daily_mean_bps": -1.3166835863390602,
+            "annual_vol_pct": 6.247930749131776,
+            "sharpe": -0.5310626463066214,
+            "fixed_capital_max_drawdown_pct": -10.312030401633768,
+            "average_daily_one_way_turnover": 0.6131905621329273,
+            "annual_one_way_turnover": 154.52402165749768,
+            "average_short_exposure": 0.5001111325557916,
+            "break_even_one_way_bps_after_borrow": -2.798045739257789,
+            "sum_fixed_capital_pnl_pct": -6.596584767558693
+          },
+          "net_base": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -7.414133237267352,
+            "daily_mean_bps": -2.942116363994981,
+            "annual_vol_pct": 6.246276776453892,
+            "sharpe": -1.1869684137622332,
+            "fixed_capital_max_drawdown_pct": -16.392482296370186,
+            "average_daily_one_way_turnover": 0.6131905621329273,
+            "annual_one_way_turnover": 154.52402165749768,
+            "average_short_exposure": 0.5001111325557916,
+            "break_even_one_way_bps_after_borrow": -2.798045739257789,
+            "sum_fixed_capital_pnl_pct": -14.740002983614856
+          },
+          "net_stress": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -12.049853886992283,
+            "daily_mean_bps": -4.781688050393763,
+            "annual_vol_pct": 6.252354343776349,
+            "sharpe": -1.927250636232225,
+            "fixed_capital_max_drawdown_pct": -25.305608563138403,
+            "average_daily_one_way_turnover": 0.6131905621329273,
+            "annual_one_way_turnover": 154.52402165749768,
+            "average_short_exposure": 0.5001111325557916,
+            "break_even_one_way_bps_after_borrow": -2.798045739257789,
+            "sum_fixed_capital_pnl_pct": -23.956257132472754
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91841,
+            "annual_mean_pct_ci95": [
+              -14.876057617009662,
+              -0.013123790648316785
+            ],
+            "sharpe_ci95": [
+              -2.34240042116457,
+              -0.002377595502656125
+            ],
+            "fraction_mean_le_zero": 0.9751,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.939368114285772,
+            "alpha_t": -2.048381279848934,
+            "alpha_two_sided_p": 0.04052265436719721,
+            "SPY_beta": 0.04093137184542124
+          }
+        },
+        "holdout": {
+          "gross_excess": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 4.915196012885086,
+            "daily_mean_bps": 1.9504746082877327,
+            "annual_vol_pct": 5.026556366128383,
+            "sharpe": 0.9778455974365071,
+            "fixed_capital_max_drawdown_pct": -5.725023000616586,
+            "average_daily_one_way_turnover": 0.6239262860622413,
+            "annual_one_way_turnover": 157.2294240876848,
+            "average_short_exposure": 0.5076227753004223,
+            "break_even_one_way_bps_after_borrow": 2.473631248461956,
+            "sum_fixed_capital_pnl_pct": 13.47777954326823
+          },
+          "net_base": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 0.744687684256044,
+            "daily_mean_bps": 0.2955109858158905,
+            "annual_vol_pct": 5.0210808191379295,
+            "sharpe": 0.14831222819948547,
+            "fixed_capital_max_drawdown_pct": -7.20143793203705,
+            "average_daily_one_way_turnover": 0.6239262860622413,
+            "annual_one_way_turnover": 157.2294240876848,
+            "average_short_exposure": 0.5076227753004223,
+            "break_even_one_way_bps_after_borrow": 2.473631248461956,
+            "sum_fixed_capital_pnl_pct": 2.0419809119878036
+          },
+          "net_stress": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -3.9721950383744993,
+            "daily_mean_bps": -1.5762678723708332,
+            "annual_vol_pct": 5.019576626377379,
+            "sharpe": -0.7913406516201004,
+            "fixed_capital_max_drawdown_pct": -16.75087588455923,
+            "average_daily_one_way_turnover": 0.6239262860622413,
+            "annual_one_way_turnover": 157.2294240876848,
+            "average_short_exposure": 0.5076227753004223,
+            "break_even_one_way_bps_after_borrow": 2.473631248461956,
+            "sum_fixed_capital_pnl_pct": -10.892010998082457
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91842,
+            "annual_mean_pct_ci95": [
+              -5.596737776584297,
+              7.408432330522222
+            ],
+            "sharpe_ci95": [
+              -1.1466058208499206,
+              1.4389991768793406
+            ],
+            "fraction_mean_le_zero": 0.4172,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": 0.12939329573428748,
+            "alpha_t": 0.09923339435646218,
+            "alpha_two_sided_p": 0.9209529608414225,
+            "SPY_beta": 0.027050536602340133
+          }
+        }
+      }
+    },
+    "raw_reversal_1day": {
+      "role": "diagnostic_not_selection_candidate",
+      "periods": {
+        "development": {
+          "gross_excess": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": 1.6940849660828372,
+            "daily_mean_bps": 0.6722559389217608,
+            "annual_vol_pct": 5.438630004502558,
+            "sharpe": 0.3114911227055951,
+            "fixed_capital_max_drawdown_pct": -13.080689601901385,
+            "average_daily_one_way_turnover": 1.340583488389873,
+            "annual_one_way_turnover": 337.82703907424803,
+            "average_short_exposure": 0.5000777606274812,
+            "break_even_one_way_bps_after_borrow": 0.20460932115541036,
+            "sum_fixed_capital_pnl_pct": 28.77255418585137
+          },
+          "net_base": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -6.065315170155719,
+            "daily_mean_bps": -2.4068710992681424,
+            "annual_vol_pct": 5.441931247182058,
+            "sharpe": -1.114551965958126,
+            "fixed_capital_max_drawdown_pct": -103.09670511342533,
+            "average_daily_one_way_turnover": 1.340583488389873,
+            "annual_one_way_turnover": 337.82703907424803,
+            "average_short_exposure": 0.5000777606274812,
+            "break_even_one_way_bps_after_borrow": 0.20460932115541036,
+            "sum_fixed_capital_pnl_pct": -103.0140830486765
+          },
+          "net_stress": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -16.20012634238316,
+            "daily_mean_bps": -6.428621564437762,
+            "annual_vol_pct": 5.4524965654801365,
+            "sharpe": -2.9711392107876753,
+            "fixed_capital_max_drawdown_pct": -275.14500295793624,
+            "average_daily_one_way_turnover": 1.340583488389873,
+            "annual_one_way_turnover": 337.82703907424803,
+            "average_short_exposure": 0.5000777606274812,
+            "break_even_one_way_bps_after_borrow": 0.20460932115541036,
+            "sum_fixed_capital_pnl_pct": -275.14500295793624
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91850,
+            "annual_mean_pct_ci95": [
+              -8.66086742136401,
+              -3.309622098209207
+            ],
+            "sharpe_ci95": [
+              -1.6616952995430156,
+              -0.5880917946493086
+            ],
+            "fraction_mean_le_zero": 1.0,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.413069107322823,
+            "alpha_t": -4.407144289077833,
+            "alpha_two_sided_p": 1.0474241665104447e-05,
+            "SPY_beta": 0.0014612838482051817
+          }
+        },
+        "validation": {
+          "gross_excess": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -1.3222612629425747,
+            "daily_mean_bps": -0.5247068503740376,
+            "annual_vol_pct": 6.18251160006713,
+            "sharpe": -0.2138712142373041,
+            "fixed_capital_max_drawdown_pct": -12.026430230775869,
+            "average_daily_one_way_turnover": 1.2993037268851886,
+            "annual_one_way_turnover": 327.42453917506754,
+            "average_short_exposure": 0.4984265620670559,
+            "break_even_one_way_bps_after_borrow": -0.7087961999396586,
+            "sum_fixed_capital_pnl_pct": -2.6287813203739283
+          },
+          "net_base": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -8.869263474844168,
+            "daily_mean_bps": -3.519548997954035,
+            "annual_vol_pct": 6.178401623430136,
+            "sharpe": -1.4355271825013076,
+            "fixed_capital_max_drawdown_pct": -22.390253563138916,
+            "average_daily_one_way_turnover": 1.2993037268851886,
+            "annual_one_way_turnover": 327.42453917506754,
+            "average_short_exposure": 0.4984265620670559,
+            "break_even_one_way_bps_after_borrow": -0.7087961999396586,
+            "sum_fixed_capital_pnl_pct": -17.632940479749713
+          },
+          "net_stress": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -18.691999650096193,
+            "daily_mean_bps": -7.417460178609599,
+            "annual_vol_pct": 6.17789316486291,
+            "sharpe": -3.025626884648624,
+            "fixed_capital_max_drawdown_pct": -38.41208030003456,
+            "average_daily_one_way_turnover": 1.2993037268851886,
+            "annual_one_way_turnover": 327.42453917506754,
+            "average_short_exposure": 0.4984265620670559,
+            "break_even_one_way_bps_after_borrow": -0.7087961999396586,
+            "sum_fixed_capital_pnl_pct": -37.16147549483409
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91851,
+            "annual_mean_pct_ci95": [
+              -17.8391057704303,
+              0.0257078096881172
+            ],
+            "sharpe_ci95": [
+              -2.8185573684741065,
+              0.004272897356585183
+            ],
+            "fraction_mean_le_zero": 0.9747,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -3.519771058850305,
+            "alpha_t": -1.938726805275382,
+            "alpha_two_sided_p": 0.052534612875143286,
+            "SPY_beta": -0.0033072893948105225
+          }
+        },
+        "holdout": {
+          "gross_excess": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 1.859582522799657,
+            "daily_mean_bps": 0.7379295725395464,
+            "annual_vol_pct": 5.091985639404092,
+            "sharpe": 0.36519791187338885,
+            "fixed_capital_max_drawdown_pct": -7.38678933564038,
+            "average_daily_one_way_turnover": 1.3296094556302318,
+            "annual_one_way_turnover": 335.0615828188184,
+            "average_short_exposure": 0.49399635597913916,
+            "break_even_one_way_bps_after_borrow": 0.2565677905495698,
+            "sum_fixed_capital_pnl_pct": 5.0990933462482655
+          },
+          "net_base": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -5.841571556357709,
+            "daily_mean_bps": -2.3180839509355993,
+            "annual_vol_pct": 5.094589594520063,
+            "sharpe": -1.1466225979500153,
+            "fixed_capital_max_drawdown_pct": -18.562536661025376,
+            "average_daily_one_way_turnover": 1.3296094556302318,
+            "annual_one_way_turnover": 335.0615828188184,
+            "average_short_exposure": 0.49399635597913916,
+            "break_even_one_way_bps_after_borrow": 0.2565677905495698,
+            "sum_fixed_capital_pnl_pct": -16.01796010096499
+          },
+          "net_stress": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -15.89341904092226,
+            "daily_mean_bps": -6.306912317826294,
+            "annual_vol_pct": 5.100186324147442,
+            "sharpe": -3.116242825418548,
+            "fixed_capital_max_drawdown_pct": -43.60017913129338,
+            "average_daily_one_way_turnover": 1.3296094556302318,
+            "annual_one_way_turnover": 335.0615828188184,
+            "average_short_exposure": 0.49399635597913916,
+            "break_even_one_way_bps_after_borrow": 0.2565677905495698,
+            "sum_fixed_capital_pnl_pct": -43.580764116179694
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91852,
+            "annual_mean_pct_ci95": [
+              -10.615001645468507,
+              -1.1340220719517764
+            ],
+            "sharpe_ci95": [
+              -2.147628525968632,
+              -0.21699817535701102
+            ],
+            "fraction_mean_le_zero": 0.9908,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.5341834463195307,
+            "alpha_t": -2.657851081700318,
+            "alpha_two_sided_p": 0.007864063358339252,
+            "SPY_beta": 0.035189553302593726
+          }
+        }
+      }
+    },
+    "raw_reversal_5day": {
+      "role": "diagnostic_not_selection_candidate",
+      "periods": {
+        "development": {
+          "gross_excess": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": 1.6849453502686618,
+            "daily_mean_bps": 0.668629107249469,
+            "annual_vol_pct": 5.809504738881225,
+            "sharpe": 0.2900325287613318,
+            "fixed_capital_max_drawdown_pct": -13.777434724436393,
+            "average_daily_one_way_turnover": 0.6347534296279709,
+            "annual_one_way_turnover": 159.95786426624866,
+            "average_short_exposure": 0.49750085906777636,
+            "break_even_one_way_bps_after_borrow": 0.4305149794413207,
+            "sum_fixed_capital_pnl_pct": 28.61732579027727
+          },
+          "net_base": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -2.510514718864358,
+            "daily_mean_bps": -0.9962359995493483,
+            "annual_vol_pct": 5.8133757331757,
+            "sharpe": -0.4318514464044331,
+            "fixed_capital_max_drawdown_pct": -47.242798260446314,
+            "average_daily_one_way_turnover": 0.6347534296279709,
+            "annual_one_way_turnover": 159.95786426624866,
+            "average_short_exposure": 0.49750085906777636,
+            "break_even_one_way_bps_after_borrow": 0.4305149794413207,
+            "sum_fixed_capital_pnl_pct": -42.638900780712106
+          },
+          "net_stress": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -7.309250646851817,
+            "daily_mean_bps": -2.900496288433261,
+            "annual_vol_pct": 5.820006496512143,
+            "sharpe": -1.2558835890015174,
+            "fixed_capital_max_drawdown_pct": -125.20744680062872,
+            "average_daily_one_way_turnover": 0.6347534296279709,
+            "annual_one_way_turnover": 159.95786426624866,
+            "average_short_exposure": 0.49750085906777636,
+            "break_even_one_way_bps_after_borrow": 0.4305149794413207,
+            "sum_fixed_capital_pnl_pct": -124.14124114494356
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91860,
+            "annual_mean_pct_ci95": [
+              -5.18408630243788,
+              0.3546530389334779
+            ],
+            "sharpe_ci95": [
+              -0.930310427533111,
+              0.05810260885812201
+            ],
+            "fraction_mean_le_zero": 0.9565,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -0.9779424749040359,
+            "alpha_t": -1.70749624124054,
+            "alpha_two_sided_p": 0.08772985583965986,
+            "SPY_beta": -0.004313003767517673
+          }
+        },
+        "validation": {
+          "gross_excess": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -2.47751767413008,
+            "daily_mean_bps": -0.9831419341786032,
+            "annual_vol_pct": 6.289932103582252,
+            "sharpe": -0.39388623491167424,
+            "fixed_capital_max_drawdown_pct": -9.235733003019151,
+            "average_daily_one_way_turnover": 0.6085203821553632,
+            "annual_one_way_turnover": 153.34713630315153,
+            "average_short_exposure": 0.4979450336766999,
+            "break_even_one_way_bps_after_borrow": -2.2700189499029855,
+            "sum_fixed_capital_pnl_pct": -4.925541090234802
+          },
+          "net_base": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -6.547951779278131,
+            "daily_mean_bps": -2.5983935632056077,
+            "annual_vol_pct": 6.284817941528751,
+            "sharpe": -1.0418681718702858,
+            "fixed_capital_max_drawdown_pct": -14.568623183397806,
+            "average_daily_one_way_turnover": 0.6085203821553632,
+            "annual_one_way_turnover": 153.34713630315153,
+            "average_short_exposure": 0.4979450336766999,
+            "break_even_one_way_bps_after_borrow": -2.2700189499029855,
+            "sum_fixed_capital_pnl_pct": -13.017951751660096
+          },
+          "net_stress": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -11.148365868372675,
+            "daily_mean_bps": -4.423954709671697,
+            "annual_vol_pct": 6.286407321228602,
+            "sharpe": -1.7734081326110864,
+            "fixed_capital_max_drawdown_pct": -23.568964122030255,
+            "average_daily_one_way_turnover": 0.6085203821553632,
+            "annual_one_way_turnover": 153.34713630315153,
+            "average_short_exposure": 0.4979450336766999,
+            "break_even_one_way_bps_after_borrow": -2.2700189499029855,
+            "sum_fixed_capital_pnl_pct": -22.1640130954552
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91861,
+            "annual_mean_pct_ci95": [
+              -14.71747772601633,
+              1.6514649855329164
+            ],
+            "sharpe_ci95": [
+              -2.3344122819777584,
+              0.2710697605343691
+            ],
+            "fraction_mean_le_zero": 0.9409,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -2.5965838056331916,
+            "alpha_t": -1.6074242830066359,
+            "alpha_two_sided_p": 0.10796132676628162,
+            "SPY_beta": 0.026953831705466086
+          }
+        },
+        "holdout": {
+          "gross_excess": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 3.865234032581603,
+            "daily_mean_bps": 1.5338230288022234,
+            "annual_vol_pct": 5.020003183539017,
+            "sharpe": 0.7699664504707903,
+            "fixed_capital_max_drawdown_pct": -6.650014208221469,
+            "average_daily_one_way_turnover": 0.6222577666462764,
+            "annual_one_way_turnover": 156.80895719486165,
+            "average_short_exposure": 0.4950671549478616,
+            "break_even_one_way_bps_after_borrow": 1.8275606340429316,
+            "sum_fixed_capital_pnl_pct": 10.598717129023363
+          },
+          "net_base": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -0.2704003715507105,
+            "daily_mean_bps": -0.10730173474234543,
+            "annual_vol_pct": 5.015967922416946,
+            "sharpe": -0.05390791482980976,
+            "fixed_capital_max_drawdown_pct": -8.935547231399207,
+            "average_daily_one_way_turnover": 0.6222577666462764,
+            "annual_one_way_turnover": 156.80895719486165,
+            "average_short_exposure": 0.4950671549478616,
+            "break_even_one_way_bps_after_borrow": 1.8275606340429316,
+            "sum_fixed_capital_pnl_pct": -0.741454987069607
+          },
+          "net_stress": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -4.974669087396561,
+            "daily_mean_bps": -1.9740750346811748,
+            "annual_vol_pct": 5.018067411362006,
+            "sharpe": -0.9913515860972331,
+            "fixed_capital_max_drawdown_pct": -18.813849315773446,
+            "average_daily_one_way_turnover": 0.6222577666462764,
+            "annual_one_way_turnover": 156.80895719486165,
+            "average_short_exposure": 0.4950671549478616,
+            "break_even_one_way_bps_after_borrow": 1.8275606340429316,
+            "sum_fixed_capital_pnl_pct": -13.640858489646918
+          },
+          "base_uncertainty": {
+            "draws": 10000,
+            "block_days": 20,
+            "seed": 91862,
+            "annual_mean_pct_ci95": [
+              -6.891747566462731,
+              6.5169864158945785
+            ],
+            "sharpe_ci95": [
+              -1.409217979003004,
+              1.2827761123636177
+            ],
+            "fraction_mean_le_zero": 0.5285,
+            "warning": "Conditional sampling uncertainty; no correction for prior research or testing other families."
+          },
+          "HAC20_market_regression": {
+            "alpha_daily_bps": -0.11003735223010826,
+            "alpha_t": -0.07855795938591208,
+            "alpha_two_sided_p": 0.9373842276969572,
+            "SPY_beta": 0.0004454668310544148
+          }
+        }
+      }
+    }
+  }
+}

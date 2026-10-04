@@ -1,0 +1,72 @@
+6J.v.0 hourly bars: 96,198  2010-06-07 00:00:00+00:00 -> 2026-09-30 23:00:00+00:00  contracts: 67
+Tick by year (USD per JPY): {2010: '0.0000005', 2011: '0.0000005', 2012: '0.0000005', 2013: '0.0000005', 2014: '0.0000005', 2015: '0.0000005', 2016: '0.0000005', 2017: '0.0000005', 2018: '0.0000005', 2019: '0.0000005', 2020: '0.0000005', 2021: '0.0000005', 2022: '0.0000005', 2023: '0.0000005', 2024: '0.0000005', 2025: '0.0000005', 2026: '0.0000005'}
+
+Tokyo business days in sample: 3,991  valid (both windows): 3,890
+  pre-fix windows dropped: roll=53, missing bar=47
+  post-fix windows dropped: missing bar=46
+Primary sample (Tue-Fri, valid): 3,221 days, of which gotobi 1,050 and control 2,171
+Average round-trip cost: 1.03 bp per leg (pre), 1.04 bp (post)
+
+=== PRIMARY: D = mean S (gotobi) - mean S (control), Tue-Fri, full sample ===
+    S = USD/JPY return 08:00->10:00 JST minus USD/JPY return 10:00->12:00 JST, in bp
+    diff=2.189  t=2.385  p_one_sided=0.009  mean_a=2.904  mean_b=0.714  n_a=1050  n_b=2171
+    Newey-West(5) t of the gotobi dummy: 2.417
+
+=== TRADE: short 6J pre-fix + long 6J post-fix, gotobi Tue-Fri only (64.4 trades/yr) ===
+    gross              n=1050  mean_bp=2.904  t=3.780  t_nw5=3.736  hit=0.562  sharpe_ann=0.936
+    net (base costs)   n=1050  mean_bp=0.833  t=1.082  t_nw5=1.062  hit=0.523  sharpe_ann=0.268
+    net (2x costs)     n=1050  mean_bp=-1.239  t=-1.607  t_nw5=-1.564  hit=0.471  sharpe_ann=-0.398
+
+VERDICT (pre-registered rule): WEAK PASS (cost-fragile)   [primary t>=2: True, net>0: True, net 2x>0: False]
+
+=== By sample (Tue-Fri): D (Welch) and the gotobi trade's net P&L ===
+  full                         D=  +2.19bp t= +2.38 (n 1050/2171)   trade net mean= +0.83bp t=+1.08 hit=0.52
+  in-sample to 2024-09-30      D=  +2.48bp t= +2.51 (n 920/1906)   trade net mean= +1.17bp t=+1.41 hit=0.53
+  OOS 2024-10-01..2026-09-30   D=  +0.09bp t= +0.04 (n 130/265)   trade net mean= -1.55bp t=-0.78 hit=0.44
+  2010-2017                    D=  +2.69bp t= +1.77 (n 487/1007)   trade net mean= +2.75bp t=+2.12 hit=0.57
+  2018-2020 (paper)            D=  +3.87bp t= +2.44 (n 192/398)   trade net mean= +1.45bp t=+1.14 hit=0.56
+  2021-2026 (new)              D=  +0.66bp t= +0.46 (n 371/766)   trade net mean= -2.00bp t=-1.70 hit=0.44
+
+=== By calendar year (Tue-Fri) ===
+  2010: D=  -3.59bp t=-0.55  gotobi S mean= +0.33  control S mean= +3.92  trade net sum=  -43.4bp over 36
+  2011: D=  +8.17bp t=+1.69  gotobi S mean=+11.15  control S mean= +2.98  trade net sum= +641.2bp over 66
+  2012: D=  +3.36bp t=+1.26  gotobi S mean= +4.55  control S mean= +1.19  trade net sum= +199.6bp over 64
+  2013: D=  +2.79bp t=+0.58  gotobi S mean= +5.60  control S mean= +2.81  trade net sum= +249.8bp over 65
+  2014: D=  +1.77bp t=+0.71  gotobi S mean= +2.32  control S mean= +0.56  trade net sum=  +26.2bp over 62
+  2015: D=  +1.38bp t=+0.50  gotobi S mean= +1.36  control S mean= -0.02  trade net sum=  -53.2bp over 65
+  2016: D=  +0.99bp t=+0.15  gotobi S mean= +1.99  control S mean= +1.00  trade net sum=   +2.5bp over 63
+  2017: D=  +3.66bp t=+1.20  gotobi S mean= +6.79  control S mean= +3.13  trade net sum= +315.0bp over 66
+  2018: D=  +1.80bp t=+0.65  gotobi S mean= +1.86  control S mean= +0.06  trade net sum=   -8.1bp over 65
+  2019: D=  +3.52bp t=+1.51  gotobi S mean= +2.69  control S mean= -0.83  trade net sum=  +47.1bp over 64
+  2020: D=  +6.36bp t=+2.06  gotobi S mean= +5.73  control S mean= -0.63  trade net sum= +240.0bp over 63
+  2021: D=  -0.63bp t=-0.35  gotobi S mean= +2.09  control S mean= +2.72  trade net sum=   +7.3bp over 62
+  2022: D=  +3.86bp t=+1.00  gotobi S mean= +3.92  control S mean= +0.06  trade net sum= +101.6bp over 65
+  2023: D=  -0.00bp t=-0.00  gotobi S mean= -3.91  control S mean= -3.91  trade net sum= -423.9bp over 66
+  2024: D=  +1.41bp t=+0.36  gotobi S mean= +1.29  control S mean= -0.12  trade net sum=  -91.0bp over 64
+  2025: D=  -0.07bp t=-0.02  gotobi S mean= -0.50  control S mean= -0.43  trade net sum= -203.2bp over 64
+  2026: D=  -0.87bp t=-0.29  gotobi S mean= +0.18  control S mean= +1.05  trade net sum= -133.3bp over 50
+
+=== Robustness (reported only; cannot rescue the primary) ===
+  pre-fix leg only: r_pre gotobi - control             diff=  +1.44bp t= +2.28 (n 1050/2172)
+  post-fix leg only: r_post gotobi - control (pred < 0) diff=  -0.73bp t= -1.06 (n 1050/2173)
+  month-end gotobi vs control                          diff=  +5.79bp t= +3.22 (n 167/2171)
+  5/10/15/20/25/30 gotobi vs control                   diff=  +1.51bp t= +1.53 (n 883/2171)
+  March only                                           diff=  +2.11bp t= +0.50 (n 88/181)
+  Mondays only                                         diff=  -1.53bp t= -0.42 (n 155/514)
+  next-business-day holiday rule                       diff=  +0.80bp t= +0.86 (n 772/2449)
+  nominal dates only (no shift)                        diff=  +0.94bp t= +0.97 (n 699/2522)
+  excluding intervention days +-1                      diff=  +2.04bp t= +2.34 (n 1039/2158)
+  winsorized 1%/99%                                    diff=  +2.15bp t= +2.78 (n 1050/2171)
+
+=== Descriptive: average USD/JPY bar return by hour (Tue-Fri), bp; JST = UTC+9 ===
+group                        control  gotobi  gotobi - control
+utc_bar_start jst_bar_start                                   
+20:00         05:00              NaN     NaN               NaN
+21:00         06:00              NaN     NaN               NaN
+22:00         07:00              NaN     NaN               NaN
+23:00         08:00              NaN     NaN               NaN
+00:00         09:00              NaN     NaN               NaN
+01:00         10:00              NaN     NaN               NaN
+02:00         11:00              NaN     NaN               NaN
+03:00         12:00              NaN     NaN               NaN
+04:00         13:00              NaN     NaN               NaN

@@ -1,0 +1,1690 @@
+{
+  "screen": "whole-universe horizon recall cross-check",
+  "all_horizon_hit_rows": 199,
+  "retained_rows": 102,
+  "nonoperational_tags_excluded": [
+    "acquisition_agreement",
+    "acquisition_completion",
+    "annual_meeting_results",
+    "bylaw_amendment",
+    "ceo_appointment",
+    "ceo_departure",
+    "cfo_appointment",
+    "cfo_departure",
+    "charter_amendment",
+    "credit_facility",
+    "debt_issuance",
+    "debt_retirement",
+    "director_appointment",
+    "director_departure",
+    "divestiture_agreement",
+    "equity_compensation_grant",
+    "executive_compensation_change",
+    "executive_officer_appointment",
+    "executive_officer_departure",
+    "guarantee_or_letter_of_credit",
+    "merger_agreement",
+    "merger_completion",
+    "preferred_stock_modification",
+    "private_placement",
+    "public_offering",
+    "share_repurchase_program",
+    "shareholder_proposal_outcome",
+    "spinoff_completion",
+    "tender_offer",
+    "trading_plan_10b5_1",
+    "underwriting_agreement"
+  ],
+  "retained": [
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-24-000002",
+      "filing_date": "2024-01-16",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended December 31, November 30 and October 31, 2023 and the three months ended December 31, 2023. (Preliminary) December 31, 2023 and (Preliminary) Three Months Ended December 31, 2023.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-24-000002.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-24-000023",
+      "filing_date": "2024-04-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "business_update",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended March 31, February 29 and January 31, 2024 and the three months ended March 31, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-24-000023.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-24-000049",
+      "filing_date": "2024-07-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "business_update",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended June 30, May 31 and April 30, 2024 and the three months ended June 30, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-24-000049.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-24-000065",
+      "filing_date": "2024-10-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended September 30, August 31 and July 31, 2024 and the three months ended September 30, 2024. (Preliminary) September 30, 2024 and (Preliminary) Three Months Ended September 30, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-24-000065.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-25-000002",
+      "filing_date": "2025-01-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended December 31, November 30 and October 31, 2024 and the three months ended December 31, 2024. (Preliminary) December 31, 2024 and (Preliminary) Three Months Ended December 31, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-25-000002.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-25-000030",
+      "filing_date": "2025-04-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member lending portfolios for the months ended March 31, February 28 and January 31, 2025 and the three months ended March 31, 2025. (Preliminary) March 31, 2025 and (Preliminary) Three Months Ended March 31, 2025 data presented.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-25-000030.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-25-000078",
+      "filing_date": "2025-07-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "business_update",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member loans held for investment for the months ended June 30, May 31 and April 30, 2025 and the three months ended June 30, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-25-000078.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "AXP"
+      ],
+      "cik": "0000004962",
+      "accession_number": "0000004962-25-000210",
+      "filing_date": "2025-10-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "American Express Company is hereby furnishing below delinquency and write-off statistics for its U.S. Consumer and U.S. Small Business Card Member loans held for investment for the months ended September 30, August 31 and July 31, 2025 and the three months ended September 30, 2025. (Preliminary) September 30, 2025 and (Preliminary) Three Months Ended September 30, 2025 data presented.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/4962/0000004962-25-000210.txt",
+      "ticker": "AXP",
+      "universe_ticker": "AXP"
+    },
+    {
+      "tickers": [
+        "BA",
+        "BApA"
+      ],
+      "cik": "0000012927",
+      "accession_number": "0000012927-25-000041",
+      "filing_date": "2025-06-04",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "material_charge_or_gain",
+      "supporting_text": "Pursuant to the NPA, the Company is subject to a $487.2 million overall criminal monetary penalty, $243.6 million of which was paid in 2021 pursuant to the DPA and the remaining $243.6 million of which was included in amounts expensed by the Company in 2024 pursuant to the proposed plea agreement between the Company and the Department filed with the U.S. District Court for the Northern District of Texas on July 24, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000041.txt",
+      "ticker": "BA",
+      "universe_ticker": "BA"
+    },
+    {
+      "tickers": [
+        "BKNG",
+        "PCLN"
+      ],
+      "cik": "0001075531",
+      "accession_number": "0001075531-24-000026",
+      "filing_date": "2024-05-02",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On May 2, 2024, Booking Holdings Inc. announced its financial results for the first quarter ended March 31, 2024. The press release is attached as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated herein by reference. Copies of Booking Holdings' consolidated balance sheet at March 31, 2024, consolidated statement of operations for the three months ended March 31, 2024, and consolidated statement of cash flows for the three months ended March 31, 2024, are included in the financial and statistical supplement attached to the press release.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000026.txt",
+      "ticker": "BKNG",
+      "universe_ticker": "BKNG"
+    },
+    {
+      "tickers": [
+        "BKNG",
+        "PCLN"
+      ],
+      "cik": "0001075531",
+      "accession_number": "0001075531-24-000039",
+      "filing_date": "2024-08-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On August 1, 2024, Booking Holdings Inc. announced its financial results for the second quarter ended June 30, 2024. The press release is attached as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated herein by reference. Copies of Booking Holdings' consolidated balance sheet at June 30, 2024, consolidated statement of operations for the three and six months ended June 30, 2024, and consolidated statement of cash flows for the six months ended June 30, 2024, are included in the financial and statistical supplement attached to the press release.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000039.txt",
+      "ticker": "BKNG",
+      "universe_ticker": "BKNG"
+    },
+    {
+      "tickers": [
+        "BKNG",
+        "PCLN"
+      ],
+      "cik": "0001075531",
+      "accession_number": "0001075531-25-000021",
+      "filing_date": "2025-04-29",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On April 29, 2025, Booking Holdings Inc. announced its financial results for the first quarter ended March 31, 2025. The press release is attached as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated herein by reference. Copies of Booking Holdings' consolidated balance sheet at March 31, 2025, consolidated statement of operations for the three months ended March 31, 2025, and consolidated statement of cash flows for the three months ended March 31, 2025, are included in the financial and statistical supplement attached to the press release.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-25-000021.txt",
+      "ticker": "BKNG",
+      "universe_ticker": "BKNG"
+    },
+    {
+      "tickers": [
+        "BKNG",
+        "PCLN"
+      ],
+      "cik": "0001075531",
+      "accession_number": "0001075531-25-000035",
+      "filing_date": "2025-07-29",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On July 29, 2025, Booking Holdings Inc. announced its financial results for the second quarter ended June 30, 2025. The press release is attached as Exhibit 99.1 to this Current Report on Form 8-K and is incorporated herein by reference. Copies of Booking Holdings' consolidated balance sheet at June 30, 2025, consolidated statement of operations for the three and six months ended June 30, 2025, and consolidated statement of cash flows for the six months ended June 30, 2025, are included in the financial and statistical supplement attached to the press release.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-25-000035.txt",
+      "ticker": "BKNG",
+      "universe_ticker": "BKNG"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0000950170-24-004107",
+      "filing_date": "2024-01-12",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On January 12, 2024, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three months and year ended December 31, 2023. The Company also expects to discuss the Transaction on that conference call and webcast. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.3 to this Form 8-K. The Company is also furnishing supplemental materials related to the Transaction as Exhibit 99.4, which will also be used during the conference call and webcast.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0000950170-24-004107.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0000950170-24-004107",
+      "filing_date": "2024-01-12",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On January 12, 2024, BlackRock, Inc. (the \"Company\") reported results of operations for the three months and year ended December 31, 2023. A copy of the earnings release issued by the Company is attached as Exhibit 99.1 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0000950170-24-004107.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0000950170-24-043859",
+      "filing_date": "2024-04-12",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On April 12, 2024, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three months ended March 31, 2024. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.2 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0000950170-24-043859.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0000950170-24-083381",
+      "filing_date": "2024-07-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On July 15, 2024, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three and six months ended June 30, 2024. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.2 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0000950170-24-083381.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0000950170-24-083381",
+      "filing_date": "2024-07-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On July 15, 2024, BlackRock, Inc. (the \"Company\") reported results of operations for the three and six months ended June 30, 2024. A copy of the earnings release issued by the Company is attached as Exhibit 99.1 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0000950170-24-083381.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK"
+      ],
+      "cik": "0001364742",
+      "accession_number": "0001193125-24-180020",
+      "filing_date": "2024-07-17",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On July 15, 2024, BlackRock, Inc. (\"BlackRock\") reported results of operations for the three and six months ended June 30, 2024. Revenue $4,805 million, Operating income $1,800 million, Net income attributable to BlackRock, Inc. $1,495 million, Diluted EPS $9.99.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0001193125-24-180020.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-005629",
+      "filing_date": "2025-01-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On January 15, 2025, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three months and year ended December 31, 2024. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.2 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-005629.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-005629",
+      "filing_date": "2025-01-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On January 15, 2025, BlackRock, Inc. (the \"Company\") reported results of operations for the three months and year ended December 31, 2024. A copy of the earnings release issued by the Company is attached as Exhibit 99.1 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-005629.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-053022",
+      "filing_date": "2025-04-11",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On April 11, 2025, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three months ended March 31, 2025. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.2 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-053022.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-053022",
+      "filing_date": "2025-04-11",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On April 11, 2025, BlackRock, Inc. (the \"Company\") reported results of operations for the three months ended March 31, 2025. A copy of the earnings release issued by the Company is attached as Exhibit 99.1 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-053022.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-095711",
+      "filing_date": "2025-07-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On July 15, 2025, BlackRock, Inc. (the \"Company\") reported results of operations for the three and six months ended June 30, 2025. A copy of the earnings release issued by the Company is attached as Exhibit 99.1 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-095711.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "BLK",
+        "DIVB"
+      ],
+      "cik": "0002012383",
+      "accession_number": "0000950170-25-095711",
+      "filing_date": "2025-07-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On July 15, 2025, the Company will hold an investor conference call and webcast to discuss the Company's earnings results for the three and six months ended June 30, 2025. A copy of supplemental materials used during the conference call and webcast is furnished as Exhibit 99.2 to this Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0000950170-25-095711.txt",
+      "ticker": "BLK",
+      "universe_ticker": "BLK"
+    },
+    {
+      "tickers": [
+        "C",
+        "CpN"
+      ],
+      "cik": "0000831001",
+      "accession_number": "0001410578-24-001065",
+      "filing_date": "2024-06-28",
+      "primary_category": "capital_and_financing",
+      "secondary_category": "shareholder_returns",
+      "tertiary_category": "dividend_policy_change",
+      "supporting_text": "Citi's planned capital actions include an increase of Citi's quarterly common stock dividend from $0.53 to $0.56 per share (subject to quarterly approval by Citi's Board of Directors), starting in the third quarter of 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/831001/0001410578-24-001065.txt",
+      "ticker": "C",
+      "universe_ticker": "C"
+    },
+    {
+      "tickers": [
+        "COF",
+        "COFpI",
+        "COFpJ",
+        "COFpK",
+        "COFpL",
+        "COFpN",
+        "COFw"
+      ],
+      "cik": "0000927628",
+      "accession_number": "0001193125-25-011793",
+      "filing_date": "2025-01-24",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "preliminary_results",
+      "supporting_text": "Capital One is filing this Current Report on Form 8-K (this 'Report') to furnish the information in Exhibit 99.1 hereto, containing a financial data supplement released by Discover on January 22, 2025 with respect to the quarter and the twelve months ended December 31, 2024. Neither Discover's independent accountants, nor any other independent accountants, have compiled, examined, or performed any procedures with respect to the preliminary fourth quarter and year-end financial information contained in Exhibit 99.1.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/927628/0001193125-25-011793.txt",
+      "ticker": "COF",
+      "universe_ticker": "COF"
+    },
+    {
+      "tickers": [
+        "CVX",
+        "CVXw"
+      ],
+      "cik": "0000093410",
+      "accession_number": "0000950142-24-002067",
+      "filing_date": "2024-07-31",
+      "primary_category": "risk_events",
+      "secondary_category": "legal_proceedings",
+      "tertiary_category": "material_litigation",
+      "supporting_text": "Hess Guyana Exploration Limited is currently in arbitration with respect to the right of first refusal contained in an operating agreement regarding the Stabroek Block offshore Guyana. The arbitration merits hearing about the applicability of the Stabroek ROFR to the Merger has been scheduled for May 2025, with a decision expected in the following three months.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/93410/0000950142-24-002067.txt",
+      "ticker": "CVX",
+      "universe_ticker": "CVX"
+    },
+    {
+      "tickers": [
+        "CVX",
+        "CVXw"
+      ],
+      "cik": "0000093410",
+      "accession_number": "0000950142-25-002041",
+      "filing_date": "2025-07-29",
+      "primary_category": "strategic_transactions",
+      "secondary_category": "deal_agreements",
+      "tertiary_category": "licensing_agreement",
+      "supporting_text": "Effective 90 days after the Closing, Chevron USA is expected to cause the assignment of its interest in HLOGO LLC to HFO or its designee. HLOGO LLC is expected to grant Chevron USA an exclusive (in the field of oil and gas business), perpetual, irrevocable, fully paid up, royalty free, worldwide license (the \"Trademark License\") to use and display the Transferred Trademarks in connection with the oil and gas business.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/93410/0000950142-25-002041.txt",
+      "ticker": "CVX",
+      "universe_ticker": "CVX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0000950170-24-034726",
+      "filing_date": "2024-03-21",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated March 21, 2024, announcing its financial results for the fiscal quarter ended February 29, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0000950170-24-034726.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0001193125-24-082664",
+      "filing_date": "2024-04-01",
+      "primary_category": "strategic_transactions",
+      "secondary_category": "deal_terminations",
+      "tertiary_category": "deal_termination",
+      "supporting_text": "Federal Express Corporation (\"FedEx Express\"), a wholly owned subsidiary of FedEx Corporation (\"FedEx\"), announced today that its agreement to provide domestic transportation services for the United States Postal Service (\"USPS\") will expire by its terms on September 29, 2024. The parties were unable to reach agreement on mutually beneficial terms to extend the contract, and negotiations concluded on March 29, 2024, following extensive discussions.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0001193125-24-082664.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0000950170-24-077290",
+      "filing_date": "2024-06-25",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated June 25, 2024, announcing its financial results for the fiscal quarter and year ended May 31, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0000950170-24-077290.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0000950170-24-108098",
+      "filing_date": "2024-09-19",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated September 19, 2024, announcing its financial results for the fiscal quarter ended August 31, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0000950170-24-108098.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0000950170-24-138448",
+      "filing_date": "2024-12-19",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated December 19, 2024, announcing its financial results for the fiscal quarter ended November 30, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0000950170-24-138448.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0000950170-25-042661",
+      "filing_date": "2025-03-20",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated March 20, 2025, announcing its financial results for the fiscal quarter ended February 28, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0000950170-25-042661.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0001048911-25-000005",
+      "filing_date": "2025-06-24",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated June 24, 2025, announcing its financial results for the fiscal quarter and year ended May 31, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0001048911-25-000005.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "FDX"
+      ],
+      "cik": "0001048911",
+      "accession_number": "0001048911-25-000076",
+      "filing_date": "2025-12-18",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated herein by reference is a copy of FedEx Corporation's press release, dated December 18, 2025, announcing its financial results for the fiscal quarter ended November 30, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0001048911-25-000076.txt",
+      "ticker": "FDX",
+      "universe_ticker": "FDX"
+    },
+    {
+      "tickers": [
+        "GM"
+      ],
+      "cik": "0001467858",
+      "accession_number": "0001193125-24-270298",
+      "filing_date": "2024-12-04",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "material_charge_or_gain",
+      "supporting_text": "The Company expects to (i) record an other than temporary impairment of our equity interest in the China JVs in the range of $2.6\u20132.9 billion in the three months ending December 31, 2024, and (ii) recognize additional equity losses of approximately $2.7 billion resulting from the implementation of SGM's restructuring plan, which include impairment charges to be recognized by the China JVs related to plant closures and portfolio optimization.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt",
+      "ticker": "GM",
+      "universe_ticker": "GM"
+    },
+    {
+      "tickers": [
+        "GM"
+      ],
+      "cik": "0001467858",
+      "accession_number": "0001467858-25-000136",
+      "filing_date": "2025-10-14",
+      "primary_category": "operations_and_strategy",
+      "secondary_category": "business_developments",
+      "tertiary_category": "strategic_initiative",
+      "supporting_text": "Following recent U.S. Government policy changes, including the termination of certain consumer tax incentives for EV purchases and the reduction in the stringency of emissions regulations, we expect the adoption rate of EVs to slow. These developments have caused us to reassess our EV capacity and manufacturing footprint. On October 7, 2025, the Audit Committee of the Company's Board of Directors approved charges of $1.6 billion in GM North America (GMNA) in the three months ended September 30, 2025, based on a planned strategic realignment of our EV capacity and manufacturing footprint to consumer demand.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt",
+      "ticker": "GM",
+      "universe_ticker": "GM"
+    },
+    {
+      "tickers": [
+        "GM"
+      ],
+      "cik": "0001467858",
+      "accession_number": "0001467858-25-000136",
+      "filing_date": "2025-10-14",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "asset_impairment",
+      "supporting_text": "On October 7, 2025, the Audit Committee of the Company's Board of Directors approved charges of $1.6 billion in GM North America (GMNA) in the three months ended September 30, 2025, based on a planned strategic realignment of our EV capacity and manufacturing footprint to consumer demand. These charges include non-cash impairment and other charges of $1.2 billion as a result of adjustments to our EV capacity.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt",
+      "ticker": "GM",
+      "universe_ticker": "GM"
+    },
+    {
+      "tickers": [
+        "HD"
+      ],
+      "cik": "0000354950",
+      "accession_number": "0001104659-24-040163",
+      "filing_date": "2024-03-28",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "Attached as Exhibit 99.2 and incorporated by reference herein is an investor presentation dated March 28, 2024, that will be used by the Company with respect to the matters described in Item 1.01 of this Current Report on Form 8-K.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/354950/0001104659-24-040163.txt",
+      "ticker": "HD",
+      "universe_ticker": "HD"
+    },
+    {
+      "tickers": [
+        "INTC"
+      ],
+      "cik": "0000050863",
+      "accession_number": "0000050863-25-000107",
+      "filing_date": "2025-07-24",
+      "primary_category": "operations_and_strategy",
+      "secondary_category": "restructuring",
+      "tertiary_category": "workforce_reduction",
+      "supporting_text": "The Company expects these headcount reduction initiatives will reduce our core Intel workforce by 15% by the end of fiscal 2025. The Company is recognizing pre-tax employee severance and related employee exit charges of $1.4 billion in the second quarter of 2025, the substantial majority of which will be cash settled in future periods.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt",
+      "ticker": "INTC",
+      "universe_ticker": "INTC"
+    },
+    {
+      "tickers": [
+        "INTC"
+      ],
+      "cik": "0000050863",
+      "accession_number": "0000050863-25-000107",
+      "filing_date": "2025-07-24",
+      "primary_category": "operations_and_strategy",
+      "secondary_category": "restructuring",
+      "tertiary_category": "restructuring_plan",
+      "supporting_text": "The Audit Committee approved an enterprise-wide initiative to fundamentally transform culture and operations, designed to simplify the way we do business. As part of this transformation, the Company implemented the 2025 Restructuring Plan to lower expenses, streamline organizational structure and reduce management layers. The Company expects these headcount reduction initiatives will reduce core Intel workforce by 15% by the end of fiscal 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt",
+      "ticker": "INTC",
+      "universe_ticker": "INTC"
+    },
+    {
+      "tickers": [
+        "LLY"
+      ],
+      "cik": "0000059478",
+      "accession_number": "0000059478-24-000116",
+      "filing_date": "2024-04-30",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached hereto as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release, dated April 30, 2024, announcing the financial results of Eli Lilly and Company for the quarter ended March 31, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000116.txt",
+      "ticker": "LLY",
+      "universe_ticker": "LLY"
+    },
+    {
+      "tickers": [
+        "LLY"
+      ],
+      "cik": "0000059478",
+      "accession_number": "0000059478-24-000185",
+      "filing_date": "2024-08-08",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached hereto as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release, dated August 8, 2024, announcing the financial results of Eli Lilly and Company for the quarter ended June 30, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000185.txt",
+      "ticker": "LLY",
+      "universe_ticker": "LLY"
+    },
+    {
+      "tickers": [
+        "LLY"
+      ],
+      "cik": "0000059478",
+      "accession_number": "0000059478-25-000129",
+      "filing_date": "2025-05-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached hereto as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release, dated May 1, 2025, announcing the financial results of Eli Lilly and Company for the quarter ended March 31, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-25-000129.txt",
+      "ticker": "LLY",
+      "universe_ticker": "LLY"
+    },
+    {
+      "tickers": [
+        "LLY"
+      ],
+      "cik": "0000059478",
+      "accession_number": "0000059478-25-000202",
+      "filing_date": "2025-08-07",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached hereto as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release, dated August 7, 2025, announcing the financial results of Eli Lilly and Company for the quarter ended June 30, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-25-000202.txt",
+      "ticker": "LLY",
+      "universe_ticker": "LLY"
+    },
+    {
+      "tickers": [
+        "MDLZ"
+      ],
+      "cik": "0001103982",
+      "accession_number": "0001103982-24-000022",
+      "filing_date": "2024-02-20",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On February 20, 2024, we issued a press release relating to the presentation made by Mondel\u0113z International executives at the 2024 Consumer Analyst Group of New York conference. A listen-only webcast of the presentation will be available in the investors section of our website (www.mondelezinternational.com), and a replay of the presentation with accompanying slides will also be available on our website.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-24-000022.txt",
+      "ticker": "MDLZ",
+      "universe_ticker": "MDLZ"
+    },
+    {
+      "tickers": [
+        "MDLZ"
+      ],
+      "cik": "0001103982",
+      "accession_number": "0001103982-25-000059",
+      "filing_date": "2025-02-18",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On February 18, 2025, we issued a press release relating to the presentation made by Mondel\u0113z International executives at the 2025 Consumer Analyst Group of New York conference. A listen-only webcast of the presentation will be available in the investors section of our website (www.mondelezinternational.com), and a replay of the presentation with accompanying slides will also be available on our website.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-25-000059.txt",
+      "ticker": "MDLZ",
+      "universe_ticker": "MDLZ"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-24-000028",
+      "filing_date": "2024-01-31",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On January 31, 2024, MetLife, Inc. issued (i) a news release announcing its results for the quarter and full year ended December 31, 2023 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended December 31, 2023 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000028.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-24-000139",
+      "filing_date": "2024-05-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On May 1, 2024, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended March 31, 2024 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended March 31, 2024 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000139.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-24-000196",
+      "filing_date": "2024-07-31",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On July 31, 2024, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended June 30, 2024 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended June 30, 2024 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference and (iii) a fact sheet setting forth its total assets under management as of June 30, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000196.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-24-000255",
+      "filing_date": "2024-10-30",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On October 30, 2024, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended September 30, 2024 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended September 30, 2024 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference and (iii) a fact sheet setting forth its total assets under management as of September 30, 2024 (the \"Total AUM Fact Sheet\"), a copy of which is attached hereto as Exhibit 99.3 and is incorporated herein by reference.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000255.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000039",
+      "filing_date": "2025-02-05",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On February 5, 2025, MetLife, Inc. issued (i) a news release announcing its results for the quarter and full year ended December 31, 2024 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended December 31, 2024 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000039",
+      "filing_date": "2025-02-05",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "capital_allocation_update",
+      "supporting_text": "As of December 31, 2024, we had $5.1 billion of cash and liquid assets at the holding companies which is above the high end of our $3.0 billion to $4.0 billion holding company cash target. In 2025, we expect to maintain this holding company cash target. We have also returned a total of approximately $21.0 billion to shareholders from 2020 through 2024, and we expect to generate approximately $25.0 billion in free cash flow over the next five years.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000039",
+      "filing_date": "2025-02-05",
+      "primary_category": "financial_results",
+      "secondary_category": "guidance_and_outlook",
+      "tertiary_category": "guidance_issuance_or_update",
+      "supporting_text": "Based on the forward yield curve as of December 31, 2024, we expect long-term interest rates to remain stable in 2025 with the yield curve steepening, as short-term interest rates decline. We expect to maintain this holding company cash target. We have also returned a total of approximately $21.0 billion to shareholders from 2020 through 2024, and we expect to generate approximately $25.0 billion in free cash flow over the next five years.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000133",
+      "filing_date": "2025-04-30",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On April 30, 2025, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended March 31, 2025 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended March 31, 2025 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference and (iii) a fact sheet setting forth its total assets under management as of March 31, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000133.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000191",
+      "filing_date": "2025-08-06",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On August 6, 2025, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended June 30, 2025 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended June 30, 2025 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference and (iii) a fact sheet setting forth its total assets under management as of June 30, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000191.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MET",
+        "METpA",
+        "METpE",
+        "METpF"
+      ],
+      "cik": "0001099219",
+      "accession_number": "0001099219-25-000227",
+      "filing_date": "2025-11-05",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "On November 5, 2025, MetLife, Inc. issued (i) a news release announcing its results for the quarter ended September 30, 2025 (the \"Earnings Release\"), a copy of which is attached hereto as Exhibit 99.1 and is incorporated herein by reference, (ii) a Quarterly Financial Supplement for the quarter ended September 30, 2025 (the \"Quarterly Financial Supplement\"), a copy of which is attached hereto as Exhibit 99.2 and is incorporated herein by reference.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000227.txt",
+      "ticker": "MET",
+      "universe_ticker": "MET"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-24-009109",
+      "filing_date": "2024-02-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on February 1, 2024, regarding earnings for the fourth quarter and year end of 2023, attached as Exhibit 99.1.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-24-009109.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-24-051517",
+      "filing_date": "2024-04-25",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on April 25, 2024, regarding earnings for the first quarter of 2024, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-24-051517.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-24-083722",
+      "filing_date": "2024-07-30",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on July 30, 2024, regarding earnings for the second quarter of 2024, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-24-083722.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-24-112841",
+      "filing_date": "2024-10-31",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on October 31, 2024, regarding earnings for the third quarter of 2024, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-24-112841.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-25-008863",
+      "filing_date": "2025-02-04",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on February 4, 2025, regarding earnings for the fourth quarter and year end of 2024, attached as Exhibit 99.1.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-25-008863.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-25-038301",
+      "filing_date": "2025-04-24",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on April 24, 2025, regarding earnings for the first quarter of 2025, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-25-038301.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-25-071380",
+      "filing_date": "2025-07-29",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on July 29, 2025, regarding earnings for the second quarter of 2025, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-25-071380.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "MRK"
+      ],
+      "cik": "0000310158",
+      "accession_number": "0001104659-25-103974",
+      "filing_date": "2025-10-30",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Incorporated by reference is a press release issued by Merck & Co., Inc. on October 30, 2025, regarding earnings for the third quarter of 2025, attached as Exhibit 99.1. Also incorporated by reference is certain supplemental information not included in the press release, attached as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/310158/0001104659-25-103974.txt",
+      "ticker": "MRK",
+      "universe_ticker": "MRK"
+    },
+    {
+      "tickers": [
+        "NEE",
+        "NEEpN",
+        "NEEpS",
+        "NEEpT",
+        "NEEpU"
+      ],
+      "cik": "0000753308",
+      "accession_number": "0000753308-25-000064",
+      "filing_date": "2025-12-08",
+      "primary_category": "financial_results",
+      "secondary_category": "guidance_and_outlook",
+      "tertiary_category": "guidance_issuance_or_update",
+      "supporting_text": "NEE now expects adjusted earnings per share for 2025 and 2026 to be between $3.62 and $3.70 and between $3.92 and $4.02, respectively, and expects compound annual growth in adjusted earnings per share of at least 8% annually through 2032, based on the expected 2025 adjusted earnings per share range. In addition, NEE is targeting long-term adjusted earnings per share growth of at least 8% through 2035.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/753308/0000753308-25-000064.txt",
+      "ticker": "NEE",
+      "universe_ticker": "NEE"
+    },
+    {
+      "tickers": [
+        "NKE",
+        "NKEw"
+      ],
+      "cik": "0000320187",
+      "accession_number": "0000320187-25-000008",
+      "filing_date": "2025-03-10",
+      "primary_category": "strategic_transactions",
+      "secondary_category": "deal_terminations",
+      "tertiary_category": "deal_termination",
+      "supporting_text": "On March 7, 2025, concurrently with the Company's entry into the Five Year Credit Agreement described in Item 1.01 hereof, the Company terminated the Credit Agreement dated March 11, 2022, as amended by the First Amendment to Credit Agreement, dated as of March 8, 2024, which provided for a $2.0 billion revolving credit facility. No amounts were outstanding under this facility as of March 7, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000008.txt",
+      "ticker": "NKE",
+      "universe_ticker": "NKE"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-24-000010",
+      "filing_date": "2024-02-09",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. ('PepsiCo'), dated February 9, 2024, reporting PepsiCo's financial results for the 16 and 52 weeks ended December 30, 2023.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-24-000010.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-24-000019",
+      "filing_date": "2024-04-23",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. ('PepsiCo'), dated April 23, 2024, reporting PepsiCo's financial results for the 12 weeks ended March 23, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-24-000019.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-24-000043",
+      "filing_date": "2024-07-11",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. (\"PepsiCo\"), dated July 11, 2024, reporting PepsiCo's financial results for the 12 and 24 weeks ended June 15, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-24-000043.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-24-000054",
+      "filing_date": "2024-10-08",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. ('PepsiCo'), dated October 8, 2024, reporting PepsiCo's financial results for the 12 and 36 weeks ended September 7, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-24-000054.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-25-000008",
+      "filing_date": "2025-02-04",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. (\"PepsiCo\"), dated February 4, 2025, reporting PepsiCo's financial results for the 16 and 52 weeks ended December 28, 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000008.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-25-000022",
+      "filing_date": "2025-04-24",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. ('PepsiCo'), dated April 24, 2025, reporting PepsiCo's financial results for the 12 weeks ended March 22, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000022.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-25-000046",
+      "filing_date": "2025-07-17",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. (\"PepsiCo\"), dated July 17, 2025, reporting PepsiCo's financial results for the 12 and 24 weeks ended June 14, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000046.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PEP"
+      ],
+      "cik": "0000077476",
+      "accession_number": "0000077476-25-000055",
+      "filing_date": "2025-10-09",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "Attached as Exhibit 99.1 and incorporated by reference into this Item 2.02 is a copy of the press release issued by PepsiCo, Inc. ('PepsiCo'), dated October 9, 2025, reporting PepsiCo's financial results for the 12 and 36 weeks ended September 6, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000055.txt",
+      "ticker": "PEP",
+      "universe_ticker": "PEP"
+    },
+    {
+      "tickers": [
+        "PFE"
+      ],
+      "cik": "0000078003",
+      "accession_number": "0000078003-24-000113",
+      "filing_date": "2024-05-22",
+      "primary_category": "operations_and_strategy",
+      "secondary_category": "restructuring",
+      "tertiary_category": "restructuring_plan",
+      "supporting_text": "In the second quarter of 2024, Pfizer announced it is launching a multi-year program to reduce our cost of goods sold. This cost reduction program (the \"program\") will span multiple years, and is expected to include operational efficiencies, network structure changes, and product portfolio enhancements. The first phase of the program is focused on operational efficiencies and is expected to deliver savings of approximately $1.5 billion by the end of 2027, some of which is expected to begin being realized in 2025. The one-time costs to achieve the savings associated with the first phase of the program are expected to be approximately $1.7 billion and primarily include severance and implementation costs.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/78003/0000078003-24-000113.txt",
+      "ticker": "PFE",
+      "universe_ticker": "PFE"
+    },
+    {
+      "tickers": [
+        "PG",
+        "PGw"
+      ],
+      "cik": "0000080424",
+      "accession_number": "0000080424-24-000015",
+      "filing_date": "2024-01-23",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "asset_impairment",
+      "supporting_text": "The Company recognized in the three months ended December 31, 2023, a non-cash, after-tax impairment charge of $1.0 billion ($1.3 billion before tax) to adjust the carrying value of the Gillette intangible asset acquired as part of the Company's 2005 acquisition of The Gillette Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt",
+      "ticker": "PG",
+      "universe_ticker": "PG"
+    },
+    {
+      "tickers": [
+        "PM",
+        "PMw"
+      ],
+      "cik": "0001413329",
+      "accession_number": "0001413329-24-000160",
+      "filing_date": "2024-09-17",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "material_charge_or_gain",
+      "supporting_text": "In connection with the approval of the Sale by the Company's Board of Directors on September 12, 2024, the Company expects to record an estimated loss of approximately $220 million associated with the Sale during the third quarter of 2024, subject to working capital and other adjustments.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000160.txt",
+      "ticker": "PM",
+      "universe_ticker": "PM"
+    },
+    {
+      "tickers": [
+        "RTX"
+      ],
+      "cik": "0000101829",
+      "accession_number": "0000101829-24-000031",
+      "filing_date": "2024-08-30",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "material_charge_or_gain",
+      "supporting_text": "The $100 million portion of the settlement that is not subject to suspension, which was accrued by the Company in the second quarter ended June 30, 2024, will be paid in installments, with $34 million paid in September 2024, $33 million paid by August 29, 2025, and $33 million paid by August 29, 2026.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000031.txt",
+      "ticker": "RTX",
+      "universe_ticker": "RTX"
+    },
+    {
+      "tickers": [
+        "SO",
+        "SOJC",
+        "SOJD",
+        "SOJE"
+      ],
+      "cik": "0000092122",
+      "accession_number": "0000092122-24-000011",
+      "filing_date": "2024-02-15",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "annual_earnings",
+      "supporting_text": "On February 15, 2024, The Southern Company issued a press release regarding its earnings for the three-month and twelve-month periods ended December 31, 2023. The exhibits include earnings and earnings per share in accordance with generally accepted accounting principles for the three-month and twelve-month periods ended December 31, 2023 and 2022.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1004155/0000092122-24-000011.txt",
+      "ticker": "SO",
+      "universe_ticker": "SO"
+    },
+    {
+      "tickers": [
+        "SO",
+        "SOJC",
+        "SOJD",
+        "SOJE"
+      ],
+      "cik": "0000092122",
+      "accession_number": "0000092122-24-000091",
+      "filing_date": "2024-10-31",
+      "primary_category": "financial_results",
+      "secondary_category": "impairments_and_charges",
+      "tertiary_category": "asset_impairment",
+      "supporting_text": "The exhibit also includes earnings and earnings per share for the three-month and nine-month periods ended September 30, 2024, excluding an impairment loss associated with the discontinued development of a multi-use commercial facility at Alabama Power Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/3153/0000092122-24-000091.txt",
+      "ticker": "SO",
+      "universe_ticker": "SO"
+    },
+    {
+      "tickers": [
+        "UNH",
+        "UNHw"
+      ],
+      "cik": "0000731766",
+      "accession_number": "0000731766-25-000245",
+      "filing_date": "2025-09-08",
+      "primary_category": "financial_results",
+      "secondary_category": "guidance_and_outlook",
+      "tertiary_category": "guidance_issuance_or_update",
+      "supporting_text": "Senior leaders from UnitedHealth Group Incorporated (the \"Company\") will be meeting with investors and analysts between September 8, 2025 and September 10, 2025, during which the Company intends to reaffirm our adjusted 2025 earnings per share expectations previously disclosed by the Company on July 29, 2025.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000245.txt",
+      "ticker": "UNH",
+      "universe_ticker": "UNH"
+    },
+    {
+      "tickers": [
+        "VZ"
+      ],
+      "cik": "0000732712",
+      "accession_number": "0000732712-24-000056",
+      "filing_date": "2024-09-12",
+      "primary_category": "operations_and_strategy",
+      "secondary_category": "restructuring",
+      "tertiary_category": "workforce_reduction",
+      "supporting_text": "In June 2024, Verizon announced a voluntary separation program for select U.S.-based management employees. Approximately 4,800 eligible employees will separate from Verizon under this program by the end of March 2025, with over half of these employees exiting in September of 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000056.txt",
+      "ticker": "VZ",
+      "universe_ticker": "VZ"
+    },
+    {
+      "tickers": [
+        "VZ"
+      ],
+      "cik": "0000732712",
+      "accession_number": "0001193125-24-228402",
+      "filing_date": "2024-09-30",
+      "primary_category": "strategic_transactions",
+      "secondary_category": "deal_completions",
+      "tertiary_category": "asset_purchase_or_sale",
+      "supporting_text": "Vertical Bridge will obtain the exclusive rights to lease, operate and manage 6,339 wireless communications towers from subsidiaries of Verizon for approximately $3.3 billion, including certain commercial benefits. The transaction is structured as a prepaid lease with upfront proceeds of approximately $2.8 billion in cash and is expected to close by the end of 2024.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/732712/0001193125-24-228402.txt",
+      "ticker": "VZ",
+      "universe_ticker": "VZ"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpR",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-24-000004",
+      "filing_date": "2024-01-12",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On January 12, 2024, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's fourth quarter 2023 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-24-000004.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-24-000115",
+      "filing_date": "2024-04-12",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On April 12, 2024, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's first quarter 2024 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-24-000115.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-24-000170",
+      "filing_date": "2024-07-12",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On July 12, 2024, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's second quarter 2024 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-24-000170.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-24-000218",
+      "filing_date": "2024-10-11",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On October 11, 2024, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's third quarter 2024 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-24-000218.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-25-000007",
+      "filing_date": "2025-01-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On January 15, 2025, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's fourth quarter 2024 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000007.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-25-000101",
+      "filing_date": "2025-04-11",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On April 11, 2025, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's first quarter 2025 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000101.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-25-000170",
+      "filing_date": "2025-07-15",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On July 15, 2025, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's second quarter 2025 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000170.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "WFC",
+        "WFCpA",
+        "WFCpC",
+        "WFCpD",
+        "WFCpL",
+        "WFCpY",
+        "WFCpZ"
+      ],
+      "cik": "0000072971",
+      "accession_number": "0000072971-25-000239",
+      "filing_date": "2025-10-14",
+      "primary_category": "shareholder_activity",
+      "secondary_category": "investor_communications",
+      "tertiary_category": "investor_presentation",
+      "supporting_text": "On October 14, 2025, the Company intends to host a live conference call that will also be available by webcast to discuss the Company's third quarter 2025 financial results and other matters relating to the Company. In connection therewith, the Company has posted on its website presentation materials containing certain historical and forward-looking information relating to the Company.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000239.txt",
+      "ticker": "WFC",
+      "universe_ticker": "WFC"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-24-000007",
+      "filing_date": "2024-02-02",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "annual_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated February 2, 2024, announcing full-year 2023 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 4Q23 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-24-000007.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-24-000025",
+      "filing_date": "2024-04-26",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated April 26, 2024, announcing first quarter 2024 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 1Q24 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-24-000025.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-24-000048",
+      "filing_date": "2024-08-02",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated August 2, 2024, announcing second quarter 2024 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 2Q24 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-24-000048.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-24-000066",
+      "filing_date": "2024-11-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated November 1, 2024, announcing third quarter 2024 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 3Q24 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-24-000066.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-25-000006",
+      "filing_date": "2025-01-31",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "annual_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated January 31, 2025, announcing full-year 2024 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 4Q24 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-25-000006.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-25-000022",
+      "filing_date": "2025-05-02",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated May 2, 2025, announcing first quarter 2025 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 1Q25 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-25-000022.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-25-000040",
+      "filing_date": "2025-08-01",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated August 1, 2025, announcing second quarter 2025 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 2Q25 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-25-000040.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    },
+    {
+      "tickers": [
+        "XOM"
+      ],
+      "cik": "0000034088",
+      "accession_number": "0000034088-25-000059",
+      "filing_date": "2025-10-31",
+      "primary_category": "financial_results",
+      "secondary_category": "earnings_and_performance",
+      "tertiary_category": "quarterly_earnings",
+      "supporting_text": "The Registrant hereby furnishes the information set forth in its News Release, dated October 31, 2025, announcing third quarter 2025 results, a copy of which is included as Exhibit 99.1, and furnishes the information in the related 3Q25 Investor Relations Data Summary, a copy of which is included as Exhibit 99.2.",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/34088/0000034088-25-000059.txt",
+      "ticker": "XOM",
+      "universe_ticker": "XOM"
+    }
+  ],
+  "review_summary": "Retained excerpts were screened for future operating-risk recovery. Most are historical reporting periods, forecasts, transaction/program schedules, and dividends. None states qualifying recovery from an actual ongoing impairment.",
+  "additional_candidate_exclusion": {
+    "ticker": "FDX",
+    "filing_date": "2024-04-01",
+    "fact": "USPS contract nonrenewal; existing contract expires September 29, 2024.",
+    "reason": "September 29 is 181 days after filing and is the start of revenue loss, not recovery from an already ongoing disruption."
+  }
+}

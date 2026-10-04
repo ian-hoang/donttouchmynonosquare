@@ -1,0 +1,47 @@
+Original-nine S&P 500 sector ETF residual reversal: reject both frozen versions
+Computed 2026-10-03. Neither tested version qualifies as an alpha candidate.
+
+The one-day version loses after costs in every evaluation period. The five-day version earns only 0.15 holdout Sharpe at 2 bp per side, falls to -0.79 at 5 bp, and was already negative in development and validation. No retuning or new variants were added after outcomes.
+
+Variant / period | Net Sharpe 2 bp | Net Sharpe 5 bp | Annual mean, 2 bp | Break-even per side
+residual_reversal_1day / development | -1.233 | -3.026 | -6.929% | -0.056 bp
+residual_reversal_1day / validation | -1.184 | -2.785 | -7.332% | -0.218 bp
+residual_reversal_1day / holdout | -1.273 | -3.173 | -6.676% | -0.004 bp
+residual_reversal_5day / development | -0.537 | -1.357 | -3.145% | 0.035 bp
+residual_reversal_5day / validation | -1.187 | -1.927 | -7.414% | -2.798 bp
+residual_reversal_5day / holdout | 0.148 | -0.791 | 0.745% | 2.474 bp
+
+Holdout details (691 trading days; fixed $1 gross target):
+1-day: annualized arithmetic excess mean-6.676%; annual vol5.247%; fixed capital max DD-20.016%; daily one-way turnover1.322; break-even cost-0.004bp/side after short carry;95%20-day block bootstrap Sharpe CI[-2.299,-0.275].
+5-day: annualized arithmetic excess mean+0.745%; annual vol5.021%; fixed capital max DD-7.201%; daily one-way turnover0.624; break-even cost2.474bp/side after short carry;95%20-day block bootstrap Sharpe CI[-1.147,+1.439].
+
+Why the attractive-looking recent gross result is insufficient:
+The five-day version has holdout gross-excess Sharpe0.978 and annualmean4.915% before the assumed borrowcarry andexecution costs. Holding roughly0.5 of capital short at2% per year costs about 1% annually. Rebalancing0.624gross each day costs roughly 3.14% annually at 2 bp per side. Its2022–2023 gross Sharpe was already-0.531. The market-regression holdout alpha t-statistic after costs is only0.099 (HAC 20); realized SPY beta0.027. These are weak recent returns rather than a robust, hidden Sharpe2 strategy.
+
+Method:
+XLB,XLE,XLF,XLI,XLK,XLP,XLU,XLV,XLY plusSPY; complete daily Yahoo histories2004-01-02–2026-10-02,5724rows perasset.2004 supplies the252-daybeta warmup. Trailing252-day covariance beta excludes the current signal return. Subtract beta timesSPY from each sector return; sum either1or5days; cross-sectional rank and reverse. The sector ranks are dollar-neutral, andSPY hedges remaining estimated beta. Normalize all 10 legs to total gross 1. Signal afterclose t trades atclose t+1 and first earns return ending t+2. No same-close fill.
+
+Results are arithmetic P&L on constant fixed capital, stated as excess of the cash benchmark; they are not a reinvested NAV CAGR. Cash benchmark is lagged FRED DGS3MO on ACT365; model subtracts net risky exposure times benchmark, assuming cash and financing symmetric at that rate. It then subtracts2% annual short carry on short market value over actual calendar days, plus2/5 bp one-way costs on all ETF legs including drift, initial entry and final liquidation. Period boundaries inherit continuous positions and do not force trades. Some fixed notional development losses exceed100% capital; those paths would require recapitalization or stopout and are only diagnostic P&L series, not feasible wealth trajectories.
+
+Corporate actions and accounting checks:
+Yahoo adjusted closes include split/dividend factors. Reconciled daily factor changes with the retained dividend events: maximum unexplained adjustment0.0123bp, consistent with rounding. No ETF-price imputation or silent forwardfills. Treasury yields alone carry forward nonpublication gaps and always lag the return date.
+Independent loop accounting agrees exactly with the vectorized P&L. Signals are prefix-invariant at600, 3000, 5000 rows; full 10-column coverage and gross 1 checks pass. Estimated signal beta is neutral within 2.1e-16. Explicit two-day signal-to-return timing assertions and independent NumPy252-daybeta calculation pass.
+The frozen implementation uses adjustedclose total return drift, i.e. distribution reinvestment. An independent exactcash-distribution sensitivity instead recognizes dividends as cash and drifts positions on price returns only. Holdout Sharpes become-1.2721 and+0.1482; annualmean differences<0.3basispoints. Thus dividend/drift convention does not change the finding. See accounting_sensitivity.json.
+
+Declared diagnostics, not new selection candidates:
+The same1/5day ranked reversal using raw total returns rather than beta-residual returns still hedgesSPY. Holdout net2bp Sharpes are-1.147 and-0.054. They do not rescue the family.
+
+Data and inference limits:
+This is an ETF-level S&P500-adjacent study, not constituent stockalpha. Sector index membership and methodology changed historically. Current vendor-adjusted history can be revised; chronological holdout is not claimed globally unseen by all prior research. Borrow2% is an imposed scenario, not observed historic executions. Closing-print fills and specified costs do not establish fund capacity. Shortproceeds restrictions and funding spreads could worsen results. Bootstrap intervals are conditional sampling uncertainty and do not correct for the many ideas previously tried elsewhere. No published profitability claim is inferred from source documentation.
+The PROTOCOL.json frozen_utc midnight field is a date placeholder rather than exactwall clock time, explicitly noted there; the manifest records actual fetch time 16:44 UTC and the protocol hash before first outcomes. Strategy parameters were frozen before calculations; no changes followed results.
+
+Primary-source documentation (checked2026-10-03):
+State Street sectorETF universe: https://www.ssga.com/us/en/intermediary/capabilities/equities/sector-investing/select-sector-etfs
+Yahoo adjustmentmethod: https://in.help.yahoo.com/kb/adjusted-close-sln28256.html
+FRED DGS3MO definition: https://fred.stlouisfed.org/series/DGS3MO
+These sources establish instruments/measurement, not alpha.
+
+Artifacts:
+PROTOCOL.json frozen choices;fetch.py public download;manifest.json raw SHA256 provenance;study.py reproducible engine;results.json full period metrics and uncertainty;daily.json all four daily series;verification.json checks; check_accounting.py and accounting_sensitivity.json cash dividendaudit.
+Run: .venv/bin/python research/sp500_alpha/sectors/study.py
+Run accounting audit: .venv/bin/python research/sp500_alpha/sectors/check_accounting.py

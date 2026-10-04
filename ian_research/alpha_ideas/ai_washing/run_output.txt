@@ -1,0 +1,79 @@
+=== DATA ===
+earnings 8-K filings: 40,762; with press-release text: 29,442
+text releases of universe firms: 29,329; with baseline: 23,674; eligible (in universe at formation, baseline, window): 19,884
+        events  jumps  washers  investors  inv_unknown   mean_ai
+day0                                                            
+2020Q4      16      0        0          0            5  0.062500
+2021Q1     183      2        0          2           22  0.081967
+2021Q2     880      3        0          2          105  0.144318
+2021Q3     885      1        0          1          107  0.135593
+2021Q4     886      6        2          2          117  0.246050
+2022Q1     929      8        5          3          129  0.219591
+2022Q2     928      8        4          4          124  0.228448
+2022Q3     931      8        2          6          118  0.235231
+2022Q4     944      4        2          1          124  0.159958
+2023Q1     978      8        2          4          125  0.269939
+2023Q2     951     25        5         18          126  0.496320
+2023Q3     933     47        9         34          112  0.735263
+2023Q4     963     36        9         25          124  0.695742
+2024Q1    1005     37       12         24          128  0.824876
+2024Q2     940     37       22         15          125  0.980851
+2024Q3     932     24       13         11          118  0.960300
+2024Q4     944     28       16          9          124  1.085805
+2025Q1     967     35       19         14          119  1.288521
+2025Q2     942     27       14         12          125  1.291932
+2025Q3     915     50       22         26          109  1.663388
+2025Q4     931     71       36         31          116  1.914071
+2026Q1     966     74       37         33          116  1.988613
+2026Q2     932     78       31         42          115  2.304721
+2026Q3       3      0        0          0            0  0.333333
+
+primary window ('2023-01-01', '2026-06-30'): eligible 13,299, AI jumps 577, washers 247, investors 298, jumps with unknown investment 32
+investment growth g (eligible, primary): median 0.110, share < 10%: 0.42, unknown 0.13
+
+random washer events:
+  FCN    2024-02-26 16:45 day0 2024-02-27 AI   5 (baseline  0.5, 4 prior)  g -7.2%  10-K filed 2024-02-22  window 43d  acc 0001193125-24-046274
+  SNDK   2026-01-29 21:09 day0 2026-01-30 AI   4 (baseline  1.0, 3 prior)  g +8.9%  10-K filed 2025-08-21  window 62d  acc 0001628280-26-004121
+  LMND   2025-02-25 17:00 day0 2025-02-26 AI  15 (baseline 10.0, 4 prior)  g +9.3%  10-K filed 2024-02-28  window 48d  acc 0001691421-25-000021
+  BILL   2025-11-06 21:03 day0 2025-11-07 AI   5 (baseline  0.5, 4 prior)  g +2.0%  10-K filed 2025-08-28  window 61d  acc 0001628280-25-050144
+  BSY    2025-11-05 12:04 day0 2025-11-05 AI   6 (baseline  0.5, 4 prior)  g -1.4%  10-K filed 2025-02-26  window 62d  acc 0001031308-25-000012
+  PATH   2025-03-12 20:23 day0 2025-03-13 AI  46 (baseline 24.0, 4 prior)  g +9.7%  10-K filed 2024-03-27  window 54d  acc 0001734722-25-000004
+  IEX    2026-04-29 07:01 day0 2026-04-29 AI   4 (baseline  1.0, 4 prior)  g +0.8%  10-K filed 2026-02-19  window 62d  acc 0000832101-26-000007
+  RBLX   2025-10-30 11:52 day0 2025-10-30 AI  21 (baseline  2.8, 4 prior)  g +3.1%  10-K filed 2025-02-18  window 62d  acc 0001315098-25-000326
+  AI     2025-05-28 20:13 day0 2025-05-29 AI  86 (baseline 72.8, 4 prior)  g -19.4%  10-K filed 2024-06-18  window 50d  acc 0001628280-25-028158
+  BDX    2026-05-07 06:30 day0 2026-05-07 AI   6 (baseline  2.8, 4 prior)  g +5.7%  10-K filed 2025-11-25  window 62d  acc 0001628280-26-031638
+  NTAP   2024-08-28 20:05 day0 2024-08-29 AI  19 (baseline  6.0, 4 prior)  g -0.9%  10-K filed 2024-06-10  window 60d  acc 0000950170-24-101383
+  AMZN   2023-08-03 16:09 day0 2023-08-04 AI  28 (baseline  8.8, 4 prior)  g +4.2%  10-K filed 2023-02-03  window 59d  acc 0001018724-23-000010
+  NVDA   2024-05-22 16:21 day0 2024-05-23 AI  34 (baseline 28.8, 4 prior)  g +6.2%  10-K filed 2024-02-21  window 62d  acc 0001045810-24-000113
+  CRM    2025-05-28 16:05 day0 2025-05-29 AI  17 (baseline  7.2, 4 prior)  g +9.0%  10-K filed 2025-03-05  window 62d  acc 0001108524-25-000027
+  DELL   2025-11-25 21:10 day0 2025-11-26 AI   9 (baseline  5.8, 4 prior)  g +2.8%  10-K filed 2025-03-25  window 62d  acc 0001571996-25-000118
+peer benchmark level (eligible events): {'sic2_tercile': 11760, 'sic2': 4204, 'tercile': 3920}; median peers 25
+
+=== PRIMARY TEST: washers, calendar-time monthly abnormal return (prediction < 0) ===
+washer events: 247  (142 firms)
+label                 washers
+months                     30
+mean_monthly_AR_%    0.200293
+t_NW3                0.431879
+avg_held             20.71547
+mean_cost_%          0.232035
+short_net_%/mo      -0.432328
+short_net_t         -0.932924
+VERDICT: FAIL
+
+=== ROBUSTNESS (reported only) ===
+                                   months  mean_monthly_AR_%  t_NW3  avg_held  mean_cost_%  short_net_%/mo  short_net_t  events
+label                                                                                                                          
+washers                                30              0.200  0.432    20.715        0.232          -0.432       -0.933     247
+1 all AI jumps                         40              0.140  0.363    39.925        0.232          -0.373       -0.970     577
+2 investors                            35             -0.267 -0.423    22.260        0.222           0.045        0.071     298
+4 washers, strict dictionary           25              0.642  1.178    19.848        0.224          -0.866       -1.573     216
+5 washers, length-normalised jump      22             -0.274 -0.520    15.289        0.219           0.054        0.102     165
+8 washers excl. core tech               9              1.497  2.406    14.072        0.231          -1.728       -2.809     110
+7 washers, 1-month hold                 8              0.520  1.148    15.416        0.455          -0.975       -2.184     247
+
+2b washers minus investors: +1.263%/month, t +1.95, months 26 (prediction < 0)
+3 event regression CAR on dAI (winsorised), FE quarter+SIC2, cluster month: slope -0.0210% per mention, t -0.13, N 13,299
+6 washers daily AR on FF3+Mom: alpha -0.204%/month, t -0.36, days 892 (factors end 2026-08-31); loadings MktRF +0.15, SMB -0.09, HML -0.13, Mom -0.02
+9 announcement reaction (days 0..+1): washers +0.80% (n 247), non-jump events -0.10% (n 12722); Welch t of the difference +1.11
+10 pre-ChatGPT placebo: only 14 washer events (< 30), not tested

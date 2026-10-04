@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "frozen_before_strategy_outcomes": true,
+  "frozen_utc": "2026-10-03T16:45:13.085104+00:00",
+  "data": "Massive SPY one-minute split-adjusted trade aggregates, 2015-01-01 through 2026-10-02; daily bars and historical cash dividends for prior-close signal",
+  "hypotheses": {
+    "momentum": "Sign of (09:59 minute close + ex-date cash dividend)/previous official daily close - 1 predicts late-session return. This is a shortened, delayed-execution adaptation of Gao et al. (2018), not an exact replication.",
+    "extreme_reversal": "At 15:30, if absolute(open-to-15:29 minute close return) exceeds 2 times the standard deviation of the same return over the previous 60 full sessions (60 required), trade opposite its sign; otherwise flat. No threshold/window sweep."
+  },
+  "execution": "One dollar of SPY notional per dollar of capital; +/-1 or flat; entry at 15:31 minute open, exit at 15:59 minute open. Prices are trade-print proxies, not executable quotes. Fixed costs account for estimated spread/fees/slippage. Entry delayed to 15:32 as mandatory sensitivity, exit unchanged.",
+  "costs": {
+    "base_bps_per_side": 1,
+    "stress_bps_per_side": 3,
+    "short_borrow_annual_rate": 0.01,
+    "short_borrow_daycount": 360,
+    "short_borrow_minimum_days": 1
+  },
+  "cash_convention": "Cash yield set to zero, fully collateralized notional, no leverage. Performance is incremental trading P&L per full account equity. No interest on short proceeds; one calendar day of 1% annualized borrow charged per short trade. Do not add a risk-free rate to gross Sharpe.",
+  "calendar": "Retain every observed SPY daily session, including flat and excluded days. Exclude all July 2/3, December 24, Friday after fourth November Thursday to conservatively avoid early closes, even when some of those dates were full sessions. Require all signal/entry/exit minute bars and positive prices. Missing observations are flat and separately reported.",
+  "splits_dividends": "Massive bars split-adjusted but not dividend-adjusted. Add ex-date cash dividend to current 09:59 price when computing previous-close momentum signal. All actual holdings intraday so no dividend cashflow earned or paid. Verify SPY split history.",
+  "periods": {
+    "development": [
+      "2015-01-01",
+      "2021-12-31"
+    ],
+    "validation": [
+      "2022-01-01",
+      "2023-12-31"
+    ],
+    "holdout": [
+      "2024-01-01",
+      "2026-10-02"
+    ]
+  },
+  "benchmarks": [
+    "Always long identical 15:31\u201315:59 window with identical costs",
+    "Daily SPY close-to-close for beta diagnostic only"
+  ],
+  "statistics": "252-day annualized Sharpe calculated on every session including flat days; arithmetic mean annualized, compound CAGR, max drawdown; Newey-West HAC lag 5 mean t-stat, stationary 10-session-block bootstrap Sharpe CI using seed 731 and 2000 replicates; daily market beta and alpha HAC; yearly table; two-sided p-values Holm-adjusted over the two hypotheses. No selecting configurations from holdout.",
+  "gate": "Candidate requires positive validation and holdout base-cost mean, holdout Sharpe >=0.75, positive stress-cost holdout mean, positive delayed-entry holdout mean, and holdout two-sided mean p<0.05 after Holm adjustment. This is a research screen, not a claim of executable fills, institutional capacity, or future profitability.",
+  "primary_source": "https://www.sciencedirect.com/science/article/pii/S0304405X18301351"
+}

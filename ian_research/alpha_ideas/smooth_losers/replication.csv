@@ -1,0 +1,8 @@
+series,in_bp_day,out_bp_day,diff_bp_day,t,N,share_of_total_in_window,source
+WML (winners - losers),11.7229,1.7003,10.0226,1.6601,237,0.7410,Massive (ours)
+Losers (raw),-9.6873,6.3940,-16.0812,-2.2152,237,,Massive (ours)
+Winners (raw),2.0356,8.0943,-6.0587,-1.0164,237,,Massive (ours)
+Losers - universe,-7.9642,0.0959,-8.0601,-2.1773,237,,Massive (ours)
+Winners - universe,3.7587,1.7963,1.9624,0.5495,237,,Massive (ours)
+Universe EW,-1.7231,6.2980,-8.0211,-1.8090,237,,Massive (ours)
+Ken French Mom factor (CRSP),6.3263,-1.3948,7.7211,2.1421,236,2.0518,Ken French library

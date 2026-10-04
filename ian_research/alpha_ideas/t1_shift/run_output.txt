@@ -1,0 +1,169 @@
+Trading days: 4080 (2010-07-01 -> 2026-09-30); NYSE days dropped for vendor data gaps: ['2014-06-12', '2014-06-13', '2014-09-23', '2014-09-24', '2014-09-25', '2014-10-03', '2014-12-31']
+Days whose close is before 16:00 ET (half-days / data holes): 37
+            es_close_hour  zn_close_hour
+2010-11-26           14.0           14.0
+2010-12-31           16.0           14.0
+2011-11-25           14.0           14.0
+2012-07-03           14.0           16.0
+2012-11-23           14.0           14.0
+2012-12-24           14.0           14.0
+2013-07-03           14.0           16.0
+2013-11-29           14.0           14.0
+2013-12-24           14.0           14.0
+2014-07-03           14.0           16.0
+2014-11-28           14.0           14.0
+2014-12-24           14.0           14.0
+2015-11-27           14.0           14.0
+2015-12-24           14.0           14.0
+2016-11-25           14.0           14.0
+2017-07-03           14.0           16.0
+2017-11-24           14.0           14.0
+2018-07-03           14.0           16.0
+2018-11-23           14.0           14.0
+2018-12-24           14.0           14.0
+2019-07-03           14.0           16.0
+2019-11-29           14.0           14.0
+2019-12-24           14.0           14.0
+2020-02-27           16.0           14.0
+2020-06-30           16.0           11.0
+2020-11-27           14.0           14.0
+2020-12-24           14.0           14.0
+2021-11-26           14.0           14.0
+2022-11-25           14.0           14.0
+2023-07-03           14.0           16.0
+2023-11-24           14.0           14.0
+2024-07-03           14.0           16.0
+2024-11-29           14.0           14.0
+2024-12-24           14.0           14.0
+2025-07-03           14.0           16.0
+2025-11-28           14.0           14.0
+2025-12-24           14.0           14.0
+Returns that span a vendor gap: ['2014-06-16', '2014-09-26', '2014-10-06', '2015-01-02']
+ES: 65 rolls; max |roll-safe ret| on roll days 0.0548, max |naive ret| 0.0613, mean (naive - roll-safe) 6.4 bp
+ZN: 65 rolls; max |roll-safe ret| on roll days 0.0085, max |naive ret| 0.0159, mean (naive - roll-safe) -28.3 bp
+market       date  old_iid  new_iid       close  prev_close_old  naive_ret  roll_safe_ret
+    ES 2010-09-13    26714     3076 1117.000000      1109.75000   0.006533       0.011088
+    ES 2010-12-13     3076    70248 1235.500000      1239.75000  -0.003428       0.000405
+    ES 2011-03-14    70248    75884 1291.500000      1303.75000  -0.009396      -0.005965
+    ZN 2010-09-02   816003    44395  124.531250       125.78125  -0.009938      -0.002378
+    ZN 2010-12-02    44395    83568  122.437500       123.71875  -0.010356      -0.002165
+    ZN 2011-03-02    83568   116177  118.640625       120.50000  -0.015430      -0.004588
+
+Threshold rebalancing frequency by delta (per year):
+ delta_pct  rebalances_per_year
+       0.0           251.028602
+       0.5            29.786184
+       1.0            11.816007
+       1.1            10.400548
+       1.5             5.600295
+       2.0             3.630960
+       2.5             2.523210
+Median over the 26 deltas: 7.9/yr (paper: ~16/yr)
+threshold signal (% weight): mean 0.304  sd 0.473  AR1 0.76  skew -1.43  min -3.21  max 2.60
+calendar  signal (% weight): mean 0.145  sd 0.936  AR1 0.91  skew -1.31  min -8.69  max 4.39
+corr(threshold, calendar) = 0.62  (paper ~0.60)
+Position w: mean -0.128, sd 0.334, mean |w| 0.279, mean daily |dw| 0.162
+
+=== 3a strategy statistics (daily returns; annualised with 252) ===
+                           period       strategy  kind  n_days  ann_ret_pct  ann_vol_pct  sharpe  skew  max_dd_pct  t_mean  t_nw5  annual_turnover  cost_drag_pct_pa
+     (i) 2010-07-02 -> 2023-03-17       combined gross    3192         5.04         8.83    0.57  6.80      -12.75    2.03   2.17            41.74              1.20
+     (i) 2010-07-02 -> 2023-03-17       combined   net    3192         3.84         8.81    0.44  6.77      -13.47    1.55   1.66            41.74              1.20
+     (i) 2010-07-02 -> 2023-03-17 threshold_only gross    3192         7.25        13.61    0.53 13.02      -12.59    1.90   2.08            37.26              1.08
+     (i) 2010-07-02 -> 2023-03-17 threshold_only   net    3192         6.17        13.57    0.45 12.97      -13.71    1.62   1.78            37.26              1.08
+     (i) 2010-07-02 -> 2023-03-17  calendar_only gross    3192         2.84        10.23    0.28  0.51      -21.39    0.99   0.99            51.95              1.49
+     (i) 2010-07-02 -> 2023-03-17  calendar_only   net    3192         1.34        10.23    0.13  0.43      -22.35    0.47   0.47            51.95              1.49
+               (i) excl. Mar 2020       combined gross    3170         2.43         6.77    0.36  1.07      -16.49    1.27   1.32            41.74              1.20
+               (i) excl. Mar 2020       combined   net    3170         1.24         6.75    0.18  1.02      -17.40    0.65   0.68            41.74              1.20
+               (i) excl. Mar 2020 threshold_only gross    3170         2.92         7.49    0.39  0.05      -12.59    1.38   1.62            37.26              1.08
+               (i) excl. Mar 2020 threshold_only   net    3170         1.89         7.47    0.25 -0.03      -13.71    0.90   1.05            37.26              1.08
+               (i) excl. Mar 2020  calendar_only gross    3170         1.93         9.90    0.19  0.20      -29.48    0.69   0.65            51.95              1.49
+               (i) excl. Mar 2020  calendar_only   net    3170         0.43         9.89    0.04  0.11      -30.42    0.16   0.15            51.95              1.49
+(ii) 2023-03-20 -> 2026-09-30 OOS       combined gross     887         0.53         5.31    0.10  0.08       -8.87    0.19   0.20            37.49              0.77
+(ii) 2023-03-20 -> 2026-09-30 OOS       combined   net     887        -0.24         5.29   -0.04  0.03      -10.35   -0.08  -0.09            37.49              0.77
+(ii) 2023-03-20 -> 2026-09-30 OOS threshold_only gross     887        -2.01         6.28   -0.32 -3.47      -11.93   -0.60  -0.72            29.43              0.60
+(ii) 2023-03-20 -> 2026-09-30 OOS threshold_only   net     887        -2.61         6.27   -0.42 -3.55      -12.93   -0.78  -0.94            29.43              0.60
+(ii) 2023-03-20 -> 2026-09-30 OOS  calendar_only gross     887         3.07         7.53    0.41  1.16      -10.03    0.77   0.77            49.15              1.01
+(ii) 2023-03-20 -> 2026-09-30 OOS  calendar_only   net     887         2.07         7.51    0.28  1.10      -10.38    0.52   0.52            49.15              1.01
+    full 2010-07-02 -> 2026-09-30       combined gross    4079         4.06         8.19    0.50  6.68      -12.75    1.99   2.13            40.82              1.11
+    full 2010-07-02 -> 2026-09-30       combined   net    4079         2.95         8.17    0.36  6.64      -13.47    1.45   1.56            40.82              1.11
+    full 2010-07-02 -> 2026-09-30 threshold_only gross    4079         5.24        12.39    0.42 13.42      -12.59    1.70   1.87            35.56              0.98
+    full 2010-07-02 -> 2026-09-30 threshold_only   net    4079         4.26        12.36    0.34 13.36      -13.71    1.39   1.53            35.56              0.98
+    full 2010-07-02 -> 2026-09-30  calendar_only gross    4079         2.89         9.71    0.30  0.59      -21.39    1.20   1.20            51.34              1.39
+    full 2010-07-02 -> 2026-09-30  calendar_only   net    4079         1.50         9.70    0.15  0.50      -22.35    0.62   0.62            51.34              1.39
+Paper (1997-09-10 -> 2023-03-17, gross): ann. ret 10.20%, vol 9.17%, Sharpe 1.11, skew 5.23; net Sharpe 'close to 1'; ex Sep08-Mar09 and Mar20: Sharpe 0.90
+threshold_only gross vol over (i): 13.6% (paper: 11.6% for both)
+calendar_only gross vol over (i): 10.2% (paper: 11.6% for both)
+DIAGNOSTIC regression (i): threshold -0.308 (t -2.87)  calendar +0.083 (t +0.96)  calendar_x_week4 -0.118 (t -1.13)
+DIAGNOSTIC regression (ii): threshold +0.035 (t +0.18)  calendar -0.147 (t -0.92)  calendar_x_week4 +0.056 (t +0.36)
+Gross P&L by calendar year (sum of daily returns, %): 2010: -1.6, 2011: +12.5, 2012: +5.1, 2013: -6.9, 2014: +1.0, 2015: +8.7, 2016: +5.2, 2017: -2.3, 2018: +8.4, 2019: -1.7, 2020: +25.9, 2021: +4.3, 2022: +4.1, 2023: +6.8, 2024: -0.1, 2025: -0.9, 2026: -2.7
+
+3a in-sample verdict: WEAKER BUT PRESENT (t >= 2, Sharpe < 0.7)
+3a out-of-sample verdict: DOES NOT CLEAR THE BAR (needs gross t >= 2 and net mean > 0)
+
+=== 3b months: 195; excluded for data gaps: ['2014-09', '2014-12'] ===
+regime
+T+1    29
+T+2    80
+T+3    86
+
+PRIMARY: ES  [mean_T+1(W[L-3,L-1] - W[L-4,L-2])] - [same in T+2]   (bp per 3-day window; prediction < 0)
+  diff=-55.43  t=-2.17  p_two_sided=0.03  n_a=29  n_b=80
+3b verdict: WORTH A SECOND LOOK (-3 < t <= -2)
+
+Window means by regime (bp per 3-day window, one-sample t):
+regime        T+3   T+2   T+1
+quantity                     
+es_W3_1      40.7  42.8  -2.1
+es_W4_2      23.1  14.4  24.9
+es_W5_3       4.8  13.6  39.0
+es_d_T1vsT2  17.6  28.4 -27.0
+es_d_T2vsT3  18.4   0.8 -14.0
+y_W3_1       54.4  29.0 -27.1
+y_W4_2       27.8  16.3 -40.7
+y_W5_3       -4.9   2.7 -19.4
+y_d_T1vsT2   26.6  12.6  13.6
+y_d_T2vsT3   32.7  13.6 -21.4
+regime        T+3   T+2   T+1
+quantity                     
+es_W3_1      2.53  1.95 -0.07
+es_W4_2      1.56  0.67  1.06
+es_W5_3      0.34  0.47  1.49
+es_d_T1vsT2  1.32  1.84 -1.32
+es_d_T2vsT3  1.25  0.03 -0.66
+y_W3_1       2.95  1.16 -0.99
+y_W4_2       1.54  0.79 -1.90
+y_W5_3      -0.30  0.09 -0.94
+y_d_T1vsT2   1.64  0.66  0.59
+y_d_T2vsT3   1.99  0.50 -0.95
+
+DiD tests (bp per 3-day window, Welch t):
+                                    test prediction   diff     t  p_two_sided  n_a  n_b
+            PRIMARY ES: T+1 vs T+2 shift        < 0 -55.43 -2.17         0.03   29   80
+y (rebalancing-signed): T+1 vs T+2 shift        > 0   1.00  0.03         0.97   29   80
+             ES: T+2 vs T+3 shift (2017)        < 0 -17.57 -0.62         0.54   80   84
+              y: T+2 vs T+3 shift (2017)        > 0 -19.08 -0.60         0.55   80   84
+PLACEBO mid-month anchor, ES: T+1 vs T+2       none -61.93 -1.68         0.10   29   80
+ PLACEBO mid-month anchor, y: T+1 vs T+2       none -39.55 -0.97         0.34   29   80
+PLACEBO mid-month anchor, ES: T+2 vs T+3       none -34.54 -1.35         0.18   80   86
+
+POST-HOC (not pre-registered) leave-one-T+1-month-out: t ranges -2.54 .. -1.92; weakest when dropping 2025-10 (diff -48.4 bp, t -1.92); 5 of 29 single-month drops push t above -2
+
+Day-by-day profiles (k = 0 is the last trading day L; mean bp/day, t):
+       es_mean_bp                es_t             y_mean_bp                 y_t                 n            
+regime        T+1    T+2    T+3   T+1   T+2   T+3       T+1    T+2    T+3   T+1   T+2   T+3   T+1   T+2   T+3
+k                                                                                                            
+-10         -7.74  20.57  18.79 -0.53  1.60  2.24      6.36  -5.77   6.26  0.43 -0.38  0.61  29.0  80.0  83.0
+-9         -14.55 -10.00  11.93 -0.91 -0.80  1.15    -30.42 -14.51  -2.90 -2.03 -1.10 -0.24  29.0  80.0  84.0
+-8         -15.23  -5.11   8.62 -0.93 -0.45  0.92      8.86 -12.78   1.05  0.60 -1.00  0.10  29.0  80.0  84.0
+-7           5.05 -12.89   7.66  0.31 -1.08  0.87     -9.17 -12.85   4.55 -0.64 -0.90  0.46  29.0  80.0  84.0
+-6          12.04   1.02  -0.13  0.78  0.10 -0.01     13.53  -8.98  15.97  0.96 -0.79  1.27  29.0  80.0  84.0
+-5          -0.74  -4.03   5.04 -0.04 -0.24  0.55     10.14  -4.09   0.03  0.54 -0.22  0.00  29.0  80.0  84.0
+-4          17.74   3.56 -12.15  1.32  0.30 -1.20    -11.66   5.58  -8.52 -0.84  0.43 -0.69  29.0  80.0  84.0
+-3          21.96  14.02  11.87  1.65  0.93  1.33    -17.84   1.22   3.56 -1.53  0.07  0.32  29.0  80.0  84.0
+-2         -14.79  -3.22  23.42 -1.20 -0.25  2.13    -11.23   9.52  32.71 -0.93  0.70  2.58  29.0  80.0  84.0
+-1          -9.24  32.01   5.41 -0.63  2.46  0.75      1.96  18.21  18.10  0.11  1.33  2.06  29.0  80.0  84.0
+ 0          21.86 -11.57  -2.12  1.32 -1.01 -0.20     17.84  -4.16  14.41  1.16 -0.36  1.20  29.0  80.0  84.0
+ 1         -15.70  19.46  16.35 -1.01  1.53  1.31      5.13 -14.99 -39.64  0.25 -1.11 -2.64  28.0  80.0  84.0
+ 2          13.53  12.26   2.68  0.84  0.91  0.31     -3.10  20.06  -1.15 -0.16  1.31 -0.11  28.0  80.0  84.0
+
+Wrote daily.csv, monthly_windows.csv, monthly_windows_placebo.csv, profiles.csv, strategy_stats.csv, did_tests.csv, window_means_by_regime.csv, delta_diagnostics.csv, roll_checks.csv, replication_equity.png

@@ -1,0 +1,66 @@
+{
+  "2024_2025": {
+    "requested": 1552,
+    "statuses": {
+      "valid": 1538,
+      "dropped": 14
+    },
+    "short": {
+      "n": 1538,
+      "mean": -0.004883422098045022,
+      "median": -0.0007995301623120548,
+      "std": 0.027069178768037647,
+      "per_trade_sharpe": -0.18040525499100837,
+      "win_rate": 0.47074122236671,
+      "min": -0.3771672100250833,
+      "max": 0.08444503933526064
+    },
+    "legacy_same_cohort": {
+      "n": 1538,
+      "mean": -0.004789966732875275,
+      "median": -0.0006274821231986514,
+      "std": 0.02680365038761847,
+      "per_trade_sharpe": -0.17870576073055802,
+      "win_rate": 0.4778933680104031,
+      "min": -0.37632944482987896,
+      "max": 0.08564278579102172
+    },
+    "dropped": {
+      "entry:quote_stale_or_future": 5,
+      "exit:quote_stale_or_future": 6,
+      "exit:no_displayed_size": 3
+    }
+  },
+  "2026_reused": {
+    "requested": 748,
+    "statuses": {
+      "valid": 739,
+      "dropped": 9
+    },
+    "short": {
+      "n": 739,
+      "mean": -0.00541595063863808,
+      "median": 0.0006045584802962177,
+      "std": 0.03658838827374314,
+      "per_trade_sharpe": -0.14802375546355287,
+      "win_rate": 0.5087956698240866,
+      "min": -0.31276952503020145,
+      "max": 0.08834110863818354
+    },
+    "legacy_same_cohort": {
+      "n": 739,
+      "mean": -0.005305025015342751,
+      "median": 0.0006605273594243879,
+      "std": 0.03603298441625158,
+      "per_trade_sharpe": -0.1472269117112065,
+      "win_rate": 0.5087956698240866,
+      "min": -0.30173696533708666,
+      "max": 0.09074824427009365
+    },
+    "dropped": {
+      "exit:quote_stale_or_future": 5,
+      "entry:quote_stale_or_future": 3,
+      "exit:no_displayed_size": 1
+    }
+  }
+}

@@ -1,0 +1,62 @@
+NAMED-COUNTERPARTY READTHROUGH: FEASIBILITY RESULT
+
+Decision: do not price this candidate under the frozen rule. This screen did not
+identify the minimum 10 source-validated events. No price or return data was fetched.
+The rule was not broadened to manufacture a trade count.
+
+What was screened
+- All-issuer Massive 8-K disclosures dated 2024-01-01 through 2025-12-31.
+- Fixed categories: deal termination (1,716 rows), deal breach/default (25),
+  cybersecurity incident (114), natural-disaster impact (42), facility closure (155).
+- Total: 2,052 disclosure rows, 1,945 unique filing accessions.
+- The affected company had to be in the existing literal 99-ticker universe.
+- A broad name screen found 183 potential third-party mentions. Another 8 rows
+  mentioned only their own matched issuer, and 1,861 lacked a matched alias.
+
+Result
+Zero qualifying events were source-validated. The closest lead, Dell's January 30,
+2024 filing about Broadcom/VMware, establishes termination of a commercial distribution
+framework. It does not explicitly establish cancellation of committed purchases,
+which the frozen rule requires. It remains an unvalidated near miss, not an eligible
+short signal. The January 25 event date is distinct from its January 30 filing date.
+
+The other operational near miss, Krispy Kreme ending its McDonald's relationship on
+June 24, 2025, was checked against the 8-K and its contemporaneous joint press release.
+The exhibit describes the product as a small, non-material part of McDonald's
+breakfast business. Treating this as demonstrated material damage to McDonald's
+would overstate the source. The frozen negative-customer rule does not qualify it.
+
+Most mention hits were irrelevant: 135 described financing/equity arrangements and
+21 described custody/administration replacements. Other hits were license options
+declined by the large-cap company, contractual expirations, settlement liabilities,
+unrelated company names, or statements without the required negative economic role.
+All 183 candidates have recorded reasons in candidate_audit.json. Excerpt-based
+exclusions are distinguished from the two filings and one exhibit actually reviewed.
+
+Specific limitation
+This was a minimum feasibility screen of the vendor's supporting excerpts, not an
+exhaustive reading of 1,945 full filings and their exhibits. Parent/subsidiary aliases
+are incomplete. Zero validated events does not mean no such events exist. It means
+the readily available data and strict rule do not yet produce a backtestable cohort.
+Full filings, historical link data and a wider tradable universe would be additional
+work and a distinct study; they were not silently substituted here.
+
+Source checks
+https://www.sec.gov/Archives/edgar/data/1571996/000157199624000004/dell-20240125.htm
+https://www.sec.gov/Archives/edgar/data/1857154/000185715425000102/dnut-20250623.htm
+https://www.sec.gov/Archives/edgar/data/1857154/000185715425000102/a991pressrelease-june2025.htm
+
+Research basis
+Cohen and Frazzini's Economic Links and Predictable Returns motivates delayed news
+diffusion between customers and suppliers. It does not validate this specific
+2024-2025 large-cap option strategy.
+https://pages.stern.nyu.edu/~afrazzin/pdf/Economic%20Links%20and%20Predictable%20Returns%20-%20Cohen%20and%20Frazzini.pdf
+
+Reproduce from repository root with massive/.venv/bin/python:
+  massive/replication_codex/alpha_search/counterparty/screen.py
+  massive/replication_codex/alpha_search/counterparty/name_screen.py
+  massive/replication_codex/alpha_search/counterparty/finalize.py
+
+SPEC.txt was saved before candidate retrieval; its hash is recorded in
+fetch_manifest.json and summary.json. API authentication uses a header through the
+existing client, with all raw responses redirected to this folder's ignored cache.

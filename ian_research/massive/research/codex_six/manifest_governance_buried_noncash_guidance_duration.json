@@ -1,0 +1,1763 @@
+{
+  "spec_sha256": "0727ffd4cc7e448d94bf8623570bf5d993defce87ceb2d985f119acee1dcd00a",
+  "engine_sha256": "1fa8f93fa0f59d4b6fad9fd571a0de8644094a715039ddfe4d08d255ba62dd0d",
+  "events": [
+    {
+      "ticker": "BAC",
+      "filing_date": "2025-04-24",
+      "accession_number": "0000070858-25-000195",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.17697488249715757,
+      "score_pp": 17.697488249715757,
+      "reason": "Pay dissent 8.631299% to 26.410971%; board mean dissent 3.551598% to 3.633782%; net increase 17.697488pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/70858/000007085824000149/bac-20240424.htm",
+        "https://www.sec.gov/Archives/edgar/data/70858/000007085825000195/bac-20250422.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 8.631299169298389,
+        "pay_dissent_after_pct": 26.410971396943186,
+        "director_dissent_before_pct": 3.551597919113832,
+        "director_dissent_after_pct": 3.6337818970428684,
+        "pay_change_pp": 17.779672227644795,
+        "director_change_pp": 0.08218397792903653,
+        "director_count_before": 13,
+        "director_count_after": 14,
+        "prior_accession_number": "0000070858-24-000149",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "BAC",
+          "filing_date": "2024-04-26",
+          "accession_number": "0000070858-24-000149",
+          "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085824000149/bac-20240424.htm",
+          "directors": [
+            {
+              "name": "Sharon L. Allen",
+              "for": 5404603520,
+              "against_or_withheld": 218838876
+            },
+            {
+              "name": "Jos\u00e9 E. Almeida",
+              "for": 5517291266,
+              "against_or_withheld": 105022573
+            },
+            {
+              "name": "Pierre J.P. de Weck",
+              "for": 5481848436,
+              "against_or_withheld": 139836740
+            },
+            {
+              "name": "Arnold W. Donald",
+              "for": 5433542052,
+              "against_or_withheld": 189123550
+            },
+            {
+              "name": "Linda P. Hudson",
+              "for": 5417506953,
+              "against_or_withheld": 205677742
+            },
+            {
+              "name": "Monica C. Lozano",
+              "for": 5326405764,
+              "against_or_withheld": 296774935
+            },
+            {
+              "name": "Brian T. Moynihan",
+              "for": 5289634993,
+              "against_or_withheld": 317254704
+            },
+            {
+              "name": "Lionel L. Nowell III",
+              "for": 5488341737,
+              "against_or_withheld": 134527645
+            },
+            {
+              "name": "Denise L. Ramos",
+              "for": 5553910748,
+              "against_or_withheld": 69079346
+            },
+            {
+              "name": "Clayton S. Rose",
+              "for": 5334166486,
+              "against_or_withheld": 288130692
+            },
+            {
+              "name": "Michael D. White",
+              "for": 5412218074,
+              "against_or_withheld": 209607715
+            },
+            {
+              "name": "Thomas D. Woods",
+              "for": 5549179495,
+              "against_or_withheld": 73248937
+            },
+            {
+              "name": "Maria T. Zuber",
+              "for": 5274422266,
+              "against_or_withheld": 347997896
+            }
+          ],
+          "cache_file": "governance_0000070858-24-000149.txt",
+          "pay_for": 5126311367,
+          "pay_against": 484265691,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "BAC",
+          "filing_date": "2025-04-24",
+          "accession_number": "0000070858-25-000195",
+          "source": "https://www.sec.gov/Archives/edgar/data/70858/000007085825000195/bac-20250422.htm",
+          "directors": [
+            {
+              "name": "Sharon L. Allen",
+              "for": 5366712605,
+              "against_or_withheld": 260206920
+            },
+            {
+              "name": "Jos\u00e9 E. Almeida",
+              "for": 5539160076,
+              "against_or_withheld": 86353341
+            },
+            {
+              "name": "Pierre J.P. de Weck",
+              "for": 5416131342,
+              "against_or_withheld": 208402421
+            },
+            {
+              "name": "Arnold W. Donald",
+              "for": 5318394562,
+              "against_or_withheld": 308309111
+            },
+            {
+              "name": "Linda P. Hudson",
+              "for": 5464540490,
+              "against_or_withheld": 162094318
+            },
+            {
+              "name": "Monica C. Lozano",
+              "for": 5287843089,
+              "against_or_withheld": 338067547
+            },
+            {
+              "name": "Maria N. Martinez",
+              "for": 5590130879,
+              "against_or_withheld": 35935265
+            },
+            {
+              "name": "Brian T. Moynihan",
+              "for": 5176804387,
+              "against_or_withheld": 451446518
+            },
+            {
+              "name": "Lionel L. Nowell III",
+              "for": 5416464282,
+              "against_or_withheld": 209682980
+            },
+            {
+              "name": "Denise L. Ramos",
+              "for": 5538620834,
+              "against_or_withheld": 87690413
+            },
+            {
+              "name": "Clayton S. Rose",
+              "for": 5531726689,
+              "against_or_withheld": 93744955
+            },
+            {
+              "name": "Michael D. White",
+              "for": 5453066173,
+              "against_or_withheld": 173070305
+            },
+            {
+              "name": "Thomas D. Woods",
+              "for": 5555880107,
+              "against_or_withheld": 70380092
+            },
+            {
+              "name": "Maria T. Zuber",
+              "for": 5249297024,
+              "against_or_withheld": 376967680
+            }
+          ],
+          "cache_file": "governance_0000070858-25-000195.txt",
+          "pay_for": 4134323650,
+          "pay_against": 1483801400,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:BAC:2025-04-24"
+    },
+    {
+      "ticker": "GS",
+      "filing_date": "2025-04-24",
+      "accession_number": "0001193125-25-093530",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.20416720400483965,
+      "score_pp": 20.416720400483964,
+      "reason": "Pay dissent 13.607008% to 33.797146%; board mean dissent 3.573599% to 3.347016%; net increase 20.416720pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/886982/000119312524113922/d818233d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/886982/000119312525093530/d787120d8k.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 13.607008142731509,
+        "pay_dissent_after_pct": 33.79714555826612,
+        "director_dissent_before_pct": 3.5735986656347674,
+        "director_dissent_after_pct": 3.3470156806854168,
+        "pay_change_pp": 20.190137415534615,
+        "director_change_pp": -0.22658298494935059,
+        "director_count_before": 11,
+        "director_count_after": 14,
+        "prior_accession_number": "0001193125-24-113922",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "GS",
+          "filing_date": "2024-04-25",
+          "accession_number": "0001193125-24-113922",
+          "source": "https://www.sec.gov/Archives/edgar/data/886982/000119312524113922/d818233d8k.htm",
+          "directors": [
+            {
+              "name": "Michele Burns",
+              "for": 224747320,
+              "against_or_withheld": 9311838
+            },
+            {
+              "name": "Mark Flaherty",
+              "for": 227569974,
+              "against_or_withheld": 6482015
+            },
+            {
+              "name": "Kimberley Harris",
+              "for": 225325856,
+              "against_or_withheld": 8741994
+            },
+            {
+              "name": "Kevin Johnson",
+              "for": 228961681,
+              "against_or_withheld": 5037361
+            },
+            {
+              "name": "Ellen Kullman",
+              "for": 225099124,
+              "against_or_withheld": 8960237
+            },
+            {
+              "name": "Lakshmi Mittal",
+              "for": 214152758,
+              "against_or_withheld": 19874413
+            },
+            {
+              "name": "Thomas Montag",
+              "for": 232764390,
+              "against_or_withheld": 1253465
+            },
+            {
+              "name": "Peter Oppenheimer",
+              "for": 226883909,
+              "against_or_withheld": 7179130
+            },
+            {
+              "name": "David Solomon",
+              "for": 222801655,
+              "against_or_withheld": 10954818
+            },
+            {
+              "name": "Jan Tighe",
+              "for": 230179746,
+              "against_or_withheld": 3872889
+            },
+            {
+              "name": "David Viniar",
+              "for": 223769848,
+              "against_or_withheld": 10322726
+            }
+          ],
+          "cache_file": "governance_0001193125-24-113922_resolved.txt",
+          "pay_for": 202065049,
+          "pay_against": 31825507,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "GS",
+          "filing_date": "2025-04-24",
+          "accession_number": "0001193125-25-093530",
+          "source": "https://www.sec.gov/Archives/edgar/data/886982/000119312525093530/d787120d8k.htm",
+          "directors": [
+            {
+              "name": "Michele Burns",
+              "for": 221930459,
+              "against_or_withheld": 8802048
+            },
+            {
+              "name": "Mark Flaherty",
+              "for": 227119377,
+              "against_or_withheld": 3746887
+            },
+            {
+              "name": "Kimberley Harris",
+              "for": 220123203,
+              "against_or_withheld": 10600292
+            },
+            {
+              "name": "John Hess",
+              "for": 217696703,
+              "against_or_withheld": 13126936
+            },
+            {
+              "name": "Kevin Johnson",
+              "for": 225951054,
+              "against_or_withheld": 4902596
+            },
+            {
+              "name": "Ellen Kullman",
+              "for": 224634438,
+              "against_or_withheld": 6104989
+            },
+            {
+              "name": "KC McClure",
+              "for": 229519867,
+              "against_or_withheld": 1301175
+            },
+            {
+              "name": "Lakshmi Mittal",
+              "for": 213558153,
+              "against_or_withheld": 17187333
+            },
+            {
+              "name": "Thomas Montag",
+              "for": 228489449,
+              "against_or_withheld": 2636441
+            },
+            {
+              "name": "Peter Oppenheimer",
+              "for": 222401421,
+              "against_or_withheld": 8492682
+            },
+            {
+              "name": "David Solomon",
+              "for": 216264449,
+              "against_or_withheld": 13693529
+            },
+            {
+              "name": "Jan Tighe",
+              "for": 228703055,
+              "against_or_withheld": 2017135
+            },
+            {
+              "name": "David Viniar",
+              "for": 218964468,
+              "against_or_withheld": 12163881
+            },
+            {
+              "name": "John Waldron",
+              "for": 227535382,
+              "against_or_withheld": 3339475
+            }
+          ],
+          "cache_file": "governance_0001193125-25-093530_resolved.txt",
+          "pay_for": 152718642,
+          "pay_against": 77964224,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:GS:2025-04-24"
+    },
+    {
+      "ticker": "PFE",
+      "filing_date": "2025-04-28",
+      "accession_number": "0000078003-25-000109",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.35082655557635667,
+      "score_pp": 35.08265555763567,
+      "reason": "Pay dissent 8.577248% to 45.295933%; board mean dissent 2.959886% to 4.595915%; net increase 35.082656pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/78003/000007800324000101/pfe-20240425.htm",
+        "https://www.sec.gov/Archives/edgar/data/78003/000007800325000109/pfe-20250424.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 8.577248266432832,
+        "pay_dissent_after_pct": 45.29593287237854,
+        "director_dissent_before_pct": 2.9598863291576807,
+        "director_dissent_after_pct": 4.595915377467724,
+        "pay_change_pp": 36.71868460594571,
+        "director_change_pp": 1.6360290483100437,
+        "director_count_before": 12,
+        "director_count_after": 13,
+        "prior_accession_number": "0000078003-24-000101",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "PFE",
+          "filing_date": "2024-04-29",
+          "accession_number": "0000078003-24-000101",
+          "source": "https://www.sec.gov/Archives/edgar/data/78003/000007800324000101/pfe-20240425.htm",
+          "directors": [
+            {
+              "name": "Ronald E. Blaylock",
+              "for": 3611209480,
+              "against_or_withheld": 74828190
+            },
+            {
+              "name": "Albert Bourla",
+              "for": 3416127786,
+              "against_or_withheld": 272930253
+            },
+            {
+              "name": "Susan Desmond-Hellmann",
+              "for": 3609882463,
+              "against_or_withheld": 76819517
+            },
+            {
+              "name": "Joseph J. Echevarria",
+              "for": 3534360661,
+              "against_or_withheld": 151136693
+            },
+            {
+              "name": "Scott Gottlieb",
+              "for": 3641520694,
+              "against_or_withheld": 46699897
+            },
+            {
+              "name": "Helen H. Hobbs",
+              "for": 3559147586,
+              "against_or_withheld": 127638461
+            },
+            {
+              "name": "Susan Hockfield",
+              "for": 3640156517,
+              "against_or_withheld": 46187757
+            },
+            {
+              "name": "Dan R. Littman",
+              "for": 3602649863,
+              "against_or_withheld": 83205522
+            },
+            {
+              "name": "Shantanu Narayen",
+              "for": 3624752522,
+              "against_or_withheld": 61360816
+            },
+            {
+              "name": "Suzanne Nora Johnson",
+              "for": 3509903128,
+              "against_or_withheld": 174627508
+            },
+            {
+              "name": "James Quincey",
+              "for": 3608797590,
+              "against_or_withheld": 76444804
+            },
+            {
+              "name": "James C. Smith",
+              "for": 3566491624,
+              "against_or_withheld": 117466325
+            }
+          ],
+          "cache_file": "governance_0000078003-24-000101.txt",
+          "pay_for": 3360637251,
+          "pay_against": 315293726,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "PFE",
+          "filing_date": "2025-04-28",
+          "accession_number": "0000078003-25-000109",
+          "source": "https://www.sec.gov/Archives/edgar/data/78003/000007800325000109/pfe-20250424.htm",
+          "directors": [
+            {
+              "name": "Ronald E. Blaylock",
+              "for": 3429698773,
+              "against_or_withheld": 137851886
+            },
+            {
+              "name": "Albert Bourla",
+              "for": 3246800234,
+              "against_or_withheld": 307245700
+            },
+            {
+              "name": "Mortimer J. Buckley",
+              "for": 3465158857,
+              "against_or_withheld": 102427543
+            },
+            {
+              "name": "Susan Desmond-Hellmann",
+              "for": 3448290762,
+              "against_or_withheld": 117666670
+            },
+            {
+              "name": "Joseph J. Echevarria",
+              "for": 3173957929,
+              "against_or_withheld": 393321228
+            },
+            {
+              "name": "Scott Gottlieb",
+              "for": 3500030435,
+              "against_or_withheld": 69733819
+            },
+            {
+              "name": "Susan Hockfield",
+              "for": 3503463764,
+              "against_or_withheld": 65146655
+            },
+            {
+              "name": "Dan R. Littman",
+              "for": 3411026726,
+              "against_or_withheld": 156668049
+            },
+            {
+              "name": "Shantanu Narayen",
+              "for": 3485062345,
+              "against_or_withheld": 82853611
+            },
+            {
+              "name": "Suzanne Nora Johnson",
+              "for": 3340830762,
+              "against_or_withheld": 228079263
+            },
+            {
+              "name": "James Quincey",
+              "for": 3429352443,
+              "against_or_withheld": 138236121
+            },
+            {
+              "name": "James C. Smith",
+              "for": 3341701230,
+              "against_or_withheld": 226092580
+            },
+            {
+              "name": "Cyrus Taraporevala",
+              "for": 3462368536,
+              "against_or_withheld": 105107798
+            }
+          ],
+          "cache_file": "governance_0000078003-25-000109.txt",
+          "pay_for": 1947064397,
+          "pay_against": 1612203678,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:PFE:2025-04-28"
+    },
+    {
+      "ticker": "GE",
+      "filing_date": "2025-05-09",
+      "accession_number": "0000040545-25-000091",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.2230474247723421,
+      "score_pp": 22.30474247723421,
+      "reason": "Pay dissent 5.537014% to 29.096600%; board mean dissent 1.663214% to 2.918057%; net increase 22.304742pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40545/000004054524000147/ge-20240507.htm",
+        "https://www.sec.gov/Archives/edgar/data/40545/000004054525000091/ge-20250506.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 5.537014089927358,
+        "pay_dissent_after_pct": 29.096600289248137,
+        "director_dissent_before_pct": 1.6632135944292543,
+        "director_dissent_after_pct": 2.918057316515824,
+        "pay_change_pp": 23.55958619932078,
+        "director_change_pp": 1.2548437220865696,
+        "director_count_before": 10,
+        "director_count_after": 10,
+        "prior_accession_number": "0000040545-24-000147",
+        "board_composition_changed": false
+      },
+      "source_annotations": [
+        {
+          "ticker": "GE",
+          "filing_date": "2024-05-10",
+          "accession_number": "0000040545-24-000147",
+          "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054524000147/ge-20240507.htm",
+          "directors": [
+            {
+              "name": "Stephen Angel",
+              "for": 753901341,
+              "against_or_withheld": 6981479
+            },
+            {
+              "name": "S\u00e9bastien Bazin",
+              "for": 739289542,
+              "against_or_withheld": 20562305
+            },
+            {
+              "name": "Margaret Billson",
+              "for": 758967885,
+              "against_or_withheld": 1998810
+            },
+            {
+              "name": "H. Lawrence Culp, Jr.",
+              "for": 729503940,
+              "against_or_withheld": 30146120
+            },
+            {
+              "name": "Thomas Enders",
+              "for": 746887403,
+              "against_or_withheld": 13989111
+            },
+            {
+              "name": "Edward Garden",
+              "for": 754849620,
+              "against_or_withheld": 5971191
+            },
+            {
+              "name": "Isabella Goren",
+              "for": 755851166,
+              "against_or_withheld": 5080173
+            },
+            {
+              "name": "Thomas Horton",
+              "for": 748912025,
+              "against_or_withheld": 11040460
+            },
+            {
+              "name": "Catherine Lesjak",
+              "for": 738035921,
+              "against_or_withheld": 22900334
+            },
+            {
+              "name": "Darren McDew",
+              "for": 752146318,
+              "against_or_withheld": 7782526
+            }
+          ],
+          "cache_file": "governance_0000040545-24-000147_resolved.txt",
+          "pay_for": 717800242,
+          "pay_against": 42074364,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "GE",
+          "filing_date": "2025-05-09",
+          "accession_number": "0000040545-25-000091",
+          "source": "https://www.sec.gov/Archives/edgar/data/40545/000004054525000091/ge-20250506.htm",
+          "directors": [
+            {
+              "name": "Stephen Angel",
+              "for": 744268218,
+              "against_or_withheld": 62087449
+            },
+            {
+              "name": "S\u00e9bastien Bazin",
+              "for": 782135815,
+              "against_or_withheld": 24136914
+            },
+            {
+              "name": "Margaret Billson",
+              "for": 804372257,
+              "against_or_withheld": 2049042
+            },
+            {
+              "name": "H. Lawrence Culp, Jr.",
+              "for": 766459362,
+              "against_or_withheld": 39831888
+            },
+            {
+              "name": "Thomas Enders",
+              "for": 787366611,
+              "against_or_withheld": 18978315
+            },
+            {
+              "name": "Edward Garden",
+              "for": 795485914,
+              "against_or_withheld": 10776842
+            },
+            {
+              "name": "Isabella Goren",
+              "for": 804047086,
+              "against_or_withheld": 2371590
+            },
+            {
+              "name": "Thomas Horton",
+              "for": 793297208,
+              "against_or_withheld": 13064777
+            },
+            {
+              "name": "Catherine Lesjak",
+              "for": 755180915,
+              "against_or_withheld": 51215758
+            },
+            {
+              "name": "Darren McDew",
+              "for": 794734194,
+              "against_or_withheld": 10771159
+            }
+          ],
+          "cache_file": "governance_0000040545-25-000091_resolved.txt",
+          "pay_for": 570651393,
+          "pay_against": 234177988,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:GE:2025-05-09"
+    },
+    {
+      "ticker": "CVS",
+      "filing_date": "2025-05-20",
+      "accession_number": "0000064803-25-000015",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.25250275652521686,
+      "score_pp": 25.250275652521687,
+      "reason": "Pay dissent 14.552501% to 40.871814%; board mean dissent 1.996252% to 3.065289%; net increase 25.250276pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/64803/000006480324000019/cvs-20240516.htm",
+        "https://www.sec.gov/Archives/edgar/data/64803/000006480325000015/cvs-20250515.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 14.552501393327114,
+        "pay_dissent_after_pct": 40.87181400109145,
+        "director_dissent_before_pct": 1.9962519476220173,
+        "director_dissent_after_pct": 3.065288902864669,
+        "pay_change_pp": 26.31931260776434,
+        "director_change_pp": 1.0690369552426517,
+        "director_count_before": 12,
+        "director_count_after": 13,
+        "prior_accession_number": "0000064803-24-000019",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "CVS",
+          "filing_date": "2024-05-22",
+          "accession_number": "0000064803-24-000019",
+          "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480324000019/cvs-20240516.htm",
+          "directors": [
+            {
+              "name": "Fernando Aguirre",
+              "for": 940972081,
+              "against_or_withheld": 17714333
+            },
+            {
+              "name": "Jeffrey R. Balser, M.D., Ph.D.",
+              "for": 952315470,
+              "against_or_withheld": 6535538
+            },
+            {
+              "name": "C. David Brown II",
+              "for": 900742834,
+              "against_or_withheld": 58026802
+            },
+            {
+              "name": "Alecia A. DeCoudreaux",
+              "for": 949423327,
+              "against_or_withheld": 9434297
+            },
+            {
+              "name": "Nancy-Ann M. DeParle",
+              "for": 943732215,
+              "against_or_withheld": 15085521
+            },
+            {
+              "name": "Roger N. Farah",
+              "for": 937681342,
+              "against_or_withheld": 21016819
+            },
+            {
+              "name": "Anne M. Finucane",
+              "for": 922146176,
+              "against_or_withheld": 36678686
+            },
+            {
+              "name": "J. Scott Kirby",
+              "for": 951655367,
+              "against_or_withheld": 6973203
+            },
+            {
+              "name": "Karen S. Lynch",
+              "for": 948746896,
+              "against_or_withheld": 10182579
+            },
+            {
+              "name": "Michael F. Mahoney",
+              "for": 950214863,
+              "against_or_withheld": 8413118
+            },
+            {
+              "name": "Jean-Pierre Millon",
+              "for": 926293860,
+              "against_or_withheld": 32454490
+            },
+            {
+              "name": "Mary L. Schapiro",
+              "for": 951695011,
+              "against_or_withheld": 7158624
+            }
+          ],
+          "cache_file": "governance_0000064803-24-000019_resolved.txt",
+          "pay_for": 818001447,
+          "pay_against": 139313232,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "CVS",
+          "filing_date": "2025-05-20",
+          "accession_number": "0000064803-25-000015",
+          "source": "https://www.sec.gov/Archives/edgar/data/64803/000006480325000015/cvs-20250515.htm",
+          "directors": [
+            {
+              "name": "Fernando Aguirre",
+              "for": 988213560,
+              "against_or_withheld": 24323188
+            },
+            {
+              "name": "Jeffrey R. Balser, M.D., Ph.D.",
+              "for": 1007796427,
+              "against_or_withheld": 4790577
+            },
+            {
+              "name": "C. David Brown II",
+              "for": 926442420,
+              "against_or_withheld": 86047695
+            },
+            {
+              "name": "Alecia A. DeCoudreaux",
+              "for": 987275298,
+              "against_or_withheld": 24766421
+            },
+            {
+              "name": "Roger N. Farah",
+              "for": 991187212,
+              "against_or_withheld": 18637931
+            },
+            {
+              "name": "Anne M. Finucane",
+              "for": 962972424,
+              "against_or_withheld": 49579648
+            },
+            {
+              "name": "J. David Joyner",
+              "for": 1003245141,
+              "against_or_withheld": 9386020
+            },
+            {
+              "name": "J. Scott Kirby",
+              "for": 987828889,
+              "against_or_withheld": 24644705
+            },
+            {
+              "name": "Michael F. Mahoney",
+              "for": 953838089,
+              "against_or_withheld": 58095208
+            },
+            {
+              "name": "Leslie V. Norwalk",
+              "for": 943470869,
+              "against_or_withheld": 66401988
+            },
+            {
+              "name": "Larry M. Robbins",
+              "for": 1005043459,
+              "against_or_withheld": 7441109
+            },
+            {
+              "name": "Guy P. Sansone",
+              "for": 1004974647,
+              "against_or_withheld": 7503475
+            },
+            {
+              "name": "Douglas H. Shulman",
+              "for": 990906959,
+              "against_or_withheld": 21588021
+            }
+          ],
+          "cache_file": "governance_0000064803-25-000015.txt",
+          "pay_for": 597945237,
+          "pay_against": 413324138,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:CVS:2025-05-20"
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-06-04",
+      "accession_number": "0000731766-25-000154",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.3396865307679821,
+      "score_pp": 33.96865307679821,
+      "reason": "Pay dissent 3.832421% to 39.870556%; board mean dissent 3.794093% to 5.863575%; net increase 33.968653pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/000073176624000167/unh-20240603.htm",
+        "https://www.sec.gov/Archives/edgar/data/731766/000073176625000154/unh-20250602.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 3.8324205441945653,
+        "pay_dissent_after_pct": 39.87055589593891,
+        "director_dissent_before_pct": 3.7940928843310497,
+        "director_dissent_after_pct": 5.863575159277184,
+        "pay_change_pp": 36.038135351744344,
+        "director_change_pp": 2.0694822749461346,
+        "director_count_before": 10,
+        "director_count_after": 9,
+        "prior_accession_number": "0000731766-24-000167",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "UNH",
+          "filing_date": "2024-06-07",
+          "accession_number": "0000731766-24-000167",
+          "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176624000167/unh-20240603.htm",
+          "directors": [
+            {
+              "name": "Charles Baker",
+              "for": 757436895,
+              "against_or_withheld": 2181976
+            },
+            {
+              "name": "Timothy Flynn",
+              "for": 743347313,
+              "against_or_withheld": 16273830
+            },
+            {
+              "name": "Paul Garcia",
+              "for": 707316443,
+              "against_or_withheld": 51658321
+            },
+            {
+              "name": "Kristen Gil",
+              "for": 708296204,
+              "against_or_withheld": 50693350
+            },
+            {
+              "name": "Stephen Hemsley",
+              "for": 734137649,
+              "against_or_withheld": 24859316
+            },
+            {
+              "name": "Michele Hooper",
+              "for": 724986106,
+              "against_or_withheld": 34656118
+            },
+            {
+              "name": "F. William McNabb III",
+              "for": 692124063,
+              "against_or_withheld": 65356736
+            },
+            {
+              "name": "Valerie Montgomery Rice, M.D.",
+              "for": 753732946,
+              "against_or_withheld": 5943876
+            },
+            {
+              "name": "John Noseworthy, M.D.",
+              "for": 726412328,
+              "against_or_withheld": 32566511
+            },
+            {
+              "name": "Andrew Witty",
+              "for": 755439553,
+              "against_or_withheld": 3697461
+            }
+          ],
+          "cache_file": "governance_0000731766-24-000167.txt",
+          "pay_for": 729597136,
+          "pay_against": 29075527,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "UNH",
+          "filing_date": "2025-06-04",
+          "accession_number": "0000731766-25-000154",
+          "source": "https://www.sec.gov/Archives/edgar/data/731766/000073176625000154/unh-20250602.htm",
+          "directors": [
+            {
+              "name": "Charles Baker",
+              "for": 746667016,
+              "against_or_withheld": 4423146
+            },
+            {
+              "name": "Timothy Flynn",
+              "for": 651303141,
+              "against_or_withheld": 99158799
+            },
+            {
+              "name": "Paul Garcia",
+              "for": 746536909,
+              "against_or_withheld": 4570092
+            },
+            {
+              "name": "Kristen Gil",
+              "for": 746875578,
+              "against_or_withheld": 4264517
+            },
+            {
+              "name": "Stephen Hemsley",
+              "for": 697580145,
+              "against_or_withheld": 53344000
+            },
+            {
+              "name": "Michele Hooper",
+              "for": 688497615,
+              "against_or_withheld": 62277727
+            },
+            {
+              "name": "F. William McNabb III",
+              "for": 725279560,
+              "against_or_withheld": 25647731
+            },
+            {
+              "name": "Valerie Montgomery Rice, M.D.",
+              "for": 714336653,
+              "against_or_withheld": 36834564
+            },
+            {
+              "name": "John Noseworthy, M.D.",
+              "for": 644851636,
+              "against_or_withheld": 105639631
+            }
+          ],
+          "cache_file": "governance_0000731766-25-000154.txt",
+          "pay_for": 451227441,
+          "pay_against": 299199322,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:UNH:2025-06-04"
+    },
+    {
+      "ticker": "FDX",
+      "filing_date": "2025-10-02",
+      "accession_number": "0001193125-25-228346",
+      "signal": "governance",
+      "strategy": "protective_put",
+      "score": 0.2669135428501252,
+      "score_pp": 26.69135428501252,
+      "reason": "Pay dissent 9.190942% to 36.564729%; board mean dissent 2.118367% to 2.800799%; net increase 26.691354pp versus frozen >=10pp cutoff.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1048911/000119312524224857/d884448d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/1048911/000119312525228346/d64398d8k.htm"
+      ],
+      "features": {
+        "pay_dissent_before_pct": 9.19094183131432,
+        "pay_dissent_after_pct": 36.564728700938616,
+        "director_dissent_before_pct": 2.118366500367632,
+        "director_dissent_after_pct": 2.8007990849794115,
+        "pay_change_pp": 27.373786869624297,
+        "director_change_pp": 0.6824325846117794,
+        "director_count_before": 14,
+        "director_count_after": 13,
+        "prior_accession_number": "0001193125-24-224857",
+        "board_composition_changed": true
+      },
+      "source_annotations": [
+        {
+          "ticker": "FDX",
+          "filing_date": "2024-09-24",
+          "accession_number": "0001193125-24-224857",
+          "source": "https://www.sec.gov/Archives/edgar/data/1048911/000119312524224857/d884448d8k.htm",
+          "directors": [
+            {
+              "name": "Silvia Davila",
+              "for": 190832952,
+              "against_or_withheld": 1593698
+            },
+            {
+              "name": "Marvin R. Ellison",
+              "for": 189736126,
+              "against_or_withheld": 2691534
+            },
+            {
+              "name": "Stephen E. Gorman",
+              "for": 189662264,
+              "against_or_withheld": 2775115
+            },
+            {
+              "name": "Susan Patricia Griffith",
+              "for": 188912231,
+              "against_or_withheld": 3522781
+            },
+            {
+              "name": "Amy B. Lane",
+              "for": 190521784,
+              "against_or_withheld": 1911128
+            },
+            {
+              "name": "R. Brad Martin",
+              "for": 186421851,
+              "against_or_withheld": 6022508
+            },
+            {
+              "name": "Nancy A. Norton",
+              "for": 191660548,
+              "against_or_withheld": 768037
+            },
+            {
+              "name": "Frederick P. Perpall",
+              "for": 189793489,
+              "against_or_withheld": 2640150
+            },
+            {
+              "name": "Joshua Cooper Ramo",
+              "for": 187376841,
+              "against_or_withheld": 5062360
+            },
+            {
+              "name": "Susan C. Schwab",
+              "for": 187741446,
+              "against_or_withheld": 4694932
+            },
+            {
+              "name": "Frederick W. Smith",
+              "for": 187660325,
+              "against_or_withheld": 4589611
+            },
+            {
+              "name": "David P. Steiner",
+              "for": 183125263,
+              "against_or_withheld": 9328782
+            },
+            {
+              "name": "Rajesh Subramaniam",
+              "for": 190247553,
+              "against_or_withheld": 2195231
+            },
+            {
+              "name": "Paul S. Walsh",
+              "for": 183174487,
+              "against_or_withheld": 9272226
+            }
+          ],
+          "cache_file": "governance_0001193125-24-224857_resolved.txt",
+          "pay_for": 174470045,
+          "pay_against": 17658415,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        },
+        {
+          "ticker": "FDX",
+          "filing_date": "2025-10-02",
+          "accession_number": "0001193125-25-228346",
+          "source": "https://www.sec.gov/Archives/edgar/data/1048911/000119312525228346/d64398d8k.htm",
+          "directors": [
+            {
+              "name": "Silvia Davila",
+              "for": 181222750,
+              "against_or_withheld": 4501889
+            },
+            {
+              "name": "Marvin R. Ellison",
+              "for": 182331545,
+              "against_or_withheld": 3536310
+            },
+            {
+              "name": "Stephen E. Gorman",
+              "for": 182100702,
+              "against_or_withheld": 3716418
+            },
+            {
+              "name": "Susan Patricia Griffith",
+              "for": 181975734,
+              "against_or_withheld": 3886154
+            },
+            {
+              "name": "Amy\u00a0B.\u00a0Lane",
+              "for": 185078041,
+              "against_or_withheld": 744419
+            },
+            {
+              "name": "R. Brad Martin",
+              "for": 181205995,
+              "against_or_withheld": 4664284
+            },
+            {
+              "name": "Nancy A. Norton",
+              "for": 185262273,
+              "against_or_withheld": 563238
+            },
+            {
+              "name": "Frederick P. Perpall",
+              "for": 184193945,
+              "against_or_withheld": 1519565
+            },
+            {
+              "name": "Joshua Cooper Ramo",
+              "for": 180304496,
+              "against_or_withheld": 5552455
+            },
+            {
+              "name": "Susan C. Schwab",
+              "for": 178628477,
+              "against_or_withheld": 7241826
+            },
+            {
+              "name": "Richard W. Smith",
+              "for": 166878949,
+              "against_or_withheld": 18994352
+            },
+            {
+              "name": "Rajesh Subramaniam",
+              "for": 183612415,
+              "against_or_withheld": 2245880
+            },
+            {
+              "name": "Paul S. Walsh",
+              "for": 175362349,
+              "against_or_withheld": 10502325
+            }
+          ],
+          "cache_file": "governance_0001193125-25-228346_resolved.txt",
+          "pay_for": 117787536,
+          "pay_against": 67893921,
+          "source_verification": "Primary SEC table headers and proposal identity reviewed; raw numerical For and Against/Withheld extracted. Named director rows checked; multiline layouts explicitly repaired. Abstentions, broker nonvotes, frequency votes and other proposals excluded.",
+          "voting_method": "against"
+        }
+      ],
+      "id": "governance:FDX:2025-10-02"
+    },
+    {
+      "ticker": "MSFT",
+      "filing_date": "2024-12-11",
+      "accession_number": "0001193125-24-275524",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312524275524/d865252d8k.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 5.07 annual-meeting results and nine vote tables precede Item 7.01. That later item announces an approximately $800m Cruise impairment, lowering quarterly EPS about $0.09 beyond prior guidance. No adverse main heading or opening summary precedes the meeting information.",
+      "full_source_reviewed": true,
+      "control": false,
+      "adverse_type": "investment_impairment",
+      "routine_item": "5.07",
+      "adverse_item": "7.01",
+      "id": "buried:MSFT:2024-12-11"
+    },
+    {
+      "ticker": "IBM",
+      "filing_date": "2024-09-11",
+      "accession_number": "0001104659-24-098942",
+      "signal": "noncash",
+      "strategy": "cash_secured_put",
+      "reason": "Pension annuity purchase transfers existing obligations using existing plan assets; no company cash contribution. The $2.7bn pretax settlement charge does not affect operating profit or free cash flow. Full contemporaneous 8-K discloses no concurrent operating deterioration.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/51143/000110465924098942/tm2423753d1_8k.htm"
+      ],
+      "source_evidence": {
+        "mechanical_cause": "Existing plan assets purchase an annuity transferring approximately $6bn of existing pension obligations to Prudential; one-time pension settlement accounting recognizes $2.7bn pretax expense.",
+        "cash_evidence": "Item 8.01 explicitly states no cash contribution was required from IBM.",
+        "outlook_evidence": "Item 8.01 explicitly excludes an impact on Q3 or full-year 2024 operating non-GAAP profit or free cash flow.",
+        "full_source_review": "Entire contemporaneous 8-K reviewed via web; SEC acceptance 2024-09-11 16:30:29 means after close.",
+        "source_locator": "Item 8.01, paragraphs 1-4"
+      },
+      "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+      "id": "noncash:IBM:2024-09-11"
+    },
+    {
+      "ticker": "LMT",
+      "filing_date": "2025-12-18",
+      "accession_number": "0000936468-25-000057",
+      "signal": "noncash",
+      "strategy": "cash_secured_put",
+      "reason": "Existing pension annuity buy-in contracts converted to buy-out contracts, transferring about $900m of pension obligations without additional company costs or contributions. The $480m noncash nonoperating charge accelerates recognition of actuarial losses already in equity; no operating deterioration is disclosed in this filing.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/936468/000093646825000057/lmt-20251218.htm"
+      ],
+      "source_evidence": {
+        "mechanical_cause": "Accelerated recognition of pre-existing actuarial losses after conversion of previously purchased annuity contracts.",
+        "cash_evidence": "Item 8.01 explicitly states no additional costs or funding contributions required by Lockheed Martin.",
+        "outlook_evidence": "Charge was absent from prior 2025 financial outlook; filing calls it non-operating but does not explicitly reaffirm the entire operating outlook. This is recorded as missing corroboration, not an assumed reaffirmation.",
+        "full_source_review": "Entire contemporaneous 8-K reviewed via web.",
+        "source_locator": "Item 8.01, paragraphs 1-4"
+      },
+      "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+      "horizon_limitation": "Entry late December 2025; most prescribed exits lie beyond the 2025-12-31 research cutoff and must remain censored without fetching 2026 outcomes.",
+      "id": "noncash:LMT:2025-12-18"
+    }
+  ],
+  "controls": {
+    "governance:BAC:2025-04-24": [
+      {
+        "ticker": "MA",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "AIG",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "MS",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "BAC",
+        "date": "2025-06-25",
+        "role": "issuer"
+      },
+      {
+        "ticker": "BAC",
+        "date": "2025-08-25",
+        "role": "issuer"
+      },
+      {
+        "ticker": "BAC",
+        "date": "2025-09-24",
+        "role": "issuer"
+      },
+      {
+        "ticker": "ADBE",
+        "date": "2025-04-24",
+        "role": "family"
+      },
+      {
+        "ticker": "AVGO",
+        "date": "2025-04-22",
+        "role": "family"
+      },
+      {
+        "ticker": "ABT",
+        "date": "2025-04-28",
+        "role": "family"
+      }
+    ],
+    "governance:GS:2025-04-24": [
+      {
+        "ticker": "MA",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "MS",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "AIG",
+        "date": "2025-04-24",
+        "role": "peer"
+      },
+      {
+        "ticker": "GS",
+        "date": "2025-06-25",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GS",
+        "date": "2025-07-25",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GS",
+        "date": "2025-08-25",
+        "role": "issuer"
+      },
+      {
+        "ticker": "ADBE",
+        "date": "2025-04-24",
+        "role": "family"
+      },
+      {
+        "ticker": "AVGO",
+        "date": "2025-04-22",
+        "role": "family"
+      },
+      {
+        "ticker": "ABT",
+        "date": "2025-04-28",
+        "role": "family"
+      }
+    ],
+    "governance:PFE:2025-04-28": [
+      {
+        "ticker": "MDT",
+        "date": "2025-04-28",
+        "role": "peer"
+      },
+      {
+        "ticker": "GILD",
+        "date": "2025-04-28",
+        "role": "peer"
+      },
+      {
+        "ticker": "TMO",
+        "date": "2025-04-28",
+        "role": "peer"
+      },
+      {
+        "ticker": "PFE",
+        "date": "2025-02-26",
+        "role": "issuer"
+      },
+      {
+        "ticker": "PFE",
+        "date": "2025-06-27",
+        "role": "issuer"
+      },
+      {
+        "ticker": "PFE",
+        "date": "2025-01-27",
+        "role": "issuer"
+      },
+      {
+        "ticker": "ABT",
+        "date": "2025-04-28",
+        "role": "family"
+      },
+      {
+        "ticker": "JNJ",
+        "date": "2025-04-30",
+        "role": "family"
+      },
+      {
+        "ticker": "C",
+        "date": "2025-05-01",
+        "role": "family"
+      }
+    ],
+    "governance:GE:2025-05-09": [
+      {
+        "ticker": "EMR",
+        "date": "2025-05-09",
+        "role": "peer"
+      },
+      {
+        "ticker": "BA",
+        "date": "2025-05-09",
+        "role": "peer"
+      },
+      {
+        "ticker": "TMO",
+        "date": "2025-05-09",
+        "role": "peer"
+      },
+      {
+        "ticker": "GE",
+        "date": "2025-03-11",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GE",
+        "date": "2025-07-11",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GE",
+        "date": "2025-02-07",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GD",
+        "date": "2025-05-09",
+        "role": "family"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-05-09",
+        "role": "family"
+      },
+      {
+        "ticker": "PM",
+        "date": "2025-05-09",
+        "role": "family"
+      }
+    ],
+    "governance:CVS:2025-05-20": [
+      {
+        "ticker": "DHR",
+        "date": "2025-05-20",
+        "role": "peer"
+      },
+      {
+        "ticker": "MRK",
+        "date": "2025-05-20",
+        "role": "peer"
+      },
+      {
+        "ticker": "LLY",
+        "date": "2025-05-20",
+        "role": "peer"
+      },
+      {
+        "ticker": "CVS",
+        "date": "2025-03-20",
+        "role": "issuer"
+      },
+      {
+        "ticker": "CVS",
+        "date": "2025-07-22",
+        "role": "issuer"
+      },
+      {
+        "ticker": "CVS",
+        "date": "2025-02-19",
+        "role": "issuer"
+      },
+      {
+        "ticker": "AMZN",
+        "date": "2025-05-22",
+        "role": "family"
+      },
+      {
+        "ticker": "JPM",
+        "date": "2025-05-22",
+        "role": "family"
+      },
+      {
+        "ticker": "SCHW",
+        "date": "2025-05-23",
+        "role": "family"
+      }
+    ],
+    "governance:UNH:2025-06-04": [
+      {
+        "ticker": "MDT",
+        "date": "2025-06-04",
+        "role": "peer"
+      },
+      {
+        "ticker": "BMY",
+        "date": "2025-06-04",
+        "role": "peer"
+      },
+      {
+        "ticker": "GILD",
+        "date": "2025-06-04",
+        "role": "peer"
+      },
+      {
+        "ticker": "UNH",
+        "date": "2025-04-03",
+        "role": "issuer"
+      },
+      {
+        "ticker": "UNH",
+        "date": "2025-03-05",
+        "role": "issuer"
+      },
+      {
+        "ticker": "UNH",
+        "date": "2025-02-03",
+        "role": "issuer"
+      },
+      {
+        "ticker": "BKNG",
+        "date": "2025-06-04",
+        "role": "family"
+      },
+      {
+        "ticker": "LOW",
+        "date": "2025-06-05",
+        "role": "family"
+      },
+      {
+        "ticker": "WMT",
+        "date": "2025-06-06",
+        "role": "family"
+      }
+    ],
+    "governance:FDX:2025-10-02": [
+      {
+        "ticker": "MCD",
+        "date": "2025-10-02",
+        "role": "peer"
+      },
+      {
+        "ticker": "UBER",
+        "date": "2025-10-02",
+        "role": "peer"
+      },
+      {
+        "ticker": "HD",
+        "date": "2025-10-02",
+        "role": "peer"
+      },
+      {
+        "ticker": "FDX",
+        "date": "2025-12-02",
+        "role": "issuer"
+      },
+      {
+        "ticker": "FDX",
+        "date": "2025-07-03",
+        "role": "issuer"
+      },
+      {
+        "ticker": "FDX",
+        "date": "2025-06-03",
+        "role": "issuer"
+      },
+      {
+        "ticker": "PG",
+        "date": "2025-10-16",
+        "role": "family"
+      },
+      {
+        "ticker": "MDT",
+        "date": "2025-10-21",
+        "role": "family"
+      },
+      {
+        "ticker": "TSLA",
+        "date": "2025-11-07",
+        "role": "family"
+      }
+    ],
+    "buried:MSFT:2024-12-11": [
+      {
+        "ticker": "PLTR",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "INTU",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "NOW",
+        "date": "2024-12-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-10-11",
+        "role": "issuer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-09-12",
+        "role": "issuer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-08-13",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GM",
+        "date": "2024-12-04",
+        "role": "family"
+      },
+      {
+        "ticker": "ABBV",
+        "date": "2025-01-10",
+        "role": "family"
+      },
+      {
+        "ticker": "C",
+        "date": "2025-09-24",
+        "role": "family"
+      }
+    ],
+    "noncash:IBM:2024-09-11": [
+      {
+        "ticker": "CSCO",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "AMD",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-07-12",
+        "role": "issuer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-11-08",
+        "role": "issuer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-06-11",
+        "role": "issuer"
+      },
+      {
+        "ticker": "AAPL",
+        "date": "2024-09-10",
+        "role": "family"
+      },
+      {
+        "ticker": "PM",
+        "date": "2024-09-17",
+        "role": "family"
+      },
+      {
+        "ticker": "RTX",
+        "date": "2024-08-30",
+        "role": "family"
+      }
+    ],
+    "noncash:LMT:2025-12-18": [
+      {
+        "ticker": "GD",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "GE",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "CAT",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-10-20",
+        "role": "issuer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-09-19",
+        "role": "issuer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-08-20",
+        "role": "issuer"
+      },
+      {
+        "ticker": "GM",
+        "date": "2025-10-14",
+        "role": "family"
+      },
+      {
+        "ticker": "CVX",
+        "date": "2025-09-25",
+        "role": "family"
+      },
+      {
+        "ticker": "SBUX",
+        "date": "2025-09-25",
+        "role": "family"
+      }
+    ]
+  },
+  "exclusions": []
+}

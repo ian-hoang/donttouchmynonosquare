@@ -1,0 +1,74 @@
+{
+  "frozen_before_this_round_returns": true,
+  "window": [
+    "2024-01-01",
+    "2025-12-31"
+  ],
+  "holdout": "Do not fetch or evaluate 2026 outcomes",
+  "ideas": {
+    "governance": "Pay dissent year-over-year increase minus general director dissent increase >= 10 percentage points; protective put",
+    "compensation": "Verified comparable relaxation of performance compensation terms; collar",
+    "duration": "Explicit adverse operating issue lasting 60-180 days; protective put conditional on term-structure gate",
+    "guidance": "Same metric, accounting basis and fiscal period: midpoint within 1%, lower floor and wider range; protective put",
+    "noncash": "Verified mechanical noncash charge with no new cash obligation and no operating deterioration; cash-secured put conditional on expensive protection",
+    "buried": "Adverse fact placed behind unrelated routine disclosures in same actual filing; collar; compare adverse-only controls"
+  },
+  "feature_specs": "Each agent saves a separate text-only spec, source audit and event manifest before viewing returns. No broader proxy counts as a completed exact-hypothesis test.",
+  "primary": {
+    "bucket": "3-6m",
+    "target_dte": 120,
+    "otm": 0.05,
+    "horizon": 21,
+    "entry_delay": 2
+  },
+  "horizons": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    21,
+    42,
+    63,
+    "exp"
+  ],
+  "sensitivity": {
+    "buckets": [
+      "1m",
+      "2m"
+    ],
+    "otm": [
+      0.03,
+      0.1
+    ],
+    "entry_delay": [
+      1,
+      3
+    ]
+  },
+  "option_selection": "Standard 100-share unadjusted contracts in chain as of session before filing. Strike based on same-time short-expiry put-call parity. Expiry nearest fixed target in bucket. No future outcomes used.",
+  "decision": "Text filing date plus first strictly later trading session at five minutes before close. Price gates use this timestamp, not execution quotes. Entry second strictly later session five minutes before close.",
+  "execution": "Historical last NBBO at or before five minutes before actual close; timestamp age <=300 seconds, positive bid/ask sizes, positive ask, bid>=0, ask>=bid. Quote timestamps across legs must span <=300seconds. No stale trade-close substitution.",
+  "costs": "Buy ask/sell bid at entry, reverse sides at exit, $0.65/contract/side; full synthetic stock option legs paid as well. Midpoint and extra 2.5% of premium per-side stress shown as sensitivities.",
+  "funding": "C-P+discounted strike with 4% carry approximates stock; American exercise, discrete dividends, borrow, assignment and endogenous funding not modeled. Expiry means liquidate quotes five minutes before close, not assume settlement.",
+  "duration_gate": "Using model-implied-volatility proxies at consistent ATM strikes: near (1m) IV increase >=0.05; far (3-6m) IV increase <=half near increase and <=0.025; far post IV <=quiet same-date peer median. Far expiry must cover disclosed risk end. Requires pre and decision-day quotes for both expiries.",
+  "noncash_gate": "Decision-day 3-6m 5%OTM-put model-IV minus ATM-put model-IV >=0.05 and above quiet same-date peer median. This is an insurance-richness proxy, not evidence of mispricing.",
+  "volatility_model": "European Black-Scholes inversion of quote midpoints using parity stock proxy and 4% interest, zero explicit dividend yield. Report as model proxy; no claims of true American-option IV.",
+  "controls": "Three deterministic same-date universe peers with no known filing in the five sessions BEFORE or ON the event date, preferably same sector. No future filings inform gate peers. Three same-company ordinary dates +/-42,+/-63,+/-84,+/-105sessions in same year, excluding filings +/-5sessions for retrospective placebo only. Up to3text-verified same-family nontrigger controls ordered by sameissuer,nearestdate,ticker. Missing news/earnings coverage remains.",
+  "dependence": "60-calendar-day issuer cooldown within signal. Mean per event, cluster bootstrap by issuer, leave-one-issuer-out, split by year, common cohorts across horizons. No annualized Sharpe from overlapping trades.",
+  "search_disclosure": "Six exploratory hypotheses added after prior failed strategies and approximately 2000 cells in separate shared research. All outcomes including no qualifying events are reported. No p-value is proof of alpha.",
+  "engineering_amendments": [
+    {
+      "change": "Gate peer eligibility now uses past filings only, replacing retrospective +/-5session quiet screen. Same economic gates retained. Rerun all affected outputs.",
+      "reason": "Independent code audit caught lookahead in gate comparator selection."
+    },
+    {
+      "change": "Summary selects one most recent completed primary and sensitivity run per signal, rather than unioning stale intermediate controls.",
+      "reason": "Prevent outdated partial manifests from contaminating final comparison cohorts."
+    },
+    {
+      "change": "Reject strike-selection fallback not meeting promised OTM distance.",
+      "reason": "Correctness guard; zero observed stored-panel violations before or after guard."
+    }
+  ]
+}

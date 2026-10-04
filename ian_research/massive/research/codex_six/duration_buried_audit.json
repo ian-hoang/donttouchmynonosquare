@@ -1,0 +1,62 @@
+{
+  "metadata": {
+    "period": [
+      "2024-01-01",
+      "2025-12-31"
+    ],
+    "input_rows": 2956,
+    "input_filings": 1741,
+    "input_sha256": "2811f3fffeb007df61b9756767aeb50762c86e84de615055dd2a5966b6920cab",
+    "candidate_filings": 110,
+    "all_candidate_excerpts_screened": true,
+    "full_main_filings_reviewed": 24,
+    "issuer_release_only_reviews": 1,
+    "relevant_exhibits_reviewed": 3,
+    "routine_tag_candidates": 6,
+    "additional_lexical_routine_candidate": "C 2024-02-20",
+    "audit_status": "complete_for_defined_cached_candidate_pool",
+    "prices_or_return_outcomes_read": false,
+    "filings_from_2026_used": false,
+    "publication_rule": "Use cached filing date only; execution timing is handled separately by the engine. Report/event dates in the cover are not substituted for filing dates.",
+    "limitations": [
+      "Cached sponsor taxonomy/excerpts define the candidate screen; this is not exhaustive full-text screening of all 1,741 filings.",
+      "All 110 adverse candidate excerpts were annotated; only economically plausible routine combinations, duration cases, and selected comparison filings received full-primary-source review.",
+      "Direct SEC download returned 403 and was stopped; accessible web SEC/issuer sources support the recorded factual paraphrases. Raw full filings are not cached.",
+      "One buried trigger cannot establish an attention effect or alpha. Controls vary by issuer and event type and are descriptive, not randomized or propensity matched.",
+      "Zero duration triggers means the exact strategy is untestable in this screened sample, not disproved. No indefinite risk was relabeled as 60\u2013180 days."
+    ]
+  },
+  "duration": {
+    "qualifying_events": 0,
+    "nontrigger_controls": 7,
+    "exclusion_counts": {
+      "settlement_not_operating_duration": 24,
+      "one_time_charge": 18,
+      "out_of_range_and_not_resolution": 3,
+      "no_explicit_risk_end": 11,
+      "transaction_not_operating_duration": 7,
+      "historical_compensation_context": 2,
+      "planned_restructuring_or_charge": 19,
+      "transaction_litigation": 5,
+      "not_new_adverse_fact": 12,
+      "executive_date_not_risk_end": 1,
+      "already_resolved": 4,
+      "already_resolved_or_unknown": 2,
+      "indefinite": 2
+    }
+  },
+  "buried": {
+    "qualifying_events": 1,
+    "nontrigger_controls": 7,
+    "exclusion_counts": {
+      "no_routine_combination_in_candidate_evidence": 96,
+      "prominent_or_related_only": 7,
+      "related_historical_context": 2,
+      "related_response_actions": 2,
+      "not_adverse": 1,
+      "nonroutine_adverse_combination": 1
+    },
+    "control_selection": "All source-reviewed dedicated impairment disclosures chosen before this annotator viewed any price data; exclude ordinary earnings releases, restructuring programs and tax charges."
+  },
+  "horizon_crosscheck": "duration_horizon_crosscheck.json records a separate all-row date-language recall screen; none supplies a qualifying ongoing 60\u2013180-day operating-risk recovery date."
+}

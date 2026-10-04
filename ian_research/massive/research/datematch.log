@@ -1,0 +1,53 @@
+  shareholder_proposal_outcome: 100/588 keys, 2s
+  shareholder_proposal_outcome: 200/588 keys, 3s
+  shareholder_proposal_outcome: 300/588 keys, 4s
+  shareholder_proposal_outcome: 400/588 keys, 6s
+  shareholder_proposal_outcome: 500/588 keys, 7s
+  shareholder_proposal_outcome: 588/588 keys, 8s
+
+shareholder_proposal_outcome: 121 events; busiest months: 2024-05 (38), 2025-05 (32), 2024-06 (11), 2025-06 (9), 2025-04 (6)
+  annual_meeting_results: 100/723 keys, 5s
+  annual_meeting_results: 200/723 keys, 8s
+  annual_meeting_results: 300/723 keys, 12s
+  annual_meeting_results: 400/723 keys, 17s
+  annual_meeting_results: 500/723 keys, 20s
+  annual_meeting_results: 600/723 keys, 23s
+  annual_meeting_results: 700/723 keys, 25s
+  annual_meeting_results: 723/723 keys, 26s
+
+annual_meeting_results: 150 events; busiest months: 2025-05 (39), 2024-05 (37), 2024-06 (12), 2025-06 (12), 2024-04 (11)
+  combo:deal_signed: 100/264 keys, 3s
+  combo:deal_signed: 200/264 keys, 7s
+  combo:deal_signed: 264/264 keys, 10s
+
+combo:deal_signed: 53 events; busiest months: 2024-07 (5), 2025-05 (5), 2025-02 (4), 2025-08 (4), 2025-03 (4)
+  equity_compensation_grant: 100/164 keys, 4s
+  equity_compensation_grant: 164/164 keys, 5s
+
+equity_compensation_grant: 33 events; busiest months: 2024-05 (6), 2024-07 (3), 2025-07 (3), 2024-03 (2), 2024-04 (2)
+  executive_officer_departure: 100/655 keys, 3s
+  executive_officer_departure: 200/655 keys, 6s
+  executive_officer_departure: 300/655 keys, 9s
+  executive_officer_departure: 400/655 keys, 13s
+  executive_officer_departure: 500/655 keys, 16s
+  executive_officer_departure: 600/655 keys, 19s
+  executive_officer_departure: 655/655 keys, 21s
+
+executive_officer_departure: 132 events; busiest months: 2025-01 (11), 2025-02 (10), 2025-08 (9), 2025-05 (8), 2024-07 (8)
+  combo:debt_offering: 100/1429 keys, 3s
+  combo:debt_offering: 200/1429 keys, 6s
+  combo:debt_offering: 300/1429 keys, 11s
+  combo:debt_offering: 400/1429 keys, 16s
+  combo:debt_offering: 500/1429 keys, 20s
+  combo:debt_offering: 600/1429 keys, 25s
+  combo:debt_offering: 700/1429 keys, 29s
+  combo:debt_offering: 800/1429 keys, 32s
+  combo:debt_offering: 900/1429 keys, 37s
+  combo:debt_offering: 1000/1429 keys, 41s
+  combo:debt_offering: 1100/1429 keys, 47s
+  combo:debt_offering: 1200/1429 keys, 51s
+  combo:debt_offering: 1300/1429 keys, 55s
+  combo:debt_offering: 1400/1429 keys, 59s
+  combo:debt_offering: 1429/1429 keys, 60s
+
+combo:debt_offering: 292 events; busiest months: 2025-05 (27), 2025-02 (23), 2025-09 (18), 2024-05 (18), 2025-03 (18)

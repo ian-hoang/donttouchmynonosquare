@@ -1,0 +1,12 @@
+{
+  "as_of": "2026-10-03",
+  "status": "accounting_tests_passed_market_backtest_not_run",
+  "command": ".venv/bin/python -m pytest -q research/stock_loan_alpha/test_cashflow.py",
+  "test_count": 24,
+  "passed": 24,
+  "market_trades_evaluated": null,
+  "sharpe": null,
+  "blocker": "No historical firm borrow rates/availability/loan lifecycle dataset located",
+  "independent_review": "Economics/data/protocol reviewed independently; two accounting guard findings fixed and tested",
+  "scope": "Synthetic accounting and quote-eligibility tests. No lending signal, American valuation, execution simulation, or portfolio performance tested."
+}

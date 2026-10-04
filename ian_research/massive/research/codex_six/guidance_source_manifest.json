@@ -1,0 +1,884 @@
+[
+  {
+    "accession_number": "0000002488-24-000054",
+    "ticker": "AMD",
+    "filing_date": "2024-04-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000054.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000054.txt"
+  },
+  {
+    "accession_number": "0000012927-25-000041",
+    "ticker": "BA",
+    "filing_date": "2025-06-04",
+    "url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000041.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000041.txt"
+  },
+  {
+    "accession_number": "0000019617-24-000330",
+    "ticker": "JPM",
+    "filing_date": "2024-05-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/19617/0000019617-24-000330.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/19617/0000019617-24-000330.txt"
+  },
+  {
+    "accession_number": "0000036104-24-000028",
+    "ticker": "USB",
+    "filing_date": "2024-03-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/36104/0000036104-24-000028.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/36104/0000036104-24-000028.txt"
+  },
+  {
+    "accession_number": "0000050863-24-000086",
+    "ticker": "INTC",
+    "filing_date": "2024-05-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000086.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000086.txt"
+  },
+  {
+    "accession_number": "0000050863-24-000147",
+    "ticker": "INTC",
+    "filing_date": "2024-10-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000147.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000147.txt"
+  },
+  {
+    "accession_number": "0000050863-25-000004",
+    "ticker": "INTC",
+    "filing_date": "2025-01-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000004.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000004.txt"
+  },
+  {
+    "accession_number": "0000050863-25-000107",
+    "ticker": "INTC",
+    "filing_date": "2025-07-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000107.txt"
+  },
+  {
+    "accession_number": "0000050863-25-000153",
+    "ticker": "INTC",
+    "filing_date": "2025-09-15",
+    "url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000153.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000153.txt"
+  },
+  {
+    "accession_number": "0000064803-24-000009",
+    "ticker": "CVS",
+    "filing_date": "2024-03-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/64803/0000064803-24-000009.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/64803/0000064803-24-000009.txt"
+  },
+  {
+    "accession_number": "0000064803-25-000082",
+    "ticker": "CVS",
+    "filing_date": "2025-12-09",
+    "url": "https://www.sec.gov/Archives/edgar/data/64803/0000064803-25-000082.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/64803/0000064803-25-000082.txt"
+  },
+  {
+    "accession_number": "0000066740-24-000005",
+    "ticker": "MMM",
+    "filing_date": "2024-01-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000005.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000005.txt"
+  },
+  {
+    "accession_number": "0000066740-24-000051",
+    "ticker": "MMM",
+    "filing_date": "2024-04-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000051.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000051.txt"
+  },
+  {
+    "accession_number": "0000066740-24-000077",
+    "ticker": "MMM",
+    "filing_date": "2024-07-26",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000077.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000077.txt"
+  },
+  {
+    "accession_number": "0000066740-24-000098",
+    "ticker": "MMM",
+    "filing_date": "2024-10-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000098.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000098.txt"
+  },
+  {
+    "accession_number": "0000066740-25-000002",
+    "ticker": "MMM",
+    "filing_date": "2025-01-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000002.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000002.txt"
+  },
+  {
+    "accession_number": "0000066740-25-000046",
+    "ticker": "MMM",
+    "filing_date": "2025-05-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000046.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000046.txt"
+  },
+  {
+    "accession_number": "0000066740-25-000061",
+    "ticker": "MMM",
+    "filing_date": "2025-07-18",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000061.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000061.txt"
+  },
+  {
+    "accession_number": "0000066740-25-000086",
+    "ticker": "MMM",
+    "filing_date": "2025-10-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000086.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/66740/0000066740-25-000086.txt"
+  },
+  {
+    "accession_number": "0000070858-24-000006",
+    "ticker": "BAC",
+    "filing_date": "2024-01-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000006.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000006.txt"
+  },
+  {
+    "accession_number": "0000070858-24-000027",
+    "ticker": "BAC",
+    "filing_date": "2024-02-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt"
+  },
+  {
+    "accession_number": "0000077476-25-000059",
+    "ticker": "PEP",
+    "filing_date": "2025-12-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000059.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000059.txt"
+  },
+  {
+    "accession_number": "0000078003-24-000195",
+    "ticker": "PFE",
+    "filing_date": "2024-12-17",
+    "url": "https://www.sec.gov/Archives/edgar/data/78003/0000078003-24-000195.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/78003/0000078003-24-000195.txt"
+  },
+  {
+    "accession_number": "0000078003-25-000167",
+    "ticker": "PFE",
+    "filing_date": "2025-12-16",
+    "url": "https://www.sec.gov/Archives/edgar/data/78003/0000078003-25-000167.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/78003/0000078003-25-000167.txt"
+  },
+  {
+    "accession_number": "0000080424-24-000015",
+    "ticker": "PG",
+    "filing_date": "2024-01-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000015.txt"
+  },
+  {
+    "accession_number": "0000080424-24-000048",
+    "ticker": "PG",
+    "filing_date": "2024-04-19",
+    "url": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000048.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/80424/0000080424-24-000048.txt"
+  },
+  {
+    "accession_number": "0000080424-25-000050",
+    "ticker": "PG",
+    "filing_date": "2025-06-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000050.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000050.txt"
+  },
+  {
+    "accession_number": "0000092122-24-000003",
+    "ticker": "SO",
+    "filing_date": "2024-02-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/92122/0000092122-24-000003.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/92122/0000092122-24-000003.txt"
+  },
+  {
+    "accession_number": "0000092122-24-000091",
+    "ticker": "SO",
+    "filing_date": "2024-10-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/3153/0000092122-24-000091.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/3153/0000092122-24-000091.txt"
+  },
+  {
+    "accession_number": "0000093410-24-000002",
+    "ticker": "CVX",
+    "filing_date": "2024-01-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000002.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000002.txt"
+  },
+  {
+    "accession_number": "0000093410-25-000098",
+    "ticker": "CVX",
+    "filing_date": "2025-09-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000098.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000098.txt"
+  },
+  {
+    "accession_number": "0000101829-24-000031",
+    "ticker": "RTX",
+    "filing_date": "2024-08-30",
+    "url": "https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000031.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000031.txt"
+  },
+  {
+    "accession_number": "0000101829-24-000033",
+    "ticker": "RTX",
+    "filing_date": "2024-10-16",
+    "url": "https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000033.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/101829/0000101829-24-000033.txt"
+  },
+  {
+    "accession_number": "0000200406-24-000048",
+    "ticker": "JNJ",
+    "filing_date": "2024-05-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/200406/0000200406-24-000048.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/200406/0000200406-24-000048.txt"
+  },
+  {
+    "accession_number": "0000313616-24-000004",
+    "ticker": "DHR",
+    "filing_date": "2024-01-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/313616/0000313616-24-000004.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/313616/0000313616-24-000004.txt"
+  },
+  {
+    "accession_number": "0000316709-24-000011",
+    "ticker": "SCHW",
+    "filing_date": "2024-01-17",
+    "url": "https://www.sec.gov/Archives/edgar/data/316709/0000316709-24-000011.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/316709/0000316709-24-000011.txt"
+  },
+  {
+    "accession_number": "0000731766-24-000338",
+    "ticker": "UNH",
+    "filing_date": "2024-12-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-24-000338.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/731766/0000731766-24-000338.txt"
+  },
+  {
+    "accession_number": "0000731766-25-000245",
+    "ticker": "UNH",
+    "filing_date": "2025-09-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000245.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000245.txt"
+  },
+  {
+    "accession_number": "0000732712-24-000003",
+    "ticker": "VZ",
+    "filing_date": "2024-01-17",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000003.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000003.txt"
+  },
+  {
+    "accession_number": "0000732712-24-000007",
+    "ticker": "VZ",
+    "filing_date": "2024-01-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000007.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000007.txt"
+  },
+  {
+    "accession_number": "0000732712-24-000015",
+    "ticker": "VZ",
+    "filing_date": "2024-03-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000015.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000015.txt"
+  },
+  {
+    "accession_number": "0000732712-24-000025",
+    "ticker": "VZ",
+    "filing_date": "2024-04-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000025.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000025.txt"
+  },
+  {
+    "accession_number": "0000732712-24-000062",
+    "ticker": "VZ",
+    "filing_date": "2024-10-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000062.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000062.txt"
+  },
+  {
+    "accession_number": "0000732712-25-000003",
+    "ticker": "VZ",
+    "filing_date": "2025-01-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000003.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000003.txt"
+  },
+  {
+    "accession_number": "0000732712-25-000010",
+    "ticker": "VZ",
+    "filing_date": "2025-03-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000010.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000010.txt"
+  },
+  {
+    "accession_number": "0000732717-24-000004",
+    "ticker": "T",
+    "filing_date": "2024-01-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000004.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000004.txt"
+  },
+  {
+    "accession_number": "0000732717-24-000016",
+    "ticker": "T",
+    "filing_date": "2024-04-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000016.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732717/0000732717-24-000016.txt"
+  },
+  {
+    "accession_number": "0000732717-25-000005",
+    "ticker": "T",
+    "filing_date": "2025-01-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/732717/0000732717-25-000005.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/732717/0000732717-25-000005.txt"
+  },
+  {
+    "accession_number": "0000753308-24-000035",
+    "ticker": "NEE",
+    "filing_date": "2024-06-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/753308/0000753308-24-000035.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/753308/0000753308-24-000035.txt"
+  },
+  {
+    "accession_number": "0000753308-25-000064",
+    "ticker": "NEE",
+    "filing_date": "2025-12-08",
+    "url": "https://www.sec.gov/Archives/edgar/data/753308/0000753308-25-000064.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/753308/0000753308-25-000064.txt"
+  },
+  {
+    "accession_number": "0000773840-24-000066",
+    "ticker": "HON",
+    "filing_date": "2024-06-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000066.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000066.txt"
+  },
+  {
+    "accession_number": "0000773840-24-000102",
+    "ticker": "HON",
+    "filing_date": "2024-12-02",
+    "url": "https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000102.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/773840/0000773840-24-000102.txt"
+  },
+  {
+    "accession_number": "0000796343-25-000064",
+    "ticker": "ADBE",
+    "filing_date": "2025-06-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000064.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000064.txt"
+  },
+  {
+    "accession_number": "0000796343-25-000102",
+    "ticker": "ADBE",
+    "filing_date": "2025-09-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000102.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000102.txt"
+  },
+  {
+    "accession_number": "0000829224-25-000067",
+    "ticker": "SBUX",
+    "filing_date": "2025-09-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000067.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000067.txt"
+  },
+  {
+    "accession_number": "0000896878-24-000051",
+    "ticker": "INTU",
+    "filing_date": "2024-11-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000051.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000051.txt"
+  },
+  {
+    "accession_number": "0000896878-25-000020",
+    "ticker": "INTU",
+    "filing_date": "2025-05-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000020.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000020.txt"
+  },
+  {
+    "accession_number": "0000896878-25-000031",
+    "ticker": "INTU",
+    "filing_date": "2025-08-21",
+    "url": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000031.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000031.txt"
+  },
+  {
+    "accession_number": "0000936468-24-000088",
+    "ticker": "LMT",
+    "filing_date": "2024-07-19",
+    "url": "https://www.sec.gov/Archives/edgar/data/936468/0000936468-24-000088.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/936468/0000936468-24-000088.txt"
+  },
+  {
+    "accession_number": "0000936468-25-000057",
+    "ticker": "LMT",
+    "filing_date": "2025-12-18",
+    "url": "https://www.sec.gov/Archives/edgar/data/936468/0000936468-25-000057.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/936468/0000936468-25-000057.txt"
+  },
+  {
+    "accession_number": "0000947871-24-000009",
+    "ticker": "CVS",
+    "filing_date": "2024-01-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/64803/0000947871-24-000009.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/64803/0000947871-24-000009.txt"
+  },
+  {
+    "accession_number": "0001099219-24-000028",
+    "ticker": "MET",
+    "filing_date": "2024-01-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000028.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-24-000028.txt"
+  },
+  {
+    "accession_number": "0001099219-25-000039",
+    "ticker": "MET",
+    "filing_date": "2025-02-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000039.txt"
+  },
+  {
+    "accession_number": "0001099219-25-000222",
+    "ticker": "MET",
+    "filing_date": "2025-09-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000222.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000222.txt"
+  },
+  {
+    "accession_number": "0001099219-25-000239",
+    "ticker": "MET",
+    "filing_date": "2025-12-22",
+    "url": "https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000239.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1099219/0001099219-25-000239.txt"
+  },
+  {
+    "accession_number": "0001104659-24-002981",
+    "ticker": "C",
+    "filing_date": "2024-01-10",
+    "url": "https://www.sec.gov/Archives/edgar/data/831001/0001104659-24-002981.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/831001/0001104659-24-002981.txt"
+  },
+  {
+    "accession_number": "0001104659-24-098942",
+    "ticker": "IBM",
+    "filing_date": "2024-09-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/51143/0001104659-24-098942.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/51143/0001104659-24-098942.txt"
+  },
+  {
+    "accession_number": "0001104659-25-084800",
+    "ticker": "CAT",
+    "filing_date": "2025-08-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-084800.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-084800.txt"
+  },
+  {
+    "accession_number": "0001104659-25-092977",
+    "ticker": "C",
+    "filing_date": "2025-09-24",
+    "url": "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-092977.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-092977.txt"
+  },
+  {
+    "accession_number": "0001104659-25-124865",
+    "ticker": "C",
+    "filing_date": "2025-12-29",
+    "url": "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-124865.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-124865.txt"
+  },
+  {
+    "accession_number": "0001108524-25-000168",
+    "ticker": "CRM",
+    "filing_date": "2025-10-16",
+    "url": "https://www.sec.gov/Archives/edgar/data/1108524/0001108524-25-000168.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1108524/0001108524-25-000168.txt"
+  },
+  {
+    "accession_number": "0001140361-24-040659",
+    "ticker": "AAPL",
+    "filing_date": "2024-09-10",
+    "url": "https://www.sec.gov/Archives/edgar/data/320193/0001140361-24-040659.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/320193/0001140361-24-040659.txt"
+  },
+  {
+    "accession_number": "0001141391-24-000211",
+    "ticker": "MA",
+    "filing_date": "2024-11-13",
+    "url": "https://www.sec.gov/Archives/edgar/data/1141391/0001141391-24-000211.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1141391/0001141391-24-000211.txt"
+  },
+  {
+    "accession_number": "0001193125-24-049404",
+    "ticker": "DIS",
+    "filing_date": "2024-02-28",
+    "url": "https://www.sec.gov/Archives/edgar/data/1744489/0001193125-24-049404.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1744489/0001193125-24-049404.txt"
+  },
+  {
+    "accession_number": "0001193125-24-270298",
+    "ticker": "GM",
+    "filing_date": "2024-12-04",
+    "url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt"
+  },
+  {
+    "accession_number": "0001193125-24-275524",
+    "ticker": "MSFT",
+    "filing_date": "2024-12-11",
+    "url": "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt"
+  },
+  {
+    "accession_number": "0001193125-25-034283",
+    "ticker": "PYPL",
+    "filing_date": "2025-02-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-034283.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-034283.txt"
+  },
+  {
+    "accession_number": "0001283699-24-000062",
+    "ticker": "TMUS",
+    "filing_date": "2024-04-25",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000062.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000062.txt"
+  },
+  {
+    "accession_number": "0001283699-24-000109",
+    "ticker": "TMUS",
+    "filing_date": "2024-07-31",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000109.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000109.txt"
+  },
+  {
+    "accession_number": "0001283699-24-000141",
+    "ticker": "TMUS",
+    "filing_date": "2024-10-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000141.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-24-000141.txt"
+  },
+  {
+    "accession_number": "0001283699-25-000116",
+    "ticker": "TMUS",
+    "filing_date": "2025-07-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000116.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000116.txt"
+  },
+  {
+    "accession_number": "0001283699-25-000153",
+    "ticker": "TMUS",
+    "filing_date": "2025-10-23",
+    "url": "https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000153.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1283699/0001283699-25-000153.txt"
+  },
+  {
+    "accession_number": "0001413329-24-000160",
+    "ticker": "PM",
+    "filing_date": "2024-09-17",
+    "url": "https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000160.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000160.txt"
+  },
+  {
+    "accession_number": "0001437749-24-029518",
+    "ticker": "UNP",
+    "filing_date": "2024-09-19",
+    "url": "https://www.sec.gov/Archives/edgar/data/100885/0001437749-24-029518.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/100885/0001437749-24-029518.txt"
+  },
+  {
+    "accession_number": "0001467858-25-000093",
+    "ticker": "GM",
+    "filing_date": "2025-05-01",
+    "url": "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000093.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000093.txt"
+  },
+  {
+    "accession_number": "0001467858-25-000136",
+    "ticker": "GM",
+    "filing_date": "2025-10-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt"
+  },
+  {
+    "accession_number": "0001551152-24-000002",
+    "ticker": "ABBV",
+    "filing_date": "2024-01-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000002.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000002.txt"
+  },
+  {
+    "accession_number": "0001551152-24-000013",
+    "ticker": "ABBV",
+    "filing_date": "2024-04-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000013.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000013.txt"
+  },
+  {
+    "accession_number": "0001551152-24-000024",
+    "ticker": "ABBV",
+    "filing_date": "2024-07-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000024.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000024.txt"
+  },
+  {
+    "accession_number": "0001551152-24-000033",
+    "ticker": "ABBV",
+    "filing_date": "2024-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000033.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-24-000033.txt"
+  },
+  {
+    "accession_number": "0001551152-25-000002",
+    "ticker": "ABBV",
+    "filing_date": "2025-01-06",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000002.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000002.txt"
+  },
+  {
+    "accession_number": "0001551152-25-000006",
+    "ticker": "ABBV",
+    "filing_date": "2025-01-10",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000006.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000006.txt"
+  },
+  {
+    "accession_number": "0001551152-25-000023",
+    "ticker": "ABBV",
+    "filing_date": "2025-04-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000023.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000023.txt"
+  },
+  {
+    "accession_number": "0001551152-25-000034",
+    "ticker": "ABBV",
+    "filing_date": "2025-07-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000034.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000034.txt"
+  },
+  {
+    "accession_number": "0001551152-25-000043",
+    "ticker": "ABBV",
+    "filing_date": "2025-10-03",
+    "url": "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000043.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000043.txt"
+  },
+  {
+    "accession_number": "0001552781-24-000039",
+    "ticker": "UBER",
+    "filing_date": "2024-02-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000039.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000039.txt"
+  },
+  {
+    "accession_number": "0001552781-24-000318",
+    "ticker": "UBER",
+    "filing_date": "2024-05-14",
+    "url": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000318.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000318.txt"
+  },
+  {
+    "accession_number": "0001652044-25-000074",
+    "ticker": "GOOGL",
+    "filing_date": "2025-09-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1652044/0001652044-25-000074.txt",
+    "http_status": 403,
+    "status": "failed",
+    "error": "HTTPError: 403 Client Error: Forbidden for url: https://www.sec.gov/Archives/edgar/data/1652044/0001652044-25-000074.txt"
+  }
+]

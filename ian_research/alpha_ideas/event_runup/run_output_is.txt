@@ -1,0 +1,47 @@
+=== IN-SAMPLE: entries 2021-01-01 .. 2025-12-31 ===
+universe events 18,075; dropped for missing returns 3; scored 17,812 (no score 260); hot 3,522; cold 3,656
+timing of scored events: {'case1': 9534, 'amc': 8171, 'earlier': 107}
+
+PRIMARY — hot events (score ≥ 0.8), beta-hedged, 5 sessions, net of costs
+  hot NET                                      N  3,522   mean  -0.254%   t  -0.96   hit 48.6%
+  hot gross                                    N  3,522   mean  -0.033%   t  -0.12   hit 50.8%
+  VERDICT: FAIL
+
+S1 — placebo: same hot events, window 30 sessions earlier
+  placebo NET                                  N  3,521   mean  +0.141%   t  +0.60   hit 48.7%
+  event − placebo (paired)                     N  3,521   mean  -0.379%   t  -1.31   hit 49.2%
+
+S2/S3 — all scored events and cold events
+  all scored NET                               N 17,812   mean  -0.248%   t  -2.21   hit 47.6%
+  all scored gross                             N 17,812   mean  -0.040%   t  -0.35   hit 50.2%
+  cold NET                                     N  3,656   mean  -0.303%   t  -2.27   hit 45.7%
+  hot − cold gross (difference of means): +0.069%
+
+S4 — single measures, top quintile (net)
+  rk_r12 ≥ 0.8                                 N  3,539   mean  -0.146%   t  -0.57   hit 50.0%
+  rk_preac ≥ 0.8                               N  3,597   mean  -0.205%   t  -1.04   hit 49.2%
+  rk_ivol ≥ 0.8                                N  3,370   mean  -0.535%   t  -1.56   hit 45.9%
+
+S5 — conservative timing (exit at the session before the filing date for every event)
+  hot NET, conservative exit                   N  3,523   mean  -0.218%   t  -0.83   hit 48.5%
+  hot NET, pre-registered v1 timing rule       N  3,522   mean  -0.266%   t  -1.00   hit 48.4%
+
+S6 — 10-session window
+  hot NET, 10 sessions                         N  3,552   mean  -0.360%   t  -1.23   hit 46.9%
+
+S7/S8 — market-adjusted hedge (beta = 1); doubled costs
+  hot NET, beta = 1                            N  3,522   mean  -0.161%   t  -0.57   hit 49.5%
+  hot NET, 2x costs                            N  3,522   mean  -0.475%   t  -1.80   hit 46.7%
+
+S9 — by calendar year of entry (hot, net)
+  2021                                         N    671   mean  -1.283%   t  -1.26   hit 41.4%
+  2022                                         N    683   mean  -0.028%   t  -0.07   hit 52.7%
+  2023                                         N    716   mean  -0.390%   t  -1.36   hit 45.8%
+  2024                                         N    715   mean  +0.495%   t  +1.11   hit 52.2%
+  2025                                         N    737   mean  -0.122%   t  -0.24   hit 50.6%
+
+S10 — predictable-schedule subset (an episode start 357–371 days before F)
+  hot NET, predictable dates                   N  3,137   mean  -0.260%   t  -1.01   hit 49.1%
+
+S11 — calendar-time portfolio of hot positions (net)
+  annual mean -5.37%   vol 25.53%   Sharpe -0.21   max DD -68.1%   days with positions 93%   avg positions/day 15.0

@@ -1,0 +1,31 @@
+{
+  "name": "SPY noise-band + VWAP intraday trend, one fixed unlevered adaptation",
+  "frozen_at_utc": "2026-10-03T16:51:48.367477+00:00",
+  "primary_trial_number": 7,
+  "selection_context": "Added after root saw calendar/sector outcomes; author rule research-selected; not a pristine prospective test. Implementer has not seen index_intraday outcomes.",
+  "sources": [
+    "https://concretumgroup.com/wp-content/uploads/2026/02/Beat-the-Market.pdf",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824172"
+  ],
+  "source_revision": "2025-09-22",
+  "source_first_version": "2024-05-10",
+  "input": "Cached Massive split-adjusted one-minute SPY OHLCV. Trade prints, not executable NBBO. No new data purchases.",
+  "universe": "SPY only, 2015-01-01 through2026-10-02",
+  "development": "2015-2021",
+  "validation": "2022-2023",
+  "historical_holdout": "2024-01-01 through2026-10-02; overlaps sourcepaper study/revisions",
+  "post_revision_descriptive": "2025-09-23 through2026-10-02",
+  "signal": "For each completed halfhour10:00..15:30 ET, sigma=mean(abs(prior close at same clock/prior09:30open -1)) over previous14market sessions, excluding current day. Upper=max(today09:30open,previousdailyclose)*(1+sigma), lower=min(todayopen,previousclose)*(1-sigma). Multiplier1.",
+  "vwap": "Cumulative RTH minute vwap*volume/sumvolume through completed signal minute; use Massive vw, no futurebars.",
+  "state": "Target+1 if latestcompletedminuteclose >upper AND >VWAP, -1 if <lower AND <VWAP, else0. Decisions/stops onlyevery30minutes. Retain existing shares while same direction; flatten or reverse on target change. Reentry allowed on later halfhour. This combines entry/stop thresholds to avoid entering directly through a bindingVWAPstop; namedadaptation.",
+  "execution": "09:59minute closes10:00, onefullminute processing, execute10:01minuteopen; generalized eachhalf-hour. Final mandatoryexit15:59minuteopen. No samebarfills. Shares fixed betweenpositionchanges; entrynotional<=min(daystartNAV,currentNAV)afterfee reserve; grosscap1atentry, passive driftpossible. Fractionalshares.",
+  "costs": "1bp eachside; stress3bp eachside, nooptimization. Reversalscharged2sides.",
+  "borrow": "Charge2%/365 times maximum shortnotional/day, evenifshortonlybriefly. No shortproceedsinterest orlocatesavings.",
+  "funding": "Fullycollateralizedcashsleeve; primaryEXCESSreturnsovercash. Chargeprior-sessionDGS3MOannualyield/100/365 timesintradayabsolutenotionalcapitalminutes/1440. FlatcapitalassumedearnsRF,allflatdays0excess. Nevercreditrestrictedshortsaleproceeds. Zero-interestaccountminusfullcalendaraccruedRF isseparatesensitivity. BenchmarkSPYtotalreturnminuscashaccrualbetweensessions.",
+  "dividends": "No overnightposition, no dividendpayment received/owed; use unadjustedfordividendpreviousclose perpapertext.",
+  "calendar": "RetainallSPYdailydatesincludingflat/warmup. PreexcludeJuly2/3,Dec24,FridayafterfourthNovemberThursday. No futurefullsessioncoverageentryfilter. At eachhalfhour requireobservedRTHprefixcompletepositivefiniteOHLC/vw andpositivevolume; ifmissingprefix, cancelnewentriesandflattenatfirstobservedminuteopenatleast1minuteafterdecision, thenlockday. Noisehistoryprevious14actualmarketdatesrequiresfinite sameclockclose/open. Neverlookaheadtofuturebaravailabilitybeforeentry. Finalexit15:59openorfirstobservedlateropenwithinRTH; ifnonewithpositionopenmarkoutcomeunresolved andstopperformanceclaim. Reportallmissing-afterentryevents.",
+  "metrics": "AllsessiondailyreturnSharpe sqrt252; annualarithmeticmean; CAGR; maxdrawdown; HAC5meanandmarketalpha;5sessionmovingblockbootstrap2000repsseed20261003 forSharpeCI; seven-wayBonferronione-sidedmeanp asscreeningdiagnostic; not formaldiscoverygivenunrecordedauthor/researchselection.",
+  "prohibited": "No parameter sweep, no filteredsubgroupsearch, noweekdayregimeorvolfilter. Noalteringsignafteroutcomes.",
+  "protocol_amendment_before_any_outcome": "Removedfuture390barcoveragegate atrootreview; entrychecksstrictlyprefixcausal.",
+  "rate_source_amendment_before_outcomes": "RootrequestedcommonDGS3MOsourceinsteadofFrench/staleRF; amendedbeforefirsthistoricalrun. Dataat../sectors/data/DGS3MO.csv."
+}

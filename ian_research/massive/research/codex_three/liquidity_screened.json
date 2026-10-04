@@ -1,0 +1,1899 @@
+{
+  "metadata": {
+    "strategy_id": "liquidity_runway_v1",
+    "window": [
+      "2024-01-01",
+      "2025-12-31"
+    ],
+    "spec_sha256": "ea809ac5d588ae0dad559f82ae406da2edfbfd563e4d42b64b897eed8f313b08",
+    "input_sha256": "9be80f4d496b7f0730b11ea44533bd3d6d9e084435ac5b0cc2a8f5fd8ecdfa74",
+    "input_rows": 2956,
+    "credit_disclosure_rows": 84,
+    "screened_filing_events": 62,
+    "screened_issuers": 38,
+    "eligible_events": 17,
+    "eligible_issuers": 12,
+    "rejection_counts": {
+      "not_effective_by_filing": 3,
+      "insufficient_old_terms": 21,
+      "acquisition_financing": 7,
+      "capacity_missing": 1,
+      "old_maturity_missing": 1,
+      "old_capacity_missing": 3,
+      "capacity_reduction": 2,
+      "new_or_supplemental_only": 1,
+      "commercial_paper_only": 2,
+      "term_loan_only": 1,
+      "maturity_missing": 1,
+      "no_maturity_extension": 1,
+      "repayment_not_extension": 1
+    },
+    "price_data_read": false,
+    "out_of_sample_data_read": false,
+    "method": "Frozen human annotations joined to historical sponsor excerpts; supporting text is not independently checked against full SEC exhibit.",
+    "selected_events_are_not_trade_fills": true
+  },
+  "screened": [
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "PM",
+      "issuer": "PM",
+      "cik": "0001413329",
+      "filing_date": "2024-01-24",
+      "date": "2024-01-24",
+      "accession_number": "0001104659-24-006244",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-24-006244.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-24-006244.txt",
+      "supporting_text": [
+        "Philip Morris International Inc. entered into an agreement, effective as of January 30, 2024 (the Extension Agreement), to extend the term of its existing 364-day revolving credit facility from January 30, 2024 to January 28, 2025 in the amount of $1.7 billion, pursuant to Section 2.19 of the Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "PM",
+      "expected_date": "2024-01-24",
+      "reason_code": "not_effective_by_filing",
+      "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "ABT",
+      "issuer": "ABT",
+      "cik": "0000001800",
+      "filing_date": "2024-01-29",
+      "date": "2024-01-29",
+      "accession_number": "0001104659-24-007725",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1800/0001104659-24-007725.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1800/0001104659-24-007725.txt",
+      "supporting_text": [
+        "On January 29, 2024, Abbott Laboratories entered into a Five Year Credit Agreement with lenders and JPMorgan Chase Bank, N.A., as administrative agent. The Revolving Credit Agreement provides Abbott with the ability to borrow up to $5 billion on an unsecured basis. Any borrowings under the Revolving Credit Agreement will mature and be payable on the fifth anniversary of the Effective Date.",
+        "In connection with its entry into the Revolving Credit Agreement, on the Effective Date Abbott terminated all commitments outstanding under the Five Year Credit Agreement, dated as of November 12, 2020 (as amended by that certain Amendment No. 1, dated as of May 12, 2023, the 'Existing Credit Agreement'). There were no outstanding borrowings under the Existing Credit Agreement at the time of its termination."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "ABT",
+      "expected_date": "2024-01-29",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CSCO",
+      "issuer": "CSCO",
+      "cik": "0000858877",
+      "filing_date": "2024-02-08",
+      "date": "2024-02-08",
+      "accession_number": "0001193125-24-028353",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/858877/0001193125-24-028353.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/858877/0001193125-24-028353.txt",
+      "supporting_text": [
+        "On February 2, 2024, Cisco Systems, Inc. entered into the Third Amended and Restated Credit Agreement providing for a five year $5.0 billion unsecured revolving credit facility, which includes a $250 million sublimit for the issuance of standby letters of credit, a $250 million sublimit for swingline loans, a $1.0 billion sublimit for borrowings or letters of credit denominated in currencies other than U.S. dollars, a provision permitting Cisco to increase the amount of borrowing up to $2.0 billion (for an aggregate total of up to $7.0 billion in available borrowing), and a provision that allows for the maturity of the credit facility to be extended for an additional year up to two times."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CSCO",
+      "expected_date": "2024-02-08",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "NKE",
+      "issuer": "NKE",
+      "cik": "0000320187",
+      "filing_date": "2024-03-11",
+      "date": "2024-03-11",
+      "accession_number": "0000320187-24-000009",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-24-000009.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-24-000009.txt",
+      "supporting_text": [
+        "On March 8, 2024, concurrently with the Company's entry into the 364-Day Credit Agreement described in Item 1.01 hereof, the Company terminated the existing Credit Agreement dated March 10, 2023, which provided for up to $1.0 billion of borrowings in U.S. Dollars pursuant to a 364\u2011day unsecured revolving credit facility. The Prior 364\u2011Day Credit Agreement would have expired on March 8, 2024.",
+        "On March 8, 2024, NIKE, Inc. (the \"Company\") entered into a Credit Agreement with Bank of America, N.A., as administrative agent, and the other financial institutions named therein as lenders (the \"364\u2011Day Credit Agreement\"). The 364\u2011Day Credit Agreement provides for up to $1.0 billion of borrowings pursuant to a 364\u2011day unsecured revolving credit facility (the \"364\u2011Day Credit Facility\"), which is available for working capital and general corporate purposes, including supporting the issuance of commercial paper."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "NKE",
+      "expected_date": "2024-03-11",
+      "reason_code": "qualifies",
+      "reason": "Executed $1b replacement of $1b facility expiring March 8, 2024.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 1000000000.0,
+          "new_capacity_usd": 1000000000.0,
+          "old_maturity": "2024-03-08",
+          "new_maturity": "2025-03-07",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old expiration directly stated; new date calculated from March 8, 2024 plus 364 days."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "GM",
+      "issuer": "GM",
+      "cik": "0001467858",
+      "filing_date": "2024-03-28",
+      "date": "2024-03-28",
+      "accession_number": "0001193125-24-080620",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-080620.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-080620.txt",
+      "supporting_text": [
+        "On March 28, 2024, the Company terminated its $3.0 billion 364-Day Delayed Draw Term Loan Credit Agreement, dated as of November 29, 2023, with Bank of America, N.A., as administrative agent. The Company did not incur any early termination penalties in connection with the termination of the Facility.",
+        "On March 28, 2024, General Motors Company entered into a Sixth Amended and Restated 364-Day Revolving Credit Agreement with JPMorgan Chase Bank, N.A., as administrative agent. The Renewed Facility is unsecured and consists of a 364-day, $2.0 billion facility and matures on March 27, 2025."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "GM",
+      "expected_date": "2024-03-28",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "NFLX",
+      "issuer": "NFLX",
+      "cik": "0001065280",
+      "filing_date": "2024-04-18",
+      "date": "2024-04-18",
+      "accession_number": "0001065280-24-000127",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1065280/0001065280-24-000127.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/0001065280-24-000127.txt",
+      "supporting_text": [
+        "In connection with its entry into the Revolving Credit Agreement, the Company terminated the Revolving Credit Agreement dated as of July 27, 2017, as amended, by and among the Company, Morgan Stanley Senior Funding, Inc., as administrative agent, and the lenders party thereto.",
+        "On April 12, 2024, Netflix, Inc. (the \"Company\") entered into a Senior Unsecured Revolving Credit Agreement (the \"Revolving Credit Agreement\") among the Company, the lenders party thereto and JPMorgan Chase Bank, N.A., as the administrative agent. The Revolving Credit Agreement provides for a $3,000,000,000 unsecured revolving credit facility."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "NFLX",
+      "expected_date": "2024-04-18",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HD",
+      "issuer": "HD",
+      "cik": "0000354950",
+      "filing_date": "2024-05-09",
+      "date": "2024-05-09",
+      "accession_number": "0000354950-24-000114",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-24-000114.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-24-000114.txt",
+      "supporting_text": [
+        "Effective May 7, 2024, The Home Depot, Inc. (the \"Company\") entered into three separate revolving credit facility agreements establishing three revolving credit facilities allowing for additional borrowings of up to $14.5 billion to support the Company's expanded commercial paper programs in connection with the anticipated financing of the Company's pending acquisition of SRS Distribution Inc."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HD",
+      "expected_date": "2024-05-09",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BKNG",
+      "issuer": "BKNG",
+      "cik": "0001075531",
+      "filing_date": "2024-05-10",
+      "date": "2024-05-10",
+      "accession_number": "0001075531-24-000029",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000029.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000029.txt",
+      "supporting_text": [
+        "On May 9, 2024, Booking Holdings Inc. (the \"Company\") extended the maturity date of the credit agreement dated as of May 17, 2023 (the \"Credit Agreement\"), among the Company, the lenders from time to time party thereto, and JPMorgan Chase Bank, N.A., as administrative agent, from May 17, 2028 to May 17, 2029 pursuant to an extension request under the Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "BKNG",
+      "expected_date": "2024-05-10",
+      "reason_code": "capacity_missing",
+      "reason": "Explicit maturity extension, but neither old nor new committed capacity is present in the excerpt."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "ACN",
+      "issuer": "ACN",
+      "cik": "0001467373",
+      "filing_date": "2024-05-17",
+      "date": "2024-05-17",
+      "accession_number": "0001467373-24-000157",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467373/0001467373-24-000157.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467373/0001467373-24-000157.txt",
+      "supporting_text": [
+        "On May 14, 2024, Accenture plc and certain of Accenture's subsidiaries entered into a credit agreement with JPMorgan Chase Bank, N.A., as administrative agent, and the lenders named therein. The Credit Agreement provides for a $5.5 billion senior unsecured revolving credit facility with a term of five years from the date of the Credit Agreement, and replaces Accenture's prior $3.0 billion senior unsecured revolving credit facility."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "ACN",
+      "expected_date": "2024-05-17",
+      "reason_code": "old_maturity_missing",
+      "reason": "Capacity rises from $3.0b to $5.5b, but old maturity is absent; new five-year term alone does not prove an extension."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BA",
+      "issuer": "BA",
+      "cik": "0000012927",
+      "filing_date": "2024-05-17",
+      "date": "2024-05-17",
+      "accession_number": "0000012927-24-000037",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000037.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000037.txt",
+      "supporting_text": [
+        "On May 15, 2024, The Boeing Company entered into a $4.0 billion, five-year revolving credit agreement with Citibank, N.A. and JPMorgan Chase Bank, N.A. as joint lead arrangers and joint book managers. Under the Agreement, Boeing will pay a fee between 0.175% and 0.350% per annum on the commitments, depending on Boeing's credit rating.",
+        "Effective May 15, 2024, Boeing terminated its $0.8 billion, 364-day revolving credit agreement dated as of August 24, 2023, which was scheduled to terminate on August 22, 2024, and its $3.2 billion, five-year revolving credit agreement, dated as of October 30, 2019, as amended, which was scheduled to terminate on October 30, 2024."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "BA",
+      "expected_date": "2024-05-17",
+      "reason_code": "qualifies",
+      "reason": "Executed five-year $4b replacement of two facilities totaling $4b and maturing in 2024.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 4000000000.0,
+          "new_capacity_usd": 4000000000.0,
+          "old_maturity": [
+            "2024-08-22",
+            "2024-10-30"
+          ],
+          "new_maturity": "2029-05-15",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old facilities are $0.8b plus $3.2b. New maturity is five calendar years after May 15, 2024, from stated term; day convention not independently checked."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CMCSA",
+      "issuer": "CMCSA",
+      "cik": "0001166691",
+      "filing_date": "2024-05-17",
+      "date": "2024-05-17",
+      "accession_number": "0000950103-24-006839",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1166691/0000950103-24-006839.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1166691/0000950103-24-006839.txt",
+      "supporting_text": [
+        "In connection with its entry into the credit agreement, on May 17, 2024, Comcast terminated the prior credit agreement. No borrowings were outstanding at the termination of the prior credit agreement.",
+        "The credit agreement provides for a $11,800,000,000 unsecured revolving credit facility (the \"facility\") to Comcast for general corporate purposes that is scheduled to expire on May 17, 2029 and is guaranteed by Comcast Cable Communications, LLC and NBCUniversal Media, LLC (the \"guarantors\"). Comcast may, upon the agreement of one or more new or existing lenders, increase the commitments under the facility up to a total of $14,800,000,000, and/or extend the expiration date of the facility to a date not later than May 17, 2031."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CMCSA",
+      "expected_date": "2024-05-17",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BLK",
+      "issuer": "BLK",
+      "cik": "0001364742",
+      "filing_date": "2024-05-31",
+      "date": "2024-05-31",
+      "accession_number": "0001193125-24-151944",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1364742/0001193125-24-151944.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0001193125-24-151944.txt",
+      "supporting_text": [
+        "Amendment No. 15 (i) increases the commitments under the revolving facility by $400,000,000 to an aggregate commitment of $5,400,000,000, and (ii) extends the maturity date (the \"Maturity Date\") of the revolving facility to March 31, 2029 for lenders (other than one non-extending lender) pursuant to BlackRock's option to request extensions of the Maturity Date available under the Existing Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "BLK",
+      "expected_date": "2024-05-31",
+      "reason_code": "qualifies",
+      "reason": "Actual maturity extension plus $0.4b increase to $5.4b committed revolving capacity.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 5000000000.0,
+          "new_capacity_usd": 5400000000.0,
+          "old_maturity": null,
+          "new_maturity": "2029-03-31",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old capacity is $5.4b minus $0.4b. Old maturity not given, but extension is explicit."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "One non-extending lender: not all committed dollars receive the new maturity."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "IBM",
+      "issuer": "IBM",
+      "cik": "0000051143",
+      "filing_date": "2024-06-21",
+      "date": "2024-06-21",
+      "accession_number": "0000950157-24-000918",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/0000950157-24-000918.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/51143/0000950157-24-000918.txt",
+      "supporting_text": [
+        "extended the maturity of the existing $2.5 billion Three-Year Credit Agreement dated as of June 22, 2021 (as amended by Amendment No. 1 to Three-Year Credit Agreement, dated as of June 30, 2022, the 'Existing Three-Year Credit Agreement')...The maturity of each of the Existing Three-Year Credit Agreement and the Existing Five-Year Credit Agreement was extended by a period of one year to June 20, 2027 and June 22, 2029, respectively",
+        "extended the maturity of the existing $7.5 billion Five-Year Credit Agreement dated as of June 22, 2021 (as amended by Amendment No. 1 to Five-Year Credit Agreement, dated as of June 30, 2022, the 'Existing Five-Year Credit Agreement')...The maturity of each of the Existing Three-Year Credit Agreement and the Existing Five-Year Credit Agreement was extended by a period of one year to June 20, 2027 and June 22, 2029, respectively"
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "IBM",
+      "expected_date": "2024-06-21",
+      "reason_code": "qualifies",
+      "reason": "Executed one-year extensions of existing $2.5b and $7.5b revolving agreements.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 2500000000.0,
+          "new_capacity_usd": 2500000000.0,
+          "old_maturity": "2026-06-20",
+          "new_maturity": "2027-06-20",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Old date derived from explicitly one-year extension; stated existing commitment held constant."
+        },
+        {
+          "old_capacity_usd": 7500000000.0,
+          "new_capacity_usd": 7500000000.0,
+          "old_maturity": "2028-06-22",
+          "new_maturity": "2029-06-22",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Old date derived from explicitly one-year extension; stated existing commitment held constant."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "Capacity preservation uses existing-sized-amendment proxy; full agreement not re-audited."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HON",
+      "issuer": "HON",
+      "cik": "0000773840",
+      "filing_date": "2024-07-02",
+      "date": "2024-07-02",
+      "accession_number": "0001193125-24-174346",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-24-174346.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-24-174346.txt",
+      "supporting_text": [
+        "On July 2, 2024, Honeywell International Inc. entered into a Second 364-Day Credit Agreement with the banks, financial institutions and other institutional lenders party thereto, and Bank of America, N.A., as administrative agent. The Second 364-Day Credit Agreement provides for revolving credit commitments in an aggregate principal amount of $1.5 billion and is maintained for general corporate purposes."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HON",
+      "expected_date": "2024-07-02",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "QCOM",
+      "issuer": "QCOM",
+      "cik": "0000804328",
+      "filing_date": "2024-08-09",
+      "date": "2024-08-09",
+      "accession_number": "0000804328-24-000061",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/804328/0000804328-24-000061.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/804328/0000804328-24-000061.txt",
+      "supporting_text": [
+        "On August 8, 2024, QUALCOMM Incorporated (the \"Company\") entered into a Credit Agreement...The terms of the Credit Agreement provide for $4.0 billion in aggregate amount of commitments for senior unsecured revolving loans which will mature on August 8, 2029...Loans under the Credit Agreement will bear interest, at the option of the Company, at either the Term SOFR Rate...plus an initial margin of 0.81% per annum or the Base Rate...plus an initial margin of 0.00% per annum.",
+        "In connection with the entry into the Credit Agreement, the Company terminated all remaining commitments of the lenders under the Existing Credit Agreement, which were previously scheduled to expire on December 8, 2025. There were no outstanding borrowings under the Existing Credit Agreement at the time of such termination."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "QCOM",
+      "expected_date": "2024-08-09",
+      "reason_code": "old_capacity_missing",
+      "reason": "Old and new maturities are available, but old committed capacity is missing."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HON",
+      "issuer": "HON",
+      "cik": "0000773840",
+      "filing_date": "2024-08-12",
+      "date": "2024-08-12",
+      "accession_number": "0001193125-24-199003",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-24-199003.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-24-199003.txt",
+      "supporting_text": [
+        "On August 12, 2024, Honeywell International Inc. entered into a Fixed Rate Term Loan Credit Agreement with the banks, financial institutions and other institutional lenders party thereto, and Bank of America, N.A., as administrative agent. The Fixed Rate Term Loan Credit Agreement provides for term loans in an aggregate principal amount of $1.0 billion and is maintained for general corporate purposes.",
+        "On August 12, 2024, Honeywell terminated the commitments under its $1.5 billion Second 364-Day Credit Agreement dated as of July 2, 2024, among Honeywell, the lenders party thereto and Bank of America, N.A., as administrative agent."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HON",
+      "expected_date": "2024-08-12",
+      "reason_code": "capacity_reduction",
+      "reason": "Disclosed termination/replacement reduces available capacity rather than preserving it."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LMT",
+      "issuer": "LMT",
+      "cik": "0000936468",
+      "filing_date": "2024-08-27",
+      "date": "2024-08-27",
+      "accession_number": "0000936468-24-000101",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936468/0000936468-24-000101.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/936468/0000936468-24-000101.txt",
+      "supporting_text": [
+        "On August 23, 2024, Lockheed Martin Corporation (the \"Company\") entered into Amendment No. 1 to Credit Agreement (the \"Amendment\"), which amends the Company's existing $3.0 billion Revolving Credit Agreement, dated as of August 24, 2022... The Amendment, among other things, extends the maturity date of the Credit Agreement by one year from August 24, 2028 to August 24, 2029 and removes the existing financial maintenance covenant set forth in the Credit Agreement that required the Company to comply with a maximum leverage ratio of 65%.",
+        "The U.S. government's F-35 Joint Program Office (the \"JPO\") and the Company have reached an agreement for the acceptance and delivery of Technology Refresh 3 (\"TR-3\") enabled aircraft with robust combat training capability. As part of the agreement, the JPO will withhold a portion of final aircraft delivery payments from the Company until TR-3 combat capability is qualified and delivered."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "significant_contract_award"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "LMT",
+      "expected_date": "2024-08-27",
+      "reason_code": "qualifies",
+      "reason": "Executed one-year extension of existing $3b revolving agreement.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 3000000000.0,
+          "new_capacity_usd": 3000000000.0,
+          "old_maturity": "2028-08-24",
+          "new_maturity": "2029-08-24",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Explicit maturity dates; existing-sized-amendment capacity proxy."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "Same filing also reports F-35 aircraft acceptance/payment arrangement.",
+        "Financial maintenance covenant removed.",
+        "Capacity preservation uses existing-sized-amendment proxy."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CAT",
+      "issuer": "CAT",
+      "cik": "0000018230",
+      "filing_date": "2024-09-04",
+      "date": "2024-09-04",
+      "accession_number": "0001104659-24-096572",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-24-096572.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-24-096572.txt",
+      "supporting_text": [
+        "On August 29, 2024, Caterpillar entered into Amendment No. 2 to Third Amended and Restated Credit Agreement (Three-Year Facility), which amended the Third Amended and Restated Credit Agreement (Three-Year Facility) dated September 1, 2022, extending the expiration date of the Three-Year Facility to August 29, 2027.",
+        "On August 29, 2024, Caterpillar Inc. entered into a Credit Agreement (the '364-Day Facility') among Caterpillar, Caterpillar Financial Services Corporation, Caterpillar International Finance Designated Activity Company and Caterpillar Finance Kabushiki Kaisha, which provides an unsecured revolving credit facility to the Borrowers in an aggregate amount of up to $3.15 billion (the '364-Day Aggregate Commitment') that expires on August 28, 2025.",
+        "On August 29, 2024, Caterpillar entered into Amendment No. 2 to Third Amended and Restated Credit Agreement (Five-Year Facility), which amended the Third Amended and Restated Five-Year Credit Agreement dated September 1, 2022, extending the expiration date of the Five-Year Facility to August 29, 2029."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CAT",
+      "expected_date": "2024-09-04",
+      "reason_code": "old_capacity_missing",
+      "reason": "Extension is explicit, but earlier capacity of the extended facilities is not established by available excerpts."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "AIG",
+      "issuer": "AIG",
+      "cik": "0000005272",
+      "filing_date": "2024-09-27",
+      "date": "2024-09-27",
+      "accession_number": "0000005272-24-000105",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/5272/0000005272-24-000105.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/5272/0000005272-24-000105.txt",
+      "supporting_text": [
+        "The Amended Credit Agreement requires AIG to maintain a minimum consolidated net worth and subjects AIG to a specified limit on total consolidated debt to total consolidated capitalization, subject to certain limitations and exceptions. In addition, the Amended Credit Agreement contains certain customary affirmative and negative covenants, including limitations with respect to the incurrence of certain types of liens and certain fundamental changes.",
+        "On September 27, 2024, American International Group, Inc. entered into the Amended and Restated Credit Agreement by and among AIG, the subsidiary borrowers party thereto, the lenders party thereto and Bank of America, N.A., as Administrative Agent, which amends and restates AIG's Credit Agreement, dated as of November 19, 2021.",
+        "Under the Amended Credit Agreement, the applicable rate, commitment fee and letter of credit fee are determined by reference to the credit ratings of AIG's senior long-term unsecured debt. Borrowings bear interest at a rate per annum equal to Term SOFR plus an applicable credit spread adjustment plus an applicable rate or an alternative base rate plus an applicable rate, or SONIA, EURIBOR, or TIBOR plus applicable rates depending on currency.",
+        "The Amended Credit Agreement provides for a five-year total commitment of $3 billion, consisting of standby letters of credit and/or revolving credit borrowings without any limits on the type of borrowings. Under circumstances described in the Amended Credit Agreement, the aggregate commitments may be increased by up to $1.5 billion, for a total commitment under the Amended Credit Agreement of $4.5 billion."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "AIG",
+      "expected_date": "2024-09-27",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "UBER",
+      "issuer": "UBER",
+      "cik": "0001543151",
+      "filing_date": "2024-09-27",
+      "date": "2024-09-27",
+      "accession_number": "0001552781-24-000539",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000539.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-24-000539.txt",
+      "supporting_text": [
+        "On September 26, 2024, Uber Technologies, Inc. (the \"Company\") entered into a Credit Agreement (the \"Credit Agreement\"), among the Company, the lenders party thereto, the letter of credit issuers party thereto and Bank of America, N.A., as administrative agent. The Credit Agreement provides for $5.0 billion in aggregate amount of commitments for senior unsecured revolving loans, which will mature on September 26, 2029.",
+        "The Credit Agreement replaces the Company's existing Revolving Credit Agreement, dated as of June 26, 2015, among the Company, certain subsidiary guarantors from time to time party thereto, the lenders party thereto and Morgan Stanley Senior Funding, Inc., as administrative agent (as amended to date, the \"Existing Credit Agreement\"), which was terminated effective September 26, 2024."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "UBER",
+      "expected_date": "2024-09-27",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BA",
+      "issuer": "BA",
+      "cik": "0000012927",
+      "filing_date": "2024-10-15",
+      "date": "2024-10-15",
+      "accession_number": "0000012927-24-000068",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000068.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000068.txt",
+      "supporting_text": [
+        "On October 14, 2024, The Boeing Company entered into a $10.0 billion supplemental credit agreement with BofA Securities, Inc., Citibank, N.A., Goldman Sachs Lending Partners LLC and JPMorgan Chase Bank, N.A. as joint lead arrangers and joint book managers, Citibank as administrative agent and BofA, Goldman and JPMorgan as co-syndication agents, and a syndicate of lenders."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "BA",
+      "expected_date": "2024-10-15",
+      "reason_code": "new_or_supplemental_only",
+      "reason": "Supplemental credit capacity, with no maturity-extension comparison in the excerpt."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "TGT",
+      "issuer": "TGT",
+      "cik": "0000027419",
+      "filing_date": "2024-10-15",
+      "date": "2024-10-15",
+      "accession_number": "0000027419-24-000171",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000171.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000171.txt",
+      "supporting_text": [
+        "Target Corporation entered into a 364-Day Credit Agreement with the banks listed therein...Under the Credit Agreement, the Banks committed to provide loans in an aggregate principal amount of up to $1.0 billion, which may be increased from time to time by up to $500 million. Borrowings under the Credit Agreement bear interest at a base rate or term SOFR rate (which includes a SOFR adjustment), in each case plus an applicable margin, which varies based on the type of loan and Target's debt ratings.",
+        "In connection with the entry into the Credit Agreement, Target terminated its prior 364-Day Credit Agreement, dated as of October 18, 2023, which was scheduled to expire on October 16, 2024."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "TGT",
+      "expected_date": "2024-10-15",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CRM",
+      "issuer": "CRM",
+      "cik": "0001108524",
+      "filing_date": "2024-11-05",
+      "date": "2024-11-05",
+      "accession_number": "0001193125-24-251243",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-24-251243.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-24-251243.txt",
+      "supporting_text": [
+        "On October 31, 2024, Salesforce, Inc. entered into a Credit Agreement with the lenders and issuing lenders party thereto, and Bank of America, N.A., as administrative agent. The Credit Agreement provides for an unsecured, multicurrency revolving credit facility with a term of five years from the Effective Date. Initially, the aggregate commitment of all lenders under the Credit Agreement will be $5.0 billion, of which up to $150 million will be available for the issuance of letters of credit and up to $150 million will be available for the borrowing of swingline loans.",
+        "The Credit Agreement replaces the Credit Agreement, dated as of December 23, 2020 (as amended, the 'Existing Credit Agreement'), among the Company, the lenders and letter of credit issuers party thereto, and Citibank, N.A., as administrative agent. On the Effective Date, the Company paid all amounts owing under the Existing Credit Agreement and terminated all lending commitments thereunder."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CRM",
+      "expected_date": "2024-11-05",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BLK",
+      "issuer": "BLK",
+      "cik": "0002012383",
+      "filing_date": "2024-11-08",
+      "date": "2024-11-08",
+      "accession_number": "0001193125-24-254116",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-24-254116.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-24-254116.txt",
+      "supporting_text": [
+        "BlackRock, Inc. established a commercial paper program pursuant to which it may issue short-term, unsecured commercial paper notes, with the aggregate face or principal amount of the Notes outstanding under the Program at any time not to exceed $5,000,000,000. The Program replaced the Guarantor's prior $4,000,000,000 commercial paper program.",
+        "The payments of the Notes have been unconditionally guaranteed by its wholly owned subsidiary, BlackRock Finance, Inc. The obligations of the Guarantor under the guarantee will rank at least equal in right of payment with all the Guarantor's other unsubordinated indebtedness."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "BLK",
+      "expected_date": "2024-11-08",
+      "reason_code": "commercial_paper_only",
+      "reason": "Commercial-paper program does not itself establish a committed revolving-facility maturity extension."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LIN",
+      "issuer": "LIN",
+      "cik": "0001707925",
+      "filing_date": "2024-12-04",
+      "date": "2024-12-04",
+      "accession_number": "0001193125-24-270689",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1707925/0001193125-24-270689.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1707925/0001193125-24-270689.txt",
+      "supporting_text": [
+        "On December 4, 2024, Linde plc (the \"Company\") and certain of its subsidiaries entered into an unsecured 364-day revolving credit agreement (the \"Credit Agreement\") with Bank of America, N.A., as administrative agent, and a syndicate of banking institutions as lenders. The Credit Agreement provides for total commitments of $1,500,000,000.",
+        "The Company fully and unconditionally guarantees all obligations of the subsidiary borrowers under the Credit Agreement. Linde Inc. and Linde GmbH also fully and conditionally guarantee all obligations of the Company under the Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LIN",
+      "expected_date": "2024-12-04",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "PM",
+      "issuer": "PM",
+      "cik": "0001413329",
+      "filing_date": "2024-12-17",
+      "date": "2024-12-17",
+      "accession_number": "0001104659-24-129362",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-24-129362.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-24-129362.txt",
+      "supporting_text": [
+        "Philip Morris International Inc. entered into a credit agreement, effective as of January 29, 2025, relating to a senior unsecured revolving credit facility with the lenders named therein and Citibank Europe PLC, UK Branch, as facility agent. The Facility provides for borrowings up to an aggregate principal amount of \u20ac1.5 billion (approximately $1.6 billion) and expires on January 29, 2028."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "PM",
+      "expected_date": "2024-12-17",
+      "reason_code": "not_effective_by_filing",
+      "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HD",
+      "issuer": "HD",
+      "cik": "0000354950",
+      "filing_date": "2024-12-19",
+      "date": "2024-12-19",
+      "accession_number": "0000354950-24-000260",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-24-000260.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-24-000260.txt",
+      "supporting_text": [
+        "The Company entered into a $1.0 billion three-year revolving credit facility agreement, dated as of May 7, 2024, among the Company, the banks party thereto, and JPMorgan Chase Bank, N.A., as administrative agent (the 'Three-Year Credit Facility'), and a $3.5 billion 364-day revolving credit facility agreement, dated as of May 7, 2024.",
+        "Effective December 18, 2024, the Company terminated the Three-Year Credit Facility after determining that it was no longer necessary. There were no borrowings under the Three-Year Credit Facility.",
+        "On the same date, the Company reduced the aggregate commitments under the 364-Day Credit Facility from $3.5 billion to $2.0 billion in accordance with its terms. Following the termination of the Three-Year Credit Facility and the reduction of commitments under the 364-Day Facility, the Company's commercial paper program allows for borrowings up to $7.0 billion and is supported by $7.0 billion of revolving credit facilities."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HD",
+      "expected_date": "2024-12-19",
+      "reason_code": "capacity_reduction",
+      "reason": "Disclosed termination/replacement reduces available capacity rather than preserving it."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "AVGO",
+      "issuer": "AVGO",
+      "cik": "0001730168",
+      "filing_date": "2025-01-13",
+      "date": "2025-01-13",
+      "accession_number": "0001193125-25-005318",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1730168/0001193125-25-005318.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1730168/0001193125-25-005318.txt",
+      "supporting_text": [
+        "On the Closing Date, the Company entered into a credit agreement with the lenders and L/C issuers named therein, Bank of America, N.A., as administrative agent, and the other parties from time to time party thereto (the \"Credit Agreement\"). The Credit Agreement provides for a $7.5 billion five-year unsecured revolving credit facility (the \"Revolving Facility\").",
+        "on January 13, 2025 (the \"Closing Date\") the Company terminated all outstanding commitments and repaid all outstanding obligations under the credit agreement, dated as of January 19, 2021 (as previously amended, supplemented or modified, the \"Existing Credit Agreement\"), among the Company, the lenders and L/C issuers named therein, Bank of America, N.A., as administrative agent, and the other parties from time to time party thereto."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "AVGO",
+      "expected_date": "2025-01-13",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "AMT",
+      "issuer": "AMT",
+      "cik": "0001053507",
+      "filing_date": "2025-01-28",
+      "date": "2025-01-28",
+      "accession_number": "0001053507-25-000010",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000010.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000010.txt",
+      "supporting_text": [
+        "American Tower Corporation entered into three separate amendment agreements to amend the agreements for each of its (i) multicurrency senior unsecured revolving credit facility, as amended and restated on December 8, 2021, with Toronto Dominion (Texas) LLC as Administrative Agent (the '2021 Multicurrency Credit Facility'), (ii) senior unsecured revolving credit facility, as amended and restated on December 8, 2021, with TD as Administrative Agent (the '2021 Credit Facility') and (iii) unsecured term loan, as amended and restated on December 8, 2021, with Mizuho Bank, Ltd. as Administrative Agent (the '2021 Term Loan')."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "AMT",
+      "expected_date": "2025-01-28",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "INTU",
+      "issuer": "INTU",
+      "cik": "0000896878",
+      "filing_date": "2025-01-31",
+      "date": "2025-01-31",
+      "accession_number": "0000896878-25-000006",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000006.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000006.txt",
+      "supporting_text": [
+        "On January 30, 2025, Intuit Inc., a Delaware corporation (the \"Company\" or \"Intuit\"), entered into a Credit Agreement (the \"Credit Agreement\") with the lenders party thereto (collectively, the \"Lenders\"), and JPMorgan Chase Bank, N.A., as administrative agent (the \"Agent\"), which provides for a $4.5 billion unsecured short-term revolving credit facility that is scheduled to mature on April 30, 2025."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "INTU",
+      "expected_date": "2025-01-31",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "ABBV",
+      "issuer": "ABBV",
+      "cik": "0001551152",
+      "filing_date": "2025-02-05",
+      "date": "2025-02-05",
+      "accession_number": "0001104659-25-009673",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-25-009673.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-25-009673.txt",
+      "supporting_text": [
+        "On January 30, 2025 (the \"Effective Date\"), AbbVie Inc. (\"AbbVie\") entered into a revolving credit agreement (the \"Revolving Credit Agreement\") among AbbVie, as borrower, the lenders and other parties party thereto and JPMorgan Chase Bank, N.A., as administrative agent. The Revolving Credit Agreement establishes an unsecured revolving credit facility of up to $3.0 billion which matures on January 30, 2030."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "ABBV",
+      "expected_date": "2025-02-05",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "EMR",
+      "issuer": "EMR",
+      "cik": "0000032604",
+      "filing_date": "2025-02-14",
+      "date": "2025-02-14",
+      "accession_number": "0000032604-25-000048",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/32604/0000032604-25-000048.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/32604/0000032604-25-000048.txt",
+      "supporting_text": [
+        "on February 4, 2025, at the Company's 2025 Annual Meeting of Shareholders (the \"Annual Meeting\"), the Company's shareholders approved the amendment (the \"Amendment\") to the Company's Restated Articles of Incorporation to reduce the supermajority voting requirements for amendments to the terms of any series of preferred stock... The Amendment was filed with the Secretary of State of the State of Missouri on February 10, 2025 and became effective on that date.",
+        "On February 11, 2025, Emerson Electric Co. (the \"Company\") entered into a $3 billion 364-Day Credit Agreement (the \"364-Day Credit Facility\"), dated as of February 11, 2025, with JPMorgan Chase Bank, N.A., as agent, Bank of America, N.A. and Goldman Sachs Bank USA, as syndication agents, and the lenders named therein. The 364-Day Credit Facility expires on February 10, 2026."
+      ],
+      "same_filing_tags": [
+        "charter_amendment",
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "EMR",
+      "expected_date": "2025-02-14",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "MDLZ",
+      "issuer": "MDLZ",
+      "cik": "0001103982",
+      "filing_date": "2025-02-20",
+      "date": "2025-02-20",
+      "accession_number": "0001103982-25-000065",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-25-000065.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-25-000065.txt",
+      "supporting_text": [
+        "In connection with entry into the 364\u2011Day Revolving Credit Agreement described below under \"Item 2.03. Creation of a Direct Financial Obligation or an Obligation under an Off\u2011Balance Sheet Arrangement of a Registrant.\", we terminated our $1.5 billion 364\u2011day senior unsecured revolving credit agreement, dated as of February 21, 2024.",
+        "In connection with entry into the Five\u2011Year Revolving Credit Agreement described below under \"Item 2.03. Creation of a Direct Financial Obligation or an Obligation under an Off\u2011Balance Sheet Arrangement of a Registrant.\", we terminated our $4.5 billion five\u2011year senior unsecured revolving credit agreement, dated as of February 23, 2022.",
+        "On February 19, 2025, we entered into a revolving credit agreement (the \"Five\u2011Year Revolving Credit Agreement\") for a five\u2011year senior unsecured revolving credit facility in an aggregate principal amount of $4.5 billion with the lenders named in the Five\u2011Year Revolving Credit Agreement, and JPMorgan Chase Bank, N.A., as administrative agent.",
+        "On February 19, 2025, we entered into a revolving credit agreement (the \"364\u2011Day Revolving Credit Agreement\") for a 364\u2011day senior unsecured revolving credit facility in an aggregate principal amount of $1.5 billion with the lenders named in the 364\u2011Day Revolving Credit Agreement, and JPMorgan Chase Bank, N.A., as administrative agent."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "MDLZ",
+      "expected_date": "2025-02-20",
+      "reason_code": "qualifies",
+      "reason": "Executed replacement of $4.5b five-year and $1.5b 364-day facilities at unchanged commitments.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 4500000000.0,
+          "new_capacity_usd": 4500000000.0,
+          "old_maturity": "2027-02-23",
+          "new_maturity": "2030-02-19",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Dates inferred from disclosed agreement dates and stated five-year terms."
+        },
+        {
+          "old_capacity_usd": 1500000000.0,
+          "new_capacity_usd": 1500000000.0,
+          "old_maturity": "2025-02-19",
+          "new_maturity": "2026-02-18",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Dates calculated from agreement dates and 364-day terms."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "Old five-year agreement may have amendments not captured in excerpt; 364-day renewal independently qualifies."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "DIS",
+      "issuer": "DIS",
+      "cik": "0001744489",
+      "filing_date": "2025-03-04",
+      "date": "2025-03-04",
+      "accession_number": "0001193125-25-045574",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1744489/0001193125-25-045574.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1744489/0001193125-25-045574.txt",
+      "supporting_text": [
+        "The Walt Disney Company entered into a 364-Day Credit Agreement, among the Company, as borrower, TWDC Enterprises 18 Corp., as guarantor, the lenders party thereto, and Citibank, N.A., as designated agent, which provides for advances to be made available to the Company in an aggregate principal amount of up to $5.25 billion and replaces the Company's $5.25 billion 364-Day Credit Agreement, dated as of March 1, 2024.",
+        "The 364-Day Credit Agreement is unsecured and includes a guarantee by TWDC Enterprises of the Company's payment obligations, which guarantee is subject to release and discharge upon certain circumstances."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "DIS",
+      "expected_date": "2025-03-04",
+      "reason_code": "qualifies",
+      "reason": "Executed 364-day replacement of the prior $5.25b 364-day facility established March 1, 2024.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 5250000000.0,
+          "new_capacity_usd": 5250000000.0,
+          "old_maturity": "2025-02-28",
+          "new_maturity": null,
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old maturity inferred from dated 364-day term. New exact signing/expiration dates absent; a new 364-day replacement is explicit in 2025 filing."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "New exact maturity absent; no numerical runway score assigned."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "NKE",
+      "issuer": "NKE",
+      "cik": "0000320187",
+      "filing_date": "2025-03-10",
+      "date": "2025-03-10",
+      "accession_number": "0000320187-25-000008",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000008.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000008.txt",
+      "supporting_text": [
+        "On March 7, 2025, concurrently with the Company's entry into the Five Year Credit Agreement described in Item 1.01 hereof, the Company terminated the Credit Agreement dated March 11, 2022, as amended by the First Amendment to Credit Agreement, dated as of March 8, 2024, which provided for a $2.0 billion revolving credit facility. No amounts were outstanding under this facility as of March 7, 2025.",
+        "On March 7, 2025, concurrently with the Company's entry into the 364-Day Credit Agreement described in Item 1.01 hereof, the Company terminated the existing Credit Agreement dated March 8, 2024, which provided for up to $1.0 billion of borrowings in U.S. Dollars pursuant to a 364\u2011day unsecured revolving credit facility. No amounts were outstanding under this facility as of March 7, 2025.",
+        "On March 7, 2025, the Company also entered into a Five Year Credit Agreement with Bank of America, N.A., as administrative agent, and the other financial institutions named therein as lenders. The Five Year Credit Agreement provides for up to $2 billion of borrowings pursuant to an unsecured revolving credit facility (the \"Five Year Credit Facility\"), which is available for working capital and general corporate purposes, including supporting the issuance of commercial paper. The Five Year Credit Facility matures on March 7, 2030.",
+        "On March 7, 2025, NIKE, Inc. (the \"Company\") entered into a 364-Day Credit Agreement with Bank of America, N.A., as administrative agent, and the other financial institutions named therein as lenders. The 364\u2011Day Credit Agreement provides for up to $1 billion of borrowings pursuant to a 364\u2011day unsecured revolving credit facility (the \"364\u2011Day Credit Facility\"), which is available for working capital and general corporate purposes, including supporting the issuance of commercial paper."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [
+        {
+          "accession_number": "0000320187-24-000009",
+          "filing_date": "2024-03-11",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-24-000009.txt",
+          "supporting_text": [
+            "On March 8, 2024, concurrently with the Company's entry into the 364-Day Credit Agreement described in Item 1.01 hereof, the Company terminated the existing Credit Agreement dated March 10, 2023, which provided for up to $1.0 billion of borrowings in U.S. Dollars pursuant to a 364\u2011day unsecured revolving credit facility. The Prior 364\u2011Day Credit Agreement would have expired on March 8, 2024.",
+            "On March 8, 2024, NIKE, Inc. (the \"Company\") entered into a Credit Agreement with Bank of America, N.A., as administrative agent, and the other financial institutions named therein as lenders (the \"364\u2011Day Credit Agreement\"). The 364\u2011Day Credit Agreement provides for up to $1.0 billion of borrowings pursuant to a 364\u2011day unsecured revolving credit facility (the \"364\u2011Day Credit Facility\"), which is available for working capital and general corporate purposes, including supporting the issuance of commercial paper."
+          ]
+        }
+      ],
+      "eligible": true,
+      "expected_ticker": "NKE",
+      "expected_date": "2025-03-10",
+      "reason_code": "qualifies",
+      "reason": "Executed $1b 364-day replacement of prior $1b 364-day agreement from March 8, 2024.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 1000000000.0,
+          "new_capacity_usd": 1000000000.0,
+          "old_maturity": "2025-03-07",
+          "new_maturity": "2026-03-06",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Dates calculated from disclosed signing dates and 364-day terms."
+        }
+      ],
+      "prior_accessions": [
+        "0000320187-24-000009"
+      ],
+      "audit_flags": [
+        "Same filing also replaces a $2b longer-term revolver; qualification rests on 364-day facility."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HON",
+      "issuer": "HON",
+      "cik": "0000773840",
+      "filing_date": "2025-03-17",
+      "date": "2025-03-17",
+      "accession_number": "0001193125-25-055636",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-25-055636.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-25-055636.txt",
+      "supporting_text": [
+        "On March 17, 2025, Honeywell terminated the commitments under its $1.5 billion 364-day credit agreement dated as of March 18, 2024, among Honeywell, the lenders party thereto and Bank of America, N.A., as administrative agent.",
+        "On March 17, 2025, Honeywell International Inc. entered into a 364-Day Credit Agreement with the banks, financial institutions and other institutional lenders party thereto. The 364-Day Credit Agreement provides for revolving credit commitments in an aggregate principal amount of $3.0 billion and is maintained for general corporate purposes."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "HON",
+      "expected_date": "2025-03-17",
+      "reason_code": "qualifies",
+      "reason": "Executed $3b 364-day replacement of $1.5b 364-day agreement from March 18, 2024.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 1500000000.0,
+          "new_capacity_usd": 3000000000.0,
+          "old_maturity": "2025-03-17",
+          "new_maturity": "2026-03-16",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Maturities calculated from disclosed agreement dates and 364-day terms. Replacement linked by same filing termination."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "GM",
+      "issuer": "GM",
+      "cik": "0001467858",
+      "filing_date": "2025-03-26",
+      "date": "2025-03-26",
+      "accession_number": "0001193125-25-062882",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-25-062882.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-25-062882.txt",
+      "supporting_text": [
+        "On March 25, 2025, General Motors Company entered into a Fifth Amended and Restated 5-Year Revolving Credit Agreement, a Sixth Amended and Restated 3-Year Revolving Credit Agreement and a Seventh Amended and Restated 364-Day Revolving Credit Agreement. The Facilities are unsecured and consist of a five-year $10 billion facility, a three-year, $4.1 billion facility and a 364-day, $2.0 billion facility.",
+        "GM has guaranteed the obligations of subsidiary borrowers under the Facilities."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "GM",
+      "expected_date": "2025-03-26",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "AMD",
+      "issuer": "AMD",
+      "cik": "0000002488",
+      "filing_date": "2025-03-31",
+      "date": "2025-03-31",
+      "accession_number": "0001193125-25-067902",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/0001193125-25-067902.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2488/0001193125-25-067902.txt",
+      "supporting_text": [
+        "On the Closing Date, pursuant to the terms of the Purchase Agreement, AMD (a) issued to the Sellers and the Company Warrant Holders (as defined in the Purchase Agreement) 8,335,849 shares of AMD common stock ('AMD Stock'), and (b) paid, or will cause to be paid, to the Sellers, the Company Warrant Holders and the holders of Company RSUs (as defined in the Purchase Agreement) $3.375 billion in cash, subject to certain purchase price adjustments (collectively, the 'Closing Consideration').",
+        "AMD (a) issued to the Sellers and the Company Warrant Holders (as defined in the Purchase Agreement) 8,335,849 shares of AMD common stock ('AMD Stock'), and (b) paid, or will cause to be paid, to the Sellers, the Company Warrant Holders and the holders of Company RSUs (as defined in the Purchase Agreement) $3.375 billion in cash, subject to certain purchase price adjustments (collectively, the 'Closing Consideration'). In addition, pursuant to the terms of the Purchase Agreement, the Sellers and the Company Warrant Holders are eligible to receive additional consideration consisting of up to (a) 740,961 shares of AMD Stock and (b) $300 million of cash.",
+        "The ZT Credit Agreement remains in place following consummation of the Share Purchase and AMD is providing an unsecured parent guarantee of ZT's obligations thereunder.",
+        "ZT is party to a credit agreement, dated as of March 31, 2021 (as amended, restated, amended and restated, supplemented or otherwise modified from time to time, the 'ZT Credit Agreement'), with Wells Fargo Capital Finance, LLC as administrative agent and collateral agent, and other lender parties thereto. The ZT Credit Agreement provides for an asset-based revolving credit facility in an amount up to $641,666,666.67 that matures December 31, 2026."
+      ],
+      "same_filing_tags": [
+        "acquisition_completion",
+        "acquisition_consideration_shares",
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "AMD",
+      "expected_date": "2025-03-31",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BLK",
+      "issuer": "BLK",
+      "cik": "0002012383",
+      "filing_date": "2025-04-07",
+      "date": "2025-04-07",
+      "accession_number": "0001193125-25-073567",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-25-073567.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-25-073567.txt",
+      "supporting_text": [
+        "Amendment No. 16 (i) increases the commitments under the revolving facility by $500,000,000 to an aggregate commitment of $5,900,000,000, (ii) extends the maturity date (the \"Maturity Date\") of the revolving facility to March 31, 2030 for lenders (other than one non-extending lender) pursuant to BlackRock's option to request extensions of the Maturity Date available under the Existing Credit Agreement (with the commitment of the non-extending lender maturing on March 31, 2028), and (iii) changes the threshold for the consolidated leverage ratio financial covenant in the Existing Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [
+        {
+          "accession_number": "0001193125-24-151944",
+          "filing_date": "2024-05-31",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/1364742/0001193125-24-151944.txt",
+          "supporting_text": [
+            "Amendment No. 15 (i) increases the commitments under the revolving facility by $400,000,000 to an aggregate commitment of $5,400,000,000, and (ii) extends the maturity date (the \"Maturity Date\") of the revolving facility to March 31, 2029 for lenders (other than one non-extending lender) pursuant to BlackRock's option to request extensions of the Maturity Date available under the Existing Credit Agreement."
+          ]
+        }
+      ],
+      "eligible": true,
+      "expected_ticker": "BLK",
+      "expected_date": "2025-04-07",
+      "reason_code": "qualifies",
+      "reason": "Actual maturity extension plus $0.5b increase to $5.9b committed revolving capacity.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 5400000000.0,
+          "new_capacity_usd": 5900000000.0,
+          "old_maturity": "2029-03-31",
+          "new_maturity": "2030-03-31",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old extended-lender maturity corroborated by prior filing. Non-extending lender remains March 31, 2028."
+        }
+      ],
+      "prior_accessions": [
+        "0001193125-24-151944"
+      ],
+      "audit_flags": [
+        "One non-extending lender: not all committed dollars receive the new maturity.",
+        "Leverage-covenant threshold also changes."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HD",
+      "issuer": "HD",
+      "cik": "0000354950",
+      "filing_date": "2025-05-06",
+      "date": "2025-05-06",
+      "accession_number": "0000354950-25-000130",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-25-000130.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/354950/0000354950-25-000130.txt",
+      "supporting_text": [
+        "Also on May 6, 2025, the Company terminated its remaining revolving credit facility agreements and simultaneously entered into two new revolving credit facility agreements that provide for commitments to borrow an aggregate of $7.0 billion. The new revolving credit facility agreements allow for borrowings for general corporate purposes, including to backstop the Company's $7.0 billion commercial paper program.",
+        "On May 6, 2025, the Company terminated its $2.0 billion 364-day revolving credit facility agreement, dated as of May 7, 2024 (the \"May 2024 364-Day Facility\"), with JPMorgan Chase Bank, N.A., as administrative agent, under which no borrowings were outstanding."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HD",
+      "expected_date": "2025-05-06",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "HON",
+      "issuer": "HON",
+      "cik": "0000773840",
+      "filing_date": "2025-05-08",
+      "date": "2025-05-08",
+      "accession_number": "0001193125-25-115181",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-25-115181.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/773840/0001193125-25-115181.txt",
+      "supporting_text": [
+        "On May 7, 2025, Honeywell International Inc. entered into a Delayed Draw Term Loan Agreement with Bank of America, N.A., as administrative agent, providing for a delayed draw term loan facility of an aggregate principal amount of up to $6.0 billion comprised of two tranches: (i) commitments to provide loans in an aggregate principal amount of up to $4.0 billion ('Tranche A-1') and (ii) commitments to provide loans in an aggregate principal amount of up to $2.0 billion ('Tranche A-2').",
+        "Honeywell has elected to enter into the Term Loan Agreement to provide financial flexibility as it manages the separation of its Automation, Aerospace and Solstice Advanced Materials businesses into three independent public companies, while continuing to execute on its capital deployment plan."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "strategic_initiative"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "HON",
+      "expected_date": "2025-05-08",
+      "reason_code": "term_loan_only",
+      "reason": "Delayed-draw term loan for corporate separation, rather than revolving-facility extension."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "PEP",
+      "issuer": "PEP",
+      "cik": "0000077476",
+      "filing_date": "2025-05-23",
+      "date": "2025-05-23",
+      "accession_number": "0001104659-25-052457",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77476/0001104659-25-052457.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/77476/0001104659-25-052457.txt",
+      "supporting_text": [
+        "Effective May 23, 2025, PepsiCo terminated the $5,000,000,000 five year unsecured revolving credit agreement, dated as of May 24, 2024, among PepsiCo, as borrower, the lenders party thereto, and Citibank, N.A., as administrative agent (the '2024 Five Year Credit Agreement'). There were no outstanding borrowings under the 2024 Five Year Credit Agreement at the time of its termination.",
+        "Effective May 23, 2025, PepsiCo, Inc. ('PepsiCo') terminated the $5,000,000,000 364 day unsecured revolving credit agreement, dated as of May 24, 2024, among PepsiCo, as borrower, the lenders party thereto, and Citibank, N.A., as administrative agent (the '2024 364 Day Credit Agreement'). There were no outstanding borrowings under the 2024 364 Day Credit Agreement at the time of its termination.",
+        "On May 23, 2025, PepsiCo entered into a new $5,000,000,000 five year unsecured revolving credit agreement (the '2025 Five Year Credit Agreement') among PepsiCo, as borrower, the lenders party thereto, and Citibank, N.A., as administrative agent. The 2025 Five Year Credit Agreement enables PepsiCo and its borrowing subsidiaries to borrow up to $5,000,000,000 in U.S. Dollars and/or Euros, including a $750,000,000 swing line subfacility for Euro-denominated borrowings permitted to be borrowed on a same day basis, subject to customary terms and conditions, and expires on May 23, 2030.",
+        "On May 23, 2025, PepsiCo entered into a new $5,000,000,000 364 day unsecured revolving credit agreement (the '2025 364 Day Credit Agreement') among PepsiCo, as borrower, the lenders party thereto, and Citibank, N.A., as administrative agent. The 2025 364 Day Credit Agreement enables PepsiCo and its borrowing subsidiaries to borrow up to $5,000,000,000 in U.S. Dollars and/or Euros, subject to customary terms and conditions, and expires on May 22, 2026."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "PEP",
+      "expected_date": "2025-05-23",
+      "reason_code": "qualifies",
+      "reason": "Executed renewal of two $5b facilities at unchanged commitments and later expirations.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 5000000000.0,
+          "new_capacity_usd": 5000000000.0,
+          "old_maturity": "2029-05-24",
+          "new_maturity": "2030-05-23",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old date inferred from dated five-year term; new date directly stated."
+        },
+        {
+          "old_capacity_usd": 5000000000.0,
+          "new_capacity_usd": 5000000000.0,
+          "old_maturity": "2025-05-23",
+          "new_maturity": "2026-05-22",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old date calculated from 364-day term; new date directly stated."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "SBUX",
+      "issuer": "SBUX",
+      "cik": "0000829224",
+      "filing_date": "2025-06-16",
+      "date": "2025-06-16",
+      "accession_number": "0001213900-25-054811",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/829224/0001213900-25-054811.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/829224/0001213900-25-054811.txt",
+      "supporting_text": [
+        "On June 13, 2025, in connection with the Company's entry into the Five-Year Credit Agreement discussed in Item 1.01, the Company terminated the Credit Agreement, dated September 16, 2021, as amended, entered into by and among the Company, Bank of America, N.A., in its capacity as Administrative Agent and Swing Line Lender and certain other lenders.",
+        "On June 13, 2025, Starbucks Corporation (the \"Company\") entered into a new $3.0 billion Credit Agreement (the \"Five-Year Credit Agreement\")... The Five-Year Credit Agreement provides for a $3.0 billion unsecured, revolving credit facility (of which $150 million may be used for the issuances of letters of credit) and is scheduled to mature on June 13, 2030."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "SBUX",
+      "expected_date": "2025-06-16",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "IBM",
+      "issuer": "IBM",
+      "cik": "0000051143",
+      "filing_date": "2025-06-20",
+      "date": "2025-06-20",
+      "accession_number": "0000950157-25-000533",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/0000950157-25-000533.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/51143/0000950157-25-000533.txt",
+      "supporting_text": [
+        "The Three-Year Amendment, among other things, extends the maturity of the Existing Three-Year Credit Agreement to June 20, 2028. The Five-Year Amendment, among other things, extends the maturity of the Existing Five-Year Credit Agreement to June 22, 2030.",
+        "entered into Amendment No. 2 (the \"Three-Year Amendment\") to the existing $2.5 billion Three-Year Credit Agreement dated as of June 22, 2021... and entered into Amendment No. 2 (the \"Five-Year Amendment\") to the existing $7.5 billion Five-Year Credit Agreement dated as of June 22, 2021"
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [
+        {
+          "accession_number": "0000950157-24-000918",
+          "filing_date": "2024-06-21",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/51143/0000950157-24-000918.txt",
+          "supporting_text": [
+            "extended the maturity of the existing $2.5 billion Three-Year Credit Agreement dated as of June 22, 2021 (as amended by Amendment No. 1 to Three-Year Credit Agreement, dated as of June 30, 2022, the 'Existing Three-Year Credit Agreement')...The maturity of each of the Existing Three-Year Credit Agreement and the Existing Five-Year Credit Agreement was extended by a period of one year to June 20, 2027 and June 22, 2029, respectively",
+            "extended the maturity of the existing $7.5 billion Five-Year Credit Agreement dated as of June 22, 2021 (as amended by Amendment No. 1 to Five-Year Credit Agreement, dated as of June 30, 2022, the 'Existing Five-Year Credit Agreement')...The maturity of each of the Existing Three-Year Credit Agreement and the Existing Five-Year Credit Agreement was extended by a period of one year to June 20, 2027 and June 22, 2029, respectively"
+          ]
+        }
+      ],
+      "eligible": true,
+      "expected_ticker": "IBM",
+      "expected_date": "2025-06-20",
+      "reason_code": "qualifies",
+      "reason": "Executed maturity extensions on existing $2.5b and $7.5b agreements; old dates available from prior filing.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 2500000000.0,
+          "new_capacity_usd": 2500000000.0,
+          "old_maturity": "2027-06-20",
+          "new_maturity": "2028-06-20",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Prior 2024 filing establishes old maturity; capacity-preservation amendment proxy."
+        },
+        {
+          "old_capacity_usd": 7500000000.0,
+          "new_capacity_usd": 7500000000.0,
+          "old_maturity": "2029-06-22",
+          "new_maturity": "2030-06-22",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Prior 2024 filing establishes old maturity; capacity-preservation amendment proxy."
+        }
+      ],
+      "prior_accessions": [
+        "0000950157-24-000918"
+      ],
+      "audit_flags": [
+        "Capacity preservation uses existing-sized-amendment proxy; full agreement not re-audited."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CRM",
+      "issuer": "CRM",
+      "cik": "0001108524",
+      "filing_date": "2025-06-24",
+      "date": "2025-06-24",
+      "accession_number": "0001193125-25-145772",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-25-145772.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-25-145772.txt",
+      "supporting_text": [
+        "The 364-Day Credit Agreement provides the Company with the ability to borrow up to $4 billion on an unsecured basis to finance a portion of the cash consideration for the Company's pending acquisition (the 'Acquisition') of Informatica Inc. ('Informatica')...Agreement and Plan of Merger, dated as of May 26, 2025 (the 'Merger Agreement'), by and among the Company, Phoenix I Merger Sub, Inc., and Informatica.",
+        "On June 20, 2025, the Company entered into a Three-Year Credit Agreement with the lenders named therein, JPMorgan Chase Bank, N.A., as administrative agent...The Three-Year Credit Agreement provides the Company with the ability to borrow up to $2 billion on an unsecured basis to finance a portion of the cash consideration for the Company's pending acquisition of Informatica.",
+        "On June 20, 2025, Salesforce, Inc. entered into a 364-Day Credit Agreement with the lenders named therein, JPMorgan Chase Bank, N.A., as administrative agent...The 364-Day Credit Agreement provides the Company with the ability to borrow up to $4 billion on an unsecured basis to finance a portion of the cash consideration for the Company's pending acquisition of Informatica Inc."
+      ],
+      "same_filing_tags": [
+        "acquisition_agreement",
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CRM",
+      "expected_date": "2025-06-24",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "MO",
+      "issuer": "MO",
+      "cik": "0000764180",
+      "filing_date": "2025-07-23",
+      "date": "2025-07-23",
+      "accession_number": "0000764180-25-000101",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000101.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000101.txt",
+      "supporting_text": [
+        "Altria entered into an extension agreement to amend its $3.0 billion senior unsecured 5-year revolving credit agreement, dated as of October 24, 2023, with JPMorgan Chase Bank, N.A. and Citibank, N.A., as administrative agents. The Extension Agreement extends the expiration date of the Credit Agreement from October 24, 2028 to October 24, 2029."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "MO",
+      "expected_date": "2025-07-23",
+      "reason_code": "qualifies",
+      "reason": "Executed one-year extension of existing $3b revolving agreement.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 3000000000.0,
+          "new_capacity_usd": 3000000000.0,
+          "old_maturity": "2028-10-24",
+          "new_maturity": "2029-10-24",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Both maturity dates directly stated; existing-sized-amendment capacity proxy."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "Capacity preservation uses existing-sized-amendment proxy."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LOW",
+      "issuer": "LOW",
+      "cik": "0000060667",
+      "filing_date": "2025-08-20",
+      "date": "2025-08-20",
+      "accession_number": "0000060667-25-000162",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60667/0000060667-25-000162.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/60667/0000060667-25-000162.txt",
+      "supporting_text": [
+        "On August 20, 2025, the Company provided an investor presentation for use with analysts and investors in connection with the announcement of the transactions described in this Current Report on Form 8-K. A copy of the investor presentation is furnished as Exhibit 99.2 hereto and is incorporated herein by reference.",
+        "In connection with the Purchase Agreement, the Company entered into a 364-Day Bridge Facility Commitment Letter dated August 19, 2025 (the \"Bridge Commitment Letter\") with BofA Securities, Inc., Bank of America, N.A. and Goldman Sachs Bank USA. The Bridge Commitment Letter provides for a senior unsecured 364-day bridge loan credit facility in an aggregate principal amount of up to $9 billion (the \"Bridge Loan Facility\"), which is intended to be available to the Company to finance, together with other sources of funds, the acquisition and related expenses.",
+        "On August 19, 2025, Lowe's Companies, Inc., a North Carolina corporation (the \"Company\"), ASP Flag Parent Holdings, Inc., a Delaware corporation (the \"Target\"), and ASP Flag Holdings LP, a Delaware limited partnership (\"Seller\"), entered into a Stock Purchase Agreement (the \"Purchase Agreement\"), pursuant to which the Company will acquire all of the shares of stock (the \"Shares\") of the Target (such transaction, the \"Transaction\"). The Company has agreed to acquire the Shares for aggregate cash consideration of $8.8 billion, payable at the closing of the Transaction."
+      ],
+      "same_filing_tags": [
+        "acquisition_agreement",
+        "credit_facility",
+        "investor_presentation"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LOW",
+      "expected_date": "2025-08-20",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "BA",
+      "issuer": "BA",
+      "cik": "0000012927",
+      "filing_date": "2025-08-28",
+      "date": "2025-08-28",
+      "accession_number": "0000012927-25-000064",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000064.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000064.txt",
+      "supporting_text": [
+        "On August 25, 2025, The Boeing Company entered into a $3.0 billion, 364-day revolving credit agreement (the \"Agreement\") with Citibank, N.A. and JPMorgan Chase Bank, N.A. as joint lead arrangers and joint book managers. This facility replaces Boeing's previous $3.0 billion, three-year revolving credit agreement, which was scheduled to terminate on August 25, 2025."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "BA",
+      "expected_date": "2025-08-28",
+      "reason_code": "qualifies",
+      "reason": "Executed $3b 364-day replacement of $3b facility expiring at signing.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 3000000000.0,
+          "new_capacity_usd": 3000000000.0,
+          "old_maturity": "2025-08-25",
+          "new_maturity": "2026-08-24",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "New date calculated as stated signing date plus 364 calendar days."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LMT",
+      "issuer": "LMT",
+      "cik": "0000936468",
+      "filing_date": "2025-08-29",
+      "date": "2025-08-29",
+      "accession_number": "0001193125-25-192837",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936468/0001193125-25-192837.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/936468/0001193125-25-192837.txt",
+      "supporting_text": [
+        "On August 28, 2025, Lockheed Martin Corporation entered into Amendment No. 2 to Credit Agreement, which amends the Company's existing $3.0 billion Revolving Credit Agreement, dated as of August 24, 2022. The Amendment extends the maturity date of the Credit Agreement by one year from August 24, 2029 to August 24, 2030 and removes the 10 basis point credit spread adjustment to 'Term SOFR' borrowings."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "LMT",
+      "expected_date": "2025-08-29",
+      "reason_code": "qualifies",
+      "reason": "Executed one-year extension of existing $3b revolving agreement.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 3000000000.0,
+          "new_capacity_usd": 3000000000.0,
+          "old_maturity": "2029-08-24",
+          "new_maturity": "2030-08-24",
+          "capacity_preservation_proxy": true,
+          "measurement_note": "Explicit maturity dates; existing-sized-amendment capacity proxy."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": [
+        "SOFR credit-spread adjustment also removed.",
+        "Capacity preservation uses existing-sized-amendment proxy."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "CAT",
+      "issuer": "CAT",
+      "cik": "0000018230",
+      "filing_date": "2025-09-03",
+      "date": "2025-09-03",
+      "accession_number": "0001104659-25-087011",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-087011.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-087011.txt",
+      "supporting_text": [
+        "On August 28, 2025, Caterpillar Inc. entered into a Credit Agreement (the '364-Day Facility') which provides an unsecured revolving credit facility to the Borrowers in an aggregate amount of up to $3.5 billion (the '364-Day Aggregate Commitment') that expires on August 27, 2026.",
+        "The Five-Year Facility Agreement extends the expiration date of the 2022 Five-Year Facility to August 28, 2030 and provides for an unsecured revolving credit facility to the Borrowers in an aggregate amount of up to $5.0 billion.",
+        "The Three-Year Facility Agreement extends the expiration date of the 2022 Three-Year Facility to August 28, 2028 and provides for an unsecured revolving credit facility to the Borrowers in an aggregate amount of up to $3.0 billion."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "CAT",
+      "expected_date": "2025-09-03",
+      "reason_code": "old_capacity_missing",
+      "reason": "Extension is explicit, but earlier capacity of the extended facilities is not established by available excerpts."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LOW",
+      "issuer": "LOW",
+      "cik": "0000060667",
+      "filing_date": "2025-09-19",
+      "date": "2025-09-19",
+      "accession_number": "0001193125-25-208264",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60667/0001193125-25-208264.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/60667/0001193125-25-208264.txt",
+      "supporting_text": [
+        "the Company entered into (i) a 364-Day Revolving Credit Agreement (the \"364-Day Revolving Credit Agreement\") with certain lenders party thereto and Bank of America, N.A., as administrative processing agent, for a $1.0 billion unsecured revolving credit facility that will mature on the 364th day following the signing date thereof to be used for general corporate purposes",
+        "the Company entered into (i) a Credit Agreement (the \"5-Year Revolving Credit Agreement\") with certain lenders party thereto and Bank of America, N.A, as administrative processing agent, for a $2.0 billion unsecured revolving loan facility to replace its existing $2.0 billion unsecured revolving credit facility, dated as of December 14, 2021, that will mature on the fifth anniversary of the signing date thereof",
+        "a Term Loan Credit Agreement (the \"Term Loan Credit Agreement\") with certain lenders party thereto and Bank of America, N.A, as administrative agent, for a $2.0 billion unsecured term loan facility that will mature on the third anniversary of the signing date thereof to finance a portion of the Purchase Price and other fees and expenses related thereto",
+        "In connection with the Stock Purchase Agreement, dated as of August 19, 2025, pursuant to which Lowe's Companies, Inc. (the \"Company\") will acquire all of the shares of stock of ASP Flag Parent Holdings, Inc., a Delaware corporation (the \"Acquisition\"), for aggregate consideration of approximately $8.8 billion (the \"Purchase Price\")",
+        "Amendment No. 1 to Amended and Restated Credit Agreement amended that certain Amended and Restated Credit Agreement, dated as of September 1, 2023, to, among other things, remove the term SOFR credit spread adjustment"
+      ],
+      "same_filing_tags": [
+        "acquisition_agreement",
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LOW",
+      "expected_date": "2025-09-19",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LOW",
+      "issuer": "LOW",
+      "cik": "0000060667",
+      "filing_date": "2025-10-09",
+      "date": "2025-10-09",
+      "accession_number": "0000060667-25-000199",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60667/0000060667-25-000199.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/60667/0000060667-25-000199.txt",
+      "supporting_text": [
+        "In connection with the consummation of the Transaction, on October 9, 2025, the Company drew down the entire Term Loan Facility to pay a portion of the Purchase Price and other fees and expenses related to the Transaction.",
+        "On October 9, 2025, the Company completed the Transaction. Pursuant to the Purchase Agreement, the purchase price paid by the Company upon the completion of the Transaction was $8.8 billion in cash, subject to customary adjustments as set forth in the Purchase Agreement.",
+        "On September 16, 2025, the Company entered into a Term Loan Credit Agreement with certain lenders party thereto and Bank of America, N.A, as administrative agent, for a $2.0 billion unsecured term loan facility that will mature on the third anniversary of the signing date thereof to finance a portion of the Purchase Price and other fees and expenses related to the Transaction."
+      ],
+      "same_filing_tags": [
+        "acquisition_completion",
+        "credit_facility",
+        "credit_facility_draw"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LOW",
+      "expected_date": "2025-10-09",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "TGT",
+      "issuer": "TGT",
+      "cik": "0000027419",
+      "filing_date": "2025-10-09",
+      "date": "2025-10-09",
+      "accession_number": "0000027419-25-000121",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-25-000121.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-25-000121.txt",
+      "supporting_text": [
+        "In connection with the entry into the Credit Agreement, Target terminated its prior 364-Day Credit Agreement, dated as of October 15, 2024, which was scheduled to expire on October 14, 2025.",
+        "Target Corporation entered into a 364-Day Credit Agreement with the banks listed therein...Under the Credit Agreement, the Banks committed to provide loans in an aggregate principal amount of up to $1.0 billion, which may be increased from time to time by up to $500 million. Borrowings under the Credit Agreement bear interest at a base rate or term SOFR rate, in each case plus an applicable margin, which varies based on the type of loan and Target's debt ratings."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [
+        {
+          "accession_number": "0000027419-24-000171",
+          "filing_date": "2024-10-15",
+          "filing_url": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000171.txt",
+          "supporting_text": [
+            "Target Corporation entered into a 364-Day Credit Agreement with the banks listed therein...Under the Credit Agreement, the Banks committed to provide loans in an aggregate principal amount of up to $1.0 billion, which may be increased from time to time by up to $500 million. Borrowings under the Credit Agreement bear interest at a base rate or term SOFR rate (which includes a SOFR adjustment), in each case plus an applicable margin, which varies based on the type of loan and Target's debt ratings.",
+            "In connection with the entry into the Credit Agreement, Target terminated its prior 364-Day Credit Agreement, dated as of October 18, 2023, which was scheduled to expire on October 16, 2024."
+          ]
+        }
+      ],
+      "eligible": true,
+      "expected_ticker": "TGT",
+      "expected_date": "2025-10-09",
+      "reason_code": "qualifies",
+      "reason": "Executed 364-day replacement of prior October 15, 2024 $1b revolver, preserving $1b committed capacity.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 1000000000.0,
+          "new_capacity_usd": 1000000000.0,
+          "old_maturity": "2025-10-14",
+          "new_maturity": null,
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Old capacity established by matching prior agreement-date filing; exact new signing/expiration date absent from excerpt, but new 364-day replacement explicit."
+        }
+      ],
+      "prior_accessions": [
+        "0000027419-24-000171"
+      ],
+      "audit_flags": [
+        "New exact maturity absent; no numerical runway score assigned.",
+        "Optional $0.5b accordion excluded from committed capacity."
+      ]
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "T",
+      "issuer": "T",
+      "cik": "0000732717",
+      "filing_date": "2025-11-03",
+      "date": "2025-11-03",
+      "accession_number": "0001193125-25-262515",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/732717/0001193125-25-262515.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/732717/0001193125-25-262515.txt",
+      "supporting_text": [
+        "On November 3, 2025, AT&T Inc. (the \"Company\") entered into (i) a $12.0 billion Second Amended and Restated Credit Agreement (the \"Revolving Credit Agreement\"), with Citibank, N.A., as agent, amending and restating the Company's existing $12.0 billion Amended and Restated Credit Agreement, dated as of November 17, 2022.",
+        "On November 3, 2025, AT&T Inc. (the \"Company\") entered into (ii) a $17.5 billion Delayed Draw Term Loan Credit Agreement (the \"Term Loan\"), with Bank of America, N.A., as agent."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "T",
+      "expected_date": "2025-11-03",
+      "reason_code": "maturity_missing",
+      "reason": "Old and new $12b revolving commitments are present, but an actual maturity extension is not established."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "FDX",
+      "issuer": "FDX",
+      "cik": "0001048911",
+      "filing_date": "2025-11-06",
+      "date": "2025-11-06",
+      "accession_number": "0001193125-25-269610",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1048911/0001193125-25-269610.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1048911/0001193125-25-269610.txt",
+      "supporting_text": [
+        "FedEx amended its $1.75 billion three-year credit agreement (the 'Three-Year Credit Agreement') and $1.75 billion five-year credit agreement (the 'Five-Year Credit Agreement'). The Amendments update certain provisions of the Credit Agreements in anticipation of the planned spin-off of FedEx Freight, Inc."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "FDX",
+      "expected_date": "2025-11-06",
+      "reason_code": "no_maturity_extension",
+      "reason": "Amendment anticipates a spin-off; no maturity extension or capacity increase established."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "MA",
+      "issuer": "MA",
+      "cik": "0001141391",
+      "filing_date": "2025-11-12",
+      "date": "2025-11-12",
+      "accession_number": "0001141391-25-000199",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/0001141391-25-000199.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1141391/0001141391-25-000199.txt",
+      "supporting_text": [
+        "On November 7, 2025, Mastercard Incorporated (the \"Company\") entered into a committed five-year unsecured $8,000,000,000 revolving credit facility (the \"Credit Facility\") with Citibank, N.A. as managing administrative agent; JPMorgan Chase Bank, N.A. as administrative agent... The Credit Facility, which expires on November 7, 2030, amends and restates the Company's prior $8,000,000,000 credit facility that was to expire on November 7, 2029. The Credit Facility provides the Company with a revolving line of credit with a borrowing capacity of up to $8,000,000,000.",
+        "the right to designate one or more subsidiaries of the Company (each, a \"Subsidiary Borrower\") that may borrow under the commitments made available under the Credit Facility, subject to both customary conditions and the unconditional guarantee provided by the Company with respect to any such borrowings and any other obligations (if any) of the Subsidiary Borrowers under the Credit Facility"
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": true,
+      "expected_ticker": "MA",
+      "expected_date": "2025-11-12",
+      "reason_code": "qualifies",
+      "reason": "Executed one-year maturity extension explicitly preserving $8b committed capacity.",
+      "effective_by_filing": true,
+      "facilities": [
+        {
+          "old_capacity_usd": 8000000000.0,
+          "new_capacity_usd": 8000000000.0,
+          "old_maturity": "2029-11-07",
+          "new_maturity": "2030-11-07",
+          "capacity_preservation_proxy": false,
+          "measurement_note": "Both old and new capacities and maturity dates directly stated."
+        }
+      ],
+      "prior_accessions": [],
+      "audit_flags": []
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "PYPL",
+      "issuer": "PYPL",
+      "cik": "0001633917",
+      "filing_date": "2025-11-14",
+      "date": "2025-11-14",
+      "accession_number": "0001193125-25-283161",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-283161.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-283161.txt",
+      "supporting_text": [
+        "On November 14, 2025, PayPal Holdings, Inc. (the \"Company\") established a commercial paper program (the \"Program\") pursuant to which it may issue short-term, unsecured commercial paper notes (the \"Notes\")... with the aggregate face or principal amount of the Notes outstanding under the Program at any time not to exceed $5.0 billion, unless such amount is increased in accordance with the terms of each Dealer Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "PYPL",
+      "expected_date": "2025-11-14",
+      "reason_code": "commercial_paper_only",
+      "reason": "Commercial-paper program does not itself establish a committed revolving-facility maturity extension."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LIN",
+      "issuer": "LIN",
+      "cik": "0001707925",
+      "filing_date": "2025-12-03",
+      "date": "2025-12-03",
+      "accession_number": "0001193125-25-306646",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1707925/0001193125-25-306646.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1707925/0001193125-25-306646.txt",
+      "supporting_text": [
+        "On December 3, 2025, Linde plc (the \"Company\") and certain of its subsidiaries entered into an unsecured 364-day revolving credit agreement (the \"Credit Agreement\") with Bank of America, N.A., as administrative agent, and a syndicate of banking institutions as lenders. The Credit Agreement provides for total commitments of $1,500,000,000.",
+        "The Company fully and unconditionally guarantees all obligations of the subsidiary borrowers under the Credit Agreement. Linde Inc. and Linde GmbH also fully and conditionally guarantee all obligations of the Company under the Credit Agreement. Under certain circumstances, certain other subsidiaries of the Company may become subsidiary guarantors under the Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "guarantee_or_letter_of_credit"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LIN",
+      "expected_date": "2025-12-03",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "AMT",
+      "issuer": "AMT",
+      "cik": "0001053507",
+      "filing_date": "2025-12-05",
+      "date": "2025-12-05",
+      "accession_number": "0001193125-25-309718",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1053507/0001193125-25-309718.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1053507/0001193125-25-309718.txt",
+      "supporting_text": [
+        "The Company intends to use the net proceeds to repay existing indebtedness under its $4.0 billion senior unsecured revolving credit facility, as amended and restated in December 2021, as further amended.",
+        "American Tower Corporation (the \"Company\") completed a registered public offering of $850.0 million aggregate principal amount of its 4.700% senior unsecured notes due 2032 (the \"Notes\"), which resulted in aggregate net proceeds to the Company of approximately $839.5 million, after deducting commissions and estimated expenses. The Notes will mature on December 15, 2032 and bear interest at a rate of 4.700% per annum."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "debt_issuance"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "AMT",
+      "expected_date": "2025-12-05",
+      "reason_code": "repayment_not_extension",
+      "reason": "Repayment of existing facility, without a maturity extension."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "LMT",
+      "issuer": "LMT",
+      "cik": "0000936468",
+      "filing_date": "2025-12-09",
+      "date": "2025-12-09",
+      "accession_number": "0001193125-25-312904",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936468/0001193125-25-312904.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/936468/0001193125-25-312904.txt",
+      "supporting_text": [
+        "Borrowings under the 364-Day Revolving Credit Agreement are unsecured and bear interest at rates, based, at the Company's option, on (w) the \"Base Rate\" of interest in effect, (x) \"Term SOFR,\" which is a periodic fixed rate based on the Secured Overnight Financing Rate as administered by the Federal Reserve Bank of New York (\"SOFR\") with a term equivalent to the interest period for such borrowing, plus the \"Term SOFR Margin,\" (y) \"Daily Simple SOFR,\" which is a daily fluctuating rate based on SOFR, plus the \"Term SOFR Margin,\" or (z) a rate determined by a competitive bid process with a margin over or under the applicable Term SOFR or at an absolute rate. The \"Term SOFR Margin\" ranges from 0.585% to 1.085% per annum based upon the Company's senior unsecured long-term debt securities credit ratings.",
+        "On December 5, 2025, Lockheed Martin Corporation (the \"Company\") entered into a new 364-Day Revolving Credit Agreement (the \"364-Day Revolving Credit Agreement\"), among the Company, as borrower, the lenders listed therein (the \"Lenders\"), JPMorgan Chase Bank, N.A., as syndication agent, Citibank, N.A., Cr\u00e9dit Agricole Corporate and Investment Bank, Mizuho Bank, Ltd. and Wells Fargo Bank, National Association, as documentation agents, and Bank of America, N.A. (\"BofA\"), as administrative agent. The 364-Day Revolving Credit Agreement consists of a $3.0 billion 364-day unsecured revolving credit facility."
+      ],
+      "same_filing_tags": [
+        "credit_facility"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "LMT",
+      "expected_date": "2025-12-09",
+      "reason_code": "insufficient_old_terms",
+      "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "PM",
+      "issuer": "PM",
+      "cik": "0001413329",
+      "filing_date": "2025-12-11",
+      "date": "2025-12-11",
+      "accession_number": "0001104659-25-120310",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-25-120310.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1413329/0001104659-25-120310.txt",
+      "supporting_text": [
+        "Philip Morris International Inc. (\"PMI\") entered into a credit agreement, effective as of January 29, 2026 (the \"Credit Agreement\"), relating to a senior unsecured revolving credit facility (the \"Facility\") with the lenders named therein, Citibank Europe plc, UK Branch, as facility agent, and Citibank, N.A., as swingline agent. The Facility provides for borrowings up to an aggregate principal amount of US$2.0 billion (or the equivalent in Euro) and expires on January 29, 2031.",
+        "PMI also entered into an agreement, effective as of January 29, 2026 (the \"Amendment and Extension Agreement\"), to amend and extend the term of its existing \u20ac1.5 billion revolving credit facility, dated December 17, 2024 (the \"2024 Credit Agreement\"). The Amendment and Extension Agreement extends the expiration date of the 2024 Credit Agreement from January 29, 2028 to January 29, 2029.",
+        "The Facility will replace PMI's existing US$2.0 billion (or the equivalent in Euro) revolving credit facility with the lenders named therein, Citibank Europe plc, UK Branch, as facility agent, and Citibank, N.A., as swingline agent, which was to expire on February 10, 2027 (the \"Terminating Facility\"). PMI provided notice of termination of the Terminating Facility on December 11, 2025, with termination effective as of January 29, 2026, conditional upon the effectiveness of the Credit Agreement."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "deal_termination"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "PM",
+      "expected_date": "2025-12-11",
+      "reason_code": "not_effective_by_filing",
+      "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+    },
+    {
+      "strategy_id": "liquidity_runway_v1",
+      "ticker": "NFLX",
+      "issuer": "NFLX",
+      "cik": "0001065280",
+      "filing_date": "2025-12-22",
+      "date": "2025-12-22",
+      "accession_number": "0001193125-25-327462",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1065280/0001193125-25-327462.txt",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1065280/0001193125-25-327462.txt",
+      "supporting_text": [
+        "On December 19, 2025, Netflix entered into a Senior Unsecured Revolving Credit Agreement (the \"Revolving Credit Agreement\") with the lenders party thereto and Wells Fargo Bank, National Association, as the administrative agent. The Revolving Credit Agreement provides for a $5,000,000,000 unsecured revolving credit facility.",
+        "Netflix may use the proceeds of borrowings under the Revolving Credit Agreement (i) to pay the cash portion of the purchase price required under the Agreement and Plan of Merger (the \"Merger Agreement\"), dated as of December 4, 2025, by and among Netflix, Nightingale Sub, Inc., a Delaware corporation and wholly owned subsidiary of Netflix, Warner Bros. Discovery, Inc., a Delaware corporation (\"WBD\"), and New Topco 25, Inc., a newly formed Delaware corporation and wholly owned subsidiary of WBD.",
+        "On December 19, 2025, Netflix entered into a Senior Unsecured Delayed Draw Term Loan Credit Agreement (the \"DDTL Credit Agreement\") with the lenders party thereto and Wells Fargo Bank, National Association, as the administrative agent. The DDTL Credit Agreement provides for a two-year $10,000,000,000 unsecured delayed draw term loan credit facility (the \"Two-Year Facility\") and a three-year $10,000,000,000 unsecured delayed draw term loan credit facility (the \"Three-Year Facility\")."
+      ],
+      "same_filing_tags": [
+        "credit_facility",
+        "merger_agreement"
+      ],
+      "prior_source_records": [],
+      "eligible": false,
+      "expected_ticker": "NFLX",
+      "expected_date": "2025-12-22",
+      "reason_code": "acquisition_financing",
+      "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+    }
+  ]
+}

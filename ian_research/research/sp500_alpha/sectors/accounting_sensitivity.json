@@ -1,0 +1,133 @@
+{
+  "description": "Audit of frozen adjusted-close implementation. Exact cash distribution sensitivity holds same signals, computes P&L from split-adjusted raw price changes plus distribution, and turnover drift from price changes only; dividends are cash. Ex-date recognition of dividend receivable; payment-date financing not modeled.",
+  "variants": {
+    "residual_reversal_1day": {
+      "timing_delay_assertion": true,
+      "manual_beta_error_below1e-12": true,
+      "max_abs_daily_pnl_difference_bps": 1.6326289164097716,
+      "periods": {
+        "development": {
+          "exact_cash_dividend_metrics": {
+            "n": 4280,
+            "active_days": 4277,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -6.930754519859905,
+            "daily_mean_bps": -2.7502994126428195,
+            "annual_vol_pct": 5.61971708779451,
+            "sharpe": -1.2332924258612312,
+            "fixed_capital_max_drawdown_pct": -117.71281486111226,
+            "average_daily_one_way_turnover": 1.337386062427717,
+            "annual_one_way_turnover": 337.0212877317847,
+            "average_short_exposure": 0.5033897154295839,
+            "break_even_one_way_bps_after_borrow": -0.0564738110477114,
+            "sum_fixed_capital_pnl_pct": -117.71281486111266
+          },
+          "annual_mean_change_bps": -0.17859316652624457
+        },
+        "validation": {
+          "exact_cash_dividend_metrics": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -7.333420455832207,
+            "daily_mean_bps": -2.9100874824730982,
+            "annual_vol_pct": 6.1936505623240405,
+            "sharpe": -1.1840223115655546,
+            "fixed_capital_max_drawdown_pct": -19.62555400109823,
+            "average_daily_one_way_turnover": 1.3115824536180094,
+            "annual_one_way_turnover": 330.51877831173834,
+            "average_short_exposure": 0.5002217647670099,
+            "break_even_one_way_bps_after_borrow": -0.21876060818410775,
+            "sum_fixed_capital_pnl_pct": -14.579538287190221
+          },
+          "annual_mean_change_bps": -0.145490791132582
+        },
+        "holdout": {
+          "exact_cash_dividend_metrics": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": -6.673518664189569,
+            "daily_mean_bps": -2.6482216921387183,
+            "annual_vol_pct": 5.24597846984205,
+            "sharpe": -1.2721208641160324,
+            "fixed_capital_max_drawdown_pct": -20.005230196583362,
+            "average_daily_one_way_turnover": 1.3219652607296006,
+            "annual_one_way_turnover": 333.13524570385937,
+            "average_short_exposure": 0.5032253749254764,
+            "break_even_one_way_bps_after_borrow": -0.003246054043167006,
+            "sum_fixed_capital_pnl_pct": -18.299211892678542
+          },
+          "annual_mean_change_bps": 0.29672064442679985
+        }
+      }
+    },
+    "residual_reversal_5day": {
+      "timing_delay_assertion": true,
+      "manual_beta_error_below1e-12": true,
+      "max_abs_daily_pnl_difference_bps": 2.5579266110946355,
+      "periods": {
+        "development": {
+          "exact_cash_dividend_metrics": {
+            "n": 4280,
+            "active_days": 4273,
+            "first": "2005-01-03",
+            "last": "2021-12-31",
+            "annual_mean_pct": -3.144636114172238,
+            "daily_mean_bps": -1.2478714738778722,
+            "annual_vol_pct": 5.852156564001497,
+            "sharpe": -0.5373465456334354,
+            "fixed_capital_max_drawdown_pct": -54.23897396572599,
+            "average_daily_one_way_turnover": 0.6351869657118658,
+            "annual_one_way_turnover": 160.0671153593902,
+            "average_short_exposure": 0.5053762906722141,
+            "break_even_one_way_bps_after_borrow": 0.035426510241186156,
+            "sum_fixed_capital_pnl_pct": -53.40889908197294
+          },
+          "annual_mean_change_bps": 0.012150958594670129
+        },
+        "validation": {
+          "exact_cash_dividend_metrics": {
+            "n": 501,
+            "active_days": 501,
+            "first": "2022-01-03",
+            "last": "2023-12-29",
+            "annual_mean_pct": -7.422696569839841,
+            "daily_mean_bps": -2.945514511841207,
+            "annual_vol_pct": 6.24494231104342,
+            "sharpe": -1.1885932968049533,
+            "fixed_capital_max_drawdown_pct": -16.41002836821527,
+            "average_daily_one_way_turnover": 0.6131370914589515,
+            "annual_one_way_turnover": 154.51054704765576,
+            "average_short_exposure": 0.5001111325557916,
+            "break_even_one_way_bps_after_borrow": -2.8040064006442593,
+            "sum_fixed_capital_pnl_pct": -14.757027704324447
+          },
+          "annual_mean_change_bps": -0.8563332572490121
+        },
+        "holdout": {
+          "exact_cash_dividend_metrics": {
+            "n": 691,
+            "active_days": 691,
+            "first": "2024-01-02",
+            "last": "2026-10-02",
+            "annual_mean_pct": 0.7440963674902271,
+            "daily_mean_bps": 0.2952763363056457,
+            "annual_vol_pct": 5.020819487659929,
+            "sharpe": 0.14820217482804401,
+            "fixed_capital_max_drawdown_pct": -7.1986131776047495,
+            "average_daily_one_way_turnover": 0.6239031979250539,
+            "annual_one_way_turnover": 157.22360587711358,
+            "average_short_exposure": 0.5076227753004223,
+            "break_even_one_way_bps_after_borrow": 2.4732726764146444,
+            "sum_fixed_capital_pnl_pct": 2.040359483872012
+          },
+          "annual_mean_change_bps": -0.05913167658170027
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+SPY CALENDAR PREMIA: TWO FIXED CANDIDATES
+As of2026-10-03. No parameter search; market data and meeting dates are historical.
+
+Pre-FOMC overnight is positive but weak; month-turn overnight fails recent periods.
+The FOMC result is a research lead, not a validated alpha or Sharpe2 strategy.
+
+Base costs1bp/side; stress3bp/side; actual exit notional; lagged Treasury yield charges
+cash tied up overnight. Performance is excess of the assumed cash benchmark, fully
+funded1xnotional, with zero excess returns on idle days and no leverage.
+
+Candidate / period         Net Sharpe base   Net Sharpe stress    Trades
+Pre-FOMC /2010-2021          0.541              0.338               95
+Pre-FOMC /2022-2023          1.405              1.240               16
+Pre-FOMC /2024-Oct2,2026     0.769              0.483               22
+Month-turn/2010-2021         0.454              0.021              576
+Month-turn/2022-2023        -1.218             -1.658               96
+Month-turn/2024-Oct2,2026   -0.978             -1.358              134
+
+Pre-FOMC means buy the prior session's closing auction and sell the scheduled
+announcement day's opening auction. It does not hold through the announcement.
+Month-turn means exit on the last trading day or first three sessions of a month.
+Signal uses calendars, not the as-yet-unknown closing price. No price-based selection.
+
+RECENT PRE-FOMC DETAIL
+691calendar trading sessions;22trades; mean10.36bp net per trade; annual arithmetic
+excess mean0.831%, annual vol1.080%, fixed-capital drawdown0.663%.20-session block
+bootstrap95%Sharpe interval[-0.414,1.512]. Mean HACt1.283,p0.200 before any multiple-
+trial correction. Daily market-adjusted alpha HACt1.154; estimated beta0.0073.
+The calendar coefficient after controlling weekday and month-turn has HACt0.133:
+the recent positive trade returns do not establish incremental FOMC predictability.
+2026YTD contribution was negative before the cutoff. This is too little evidence to
+call it a live profitable edge, even though aggregate recent trade P&L is positive.
+
+DATA/VERIFICATION
+SPY Yahoo raw OHLC with actual ex-date dividends, no splits; independent Massive OHLC
+cross-check. Sources differ on some older opening prints, but pre-FOMC holdout Sharpe
+on their common689sessions is0.77059 vs0.77059; conclusions unchanged. The independent
+cash ledger matches exported returns to5.1e-11.133official scheduled FOMC dates; all
+statement-date links agree. March2020cancelled scheduled meeting excluded, with
+March15public cancellation evidence.2019-2026 dates also checked against official
+advance schedule releases. Older schedules remain reconstructed, not a full vintage
+archive. Read calendar_data/manifest.json for provenance and excluded events.
+
+The cash proxy is prior-observation DGS3MO; cash outside holdings earns the benchmark.
+Actual calendar hours are used over weekends and identified early-close sessions;
+dividends are recognized at ex-date without payment-date funding. Auction fills at source prices
+plus assumed costs are not actual quotes, fills or institutional capacity estimates.
+All periods were previously available in unrelated research, not globally pristine.
+The seven primary batch hypotheses plus prior literature/search require selection
+discipline; bootstrap intervals here are conditional, not selection-adjusted.
+
+Artifacts:PROTOCOL.json;run.py;daily.json;results.json;verify.py;verification.json.
+Reproduce:.venv/bin/python research/sp500_alpha/calendar/run.py
+Verify:.venv/bin/python research/sp500_alpha/calendar/verify.py

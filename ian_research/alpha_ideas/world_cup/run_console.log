@@ -1,0 +1,40 @@
+Colombia stitch: GXG last close 29.41 on 2025-06-20, COLO first close 29.33 on 2025-06-23
+=== DATA ===
+events with an available ETF: 429 (knockout losses 77, group losses 102, wins 250)
+knockout losses by tournament: {2006: 10, 2010: 9, 2014: 13, 2018: 14, 2022: 12, 2026: 19}
+events where the ETF had no trade on the event day (next trading day used): 0; dropped as stale (> 5 missing trading days): 0 []
+betas: median 0.96 (range 0.27 to 1.93); illiquid-ETF events 158
+
+=== PRIMARY: knockout losses, event-day abnormal return (prediction < 0) ===
+N 77 events on 41 dates | mean AR +0.058% | t (clustered by date) +0.61 | share negative 0.47
+tradable short (first price after the final whistle -> close of D, beta-hedged): gross -0.093% (t -1.10), net -0.528% (t -6.54) per event, mean cost 0.44%
+VERDICT: FAIL
+
+=== ROBUSTNESS (reported only) ===
+                                               N  mean_%      t
+variant                                                        
+1 group-stage losses                         102   0.023  0.249
+2 all wins                                   250   0.124  2.457
+2b knockout wins                              88   0.142  1.893
+3 knockout losses, two-day window             77   0.001  0.004
+4 knockout losses, market-adjusted (beta=1)   77   0.129  1.251
+5 knockout losses, soccer nations             34  -0.023 -0.140
+6 knockout losses, 2026 only                  19   0.376  2.255
+7 knockout losses, liquid ETFs only           50   0.018  0.141
+  (all losses pooled)                        179   0.038  0.579
+
+diagnostic: mean AR over all ETF-days during the tournaments (events included): +0.001% (sd 0.96%, n 4167)
+
+knockout losses, largest moves:
+  2022 Quarter-finals         Brazil        EWZ      2022-12-12 AR  -3.27%  (Croatia 1-1 Brazil (p 4.0-2.0))
+  2014 Final                  Argentina     ARGT     2014-07-14 AR  -2.77%  (Germany 1-0 Argentina)
+  2018 Round of 16            Mexico        EWW      2018-07-03 AR  +2.69%  (Brazil 2-0 Mexico)
+  2010 Round of 16            England       EWU      2010-06-28 AR  +2.12%  (Germany 4-1 England)
+  2010 Quarterfinals          Brazil        EWZ      2010-07-06 AR  -2.06%  (Netherlands 2-1 Brazil)
+  2006 Round of 16            Australia     EWA      2006-06-27 AR  +1.72%  (Italy 1-0 Australia)
+  2006 Round of 16            Mexico        EWW      2006-06-26 AR  -1.63%  (Argentina 2-1 Mexico)
+  2014 Round of 16            Nigeria       NGE      2014-07-01 AR  +1.62%  (France 2-0 Nigeria)
+  2026 Round of 32            Netherlands   EWN      2026-06-30 AR  +1.57%  (Netherlands 1-1 Morocco (p 2.0-3.0))
+  2014 Match for third place  Brazil        EWZ      2014-07-14 AR  +1.56%  (Brazil 0-3 Netherlands)
+  2022 Quarter-finals         Portugal      PGAL     2022-12-12 AR  +1.45%  (Morocco 1-0 Portugal)
+  2026 Final                  Argentina     ARGT     2026-07-20 AR  +1.43%  (Spain 1-0 Argentina)

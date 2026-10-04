@@ -1,0 +1,43 @@
+reference entities: 8,443; fetching ticker-change events for 7,230 ids (cached)
+intervals: 14,880 for 8,443 entities; events with mismatched CIK ignored: 0; events ignored because they end in another ticker (other share class): 325
+ticker-days claimed by >1 entity: 27,570; resolved: 27,570; dropped as ambiguous: 0
+same company, same day, two tickers: 3,342 rows dropped
+CIKs: 7,687; with >1 share-class entity: 575 (kept the most traded one)
+universe companies: 2,097; fetching dividends for 2,097 tickers (cached)
+dividends matched to traded entities: 22,351; ambiguous (dropped): 0
+daily returns: 3,005,589 rows; set missing: first-day 2,097, gap>5d 65, |r|>100% 300
+
+=== audit ===
+META (FB until 2022-06-08):
+      date ticker  close  close_raw  div_adj    ret_px       ret
+2022-06-06     FB 194.25     194.25      0.0  0.018188  0.018188
+2022-06-07     FB 195.65     195.65      0.0  0.007207  0.007207
+2022-06-08     FB 196.64     196.64      0.0  0.005060  0.005060
+2022-06-09   META 184.00     184.00      0.0 -0.064280 -0.064280
+2022-06-10   META 175.57     175.57      0.0 -0.045815 -0.045815
+2022-06-13   META 164.26     164.26      0.0 -0.064419 -0.064419
+AAPL 4:1 split on 2020-08-31:
+      date ticker    close  close_raw  div_adj    ret_px       ret
+2020-08-26   AAPL 126.5225     506.09      0.0  0.013599  0.013599
+2020-08-27   AAPL 125.0100     500.04      0.0 -0.011954 -0.011954
+2020-08-28   AAPL 124.8075     499.23      0.0 -0.001620 -0.001620
+2020-08-31   AAPL 129.0400     129.04      0.0  0.033912  0.033912
+2020-09-01   AAPL 134.1800     134.18      0.0  0.039833  0.039833
+NVDA 10:1 split 2024-06-10, $0.01 dividend ex 2024-06-11:
+      date ticker   close  close_raw  div_adj    ret_px       ret
+2024-06-05   NVDA 122.440    1224.40     0.00  0.051556  0.051556
+2024-06-06   NVDA 120.998    1209.98     0.00 -0.011777 -0.011777
+2024-06-07   NVDA 120.888    1208.88     0.00 -0.000909 -0.000909
+2024-06-10   NVDA 121.790     121.79     0.00  0.007461  0.007461
+2024-06-11   NVDA 120.910     120.91     0.01 -0.007226 -0.007143
+2024-06-12   NVDA 125.200     125.20     0.00  0.035481  0.035481
+XOM 2023: 250 trading days, dividends/avg price = 3.39%; total-minus-price return = +3.11%
+HON 2023: 250 trading days, dividends/avg price = 2.13%; total-minus-price return = +2.16%
+JPM 2023: 250 trading days, dividends/avg price = 2.81%; total-minus-price return = +3.78%
+KO 2023: 250 trading days, dividends/avg price = 3.07%; total-minus-price return = +2.89%
+AAPL 2023: 250 trading days, dividends/avg price = 0.55%; total-minus-price return = +0.82%
+universe months 2020-06-30 -> 2026-08-31, size min/max 1000/1000, unique CIKs 2,097
+2021-12-31: top-1,500 tickers that look like CS but map to no company: 6 -> ['GOLD', 'AZN', 'COR', 'BBBY', 'TTE', 'TEVA']
+2024-06-28: top-1,500 tickers that look like CS but map to no company: 4 -> ['GOLD', 'AZN', 'TEVA', 'TTE']
+2026-06-30: top-1,500 tickers that look like CS but map to no company: 2 -> ['STRC', 'TEVA']
+exit 0
