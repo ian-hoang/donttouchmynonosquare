@@ -1,0 +1,75 @@
+Futures cache: last bar ends 2026-09-30 20:00:00-04:00 ET
+Buyback events (Nominal Coupons, Liquidity Support, >= 2024-05-01): 104
+maturity_bucket
+20Y to 30Y    27
+10Y to 20Y    27
+3Y to 5Y      11
+1Mo to 2Y     10
+5Y to 7Y      10
+7Y to 10Y     10
+2Y to 3Y       9 
+
+Events without data (window past the cache end or no bars): 1
+   dropped 2026-10-01 10Y to 20Y -> ZB
+Placebo contract-days (buyback era, 2024-05-01 -> 2026-09-29): 2917
+
+=== Sanity: example long-end events, window bar END times (ET) ===
+2024-06-05 20Y to 30Y -> UB  O=01:40 PM C=02:00 PM
+   pre  window (Tue 2024-06-04 16:00, Wed 2024-06-05 13:00]  bars 20: first ends Tue 2024-06-04 17:00, last ends Wed 2024-06-05 13:00  -> +52.1 bp
+   post window (Wed 2024-06-05 15:00, Thu 2024-06-06 16:00]  bars 24: first ends Wed 2024-06-05 16:00, last ends Thu 2024-06-06 16:00  -> +7.4 bp
+2024-07-02 10Y to 20Y -> ZB  O=01:40 PM C=02:00 PM
+   pre  window (Mon 2024-07-01 16:00, Tue 2024-07-02 13:00]  bars 20: first ends Mon 2024-07-01 17:00, last ends Tue 2024-07-02 13:00  -> +24.2 bp
+   post window (Tue 2024-07-02 15:00, Wed 2024-07-03 16:00]  bars 24: first ends Tue 2024-07-02 16:00, last ends Wed 2024-07-03 16:00  -> +91.1 bp
+2024-08-15 20Y to 30Y -> UB  O=01:40 PM C=02:00 PM
+   pre  window (Wed 2024-08-14 16:00, Thu 2024-08-15 13:00]  bars 20: first ends Wed 2024-08-14 17:00, last ends Thu 2024-08-15 13:00  -> -124.5 bp
+   post window (Thu 2024-08-15 15:00, Fri 2024-08-16 16:00]  bars 24: first ends Thu 2024-08-15 16:00, last ends Fri 2024-08-16 16:00  -> +38.0 bp
+2024-08-28 10Y to 20Y -> ZB  O=01:40 PM C=02:00 PM
+   pre  window (Tue 2024-08-27 16:00, Wed 2024-08-28 13:00]  bars 20: first ends Tue 2024-08-27 17:00, last ends Wed 2024-08-28 13:00  -> -15.1 bp
+   post window (Wed 2024-08-28 15:00, Thu 2024-08-29 16:00]  bars 24: first ends Wed 2024-08-28 16:00, last ends Thu 2024-08-29 16:00  -> -30.2 bp
+non-modal clock 2026-01-16 7Y to 10Y O=10:40 AM C=11:00 AM: pre (Thu 2026-01-15 16:00, Fri 2026-01-16 10:00], post (Fri 2026-01-16 12:00, Tue 2026-01-20 16:00]
+non-modal clock 2026-04-23 2Y to 3Y O=01:40 PM C=02:05 PM: pre (Wed 2026-04-22 16:00, Thu 2026-04-23 13:00], post (Thu 2026-04-23 16:00, Fri 2026-04-24 16:00]
+Events whose window endpoints lack an exact bar: 0 of 103;  placebo: 105 of 2917
+Look-ahead: event dates/times come from the published operation schedule (announced ahead); the pre window ends at the last full hour before the operation opens, the post window starts >= 1h after close.
+
+=== PRIMARY: long-end events (ZB, UB), (pre - post) minus placebo, prediction > 0 ===
+long-end pre-post vs placebo                         N= 53  events  +11.48 bp  placebo  -0.27 bp (n=1155)  diff  +11.76 bp  t(DK-NW2)=+0.90  t(naive)=+0.92
+   placebo mean by contract: {'UB': -0.48, 'ZB': -0.06}
+   ZB only                                           N= 26  events   +7.93 bp  placebo  -0.06 bp (n=578)  diff   +7.99 bp  t(DK-NW2)=+0.49  t(naive)=+0.50
+   UB only                                           N= 27  events  +14.91 bp  placebo  -0.48 bp (n=577)  diff  +15.39 bp  t(DK-NW2)=+0.76  t(naive)=+0.77
+   share of events with abnormal > 0: 60%;  median abnormal +15.21 bp
+
+=== TRADE: long pre window, short post window, 1 contract, every long-end event ===
+cost per event: $131.00 (4 sides), 11.10 bp ZB / 10.48 bp UB
+   gross bp  mean    +11.48  median    +15.15  sd    92.63  t +0.90  hit 60%
+   net bp    mean     +0.70  median     +4.05  sd    92.64  t +0.05  hit 53%
+   gross $   mean   +133.84  median   +187.50  sd  1089.39  t +0.89  hit 60%
+   net $     mean     +2.84  median    +56.50  sd  1089.39  t +0.02  hit 53%
+   events per year 21.9;  annualised net $+62 per contract;  annualised Sharpe (net) +0.01
+   total net over 53 events: $+151;  the same trade on every placebo day would average -0.27 bp gross
+
+=== ROBUSTNESS (reported only; cannot rescue the primary) ===
+all buckets, pre-post vs placebo                     N=103  events   +8.61 bp  placebo  -0.20 bp (n=2917)  diff   +8.84 bp  t(DK-NW2)=+1.28  t(naive)=+1.30
+   ZT events (1Mo to 2Y, 2Y to 3Y)                   N= 19  events   -1.89 bp  placebo  -0.00 bp (n=585)  diff   -1.89 bp  t(DK-NW2)=-0.54  t(naive)=-0.54
+   ZF events (3Y to 5Y)                              N= 11  events   -0.90 bp  placebo  -0.04 bp (n=593)  diff   -0.85 bp  t(DK-NW2)=-0.11  t(naive)=-0.11
+   ZN events (5Y to 7Y, 7Y to 10Y)                   N= 20  events  +16.22 bp  placebo  -0.43 bp (n=584)  diff  +16.65 bp  t(DK-NW2)=+2.05  t(naive)=+2.04
+   ZB events (10Y to 20Y)                            N= 26  events   +7.93 bp  placebo  -0.06 bp (n=578)  diff   +7.99 bp  t(DK-NW2)=+0.49  t(naive)=+0.50
+   UB events (20Y to 30Y)                            N= 27  events  +14.91 bp  placebo  -0.48 bp (n=577)  diff  +15.39 bp  t(DK-NW2)=+0.76  t(naive)=+0.77
+long-end PRE leg vs placebo (pred > 0)               N= 53  events   +2.92 bp  placebo  -1.18 bp (n=1155)  diff   +4.11 bp  t(DK-NW2)=+0.47  t(naive)=+0.48
+long-end POST leg vs placebo (pred < 0)              N= 53  events   -8.57 bp  placebo  -0.91 bp (n=1155)  diff   -7.65 bp  t(DK-NW2)=-0.88  t(naive)=-0.89
+all-bucket PRE leg vs placebo (pred > 0)             N=103  events   +2.34 bp  placebo  -0.61 bp (n=2917)  diff   +3.08 bp  t(DK-NW2)=+0.67  t(naive)=+0.66
+all-bucket POST leg vs placebo (pred < 0)            N=103  events   -6.28 bp  placebo  -0.40 bp (n=2917)  diff   -5.77 bp  t(DK-NW2)=-1.24  t(naive)=-1.26
+long-end events within 1 bday of a same-contract coupon auction: 6 -> dropped
+long-end, no same-contract auction within 1 bday     N= 47  events  +14.14 bp  placebo  -0.27 bp (n=1155)  diff  +14.41 bp  t(DK-NW2)=+1.01  t(naive)=+1.03
+long-end abnormal scaled by accepted par / mean par  N= 53  mean   +5.18 bp  t(naive)=+0.43  (par range 0.20-5.19 $bn, mean 2.04)
+   (also as a regression: abnormal_bp on par_accepted_bn)
+   slope -37.34 bp per $bn accepted, t(HC1)=-2.02
+
+=== SIDE NOTE (not pre-registered, cannot change the verdict): 2010-07 -> 2024-04 placebo ===
+long-end pre-post vs pre-buyback-era placebo         N= 53  events  +11.48 bp  placebo  -1.23 bp (n=6932)  diff  +12.72 bp  t(DK-NW2)=+1.00  t(naive)=+1.00
+
+=== Context: long-end abnormal by year ===
+      count   mean     std
+date                      
+2024      8  26.88  103.36
+2025     21  -4.29   93.52
+2026     24  20.76   90.25
