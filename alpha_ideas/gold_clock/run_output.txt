@@ -1,0 +1,80 @@
+GC.v.0 hourly bars: 97,431  2010-06-07 00:00:00+00:00 -> 2026-09-30 23:00:00+00:00  contracts: 82
+Weekday sessions: 4,258  valid (Asia and NY): 4,020
+  asia windows dropped: missing bar=71, roll=54
+  europe windows dropped: missing bar=63
+  ny windows dropped: missing bar=181
+Average round-trip cost: Asia 0.94 bp, NY 0.94 bp (range 0.28-1.43)
+
+=== PRIMARY: mean (r_Asia - r_NY), bp per session, full sample ===
+    n=4020  mean_bp=1.731  t=1.198  t_nw5=1.219  hit=0.504  sharpe_ann=0.300  ann_bp=436.191
+    legs:  Asia n=4020  mean_bp=1.754  t=2.236  t_nw5=2.292  hit=0.511  sharpe_ann=0.560  ann_bp=442.133
+           NY   n=4020  mean_bp=0.024  t=0.019  t_nw5=0.019  hit=0.497  sharpe_ann=0.005  ann_bp=5.942
+
+=== TRADE: long GC 18:00->03:00 ET, short GC 08:00->17:00 ET (2 round trips/day) ===
+    gross              n=4020  mean_bp=1.731  t=1.198  t_nw5=1.219  hit=0.504  sharpe_ann=0.300  ann_bp=436.191
+    net (base costs)   n=4020  mean_bp=-0.150  t=-0.104  t_nw5=-0.105  hit=0.494  sharpe_ann=-0.026  ann_bp=-37.760
+    net (2x costs)     n=4020  mean_bp=-2.031  t=-1.405  t_nw5=-1.428  hit=0.484  sharpe_ann=-0.352  ann_bp=-511.710
+
+VERDICT (pre-registered rule): FAIL   [primary t>=2: False, net>0: False, net 2x>0: False]
+
+=== SECONDARY (mechanism, not part of the verdict): Shanghai open vs closed ===
+    r_Asia open - closed (pred > 0): diff=5.979  t=2.323  p_one_sided=0.010  mean_a=2.161  mean_b=-3.819  n_a=3747  n_b=273
+    X      open - closed (pred > 0): diff=11.544  t=2.063  p_one_sided=0.020  mean_a=2.515  mean_b=-9.029  n_a=3747  n_b=273
+    r_NY   open - closed           : diff=-5.565  t=-1.109  p_one_sided=0.866  mean_a=-0.354  mean_b=5.210  n_a=3747  n_b=273
+
+=== By sample ===
+  full                         X mean= +1.73bp t=+1.20 (n 4020)  net mean= -0.15bp t=-0.10 Sharpe=-0.03  Asia= +1.75 NY= +0.02
+  in-sample to 2024-09-30      X mean= +0.84bp t=+0.58 (n 3529)  net mean= -1.19bp t=-0.82 Sharpe=-0.22  Asia= +1.01 NY= +0.17
+  OOS 2024-10-01..2026-09-30   X mean= +8.15bp t=+1.48 (n 491)  net mean= +7.32bp t=+1.33 Sharpe=+0.95  Asia= +7.09 NY= -1.05
+  ex 2024-2026 (pre-2024)      X mean= +1.18bp t=+0.78 (n 3345)  net mean= -0.89bp t=-0.59 Sharpe=-0.16  Asia= +1.05 NY= -0.13
+
+=== By calendar year ===
+  2010: X mean= +8.52bp t=+1.13  Asia= +8.48 NY= -0.05  Europe= -0.60  net sum=  +885.4bp (n 143)
+  2011: X mean= +2.43bp t=+0.33  Asia= +2.38 NY= -0.05  Europe= -2.16  net sum=  +126.2bp (n 248)
+  2012: X mean= -1.37bp t=-0.25  Asia= +1.33 NY= +2.70  Europe= -5.03  net sum=  -779.1bp (n 246)
+  2013: X mean= +2.41bp t=+0.35  Asia= -0.49 NY= -2.90  Europe=-11.97  net sum=   +64.9bp (n 248)
+  2014: X mean= -1.14bp t=-0.23  Asia= -0.29 NY= +0.85  Europe= +0.48  net sum=  -846.3bp (n 241)
+  2015: X mean= +6.39bp t=+1.27  Asia= +2.84 NY= -3.55  Europe= -5.35  net sum=  +938.3bp (n 247)
+  2016: X mean= +9.68bp t=+1.55  Asia= +6.59 NY= -3.09  Europe= +0.68  net sum= +1811.5bp (n 249)
+  2017: X mean= -3.20bp t=-0.86  Asia= -0.47 NY= +2.73  Europe= +1.40  net sum= -1374.0bp (n 246)
+  2018: X mean= +0.30bp t=+0.09  Asia= -1.68 NY= -1.99  Europe= +1.29  net sum=  -507.6bp (n 246)
+  2019: X mean= -1.62bp t=-0.37  Asia= -0.81 NY= +0.81  Europe= +1.69  net sum=  -933.0bp (n 247)
+  2020: X mean= -1.00bp t=-0.14  Asia= +1.79 NY= +2.79  Europe= +0.60  net sum=  -660.6bp (n 245)
+  2021: X mean= +3.20bp t=+0.69  Asia= +0.85 NY= -2.35  Europe= -3.34  net sum=  +379.9bp (n 248)
+  2022: X mean= -6.83bp t=-1.21  Asia= -3.98 NY= +2.85  Europe= -2.47  net sum= -2098.6bp (n 247)
+  2023: X mean= +1.62bp t=+0.32  Asia= +1.20 NY= -0.42  Europe= +1.39  net sum=   +20.4bp (n 244)
+  2024: X mean= -0.56bp t=-0.11  Asia= +1.15 NY= +1.71  Europe= +2.48  net sum=  -446.3bp (n 246)
+  2025: X mean= -0.55bp t=-0.08  Asia= +6.50 NY= +7.06  Europe= +3.76  net sum=  -353.7bp (n 246)
+  2026: X mean=+17.98bp t=+1.57  Asia= +9.06 NY= -8.92  Europe= +0.60  net sum= +3170.1bp (n 183)
+
+=== Robustness (reported only) ===
+    long-only Asia, net:       n=4020  mean_bp=0.814  t=1.037  t_nw5=1.063  hit=0.503  sharpe_ann=0.260  ann_bp=205.157
+    Europe window 03->08 ET:   n=4195  mean_bp=-1.024  t=-1.517  t_nw5=-1.604  hit=0.494  sharpe_ann=-0.372  ann_bp=-258.104
+    X winsorized 1%/99%:       n=4020  mean_bp=1.764  t=1.333  t_nw5=1.333  hit=0.504  sharpe_ann=0.334  ann_bp=444.413
+
+=== Descriptive: mean GC bar return by ET bar-start hour (bp; close-to-close, same contract) ===
+ et_bar_start_hour   mean  count    std      t
+                 0  0.162   4193 13.968  0.751
+                 1  0.157   4193 17.185  0.592
+                 2 -0.088   4193 19.024 -0.301
+                 3 -0.239   4193 21.793 -0.709
+                 4 -0.367   4195 18.922 -1.255
+                 5 -0.657   4195 16.633 -2.560
+                 6 -0.055   4195 18.359 -0.193
+                 7  0.212   4195 19.835  0.693
+                 8 -0.076   4196 35.189 -0.140
+                 9 -1.349   4196 32.828 -2.662
+                10  0.854   4196 34.707  1.594
+                11  0.371   4195 25.192  0.955
+                12 -0.333   4194 21.190 -1.017
+                13  0.020   4145 19.185  0.066
+                14 -0.250   4107 22.774 -0.702
+                15  0.133   4075 18.592  0.456
+                16  0.965   4076 11.802  5.220
+                17  0.048   1339  5.945  0.296
+                18  0.913   1063 14.026  2.122
+                19  0.584   4165 14.566  2.588
+                20  0.419   4156 19.233  1.405
+                21  0.360   4192 22.109  1.053
+                22 -0.000   4191 15.567 -0.002
+                23 -0.076   4194 12.530 -0.391
