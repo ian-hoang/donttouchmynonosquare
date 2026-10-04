@@ -1,0 +1,120 @@
+tertiary_category,primary_category,secondary_category,description,in_sample_events,in_sample_tickers,share_same_day_as_earnings,pre_2024_events,expected_oos_events
+debt_issuance,capital_and_financing,debt_activity,"Bonds, notes, or debentures issuance with principal, rate, maturity, covenants, and use of proceeds.",277.0,80.0,0.0,245.0,92.3
+executive_compensation_change,leadership_and_governance,executive_leadership,"Material executive or director compensation changes including new employment agreements, amendments, severance, change-in-control provisions, or equity awards. Consolidates all compensation-related events into a single tag.",174.0,79.0,0.040229885057471264,173.0,58.0
+annual_meeting_results,shareholder_activity,shareholder_meetings,"Annual meeting results including elections, ratifications, and proposal outcomes.",150.0,87.0,0.006666666666666667,143.0,50.0
+investor_presentation,shareholder_activity,investor_communications,"Investor presentations, conference materials, or earnings call supplements disclosed for broad dissemination.",149.0,39.0,0.21476510067114093,154.0,49.7
+underwriting_agreement,capital_and_financing,equity_activity,Underwriting or placement agent agreement for securities distribution in offerings.,146.0,67.0,0.0,127.0,48.7
+executive_officer_departure,leadership_and_governance,executive_leadership,Other named executive officer departure with circumstances.,132.0,68.0,0.022727272727272728,116.0,44.0
+quarterly_earnings,financial_results,earnings_and_performance,"Quarterly financial results including revenue, net income, EPS, and key operating metrics with management commentary.",131.0,27.0,1.0,129.0,43.7
+shareholder_proposal_outcome,shareholder_activity,shareholder_activism,Shareholder proposal outcomes with support levels and management response.,121.0,76.0,0.008264462809917356,115.0,40.3
+executive_officer_appointment,leadership_and_governance,executive_leadership,Other named executive officer appointment with position and terms.,105.0,62.0,0.01904761904761905,101.0,35.0
+director_departure,leadership_and_governance,board_of_directors,"Director resignation, removal, retirement, or decision not to stand for re-election, including any disagreements causing departure.",101.0,59.0,0.0297029702970297,86.0,33.7
+director_appointment,leadership_and_governance,board_of_directors,"New director election or appointment with background, qualifications, and committee assignments.",97.0,63.0,0.0,91.0,32.3
+dividend_declaration,capital_and_financing,shareholder_returns,"Cash dividend, special dividend, or distribution declaration with amount, record date, and payment date.",79.0,18.0,0.05063291139240506,77.0,26.3
+credit_facility,capital_and_financing,debt_activity,"Credit agreement, loan facility, or revolving credit arrangement. Includes amendments modifying capacity, rates, covenants, or maturity.",62.0,38.0,0.0,95.0,20.7
+guidance_issuance_or_update,financial_results,guidance_and_outlook,"Issuance, revision, or reaffirmation of financial guidance including revenue projections, earnings estimates, and key metric forecasts. Consolidates all guidance-related disclosures regardless of disclosure mechanism.",60.0,27.0,1.0,72.0,20.0
+business_update,shareholder_activity,investor_communications,"Business performance, market conditions, or operational updates communicated to investors.",54.0,12.0,0.05555555555555555,66.0,18.0
+bylaw_amendment,leadership_and_governance,governance_documents,Bylaw amendment with nature of changes and impact on governance or shareholder rights.,47.0,43.0,0.0,86.0,15.7
+guarantee_or_letter_of_credit,capital_and_financing,debt_activity,"Issuance or release of guarantees, letters of credit, or keepwell agreements.",42.0,21.0,0.023809523809523808,30.0,14.0
+debt_retirement,capital_and_financing,debt_activity,"Purchase, redemption, tender, or early retirement of outstanding debt securities.",40.0,19.0,0.0,50.0,13.3
+charter_amendment,leadership_and_governance,governance_documents,"Certificate or articles of incorporation amendment, including changes to shareholder voting, dividend, or liquidation rights. Use this for the governance action; use preferred_stock_modification for preferred-specific term changes.",36.0,28.0,0.0,21.0,12.0
+share_repurchase_program,capital_and_financing,shareholder_returns,"Share buyback program authorization, expansion, or update with amount and timing.",36.0,26.0,0.1111111111111111,32.0,12.0
+strategic_initiative,operations_and_strategy,business_developments,"Strategic plans, business transformation, or market entry/exit that represent material changes to business direction.",34.0,20.0,0.29411764705882354,28.0,11.3
+cfo_appointment,leadership_and_governance,executive_leadership,"New CFO appointment with background, terms, and transition timeline.",34.0,29.0,0.058823529411764705,39.0,11.3
+equity_compensation_grant,capital_and_financing,equity_activity,"Unregistered securities under equity compensation plans for employees, directors, or consultants.",33.0,28.0,0.0,41.0,11.0
+ceo_departure,leadership_and_governance,executive_leadership,"CEO departure, resignation, retirement, termination, or death with circumstances and transition.",31.0,25.0,0.0,27.0,10.3
+cfo_departure,leadership_and_governance,executive_leadership,CFO departure with circumstances and transition arrangements.,31.0,24.0,0.06451612903225806,30.0,10.3
+material_charge_or_gain,financial_results,impairments_and_charges,"Material nonrecurring charges, gains, or unusual items significantly affecting results (e.g., restructuring charges, legal settlements, one-time gains).",29.0,19.0,1.0,28.0,9.7
+acquisition_agreement,strategic_transactions,deal_agreements,"Definitive agreement to acquire a business, subsidiary, or division, specifying price, financing, and conditions.",29.0,19.0,0.06896551724137931,24.0,9.7
+merger_agreement,strategic_transactions,deal_agreements,Definitive merger or business combination agreement with exchange ratios and terms.,27.0,11.0,0.037037037037037035,24.0,9.0
+preliminary_results,financial_results,earnings_and_performance,Preliminary or unaudited financial results before formal statement preparation.,25.0,10.0,1.0,23.0,8.3
+deal_termination,strategic_transactions,deal_terminations,"Termination, expiration, or non-renewal of a material agreement due to term completion, mutual agreement, or exercise of termination rights.",25.0,21.0,0.0,36.0,8.3
+settlement_agreement,operations_and_strategy,material_agreements,"Settlement resolving material litigation, regulatory proceedings, or disputes. Use this instead of material_litigation when the event is the settlement itself.",24.0,18.0,0.20833333333333334,28.0,8.0
+acquisition_completion,strategic_transactions,deal_completions,"Completed business acquisition with final purchase price, financing, and integration plans.",24.0,17.0,0.08333333333333333,20.0,8.0
+preferred_stock_modification,leadership_and_governance,governance_documents,"Material modification of preferred stock terms including conversion, dividend, redemption, or voting provisions.",20.0,13.0,0.0,21.0,6.7
+public_offering,capital_and_financing,equity_activity,Public equity offering or registered direct offering with underwriting terms.,19.0,9.0,0.0,10.0,6.3
+ceo_appointment,leadership_and_governance,executive_leadership,"New CEO appointment with background, employment terms, and compensation.",17.0,15.0,0.0,15.0,5.7
+acquisition_consideration_shares,capital_and_financing,equity_activity,Unregistered securities issued as merger or acquisition consideration.,15.0,6.0,0.0,3.0,5.0
+restructuring_plan,operations_and_strategy,restructuring,"Restructuring or cost reduction initiative with expected charges, timeline, and anticipated savings.",14.0,9.0,0.5,14.0,4.7
+tender_offer,capital_and_financing,shareholder_returns,"Tender offer to acquire outstanding securities (equity, debt, or trust preferred) with pricing and conditions.",13.0,9.0,0.0,16.0,4.3
+asset_impairment,financial_results,impairments_and_charges,Long-lived or intangible asset impairment or write-down with asset nature and circumstances.,12.0,10.0,1.0,6.0,4.0
+regulatory_investigation,risk_events,legal_proceedings,"SEC, DOJ, or other regulatory investigation, Wells notice, or enforcement action.",11.0,8.0,0.36363636363636365,8.0,3.7
+stock_split,capital_and_financing,shareholder_returns,"Forward or reverse stock split with ratio, dates, and share impact.",11.0,5.0,0.0,5.0,3.7
+annual_earnings,financial_results,earnings_and_performance,"Annual financial results with year-over-year comparisons, key metrics, and forward outlook.",11.0,7.0,1.0,9.0,3.7
+divestiture_agreement,strategic_transactions,deal_agreements,"Definitive agreement to sell a business unit, subsidiary, or product line.",11.0,11.0,0.2727272727272727,11.0,3.7
+business_line_exit,operations_and_strategy,restructuring,"Decision to exit or discontinue a business line, product category, or market segment.",11.0,7.0,0.7272727272727273,14.0,3.7
+material_litigation,risk_events,legal_proceedings,"Significant litigation updates, outcomes, or judgments not covered by settlement_agreement.",11.0,10.0,0.0,7.0,3.7
+workforce_reduction,operations_and_strategy,restructuring,"Significant layoffs, RIFs, or voluntary separation programs with positions, severance, and timeline.",11.0,8.0,0.2727272727272727,7.0,3.7
+spinoff_completion,strategic_transactions,deal_completions,"Completed spinoff, split-off, or separation creating independent entity with distribution details.",10.0,4.0,0.3,13.0,3.3
+trading_plan_10b5_1,shareholder_activity,insider_trading,"Rule 10b5-1 trading plan adoption, modification, or termination by officers, directors, or affiliates.",10.0,2.0,0.0,16.0,3.3
+merger_completion,strategic_transactions,deal_completions,Completed merger or business combination with resulting ownership structure.,9.0,9.0,0.0,18.0,3.0
+capital_allocation_update,shareholder_activity,investor_communications,"Capital allocation strategy, financial plan, or investment priorities communicated to investment community.",8.0,6.0,0.5,8.0,2.7
+dividend_policy_change,capital_and_financing,shareholder_returns,"Material change to dividend policy including suspension, reduction, or significant increase.",7.0,6.0,0.0,5.0,2.3
+control_disposition,leadership_and_governance,corporate_control,"Loss of controlling interest through sale, dilution, or other transaction.",6.0,4.0,0.0,3.0,2.0
+joint_venture_agreement,strategic_transactions,deal_agreements,"Joint venture, partnership, or collaboration agreement defining shared activities and governance.",6.0,6.0,0.16666666666666666,7.0,2.0
+regulatory_decision,operations_and_strategy,business_developments,"Regulatory approvals, rejections, complete response letters, or information requests from FDA, EPA, or other agencies.",6.0,6.0,0.16666666666666666,4.0,2.0
+special_meeting_results,shareholder_activity,shareholder_meetings,"Special meeting results on mergers, charter amendments, or other significant actions.",5.0,4.0,0.0,2.0,1.7
+cybersecurity_incident,risk_events,security_and_safety,"Material cybersecurity incident, data breach, ransomware, or information security event affecting systems or data.",4.0,4.0,0.0,3.0,1.3
+facility_closure,operations_and_strategy,restructuring,"Facility closures, consolidations, or relocations with locations, employees, and charges.",4.0,3.0,0.75,2.0,1.3
+benefit_plan_blackout,shareholder_activity,insider_trading,Blackout period notice during which benefit plan trading will be suspended.,4.0,4.0,0.0,3.0,1.3
+private_placement,capital_and_financing,equity_activity,"Private placement of unregistered equity to accredited investors or QIBs, with terms and registration rights.",4.0,1.0,0.0,4.0,1.3
+divestiture_completion,strategic_transactions,deal_completions,"Completed sale or divestiture with proceeds, gain/loss, and strategic rationale.",4.0,3.0,0.0,8.0,1.3
+significant_contract_award,operations_and_strategy,business_developments,Material contract win or commercial agreement outside ordinary course affecting future revenues.,3.0,3.0,0.0,0.0,1.0
+listing_transfer,regulatory_and_compliance,exchange_listing,"Transfer between exchanges or market tiers, or initial listing approval.",3.0,3.0,0.0,1.0,1.0
+new_auditor_engagement,regulatory_and_compliance,auditor_matters,New auditor engagement with prior consultations and change disclosures.,3.0,2.0,0.0,4.0,1.0
+goodwill_impairment,financial_results,impairments_and_charges,"Goodwill impairment charge when carrying value exceeds fair value, with amount and affected reporting unit.",3.0,3.0,1.0,1.0,1.0
+credit_facility_draw,capital_and_financing,debt_activity,Borrowing under existing credit facilities or term loans with amount and purpose.,3.0,3.0,0.0,10.0,1.0
+partnership_or_collaboration,operations_and_strategy,material_agreements,"Partnership, collaboration, or commercial relationship agreement affecting operations or competitive position.",3.0,2.0,0.3333333333333333,7.0,1.0
+product_or_service_launch,operations_and_strategy,business_developments,"Significant new product, service offering, or technology development affecting future performance.",3.0,3.0,0.6666666666666666,3.0,1.0
+voluntary_bankruptcy,risk_events,bankruptcy_and_insolvency,"Voluntary bankruptcy filing (Chapter 7, 11, 15) with circumstances and expected impact.",2.0,2.0,0.0,4.0,0.7
+control_acquisition,leadership_and_governance,corporate_control,"Acquisition of controlling interest by new shareholder, investor group, or entity.",2.0,2.0,0.0,0.0,0.7
+activist_investor_campaign,shareholder_activity,shareholder_activism,"Activist engagement including demands, proxy contests, settlements, or board nominations.",2.0,2.0,0.0,3.0,0.7
+investment_impairment,financial_results,impairments_and_charges,Other-than-temporary impairment on investments or securities with amount and nature.,2.0,2.0,1.0,1.0,0.7
+supply_or_distribution_agreement,operations_and_strategy,material_agreements,"Material supply, distribution, or purchasing commitment establishing long-term obligations.",2.0,2.0,0.0,4.0,0.7
+warrant_or_conversion,capital_and_financing,equity_activity,Unregistered securities from warrant/option exercise or convertible security conversion.,2.0,2.0,0.0,1.0,0.7
+licensing_agreement,strategic_transactions,deal_agreements,"Licensing or technology transfer agreement for patents, trademarks, or proprietary technology.",2.0,2.0,0.0,6.0,0.7
+asset_purchase_or_sale,strategic_transactions,deal_completions,"Completed purchase or sale of significant individual assets (real estate, equipment, IP) outside ordinary course.",1.0,1.0,0.0,3.0,0.3
+clinical_trial_results,operations_and_strategy,business_developments,"Clinical trial data for pharma, biotech, or medical devices including efficacy and safety findings.",1.0,1.0,1.0,2.0,0.3
+accounting_error_correction,financial_results,financial_integrity,Material accounting error correction not requiring full restatement but requiring disclosure.,1.0,1.0,1.0,1.0,0.3
+mine_safety_violation,risk_events,security_and_safety,"Mine safety violations, citations, or penalties from MSHA requiring corrective action or fines.",1.0,1.0,0.0,0.0,0.3
+financial_restatement,financial_results,financial_integrity,Prior financial statements should not be relied upon due to material errors requiring restatement.,1.0,1.0,1.0,0.0,0.3
+voluntary_delisting,regulatory_and_compliance,exchange_listing,Voluntary decision to delist with rationale and alternative trading arrangements.,1.0,1.0,0.0,2.0,0.3
+deal_withdrawal,strategic_transactions,deal_terminations,"Withdrawal from or cancellation of a pending agreement before completion, with rationale and any fees.",1.0,1.0,0.0,5.0,0.3
+fiscal_year_change,leadership_and_governance,governance_documents,"Fiscal year end change with old and new dates, transition period, and rationale.",1.0,1.0,0.0,0.0,0.3
+internal_control_weakness,financial_results,financial_integrity,Material weakness in internal control over financial reporting requiring disclosure and remediation.,0.0,0.0,,0.0,
+shareholder_meeting_notice,shareholder_activity,shareholder_meetings,"Annual or special meeting announcement with dates, agenda, and record date.",0.0,0.0,,0.0,
+listing_compliance_regained,regulatory_and_compliance,exchange_listing,Regained listing compliance after previous deficiency notice.,0.0,0.0,,0.0,
+delisting_determination,regulatory_and_compliance,exchange_listing,Exchange determination to delist securities with effective date and reasons.,0.0,0.0,,0.0,
+rights_offering,capital_and_financing,equity_activity,Rights offering to existing shareholders to purchase additional shares at a discount.,0.0,0.0,,0.0,
+abs_structural_change,regulatory_and_compliance,asset_backed_securities,"Material changes to ABS structure including servicer/trustee replacement, credit enhancement modification, or trust document amendments.",0.0,0.0,,0.0,
+abs_distribution_failure,regulatory_and_compliance,asset_backed_securities,"Failure to make required ABS distribution with missed amount, reasons, and expected remediation.",0.0,0.0,,0.0,
+payment_default,capital_and_financing,debt_distress,Actual failure to make required principal or interest payment on outstanding debt.,0.0,0.0,,0.0,
+nav_per_share,financial_results,earnings_and_performance,"Net asset value per share for BDCs, closed-end funds, interval funds, or non-traded REITs.",0.0,0.0,,0.0,
+auditor_disagreement,regulatory_and_compliance,auditor_matters,"Disagreements with auditors on accounting principles, disclosures, or audit scope.",0.0,0.0,,0.0,
+shareholder_rights_plan,leadership_and_governance,governance_documents,"Adoption, amendment, or termination of a shareholder rights plan (poison pill) or similar anti-takeover mechanism.",0.0,0.0,,0.0,
+director_nomination,shareholder_activity,shareholder_activism,Shareholder director nominations under proxy access or advance notice bylaws.,0.0,0.0,,0.0,
+code_of_ethics_change,leadership_and_governance,governance_documents,"Code of ethics amendment or waiver for principal executive, financial, or accounting officers.",0.0,0.0,,0.0,
+reverse_merger,leadership_and_governance,corporate_control,"Reverse merger where private operating company merges with public shell, becoming publicly traded. Includes shell company status changes.",0.0,0.0,,0.0,
+going_private_transaction,leadership_and_governance,corporate_control,"Going-private, management buyout, or similar transaction ending public trading.",0.0,0.0,,0.0,
+rating_downgrade_trigger,capital_and_financing,debt_distress,"Credit rating downgrade triggering contractual consequences (increased rates, collateral, acceleration).",0.0,0.0,,0.0,
+listing_deficiency_notice,regulatory_and_compliance,exchange_listing,Notice of failure to satisfy continued listing requirements with cure period.,0.0,0.0,,0.0,
+mine_closure,risk_events,security_and_safety,Mining operations closure due to safety concerns or violation patterns with production impact.,0.0,0.0,,0.0,
+covenant_violation,capital_and_financing,debt_distress,"Breach or anticipated breach of financial covenants, with waivers obtained or amendments to cure.",0.0,0.0,,0.0,
+off_balance_sheet_arrangement,capital_and_financing,debt_activity,"Off-balance sheet obligations including VIEs, synthetic leases, or structured finance with real exposure.",0.0,0.0,,0.0,
+patent_milestone,operations_and_strategy,business_developments,"Patent grants, issuances, or significant IP milestones from USPTO or international offices.",0.0,0.0,,0.0,
+audit_opinion_withdrawal,financial_results,financial_integrity,Withdrawal of auditor opinion on prior statements requiring reissuance.,0.0,0.0,,0.0,
+esg_sustainability_commitment,operations_and_strategy,business_developments,"Material ESG initiative, sustainability target, or environmental/social development the company considers significant.",0.0,0.0,,0.0,
+credit_rating_change,capital_and_financing,credit_ratings,"Credit rating upgrade, downgrade, outlook modification, or watch placement by rating agencies.",0.0,0.0,,0.0,
+lease_agreement,operations_and_strategy,material_agreements,"Significant lease for real property, equipment, or facilities including operating, finance, and sale-leaseback.",0.0,0.0,,0.0,
+deal_breach_default,strategic_transactions,deal_terminations,"Termination of a material agreement due to breach or default, with associated penalties or disputes.",0.0,0.0,,0.0,
+class_action_filing,risk_events,legal_proceedings,Class action lawsuit filed against the company with claims and potential exposure.,0.0,0.0,,0.0,
+debt_acceleration,capital_and_financing,debt_distress,"Events triggering debt acceleration, interest rate increases, or debt term modifications.",0.0,0.0,,0.0,
+auditor_dismissal,regulatory_and_compliance,auditor_matters,Independent auditor dismissal with reasons and reportable events.,0.0,0.0,,0.0,
+involuntary_bankruptcy,risk_events,bankruptcy_and_insolvency,Involuntary bankruptcy petition by creditors with petitioner identity and amounts.,0.0,0.0,,0.0,
+receivership_appointment,risk_events,bankruptcy_and_insolvency,"Appointment of receiver, trustee, or conservator to control assets with scope and duration.",0.0,0.0,,0.0,
+bankruptcy_emergence,risk_events,bankruptcy_and_insolvency,Confirmation of reorganization plan or emergence from bankruptcy with creditor treatment and new capital structure.,0.0,0.0,,0.0,
+going_concern,risk_events,bankruptcy_and_insolvency,"Going concern doubt expressed by auditors or management, substantial doubt about ability to continue operations.",0.0,0.0,,0.0,
+guidance_withdrawal,financial_results,guidance_and_outlook,Withdrawal or suspension of previously issued financial guidance.,0.0,0.0,,0.0,
+natural_disaster_impact,risk_events,security_and_safety,"Natural disaster, catastrophic event, or force majeure impact on operations, facilities, or financial condition.",0.0,0.0,,0.0,
+auditor_resignation,regulatory_and_compliance,auditor_matters,Independent auditor resignation with date and any disagreements.,0.0,0.0,,0.0,
+pipe_transaction,capital_and_financing,equity_activity,PIPE transaction involving unregistered securities at market discount with registration rights.,0.0,0.0,,0.0,

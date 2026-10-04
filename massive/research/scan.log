@@ -1,0 +1,70 @@
+building events for 37 categories (next_session entry)…
+2,860 category-events, 1200 pool days, 2,756 unique keys to price
+  scan: 100/2756 keys, 2s
+  scan: 200/2756 keys, 3s
+  scan: 300/2756 keys, 4s
+  scan: 400/2756 keys, 6s
+  scan: 500/2756 keys, 8s
+  scan: 600/2756 keys, 9s
+  scan: 700/2756 keys, 10s
+  scan: 800/2756 keys, 12s
+  scan: 900/2756 keys, 13s
+  scan: 1000/2756 keys, 14s
+  scan: 1100/2756 keys, 16s
+  scan: 1200/2756 keys, 17s
+  scan: 1300/2756 keys, 19s
+  scan: 1400/2756 keys, 20s
+  scan: 1500/2756 keys, 21s
+  scan: 1600/2756 keys, 23s
+  scan: 1700/2756 keys, 24s
+  scan: 1800/2756 keys, 26s
+  scan: 1900/2756 keys, 27s
+  scan: 2000/2756 keys, 29s
+  scan: 2100/2756 keys, 30s
+  scan: 2200/2756 keys, 31s
+  scan: 2300/2756 keys, 33s
+  scan: 2400/2756 keys, 34s
+  scan: 2500/2756 keys, 35s
+  scan: 2600/2756 keys, 37s
+  scan: 2700/2756 keys, 39s
+  scan: 2756/2756 keys, 39s
+priced in 53s; drops: {'3-6m': 134, 'could not recover spot from the chain (no liquid near-dated pair)': 81}
+  debt_issuance                              n= 246  best collar @ 1                   t=+1.78  luck p=0.56
+  executive_compensation_change              n= 153  best protective_put @ 21          t=-1.46  luck p=0.90
+  annual_meeting_results                     n= 139  best collar @ exp                 t=+2.84  luck p=0.07
+  investor_presentation                      n= 139  best protective_put @ exp         t=-1.44  luck p=0.91
+  underwriting_agreement                     n= 135  best covered_call @ 1             t=+2.40  luck p=0.16
+  executive_officer_departure                n= 116  best long_call @ 1                t=-2.96  luck p=0.07
+  quarterly_earnings                         n= 119  best cash_secured_put @ 2         t=-2.75  luck p=0.06
+  shareholder_proposal_outcome               n= 115  best cash_secured_put @ 1         t=+3.33  luck p=0.03
+  executive_officer_appointment              n=  89  best protective_put @ 21          t=-1.39  luck p=0.94
+  director_departure                         n=  91  best collar @ 3                   t=-1.66  luck p=0.83
+  director_appointment                       n=  87  best collar @ 1                   t=+1.33  luck p=0.98
+  dividend_declaration                       n=  72  best long_call @ 42               t=-2.29  luck p=0.18
+  credit_facility                            n=  58  best protective_put @ exp         t=+1.36  luck p=0.94
+  guidance_issuance_or_update                n=  53  best collar @ 21                  t=+2.22  luck p=0.26
+  business_update                            n=  49  best long_call @ 42               t=-2.17  luck p=0.25
+  bylaw_amendment                            n=  44  best cash_secured_put @ exp       t=-1.82  luck p=0.72
+  guarantee_or_letter_of_credit              n=  35  best long_call @ 1                t=-2.01  luck p=0.85
+  debt_retirement                            n=  35  best protective_put @ 63          t=-2.47  luck p=0.17
+  charter_amendment                          n=  35  best protective_put @ exp         t=+2.74  luck p=0.24
+  share_repurchase_program                   n=  32  best protective_put @ 3           t=-2.88  luck p=0.18
+  strategic_initiative                       n=  31  best protective_put @ 63          t=-1.50  luck p=0.89
+  cfo_appointment                            n=  32  best collar @ 2                   t=+1.94  luck p=0.61
+  equity_compensation_grant                  n=  26  best long_call @ 3                t=+2.88  luck p=0.10
+  ceo_departure                              n=  29  best protective_put @ exp         t=-1.35  luck p=0.98
+  cfo_departure                              n=  30  best collar @ 2                   t=+1.23  luck p=0.99
+  material_charge_or_gain                    n=  29  best cash_secured_put @ exp       t=+2.03  luck p=0.35
+  acquisition_agreement                      n=  24  best long_call @ 10               t=-1.75  luck p=0.90
+  merger_agreement                           n=  25  best long_call @ 21               t=-2.55  luck p=0.08
+  preliminary_results                        n=  22  best long_call @ 1                t=+2.39  luck p=0.06
+  deal_termination                           n=  23  best cash_secured_put @ 1         t=+1.79  luck p=0.77
+  settlement_agreement                       n=  21  best covered_call @ exp           t=-1.65  luck p=0.81
+  acquisition_completion                     n=  21  best covered_call @ exp           t=-2.30  luck p=0.38
+  preferred_stock_modification               n=  18  best collar @ exp                 t=+1.95  luck p=0.71
+  combo:new_leadership                       n=  45  best covered_call @ 63            t=-1.57  luck p=0.87
+  combo:leadership_exit                      n=  58  best cash_secured_put @ 42        t=-1.16  luck p=0.99
+  combo:debt_offering                        n= 260  best covered_call @ 1             t=+2.14  luck p=0.20
+  combo:deal_signed                          n=  46  best long_call @ 21               t=-2.97  luck p=0.10
+
+37 categories × 45 cells = 1,665 tests. Wrote /Users/hqdatt/Documents/GQH/massive/research/scan/summary.csv and cells.csv
