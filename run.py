@@ -76,7 +76,7 @@ def main():
     for label, m in rows.items():
         for w in metrics.warnings(m):
             print(f"\nWARNING ({label}): {w}")
-    print(f"\nCosts: {strat.cost_bps * args.cost_mult:g} bps per side. "
+    print(f"\nCosts: {research.cost_label(strat, args.cost_mult)}. "
           f"Distinct configs tried so far: {ledger.stats()['n_trials']}")
 
     if args.plot:

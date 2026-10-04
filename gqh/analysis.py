@@ -20,6 +20,23 @@ def by_year(net: pd.Series) -> pd.Series:
     return (1 + net).groupby(net.index.year).prod() - 1
 
 
+def bucket_table(signal: pd.Series, outcome: pd.Series, n: int = 5, scale: float = 1e4) -> pd.DataFrame:
+    """Dose-response: mean outcome (in bp by default) per quantile of the signal, with t-stats.
+
+    A real effect should rise (or fall) steadily from the weakest to the strongest bucket.
+    """
+    df = pd.concat([signal.rename("signal"), outcome.rename("outcome")], axis=1).dropna()
+    df["bucket"] = pd.qcut(df["signal"], n, labels=[f"Q{i + 1}" for i in range(n)], duplicates="drop")
+    g = df.groupby("bucket", observed=True)["outcome"]
+    out = pd.DataFrame({"n": g.size(), "signal_mean": df.groupby("bucket", observed=True)["signal"].mean(),
+                        "mean": g.mean() * scale, "t_stat": g.mean() / (g.std() / np.sqrt(g.size()))})
+    top, bottom = df[df["bucket"] == out.index[-1]]["outcome"], df[df["bucket"] == out.index[0]]["outcome"]
+    diff = top.mean() - bottom.mean()
+    se = np.sqrt(top.var() / len(top) + bottom.var() / len(bottom))
+    out.loc["top-bottom"] = [len(top) + len(bottom), np.nan, diff * scale, diff / se]
+    return out
+
+
 def _french_csv(name: str) -> pd.DataFrame:
     path = CACHE / FRENCH_FILES[name]
     if not path.exists():

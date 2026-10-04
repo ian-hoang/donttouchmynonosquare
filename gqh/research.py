@@ -44,10 +44,23 @@ def params_for(strategy, overrides: dict) -> dict:
     return {**strategy.defaults, **overrides}
 
 
+def costs(strategy, cost_mult: float = 1.0):
+    """The strategy's cost_bps (a number, or {asset: bps}) scaled by `cost_mult`."""
+    c = strategy.cost_bps
+    return {k: v * cost_mult for k, v in c.items()} if isinstance(c, dict) else c * cost_mult
+
+
+def cost_label(strategy, cost_mult: float = 1.0) -> str:
+    c = costs(strategy, cost_mult)
+    if isinstance(c, dict):
+        return "per asset: " + ", ".join(f"{k} {v:.2g}" for k, v in c.items()) + " bps per side"
+    return f"{c:g} bps per side"
+
+
 def run(strategy, data, params: dict, cost_mult: float = 1.0) -> Result:
     weights = strategy.weights(data, **params)
     returns = strategy.asset_returns(data)
-    return backtest(weights, returns, strategy.cost_bps * cost_mult, strategy.periods_per_year)
+    return backtest(weights, returns, costs(strategy, cost_mult), strategy.periods_per_year)
 
 
 def evaluate(strategy, data, overrides: dict | None = None, cost_mult: float = 1.0,
