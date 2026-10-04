@@ -1,0 +1,91 @@
+STOCK-LOAN SUPPLY RESTORATION VS OPTION SCARCITY
+Assessment date: 2026-10-03
+
+RESULT
+Economically coherent research hypothesis; no historical alpha test is possible with
+the lending observations currently located. No market strategy P&L or Sharpe was
+computed. This is a data-availability and economics result, not rejection of the idea.
+
+The proposed position is a reversal: buy one call at ask, sell the matching put at
+bid, short 100 shares at bid. Its possible edge is lagged repricing after an observed
+improvement in borrowing, not the payoff identity itself.
+
+MOST IMPORTANT ECONOMIC DISTINCTION
+Cheap overnight borrow and expensive 30-60 day option-implied borrowing can coexist
+without mispricing. Options may reflect expected renewed scarcity, lender recall risk,
+funding differences or early exercise. Securing shares does not necessarily secure the
+rate or the duration. Compare matched borrowing horizons and actual contractual rights;
+otherwise test a risky forecast of future borrowing costs, not locked arbitrage.
+
+The cited BlackRock letter supports the recall mechanism but expressly challenges
+automatic relending after the record date. It contains no evidence that options lag
+restored lending supply. The record date, public disclosure time and loan restoration
+time are three different clocks. See economics.txt and sources.json.
+
+AVAILABLE-DATA AUDIT
+The read-only inventory examined 190,077 cached JSON payloads (3.58 GB), classifying
+the first result's fields and checking first/last observation dates. It found 51,909
+NBBO payloads and 17,437 option-contract payloads, but no recognized stock-loan fee,
+rebate, lendable supply, locate or recall fields. Broader filename/code searches also
+located no historical lending dataset. This does not prove such information cannot
+exist under another name or in a separate provider account.
+
+Cached quote dates range from January 2024 to August 2026; they are sparse requests,
+not a complete synchronized stock/options panel. Three sample GM call-put pairs have
+observations on both dates of earlier unrelated research. One sample's entry call/put
+timestamps differ by 24.65 seconds. This fails the proposed conservative synchronization
+screen; timestamps alone do not prove an older standing quote was no longer actionable.
+None of those sample pairs is established as a voting or supply-restoration event.
+
+Massive's documented short-interest and short-volume feeds do not provide loan prices
+or lending commitments. Indicative historical lending rates may support an association
+study but not proof of account-specific executable borrow. See data_audit/REPORT.txt
+for primary provider documentation and data_audit/cache_inventory.json for scope.
+
+WORK COMPLETED
+- Independent sign, financing, dividend and American-exercise audit with primary sources.
+- Minimal cashflow.py accounting helper: entry/exit bid-ask cash, paired-contract/size/
+  timestamp gates, gross-fee versus net-rebate accrual, and explicit carry/cost inputs.
+- Independent code review corrected missing-timestamp and unknown-lifecycle guards.
+- Synthetic tests of signs, spread costs, quantities, contract mismatches, invalid
+  quotes, financing conventions and refusal to treat assignment/unknown lifecycle as
+  an unchanged three-leg close. See verification.json for executed test count.
+- Proposed pilot in PROTOCOL.json and required input fields in DATA_REQUIREMENTS.txt.
+
+Synthetic fixtures verify accounting, not economic profitability. With unchanged
+prices and a $0.02 stock spread plus $0.10 spreads in each option, one 100-share package
+loses $22 crossing all three legs twice. This is an invented example, not a trade.
+On $102 collateral per share, one additional annual percentage point of borrow cost
+over 30 days costs about $0.084 per share under ACT/365; this is arithmetic only.
+
+The helper is not a complete backtester. It does not implement loan-event detection,
+an American-option valuation engine, account-specific funding forecasts, lifecycle
+simulation or portfolio sizing. It refuses a normal three-leg close after a reported
+lifecycle event or when that event history is unknown.
+
+PROPOSED EMPIRICAL TEST
+Define restoration independently of options: same-provider firm borrow fee falls by
+at least half from a prior five-session median of at least 10%, executable quantity
+increases, and a second observation confirms it. Use the first qualifying event within
+ten business days after a record date known by entry. These are proposed fixed research
+thresholds, not values fitted to outcomes. Calendar association is not proof of cause.
+
+Select one near-ATM standard 30-60 day expiry before comparing strikes, secure the
+borrow, and examine the executable three-leg residual with term-matched financing.
+Keep floating and contractually committed lending cohorts separate. The proposed
+primary hold is five trading sessions, with earlier lifecycle exits. A maturity hold
+would be a separately reported strategy. Final entry valuation and uncertainty buffer
+require actual account/loan terms and must be frozen before performance is inspected.
+
+Compare against ordinary hard-to-borrow reversals, non-voting supply restorations and
+post-record-date days without observed restoration. Include failed allocations, missing
+quotes, recalls and assignment costs. Do not condition on loans that survived.
+Calculate daily liquidation-marked returns on documented allocated capital; retain
+idle days and overlapping exposure. A small or nearly zero net premium is not capital.
+
+NEXT REQUIRED INPUT
+Historical borrow quotes/allocations and realized loan terms, identified by provider
+or local file path. Actual available quantities, rate convention, receive timestamps,
+rerating/recall rights and subsequent charges matter. Once supplied, first audit the
+coverage and joinability; then finalize the frozen pilot before examining returns.
+Until then, this idea has no validated performance estimate and no evidence of Sharpe 2.

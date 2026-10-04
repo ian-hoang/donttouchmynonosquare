@@ -1,0 +1,41 @@
+{
+  "as_of": "2026-10-03",
+  "status": "Proposed pilot; historical performance blocked by missing lending data",
+  "hypothesis": "After observed stock-loan supply restoration following a voting record date, executable synthetic-long prices adjust slowly enough to profit after physical-short financing and all execution costs.",
+  "novelty": "The reversal itself is established. Test timing and access to loan restoration; do not label ordinary reversal carry voting alpha.",
+  "implementation_status": "cashflow.py implements cash accounting for unchanged three-leg positions and quote eligibility only. Event extraction, account-specific financing forecasts, American valuation, assignments/recalls, daily portfolio construction and market-data ingestion are not implemented. No strategy return has been computed.",
+  "registration": "Proposed choices are fixed before strategy returns but must be finalized with actual provider/account conventions before an outcome test. Thresholds below are hypotheses, not empirically optimized values.",
+  "universe": "US ordinary common shares with standard 100-share options. Preserve delisted names. Exclude adjusted deliverables and entry-known corporate actions or ex-dividend dates inside the planned holding window for the initial pilot; later surprises remain outcome risks.",
+  "restoration_screen": {
+    "voting_clock": "Voting record date, with source public-availability timestamp. It must be known by entry. Meeting day is not a substitute.",
+    "window": "First ten business days after record date",
+    "baseline": "Prior five-session median same-provider, same-size, same-term gross annual borrow fee at least 10%; net-rebate feeds require a documented conversion using contemporaneous contractual proceeds interest, otherwise omit from this screen",
+    "event": "Firm fee at most half its baseline; executable quantity exceeds its prior five-session median and covers 100 shares; require two confirming observations at least 30 minutes apart",
+    "deduplication": "At most one event per issuer per 20 trading sessions",
+    "selection": "Save all events before inspecting option discrepancies. Label verified voting restoration only with supporting recall/lender records; calendar association alone does not establish cause. Keep indicative observations in a separate non-executable cohort."
+  },
+  "entry": {
+    "quantity": "One standard call long, one matching put short, 100 shares short",
+    "selection": "Shortest expiry 30-60 calendar days from entry; strike nearest independent stock midpoint; ties choose lower strike. Select before inspecting strike-level residuals.",
+    "timing": "First eligible liquid-session quote after the second restoration observation and after the loan allocation is usable. Feed availability and processing latency must be documented; no backdated EOD loan joins.",
+    "quote_gate": "Stock bid, call ask, put bid, sufficient sizes; quote received ages <=1 second and cross-leg timestamp skew <=100ms for conservative initial screen. Reconstruct quote state and cancellations from full feeds. These cutoffs are chosen screens, not proof an older standing quote was invalid.",
+    "fill_limit": "NBBO sums are opportunity screens, not three-leg fill evidence. Model actual latency and sequencing or use package fills. Account for failed leg executions.",
+    "signal_gate": "Require positive projected executable residual after account-specific remaining-life carry, discrete dividends, American exercise, commissions and a predeclared uncertainty buffer. Borrow tenor must match the forecast. The forecast model/buffer cannot be finalized without account terms; do not use realized future rates in entry decisions.",
+    "cohorts": "Contractually committed term/rate versus floating/recallable borrowing, reported separately. Pre-borrow alone does not establish fixed fee or recall protection."
+  },
+  "primary_exit": "Same time of day five trading sessions after entry; use stock ask, call bid, put ask. Earlier assignment, exercise, recall or buy-in triggers an event-specific cash ledger and closes remaining exposures under a fixed policy. No normal matched-close calculation after a lifecycle event.",
+  "secondary_variant": "Maturity hold is a distinct future strategy requiring full lifecycle and cash accounting. Do not select between five-day and maturity results after seeing outcomes.",
+  "accounting": "Actual daily settled quantities, collateral bases, fee/rebate accrual including weekends, restricted-cash interest, debit financing, substitute dividends, commissions, margin funding and lifecycle costs. Loan proceeds interest and net rebate never double counted. Mark options and stock to liquidation prices daily, not smooth maturity accruals.",
+  "controls": [
+    "Generic hard-to-borrow reversals matched on initial executable residual, prior/current fees, loan term/recall rights, option tenor, liquidity and spreads",
+    "Non-voting borrow-restoration events under the same event definition",
+    "Post-record-date observations without actual restoration"
+  ],
+  "validation": "Freeze chronological development/holdout boundary once lending coverage is known, before reading strategy outcomes. Record all eligible events, missing observations, rejected allocations, unfilled legs and forced exits. Cluster by issuer event and calendar blocks; preserve overlapping exposure and idle days. Report incremental performance versus controls as well as absolute P&L.",
+  "reporting": "Dollar P&L per 100 shares, stock-notional basis points, actual capital and peak margin, event counts, fill/capacity rate, concentration, drawdown, recall/assignment losses; Sharpe from daily returns on documented fixed allocated capital with uncertainty. No near-zero premium denominator or trade-level Sharpe annualization.",
+  "decision": {
+    "present": "Not testable with current lending data; neither validated nor rejected",
+    "reject_mechanism": "Discrepancy predates observed restoration, disappears with executable prices/correct financing and exercise costs, cannot be borrowed at size, or has no incremental evidence versus ordinary reversals",
+    "performance_target": "A Sharpe of 2 is an unverified research target. Neither the payoff identity nor synthetic tests estimate it."
+  }
+}

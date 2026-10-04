@@ -1,0 +1,22 @@
+{
+  "as_of": "2026-10-03",
+  "status": "input_audit_not_strategy_backtest",
+  "files": [
+    {
+      "path": "research/stock_loan_alpha/data_audit/REPORT.txt",
+      "sha256": "c0293b515aad202f022211ce481f77b24d9ad34dc868beff92a5b474cd344938"
+    },
+    {
+      "path": "research/stock_loan_alpha/data_audit/cache_inventory.json",
+      "sha256": "837df3a879f085b19c2825de60ac51aca964276d99b4e3186ef37fdee9020eb2"
+    },
+    {
+      "path": "research/stock_loan_alpha/data_audit/paired_quote_examples.json",
+      "sha256": "48ad666c8b259231057bf092d80fbe43e58a36fd98361ea27cdf7a430c2132bd"
+    },
+    {
+      "path": "research/stock_loan_alpha/data_audit/inventory_cache.py",
+      "sha256": "d4b49b4b39f8f23f5475bb6b67adc7853ca6de5f1e157fa06b6511d5acbc8d8a"
+    }
+  ]
+}

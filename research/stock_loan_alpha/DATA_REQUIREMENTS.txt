@@ -1,0 +1,33 @@
+Minimum historical input package
+
+1. Stock-loan observations and allocations
+   Stable security ID; broker/provider; anonymized account/contract ID; observation
+   and fund-received UTC timestamps; quote expiry; firm/indicative flag; executable
+   quantity; annual fee OR net rebate with explicit convention; day-count basis;
+   collateral rules; proceeds-interest rules; usable settlement time; loan allocation
+   timestamp, quantity and ID; term, rerating and recall rights. Include failed locates.
+
+2. Realized loan and account cashflows
+   Dated settled quantity, collateral base, fee and credit rates/charges, loan returns,
+   recalls/buy-ins, debit funding, margin, substitute dividends and actual fees.
+   Preserve weekends/holidays and intraday rate changes. A current fee snapshot does
+   not replace the realized path. Net rebates must not also be charged a gross fee.
+
+3. Independent stock and option observations
+   Stock NBBO and full option call/put NBBO updates, received/SIP timestamps, sizes,
+   quote conditions, cancellations, halt states, exact contract IDs/strike/expiry,
+   multiplier/exercise style/deliverable. Execution/complex-order records if available.
+   Do not infer stock price from the put-call relation that is being tested.
+
+4. Event/lifecycle observations
+   Voting record date and when publicly known; where available voting recall/re-lend
+   records; dividends and announcements as known then; corporate actions/delistings;
+   exercise/assignment records or a separately declared conservative scenario model.
+
+Provider name or a local export path is sufficient to start an adapter audit.
+No credentials are required in chat. No provider purchase or live trade is authorized
+or performed by this research package.
+
+Indicative historical fees may support a separately labelled association study.
+Short interest, short volume, utilization, EOD option mids, and proxy-calendar dates
+do not replace executed or firm lending terms for a tradability/performance claim.

@@ -1,0 +1,52 @@
+Stock-loan/options strategy: input availability audit
+As of 2026-10-03. Read-only source inventory; no market return test.
+
+Conclusion
+The workspace supports options-data plumbing and an economic break-even evaluator. It does not currently support a historical test of the selected supply-restoration strategy. No observed stock-loan supply restoration, fee change, committed availability, actual locate, loan recall, re-rate, or broker collateral/rebate series was located. A voting date or short-interest change would not fill that gap.
+
+Scope and evidence
+- Searched named files and research/code documentation in this workspace, including ignored research and cache directories. Did not read credential files or environment variables, log into accounts, request paid data, or place transactions.
+- Classified every immediate JSON payload in massive/.massive_cache by first-result field signatures: 190,077 files, 3,583,856,448 bytes. Counts: 111,932 option aggregate payloads, 51,909 NBBO quote payloads, 17,437 option-contract payloads, 329 filing payloads, 8,467 empty results, one other aggregate payload, and two other payloads.
+- No matches for the specified borrow-fee/rate/rebate/lendable-inventory/shortable-quantity/locate/recall field names. This is a structured-data inventory finding, not a claim that every free-text filing has been searched for all lending language.
+- Cached NBBO first/last-record date bounds are 2024-01-03 through 2026-08-12 UTC. Option aggregate date bounds are 2023-12-19 through 2026-10-02 UTC. These are sparse cached requests, not a continuous or synchronized market panel. Some quote payloads lack the originating instrument identifier; the audit does not guess stock versus option from those payloads.
+- Reproducible cache classification: inventory_cache.py -> cache_inventory.json.
+
+Existing option pilot
+research/alpha32/options/inventory.json describes 38 event probes over 2024-2025, using a selected 100-issuer disclosure universe. Five probes had at least four common positive-size option quote records at entry and exit under that pilot's freshness rules: PM (2024-09-18/23), ABBV (2025-01-13/28), C (2025-09-25/2025-10-09), GM (2024-12-05/19), and MSFT (2024-12-12/27). Those dates reflect unrelated earlier event research, not observed loan supply restoration, and cannot become strategy events just because data exist.
+
+Specific plumbing example
+paired_quote_examples.json identifies 20 GM contracts with positive-size quote observations on both 2024-12-05 and 2024-12-19 near the earlier pilot's 15:55 America/New_York cutoff. Three same-strike/same-expiry call-put pairs exist. They are American-style, standard 100-share contracts; this is not European put-call parity.
+
+Example: GM 2025-01-03 expiry, strike 53:
+- Call entry: massive/.massive_cache/bba02175236b2ab76c663ef2c1c4a97c03e60546.json; SIP time 2024-12-05T20:54:34.725845Z.
+- Put entry: massive/.massive_cache/51afe366eab0df2578655136a37c5c61f6f873d2.json; SIP time 2024-12-05T20:54:59.376605Z.
+- Call exit: massive/.massive_cache/cbb065b6174be6089783473ecd7850860f860dc1.json; SIP time 2024-12-19T20:54:48.608257Z.
+- Put exit: massive/.massive_cache/0406ea1cca39b494685a04feb9fd9c0063ee2734.json; SIP time 2024-12-19T20:54:59.548401Z.
+- Observed quote fields: ask_exchange, ask_price, ask_size, bid_exchange, bid_price, bid_size, sequence_number, sip_timestamp.
+- Call and put entry timestamps differ by 24.65 seconds. Quotes passing a five-minute freshness check are not sufficient evidence that three legs could be executed simultaneously. Stock quotes, loan terms, voting/recall qualification, corporate actions over the trade, execution constraints and daily marks remain unverified.
+
+Corporate actions
+Found 2,101 named issuer-dividend JSON files in data/cache/ai_washing/dividends, plus adjusted dividend and raw split parquet files. Availability is not an audited point-in-time panel. The separate defense pilot's GM dividend file contains seven records with declaration dates and ex-dates 2025-03-07 to 2026-09-04; that specific file does not cover the December 2024 plumbing example. An empty result in its GM split file is not blanket proof of no contract adjustment across all history. All adjusted option deliverables must be resolved from contract/corporate-action records for each candidate.
+
+Verified public provider documentation
+1. Massive historical option quotes: /v3/quotes/{optionsTicker}, bid/ask, sizes, SIP timestamps. Documentation states history starts March 7, 2022, subject to entitlement. We did not establish that this account is entitled to every missing request.
+https://massive.com/docs/rest/options/trades-quotes/quotes
+2. Massive historical stock NBBO: /v3/quotes/{stockTicker}; this is the appropriate independent underlying quote source, rather than spot inferred from the same option pair whose richness is being tested.
+https://www.massive.com/docs/rest/stocks/trades-quotes/quotes
+3. Massive contract metadata includes exercise style, multiplier, expiry, strike and additional underlyings. Require the historical contract version.
+https://massive.com/docs/rest/options/contracts/contract-overview
+4. Massive short interest: /stocks/v1/short-interest; twice-monthly outstanding short positions, history described from 2017-12-29. No borrower-specific fee, rebate, supply commitment, recall or execution fields are documented in this endpoint.
+https://massive.com/docs/rest/stocks/fundamentals/short-interest
+5. Massive short volume: /stocks/v1/short-volume; daily reported short sale flow, history described from 2024-02-06. This is not outstanding loan inventory or stock available to borrow. Its date denotes trade activity, not necessarily initial public availability.
+https://massive.com/docs/rest/stocks/fundamentals/short-volume
+6. IBKR's shortable tool documents quantity, number of lenders, current and historical indicative borrowing rates. It explicitly characterizes availability as indicative and subject to change. An indicative history could support a preliminary association study, but not a guaranteed-borrow executable return claim.
+https://www.interactivebrokers.com/en/trading/short-securities-availability.php
+
+What can actually be tested now
+A. Economic and accounting unit tests on fabricated scenarios, clearly labeled non-market data: correct quote sides, per-share/contract multipliers, loan and collateral interest, dividend payments, exercise/assignment, borrow recall/buy-in and closure accounting.
+B. A sparse quote synchronization/data-quality diagnostic, or a conditional break-even borrowing-cost calculation for properly modeled option/stock observations. Neither tests supply restoration.
+C. A full historical strategy only after a timestamped lending series is supplied. Minimum fields: stable security ID, observation/publication/availability time, source/broker/account scope, quote type (indicative/executable/committed/realized), fee versus rebate convention, lendable quantity, proposed quantity, lender count if available, collateral/margin terms, term/renewal conditions, locate/preborrow approval and expiry, actual fee changes, recall/buy-in records and applicable voting record/settlement dates.
+
+The independent stock quote is essential. Recovering stock price from the same call-put parity relation would mechanically erase or manufacture the candidate mispricing. Market-wide average lending fees can help discover events but need not be executable for this fund. A secured initial borrow alone does not establish a fixed fee or guaranteed term. Missing daily loan/mark observations should fail eligibility, not be forward-filled as a riskless position.
+
+No strategy Sharpe, hit rate, eligible market-trade count or return estimate is reported by this audit. Missing event data is neither evidence that the strategy works nor a statistical rejection of it.

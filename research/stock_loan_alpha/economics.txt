@@ -1,0 +1,169 @@
+STOCK-LOAN SUPPLY RESTORATION / OPTION SCARCITY: ECONOMICS AUDIT
+Research cutoff: 2026-10-03, America/New_York
+Scope: execution and financing model; no market backtest, prices, or performance claims.
+
+VERDICT
+The proposed direction is correct: buy the call, sell the same-strike/same-expiry put,
+and sell short the matching shares. This is a reversal. It benefits if the synthetic
+long is sufficiently inexpensive relative to physical stock after all actual carry.
+The unexplored prediction is a lag in executable option repricing after observed
+borrow relief. A vote calendar alone does not establish this prediction.
+
+The transaction is established market structure, not a newly invented arbitrage.
+Any novelty must come from supply-restoration timing, access, forecasting, or execution.
+Net Sharpe 2 cannot be inferred from the payoff diagram or narrow observed basis.
+
+WHAT THE BLACKROCK LETTER DOES AND DOES NOT ESTABLISH
+BlackRock's December 14, 2021 letter discusses the choice between lending income and
+voting. Its relevant clock is the voting RECORD DATE, not the shareholder meeting.
+The letter disputes the assumption that recalled shares can immediately be lent again:
+borrowers may replace loans elsewhere, leaving a returning lender waiting for demand.
+It also notes that record dates can precede definitive proxy disclosures. [S1]
+
+This supports a conditional mechanism and important timing caution. It provides no
+options evidence, average borrow-rate decline, persistence estimate, or alpha result.
+Do not infer market-wide loan availability from one fund's subsequent willingness to
+lend. Do not backfill record dates from later proxy documents into an earlier signal.
+Restoration must be measured in executable availability and account-specific terms.
+
+PAYOFF AND SIGN
+For a standard contract, use +1 call, -1 put and -100 shares. Both contracts must
+have identical strike K, expiration, exercise style, deliverable and multiplier.
+Adjusted contracts require the actual OCC deliverable; exclude them in a first pilot.
+The OIC explicitly identifies this package as a reverse conversion. [S2]
+
+Define all quotes per underlying share. For matched unexercised positions closed at u:
+
+Entry cash = S_bid(t) - C_ask(t) + P_bid(t).
+Exit cash  = C_bid(u) - P_ask(u) - S_ask(u).
+Trading P&L = entry cash + exit cash.
+
+Net P&L = trading P&L + incremental account financing cash flows
+          - stock-borrow charges - substitute dividends
+          - commissions, exchange/regulatory fees and extra execution costs.
+
+Multiply by actual matched quantity. This directly executable before-expiry ledger
+does not require pricing American options as European options. Simultaneous-looking
+quotes still do not establish simultaneous fills. Verify displayed size, quote age,
+exchange eligibility and short-stock feasibility; apply realistic sequencing/latency.
+
+For a hypothetical perfectly matched expiry delivery without early exercise or pin
+problems, terminal option/stock cash is -K per share, so gross trading cash is
+S_bid(t) - C_ask(t) + P_bid(t) - K. Interest and all costs remain separate. Treat this
+as an identity check, not the default realized cash flow for American equity options.
+
+SCARCITY INTERPRETATION
+Under restrictive European, deterministic-rate, continuous-yield assumptions,
+C_E - P_E = S exp(-(q + ell) tau) - K exp(-r tau), where ell is an effective stock
+lending/convenience yield. Greater effective scarcity lowers C_E-P_E and makes the
+synthetic long cheaper. Thus the proposed sign is consistent with expensive implied
+scarcity and cheaper available physical borrow. This equation is a diagnostic only:
+an effective implied yield is not an account's quoted borrow fee.
+
+For American contracts C_A-P_A also includes the difference in early-exercise premia.
+Dividends, asymmetric funding, specials, corporate actions and stale quotes can produce
+an apparent implied-borrow discrepancy without an executable opportunity. Use a model
+with discrete dividends and American exercise if reporting implied yields. Prefer
+actual cash P&L for acceptance and rejection rather than one inferred yield number.
+
+FINANCING: AVOID DOUBLE COUNTING
+Maintain segregated incremental cash balances under the actual prime-broker agreement:
+restricted short proceeds/collateral, option premium cash, additional posted margin,
+and freely usable or debit cash. Collateral transfers themselves are not expenses.
+Cash collateral earns only the contractual credit, not automatically the risk-free
+rate. Financing additional required collateral is a separate funding cost when real.
+
+IBKR's published convention separates a stock-borrow fee and interest on short-sale
+proceeds, with costs based on settled positions. Its page also reports a net rebate
+and warns that rates vary by arrangement. [S3] Implement one of two mutually exclusive
+conventions:
+  A. Separate fee convention: credit actual proceeds interest and subtract the stock
+     borrow fee on its specified collateral base.
+  B. Already-net rebate convention: book the contractual net stock-loan cash flow
+     once, plus any genuinely separate funding or service fees.
+Never both subtract a fee embedded in net rebate and subtract it again. Never credit
+full proceeds at r and then add a rebate on the same money.
+
+Every day use the specified collateral mark, rate base, day count, settled quantity
+and accrual days, including relevant weekends/holidays. IBKR documentation describes
+a 102% marked/rounded collateral convention; this can matter for low-priced stock.
+The agreement, not a blanket multiplier, governs an institutional account. [S4]
+Book dividend obligations when incurred and settle them on the applicable payment
+date; reflect any actual tax gross-up or special corporate-action compensation.
+
+PRE-BORROW IS NOT A TERM-RATE GUARANTEE
+IBKR's pre-borrow documentation distinguishes indicative from actual rates and says
+rates can change; its documented program computes standard rates nightly. [S4]
+An actual locate is also not proof that a lender will maintain the loan to expiry.
+The lending agreement must identify quantity, term, rerating and recall provisions.
+The broker's returns/recalls guide explicitly allows recall. [S5]
+
+If only floating overnight loans are available, projected profit must use scenarios
+for future fees and availability. Ex post realized fees belong in outcome accounting,
+not the entry decision. Include rejected locates, unfilled quantities and forced
+closeouts. A backtest conditioned on loans that survived would select away failures.
+
+AMERICAN EXERCISE AND CORPORATE ACTIONS
+The short put may be assigned on any business day, and early exercise becomes relevant
+for deep in-the-money puts. Exact assignment is not deterministic. [S6]
+On put assignment: debit K times shares, receive shares against the short, return the
+borrow as appropriate, and dispose of or hedge the remaining long call at executable
+prices. Do not continue the old three-leg P&L afterward.
+On voluntary call exercise: debit K times shares, receive shares against the short,
+and close the remaining short put. If a buy-in covers the stock first, close both
+option legs; the package otherwise becomes an unhedged synthetic long.
+
+Exclude expiries and ex-dividend crossings in an initial narrow pilot, but this is not
+proof of zero exercise risk. Lack of dividends does not by itself eliminate all
+hard-to-borrow exercise considerations. Implement stressed adverse assignment timing,
+notification lag, exercise fees and closing spreads, not just a model-optimal policy.
+OIC notes that exercise need not be certain even for in-the-money expiry contracts,
+and broker restrictions/halts complicate exercise. [S6, S7]
+
+MINIMUM OBSERVATIONS FOR A CREDIBLE TEST
+1. Timestamped stock and call/put bid/ask plus sizes, condition codes and contract IDs.
+2. Timestamped firm borrow availability, account-specific rate and actual executed
+   loan terms, quantity, rate changes, recalls/returns and broker charges.
+3. Point-in-time known dividends/corporate actions; actual compensation outcomes.
+4. Actual account cash, collateral, margin and credit/debit interest conventions.
+5. Public-availability timestamps for voting record dates if used as predictors.
+6. Assignment/exercise records or conservative scenario treatment for hypothetical
+   portfolios; expired/delisted/adjusted securities cannot simply disappear.
+
+Analyst aggregate borrow fees, indicative lists, short interest, utilization and
+short-sale volume can help screen or contextualize. None establishes a secured loan
+at the claimed execution price and size. EOD option mids cannot establish this edge.
+
+FALSIFICATION AND ACCEPTANCE
+Freeze liquidity, maturity, event, exit and quote-age rules before outcomes. Test
+observed loan relief against comparable non-voting loan relief and matched no-relief
+days. Require that option repricing follows the genuinely available borrow quote
+after an implementable latency. Include dividends, actual funding, two-sided spreads,
+borrow rerating, failed fills and recalls. An edge that appears only in inferred
+European parity, stale quotes, mid-prices, post-event data, or guaranteed-borrow
+assumptions fails the executable hypothesis.
+
+Report daily liquidation-marked P&L on fixed allocated capital, not profit divided by
+near-zero net option premium. Show margin/stock-loan capacity and concentration.
+Multiple strikes and maturities on one stock/date are not independent experiments.
+Bootstrap by event/date clusters and retain zero-position days. Inspect recall and
+assignment tails; a smooth held-to-expiry accrual series can overstate Sharpe.
+
+SOURCES
+S1 BlackRock, 2021-12-14, pages 4-5.
+https://www.blackrock.com/corporate/literature/publication/sec-enhanced-reporting-proxy-votes-registered-management-investment-companies-reporting-executive-compensation-votes-institutional-investment-managers-121421.pdf
+S2 OIC, Put/Call Parity.
+https://www.optionseducation.org/advancedconcepts/put-call-parity
+S3 Interactive Brokers, Short Sale Cost.
+https://www.interactivebrokers.com/en/pricing/short-sale-cost.php?menu=A
+S4 Interactive Brokers, About Pre-Borrows (legacy documentation; current contract controls).
+https://www.interactivebrokers.co.uk/en/software/tws.bak/usersguidebook/specializedorderentry/about_pre-borrows.htm
+S5 Interactive Brokers, Returns/Recalls/Rerates.
+https://www.interactivebrokers.co.uk/en/software/tws.bak/usersguidebook/specializedorderentry/returns_recalls_rerates.htm
+S6 OIC, Exercising Options.
+https://www.optionseducation.org/optionsoverview/exercising-options
+S7 OIC, Options Exercise FAQ.
+https://www.optionseducation.org/referencelibrary/faq/options-exercise
+
+Sources were accessed during this 2026-10-03 research session. Current or legacy
+documentation establishes mechanics, not historical account-specific terms.
