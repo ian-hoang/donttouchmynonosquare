@@ -1,0 +1,124 @@
+# Independent replication: "sell a call after an acquirer's deal-signing 8-K"
+
+You are replicating a frozen trading rule **from this spec alone**.
+
+- Do **not** read `massive/eightk.py` or anything in `massive/research/` until you have produced your
+  own numbers. The point is to catch bugs we can't see.
+- Write your code and output in a new folder, `massive/replication_codex/`. Don't edit any other files.
+- **API key:** `MASSIVE_API_KEY` in `massive/.env`. Never print it, never put it in code, never commit it.
+- **Data:** cache raw API responses only inside your folder, in a sub-folder you add to `.gitignore`.
+  The data is licensed.
+- **Don't tune anything.** The rule below is frozen. The 2026 window already had its one official run.
+  Your 2026 run is a replication of the same rule, not a new test.
+
+## The rule
+After a top-100 US company files an 8-K saying it signed an acquisition or merger agreement:
+1. At the close of the next trading day, sell 1 call option per 100 shares already held. Expiry ≈ 4
+   months out; strike ≈ 5% above the stock price.
+2. Buy it back at the close 10 trading days later.
+3. Measure the profit of the sold call, net of the real bid-ask cost, as a fraction of the stock price.
+
+## Data (https://api.massive.com, header `Authorization: Bearer <key>`, follow `next_url` to paginate)
+| what | endpoint |
+|---|---|
+| 8-K events | `GET /stocks/filings/8-K/vX/disclosures?tertiary_category=<tag>&filing_date.gte=<d>&filing_date.lte=<d>&limit=1000&sort=filing_date.asc` |
+| all 8-Ks of one company (for peers) | same endpoint with `tickers=<TICKER>` instead of `tertiary_category` |
+| option chain as it existed on a day | `GET /v3/reference/options/contracts?underlying_ticker=<T>&as_of=<YYYY-MM-DD>&expiration_date.gte=<as_of+2d>&expiration_date.lte=<as_of+180d>&limit=1000` |
+| daily option bars | `GET /v2/aggs/ticker/<O:...>/range/1/day/<from>/<to>?adjusted=false&sort=asc&limit=50000` (bar time `t` is ms UTC; convert to an America/New_York date) |
+| option quotes | `GET /v3/quotes/<O:...>?timestamp.lte=<UTC ISO of 16:00 New York time on the day>&order=desc&sort=timestamp&limit=1` |
+
+## Universe (static, 100 tickers)
+```
+AAPL ABBV ABT ACN ADBE AIG AMD AMGN AMT AMZN AVGO AXP BA BAC BK BKNG BLK BMY BRK.B C
+CAT CHTR CL CMCSA COF COP COST CRM CSCO CVS CVX DE DHR DIS DUK EMR FDX GD GE GILD
+GM GOOGL GS HD HON IBM INTC INTU ISRG JNJ JPM KO LIN LLY LMT LOW MA MCD MDLZ MDT
+MET META MMM MO MRK MS MSFT NEE NFLX NKE NOW NVDA ORCL PEP PFE PG PLTR PM PYPL QCOM
+RTX SBUX SCHW SO T TGT TMO TMUS TSLA TXN UBER UNP UPS USB V VZ WFC WMT XOM
+```
+Ticker normalization: uppercase, and replace "/" with "." (BRK/B → BRK.B). When querying by ticker,
+BRK.B also needs the BRK/B spelling.
+
+## Trading calendar
+NYSE sessions are weekdays minus these holidays:
+- New Year's Day: a Sunday holiday moves to Monday; a Saturday holiday is not observed.
+- MLK Day, Presidents Day, Good Friday, Memorial Day.
+- Juneteenth (from 2022), Independence Day, Christmas: each moves to the nearest weekday.
+- Labor Day, Thanksgiving.
+- 2025-01-09 (national day of mourning).
+
+## Step by step
+1. **Events.**
+   - Fetch disclosures for tags `acquisition_agreement` and `merger_agreement`. Explode `tickers`,
+     normalize, and keep universe tickers.
+   - One event per (cik, filing_date): a company-day with either tag (or both) is one event.
+2. **One per deal.** Sort by ticker, then filing_date. Walk through. Keep an event only if the ticker
+   has no kept event yet, or the filing is **more than 60 calendar days after that ticker's last
+   KEPT event**. Update "last kept" only when you keep one. Run the walk continuously from 2024-01-01.
+3. **Dates.**
+   - filing_session = the first session on or after filing_date.
+   - t_pre = the session before filing_session.
+   - entry = the session **after** filing_session.
+4. **Mark(contract, day).** The close of the contract's last daily bar on or before `day`, but only if
+   that bar is at most 3 sessions old (sessions strictly after the bar date, up to and including
+   `day`). Otherwise missing.
+5. **Chain on t_pre.** Use the endpoint above with as_of=t_pre. Keep contracts with
+   shares_per_contract = 100 (treat missing as 100). dte = expiration − t_pre in calendar days.
+6. **Spot on t_pre, from put-call parity, r = 0.04.**
+   - Take the nearest expiry with dte ≥ 3. Its "paired strikes" have both a call and a put; you need
+     at least 3, or the event is dropped.
+   - Start at the paired strike nearest the median paired strike.
+   - Repeat up to 8 times:
+     - Get the call and put closes at strike k: the last bar within the 7 calendar days up to and
+       including t_pre.
+     - If either is missing, move to the nearest untried paired strike and try again.
+     - Otherwise est = k·e^(−0.04·dte/365) + call − put.
+     - Let k_new = the paired strike nearest est. Stop if k_new = k or k_new was already tried;
+       otherwise set k = k_new.
+   - Spot = the last est. If there is none, drop the event.
+7. **Expiry.**
+   - Candidates are expiries with 90 ≤ dte ≤ 180 that have at least 3 paired strikes.
+   - Pick the one with dte closest to 120. If there is none, drop the event.
+8. **Strikes in that expiry.**
+   - K (the ATM pair) = the paired strike nearest spot, among paired strikes within ±25% of spot.
+   - U (the call you sell) = the smallest listed **call** strike ≥ 1.05 × spot. If there is none,
+     use the largest call strike.
+9. **Bars.** For C_K, P_K and C_U, fetch daily bars from t_pre − 10 calendar days to the expiration
+   date.
+   - Drop the event if C_K or P_K has no mark on t_pre.
+   - expiry_session = the last session on or before the expiration date.
+10. **Parity stock price on day d.** S(d) = K·e^(−0.04·T) + C_K(d) − P_K(d), where
+    T = max(expiration − d, 0 days) / 365.
+11. **Entry (close of the entry session).** You need S(entry) and C_U(entry). Otherwise drop the event.
+12. **Exit.**
+    - exit = the 10th session after entry. It must be ≤ expiry_session and ≤ the last completed session.
+    - You need C_U(exit) **and** S(exit) to exist. Otherwise drop the trade. Note: about 4 in-sample
+      trades fail only because S(exit) is missing; keep the rule.
+13. **Cost.**
+    - From the last quote for C_U at or before 16:00 New York time on the entry session, half_spread =
+      (ask − bid)/2.
+    - The quote must be from that same date, with bid ≥ 0, ask > 0 and ask ≥ bid. If there is no
+      valid quote, drop the trade.
+14. **P&L per $1 of stock:**
+    `net = −(C_U(exit) − C_U(entry)) / S(entry) − 2 × half_spread / S(entry)`
+15. **Peers** (the "is it the filing?" check).
+    - For each event's filing_date, list the universe tickers with **no** 8-K disclosure of any tag
+      within ±5 calendar days of that date.
+    - Pick 6 at random. Give them the same t_pre, entry, exit and contract rule (steps 5-14).
+    - gap = event net − the mean net of that date's peers.
+    - Peers are random, so repeat the draw with **20 different seeds** and report the spread.
+
+## Report
+For both windows:
+- number of events, before and after one-per-deal
+- number of valid trades
+- mean net, median net, win rate, standard deviation, per-trade Sharpe (mean ÷ std)
+- the peer gap: mean, plus the min-max over the 20 seeds
+- a per-trade table: ticker, filing_date, entry, exit, strike, expiry, net
+
+| window | what we got |
+|---|---|
+| **In-sample** 2024-01-01..2025-12-31 | 53 deal company-days → 40 after one-per-deal (25 companies) → **30 valid trades**. Mean net **+0.64%**, 67% winners, std 1.91%. Peer gap +0.96% on one draw and +1.55% on another |
+| **2026** 2026-01-01..2026-08-31 | **19** events after one-per-deal (14 companies): ABBV 2026-06-22, ABT 03-09, AMZN 04-14, CHTR 01-06, CHTR 07-23, COF 01-22, DHR 02-17, DHR 04-29, FDX 02-09, GILD 02-23, GILD 04-28, NEE 05-18, NEE 08-11, NFLX 02-27, QCOM 06-24, TXN 02-04, UBER 02-09, UBER 07-16, USB 01-13. **15 valid trades**, mean net **+0.75%**, 67% winners, peer gap +1.19% (one draw) |
+
+If your numbers differ, first list the trades that differ and the reason (a different strike, expiry,
+spot, a dropped trade, or a cost). Don't adjust either implementation to force a match.
