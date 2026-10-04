@@ -1,0 +1,8 @@
+test,prediction,diff,t,p_two_sided,n_a,n_b
+PRIMARY ES: T+1 vs T+2 shift,< 0,-55.4305,-2.1671,0.0341,29,80
+y (rebalancing-signed): T+1 vs T+2 shift,> 0,0.9971,0.0333,0.9735,29,80
+ES: T+2 vs T+3 shift (2017),< 0,-17.5705,-0.6187,0.5372,80,84
+y: T+2 vs T+3 shift (2017),> 0,-19.0782,-0.6019,0.5483,80,84
+"PLACEBO mid-month anchor, ES: T+1 vs T+2",none,-61.9288,-1.6826,0.1003,29,80
+"PLACEBO mid-month anchor, y: T+1 vs T+2",none,-39.5490,-0.9715,0.3376,29,80
+"PLACEBO mid-month anchor, ES: T+2 vs T+3",none,-34.5363,-1.3521,0.1782,80,86
