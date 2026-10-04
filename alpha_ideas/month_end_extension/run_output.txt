@@ -1,0 +1,49 @@
+Nominal coupon auctions used: 1258 (issue dates 2010-06-15 -> 2026-10-15);  months with zero proxy: 0
+Test months: 2012-08 -> 2026-09 = 170;  big 85, small 85;  UB window missing: 0
+
+=== Sanity: example months, UB window bar END times (ET) ===
+2012-08 L=2012-08-31  window (Tue 2012-08-28 16:00, Fri 2012-08-31 15:00]  bars 67: first ends Tue 2012-08-28 17:00, last ends Fri 2012-08-31 15:00  UB +124.3 bp;  proxy 1,264 vs trailing-24m median 1,146 -> BIG
+2012-09 L=2012-09-28  window (Tue 2012-09-25 16:00, Fri 2012-09-28 15:00]  bars 68: first ends Tue 2012-09-25 17:00, last ends Fri 2012-09-28 15:00  UB +43.7 bp;  proxy 696 vs trailing-24m median 1,146 -> small
+2012-10 L=2012-10-31  window (Fri 2012-10-26 16:00, Wed 2012-10-31 15:00]  bars 63: first ends Fri 2012-10-26 17:00, last ends Wed 2012-10-31 15:00  UB +85.9 bp;  proxy 1,592 vs trailing-24m median 1,144 -> BIG
+2026-08 L=2026-08-31  window (Wed 2026-08-26 16:00, Mon 2026-08-31 15:00]  bars 68: first ends Wed 2026-08-26 17:00, last ends Mon 2026-08-31 15:00  UB -126.0 bp;  proxy 2,460 vs trailing-24m median 2,280 -> BIG
+2026-09 L=2026-09-30  window (Fri 2026-09-25 16:00, Wed 2026-09-30 15:00]  bars 68: first ends Fri 2026-09-25 17:00, last ends Wed 2026-09-30 15:00  UB -224.2 bp;  proxy 2,280 vs trailing-24m median 2,280 -> small
+UB windows whose endpoints lack an exact bar: 12 of 170: 2013-03, 2013-11, 2014-11, 2016-11, 2018-03, 2019-11, 2020-02, 2020-06, 2022-11, 2024-03, 2024-11, 2025-11
+Look-ahead: trailing median uses months m-24..m-1 only (shift(1)).  Months where an auction in the proxy was announced after the window start: 0
+   min gap between last announcement and window start: 4.2 days
+
+Proxy by year (mean $bn x years per month) and share of big months:
+year         2012     2013     2014    2015     2016    2017     2018     2019     2020     2021     2022     2023     2024     2025     2026
+proxy      1192.0  1191.92  1162.00  1168.0  1066.00  1113.0  1286.50  1452.19  2008.42  2636.12  1939.00  1907.33  2397.50  2351.67  2363.00
+big_share     0.6     0.42     0.25     0.5     0.33     0.5     0.75     0.58     0.67     0.67     0.25     0.42     0.67     0.50     0.44
+n             5.0    12.00    12.00    12.0    12.00    12.0    12.00    12.00    12.00    12.00    12.00    12.00    12.00    12.00     9.00
+
+=== PRIMARY: UB (16:00 L-3, 15:00 L], big minus small months, prediction > 0 ===
+UB month-end window                            big  +34.81 bp (n=85)  small  +13.74 bp (n=85)  diff  +21.07 bp  Welch t=+1.20  p(one-sided)=0.115
+   all test months: mean +24.28 bp, t +2.77  (the unconditional month-end effect)
+
+=== PLACEBO (same clock window, non-month-end days) ===
+P1: UB (16:00 L-13, 15:00 L-10]                big  -22.59 bp (n=85)  small  +31.15 bp (n=85)  diff  -53.74 bp  Welch t=-2.52  p(one-sided)=0.994
+P2: UB (16:00 d-3, 15:00 d] on 2699 non-month-end days: mean -9.23 bp (NW3 se 4.09);  month-end mean +24.28 bp;  difference +33.51 bp, t +3.46
+
+=== TRADE: long 1 UB over the window in big months only ===
+cost per trade: $65.50 = 5.24 bp at the spec price;  trades per year 6.00 over 14.16 years
+   gross bp  mean   +34.81  median   +37.65  sd   100.84  t +3.18  hit 66%
+   net bp    mean   +29.57  median   +32.41  sd   100.84  t +2.70  hit 62%
+   gross $   mean  +551.87  median  +562.50  sd  1643.27  t +3.10  hit 66%
+   net $     mean  +486.37  median  +497.00  sd  1643.27  t +2.73  hit 64%
+   annualised net: +177.5 bp of UB notional, $+2,919 per contract;  Sharpe (net) +0.72
+   for comparison, the same trade in small months: net mean +8.50 bp; in all months: +19.04 bp
+
+=== ROBUSTNESS (reported only; cannot rescue the primary) ===
+ZB, same window                                big  +31.92 bp (n=85)  small   +9.41 bp (n=85)  diff  +22.51 bp  Welch t=+1.67  p(one-sided)=0.049
+flattener UB - 8.947 x ZT                      big   -0.83 bp (n=85)  small   -8.97 bp (n=85)  diff   +8.14 bp  Welch t=+0.53  p(one-sided)=0.299
+   flattener in big months: gross -0.83 bp, cost 13.25 bp, net -14.08 bp (t -1.40)  [bp of UB notional]
+give-back UB (15:00 L, 16:00 L+1]              big   +7.45 bp (n=85)  small  -14.69 bp (n=84)  diff  +22.14 bp  Welch t=+1.35  p(one-sided)=0.090
+   give-back in big months: mean +7.45 bp (t +0.63, n=85); all months -3.55 bp
+continuous (i): UB_bp on log(proxy / trailing median): slope +11.00 bp per unit log, t(HC1)=+0.48  (proxy/median ranges 0.42-2.71)
+continuous (ii): UB_bp on raw proxy ($tn x years): slope -1.68 bp per $tn-yr, t(HC1)=-0.14
+
+=== Context: big minus small by sub-period ===
+   2012-08 -> 2016-12                          big  +33.69 bp (n=21)  small  +29.58 bp (n=32)  diff   +4.10 bp  Welch t=+0.17  p(one-sided)=0.433
+   2017-01 -> 2020-12                          big  +42.99 bp (n=30)  small  +40.29 bp (n=18)  diff   +2.70 bp  Welch t=+0.08  p(one-sided)=0.467
+   2021-01 -> 2026-09                          big  +28.30 bp (n=34)  small  -14.39 bp (n=35)  diff  +42.69 bp  Welch t=+1.33  p(one-sided)=0.094
