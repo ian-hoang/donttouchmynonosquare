@@ -1,0 +1,6 @@
+{
+  "timestamp": "2026-10-03T07:19:40.323352+00:00",
+  "description": "Report-format correction only: seed means share underlying events and are not independent trade returns. Remove Sharpe, standard deviation and win_rate labels from seed-mean summaries; retain count, mean, median, minimum, maximum, and explicit positive seed count. No quote, trade, peer-draw, cost or pricing changes.",
+  "original_code_sha256": "b08b309b67d4230695f68b2ad43caddb2a579a3b8d040824478269ac67d57155",
+  "updated_code_sha256": "a4a3022a3ef5c35f45f229600e9f95609168debb8fd567138befa318e18fa59a"
+}

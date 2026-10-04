@@ -1,0 +1,323 @@
+{
+  "AAPL": [
+    "Apple"
+  ],
+  "ABBV": [
+    "AbbVie"
+  ],
+  "ABT": [
+    "Abbott"
+  ],
+  "ACN": [
+    "Accenture"
+  ],
+  "ADBE": [
+    "Adobe"
+  ],
+  "AIG": [
+    "American International Group",
+    "AIG"
+  ],
+  "AMD": [
+    "Advanced Micro Devices",
+    "AMD"
+  ],
+  "AMGN": [
+    "Amgen"
+  ],
+  "AMT": [
+    "American Tower"
+  ],
+  "AMZN": [
+    "Amazon"
+  ],
+  "AVGO": [
+    "Broadcom"
+  ],
+  "AXP": [
+    "American Express"
+  ],
+  "BA": [
+    "Boeing"
+  ],
+  "BAC": [
+    "Bank of America"
+  ],
+  "BK": [
+    "Bank of New York",
+    "BNY"
+  ],
+  "BKNG": [
+    "Booking Holdings",
+    "Booking.com"
+  ],
+  "BLK": [
+    "BlackRock"
+  ],
+  "BMY": [
+    "Bristol-Myers",
+    "Bristol Myers"
+  ],
+  "BRK.B": [
+    "Berkshire Hathaway"
+  ],
+  "C": [
+    "Citigroup",
+    "Citibank"
+  ],
+  "CAT": [
+    "Caterpillar"
+  ],
+  "CHTR": [
+    "Charter Communications"
+  ],
+  "CL": [
+    "Colgate"
+  ],
+  "CMCSA": [
+    "Comcast"
+  ],
+  "COF": [
+    "Capital One"
+  ],
+  "COP": [
+    "ConocoPhillips"
+  ],
+  "COST": [
+    "Costco"
+  ],
+  "CRM": [
+    "Salesforce"
+  ],
+  "CSCO": [
+    "Cisco"
+  ],
+  "CVS": [
+    "CVS",
+    "Aetna"
+  ],
+  "CVX": [
+    "Chevron"
+  ],
+  "DE": [
+    "Deere"
+  ],
+  "DHR": [
+    "Danaher"
+  ],
+  "DIS": [
+    "Disney"
+  ],
+  "DUK": [
+    "Duke Energy"
+  ],
+  "EMR": [
+    "Emerson"
+  ],
+  "FDX": [
+    "FedEx"
+  ],
+  "GD": [
+    "General Dynamics"
+  ],
+  "GE": [
+    "General Electric",
+    "GE Aerospace"
+  ],
+  "GILD": [
+    "Gilead"
+  ],
+  "GM": [
+    "General Motors"
+  ],
+  "GOOGL": [
+    "Alphabet",
+    "Google"
+  ],
+  "GS": [
+    "Goldman Sachs"
+  ],
+  "HD": [
+    "Home Depot"
+  ],
+  "HON": [
+    "Honeywell"
+  ],
+  "IBM": [
+    "International Business Machines",
+    "IBM"
+  ],
+  "INTC": [
+    "Intel"
+  ],
+  "INTU": [
+    "Intuit"
+  ],
+  "ISRG": [
+    "Intuitive Surgical"
+  ],
+  "JNJ": [
+    "Johnson & Johnson"
+  ],
+  "JPM": [
+    "JPMorgan",
+    "J.P. Morgan",
+    "JP Morgan"
+  ],
+  "KO": [
+    "Coca-Cola",
+    "Coca Cola"
+  ],
+  "LIN": [
+    "Linde"
+  ],
+  "LLY": [
+    "Eli Lilly",
+    "Lilly"
+  ],
+  "LMT": [
+    "Lockheed"
+  ],
+  "LOW": [
+    "Lowe's"
+  ],
+  "MA": [
+    "Mastercard",
+    "MasterCard"
+  ],
+  "MCD": [
+    "McDonald's"
+  ],
+  "MDLZ": [
+    "Mondelez"
+  ],
+  "MDT": [
+    "Medtronic"
+  ],
+  "MET": [
+    "MetLife"
+  ],
+  "META": [
+    "Meta Platforms",
+    "Facebook"
+  ],
+  "MMM": [
+    "3M"
+  ],
+  "MO": [
+    "Altria"
+  ],
+  "MRK": [
+    "Merck"
+  ],
+  "MS": [
+    "Morgan Stanley"
+  ],
+  "MSFT": [
+    "Microsoft"
+  ],
+  "NEE": [
+    "NextEra"
+  ],
+  "NFLX": [
+    "Netflix"
+  ],
+  "NKE": [
+    "Nike"
+  ],
+  "NOW": [
+    "ServiceNow"
+  ],
+  "NVDA": [
+    "Nvidia",
+    "NVIDIA"
+  ],
+  "ORCL": [
+    "Oracle"
+  ],
+  "PEP": [
+    "PepsiCo",
+    "Pepsi"
+  ],
+  "PFE": [
+    "Pfizer"
+  ],
+  "PG": [
+    "Procter & Gamble"
+  ],
+  "PLTR": [
+    "Palantir"
+  ],
+  "PM": [
+    "Philip Morris"
+  ],
+  "PYPL": [
+    "PayPal"
+  ],
+  "QCOM": [
+    "Qualcomm"
+  ],
+  "RTX": [
+    "Raytheon",
+    "RTX Corporation"
+  ],
+  "SBUX": [
+    "Starbucks"
+  ],
+  "SCHW": [
+    "Charles Schwab"
+  ],
+  "SO": [
+    "Southern Company"
+  ],
+  "T": [
+    "AT&T"
+  ],
+  "TGT": [
+    "Target Corporation"
+  ],
+  "TMO": [
+    "Thermo Fisher"
+  ],
+  "TMUS": [
+    "T-Mobile"
+  ],
+  "TSLA": [
+    "Tesla"
+  ],
+  "TXN": [
+    "Texas Instruments"
+  ],
+  "UBER": [
+    "Uber"
+  ],
+  "UNP": [
+    "Union Pacific"
+  ],
+  "UPS": [
+    "United Parcel Service",
+    "UPS"
+  ],
+  "USB": [
+    "U.S. Bancorp",
+    "US Bancorp",
+    "U.S. Bank"
+  ],
+  "V": [
+    "Visa"
+  ],
+  "VZ": [
+    "Verizon"
+  ],
+  "WFC": [
+    "Wells Fargo"
+  ],
+  "WMT": [
+    "Walmart",
+    "Wal-Mart"
+  ],
+  "XOM": [
+    "Exxon",
+    "ExxonMobil"
+  ]
+}

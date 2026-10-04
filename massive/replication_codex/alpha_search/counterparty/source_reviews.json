@@ -1,0 +1,25 @@
+[
+  {
+    "candidate_index": 8,
+    "accession_number": "0001571996-24-000004",
+    "url": "https://www.sec.gov/Archives/edgar/data/1571996/000157199624000004/dell-20240125.htm",
+    "source_type": "Actual contemporaneous SEC 8-K, Item 1.02",
+    "evidence_quote": "how the Company will act as a distributor of VMware products and services",
+    "assessment": "Confirms Dell distributor role and termination, but no explicit committed-purchase cancellation. Not a qualifying event under SPEC."
+  },
+  {
+    "candidate_index": 125,
+    "accession_number": "0001857154-25-000102",
+    "url": "https://www.sec.gov/Archives/edgar/data/1857154/000185715425000102/dnut-20250623.htm",
+    "source_type": "Actual contemporaneous SEC 8-K, Items 7.01 and 8.01",
+    "assessment": "Confirms joint termination; does not show inability to perform contracted delivery with an adverse consequence to McDonald's."
+  },
+  {
+    "candidate_index": 125,
+    "accession_number": "0001857154-25-000102",
+    "url": "https://www.sec.gov/Archives/edgar/data/1857154/000185715425000102/a991pressrelease-june2025.htm",
+    "source_type": "Actual contemporaneous Exhibit 99.1 joint press release",
+    "evidence_quote": "Krispy Kreme represented a small, non-material part of McDonald\u2019s breakfast business.",
+    "assessment": "Supports exclusion; speculative material damage to McDonald's would contradict this exhibit."
+  }
+]

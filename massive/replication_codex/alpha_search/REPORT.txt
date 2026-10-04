@@ -1,0 +1,133 @@
+ALPHA SEARCH: EXECUTION, SECTOR CONTROLS AND A NEW COUNTERPARTY IDEA
+
+No new independently validated alpha was found. The strongest existing candidate
+remains the acquisition short-call overlay, conditional on its original eligibility
+rules. It survives quoted bid/ask costs. A broader version fails in reused 2026,
+and the sector comparison remains too uncertain to establish a reliable new edge.
+This report records the failures as well as the favorable numbers.
+
+1. THE ORIGINAL ELIGIBLE TRADES SURVIVE STRICTER EXECUTION
+
+Keep the frozen contracts and 45 eligible event trades. Simulate selling at the
+entry bid and buying at the exit ask, five minutes before the regular close,
+requiring quotes no more than five minutes old and displayed size on both sides.
+Charge $0.65 per contract per side. All 45 trades have usable quotes at both ends.
+
+                                      2024-25             Reused Jan-Aug 2026
+Eligible event trades                 30                  15
+Mean option-overlay net               +0.5706%            +0.6394%
+Win rate                              66.67%              66.67%
+Unannualized per-trade mean/SD         0.2961              0.3156
+
+Returns are per dollar of entry parity-stock reference notional, excluding the
+underlying shares' profit or loss. These are simulated displayed-quote fills,
+not observed executions or returns on margin. Assignment, dividends, funding,
+latency and market impact remain unmodeled.
+
+Across the original 20 quiet-peer draws, diagnostic event-minus-peer short-call
+gaps remain positive in every seed. But actually BUYING those peer calls incurs
+another spread: the short-event/long-peer basket averages +0.6006% and +0.3266%
+per event-stock reference notional; only 16/20 2026 seeds are positive. Divide
+by two for combined gross stock-reference notional. Those original peer draws
+use future disclosures in the quiet filter, so they are retrospective comparisons,
+not a prospectively selectable trading portfolio.
+
+2. A FIXED BROADER TEST WITH PROSPECTIVELY SELECTABLE SECTOR CONTROLS
+
+Before fetching returns, PROSPECTIVE_SPEC.txt froze a separate test. It includes
+all 59 kept events, retains the original contract selection, and replaces daily
+trade-mark availability with fresh option quotes. It samples up to three sector
+peers using seed 1729 and only filings known by the event filing date. Future
+filings cannot change peer eligibility. Peers missing at entry are not admitted;
+an admitted peer missing at exit leaves the basket unpriced rather than disappearing.
+
+                                      2024-25             Reused Jan-Aug 2026
+Kept events                           40                  19
+Fresh-quote eligible events           39                  18
+Mean option-overlay net               +0.6611%            -0.5950%
+Priced sector comparisons             37                  17
+Mean event-minus-peer short-call gap   +1.3637 pp          +0.0182 pp
+Actual short-event + long-peer net    +0.8144%            -0.7983%
+Pair / combined gross reference       +0.4072%            -0.3991%
+
+The issuer-cluster bootstrap interval for the broad 2026 overlay is -2.65% to
++1.11%; the sector-gap interval is -2.22 to +1.99 percentage points. Month-block
+and filing-date intervals are also saved. These descriptive intervals are not
+adjusted for the thousands of strategy variants previously searched. There are
+only 13 issuer clusters for the broader 2026 comparison, so uncertainty is high.
+
+WHAT CHANGED THE 2026 SIGN?
+
+Three events previously failed the original pre-event ATM daily-mark requirement
+but had fresh quotes:
+  CHTR 2026-01-06: +2.1753%
+  ABBV 2026-06-22: -5.5864%
+  CHTR 2026-07-23: -17.0333%
+
+The large losses survive independent checks of quote timestamps, bid/ask sides,
+fees, parity denominators and contract metadata before entry and at exit. No
+adjusted-deliverable anomaly is apparent. The three events' contracts remain
+standard 100-share contracts in the supplied metadata.
+
+Crucial distinction: the original pre-event mark rule is observable BEFORE entry.
+Adding these events changes the strategy's eligibility. Their losses do not prove
+lookahead in that rule and do not invalidate the successful frozen replication.
+They do show that removing the eligibility rule is not an innocuous extension.
+
+On exactly the original eligible cohort, fresh parity denominators give +0.5725%
+and +0.6489%, close to the strict-execution results above. This post-result
+decomposition diagnoses cohort changes; it is not a newly selected strategy.
+For that original cohort with the newly fixed same-sector controls, the 2026
+comparison has 14 priced baskets, an average gap of +1.0403 pp and an issuer-
+cluster interval of -0.5533 to +2.5923 pp. The actual pair averages +0.2636% per
+event reference notional, with an interval of -1.3364% to +1.8116%. It is not
+strong enough to label a verified tradable relative-value edge.
+
+3. NEW HYPOTHESIS: AN 8-K HURTS A NAMED ECONOMIC COUNTERPARTY
+
+The separate frozen screen looked for operational disruption or actual purchase
+cancellation disclosed by any issuer that harms a named company in the tradable
+universe. It screened 2,052 vendor disclosure rows from 1,945 unique 2024-25
+filings across five categories and audited 183 third-party name matches.
+Zero qualifying events were source-validated; no prices were fetched and the
+minimum event rule was not weakened. The nearest cases were a terminated Dell/
+VMware distribution framework without the required evidence of cancelled committed
+purchases, and Krispy Kreme/McDonald's where the actual exhibit describes the
+business as non-material to McDonald's. Most other matches were financing or
+administrative relationships. The limited excerpt/alias screen is not proof that
+no such events exist in the full filing universe.
+
+4. WHAT THIS SUPPORTS
+
+The narrow acquisition rule is a research candidate with reproducible positive
+overlay P&L under fresh quoted costs. We have not established new independent
+alpha. The broader event cohort and an executable peer hedge are fragile, and
+the new counterparty hypothesis has insufficient validated observations.
+The 2026 window has already been used; this work creates no new holdout evidence.
+There was no reversal of losing rules, best-seed selection or parameter sweep.
+Original frozen replication files remain unchanged.
+
+FILES AND REPRODUCTION
+
+  execution/REPORT.txt: original-cohort quote stress test, all 20 seed comparisons.
+  prospective_trades.csv: every event and sector-control result (decimal returns).
+  prospective_draws.json: pre-price eligible sets and fixed peer selections.
+  prospective_prices.json: selected contracts, fresh quotes, outcomes and failures.
+  prospective_summary.json: full-precision statistics and descriptive intervals.
+  assessment.json: independently reconciled data and post-result cohort diagnosis.
+  counterparty/REPORT.txt: new hypothesis, source evidence and all exclusions.
+
+23 unit tests passed (12 execution, 11 prospective). Independent saved-data audits
+passed the strict 2,322 valid observations and the prospective 219 valid observations.
+Raw licensed data is cached only in ignored subdirectories. API keys are not stored
+in code, reports or URLs.
+
+From the repository root:
+  massive/.venv/bin/python -m massive.replication_codex.alpha_search.prospective
+  massive/.venv/bin/python -m massive.replication_codex.alpha_search.assess
+  massive/.venv/bin/python -m unittest massive.replication_codex.alpha_search.test_prospective massive.replication_codex.alpha_search.execution.test_strict
+
+Documentation used to verify historical quote fields and timestamps:
+https://massive.com/docs/rest/options/quotes
+
+Counterparty research and primary filing sources are linked in counterparty/REPORT.txt.

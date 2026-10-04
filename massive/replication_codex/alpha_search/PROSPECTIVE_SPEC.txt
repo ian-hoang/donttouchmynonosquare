@@ -1,0 +1,66 @@
+FIXED DEVELOPMENT EXPERIMENT: ACQUISITION CALL OVERLAY, SECTOR CONTROLS
+
+Written before fetching this experiment's controls or computing their returns.
+This is research on reused 2024-August 2026 dates, not a new holdout test.
+We know the existing acquisition short-call signal before defining this test.
+No parameter grid or best-seed selection is permitted.
+
+Purpose: determine whether the existing lead survives quote execution and
+comparison with sector peers that could have been selected at the time.
+
+Event cohort: all 59 acquisition/merger company-days retained by the original
+continuous >60-calendar-day cooldown, including the 14 previously dropped.
+No new event exclusions based on exit price availability or old net return.
+Use the literal 99-name universe from the replication spec.
+
+Contract rule: preserve the frozen t_pre chain, initial spot estimator, 90-180
+day expiry closest to 120 days, and first call strike >=105% of t_pre spot.
+Entry is the session after the filing session; exit is ten sessions later.
+Only selection metadata may be reused from saved replication observations.
+Pre-event ATM and later stock daily-bar availability are not requirements here.
+
+Fresh quotes: latest quote no later than five minutes before the actual session
+close (15:55 New York, or 12:55 on early closes). Require quote age <=300 seconds,
+finite bid/ask, 0<=bid<=ask, ask>0 and both displayed sizes >=1. Do not search
+back after the most recent quote fails. No daily trade marks used for P&L.
+Entry stock proxy: target-expiry ATM put-call parity using fresh entry quote
+midpoints, r=.04, no dividend adjustment. Require positive stock proxy and
+all entry quotes within 300 seconds of one another. This remains a proxy,
+not observed stock execution or exact American-option parity.
+
+Select controls before pricing: same broad economic sector as the event name,
+excluding that issuer and any peer with any-tag disclosure dated within the
+prior five calendar days plus the event filing date (day-5 through day). Future filings
+are NEVER used to determine quiet eligibility. Draw up to three peers using
+Python random.Random(1729) from sorted eligible names. Walk events in ascending
+(filing_date,ticker) order; each event gets its own draw. No replacements.
+The static sector mapping is fixed in prospective.py before fetching controls.
+
+Use only sampled peers that have valid entry quotes, a decision observable at
+entry. Once admitted at entry, a peer with missing exit remains an unresolved
+basket leg: the basket is unpriced rather than silently dropping that loser.
+Event exit failure is also recorded explicitly. Full eligibility and attrition
+counts are reported; no win-conditional filtering is allowed.
+
+Fees: $0.65 per option contract per side, or $0.013 per share round trip.
+Short call net = (entry bid - exit ask - .013) / entry stock proxy.
+Long call net = (exit bid - entry ask - .013) / entry stock proxy.
+
+Primary strategy remains the covered-call overlay on already-held shares.
+Primary research comparison: event short-call net minus equal-weight mean
+short-call net of its same-sector controls. This is a comparison of strategies,
+not P&L of a tradable long/short portfolio.
+Secondary trade-expression diagnostic: event short-call net plus equal-weight
+long-call net of those controls. Report per dollar of event stock reference
+notional AND divided by two for the sum of event and peer reference notionals.
+This is a different options position, not one of the challenge's five standard
+strategies, not delta/vega neutral, not a capital or margin return, and not a
+riskless hedge. Fractional peer sizing is a notional diagnostic.
+
+Report every event and selected peer; mean, median, SD, win rate, unannualized
+per-trade mean/SD; simple date-cluster and month-block bootstrap intervals;
+leave-one-issuer-out ranges. Intervals are descriptive after the existing
+large strategy search and do not correct its multiple testing.
+
+Keep code/output only in this alpha_search directory. Keep newly cached raw
+responses in its ignored cache. Never edit the original frozen result files.

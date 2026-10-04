@@ -1,0 +1,67 @@
+FROZEN FEASIBILITY SCREEN: NEGATIVE NAMED-COUNTERPARTY READTHROUGH
+Frozen 2026-10-03, before this screen fetches candidate filings and before any returns.
+
+Economic hypothesis
+An issuer's public operational disclosure can contain adverse information about another
+company that investors following only the latter company's own news overlook. The
+direction is negative for a named supplier losing committed orders, or a named customer
+explicitly suffering interruption of contracted supply. This is a directional, long-put
+hypothesis, not a generic short-volatility return claim.
+
+Source supporting the mechanism, not this exact strategy:
+Cohen and Frazzini (2008), Economic Links and Predictable Returns, Journal of Finance.
+https://pages.stern.nyu.edu/~afrazzin/pdf/Economic%20Links%20and%20Predictable%20Returns%20-%20Cohen%20and%20Frazzini.pdf
+The paper studies delayed incorporation of news across publicly known customer-supplier
+links. Its historical stock results do not validate current large-cap option profits.
+
+Data / universe
+Signal issuers: all issuers covered by Massive's 8-K disclosure endpoint.
+Dates: filing_date 2024-01-01 through 2025-12-31 only. No 2026 outcomes.
+Tradable counterparties: the literal 99-ticker universe in replication_codex/events.py.
+Candidate categories fixed now: deal_termination, deal_breach_default,
+cybersecurity_incident, natural_disaster_impact, facility_closure.
+These categories are confirmed against massive/research/taxonomy.csv before fetching.
+
+Eligibility, all required
+1. The disclosing issuer and affected counterparty are distinct economic companies.
+2. The contemporaneous disclosure names the affected counterparty unambiguously.
+3. One of exactly two negative actions is explicitly documented:
+   (a) the disclosing customer terminates or suspends committed purchases from the
+       named large-cap supplier; or
+   (b) the disclosing supplier cannot perform contracted delivery, and the document
+       explicitly identifies an adverse supply/operational consequence for its named
+       large-cap customer.
+4. There is a real commercial supply/customer link; co-mentions, financing, law firms,
+   generic market commentary, litigation between firms, and M&A counterparties do not
+   qualify. Merger, acquisition, spin-off and financing agreement terminations excluded.
+5. Role and adverse action must be supported by the actual filing/exhibit, not an AI
+   category alone. Preserve the filing accession, original URL, filing date, quoted
+   evidence, affected ticker, role, and exclusion reason for rejected candidates.
+6. No hypothetical future risk, contemplated renegotiation, mere expiration, or voluntary
+   alternate sourcing qualifies. Repeated updates of the same incident are one event;
+   keep the first documented qualifying filing per counterparty/incident, with a
+   60-calendar-day receiver-level cooldown applied before pricing.
+
+Feasibility decision
+At least 10 source-validated events are required to advance to exploratory option pricing.
+Below 10, record the specific coverage/sparsity limitation; do not relax this rule.
+No option or underlying return is fetched or inspected by this screen.
+
+Frozen prospective trade, only if feasible
+Buy the nearest-ATM put with expiry 90-180 calendar days away, nearest 120 days,
+at the close of the first trading session strictly after the qualifying filing date.
+Exit after 10 trading sessions. Use contemporaneous executable ask at entry and bid
+at exit plus $0.65 per contract per side; maximum quote age 300 seconds and positive
+bid/ask sizes. No stale daily trade-close substitution. Choose the contract only with
+information available at entry. Report a matched same-day, same-sector and pre-event
+volatility comparison; benchmark absence is an explicit limitation, not zero return.
+Both absolute net put P&L and incremental performance must be reported. Contract
+selection/spot availability and earnings overlap need a separate frozen implementation
+before pricing. This feasibility screen makes no alpha claim.
+
+Hazards
+An 8-K may repeat earlier public news; source timing must be recorded. AI tagging
+availability is retrospective. Static-universe survival, missing smaller suppliers,
+uncertain materiality to a large counterparty, and selection on named relationships
+limit generalization. The direction cannot be inferred from a name alone. Existing
+2026 strategy research has already contaminated that year as a general holdout.

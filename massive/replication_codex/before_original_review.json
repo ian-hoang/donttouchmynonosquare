@@ -1,0 +1,12 @@
+{
+  "own_numbers_completed_before_original_review": true,
+  "recorded_at_utc": "2026-10-03T06:40:39.302347+00:00",
+  "sha256": {
+    "independent_summary.json": "889d3be329623fa0e4bcb92e536c77b665792706f59143a2a0a94acbe8800a66",
+    "trades.csv": "e8aa5d5563c17e022e641942e8cfbcc5c2edf55ff8acbdeb66c33a1a4abfb045",
+    "trade_diagnostics.csv": "2ddf93d6d60302fb537ef5da608f64c06c5f24efa4b078bcd6c90a97f0d1e7df",
+    "peer_gaps_20_seeds.csv": "ecc80c4522de54ea675c913737b822284112f5fad58a4d1d31c9c79f8e5146f9",
+    "INDEPENDENT_REPORT.txt": "29bcdeca4e6a8aea007362b9e4952b6ddef9cb2e327736419345bcfd2ab59d53",
+    "independent_completion.json": "0a7fde5faa7e019277147974a5898970a27bfdd98a67de88fa30feeb940097e2"
+  }
+}

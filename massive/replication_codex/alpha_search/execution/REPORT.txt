@@ -1,0 +1,63 @@
+STRICT QUOTE EXECUTION TEST OF THE REPLICATED ACQUISITION SIGNAL
+
+The selected-event short-call overlay remains positive with fresh bid/ask execution.
+All 45 original valid event trades passed the new entry and exit quote requirements.
+2024-25: mean +0.570643%, median +0.906011%, 66.67% wins, SD 1.927246%,
+         unannualized per-trade mean/SD 0.296092 (30 trades).
+2026 reused: mean +0.639390%, median +0.796956%, 66.67% wins, SD 2.025709%,
+             unannualized per-trade mean/SD 0.315638 (15 trades).
+
+EXECUTION
+Preserved the originally selected contracts, dates and entry parity denominators.
+Used latest SIP quote at/before 15:55 New York (12:55 on early closes), age <=300 s,
+finite uncrossed bid/ask and at least one contract displayed on both sides.
+Short sells entry bid and buys exit ask, less $0.65 per contract per side.
+Long buys entry ask and sells exit bid, less the same commissions.
+The invalid latest quote is rejected without looking backward for another quote.
+
+COMPARISONS USING THE ORIGINAL 20 RANDOM PEER DRAWS
+2,277 of the 2,300 originally valid peer observations passed strict quotes.
+23 peers failed freshness or displayed-size rules; there were no API errors.
+Every event has at least one priced peer in every seed: 900 event-seed comparisons.
+
+Event short minus average peer short is a comparison, not executable portfolio P&L:
+2024-25: mean +1.079216 percentage points; seed range +0.632722 to +1.477585;
+         positive in 20 of 20 seeds.
+2026 reused: mean +1.174540 pp; range +0.364758 to +1.770053;
+             positive in 20 of 20 seeds.
+
+Actual short-event plus equal-reference-notional long-peer calls, crossing both spreads:
+2024-25: mean +0.600634%; seed range +0.180111% to +1.013622%; 20/20 positive.
+2026 reused: mean +0.326559%; range -0.457905% to +0.949751%; 16/20 positive.
+These figures use one event-stock reference notional as denominator. The position also
+has one equal peer-stock reference notional; divide by TWO for combined gross reference
+notional returns: +0.300317% and +0.163280% averages respectively. Neither denominator is
+capital, margin or a risk-matched option exposure. Seed ranges are NOT confidence intervals.
+
+LIMITS
+This tests execution on the old valid-trade cohort, excluding the original 14 event
+pricing failures. The original peer filter used future filings within five days, and
+strict-invalid peer exits are removed here. These comparisons are retrospective diagnostics.
+They must not be marketed as a prospectively executable peer-selection strategy.
+The root prospective experiment separately addresses peer selection and attrition.
+Static universe, retrospective tags, original parity denominators, no delta/vega matching,
+no assignment/dividends/funding or market-impact model remain. All 2026 data are reused.
+Positive means do not establish independent statistically validated alpha.
+
+VERIFICATION
+12 unit tests passed: cutoff timezones, early closes, exact freshness boundaries,
+invalid quotes, costs/signs and rejection behavior. Saved-data reconciliation passed
+2,322 valid trades, 4,667 accepted quotes and all 900 event-seed comparisons.
+The original frozen sources are unchanged. SPEC.json predates calls. A separately
+recorded report-only amendment removed meaningless Sharpe labels on seed-mean summaries;
+no quote, trade, draw, price or fee changed.
+
+FILES
+SPEC.json, event_results.json, event_summary.json, event_trades.csv,
+peer_results.json, peer_summary.json, peer_pairs.json, comparison_summary.json,
+verification.json, reporting_amendment.json. New raw API cache is ignored.
+
+REPRODUCE FROM REPOSITORY ROOT
+massive/.venv/bin/python -m massive.replication_codex.alpha_search.execution.strict --stage all --workers 16
+massive/.venv/bin/python -m massive.replication_codex.alpha_search.execution.verify
+massive/.venv/bin/python -m unittest massive.replication_codex.alpha_search.execution.test_strict

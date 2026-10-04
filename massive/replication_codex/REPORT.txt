@@ -1,0 +1,206 @@
+REPLICATION REPORT: CALL OVERLAY AFTER A DEAL-SIGNING 8-K
+
+The frozen calculation replicates. No material event-trade discrepancies were found.
+
+In-sample: all 40 keep/drop decisions match. All 30 valid trades match the saved
+contracts, expiry, strikes, entry/exit dates, entry/exit parity spots, quotes and
+costs. Maximum absolute net-return difference is 6.94e-18 (floating-point rounding).
+2026: all 19 keep/drop decisions and all 15 published individual returns match.
+The exact mean differs by 8.67e-19. Original individual 2026 returns were saved
+only to 0.01 percentage-point precision; full original contract/price diagnostics
+were not saved, so those details cannot be compared without rerunning old code.
+Initial short-expiry spot estimates were also absent from the original cache.
+
+One input discrepancy: the specification labels its universe as 100 tickers but
+lists 99. We used the literal 99 throughout. Post-result inspection confirmed that
+UNH is the only additional ticker in the original 100-name universe. The event
+counts still match. Peer gaps differ from the original individual draws because
+our peer pool excludes UNH and our fixed randomization convention need not
+reproduce the original draws. No rule was adjusted to force a match.
+
+RESULTS
+All returns are the option overlay net of the specified spread model, divided
+by entry parity stock price. They exclude profit or loss on shares already held.
+Peer gaps are percentage-point differences, not relative percentage gains.
+Windows are classified by filing date; 2026 covers January through August.
+
+Metric                                      2024-25         2026 Jan-Aug
+Events before / after cooldown              53 / 40         25 / 19
+Companies after cooldown                    25              14
+Valid trades                                30              15
+Mean net                                    0.6400%         0.7526%
+Median net                                  0.9072%         0.6634%
+Win rate                                    66.6667%        66.6667%
+Sample standard deviation                   1.9137%         2.1565%
+Per-trade Sharpe (not annualized)           0.3344          0.3490
+Mean peer gap across 20 seeds               1.1298 pp       1.3114 pp
+Minimum seed mean peer gap                  0.7637 pp       0.5730 pp
+Maximum seed mean peer gap                  1.5273 pp       1.9555 pp
+
+The mean peer gap is positive in every seed in both windows. All 45 valid events
+have at least one valid sampled peer in every seed. The ranges summarize random
+peer-selection sensitivity, not confidence intervals or 20 independent datasets.
+
+METHOD AND LIMITS
+Implementation and review followed the supplied frozen specification. The
+coordinator had prior project context; pricing and audit agents started with the
+specification and without that context. Own event and all 20-seed results were
+finished and hash-recorded before comparison against the existing source and
+outputs. The existing trading harness was never imported or executed.
+
+No parameter tuning was performed. This repeats the already-tested 2026 rule;
+it does not create another independent holdout test. Calendar completion cutoff
+was fixed at 2026-10-02. All replication code and outputs are in this folder.
+Raw API responses are only in cache/raw/, covered by this folder's .gitignore.
+
+Conventions fixed before pricing: sample standard deviation (ddof=1), seeds
+0 through 19 using Python random.Random, sorted eligible tickers and filing
+dates, and a shared basket for same-date events. Each draw samples six tickers
+before pricing. Invalid peers are excluded from that basket's average without
+replacement. Cooldown and random draws walk continuously from 2024 into 2026.
+Details and deterministic tie-breaking are recorded in conventions.json.
+
+The specification permits daily marks up to three sessions old and same-day
+entry quotes without a stricter intraday freshness requirement. Costs charge
+twice the entry half-spread; there is no observed exit spread or commission.
+Thus these are modeled marks and costs, not verified executable fills.
+The required exit parity spot filter is retained even though it does not enter
+overlay P&L. The peer rule uses the full +/-5 calendar-day disclosure window;
+this includes future disclosures and is a retrospective comparison, not a
+peer portfolio that could be selected with only information available at entry.
+The positive peer gap alone does not establish causation or control for sector,
+delta, volatility and other differences between event companies and peers.
+With 30 and 15 event trades, replication establishes reproducibility of this
+calculation; it does not by itself establish reliable executable alpha.
+
+VALIDATION AND REPRODUCTION
+39 focused unit tests passed. Saved-data timing and arithmetic checks passed for
+2,345 valid observations (45 event trades and 2,300 distinct peer trades).
+All pre-comparison result hashes remain unchanged.
+
+Run from the repository root:
+  massive/.venv/bin/python -m massive.replication_codex.run --stage all --workers 16
+  massive/.venv/bin/python -m massive.replication_codex.verify
+  massive/.venv/bin/python -m unittest massive.replication_codex.test_pricing massive.replication_codex.test_spec
+
+OUTPUT GUIDE
+  trades.csv: all 45 requested per-trade rows; net is a decimal return.
+  trade_diagnostics.csv: all 59 kept events, pricing fields and drop reasons.
+  peer_gaps_20_seeds.csv: 900 event-by-seed comparisons.
+  independent_summary.json: full-precision results and seed coverage.
+  reference_comparison.json: per-event comparison with saved original outputs.
+  before_original_review.json: timestamp and hashes of frozen own results.
+  INDEPENDENT_REPORT.txt: original report produced before reference inspection.
+  verification.json: saved-data audit results.
+
+FULL PER-TRADE AND PER-SEED TABLES
+
+2024-25
+  Events: 53 before -> 40 after continuous >60day cooldown (25 companies)
+  Valid trades: 30
+  Mean net: +0.6400%; median net: +0.9072%
+  Win rate: 66.67%; std: +1.9137%; per-trade Sharpe: 0.3344
+  Peer gap: +1.1298% mean over20seeds; range [+0.7637%, +1.5273%]
+  Drop reasons: {"missing_entry_stock_price": 3, "missing_exit_stock_price": 4, "missing_initial_parity_marks": 1, "missing_pre_atm_parity_mark": 2}
+  seed | mean gap | paired events | average valid peers of6
+     0 | +1.0724% | 30 | 5.37
+     1 | +1.0892% | 30 | 5.37
+     2 | +0.8149% | 30 | 5.33
+     3 | +1.1070% | 30 | 5.43
+     4 | +1.2966% | 30 | 5.23
+     5 | +0.9141% | 30 | 5.43
+     6 | +1.3582% | 30 | 5.23
+     7 | +1.0735% | 30 | 5.40
+     8 | +1.4290% | 30 | 5.40
+     9 | +0.7637% | 30 | 5.37
+    10 | +1.1823% | 30 | 5.57
+    11 | +1.2158% | 30 | 5.43
+    12 | +1.0801% | 30 | 5.67
+    13 | +1.1312% | 30 | 5.27
+    14 | +1.5273% | 30 | 5.33
+    15 | +1.1087% | 30 | 5.33
+    16 | +0.9480% | 30 | 5.03
+    17 | +1.2361% | 30 | 5.43
+    18 | +1.0912% | 30 | 5.30
+    19 | +1.1576% | 30 | 5.33
+
+  PER-TRADE TABLE
+  ticker | filing | entry | exit | strike | expiry | net
+  COF | 2024-02-20 | 2024-02-21 | 2024-03-06 | 145 | 2024-06-21 | +0.8816%
+  UBER | 2024-05-14 | 2024-05-15 | 2024-05-30 | 70 | 2024-09-20 | +2.1555%
+  COP | 2024-05-29 | 2024-05-30 | 2024-06-13 | 125 | 2024-09-20 | +0.6629%
+  INTC | 2024-06-14 | 2024-06-17 | 2024-07-02 | 33 | 2024-10-18 | -0.0324%
+  BA | 2024-07-01 | 2024-07-02 | 2024-07-17 | 195 | 2024-10-18 | -0.0161%
+  CVX | 2024-07-31 | 2024-08-01 | 2024-08-15 | 170 | 2024-12-20 | +0.9053%
+  AMD | 2024-08-19 | 2024-08-20 | 2024-09-04 | 160 | 2024-12-20 | +5.2296%
+  VZ | 2024-09-05 | 2024-09-06 | 2024-09-20 | 44 | 2024-12-20 | -2.8373%
+  CVX | 2024-09-30 | 2024-10-01 | 2024-10-15 | 155 | 2025-01-17 | +0.9091%
+  ISRG | 2025-01-23 | 2025-01-24 | 2025-02-07 | 660 | 2025-06-20 | +0.0172%
+  COF | 2025-01-24 | 2025-01-27 | 2025-02-10 | 220 | 2025-06-20 | +0.7162%
+  TMO | 2025-02-25 | 2025-02-26 | 2025-03-12 | 570 | 2025-06-20 | +0.9813%
+  CHTR | 2025-02-27 | 2025-02-28 | 2025-03-14 | 380 | 2025-06-20 | +1.2661%
+  NOW | 2025-03-10 | 2025-03-11 | 2025-03-25 | 900 | 2025-06-20 | -1.3459%
+  CVX | 2025-03-17 | 2025-03-18 | 2025-04-01 | 165 | 2025-06-20 | -2.3892%
+  GOOGL | 2025-03-18 | 2025-03-19 | 2025-04-02 | 175 | 2025-07-18 | +1.8542%
+  INTC | 2025-04-14 | 2025-04-15 | 2025-04-30 | 21 | 2025-08-15 | +1.0556%
+  UBER | 2025-05-06 | 2025-05-07 | 2025-05-21 | 90 | 2025-09-19 | -3.2691%
+  CHTR | 2025-05-16 | 2025-05-19 | 2025-06-03 | 440 | 2025-09-19 | +4.3214%
+  AMD | 2025-05-19 | 2025-05-20 | 2025-06-04 | 125 | 2025-09-19 | -1.5856%
+  T | 2025-05-21 | 2025-05-22 | 2025-06-06 | 30 | 2025-09-19 | -0.4432%
+  CRM | 2025-05-27 | 2025-05-28 | 2025-06-11 | 290 | 2025-09-19 | +2.0902%
+  QCOM | 2025-06-09 | 2025-06-10 | 2025-06-25 | 160 | 2025-10-17 | +1.9793%
+  TMUS | 2025-07-02 | 2025-07-03 | 2025-07-18 | 260 | 2025-11-21 | +1.9788%
+  INTC | 2025-08-14 | 2025-08-15 | 2025-08-29 | 24 | 2025-12-19 | +1.4611%
+  LOW | 2025-08-20 | 2025-08-21 | 2025-09-05 | 270 | 2026-01-16 | -2.0061%
+  SCHW | 2025-11-06 | 2025-11-07 | 2025-11-21 | 100 | 2026-03-20 | +1.9801%
+  UNP | 2025-11-06 | 2025-11-07 | 2025-11-21 | 230 | 2026-02-20 | -0.6682%
+  ABT | 2025-11-20 | 2025-11-21 | 2025-12-08 | 135 | 2026-03-20 | +1.7822%
+  NFLX | 2025-12-05 | 2025-12-08 | 2025-12-22 | 109 | 2026-03-20 | +1.5660%
+
+2026
+  Events: 25 before -> 19 after continuous >60day cooldown (14 companies)
+  Valid trades: 15
+  Mean net: +0.7526%; median net: +0.6634%
+  Win rate: 66.67%; std: +2.1565%; per-trade Sharpe: 0.3490
+  Peer gap: +1.3114% mean over20seeds; range [+0.5730%, +1.9555%]
+  Drop reasons: {"missing_pre_atm_parity_mark": 3, "no_pair_within_25_percent_of_spot": 1}
+  seed | mean gap | paired events | average valid peers of6
+     0 | +1.7476% | 15 | 4.80
+     1 | +1.2817% | 15 | 5.20
+     2 | +0.5730% | 15 | 5.13
+     3 | +1.4050% | 15 | 5.40
+     4 | +1.9555% | 15 | 4.67
+     5 | +1.4270% | 15 | 4.73
+     6 | +1.6125% | 15 | 5.07
+     7 | +1.7827% | 15 | 5.00
+     8 | +1.6189% | 15 | 5.20
+     9 | +1.8369% | 15 | 5.33
+    10 | +1.5784% | 15 | 5.13
+    11 | +0.9806% | 15 | 4.93
+    12 | +1.0888% | 15 | 5.07
+    13 | +1.5794% | 15 | 4.87
+    14 | +0.8362% | 15 | 4.87
+    15 | +0.8609% | 15 | 5.00
+    16 | +1.6297% | 15 | 4.93
+    17 | +0.6378% | 15 | 5.20
+    18 | +1.0832% | 15 | 4.60
+    19 | +0.7127% | 15 | 5.00
+
+  PER-TRADE TABLE
+  ticker | filing | entry | exit | strike | expiry | net
+  USB | 2026-01-13 | 2026-01-14 | 2026-01-29 | 57.5 | 2026-06-18 | -2.2233%
+  COF | 2026-01-22 | 2026-01-23 | 2026-02-06 | 250 | 2026-06-18 | -0.4478%
+  TXN | 2026-02-04 | 2026-02-05 | 2026-02-20 | 240 | 2026-06-18 | +1.7768%
+  UBER | 2026-02-09 | 2026-02-10 | 2026-02-25 | 80 | 2026-06-18 | +0.5838%
+  DHR | 2026-02-17 | 2026-02-18 | 2026-03-04 | 230 | 2026-06-18 | +0.4572%
+  GILD | 2026-02-23 | 2026-02-24 | 2026-03-10 | 160 | 2026-06-18 | -0.0615%
+  NFLX | 2026-02-27 | 2026-03-02 | 2026-03-16 | 89 | 2026-06-18 | +1.9266%
+  ABT | 2026-03-09 | 2026-03-10 | 2026-03-24 | 115 | 2026-06-18 | +2.1976%
+  AMZN | 2026-04-14 | 2026-04-15 | 2026-04-29 | 255 | 2026-08-21 | -3.0965%
+  GILD | 2026-04-28 | 2026-04-29 | 2026-05-13 | 135 | 2026-08-21 | -1.6792%
+  DHR | 2026-04-29 | 2026-04-30 | 2026-05-14 | 190 | 2026-09-18 | +2.7938%
+  NEE | 2026-05-18 | 2026-05-19 | 2026-06-03 | 100 | 2026-09-18 | +0.9397%
+  QCOM | 2026-06-24 | 2026-06-25 | 2026-07-10 | 220 | 2026-10-16 | +5.5811%
+  UBER | 2026-07-16 | 2026-07-17 | 2026-07-31 | 77.5 | 2026-11-20 | +1.8775%
+  NEE | 2026-08-11 | 2026-08-12 | 2026-08-26 | 90 | 2026-12-18 | +0.6634%
+

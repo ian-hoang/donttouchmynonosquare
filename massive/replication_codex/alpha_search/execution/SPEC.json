@@ -1,0 +1,35 @@
+{
+  "frozen_at_utc": "2026-10-03T07:17:33.773390+00:00",
+  "description": "Execution diagnostic of unchanged 45 valid event trades and 2300 valid peer trades.",
+  "contracts": "Preserve selected contract, dates, expiry, strike and original parity denominator. No tuning.",
+  "execution": "Latest SIP quote at or before five minutes before actual session close; age 0..300 seconds; finite 0<=bid<=ask and ask>0, bid_size and ask_size >=1; reject invalid latest without searchback.",
+  "early_closes": [
+    "2024-07-03",
+    "2024-11-29",
+    "2024-12-24",
+    "2025-07-03",
+    "2025-11-28",
+    "2025-12-24",
+    "2026-11-27",
+    "2026-12-24"
+  ],
+  "commission_per_option_share_round_trip": 0.013,
+  "short_formula": "(entry bid - exit ask - 0.013) / frozen entry parity spot",
+  "long_formula": "(exit bid - entry ask - 0.013) / frozen entry parity spot",
+  "primary_diagnostic": "event short minus average valid quiet-peer short, preserve 20 frozen draw memberships; drop missing peers without replacement; pair only if >=1 valid peer.",
+  "economic_candidate": "event short plus average valid peer long, both bid/ask crossings. Raw net per one event-stock notional plus one peer-stock notional; divide by 2 for total gross notional.",
+  "caveats": [
+    "2026 already seen; no independent holdout claim.",
+    "Peer quiet filter used future filings within five days and is retrospective.",
+    "Underlying notionals do not beta/delta/vega-match options; denominators retain stale parity assumptions.",
+    "Latest quote and displayed size are a small-size crossing simulation, not guaranteed execution.",
+    "No margin funding, dividends, assignment, early exercise or market impact model.",
+    "Conditioned on original valid-event/peer cohort; no recovery of original rejected trades."
+  ],
+  "source_hashes": {
+    "event_results.json": "28e534a50c77187277fcd6ace6763ba680bb2f236845cbc7af9c115f4868c452",
+    "peer_results.json": "a3147988b2fef29f5660e41a49621e8d0c201914aad70084c8c472f0b7efb3aa",
+    "peer_draws.json": "c2ae5762de1613f2f9626973c9d9e80b1706c7de17c2f3fb682822fdc86744ea"
+  },
+  "code_sha256": "b08b309b67d4230695f68b2ad43caddb2a579a3b8d040824478269ac67d57155"
+}

@@ -1,0 +1,31 @@
+{
+  "decision": "DO_NOT_PRICE_INSUFFICIENT_SOURCE_VALIDATED_EVENTS",
+  "validated_events": 0,
+  "minimum_to_price": 10,
+  "unresolved_closest_candidate": "DELL -> AVGO, 2024-01-30; no explicit committed-purchase cancellation",
+  "total_disclosure_rows": 2052,
+  "unique_accessions": 1945,
+  "potential_third_party_alias_rows": 183,
+  "exclusion_counts": {
+    "wrong_direction": 9,
+    "alias_false_positive": 3,
+    "wrong_action": 2,
+    "financing_or_equity": 135,
+    "nonrenewal_or_alternate_sourcing": 3,
+    "unvalidated_committed_purchase_cancellation": 1,
+    "custody_administration_replacement": 21,
+    "wrong_counterparty": 2,
+    "governance": 1,
+    "option_expiration": 1,
+    "real_estate": 1,
+    "issuer_name_not_counterparty": 1,
+    "no_adverse_receiver_consequence": 1,
+    "liability_settlement": 2
+  },
+  "actual_filings_reviewed": 2,
+  "actual_exhibits_reviewed": 1,
+  "no_returns_fetched": true,
+  "coverage_limitation": "Alias screen searches vendor supporting excerpts, not every complete filing/exhibit. Parent/subsidiary aliases are incomplete. Thus zero validated events is not proof that the entire market contains zero eligible events.",
+  "raw_cache": "cache/raw (ignored)",
+  "spec_sha256": "1ce813c61b0662ce706007832c71d62dffa925aea8539b880b65b64267b16afa"
+}
