@@ -1,0 +1,24 @@
+[
+  {
+    "event_id": "buried:MSFT:2024-12-11",
+    "signal": "buried",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.18116733736003926,
+      "1m_pre_P_L0.05_iv": 0.1986414595122073,
+      "1m_decision_P_K_iv": 0.17835912052160247,
+      "1m_decision_P_L0.05_iv": 0.20874053418421612,
+      "3-6m_pre_P_K_iv": 0.22855228255687865,
+      "3-6m_pre_P_L0.05_iv": 0.23338866268029929,
+      "3-6m_decision_P_K_iv": 0.22989456109381928,
+      "3-6m_decision_P_L0.05_iv": 0.23740373487959082,
+      "1m_change": -0.0028082168384367945,
+      "3-6m_change": 0.0013422785369406331,
+      "downside_skew": 0.007509173785771539
+    },
+    "pricing_drops": [],
+    "observations": 8,
+    "primary_usable": true
+  }
+]

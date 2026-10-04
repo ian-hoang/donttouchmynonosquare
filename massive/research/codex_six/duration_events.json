@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "period": [
+      "2024-01-01",
+      "2025-12-31"
+    ],
+    "input_rows": 2956,
+    "input_filings": 1741,
+    "input_sha256": "2811f3fffeb007df61b9756767aeb50762c86e84de615055dd2a5966b6920cab",
+    "candidate_filings": 110,
+    "all_candidate_excerpts_screened": true,
+    "full_main_filings_reviewed": 24,
+    "issuer_release_only_reviews": 1,
+    "relevant_exhibits_reviewed": 3,
+    "routine_tag_candidates": 6,
+    "additional_lexical_routine_candidate": "C 2024-02-20",
+    "audit_status": "complete_for_defined_cached_candidate_pool",
+    "prices_or_return_outcomes_read": false,
+    "filings_from_2026_used": false,
+    "publication_rule": "Use cached filing date only; execution timing is handled separately by the engine. Report/event dates in the cover are not substituted for filing dates.",
+    "limitations": [
+      "Cached sponsor taxonomy/excerpts define the candidate screen; this is not exhaustive full-text screening of all 1,741 filings.",
+      "All 110 adverse candidate excerpts were annotated; only economically plausible routine combinations, duration cases, and selected comparison filings received full-primary-source review.",
+      "Direct SEC download returned 403 and was stopped; accessible web SEC/issuer sources support the recorded factual paraphrases. Raw full filings are not cached.",
+      "One buried trigger cannot establish an attention effect or alpha. Controls vary by issuer and event type and are descriptive, not randomized or propensity matched.",
+      "Zero duration triggers means the exact strategy is untestable in this screened sample, not disproved. No indefinite risk was relabeled as 60\u2013180 days."
+    ],
+    "spec_sha256": "ba04f31194566bceb397f4c541c6d109da7e9f3bcbe35301c74717231df3cfa6"
+  },
+  "events": [],
+  "controls": [
+    {
+      "ticker": "AMT",
+      "filing_date": "2025-09-05",
+      "accession_number": "0001053507-25-000129",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000129.txt",
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000129/amt-20250903.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "AT&T Mexico rent withholding is ongoing; August 2026 arbitration is over 180 days away and a hearing is not assured resolution.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "MSFT",
+      "filing_date": "2024-01-19",
+      "accession_number": "0001193125-24-011295",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-011295.txt",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312524011295/d708866d8k.htm",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312524011295/d708866dex991.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "Attacker access was removed; investigation continues without a stated duration and no material operational impact reported.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "NVDA",
+      "filing_date": "2025-04-15",
+      "accession_number": "0001045810-25-000082",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/0001045810-25-000082.txt",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000082/nvda-20250409.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "H20 export licensing was expressly required for the indefinite future, not 60\u2013180 days.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "PM",
+      "filing_date": "2024-06-17",
+      "accession_number": "0001413329-24-000131",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1413329/0001413329-24-000131.txt",
+        "https://philipmorrisinternational.gcs-web.com/static-files/e3973bcb-22a9-4cae-b066-0cf26ae24d47"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "ZYN.com sales suspended pending investigation; no restart or resolution date disclosed.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "QCOM",
+      "filing_date": "2024-05-09",
+      "accession_number": "0000804328-24-000042",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/804328/0000804328-24-000042.txt",
+        "https://www.sec.gov/Archives/edgar/data/804328/000080432824000042/qcom-20240509.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "Huawei export license revoked immediately; no restoration date. Prior revenue expectations are not a risk-end commitment.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "RTX",
+      "filing_date": "2025-09-24",
+      "accession_number": "0000101829-25-000036",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/101829/0000101829-25-000036.txt",
+        "https://www.sec.gov/Archives/edgar/data/101829/000010182925000036/rtx-20250919.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "MUSE ransomware disrupts airport check-in; no recovery date and RTX says no reasonably expected material company impact.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2024-02-22",
+      "accession_number": "0000731766-24-000045",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-24-000045.txt",
+        "https://www.sec.gov/Archives/edgar/data/731766/000073176624000045/unh-20240221.htm"
+      ],
+      "signal": "duration",
+      "strategy": "protective_put",
+      "reason": "Change Healthcare systems isolated; company explicitly cannot estimate incident duration or extent.",
+      "full_source_reviewed": true,
+      "control": true,
+      "risk_end_date": null,
+      "control_type": "operating_risk_failing_explicit_horizon"
+    }
+  ]
+}

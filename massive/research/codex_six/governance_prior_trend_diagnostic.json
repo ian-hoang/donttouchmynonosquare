@@ -1,0 +1,610 @@
+{
+  "method": "Descriptive 42-session prefiling trend; no regression or causal claim with sparse events. Planned as kill-test audit before governance returns were inspected.",
+  "events": [
+    {
+      "event_id": "governance:BAC:2025-04-24",
+      "event": {
+        "ticker": "BAC",
+        "date": "2025-04-24",
+        "prior_date": "2025-02-21",
+        "prior_42_session_return": -0.13049375626294324,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "MA",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.04952016545040616,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "C",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.17063284105947363,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "AIG",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": 0.0696583619731248,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "BAC",
+          "date": "2025-06-25",
+          "prior_date": "2025-04-23",
+          "prior_42_session_return": 0.20939910430530695,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "BAC",
+          "date": "2025-08-25",
+          "prior_date": "2025-06-24",
+          "prior_42_session_return": 0.06050995249470836,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "BAC",
+          "date": "2025-09-24",
+          "prior_date": "2025-07-24",
+          "prior_42_session_return": 0.07290133926124365,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "ADBE",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.20879795681863622,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "AVGO",
+          "date": "2025-04-22",
+          "prior_date": "2025-02-19",
+          "prior_42_session_return": -0.27239484897543575,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "ABT",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": -0.05046645414512074,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.05016488151225166,
+      "issuer_mean_prior_return": 0.11427013202041965,
+      "family_mean_prior_return": -0.17721975331306425
+    },
+    {
+      "event_id": "governance:GS:2025-04-24",
+      "event": {
+        "ticker": "GS",
+        "date": "2025-04-24",
+        "prior_date": "2025-02-21",
+        "prior_42_session_return": -0.15009122077448156,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "MET",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.08360029381937573,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "V",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "C",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.17063284105947363,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "GS",
+          "date": "2025-06-25",
+          "prior_date": "2025-04-23",
+          "prior_42_session_return": 0.26485016813520157,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "GS",
+          "date": "2025-07-25",
+          "prior_date": "2025-05-22",
+          "prior_42_session_return": 0.21227289437763597,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "GS",
+          "date": "2025-08-25",
+          "prior_date": "2025-06-24",
+          "prior_42_session_return": 0.12034871268311487,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "ADBE",
+          "date": "2025-04-24",
+          "prior_date": "2025-02-21",
+          "prior_42_session_return": -0.20879795681863622,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "AVGO",
+          "date": "2025-04-22",
+          "prior_date": "2025-02-19",
+          "prior_42_session_return": -0.27239484897543575,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "ABT",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": -0.05046645414512074,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.12711656743942468,
+      "issuer_mean_prior_return": 0.1991572583986508,
+      "family_mean_prior_return": -0.17721975331306425
+    },
+    {
+      "event_id": "governance:PFE:2025-04-28",
+      "event": {
+        "ticker": "PFE",
+        "date": "2025-04-28",
+        "prior_date": "2025-02-25",
+        "prior_42_session_return": -0.1484451824833517,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "ISRG",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "MDT",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": -0.065906410647246,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "JNJ",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": -0.07373760865723755,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "PFE",
+          "date": "2025-02-26",
+          "prior_date": "2024-12-20",
+          "prior_42_session_return": 0.038716332356649286,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "PFE",
+          "date": "2025-06-27",
+          "prior_date": "2025-04-25",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "PFE",
+          "date": "2025-01-27",
+          "prior_date": "2024-11-20",
+          "prior_42_session_return": 0.03798981137902224,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "ABT",
+          "date": "2025-04-28",
+          "prior_date": "2025-02-25",
+          "prior_42_session_return": -0.05046645414512074,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "JNJ",
+          "date": "2025-04-30",
+          "prior_date": "2025-02-27",
+          "prior_42_session_return": -0.049310905631894775,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "C",
+          "date": "2025-05-01",
+          "prior_date": "2025-02-28",
+          "prior_42_session_return": -0.14175859257572332,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.06982200965224178,
+      "issuer_mean_prior_return": 0.038353071867835764,
+      "family_mean_prior_return": -0.08051198411757961
+    },
+    {
+      "event_id": "governance:GE:2025-05-09",
+      "event": {
+        "ticker": "GE",
+        "date": "2025-05-09",
+        "prior_date": "2025-03-10",
+        "prior_42_session_return": 0.1315776089963192,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "MMM",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": -0.041919220687978265,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "DE",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": 0.009112303119495069,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "EMR",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": 0.01622587849881718,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "GE",
+          "date": "2025-03-11",
+          "prior_date": "2025-01-06",
+          "prior_42_session_return": 0.11407630415062497,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "GE",
+          "date": "2025-07-11",
+          "prior_date": "2025-05-08",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "GE",
+          "date": "2025-02-07",
+          "prior_date": "2024-12-04",
+          "prior_42_session_return": 0.12803567141604777,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "GD",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": 0.008204337025230712,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "LMT",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": -0.013291044964764631,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "PM",
+          "date": "2025-05-09",
+          "prior_date": "2025-03-10",
+          "prior_42_session_return": 0.1550143584175263,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.005527013023222005,
+      "issuer_mean_prior_return": 0.12105598778333637,
+      "family_mean_prior_return": 0.04997588349266413
+    },
+    {
+      "event_id": "governance:CVS:2025-05-20",
+      "event": {
+        "ticker": "CVS",
+        "date": "2025-05-20",
+        "prior_date": "2025-03-19",
+        "prior_42_session_return": -0.0686718947656102,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "TMO",
+          "date": "2025-05-20",
+          "prior_date": "2025-03-19",
+          "prior_42_session_return": -0.20503671485577346,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "DHR",
+          "date": "2025-05-20",
+          "prior_date": "2025-03-19",
+          "prior_42_session_return": -0.06546266538319079,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "MRK",
+          "date": "2025-05-20",
+          "prior_date": "2025-03-19",
+          "prior_42_session_return": -0.18393432928718134,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "CVS",
+          "date": "2025-03-20",
+          "prior_date": "2025-01-16",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "CVS",
+          "date": "2025-07-22",
+          "prior_date": "2025-05-19",
+          "prior_42_session_return": -0.019318426056575966,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "CVS",
+          "date": "2025-02-19",
+          "prior_date": "2024-12-13",
+          "prior_42_session_return": 0.3559195851954262,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "AMZN",
+          "date": "2025-05-22",
+          "prior_date": "2025-03-21",
+          "prior_42_session_return": 0.022532167596161834,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "JPM",
+          "date": "2025-05-22",
+          "prior_date": "2025-03-21",
+          "prior_42_session_return": 0.09218315191935544,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "SCHW",
+          "date": "2025-05-23",
+          "prior_date": "2025-03-24",
+          "prior_42_session_return": 0.09219156703203524,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.15147790317538187,
+      "issuer_mean_prior_return": 0.16830057956942512,
+      "family_mean_prior_return": 0.06896896218251751
+    },
+    {
+      "event_id": "governance:UNH:2025-06-04",
+      "event": {
+        "ticker": "UNH",
+        "date": "2025-06-04",
+        "prior_date": "2025-04-02",
+        "prior_42_session_return": -0.4265953984206856,
+        "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment"
+      },
+      "controls": [
+        {
+          "ticker": "MDT",
+          "date": "2025-06-04",
+          "prior_date": "2025-04-02",
+          "prior_42_session_return": -0.03262736731093707,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "BMY",
+          "date": "2025-06-04",
+          "prior_date": "2025-04-02",
+          "prior_42_session_return": null,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "GILD",
+          "date": "2025-06-04",
+          "prior_date": "2025-04-02",
+          "prior_42_session_return": -0.016197253150043278,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "UNH",
+          "date": "2025-04-03",
+          "prior_date": "2025-01-31",
+          "prior_42_session_return": -0.031047796580954246,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "UNH",
+          "date": "2025-03-05",
+          "prior_date": "2024-12-30",
+          "prior_42_session_return": -0.06955220963872855,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "UNH",
+          "date": "2025-02-03",
+          "prior_date": "2024-11-27",
+          "prior_42_session_return": -0.1116093980706776,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "BKNG",
+          "date": "2025-06-04",
+          "prior_date": "2025-04-02",
+          "prior_42_session_return": 0.17359565619421735,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "LOW",
+          "date": "2025-06-05",
+          "prior_date": "2025-04-03",
+          "prior_42_session_return": 0.03479346697887653,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "WMT",
+          "date": "2025-06-06",
+          "prior_date": "2025-04-04",
+          "prior_42_session_return": 0.17954654849765173,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": -0.024412310230490175,
+      "issuer_mean_prior_return": -0.0707364680967868,
+      "family_mean_prior_return": 0.1293118905569152
+    },
+    {
+      "event_id": "governance:FDX:2025-10-02",
+      "event": {
+        "ticker": "FDX",
+        "date": "2025-10-02",
+        "prior_42_session_return": null
+      },
+      "controls": [
+        {
+          "ticker": "MCD",
+          "date": "2025-10-02",
+          "prior_date": "2025-08-01",
+          "prior_42_session_return": -0.001081781650982272,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "UBER",
+          "date": "2025-10-02",
+          "prior_date": "2025-08-01",
+          "prior_42_session_return": 0.11431389433473438,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "TGT",
+          "date": "2025-10-02",
+          "prior_date": "2025-08-01",
+          "prior_42_session_return": -0.10113860408617181,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "peer"
+        },
+        {
+          "ticker": "FDX",
+          "date": "2025-12-02",
+          "prior_42_session_return": null,
+          "role": "issuer"
+        },
+        {
+          "ticker": "FDX",
+          "date": "2025-07-03",
+          "prior_date": "2025-05-01",
+          "prior_42_session_return": 0.14693222578880305,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "FDX",
+          "date": "2025-06-03",
+          "prior_date": "2025-04-01",
+          "prior_42_session_return": -0.10309839840877288,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "issuer"
+        },
+        {
+          "ticker": "PG",
+          "date": "2025-10-16",
+          "prior_date": "2025-08-15",
+          "prior_42_session_return": -0.04537708505932614,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "MDT",
+          "date": "2025-10-21",
+          "prior_date": "2025-08-20",
+          "prior_42_session_return": 0.032522200049134975,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        },
+        {
+          "ticker": "TSLA",
+          "date": "2025-11-07",
+          "prior_date": "2025-09-09",
+          "prior_42_session_return": 0.28797722785946633,
+          "caveat": "Synthetic price using identical contract pair; no corporate-action/dividend adjustment",
+          "role": "family"
+        }
+      ],
+      "peer_mean_prior_return": 0.004031169532526764,
+      "issuer_mean_prior_return": 0.021916913690015083,
+      "family_mean_prior_return": 0.09170744761642506
+    }
+  ]
+}

@@ -1,0 +1,2926 @@
+{
+  "spec": "compensation_spec.json",
+  "annotated_at_utc": "2026-10-03T06:14:21.790909+00:00",
+  "raw_sha256": "79d3631ab459ab6a78ba69727ffe09046ed7a01dcb47b12faa76d4561463341a",
+  "outcomes_seen": false,
+  "classification_scope": "All 174 supporting texts screened; selected recurring-program pairs and explicit amendment near-misses corroborated against contemporaneous primary filings/exhibits. Supporting-text screens are not claims to have read every whole filing.",
+  "in_year_amendment_interpretation": "The explicit amendment clause is screened in both 2024 and 2025. Recurring annual-program comparisons use 2024 as prior context for 2025. PFE and SBUX 2024 amendments are individually reviewed.",
+  "filings": [
+    {
+      "ticker": "AAPL",
+      "filing_date": "2025-01-03",
+      "accession_number": "0001140361-25-000228",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/320193/0001140361-25-000228.txt",
+      "supporting_text_sha256": "65aafb7422a62061020d631fe11f3631f153208b105020915e3f4a168e3a3efa",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/320193/0001140361-25-000228.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ABBV",
+      "filing_date": "2024-12-13",
+      "accession_number": "0001104659-24-128413",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-24-128413.txt",
+      "supporting_text_sha256": "3997628d367c31a5ec2797c19e5fc26b6c78250682b8d6e8b3e3271d67661078",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-24-128413.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ABBV",
+      "filing_date": "2025-05-13",
+      "accession_number": "0001104659-25-047402",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-25-047402.txt",
+      "supporting_text_sha256": "7c70b6611cbf0b32a01b6970e02a3530347b56d5bacde5ecb4d278e2650e9577",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/0001104659-25-047402.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ADBE",
+      "filing_date": "2024-01-26",
+      "accession_number": "0000796343-24-000024",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-24-000024.txt",
+      "supporting_text_sha256": "0a78278bc92542835d26f564b54af7898325e719418272a7c8a164fd95b241f1",
+      "classification": "prior_context",
+      "reason": "2024 recurring program is prior context for the January 2025 comparison. The NNS metric differs in 2025; unchanged rTSR alone does not verify the whole award.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634324000024/adbeex10212624.htm"
+      ],
+      "facts": {
+        "rTSR_percentile_at_100_percent_payout": 55,
+        "rTSR_percentile_at_200_percent_payout": 90,
+        "rTSR_threshold_percentile": 25,
+        "performance_duration_years": 3
+      }
+    },
+    {
+      "ticker": "ADBE",
+      "filing_date": "2024-08-08",
+      "accession_number": "0000796343-24-000192",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-24-000192.txt",
+      "supporting_text_sha256": "a86c69d7012e77b8c30b030ce0ec73807b0fc64ab70b33acc00ada0ea38c7fc3",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/796343/0000796343-24-000192.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ADBE",
+      "filing_date": "2025-01-30",
+      "accession_number": "0000796343-25-000036",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/796343/0000796343-25-000036.txt",
+      "supporting_text_sha256": "3d722b76fae1514606cb736de5746dc85320977def4f80b6ebc610b7e40652a9",
+      "classification": "unclassified",
+      "reason": "The NNS component changes from Digital Media net-new annualized recurring revenue and guidance-based goals to ending ARR growth and committee-set goals. The payout grids have different denominators/metrics, so a lower percentage in the 2025 grid is not a comparable lower hurdle. The rTSR component is unchanged but does not establish all material hurdles.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634325000036/adbe-20250124.htm",
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634325000036/adbeex101-13025.htm",
+        "https://www.sec.gov/Archives/edgar/data/796343/000079634324000024/adbeex10212624.htm"
+      ],
+      "facts": {
+        "same_metric_duration_units": false,
+        "rTSR_2024_and_2025_threshold_percentile": 25,
+        "rTSR_2024_and_2025_target_percentile": 55,
+        "rTSR_2024_and_2025_maximum_percentile": 90,
+        "rTSR_component_weight_percent": 50,
+        "rTSR_duration_years": 3,
+        "unverified_material_hurdle": "NNS component targets; changed NNS metric and denominator"
+      }
+    },
+    {
+      "ticker": "AIG",
+      "filing_date": "2024-09-18",
+      "accession_number": "0000005272-24-000101",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/5272/0000005272-24-000101.txt",
+      "supporting_text_sha256": "1743a50984d0d7269e326ce927d210b3602959284663060b4a9a220ea00cb755",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/5272/0000005272-24-000101.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AIG",
+      "filing_date": "2025-07-21",
+      "accession_number": "0000005272-25-000068",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/5272/0000005272-25-000068.txt",
+      "supporting_text_sha256": "819a65e0320c360386110a1948e493a999f8396878e2a770b5ba281940d529ba",
+      "classification": "screened_out",
+      "reason": "New-hire bonus guarantee accompanies an appointment; no waiver of a previously granted operating-performance award is shown.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/5272/0000005272-25-000068.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2024-02-20",
+      "accession_number": "0001628280-24-005593",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0001628280-24-005593.txt",
+      "supporting_text_sha256": "2895205e400e5080d9399624d307e56e9c0aa8a21bf5ec7e750e04d279a1f887",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/0001628280-24-005593.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2024-07-02",
+      "accession_number": "0000002488-24-000109",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000109.txt",
+      "supporting_text_sha256": "810bb427fa89c204bf7136fb5966cdd7e63ee4e766d12a1fd5fd0e7f1197735b",
+      "classification": "prior_context",
+      "reason": "2024 recurring LTI program describes a three-year relative stock-return component and EPS modifier; the actual performance thresholds that select the tiers are not supplied.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248824000109/amd-20240627.htm"
+      ],
+      "facts": {
+        "rTSR_payout_percent_range": [
+          0,
+          200
+        ],
+        "EPS_modifier_percent_options": [
+          0,
+          25,
+          50
+        ],
+        "duration_years": 3,
+        "EPS_comparison": "FY2026 vs FY2024"
+      }
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2024-11-18",
+      "accession_number": "0000002488-24-000172",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000172.txt",
+      "supporting_text_sha256": "fdc90290366f708d38e41971bc66065e3ade1a0095e60c39b484de7b857de339",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/0000002488-24-000172.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2025-02-24",
+      "accession_number": "0000002488-25-000026",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000026.txt",
+      "supporting_text_sha256": "0df8272529eb8b95e19c64ecef531c3e11f56b4f246a8e41621fcd820eb6431a",
+      "classification": "screened_out",
+      "reason": "Cash bonuses are awarded for completed-year performance. Realized payouts are not changes to ex-ante business hurdles.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000026.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2025-07-02",
+      "accession_number": "0000002488-25-000099",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000099.txt",
+      "supporting_text_sha256": "4967b932798a1be4dd6da33db311d8141e6e94ae1eeeb6e34783cf1b393488b9",
+      "classification": "unclassified",
+      "reason": "Both annual LTI descriptions disclose payout ranges and EPS modifier tiers, but not numerical rTSR or EPS performance thresholds for those tiers. Payout percentages are not performance hurdles; the EPS baseline also differs. Neither event nor strict control can be verified.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248825000099/amd-20250627.htm",
+        "https://www.sec.gov/Archives/edgar/data/2488/000000248824000109/amd-20240627.htm"
+      ],
+      "facts": {
+        "rTSR_payout_percent_range": [
+          0,
+          200
+        ],
+        "EPS_modifier_percent_options": [
+          0,
+          25,
+          50
+        ],
+        "duration_years": 3,
+        "EPS_comparison_current": "FY2027 vs target FY2025 EPS",
+        "EPS_comparison_prior": "FY2026 vs FY2024 EPS",
+        "numeric_performance_hurdles_published_in_reviewed_documents": false
+      }
+    },
+    {
+      "ticker": "AMD",
+      "filing_date": "2025-12-15",
+      "accession_number": "0000002488-25-000182",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000182.txt",
+      "supporting_text_sha256": "0b2cd9a6c2c461e7b129da4740a901ab0539a5c1f3f66171d5e0e69a4b49e5d5",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2488/0000002488-25-000182.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2024-02-07",
+      "accession_number": "0001053507-24-000005",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-24-000005.txt",
+      "supporting_text_sha256": "7342f79934eb33325e3ae5e6e11380be8682d7c1d37928f38f86f701670846e1",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-24-000005.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2024-03-01",
+      "accession_number": "0001053507-24-000015",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-24-000015.txt",
+      "supporting_text_sha256": "ecf746093bcc530ab6a8fa2690ef2aab285060767c59cc0e99a0d005bb23469f",
+      "classification": "prior_context",
+      "reason": "The 2024 annual compensation tables describe salary and bonus opportunity. Pre-established financial goals are mentioned, but their numeric levels are not supplied.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000015/amt-20240228.htm"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2024-03-14",
+      "accession_number": "0001053507-24-000067",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-24-000067.txt",
+      "supporting_text_sha256": "e68d52a3872ee3f50ac55899c65643c452b181a987d6b4e762ebd319ac5302a3",
+      "classification": "excluded",
+      "reason": "New 2024 PSU forms add rTSR and change metric weights. This is a metric-mix replacement, not a same-metric numeric hurdle reduction or an unconditionally removed cash-flow/ROIC/earnings condition.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000067/amt-20240311.htm"
+      ],
+      "facts": {
+        "prior_weights_percent": {
+          "AFFO_per_share": 70,
+          "ROIC": 30
+        },
+        "new_weights_percent": {
+          "AFFO_per_share": 50,
+          "ROIC": 30,
+          "relative_TSR": 20
+        },
+        "duration_years": 3
+      }
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2025-01-07",
+      "accession_number": "0001053507-25-000002",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000002.txt",
+      "supporting_text_sha256": "f52afc3183123129355586b505291cc0039e725b9056f7af0b1b86b1d6461055",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000002.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2025-03-05",
+      "accession_number": "0001053507-25-000039",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000039.txt",
+      "supporting_text_sha256": "3c45df2a4a62ab903164f1033b6293c4e99e7c46580d55785207494c6a1efbf4",
+      "classification": "unclassified",
+      "reason": "Paired annual compensation disclosures give salary and bonus opportunity amounts but no same-tier numerical operating-performance thresholds. These amounts cannot substitute for the required hurdles.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350725000039/amt-20250227.htm",
+        "https://www.sec.gov/Archives/edgar/data/1053507/000105350724000015/amt-20240228.htm"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "AVGO",
+      "filing_date": "2025-09-09",
+      "accession_number": "0001193125-25-199281",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1730168/0001193125-25-199281.txt",
+      "supporting_text_sha256": "2d9002da2eb4d596f47b6c3c6e3e4d27dc9313b335295b49f20207f3abbfb92d",
+      "classification": "screened_out",
+      "reason": "New multi-year AI-revenue PSU award; no same-program prior hurdle or explicit old-award waiver in the supporting text.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1730168/0001193125-25-199281.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BA",
+      "filing_date": "2024-07-31",
+      "accession_number": "0000012927-24-000058",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000058.txt",
+      "supporting_text_sha256": "1e6503d1d000e6cf959b2f7e6f0a2cacfa773b07c5a809ec0b4e42d38e61e296",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000058.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BA",
+      "filing_date": "2025-07-03",
+      "accession_number": "0000012927-25-000050",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000050.txt",
+      "supporting_text_sha256": "db5de446091a98a2d29b0c99ec5037a951b3f9f99650eeb0ab1b24fbb72ccd0f",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/12927/0000012927-25-000050.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BAC",
+      "filing_date": "2024-02-02",
+      "accession_number": "0000070858-24-000027",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt",
+      "supporting_text_sha256": "e4458d4621bf73d2131820dc5cc96ff7d01ec10b6266073f7e28774466ef7d76",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/70858/0000070858-24-000027.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BAC",
+      "filing_date": "2025-02-07",
+      "accession_number": "0000070858-25-000087",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/70858/0000070858-25-000087.txt",
+      "supporting_text_sha256": "5f6ae37e22dedf3f7e334b1b69e86891c6e04a52345df2df4937fbbeedbf7aee",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/70858/0000070858-25-000087.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BAC",
+      "filing_date": "2025-02-28",
+      "accession_number": "0000070858-25-000147",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/70858/0000070858-25-000147.txt",
+      "supporting_text_sha256": "e2418e7aea19da63c8424dba86bff92405f58cd4b5e422eb5a4fcc82742293f8",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/70858/0000070858-25-000147.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BK",
+      "filing_date": "2025-12-11",
+      "accession_number": "0001193125-25-315973",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1390777/0001193125-25-315973.txt",
+      "supporting_text_sha256": "a9c445834aab93387ef9e756f3a1a42129468ec812cc5e837a8c30f0155550d6",
+      "classification": "screened_out",
+      "reason": "New retention equity award with service vesting, not reduction of a prior operating-performance hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1390777/0001193125-25-315973.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BKNG",
+      "filing_date": "2024-01-19",
+      "accession_number": "0001075531-24-000003",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000003.txt",
+      "supporting_text_sha256": "1e5c9018f427cd292eaab227ad9709aa4921ca0a5bcbe9a2d2751810993f6ffa",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000003.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BKNG",
+      "filing_date": "2024-04-05",
+      "accession_number": "0001075531-24-000016",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000016.txt",
+      "supporting_text_sha256": "28398e23aa7194ab7ac87ee1689b7892f0c0879930c4495cc0285a8b18a8d5f1",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000016.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BKNG",
+      "filing_date": "2024-12-18",
+      "accession_number": "0001075531-24-000053",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000053.txt",
+      "supporting_text_sha256": "fab454530f5aa4a6f0153385b48c5394326ba70eee24ca8c0c5146a62a6cbff0",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1075531/0001075531-24-000053.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BLK",
+      "filing_date": "2024-11-19",
+      "accession_number": "0001193125-24-261807",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-24-261807.txt",
+      "supporting_text_sha256": "e5bc3358d8624286dbceab25a8e9cd9b67099f81aab9688dfaaf9c48031d5c92",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-24-261807.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BLK",
+      "filing_date": "2025-02-14",
+      "accession_number": "0001193125-25-026705",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-25-026705.txt",
+      "supporting_text_sha256": "70054c52d48f96581dc30a9f188b00701d72ef3e22adf29a30e15b8894b6a0b7",
+      "classification": "screened_out",
+      "reason": "New allocation of private-markets carried interest; no comparable prior corporate-performance hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/2012383/0001193125-25-026705.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "BMY",
+      "filing_date": "2025-07-25",
+      "accession_number": "0001140361-25-027350",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/14272/0001140361-25-027350.txt",
+      "supporting_text_sha256": "88d27097c2c8cfaa6f933a477ae0eb4b5f104dd2f191fe67e370968add0b673a",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/14272/0001140361-25-027350.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "C",
+      "filing_date": "2025-02-18",
+      "accession_number": "0001104659-25-014780",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-014780.txt",
+      "supporting_text_sha256": "deecafeb5e05c14934ac8f6aee143fd6f4313f0d7f88818ec2f793595f373d38",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-014780.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "C",
+      "filing_date": "2025-10-22",
+      "accession_number": "0001104659-25-101579",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-101579.txt",
+      "supporting_text_sha256": "265eaea24edef5d2b24c50304fe05694a42a24d6994fc2ebafbce90006ddb3e6",
+      "classification": "screened_out",
+      "reason": "New one-time CEO RSU/option award, not a stated amendment to prior business hurdles.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-101579.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CAT",
+      "filing_date": "2025-04-15",
+      "accession_number": "0001104659-25-034874",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-034874.txt",
+      "supporting_text_sha256": "630239ee0eac5f9811ccdb957f75f858b18446f5ba50537178987422e3f07341",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/18230/0001104659-25-034874.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CHTR",
+      "filing_date": "2025-08-05",
+      "accession_number": "0001091667-25-000158",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1271834/0001091667-25-000158.txt",
+      "supporting_text_sha256": "5c5904bc356bd234e03217df0c1b992cb9cd6531a16ec9ccd1febce713e279b0",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1271834/0001091667-25-000158.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CHTR",
+      "filing_date": "2025-12-05",
+      "accession_number": "0001091667-25-000171",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1271833/0001091667-25-000171.txt",
+      "supporting_text_sha256": "b0656612013566cc79c0d315639f372bc8454325b24aa9c8bba6e16b80ac30a6",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1271833/0001091667-25-000171.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CL",
+      "filing_date": "2025-05-29",
+      "accession_number": "0000021665-25-000025",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/21665/0000021665-25-000025.txt",
+      "supporting_text_sha256": "fd23cacf8ba5906f55eb9c34a4ae2925093a27c0d2263daac775938da31139f4",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/21665/0000021665-25-000025.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CMCSA",
+      "filing_date": "2025-12-23",
+      "accession_number": "0001628280-25-058790",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1166691/0001628280-25-058790.txt",
+      "supporting_text_sha256": "349349f6aeea92c63400143c21de18b02b8f83cb798681c5892f031735bdecfd",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1166691/0001628280-25-058790.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2024-02-05",
+      "accession_number": "0000927628-24-000034",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0000927628-24-000034.txt",
+      "supporting_text_sha256": "eec2438a6ad06c8dd08c578fadb76d4b26b15d3f4a255b1dbc0861f959062626",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/0000927628-24-000034.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2025-02-07",
+      "accession_number": "0000927628-25-000044",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000044.txt",
+      "supporting_text_sha256": "a02f63a4bdc03e2932479785906156693a5783acd58f5e599ce81151ad7044aa",
+      "classification": "unclassified",
+      "reason": "The 2025 program describes financial performance shares based on dividends plus tangible book-value growth and adjusted ROTCE, relative to financial peers, but the reviewed filing does not supply the numerical performance hurdles. Similarity language is not verification of every material hurdle; the 2024 primary filing could not be recovered.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/000092762825000044/cof-20250204.htm"
+      ],
+      "facts": {
+        "duration_years": 3,
+        "financial_PSU_payout_percent_range": [
+          0,
+          150
+        ],
+        "prior_primary_source_status": "unavailable via public web directory/index/main attempts",
+        "prior_accession_number": "0000927628-24-000034"
+      }
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2025-05-19",
+      "accession_number": "0001193125-25-122059",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0001193125-25-122059.txt",
+      "supporting_text_sha256": "b9595bdb2e392c88796fb3723a18e4909ac90d6dcec1f9aa09743722361acc8a",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/0001193125-25-122059.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2025-06-05",
+      "accession_number": "0000927628-25-000201",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000201.txt",
+      "supporting_text_sha256": "d973826e480655aa63565761783ab28e2235ac786997285b74d21e2c5f0e2ecf",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000201.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COF",
+      "filing_date": "2025-11-07",
+      "accession_number": "0000927628-25-000280",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000280.txt",
+      "supporting_text_sha256": "ed08c557f1014056c56a6d67b8833ed04ec026eb96e9055350b1883562371f28",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/927628/0000927628-25-000280.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COST",
+      "filing_date": "2024-02-09",
+      "accession_number": "0000909832-24-000008",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/909832/0000909832-24-000008.txt",
+      "supporting_text_sha256": "e8e31ee6eb8036ca5110a4515c1a740dec6f4e72339447488135b3d5a3f9a882",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/909832/0000909832-24-000008.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "COST",
+      "filing_date": "2025-06-11",
+      "accession_number": "0000909832-25-000036",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/909832/0000909832-25-000036.txt",
+      "supporting_text_sha256": "bb845b7b2b5bbd497fd9cb6c81fb97a818f26d22010acb06df008f12e59e6a14",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/909832/0000909832-25-000036.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CRM",
+      "filing_date": "2025-02-05",
+      "accession_number": "0001193125-25-020881",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-25-020881.txt",
+      "supporting_text_sha256": "462ae76d79ba01177bf6cac73fad9c9dcd5d0a688d3b947545a2f0e3817cf020",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1108524/0001193125-25-020881.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CSCO",
+      "filing_date": "2024-05-15",
+      "accession_number": "0001193125-24-139371",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/858877/0001193125-24-139371.txt",
+      "supporting_text_sha256": "27fad54b43397d3802de08abfe2a59196161e18581bf8f8ecd4f1a1cf5d97da6",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/858877/0001193125-24-139371.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CSCO",
+      "filing_date": "2024-07-19",
+      "accession_number": "0000858877-24-000012",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/858877/0000858877-24-000012.txt",
+      "supporting_text_sha256": "a3136d14877539b3554b218ecd85de4c75d0b047897c5bf75db9e691f0cfbdab",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/858877/0000858877-24-000012.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CSCO",
+      "filing_date": "2025-05-13",
+      "accession_number": "0000858877-25-000014",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/858877/0000858877-25-000014.txt",
+      "supporting_text_sha256": "0dbc245f8e59919b2afe9f87f2c8b1e3e9f84526dfbfa0cf16597b8532760174",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/858877/0000858877-25-000014.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CSCO",
+      "filing_date": "2025-06-09",
+      "accession_number": "0000858877-25-000046",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/858877/0000858877-25-000046.txt",
+      "supporting_text_sha256": "1a04a64961934a2294cbedf2b9691337e05e7641d719ec1e636d747c5b18bfca",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/858877/0000858877-25-000046.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CVS",
+      "filing_date": "2024-10-18",
+      "accession_number": "0001193125-24-239193",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/64803/0001193125-24-239193.txt",
+      "supporting_text_sha256": "a07bdef6fbf433111887f3afd3f2d3dcb2877cc839226ea72de043fa7f67772b",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/64803/0001193125-24-239193.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CVS",
+      "filing_date": "2024-11-18",
+      "accession_number": "0001193125-24-260405",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/64803/0001193125-24-260405.txt",
+      "supporting_text_sha256": "93ca67196ceec022e0cdc2a50b3ba9ceeee1fce8681a7424f436d3c472dece31",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/64803/0001193125-24-260405.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CVX",
+      "filing_date": "2024-02-02",
+      "accession_number": "0000093410-24-000007",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000007.txt",
+      "supporting_text_sha256": "e8040dd30b2212a56520a85c094e85ddbb55e8c5f44fc142431a38328e79f487",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000007.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "CVX",
+      "filing_date": "2025-01-31",
+      "accession_number": "0000093410-25-000006",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000006.txt",
+      "supporting_text_sha256": "b9325b2a617543959c5a647b47b75175e14396b08e886ddf8f987d15f23dbd83",
+      "classification": "screened_out",
+      "reason": "Annual equity grant target values and salary amounts; no numeric business-performance goal revision.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/93410/0000093410-25-000006.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DHR",
+      "filing_date": "2025-02-20",
+      "accession_number": "0000313616-25-000044",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/313616/0000313616-25-000044.txt",
+      "supporting_text_sha256": "74cc2aede54eeaa60c4e606f55bafee1270b6b4deebc439d4ef78f15ce4bc4cd",
+      "classification": "excluded",
+      "reason": "Death/disability termination benefit accelerates awards and pays target PSUs before the period ends. This is termination-specific treatment, expressly outside the operating goalpost signal.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/313616/000031361625000044/dhr-20250220.htm"
+      ],
+      "facts": {
+        "trigger": "termination due to death or disability",
+        "ongoing_business_hurdle_waiver": false
+      }
+    },
+    {
+      "ticker": "DHR",
+      "filing_date": "2025-07-24",
+      "accession_number": "0000313616-25-000155",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/313616/0000313616-25-000155.txt",
+      "supporting_text_sha256": "0a16291a0147e2f2b75c9e5baa2e691b2ef77b4190af89c8331d24abef1534c4",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/313616/0000313616-25-000155.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DIS",
+      "filing_date": "2025-10-01",
+      "accession_number": "0001744489-25-000141",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000141.txt",
+      "supporting_text_sha256": "d419324ff9064649338db19679f186a92342c6567ad21f1e41fdb747d2231748",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000141.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DIS",
+      "filing_date": "2025-10-16",
+      "accession_number": "0001744489-25-000144",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000144.txt",
+      "supporting_text_sha256": "085cce1ad6b3b363ebecdf7ea6a7c439612c85893884ab685087c08d528feecc",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000144.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DIS",
+      "filing_date": "2025-11-07",
+      "accession_number": "0001744489-25-000147",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000147.txt",
+      "supporting_text_sha256": "bad385d9be6df3beeffd8126dbb39decb77ad41362eba5b53fca1aff2c332ab1",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000147.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DIS",
+      "filing_date": "2025-11-12",
+      "accession_number": "0001744489-25-000149",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000149.txt",
+      "supporting_text_sha256": "05484e12adc943ef54d5fcd5de1de549c16ecd59c7586a28eb7cda9dc9e55e9d",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1744489/0001744489-25-000149.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DUK",
+      "filing_date": "2024-03-15",
+      "accession_number": "0001104659-24-034815",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-24-034815.txt",
+      "supporting_text_sha256": "01c1a377eb8c7cadcfc46e92a152b2f1de8506d4c5db8bccda4a816c1ddd5a7e",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-24-034815.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DUK",
+      "filing_date": "2025-01-13",
+      "accession_number": "0001104659-25-002897",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-25-002897.txt",
+      "supporting_text_sha256": "e8a227d64de9ee3bfaddf5a2b721121dbafdc7ad26dd5e3141a4b55f26626369",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-25-002897.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "DUK",
+      "filing_date": "2025-12-12",
+      "accession_number": "0001104659-25-120496",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-25-120496.txt",
+      "supporting_text_sha256": "b04c1344332873ef37cc213cf146acf8704a80445f162f83bd1624fa2b337ded",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326160/0001104659-25-120496.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "EMR",
+      "filing_date": "2024-11-05",
+      "accession_number": "0000950103-24-015969",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/32604/0000950103-24-015969.txt",
+      "supporting_text_sha256": "e78e7abc6c4062b1324f3bb1c6438356f0343c25457733052f16b977f9a6a4bf",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/32604/0000950103-24-015969.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "EMR",
+      "filing_date": "2025-11-14",
+      "accession_number": "0000032604-25-000091",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/32604/0000032604-25-000091.txt",
+      "supporting_text_sha256": "d2fd27296ceac9d7f94a9b618c32325fcb61f016755933ed6b012bb625d98d3f",
+      "classification": "screened_out",
+      "reason": "New special option award and strike ladder; no comparable existing operating-performance award amendment.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/32604/0000032604-25-000091.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "FDX",
+      "filing_date": "2025-10-02",
+      "accession_number": "0001193125-25-228346",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1048911/0001193125-25-228346.txt",
+      "supporting_text_sha256": "f302ea5062a7d8fbc6323524f4b7acf882d5e44f5e1b82429c95a5455609fd7b",
+      "classification": "unclassified",
+      "reason": "The recurring cash plan supplies metric weights and payout caps, not numerical operating-income, cost-saving or service thresholds. A separate one-time PSU grant has published operating-margin hurdles but no comparable prior award, so cannot be used as a relaxation signal.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1048911/000119312525228346/d64398d8k.htm"
+      ],
+      "facts": {
+        "annual_cash_metric_weights_percent": {
+          "adjusted_operating_income": 50,
+          "structural_cost_reduction": 25,
+          "on_time_service": 25
+        },
+        "one_time_PSU_margin_improvement_bp_at_payout": {
+          "25_percent": 100,
+          "50_percent": 200,
+          "100_percent": 300,
+          "150_percent": 400
+        },
+        "one_time_PSU_measurement": "FY2028 vs FY2025; excludes FedEx Freight",
+        "annual_cash_numeric_hurdles_in_source": false
+      }
+    },
+    {
+      "ticker": "GD",
+      "filing_date": "2024-03-07",
+      "accession_number": "0001193125-24-062267",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/40533/0001193125-24-062267.txt",
+      "supporting_text_sha256": "961c6e034f6ec066aa4c28341fb8ab4b37fecf28bf0b4a5a30a78a19fea5c174",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40533/0001193125-24-062267.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GD",
+      "filing_date": "2025-06-09",
+      "accession_number": "0001193125-25-137830",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/40533/0001193125-25-137830.txt",
+      "supporting_text_sha256": "53d4343ad5ac060fbf3147370493b69ea47548305facb294a46fc87b3e058ad9",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40533/0001193125-25-137830.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GD",
+      "filing_date": "2025-12-05",
+      "accession_number": "0001193125-25-309762",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/40533/0001193125-25-309762.txt",
+      "supporting_text_sha256": "128af60314dfc5bf80a2cbf767cdf6ff1b9111dcb642fa00f84212eb8cbb692f",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40533/0001193125-25-309762.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GE",
+      "filing_date": "2024-04-08",
+      "accession_number": "0000040545-24-000089",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/40545/0000040545-24-000089.txt",
+      "supporting_text_sha256": "f580c22fa2ad4f23e865bf6b2f7f8ced4daecd3644c7d0f830a30f827a93b7a3",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40545/0000040545-24-000089.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GE",
+      "filing_date": "2024-07-01",
+      "accession_number": "0000950142-24-001825",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/40545/0000950142-24-001825.txt",
+      "supporting_text_sha256": "81ecc038d4bae709212515b61e76d0d297ded54abf01f2f562a9d46eebf2a38e",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/40545/0000950142-24-001825.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GOOGL",
+      "filing_date": "2024-06-07",
+      "accession_number": "0001193125-24-157498",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1652044/0001193125-24-157498.txt",
+      "supporting_text_sha256": "0468e9c8aa6077ca93105e9fbecc77089943908b0c77c112e61c8503ad653dae",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1652044/0001193125-24-157498.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GS",
+      "filing_date": "2024-02-16",
+      "accession_number": "0001193125-24-038211",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/886982/0001193125-24-038211.txt",
+      "supporting_text_sha256": "c9e69367e35142eec55e409d02b012555e080ec759542ce17dde9ba568f0a25b",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/886982/0001193125-24-038211.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "GS",
+      "filing_date": "2025-01-17",
+      "accession_number": "0001193125-25-008107",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/886982/0001193125-25-008107.txt",
+      "supporting_text_sha256": "e7257903d6fc63c5aa147df1b6c19a3dac289124293bfb758c1a8167847e3411",
+      "classification": "screened_out",
+      "reason": "New private-fund carried-interest allocations, not existing corporate-performance hurdle relaxation.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/886982/0001193125-25-008107.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "HON",
+      "filing_date": "2025-02-18",
+      "accession_number": "0000773840-25-000014",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/773840/0000773840-25-000014.txt",
+      "supporting_text_sha256": "18462f22fa999d40117a6e359ef60a0c4d80a067e1f0df8fa625ceb215c32ea9",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/773840/0000773840-25-000014.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "HON",
+      "filing_date": "2025-04-08",
+      "accession_number": "0000773840-25-000025",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/773840/0000773840-25-000025.txt",
+      "supporting_text_sha256": "ab9ca9145d970bb0edddb3fc700986adc53acc6141518d0e8a50270e26dabcc4",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/773840/0000773840-25-000025.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2024-02-16",
+      "accession_number": "0000050863-24-000033",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000033.txt",
+      "supporting_text_sha256": "26ab2ae947152a2fe14b060d1641197ede16d610f2db62814cd9c2e7f53783ca",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000033.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2024-12-03",
+      "accession_number": "0000050863-24-000173",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000173.txt",
+      "supporting_text_sha256": "b0da526a7bdf03ed3a4be8ad0fab2ecd36c5991e1676f721726296394bd95bf2",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-24-000173.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2025-02-28",
+      "accession_number": "0000050863-25-000024",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000024.txt",
+      "supporting_text_sha256": "c0184c073f6c98f9a79eaff97d2f5e81f4680db5df3ca5f4b674964b37c87138",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000024.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2025-03-14",
+      "accession_number": "0000050863-25-000036",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000036.txt",
+      "supporting_text_sha256": "69f861e430984cbee70baaa38a39e7bb4867f86a45108bb3113dbc00941d61df",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000036.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2025-04-17",
+      "accession_number": "0000050863-25-000063",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000063.txt",
+      "supporting_text_sha256": "218e2bf625f5ca6831aa20d1149c9e257c167a45517460322e0d6bb936975d3a",
+      "classification": "screened_out",
+      "reason": "Equity conversion to purchaser cash awards accompanies a business sale; changed business scope and transaction conversion are excluded.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000063.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTU",
+      "filing_date": "2024-05-02",
+      "accession_number": "0000896878-24-000021",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000021.txt",
+      "supporting_text_sha256": "093fb49aff066b13551585190304c277875f5c1a16578ec5465341fdcac70e68",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000021.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTU",
+      "filing_date": "2024-11-04",
+      "accession_number": "0000896878-24-000041",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000041.txt",
+      "supporting_text_sha256": "bee91cffe02cc244182ec45c0e9ba528847fd2fb90a0b85dcc5fe0b47fba8580",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/896878/0000896878-24-000041.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "INTU",
+      "filing_date": "2025-06-16",
+      "accession_number": "0000896878-25-000027",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000027.txt",
+      "supporting_text_sha256": "b6cb684f0070fe6e7ee6047e8e32212f30f12134b24081c5d9a47048886964b1",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/896878/0000896878-25-000027.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ISRG",
+      "filing_date": "2025-01-06",
+      "accession_number": "0001035267-25-000002",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1035267/0001035267-25-000002.txt",
+      "supporting_text_sha256": "0edf1dc6c06df13c50afc7209be6c4ac29ca36e40f8c30b1f31319b4df5a03cd",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1035267/0001035267-25-000002.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "ISRG",
+      "filing_date": "2025-05-15",
+      "accession_number": "0001035267-25-000161",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1035267/0001035267-25-000161.txt",
+      "supporting_text_sha256": "467b5706f5e0c1dd27c7c22662649528e646182a2114f864392600232aa03a88",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1035267/0001035267-25-000161.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "JPM",
+      "filing_date": "2024-01-18",
+      "accession_number": "0000019617-24-000109",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/19617/0000019617-24-000109.txt",
+      "supporting_text_sha256": "dbdac86245d05b055d40a9d6760011ea6b05bcbbc6a3570da3e82a29965a053b",
+      "classification": "prior_context",
+      "reason": "The 2024 filing describes Dimon compensation and structurally consistent ROTCE-based PSUs, but does not state numeric absolute or relative ROTCE thresholds.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/19617/000001961724000109/jpm-20240116.htm"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "JPM",
+      "filing_date": "2025-01-23",
+      "accession_number": "0000019617-25-000056",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/19617/0000019617-25-000056.txt",
+      "supporting_text_sha256": "c5515fc69e0248954433b0ab55a5a9e293833bc49d31882c81c4c6cdcc0b2499",
+      "classification": "unclassified",
+      "reason": "The prior/current main filings state structurally consistent ROTCE-based PSU design but do not supply numeric absolute/relative performance thresholds. Higher total compensation is an award amount, not a lower business hurdle.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/19617/000001961725000056/jpm-20250121.htm",
+        "https://www.sec.gov/Archives/edgar/data/19617/000001961724000109/jpm-20240116.htm"
+      ],
+      "facts": {
+        "numeric_performance_hurdles_in_reviewed_documents": false
+      }
+    },
+    {
+      "ticker": "KO",
+      "filing_date": "2024-05-02",
+      "accession_number": "0001552781-24-000261",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/21344/0001552781-24-000261.txt",
+      "supporting_text_sha256": "0cb4e59bee5c1f7ed20f3d2ee79c173949cc103b9600c38438cb470a95405ad2",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/21344/0001552781-24-000261.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "KO",
+      "filing_date": "2024-10-17",
+      "accession_number": "0000021344-24-000051",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/21344/0000021344-24-000051.txt",
+      "supporting_text_sha256": "c21f510e8e4058bdb502fa97b2c36b3d2a7929eb260221c037bd4eb39bcf41aa",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/21344/0000021344-24-000051.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "KO",
+      "filing_date": "2024-12-11",
+      "accession_number": "0001552781-24-000626",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/21344/0001552781-24-000626.txt",
+      "supporting_text_sha256": "bd0ea4eca240a395efa9086571d026601c0cea1c0b7e346e4c672135c730dbe2",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/21344/0001552781-24-000626.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "KO",
+      "filing_date": "2025-10-16",
+      "accession_number": "0001628280-25-045223",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/21344/0001628280-25-045223.txt",
+      "supporting_text_sha256": "28e1cd168ec3d8f97e07cbab7227837fda9b1427afeb298aca3df67a217442b9",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/21344/0001628280-25-045223.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "LIN",
+      "filing_date": "2024-12-02",
+      "accession_number": "0001654954-24-015100",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1707925/0001654954-24-015100.txt",
+      "supporting_text_sha256": "585b92d87135a06c1036321517e31aa6ecf40e46da9b4d8910bd586ccf56ac62",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1707925/0001654954-24-015100.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "LLY",
+      "filing_date": "2024-09-09",
+      "accession_number": "0000059478-24-000213",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000213.txt",
+      "supporting_text_sha256": "d292fab26f41391dc15c9a3d7a8abef27a538c794a8be8549151760d1c062e24",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000213.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "LMT",
+      "filing_date": "2025-04-17",
+      "accession_number": "0000936468-25-000026",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/936468/0000936468-25-000026.txt",
+      "supporting_text_sha256": "033087478de470aa8ed66879c32cc45507a02a021f626888c69aa60f978c8d58",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/936468/0000936468-25-000026.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MA",
+      "filing_date": "2025-02-10",
+      "accession_number": "0001141391-25-000007",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1141391/0001141391-25-000007.txt",
+      "supporting_text_sha256": "3f04e713a1827ee71742e69a4e94cce90122b75879e328301fcc27cc97e5c83b",
+      "classification": "screened_out",
+      "reason": "Base pay and bonus opportunity rise; percentage of salary is an award amount, not a performance hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1141391/0001141391-25-000007.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MCD",
+      "filing_date": "2024-07-26",
+      "accession_number": "0000063908-24-000116",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/63908/0000063908-24-000116.txt",
+      "supporting_text_sha256": "e5deb90bda7be94632f7b02b5c53ed4495ed924172f66d24118f4790a3c2d26c",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/63908/0000063908-24-000116.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MDLZ",
+      "filing_date": "2024-05-22",
+      "accession_number": "0001103982-24-000073",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-24-000073.txt",
+      "supporting_text_sha256": "ea3a56869eea2c005601898f03d801d01e404f6dd631281a2bcbe65d67015012",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-24-000073.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MDLZ",
+      "filing_date": "2025-05-27",
+      "accession_number": "0001103982-25-000171",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-25-000171.txt",
+      "supporting_text_sha256": "b7ef0b64f153ffabaf311d865a415ac351ff5840880818952e170ef77e0c2306",
+      "classification": "screened_out",
+      "reason": "Severance program amendment, outside the operating-hurdle signal.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1103982/0001103982-25-000171.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MDT",
+      "filing_date": "2025-01-21",
+      "accession_number": "0001613103-25-000005",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000005.txt",
+      "supporting_text_sha256": "b2c70bb16474abdd0fc3a6d8e7c8bfe695c935c713d521ce26ba934967f3a858",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000005.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MET",
+      "filing_date": "2025-07-30",
+      "accession_number": "0001193125-25-169311",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1099219/0001193125-25-169311.txt",
+      "supporting_text_sha256": "46a1375f11ff65e6b41f2e395238471048efc5db187f9f3e0a5195bb982434b7",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1099219/0001193125-25-169311.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "META",
+      "filing_date": "2025-02-20",
+      "accession_number": "0001326801-25-000021",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1326801/0001326801-25-000021.txt",
+      "supporting_text_sha256": "a0114cfbb2af452529c0055ab8240e684fb79fc6092d78b1115aa14e3787fa94",
+      "classification": "screened_out",
+      "reason": "Bonus opportunity rises from 75% to 200% of salary. These are payout amounts, not business-performance requirements.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1326801/0001326801-25-000021.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MMM",
+      "filing_date": "2024-03-12",
+      "accession_number": "0000066740-24-000029",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000029.txt",
+      "supporting_text_sha256": "3c74361eb98b29cc3881dba58ef9b3eff3ee06e2b9ee2e037f3b2b55a3ea2d0f",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000029.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MMM",
+      "filing_date": "2024-08-01",
+      "accession_number": "0000066740-24-000088",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000088.txt",
+      "supporting_text_sha256": "ee12011961ab77080715fa7e496cb0b5858992ed2915489259ca447474a89ed2",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000088.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MO",
+      "filing_date": "2024-02-26",
+      "accession_number": "0000764180-24-000015",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000015.txt",
+      "supporting_text_sha256": "8c08cb750db5b4472793f780cb1fdb2833f884f65ca2ac970a9c1fabdcf4d56c",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000015.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MO",
+      "filing_date": "2024-02-28",
+      "accession_number": "0000764180-24-000021",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000021.txt",
+      "supporting_text_sha256": "42c54b6c541722cbf1b2e1518ff25e8e47e913d52dabed97251abe54d09aa5a8",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000021.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MO",
+      "filing_date": "2025-05-19",
+      "accession_number": "0000764180-25-000057",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000057.txt",
+      "supporting_text_sha256": "b0d0ea38dac095334b394eed2301daa6e896f07d7921dd071f3522282ad0f576",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000057.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MO",
+      "filing_date": "2025-12-11",
+      "accession_number": "0000764180-25-000133",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000133.txt",
+      "supporting_text_sha256": "a759d3db7baec48d1a55fe13662054ec5eadab1be40b72971d6845bc24cdbd8f",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/764180/0000764180-25-000133.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MS",
+      "filing_date": "2024-01-19",
+      "accession_number": "0000950103-24-000919",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/895421/0000950103-24-000919.txt",
+      "supporting_text_sha256": "f0dde10ac81ccd160a9e551dc237271d33a8f8b7a35b384828fba3808a1df05c",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/895421/0000950103-24-000919.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MS",
+      "filing_date": "2024-10-24",
+      "accession_number": "0000950103-24-015350",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/895421/0000950103-24-015350.txt",
+      "supporting_text_sha256": "3d5c38006f3dc2a3cb634a48510920193ff9c7f410493865c543084f7f53c771",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/895421/0000950103-24-015350.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "MS",
+      "filing_date": "2025-02-13",
+      "accession_number": "0000950103-25-001971",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/895421/0000950103-25-001971.txt",
+      "supporting_text_sha256": "9f59b97f4385fdb5832e60f0533c53aa96d59114edf930f32310dd93fdaac743",
+      "classification": "screened_out",
+      "reason": "Completed-year compensation level and deferral mix, without a comparable revised business hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/895421/0000950103-25-001971.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NEE",
+      "filing_date": "2025-03-17",
+      "accession_number": "0000753308-25-000019",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/37634/0000753308-25-000019.txt",
+      "supporting_text_sha256": "0f2943ab1f3d1bc9a8238b3e4d8b417431c00f1153939c087a0ce7560df57582",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/37634/0000753308-25-000019.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NFLX",
+      "filing_date": "2025-11-04",
+      "accession_number": "0001065280-25-000408",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1065280/0001065280-25-000408.txt",
+      "supporting_text_sha256": "0a92d9c3845924a5745d97019129bdcd384200237b3cd25687ae4a820ae156fe",
+      "classification": "screened_out",
+      "reason": "Retirement/severance vesting changes; no ongoing-business hurdle reduction established.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1065280/0001065280-25-000408.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NKE",
+      "filing_date": "2024-09-19",
+      "accession_number": "0000320187-24-000053",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-24-000053.txt",
+      "supporting_text_sha256": "2f330c1b2ed536c878ae5d47b106e0248adbe8bb883315bf2a043568479d2b3c",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/320187/0000320187-24-000053.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NKE",
+      "filing_date": "2025-05-05",
+      "accession_number": "0000320187-25-000020",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000020.txt",
+      "supporting_text_sha256": "e8e4df6f2a90eb9fb9aaddf7b16fbf14e0c879d5d6c540356bffcbad6a48d603",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000020.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NKE",
+      "filing_date": "2025-12-02",
+      "accession_number": "0000320187-25-000115",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000115.txt",
+      "supporting_text_sha256": "6251ab11161f1e7ae369aa460c23fcc2993bffff809e46c7326b3a0f34365c88",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/320187/0000320187-25-000115.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NOW",
+      "filing_date": "2024-10-23",
+      "accession_number": "0001373715-24-000342",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-24-000342.txt",
+      "supporting_text_sha256": "73bd7eab0e85bfae7bd94f46c80cff7564a755aea4a8a68e19c405605801250e",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-24-000342.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NOW",
+      "filing_date": "2024-12-27",
+      "accession_number": "0001373715-24-000426",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-24-000426.txt",
+      "supporting_text_sha256": "fb03e5406a24e0648896499109f77d5bc16aaed9f4f27580d66209f74a7f8355",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-24-000426.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NOW",
+      "filing_date": "2025-12-23",
+      "accession_number": "0001373715-25-000335",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-25-000335.txt",
+      "supporting_text_sha256": "0980f7f376b377ef425f1ba36bcccfa7cec1946d80c02b03229c1d7c178e314a",
+      "classification": "screened_out",
+      "reason": "Employment and severance amendment; performance awards retain actual-performance treatment on qualifying termination.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1373715/0001373715-25-000335.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "NVDA",
+      "filing_date": "2024-03-14",
+      "accession_number": "0001045810-24-000069",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1045810/0001045810-24-000069.txt",
+      "supporting_text_sha256": "5a37e1e2ad34a288e195010540e3cf98d18da9f2e2d94b7f4bc954ea6f9a669a",
+      "classification": "prior_context",
+      "reason": "FY2025 cash plan supplies formulas around threshold/base/stretch revenue levels but omits the actual numerical revenue levels.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000069/nvda-20240308.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000069/exhibit101-fy25variablecom.htm"
+      ],
+      "facts": {
+        "threshold_payout_percent": 50,
+        "base_payout_percent": 100,
+        "maximum_payout_percent": 200,
+        "numeric_revenue_levels_published": false
+      }
+    },
+    {
+      "ticker": "NVDA",
+      "filing_date": "2025-03-07",
+      "accession_number": "0001045810-25-000039",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1045810/0001045810-25-000039.txt",
+      "supporting_text_sha256": "d3bf12e81f8bef910987f0e3c320a770e71ba56f2bd8dabafee55cdef0c33d65",
+      "classification": "unclassified",
+      "reason": "Both fiscal-year cash plans use threshold/base/stretch revenue levels, but the public exhibits omit those numerical levels. Unchanged payout formulas alone are not a verified unchanged-hurdle control; later proxy disclosures cannot be backdated to this 8-K.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000039/nvda-20250303.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000039/ex101-fy26variablecompensa.htm",
+        "https://www.sec.gov/Archives/edgar/data/1045810/000104581024000069/exhibit101-fy25variablecom.htm"
+      ],
+      "facts": {
+        "threshold_payout_percent": 50,
+        "base_payout_percent": 100,
+        "maximum_payout_percent": 200,
+        "numeric_revenue_levels_published": false
+      }
+    },
+    {
+      "ticker": "ORCL",
+      "filing_date": "2025-09-22",
+      "accession_number": "0001193125-25-210089",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1341439/0001193125-25-210089.txt",
+      "supporting_text_sha256": "c8a4c9eae3ea892d3f3645e4f4877ecd5289afb7fa898e6bb870497322e4db8f",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1341439/0001193125-25-210089.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PEP",
+      "filing_date": "2025-10-09",
+      "accession_number": "0000077476-25-000055",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000055.txt",
+      "supporting_text_sha256": "fb9f9b524576fc7515cb59af990d948a1d531c0a2b591c9b3db3ba8ded03809a",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/77476/0000077476-25-000055.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PFE",
+      "filing_date": "2024-07-26",
+      "accession_number": "0000078003-24-000144",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/78003/0000078003-24-000144.txt",
+      "supporting_text_sha256": "867e2fc1af10819a174fdc360ee14d3fd2427d6c7091151a7b1a5189c59e96c0",
+      "classification": "excluded",
+      "reason": "Existing 2022/2023 TSRUs gain two years and later vesting; PSAs also extend by two years and measure performance over the final three years. This changes the measurement window and imposes extended service. Old/new numerical earnings hurdles are not given. Excluded by the frozen same-period requirement and ambiguous offsets, not treated as a verified lower-hurdle signal.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/78003/000007800324000144/pfe-20240724.htm",
+        "https://www.sec.gov/Archives/edgar/data/78003/000007800324000144/tsruex991.htm"
+      ],
+      "facts": {
+        "TSRU_original_term_years": 5,
+        "TSRU_modified_term_years": 7,
+        "TSRU_original_vesting_years": 3,
+        "TSRU_modified_vesting_years": 5,
+        "PSA_extension_years": 2,
+        "PSA_measurement": "final three years of extended term",
+        "original_earnings_hurdle": null,
+        "revised_earnings_hurdle": null
+      }
+    },
+    {
+      "ticker": "PG",
+      "filing_date": "2025-07-28",
+      "accession_number": "0000080424-25-000061",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000061.txt",
+      "supporting_text_sha256": "752f5c2098f101d4d6f29a054a7e24d2e90e41cf2d26d93209b2649a24577c8d",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000061.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PG",
+      "filing_date": "2025-08-14",
+      "accession_number": "0000080424-25-000111",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000111.txt",
+      "supporting_text_sha256": "56c9359a312db7d6cef530a081c0f92b27e2a6ec503934a39b76fa99a053c572",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000111.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PLTR",
+      "filing_date": "2025-02-28",
+      "accession_number": "0001321655-25-000033",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1321655/0001321655-25-000033.txt",
+      "supporting_text_sha256": "cc20922e08742447f27c1f6df4b371e6e9c00d0d17f235564b7f11ce3e1f645b",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1321655/0001321655-25-000033.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PM",
+      "filing_date": "2025-11-04",
+      "accession_number": "0001628280-25-048526",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1413329/0001628280-25-048526.txt",
+      "supporting_text_sha256": "de2be9688b37ac46a188c401794ac770b7d453ddf2940cf612ce42a7fbc77a1f",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1413329/0001628280-25-048526.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2024-01-08",
+      "accession_number": "0001193125-24-004471",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-004471.txt",
+      "supporting_text_sha256": "ff3c781bf77ef3b388a74d4f33d023140abd415b9127b87d5830cb724dcf365e",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-004471.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2024-02-12",
+      "accession_number": "0001193125-24-032073",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-032073.txt",
+      "supporting_text_sha256": "51e7aa9fd3e404444f866ee6904e54abc81f5bc64da9ef9f43f4830e2ac652a9",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-032073.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2024-06-03",
+      "accession_number": "0001633917-24-000075",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1633917/0001633917-24-000075.txt",
+      "supporting_text_sha256": "690dd735e0007fcdac91a15eeeaa743f46d495d12f134d9fbff643eb71a2d204",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001633917-24-000075.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2024-07-25",
+      "accession_number": "0001193125-24-184940",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-184940.txt",
+      "supporting_text_sha256": "7a98d1fd44d2b3947557efe398b3ee858aa7b62c5e120bde2f60ef028055c827",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-184940.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2025-01-22",
+      "accession_number": "0001193125-25-010401",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-010401.txt",
+      "supporting_text_sha256": "b806b4b93e0fecf7750a9a50a7423be1728d082c4531d9586896d5ce7c4a3c8a",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-25-010401.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "QCOM",
+      "filing_date": "2024-01-23",
+      "accession_number": "0000804328-24-000005",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/804328/0000804328-24-000005.txt",
+      "supporting_text_sha256": "b86c63bc66ba5f1c8fe166c0fda9ffb8ed39980f9545e113e581fb38ea313d2e",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/804328/0000804328-24-000005.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "QCOM",
+      "filing_date": "2025-08-25",
+      "accession_number": "0000804328-25-000049",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/804328/0000804328-25-000049.txt",
+      "supporting_text_sha256": "75c45a56ef2ed322b96e763b746ff18bbcba25f0dab4fa1d2ee9d25b464ec159",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/804328/0000804328-25-000049.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "RTX",
+      "filing_date": "2025-02-03",
+      "accession_number": "0001140361-25-002798",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/101829/0001140361-25-002798.txt",
+      "supporting_text_sha256": "cba64f4079a647253963f519e7a05e1924d41fc7302c98a58fb5e3598bc34569",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/101829/0001140361-25-002798.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2024-08-14",
+      "accession_number": "0001193125-24-200724",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/829224/0001193125-24-200724.txt",
+      "supporting_text_sha256": "7e3a8b10b6f6c37d02d5bfeecf639c5df5784f181a6f7cbf0b10abc3dbaa55a0",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/0001193125-24-200724.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2024-11-21",
+      "accession_number": "0000829224-24-000059",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-24-000059.txt",
+      "supporting_text_sha256": "08e8855e1f609dc28cc2cd188f6bf8e7060e50c55637b20dfa294630abff49e0",
+      "classification": "excluded",
+      "reason": "The amendment changes award valuation/counting from grant-date fair value to target value using the grant-date share price. It does not publish or waive a business-performance hurdle.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/000082922424000059/sbux-20241119.htm"
+      ],
+      "facts": {
+        "replacement_grant_target_value_USD_range": [
+          75000000,
+          80000000
+        ],
+        "annual_grant_target_value_USD": 23000000,
+        "change_kind": "award valuation methodology"
+      }
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2025-03-04",
+      "accession_number": "0000829224-25-000016",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000016.txt",
+      "supporting_text_sha256": "922f4357752a588858390919fd903e65b4e2f1c738bdf37c7397479510335c56",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000016.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2025-06-04",
+      "accession_number": "0000829224-25-000036",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000036.txt",
+      "supporting_text_sha256": "23610a6f2812ae2f56dad658fdbb31408e8037244824f75db4be7154526648cb",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000036.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2025-07-02",
+      "accession_number": "0000829224-25-000048",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000048.txt",
+      "supporting_text_sha256": "1d082c059fd64d882a48ee630bcf69936ad9fab194f83b1285a5cfe6110763a5",
+      "classification": "screened_out",
+      "reason": "New Back to Starbucks PRSU grant; target grant value is disclosed, but no same-program prior numerical hurdle or old-award waiver.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/0000829224-25-000048.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SCHW",
+      "filing_date": "2024-07-25",
+      "accession_number": "0001193125-24-184831",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-184831.txt",
+      "supporting_text_sha256": "901b41e68ca5a5f21b4b0820c8490097fa3707c2c9d5e7356b20559a3e0379a6",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-184831.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "SCHW",
+      "filing_date": "2024-10-01",
+      "accession_number": "0001193125-24-229532",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-229532.txt",
+      "supporting_text_sha256": "397130c9f11cc1cddc5e7d01525559374a163eae42cbe0658f6b7d0a493b322f",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-229532.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TGT",
+      "filing_date": "2024-01-18",
+      "accession_number": "0000027419-24-000003",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000003.txt",
+      "supporting_text_sha256": "cef3607f51348eef146b2af0ca812ddcc48c4c086a484511d981aa3141bcfcdd",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000003.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TGT",
+      "filing_date": "2024-09-19",
+      "accession_number": "0000027419-24-000160",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000160.txt",
+      "supporting_text_sha256": "8ea3952cc734a65413a0eb39c8682f7ca8a55dd228ed01443897b5799ad3e3f0",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/27419/0000027419-24-000160.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TGT",
+      "filing_date": "2025-05-21",
+      "accession_number": "0000027419-25-000094",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/27419/0000027419-25-000094.txt",
+      "supporting_text_sha256": "0103fb2e80643a69fa6050fab8831a20fc51d7e30be893865cca067926e8b385",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/27419/0000027419-25-000094.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMO",
+      "filing_date": "2025-05-22",
+      "accession_number": "0000097745-25-000066",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/97745/0000097745-25-000066.txt",
+      "supporting_text_sha256": "654ffe26055567ad626e3fabaedf3454857daae28198284e2652abc149d3e3dd",
+      "classification": "screened_out",
+      "reason": "New five-year retention PSU award, not a modification to an existing same-period hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/97745/0000097745-25-000066.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2024-09-13",
+      "accession_number": "0001193125-24-218877",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-24-218877.txt",
+      "supporting_text_sha256": "6953c5c3816d60c4c3ab2ac84201f3ec11504cc657fbc17ed55095866fdef2bb",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-24-218877.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-01-27",
+      "accession_number": "0001193125-25-012757",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-012757.txt",
+      "supporting_text_sha256": "4851e84ca974521c8958cb8b977226ea6f6314473cafcf4a53f2ba4a132e5751",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-012757.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-03-21",
+      "accession_number": "0001193125-25-060233",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-060233.txt",
+      "supporting_text_sha256": "c3537172e8c6d97d19618f0eab868ed095bccdd41bfcf274f686b357938c8bbb",
+      "classification": "excluded",
+      "reason": "Outstanding PRSUs receive termination-related pro-rata vesting eligibility, while actual performance through the original period end remains required. The amendment does not remove or lower a business-performance hurdle.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/000119312525060233/d842844d8k.htm"
+      ],
+      "facts": {
+        "trigger": "without cause or good reason termination",
+        "performance_basis_retained": "actual performance through original period end"
+      }
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-04-03",
+      "accession_number": "0001193125-25-072357",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-072357.txt",
+      "supporting_text_sha256": "95a635a0534bae4afc9f927d9b80054018b662e1ab4d6147677290b33b5a56a0",
+      "classification": "excluded",
+      "reason": "This is a new grant with one-year FY2027 EBITDA performance and later service vesting, not an amendment lowering an old grant hurdle. Actual numerical EBITDA targets are omitted; the 80%-120% range describes award payout.",
+      "review_scope": "primary_source_terms",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/000119312525072357/d886425d8k.htm"
+      ],
+      "facts": {
+        "performance_duration_years": 1,
+        "performance_year": 2027,
+        "payout_percent_range": [
+          80,
+          120
+        ],
+        "numeric_EBITDA_target_in_source": false,
+        "prior_comparable_award": null
+      }
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-04-11",
+      "accession_number": "0001193125-25-079096",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-079096.txt",
+      "supporting_text_sha256": "49ba06d8de5204039d5b748594558602b2bf9c71a29344df55146e5c2a994e5d",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-079096.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-09-22",
+      "accession_number": "0001193125-25-209990",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-209990.txt",
+      "supporting_text_sha256": "aeaa37e0a64f6488a9b95e4c0987e0129d4402c29947a0b20922fe48314ffca2",
+      "classification": "screened_out",
+      "reason": "Executive compensation term-sheet amendments and new role/award values; no old/new comparable business hurdle supplied.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-209990.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-12-09",
+      "accession_number": "0001193125-25-312010",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-312010.txt",
+      "supporting_text_sha256": "15ffd695aa0fff1c9e8f52671dd48ac9caed636d123987bcef4fb5cd324a90de",
+      "classification": "screened_out",
+      "reason": "COO employment/retirement benefit changes; compensation opportunities do not establish lower business hurdles.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-312010.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TSLA",
+      "filing_date": "2025-08-04",
+      "accession_number": "0001104659-25-073263",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1318605/0001104659-25-073263.txt",
+      "supporting_text_sha256": "3a0b580e3bafb071385154132249920fa2619eb9a8a1142ccabbdcfa0bd33cd4",
+      "classification": "screened_out",
+      "reason": "New interim CEO restricted-stock award has service vesting; not an explicit waiver of the business hurdle on a previously granted award.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/0001104659-25-073263.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "TSLA",
+      "filing_date": "2025-11-07",
+      "accession_number": "0001104659-25-108507",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1318605/0001104659-25-108507.txt",
+      "supporting_text_sha256": "f7326d1a21d7d21490395d77db9302eb380c0f7edc0febcf1ddea03d37852275",
+      "classification": "screened_out",
+      "reason": "Shareholder approval of a newly granted CEO performance award; no comparable prior hurdle reduction established.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1318605/0001104659-25-108507.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UBER",
+      "filing_date": "2025-06-02",
+      "accession_number": "0001552781-25-000201",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-25-000201.txt",
+      "supporting_text_sha256": "95d1cdcd36bd1bbcf8d90517bfbeff7aeb65921656bc31efddcc91aa54e9593b",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-25-000201.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UBER",
+      "filing_date": "2025-06-04",
+      "accession_number": "0001552781-25-000203",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-25-000203.txt",
+      "supporting_text_sha256": "a7527a78792485d5e582495e8226406ae995dd216b29ce922f17e2985ed96014",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1543151/0001552781-25-000203.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-05-14",
+      "accession_number": "0000731766-25-000134",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000134.txt",
+      "supporting_text_sha256": "52cecc80025291ef712e02d7b47da5523ad34f15a9b571cdb30134c50c98d226",
+      "classification": "screened_out",
+      "reason": "New CEO appointment compensation with service-vesting options, outside same-program hurdle comparison.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000134.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-07-31",
+      "accession_number": "0000731766-25-000232",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000232.txt",
+      "supporting_text_sha256": "3cf67698ff8c15e7626243d177dcc2c326c36793baa3a31a4d3624a04182a1c1",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000232.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UNP",
+      "filing_date": "2025-05-09",
+      "accession_number": "0000100885-25-000162",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/100885/0000100885-25-000162.txt",
+      "supporting_text_sha256": "10e33b11a8dbc41a0d4ee34fb2d54b9be04e90891792ce6225bd3efc8287a9b8",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/100885/0000100885-25-000162.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UPS",
+      "filing_date": "2024-05-06",
+      "accession_number": "0001090727-24-000031",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1090727/0001090727-24-000031.txt",
+      "supporting_text_sha256": "2de964ba8a99f985756701970d782717b7f2f0d1efb10f5e0cb80a6571fcf35b",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1090727/0001090727-24-000031.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "UPS",
+      "filing_date": "2024-07-09",
+      "accession_number": "0001090727-24-000038",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/1090727/0001090727-24-000038.txt",
+      "supporting_text_sha256": "6ce3e052d4e4d5788f4c690bbbf894c4fed7abb0c2c4113ae1242d556ef1ea13",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1090727/0001090727-24-000038.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "USB",
+      "filing_date": "2024-05-03",
+      "accession_number": "0001193125-24-130532",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/36104/0001193125-24-130532.txt",
+      "supporting_text_sha256": "f885836858120f761c92003b940550e2d589af4cd2f9b0ced26238b6dd0ea05b",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/36104/0001193125-24-130532.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "USB",
+      "filing_date": "2025-01-28",
+      "accession_number": "0001193125-25-014216",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-014216.txt",
+      "supporting_text_sha256": "a828cc19ef76cc4b10a67b437026fe4a4f3f39872ff7d96f2878c27677d19314",
+      "classification": "screened_out",
+      "reason": "New officer annual award value and 60/40 PSU/RSU mix; no underlying numerical performance thresholds.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-014216.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "USB",
+      "filing_date": "2025-04-16",
+      "accession_number": "0001193125-25-082814",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-082814.txt",
+      "supporting_text_sha256": "5c8992f661065ee5547cc924e5f5a9c8bc8fd66159ac74c8e2dd477740350b67",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-082814.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "VZ",
+      "filing_date": "2024-02-02",
+      "accession_number": "0001193125-24-022476",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/732712/0001193125-24-022476.txt",
+      "supporting_text_sha256": "6181bdcf5d50750089d3334f8d84f9f7f810415c36421270860b2b857fd89332",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/732712/0001193125-24-022476.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "VZ",
+      "filing_date": "2025-03-19",
+      "accession_number": "0000732712-25-000015",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000015.txt",
+      "supporting_text_sha256": "fca5e64588d80a0ae3ff2e72cdc87214da3aae13f7746d7ab87bd0363a7855dc",
+      "classification": "screened_out",
+      "reason": "LTI grant opportunity rises from $18m to $25m with unchanged 67/33 PSU/RSU mix; award value is not a hurdle.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/732712/0000732712-25-000015.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "VZ",
+      "filing_date": "2025-10-06",
+      "accession_number": "0001193125-25-231018",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/732712/0001193125-25-231018.txt",
+      "supporting_text_sha256": "916e33a5272cca46dcb42e34f25909bce938724b4b0cec6b833ada4a4ec2ee5d",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/732712/0001193125-25-231018.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "WFC",
+      "filing_date": "2025-07-31",
+      "accession_number": "0000072971-25-000193",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000193.txt",
+      "supporting_text_sha256": "c7554009823daefa705d5b4490e1f3e9ad4552742e82813a8abc1d39658a9519",
+      "classification": "screened_out",
+      "reason": "New one-time service-vesting equity award, with no old business-performance condition removed.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/72971/0000072971-25-000193.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "WMT",
+      "filing_date": "2024-08-15",
+      "accession_number": "0000104169-24-000132",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/104169/0000104169-24-000132.txt",
+      "supporting_text_sha256": "9f58a64dc7d08549676ceac8363f313e337c0861a9c8e41d8c243179347bc443",
+      "classification": "prior_context",
+      "reason": "2024 disclosure retained as prior context. Supporting text describes compensation, appointment, award value or termination terms; it does not provide a verified same-program numeric hurdle reduction. No event or control is inferred from absent terms.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/104169/0000104169-24-000132.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "WMT",
+      "filing_date": "2025-10-22",
+      "accession_number": "0000104169-25-000168",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/104169/0000104169-25-000168.txt",
+      "supporting_text_sha256": "cceb3549d4d8c181927a20a72303842d85799ad70d5704fd0f660ceced7ddca3",
+      "classification": "screened_out",
+      "reason": "The supporting text describes salary, grant/bonus opportunity, an appointment, a new award or termination-related compensation. It does not establish a lower same-tier business-performance hurdle or qualifying waiver of an existing award. This screen is not a full-filing negative control.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/104169/0000104169-25-000168.txt"
+      ],
+      "facts": {}
+    },
+    {
+      "ticker": "WMT",
+      "filing_date": "2025-11-14",
+      "accession_number": "0000104169-25-000172",
+      "signal": "compensation_goalpost_relaxation",
+      "strategy": "collar",
+      "disclosure_source": "https://www.sec.gov/Archives/edgar/data/104169/0000104169-25-000172.txt",
+      "supporting_text_sha256": "e3409a5f0ec41ebb67b5a17e2897177aa6663f40770d41292d593d912ae9129e",
+      "classification": "screened_out",
+      "reason": "Retirement-specific accelerated equity treatment; observed performance-award treatment retains actual performance.",
+      "review_scope": "supporting_text_only",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/104169/0000104169-25-000172.txt"
+      ],
+      "facts": {}
+    }
+  ],
+  "limitations": [
+    "Zero verified positives means the strict verified manifest cannot support a backtest of this hypothesis; it does not establish that the economic signal never occurs.",
+    "Full-source coverage is partial. Unreviewed full filings could contain omitted terms; screened-out supporting texts are not verified unchanged-hurdle controls.",
+    "Many performance targets are not numerically published in the contemporaneous 8-K/exhibits. Payout opportunities, award counts, metric weights and formulas are not interchangeable with performance hurdles.",
+    "No later proxy or amended filing is backdated. No market outcomes or 2026 filings were examined for these labels.",
+    "The 2024 COF primary document could not be recovered via available public web paths. Current COF numeric hurdle levels are also missing.",
+    "ADBE metric/denominator changes and PFE measurement-window changes remain excluded/unclassified under the frozen economics; the rules were not loosened to create trades."
+  ]
+}

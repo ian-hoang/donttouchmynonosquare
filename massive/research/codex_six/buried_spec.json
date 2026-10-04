@@ -1,0 +1,19 @@
+{
+  "strategy_id": "buried_adverse_disclosure_v1",
+  "frozen_before_labels_and_outcomes": true,
+  "universe": "Existing codex_three.data.disclosures cached top-100 2024-2025 survey only",
+  "signal": "buried",
+  "strategy": "collar",
+  "economic_rule": "A specific adverse operating, financial-reporting, legal, or outlook fact shares one accession with unrelated routine administrative, compensation, governance, or meeting business, and is objectively less prominent in full filing order.",
+  "required": [
+    "Specific actual adverse fact, not generic forward-looking boilerplate",
+    "Unrelated routine administrative, compensation, governance, or meeting disclosure in same accession",
+    "Full filing including relevant exhibits inspected",
+    "Adverse fact appears after at least one unrelated substantive routine item or in an exhibit following routine main-body disclosure, and is not highlighted in an earlier main-body heading or opening summary"
+  ],
+  "excluded": ["Three or more taxonomy tags without content evidence", "Related actions responding to the same adverse event", "Routine Item 9.01 exhibit lists and signatures", "Good-news filings with boilerplate risks", "Adverse fact is the lead substantive disclosure", "Earnings report and associated guidance without unrelated administrative content", "Missing full source"],
+  "candidate_screen": "Audit the entire adverse disclosure pool and its same-accession rows, including all plausible adverse plus administrative combinations regardless of tag count; retrieve full-source order before deciding any plausible combination.",
+  "controls": "Source-reviewed adverse-only or prominently disclosed adverse filings from the same pool; record issue type and reasons rather than assuming random assignment.",
+  "no_price_data": true,
+  "no_2026": true
+}

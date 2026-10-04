@@ -1,0 +1,41 @@
+{
+  "frozen_at_utc": "2026-10-03T06:00:54.683113+00:00",
+  "data_period": [
+    "2024-01-01",
+    "2025-12-31"
+  ],
+  "outcomes_seen": false,
+  "universe": "existing cached TOP_100 disclosure universe; no 2026",
+  "feature_sources": "cached disclosure metadata and primary public SEC/issuer sources only; numerical facts retained; inaccessible sources excluded",
+  "signal": "shareholder_dissent_increase",
+  "strategy": "protective_put",
+  "candidate_family": [
+    "annual_meeting_results"
+  ],
+  "comparison": "Each 2025 regular annual meeting versus latest 2024 regular annual meeting of same issuer; exclude special meetings and duplicate tags.",
+  "features": {
+    "say_on_pay_dissent": "100 * Against/(For+Against), excluding abstention and broker nonvotes; comparable nonbinding executive compensation resolution only",
+    "director_dissent": "100 * unweighted mean across all director candidates of Against-or-Withheld/(For+Against-or-Withheld); require comparable voting method and economic voting units; report board composition change as caveat"
+  },
+  "score": "(2025 say-on-pay dissent minus 2024 say-on-pay dissent) minus (2025 board-wide mean director dissent minus 2024 board-wide mean director dissent), in percentage points",
+  "event_rule": "score >= 10.0 percentage points; single pay-specific net-dissent hypothesis",
+  "control_rule": "Both pay and director dissent channels measured in both years and score <10.0pp",
+  "exclusions": [
+    "2024 lacks permitted prior year",
+    "no 2024 counterpart",
+    "special or duplicate meeting",
+    "incomparable voting denominator or class totals",
+    "unresolved missing full vote tables",
+    "missing say-on-pay vote in either year"
+  ],
+  "holdout": "No return or price lookup; root performs predeclared central pricing",
+  "amendment_history": [
+    {
+      "at": "2026-10-03T06:02:40.239072+00:00",
+      "reason": "Parent clarified exact user-promised net pay-specific dissent score before any outcomes or option prices were read; initial OR interpretation was incorrect.",
+      "prior_score": "max(2025 minus 2024 say-on-pay dissent pp, 2025 minus 2024 matched-director mean dissent pp) across available comparable channels",
+      "prior_event_rule": "score >= 10.0 percentage points; predeclared two-channel OR; record each channel; no tuning",
+      "price_blind": true
+    }
+  ]
+}

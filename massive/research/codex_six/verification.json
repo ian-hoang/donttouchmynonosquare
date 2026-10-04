@@ -1,0 +1,47 @@
+{
+  "status": "passed",
+  "rows_checked": 25707,
+  "files": [
+    {
+      "file": "observations_buried.json",
+      "rows": 53
+    },
+    {
+      "file": "observations_buried_sensitivity.json",
+      "rows": 1125
+    },
+    {
+      "file": "observations_governance.json",
+      "rows": 437
+    },
+    {
+      "file": "observations_governance_buried_noncash_guidance_duration.json",
+      "rows": 583
+    },
+    {
+      "file": "observations_governance_buried_sensitivity.json",
+      "rows": 12233
+    },
+    {
+      "file": "observations_governance_compensation_duration_guidance_noncash_buried.json",
+      "rows": 586
+    },
+    {
+      "file": "observations_governance_sensitivity.json",
+      "rows": 10690
+    },
+    {
+      "file": "observations_noncash.json",
+      "rows": 0
+    }
+  ],
+  "checks": [
+    "No 2026 outcomes",
+    "No duplicate configurations",
+    "Correct postfiling entry and horizon dates",
+    "Fresh positive-size NBBO quotes",
+    "Buy ask and sell bid on correct sides",
+    "All synthetic option legs charged commissions",
+    "P&L and overlay/stress arithmetic reconstructed"
+  ]
+}

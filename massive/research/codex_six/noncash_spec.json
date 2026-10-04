@@ -1,0 +1,21 @@
+{
+  "version": "1.1",
+  "frozen_before_label_review": true,
+  "sample_start": "2024-01-01",
+  "sample_end": "2025-12-31",
+  "strategy": "cash_secured_put",
+  "hypothesis": "A clearly mechanical one-time accounting loss that does not change cash obligations may be confused with deteriorating operating fundamentals; put richness is a separate pricing-stage gate.",
+  "candidate_categories": ["material_charge_or_gain", "asset_impairment", "goodwill_impairment", "investment_impairment", "accounting_error_correction"],
+  "amendment_log": "Candidate-pool coverage expanded at coordinator request to include accounting_error_correction before reviewing that category. Economic rule unchanged; no price outcomes accessed.",
+  "positive_rule": [
+    "The contemporaneous filing or exhibit identifies an actual or estimated noncash loss or charge, not a gain.",
+    "The filing identifies a mechanical accounting cause, such as an accounting-standard/technical tax remeasurement, pension actuarial remeasurement, or translation adjustment. Ordinary asset/goodwill write-downs, investment price declines and restructuring are not automatically mechanical.",
+    "There is affirmative contemporaneous evidence that this accounting adjustment creates no new cash obligation or affects neither cash flow nor cash obligations; the word noncash by itself is insufficient.",
+    "There is no explicit concurrent operating deterioration, guidance cut, default, loss of demand, business closure, failed project, or loss of expected future cash generation disclosed in the same filing/exhibit.",
+    "The full contemporaneous filing/exhibit must corroborate the supporting text. Unchanged operating outlook, where explicitly provided, is recorded as corroboration; silence does not establish an unchanged outlook.",
+    "Keep at most one event per issuer and filing date."
+  ],
+  "controls": "Other auditable charge/loss events in the same categories, annotated with why the mechanical/no-new-cash rule fails. Gains, missing source text and ambiguous cases are unclassified rather than controls.",
+  "sources": "Save source annotations and retrieval status, including mechanical cause, cash statement, operating-outlook statement and any negative evidence.",
+  "prohibited": ["No outcome prices", "No 2026 events", "No assuming noncash means economically harmless", "No using future recovery or subsequent guidance to classify a prior charge", "No loosening the rule to obtain trades"]
+}

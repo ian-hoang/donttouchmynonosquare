@@ -1,0 +1,48 @@
+[
+  {
+    "event_id": "noncash:IBM:2024-09-11",
+    "signal": "noncash",
+    "passed": false,
+    "reason": "downside-insurance richness condition fails",
+    "features": {
+      "1m_pre_P_K_iv": 0.19283882747421782,
+      "1m_pre_P_L0.05_iv": 0.21284149057214313,
+      "1m_decision_P_K_iv": 0.21169413747802324,
+      "1m_decision_P_L0.05_iv": 0.2416056421180406,
+      "3-6m_pre_P_K_iv": 0.23033332319172473,
+      "3-6m_pre_P_L0.05_iv": 0.23624478590196174,
+      "3-6m_decision_P_K_iv": 0.24352499302501385,
+      "3-6m_decision_P_L0.05_iv": 0.2507972223523478,
+      "1m_change": 0.018855310003805414,
+      "3-6m_change": 0.013191669833289121,
+      "downside_skew": 0.007272229327333957,
+      "peer_skew_median": 0.013227453991452975
+    },
+    "pricing_drops": [],
+    "observations": 0,
+    "primary_usable": false
+  },
+  {
+    "event_id": "noncash:LMT:2025-12-18",
+    "signal": "noncash",
+    "passed": false,
+    "reason": "downside-insurance richness condition fails",
+    "features": {
+      "1m_pre_P_K_iv": 0.22381430504007943,
+      "1m_pre_P_L0.05_iv": 0.23149857134539736,
+      "1m_decision_P_K_iv": 0.20834501894787044,
+      "1m_decision_P_L0.05_iv": 0.21748520516695474,
+      "3-6m_pre_P_K_iv": 0.25233506681120266,
+      "3-6m_pre_P_L0.05_iv": 0.25696869914184584,
+      "3-6m_decision_P_K_iv": 0.24725907320448703,
+      "3-6m_decision_P_L0.05_iv": 0.24911948369708348,
+      "1m_change": -0.01546928609220899,
+      "3-6m_change": -0.005075993606715623,
+      "downside_skew": 0.0018604104925964426,
+      "peer_skew_median": 0.013387963963600313
+    },
+    "pricing_drops": [],
+    "observations": 0,
+    "primary_usable": false
+  }
+]

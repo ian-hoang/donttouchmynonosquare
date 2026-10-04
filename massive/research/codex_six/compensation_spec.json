@@ -1,0 +1,30 @@
+{
+  "frozen_at_utc": "2026-10-03T06:00:54.683113+00:00",
+  "data_period": [
+    "2024-01-01",
+    "2025-12-31"
+  ],
+  "outcomes_seen": false,
+  "universe": "existing cached TOP_100 disclosure universe; no 2026",
+  "feature_sources": "cached disclosure metadata and primary public SEC/issuer sources only; numerical facts retained; inaccessible sources excluded",
+  "signal": "compensation_goalpost_relaxation",
+  "strategy": "collar",
+  "candidate_family": [
+    "executive_compensation_change"
+  ],
+  "comparison": "Current 2025 performance-linked executive compensation amendment or recurring program compared to same issuer same program in 2024; explicit in-year amendments may compare original terms quoted in current primary source.",
+  "event_rule": "Primary source establishes a lower numeric performance hurdle at the SAME payout tier, same metric, measurement duration and comparable units; OR explicitly waives/removes an existing cashflow/ROIC/earnings hurdle for previously granted award without replacing it with equally binding condition. Require actual terms, not generic discretion authority.",
+  "score": "Relative decrease in positive comparable target expressed percent; explicit hurdle removal scored 100 with kind categorical. No economic inference from score magnitude between kinds.",
+  "control_rule": "Both old/new comparable terms are verified and all observed relevant performance hurdles unchanged or stricter; no unverified material hurdle.",
+  "exclusions": [
+    "appointment/severance/base salary/award value only",
+    "generic new plan or discretionary authority",
+    "different measurement period or metric",
+    "confidential numeric targets or missing prior terms",
+    "stock price-driven award count changes",
+    "higher payout explained by actual better realized performance",
+    "ambiguous offsets or changed business scope"
+  ],
+  "screening": "Exhaustively classify every cached executive_compensation_change filing; full-source review for performance/metric/target/hurdle/goal/amend/modify/waiv/reduc/adjust language and paired issuer programs; descriptive screening only",
+  "holdout": "No return or price lookup; root performs predeclared central pricing"
+}

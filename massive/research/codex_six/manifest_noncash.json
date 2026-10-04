@@ -1,0 +1,114 @@
+{
+  "spec_sha256": "0727ffd4cc7e448d94bf8623570bf5d993defce87ceb2d985f119acee1dcd00a",
+  "engine_sha256": "8b368d65932b5cfda91e78690662c8ad181e48583c1f1c9a7ac9defd211121c2",
+  "events": [
+    {
+      "ticker": "IBM",
+      "filing_date": "2024-09-11",
+      "accession_number": "0001104659-24-098942",
+      "signal": "noncash",
+      "strategy": "cash_secured_put",
+      "reason": "Pension annuity purchase transfers existing obligations using existing plan assets; no company cash contribution. The $2.7bn pretax settlement charge does not affect operating profit or free cash flow. Full contemporaneous 8-K discloses no concurrent operating deterioration.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/51143/000110465924098942/tm2423753d1_8k.htm"
+      ],
+      "source_evidence": {
+        "mechanical_cause": "Existing plan assets purchase an annuity transferring approximately $6bn of existing pension obligations to Prudential; one-time pension settlement accounting recognizes $2.7bn pretax expense.",
+        "cash_evidence": "Item 8.01 explicitly states no cash contribution was required from IBM.",
+        "outlook_evidence": "Item 8.01 explicitly excludes an impact on Q3 or full-year 2024 operating non-GAAP profit or free cash flow.",
+        "full_source_review": "Entire contemporaneous 8-K reviewed via web; SEC acceptance 2024-09-11 16:30:29 means after close.",
+        "source_locator": "Item 8.01, paragraphs 1-4"
+      },
+      "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+      "id": "noncash:IBM:2024-09-11"
+    },
+    {
+      "ticker": "LMT",
+      "filing_date": "2025-12-18",
+      "accession_number": "0000936468-25-000057",
+      "signal": "noncash",
+      "strategy": "cash_secured_put",
+      "reason": "Existing pension annuity buy-in contracts converted to buy-out contracts, transferring about $900m of pension obligations without additional company costs or contributions. The $480m noncash nonoperating charge accelerates recognition of actuarial losses already in equity; no operating deterioration is disclosed in this filing.",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/936468/000093646825000057/lmt-20251218.htm"
+      ],
+      "source_evidence": {
+        "mechanical_cause": "Accelerated recognition of pre-existing actuarial losses after conversion of previously purchased annuity contracts.",
+        "cash_evidence": "Item 8.01 explicitly states no additional costs or funding contributions required by Lockheed Martin.",
+        "outlook_evidence": "Charge was absent from prior 2025 financial outlook; filing calls it non-operating but does not explicitly reaffirm the entire operating outlook. This is recorded as missing corroboration, not an assumed reaffirmation.",
+        "full_source_review": "Entire contemporaneous 8-K reviewed via web.",
+        "source_locator": "Item 8.01, paragraphs 1-4"
+      },
+      "pricing_gate": "NOT_APPLIED: coordinator must test pre-entry put richness independently",
+      "horizon_limitation": "Entry late December 2025; most prescribed exits lie beyond the 2025-12-31 research cutoff and must remain censored without fetching 2026 outcomes.",
+      "id": "noncash:LMT:2025-12-18"
+    }
+  ],
+  "controls": {
+    "noncash:IBM:2024-09-11": [
+      {
+        "ticker": "CSCO",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "AMD",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "MSFT",
+        "date": "2024-09-11",
+        "role": "peer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-07-12",
+        "role": "issuer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-11-08",
+        "role": "issuer"
+      },
+      {
+        "ticker": "IBM",
+        "date": "2024-06-11",
+        "role": "issuer"
+      }
+    ],
+    "noncash:LMT:2025-12-18": [
+      {
+        "ticker": "GD",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "GE",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "CAT",
+        "date": "2025-12-18",
+        "role": "peer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-10-20",
+        "role": "issuer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-09-19",
+        "role": "issuer"
+      },
+      {
+        "ticker": "LMT",
+        "date": "2025-08-20",
+        "role": "issuer"
+      }
+    ]
+  },
+  "exclusions": []
+}

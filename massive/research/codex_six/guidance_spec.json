@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "frozen_before_label_review": true,
+  "sample_start": "2024-01-01",
+  "sample_end": "2025-12-31",
+  "strategy": "protective_put",
+  "hypothesis": "An unchanged guidance midpoint can conceal a lower downside bound and a wider outcome interval.",
+  "candidate_categories": ["guidance_issuance_or_update"],
+  "positive_rule": [
+    "The filing or its contemporaneous exhibit provides a revised quantitative guidance range and a directly comparable prior range, or a prior in-sample disclosure provides that prior range.",
+    "Old and new ranges must concern exactly the same metric, accounting basis, currency/units, and fiscal period; no same-number comparisons across different forecast horizons.",
+    "Both ranges have finite ordered endpoints and the absolute prior midpoint is greater than zero.",
+    "The absolute midpoint change divided by the absolute prior midpoint is at most 0.01.",
+    "The revised lower endpoint is strictly lower and the revised interval width is strictly greater.",
+    "Use the first eligible metric in this fixed order: adjusted EPS, GAAP EPS, revenue, operating income, EBITDA, free cash flow. Keep at most one event per issuer and filing date."
+  ],
+  "controls": "Other guidance events with an auditable same-metric/basis/period old/new range pair that fails the positive rule. Events with missing prior ranges, vague qualitative guidance, or ambiguous comparability are unclassified rather than controls.",
+  "sources": "Store supporting-text evidence and contemporaneous full-filing/exhibit URLs, retrieval status, numeric endpoints and exact source annotations. Do not use later filings to establish what an earlier filing said.",
+  "prohibited": ["No outcome prices", "No 2026 events", "No loosening thresholds after seeing counts or returns", "No treating a point forecast or a reaffirmation without a changed range as a widening"]
+}

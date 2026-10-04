@@ -1,0 +1,182 @@
+[
+  {
+    "event_id": "governance:BAC:2025-04-24",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.3335575556964413,
+      "1m_pre_P_L0.05_iv": 0.38264894466464505,
+      "1m_decision_P_K_iv": 0.3084776200856104,
+      "1m_decision_P_L0.05_iv": 0.3642444363477376,
+      "3-6m_pre_P_K_iv": 0.3242083041390641,
+      "3-6m_pre_P_L0.05_iv": 0.36166754102044074,
+      "3-6m_decision_P_K_iv": 0.3117784312208245,
+      "3-6m_decision_P_L0.05_iv": 0.3504524965031992,
+      "1m_change": -0.025079935610830884,
+      "3-6m_change": -0.012429872918239604,
+      "downside_skew": 0.038674065282374714
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 156,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:GS:2025-04-24",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.3751152774081643,
+      "1m_pre_P_L0.05_iv": 0.40695424016635584,
+      "1m_decision_P_K_iv": 0.34727124292943345,
+      "1m_decision_P_L0.05_iv": 0.383947009093357,
+      "3-6m_pre_P_K_iv": 0.3488951850886909,
+      "3-6m_pre_P_L0.05_iv": 0.37305319758998756,
+      "3-6m_decision_P_K_iv": 0.33167841107197626,
+      "3-6m_decision_P_L0.05_iv": 0.35696502020251175,
+      "1m_change": -0.02784403447873085,
+      "3-6m_change": -0.01721677401671462,
+      "downside_skew": 0.025286609130535487
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 164,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:PFE:2025-04-28",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.3075675344596436,
+      "1m_pre_P_L0.05_iv": 0.35036754861675623,
+      "1m_decision_P_K_iv": 0.3014367766885009,
+      "1m_decision_P_L0.05_iv": 0.35641267325291404,
+      "3-6m_pre_P_K_iv": 0.2886647724845266,
+      "3-6m_pre_P_L0.05_iv": 0.3366067664847634,
+      "3-6m_decision_P_K_iv": 0.2910164130805356,
+      "3-6m_decision_P_L0.05_iv": 0.31501931102710046,
+      "1m_change": -0.006130757771142692,
+      "3-6m_change": 0.002351640596009008,
+      "downside_skew": 0.02400289794656485
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 152,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:GE:2025-05-09",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.2779339601034496,
+      "1m_pre_P_L0.05_iv": 0.3037078441780058,
+      "1m_decision_P_K_iv": 0.24152555071657167,
+      "1m_decision_P_L0.05_iv": 0.2885577233299168,
+      "3-6m_pre_P_K_iv": 0.30713258250209774,
+      "3-6m_pre_P_L0.05_iv": 0.3274055145409478,
+      "3-6m_decision_P_K_iv": 0.28635517276958466,
+      "3-6m_decision_P_L0.05_iv": 0.30755737130499916,
+      "1m_change": -0.03640840938687795,
+      "3-6m_change": -0.020777409732513075,
+      "downside_skew": 0.021202198535414496
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 151,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:CVS:2025-05-20",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.30967797843127687,
+      "1m_pre_P_L0.05_iv": 0.334453779672504,
+      "1m_decision_P_K_iv": 0.30262972200743765,
+      "1m_decision_P_L0.05_iv": 0.32666952289045437,
+      "3-6m_pre_P_K_iv": 0.3320804303827146,
+      "3-6m_pre_P_L0.05_iv": 0.3488499219741791,
+      "3-6m_decision_P_K_iv": 0.3352447112311092,
+      "3-6m_decision_P_L0.05_iv": 0.3493908762689061,
+      "1m_change": -0.0070482564238392165,
+      "3-6m_change": 0.003164280848394596,
+      "downside_skew": 0.014146165037796865
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 163,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:UNH:2025-06-04",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.3897634863965391,
+      "1m_pre_P_L0.05_iv": 0.39111351577210796,
+      "1m_decision_P_K_iv": 0.36173530132732135,
+      "1m_decision_P_L0.05_iv": 0.3666350801047866,
+      "3-6m_pre_P_K_iv": 0.46181905019145175,
+      "3-6m_pre_P_L0.05_iv": 0.46952908297894236,
+      "3-6m_decision_P_K_iv": 0.4599657192135552,
+      "3-6m_decision_P_L0.05_iv": 0.46904266791547444,
+      "1m_change": -0.02802818506921778,
+      "3-6m_change": -0.001853330977896528,
+      "downside_skew": 0.009076948701919219
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 179,
+    "primary_usable": true
+  },
+  {
+    "event_id": "governance:FDX:2025-10-02",
+    "signal": "governance",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.2799531259261313,
+      "1m_pre_P_L0.05_iv": 0.28503587607580416,
+      "1m_decision_P_K_iv": 0.2849212863992857,
+      "1m_decision_P_L0.05_iv": 0.27158318102697776,
+      "1m_change": 0.004968160473154404
+    },
+    "pricing_drops": [],
+    "primary_attrition": [
+      "No selected 3-6m option panel"
+    ],
+    "observations": 37,
+    "primary_usable": false
+  },
+  {
+    "event_id": "buried:MSFT:2024-12-11",
+    "signal": "buried",
+    "passed": true,
+    "reason": "text-only signal",
+    "features": {
+      "1m_pre_P_K_iv": 0.18116733736003926,
+      "1m_pre_P_L0.05_iv": 0.1986414595122073,
+      "1m_decision_P_K_iv": 0.17835912052160247,
+      "1m_decision_P_L0.05_iv": 0.20874053418421612,
+      "3-6m_pre_P_K_iv": 0.22855228255687865,
+      "3-6m_pre_P_L0.05_iv": 0.23338866268029929,
+      "3-6m_decision_P_K_iv": 0.22989456109381928,
+      "3-6m_decision_P_L0.05_iv": 0.23740373487959082,
+      "1m_change": -0.0028082168384367945,
+      "3-6m_change": 0.0013422785369406331,
+      "downside_skew": 0.007509173785771539
+    },
+    "pricing_drops": [],
+    "primary_attrition": [],
+    "observations": 168,
+    "primary_usable": true
+  }
+]

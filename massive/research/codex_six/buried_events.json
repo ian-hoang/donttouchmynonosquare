@@ -1,0 +1,156 @@
+{
+  "metadata": {
+    "period": [
+      "2024-01-01",
+      "2025-12-31"
+    ],
+    "input_rows": 2956,
+    "input_filings": 1741,
+    "input_sha256": "2811f3fffeb007df61b9756767aeb50762c86e84de615055dd2a5966b6920cab",
+    "candidate_filings": 110,
+    "all_candidate_excerpts_screened": true,
+    "full_main_filings_reviewed": 24,
+    "issuer_release_only_reviews": 1,
+    "relevant_exhibits_reviewed": 3,
+    "routine_tag_candidates": 6,
+    "additional_lexical_routine_candidate": "C 2024-02-20",
+    "audit_status": "complete_for_defined_cached_candidate_pool",
+    "prices_or_return_outcomes_read": false,
+    "filings_from_2026_used": false,
+    "publication_rule": "Use cached filing date only; execution timing is handled separately by the engine. Report/event dates in the cover are not substituted for filing dates.",
+    "limitations": [
+      "Cached sponsor taxonomy/excerpts define the candidate screen; this is not exhaustive full-text screening of all 1,741 filings.",
+      "All 110 adverse candidate excerpts were annotated; only economically plausible routine combinations, duration cases, and selected comparison filings received full-primary-source review.",
+      "Direct SEC download returned 403 and was stopped; accessible web SEC/issuer sources support the recorded factual paraphrases. Raw full filings are not cached.",
+      "One buried trigger cannot establish an attention effect or alpha. Controls vary by issuer and event type and are descriptive, not randomized or propensity matched.",
+      "Zero duration triggers means the exact strategy is untestable in this screened sample, not disproved. No indefinite risk was relabeled as 60\u2013180 days."
+    ],
+    "spec_sha256": "fc2810086a37a4d2c1956a1ed6f77befa9165f1ae886af5fd97cc997142b5241"
+  },
+  "events": [
+    {
+      "ticker": "MSFT",
+      "filing_date": "2024-12-11",
+      "accession_number": "0001193125-24-275524",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/789019/0001193125-24-275524.txt",
+        "https://www.sec.gov/Archives/edgar/data/789019/000119312524275524/d865252d8k.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 5.07 annual-meeting results and nine vote tables precede Item 7.01. That later item announces an approximately $800m Cruise impairment, lowering quarterly EPS about $0.09 beyond prior guidance. No adverse main heading or opening summary precedes the meeting information.",
+      "full_source_reviewed": true,
+      "control": false,
+      "adverse_type": "investment_impairment",
+      "routine_item": "5.07",
+      "adverse_item": "7.01"
+    }
+  ],
+  "controls": [
+    {
+      "ticker": "ABBV",
+      "filing_date": "2025-01-10",
+      "accession_number": "0001551152-25-000006",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1551152/0001551152-25-000006.txt",
+        "https://www.sec.gov/Archives/edgar/data/1551152/000155115225000006/abbv-20250109.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 2.06 is the sole substantive item and leads with the clinical-program impairment.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "C",
+      "filing_date": "2025-09-24",
+      "accession_number": "0001104659-25-092977",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/831001/0001104659-25-092977.txt",
+        "https://www.sec.gov/Archives/edgar/data/831001/000110465925092977/c-20250924x8k.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Combined Items 2.06 and 8.01 discuss the Banamex stake sale and the directly related impairment. The board change is part of the same transaction; exhibit 99.1 is only registered securities.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "CVX",
+      "filing_date": "2024-01-02",
+      "accession_number": "0000093410-24-000002",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/93410/0000093410-24-000002.txt",
+        "https://www.sec.gov/Archives/edgar/data/93410/000009341024000002/cvx-20240102.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 2.02 immediately announces impairment and decommissioning charges; no unrelated administrative material precedes them.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "DIS",
+      "filing_date": "2024-02-28",
+      "accession_number": "0001193125-24-049404",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1744489/0001193125-24-049404.txt",
+        "https://www.sec.gov/Archives/edgar/data/1744489/000119312524049404/d800554d8k.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 2.06 leads with Star India impairment. Subsequent Item 7.01 and the press release concern the same joint venture.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "GM",
+      "filing_date": "2024-12-04",
+      "accession_number": "0001193125-24-270298",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1467858/0001193125-24-270298.txt",
+        "https://www.sec.gov/Archives/edgar/data/1467858/000119312524270298/d902397d8k.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 2.06 is the only substantive item and leads with China JV impairment and restructuring.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "GM",
+      "filing_date": "2025-10-14",
+      "accession_number": "0001467858-25-000136",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/1467858/0001467858-25-000136.txt",
+        "https://www.sec.gov/Archives/edgar/data/1467858/000146785825000136/gm-20251007.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 2.06 is the only substantive item; its heading and opening discussion identify the EV impairment/realignment.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    },
+    {
+      "ticker": "VZ",
+      "filing_date": "2024-01-17",
+      "accession_number": "0000732712-24-000003",
+      "sources": [
+        "https://www.sec.gov/Archives/edgar/data/732712/0000732712-24-000003.txt",
+        "https://www.sec.gov/Archives/edgar/data/732712/000073271224000003/vz-20240117.htm"
+      ],
+      "signal": "buried",
+      "strategy": "collar",
+      "reason": "Item 8.01 immediately describes wireline deterioration and the resulting goodwill impairment.",
+      "full_source_reviewed": true,
+      "control": true,
+      "control_type": "dedicated_impairment_without_unrelated_routine_burial"
+    }
+  ]
+}
