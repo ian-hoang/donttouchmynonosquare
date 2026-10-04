@@ -1,0 +1,43 @@
+6E: 96,218 hourly bars; tick by year: 2010:small, 2011:small, 2012:small, 2013:small, 2014:small, 2015:small, 2016:small, 2017:small, 2018:small, 2019:small, 2020:small, 2021:small, 2022:small, 2023:small, 2024:small, 2025:small, 2026:small
+6J: 96,198 hourly bars; tick by year: 2010:small, 2011:small, 2012:small, 2013:small, 2014:small, 2015:small, 2016:small, 2017:small, 2018:small, 2019:small, 2020:small, 2021:small, 2022:small, 2023:small, 2024:small, 2025:small, 2026:small
+6B: 96,193 hourly bars; tick by year: 2010:LARGE, 2011:LARGE, 2012:LARGE, 2013:LARGE, 2014:LARGE, 2015:LARGE, 2016:LARGE, 2017:LARGE, 2018:LARGE, 2019:LARGE, 2020:LARGE, 2021:LARGE, 2022:LARGE, 2023:LARGE, 2024:LARGE, 2025:LARGE, 2026:LARGE
+6A: 96,206 hourly bars; tick by year: 2010:small, 2011:small, 2012:small, 2013:small, 2014:small, 2015:small, 2016:LARGE, 2017:LARGE, 2018:LARGE, 2019:LARGE, 2020:small, 2021:small, 2022:small, 2023:small, 2024:small, 2025:small, 2026:small
+6C: 96,209 hourly bars; tick by year: 2010:small, 2011:small, 2012:small, 2013:small, 2014:small, 2015:small, 2016:small, 2017:small, 2018:small, 2019:small, 2020:small, 2021:small, 2022:small, 2023:small, 2024:small, 2025:small, 2026:small
+6S: 96,158 hourly bars; tick by year: 2010:small, 2011:small, 2012:small, 2013:small, 2014:small, 2015:small, 2016:LARGE, 2017:LARGE, 2018:LARGE, 2019:LARGE, 2020:LARGE, 2021:LARGE, 2022:small, 2023:small, 2024:small, 2025:small, 2026:small
+ES daily closes: 4,065 (2010-06-07 -> 2026-09-30), roll-safe returns missing: 1
+Months: 195; with a valid basket and MTD: 194; average currencies in basket: 6.00; avg round-trip cost 1.14 bp per window
+Events with |MTD| > 1%: 159 (up 110, down 49)
+
+=== PRIMARY: mean G = s x (r_pre - r_post), six-currency basket, bp per event ===
+    n=159  mean_bp=7.875  t=4.390  t_nw3=4.486  hit=0.717  sharpe_ann=1.206
+
+=== TRADE (2 round trips per currency per event) ===
+    G       n=159  mean_bp=7.875  t=4.390  t_nw3=4.486  hit=0.717  sharpe_ann=1.206
+    net     n=159  mean_bp=5.601  t=3.118  t_nw3=3.174  hit=0.667  sharpe_ann=0.857
+    net_2x  n=159  mean_bp=3.326  t=1.849  t_nw3=1.874  hit=0.623  sharpe_ann=0.508
+
+VERDICT (pre-registered rule): PASS   [primary t>=2: True, net>0: True, net 2x>0: True]
+
+=== By sample ===
+  in-sample (before 2024-10)     G n=141  mean_bp=7.794  t=4.043  t_nw3=4.113  hit=0.716  sharpe_ann=1.180
+  OOS (from 2024-10)             G n=18  mean_bp=8.515  t=1.722  t_nw3=1.914  hit=0.722  sharpe_ann=1.406
+  2010-07..2015-02 (1-min fix)   G n=47  mean_bp=12.112  t=4.549  t_nw3=5.393  hit=0.787  sharpe_ann=2.299
+  2015-03..2020-12               G n=56  mean_bp=8.609  t=2.963  t_nw3=3.195  hit=0.732  sharpe_ann=1.372
+  2021..2026                     G n=56  mean_bp=3.587  t=1.027  t_nw3=1.057  hit=0.643  sharpe_ann=0.475
+  quarter-end months             G n=51  mean_bp=9.885  t=3.224  t_nw3=3.614  hit=0.804  sharpe_ann=1.564
+
+=== Robustness (reported only) ===
+  pre-fix leg s*r_pre (pred > 0):   n=159  mean_bp=3.678  t=2.647  t_nw3=2.562  hit=0.673  sharpe_ann=0.727
+  post-fix leg s*r_post (pred < 0): n=159  mean_bp=-4.198  t=-4.386  t_nw3=-4.628  hit=0.333  sharpe_ann=-1.205
+  6E alone G:                     n=159  mean_bp=6.036  t=2.619  t_nw3=2.498  hit=0.629  sharpe_ann=0.720
+  6J alone G:                     n=159  mean_bp=-2.226  t=-1.166  t_nw3=-1.125  hit=0.509  sharpe_ann=-0.320
+  6B alone G:                     n=159  mean_bp=12.020  t=4.579  t_nw3=4.411  hit=0.730  sharpe_ann=1.258
+  6A alone G:                     n=159  mean_bp=13.540  t=5.275  t_nw3=5.417  hit=0.704  sharpe_ann=1.449
+  6C alone G:                     n=159  mean_bp=6.540  t=2.991  t_nw3=3.043  hit=0.623  sharpe_ann=0.822
+  6S alone G:                     n=159  mean_bp=11.344  t=3.927  t_nw3=4.192  hit=0.698  sharpe_ann=1.079
+  GBP/AUD/CHF basket G:             n=159  mean_bp=12.301  t=5.394  t_nw3=5.392  hit=0.730  sharpe_ann=1.482
+  threshold 0% G:                  n=194  mean_bp=6.418  t=4.103  t_nw3=4.382  hit=0.680  sharpe_ann=1.020
+  threshold 2% G:                  n=123  mean_bp=9.377  t=5.097  t_nw3=5.324  hit=0.732  sharpe_ann=1.592
+  placebo: 2nd-to-last London day G: n=159  mean_bp=3.034  t=2.324  t_nw3=2.243  hit=0.572  sharpe_ann=0.638
+  regression r_pre (bp) on MTD (%), all months: slope=+0.952 bp per 1% (t=+3.13), n=194
+  regression r_post (bp) on MTD (%), all months: slope=-0.953 bp per 1% (t=-4.03)
