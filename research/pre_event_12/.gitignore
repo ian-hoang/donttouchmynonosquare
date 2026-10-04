@@ -1,0 +1,8 @@
+*_cache/
+data/
+outputs/
+*.parquet
+events_*.csv
+events_*.json
+options_*.json
+__pycache__/
