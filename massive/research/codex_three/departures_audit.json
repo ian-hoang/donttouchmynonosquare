@@ -1,0 +1,390 @@
+{
+  "departure_issuer_days": 189,
+  "clusters": [
+    {
+      "ticker": "AIG",
+      "filing_date": "2025-11-14",
+      "decision": "exclude: current appointee never joined; not a second incumbent departure",
+      "accession_number": "0000005272-25-000166",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/5272/0000005272-25-000166.txt",
+      "prior_filing_dates": [
+        "2025-08-18"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/5272/0000005272-25-000098.txt"
+      ],
+      "source_text_sha256": "9c5b86a1af775db4ab46e48c0433416081d4bfa69bb0fe0b0ec9509d99b6ff30"
+    },
+    {
+      "ticker": "AMT",
+      "filing_date": "2025-11-07",
+      "decision": "exclude: planned retirements",
+      "accession_number": "0001053507-25-000153",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000153.txt",
+      "prior_filing_dates": [
+        "2025-09-18"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1053507/0001053507-25-000139.txt"
+      ],
+      "source_text_sha256": "76c8ec97edab7a4c55416155c3f3db4d07c77632faf5567dab7d356d7919f12c"
+    },
+    {
+      "ticker": "BA",
+      "filing_date": "2024-09-20",
+      "decision": "exclude: prior transition expressly refers to retirement; noisy excerpt also misstates successor identity",
+      "accession_number": "0000012927-24-000064",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000064.txt",
+      "prior_filing_dates": [
+        "2024-07-31"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/12927/0000012927-24-000058.txt"
+      ],
+      "source_text_sha256": "fb0d0daf5dcdb72f35acc1d23a1917359b99b957d534326431a3f4eac8d63120"
+    },
+    {
+      "ticker": "BK",
+      "filing_date": "2025-01-08",
+      "decision": "exclude: current planned retirement",
+      "accession_number": "0001193125-25-003516",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1390777/0001193125-25-003516.txt",
+      "prior_filing_dates": [
+        "2024-12-05"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1390777/0001193125-24-271502.txt"
+      ],
+      "source_text_sha256": "0bfc9ed186be2a21c34cf193c584a761aa1f937fadf763456b18c289890c7626"
+    },
+    {
+      "ticker": "BRK.B",
+      "filing_date": "2025-12-11",
+      "decision": "exclude: planned retirement and executive-chair succession",
+      "accession_number": "0001193125-25-314935",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1067983/0001193125-25-314935.txt",
+      "prior_filing_dates": [
+        "2025-10-03"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1067983/0001193125-25-229405.txt"
+      ],
+      "source_text_sha256": "6858a5de21c2f5dc78f6e4e7ee28f84ee9dc6801601ad8b2356735ce4f183e89"
+    },
+    {
+      "ticker": "COST",
+      "filing_date": "2025-08-07",
+      "decision": "exclude: planned retirements",
+      "accession_number": "0000909832-25-000064",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/909832/0000909832-25-000064.txt",
+      "prior_filing_dates": [
+        "2025-06-11"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/909832/0000909832-25-000036.txt"
+      ],
+      "source_text_sha256": "08ed6806e3cd2478d2a47ca0cbaa153c4c3b370b4aaed5eb88e70c0b00267240"
+    },
+    {
+      "ticker": "CSCO",
+      "filing_date": "2024-07-19",
+      "decision": "exclude: repeated Jeff Sharritts departure",
+      "accession_number": "0000858877-24-000012",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/858877/0000858877-24-000012.txt",
+      "prior_filing_dates": [
+        "2024-05-15"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/858877/0001193125-24-139371.txt"
+      ],
+      "source_text_sha256": "0d8c68413a147750be8f60fdacb496561fb0fc20ac1c682a54266a7062051ec7"
+    },
+    {
+      "ticker": "DHR",
+      "filing_date": "2025-07-31",
+      "decision": "exclude: prior internal role continuation and current planned retirement",
+      "accession_number": "0000313616-25-000172",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/313616/0000313616-25-000172.txt",
+      "prior_filing_dates": [
+        "2025-07-24"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/313616/0000313616-25-000155.txt"
+      ],
+      "source_text_sha256": "636660eab73d928de494c9bc55252452068329c4e6ebc8527f2864ee5384590d"
+    },
+    {
+      "ticker": "GD",
+      "filing_date": "2024-03-07",
+      "decision": "exclude: repeated Mark Roualet retirement",
+      "accession_number": "0001193125-24-062267",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/40533/0001193125-24-062267.txt",
+      "prior_filing_dates": [
+        "2024-01-05"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/40533/0001193125-24-003197.txt"
+      ],
+      "source_text_sha256": "bc2627207f093d69912f8b19f306c35847ead3f846c645992e49ac4d7b6db6a3"
+    },
+    {
+      "ticker": "INTC",
+      "filing_date": "2025-04-30",
+      "decision": "exclude: prior interim co-CEOs retain their other executive positions",
+      "accession_number": "0000050863-25-000079",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000079.txt",
+      "prior_filing_dates": [
+        "2025-03-14"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/50863/0000050863-25-000036.txt"
+      ],
+      "source_text_sha256": "4928377960fc3cb94483cbcacd7139b5ef540876d68b54d93cf7039787ae2cd9"
+    },
+    {
+      "ticker": "LIN",
+      "filing_date": "2024-12-02",
+      "decision": "exclude: repeated John Panikar retirement",
+      "accession_number": "0001654954-24-015100",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1707925/0001654954-24-015100.txt",
+      "prior_filing_dates": [
+        "2024-11-04"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1707925/0001654954-24-013677.txt"
+      ],
+      "source_text_sha256": "1407b4633fe7c845dd35857c7c82cff2f0a93d2fdfddff2ce58de9b256a57eab"
+    },
+    {
+      "ticker": "LLY",
+      "filing_date": "2024-07-10",
+      "decision": "exclude: repeated Anat Ashkenazi resignation",
+      "accession_number": "0000059478-24-000164",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000164.txt",
+      "prior_filing_dates": [
+        "2024-06-05"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/59478/0000059478-24-000146.txt"
+      ],
+      "source_text_sha256": "5a842804a7d3c47dd45450b9c0c7d2b62c215897478babd7b5900dd8df679feb"
+    },
+    {
+      "ticker": "MDT",
+      "filing_date": "2024-06-26",
+      "decision": "exclude: prior planned retirement",
+      "accession_number": "0001613103-24-000076",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-24-000076.txt",
+      "prior_filing_dates": [
+        "2024-06-04"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-24-000064.txt"
+      ],
+      "source_text_sha256": "9c9593e3593a4f3893758a2ccd44f4840a64b0e7e5a3770a595a4aa7854c8f87"
+    },
+    {
+      "ticker": "MDT",
+      "filing_date": "2025-05-21",
+      "decision": "include: Jennifer Kirk controller resignation followed by Sean Salmon cardiovascular-head departure",
+      "accession_number": "0001613103-25-000078",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000078.txt",
+      "prior_filing_dates": [
+        "2025-03-17"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1613103/0001613103-25-000034.txt"
+      ],
+      "source_text_sha256": "bbaed6f0a074ecd7ef0fa40da126629b0b7f2a4384de3d0ca162e11414a1893e"
+    },
+    {
+      "ticker": "MMM",
+      "filing_date": "2024-08-01",
+      "decision": "exclude: repeated Monish Patolawala departure",
+      "accession_number": "0000066740-24-000088",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000088.txt",
+      "prior_filing_dates": [
+        "2024-07-10"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/66740/0000066740-24-000070.txt"
+      ],
+      "source_text_sha256": "201f37959246aaa63a32c30ddb59dc495fcc36db9f55f2a36d30f14612f3b5a6"
+    },
+    {
+      "ticker": "MO",
+      "filing_date": "2024-02-28",
+      "decision": "exclude: repeated Murray Garnick retirement",
+      "accession_number": "0000764180-24-000021",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000021.txt",
+      "prior_filing_dates": [
+        "2024-02-01"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/764180/0000764180-24-000007.txt"
+      ],
+      "source_text_sha256": "8c801322f63cd79259872f608095a84cd948acc97f1ae16bde0382b3f4870ef1"
+    },
+    {
+      "ticker": "PG",
+      "filing_date": "2025-08-14",
+      "decision": "exclude: prior internal executive-chair transfer and current planned retirement",
+      "accession_number": "0000080424-25-000111",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000111.txt",
+      "prior_filing_dates": [
+        "2025-07-28"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/80424/0000080424-25-000061.txt"
+      ],
+      "source_text_sha256": "1d9e9d9297fb7e31560c3ae2c07c2ff43da8f75d257782cc2a93a91aec4642d0"
+    },
+    {
+      "ticker": "PYPL",
+      "filing_date": "2024-02-12",
+      "decision": "include: Peggy Alford sales departure followed by Aaron Karczmer enterprise-services departure",
+      "accession_number": "0001193125-24-032073",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-032073.txt",
+      "prior_filing_dates": [
+        "2024-01-08"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1633917/0001193125-24-004471.txt"
+      ],
+      "source_text_sha256": "c182bb5d6cf67d14e62585d827ee51c517d60d4e6de401e00208c4b113f18553"
+    },
+    {
+      "ticker": "SBUX",
+      "filing_date": "2024-09-16",
+      "decision": "exclude: current planned retirement",
+      "accession_number": "0000829224-24-000044",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/829224/0000829224-24-000044.txt",
+      "prior_filing_dates": [
+        "2024-08-14"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/829224/0001193125-24-200724.txt"
+      ],
+      "source_text_sha256": "283528bdfaa6471245dffd4910af7705014e230ed6c58eec10d76b65d12e1ccf"
+    },
+    {
+      "ticker": "SCHW",
+      "filing_date": "2024-07-25",
+      "decision": "exclude: repeated Peter Crawford planned retirement",
+      "accession_number": "0001193125-24-184831",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-184831.txt",
+      "prior_filing_dates": [
+        "2024-05-16"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-140547.txt",
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-140547.txt",
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-140547.txt"
+      ],
+      "source_text_sha256": "29298e6433b81ae31c5c1c681df0616b01fe33eaf7b8f42d80d2e258af06189d"
+    },
+    {
+      "ticker": "SCHW",
+      "filing_date": "2024-10-01",
+      "decision": "exclude: current planned retirement",
+      "accession_number": "0001193125-24-229532",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-229532.txt",
+      "prior_filing_dates": [
+        "2024-07-25"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/316709/0001193125-24-184831.txt"
+      ],
+      "source_text_sha256": "d15d727b51841f6e68c70b9cde0371dcc11fd278a0712d89a3bfe2726c136d65"
+    },
+    {
+      "ticker": "TMUS",
+      "filing_date": "2025-09-22",
+      "decision": "exclude: current internal transfer to executive vice-chair role",
+      "accession_number": "0001193125-25-209990",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-209990.txt",
+      "prior_filing_dates": [
+        "2025-08-25"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-187812.txt",
+        "https://www.sec.gov/Archives/edgar/data/1283699/0001193125-25-187812.txt"
+      ],
+      "source_text_sha256": "1f917eec8a15c2684dfa343ca3fb7bd12fc095c5ae09f06c278e56555672053f"
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-05-14",
+      "decision": "exclude: prior executive remains in management through internal transfer",
+      "accession_number": "0000731766-25-000134",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000134.txt",
+      "prior_filing_dates": [
+        "2025-04-29"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000125.txt"
+      ],
+      "source_text_sha256": "686fb9e63a889b186924fc137383b0cbaae4243f9d5e92502818ce73431fbc75"
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-06-04",
+      "decision": "exclude: repeated Andrew Witty departure; compensation update",
+      "accession_number": "0000731766-25-000154",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000154.txt",
+      "prior_filing_dates": [
+        "2025-04-29",
+        "2025-05-14"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000125.txt",
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000134.txt"
+      ],
+      "source_text_sha256": "b084153409157149d22000e2cf83c5ca3ad386f06420edca3d0af0c67cb3e894"
+    },
+    {
+      "ticker": "UNH",
+      "filing_date": "2025-07-31",
+      "decision": "exclude: ambiguous contractual advisor transition; no clear unplanned second management exit",
+      "accession_number": "0000731766-25-000232",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000232.txt",
+      "prior_filing_dates": [
+        "2025-05-14",
+        "2025-06-04"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000134.txt",
+        "https://www.sec.gov/Archives/edgar/data/731766/0000731766-25-000154.txt"
+      ],
+      "source_text_sha256": "b00f58c8097c44b79e9d0806073cc3bd78d13f242afd2a1ea1fe8d42ee4d2b93"
+    },
+    {
+      "ticker": "USB",
+      "filing_date": "2024-08-21",
+      "decision": "exclude: current planned retirement",
+      "accession_number": "0001193125-24-204316",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/36104/0001193125-24-204316.txt",
+      "prior_filing_dates": [
+        "2024-06-27"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/36104/0001193125-24-170036.txt"
+      ],
+      "source_text_sha256": "61d97108f7ba52519f228ce9af58ae7ddf2f2baf416eab79014a4938a2e2d77e"
+    },
+    {
+      "ticker": "USB",
+      "filing_date": "2025-04-16",
+      "decision": "exclude: repeated Andrew Cecere internal executive-chair transfer",
+      "accession_number": "0001193125-25-082814",
+      "filing_url": "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-082814.txt",
+      "prior_filing_dates": [
+        "2025-01-28"
+      ],
+      "prior_sources": [
+        "https://www.sec.gov/Archives/edgar/data/36104/0001193125-25-014216.txt"
+      ],
+      "source_text_sha256": "5bfc6d463dd646a5560d29870ef087c75914b01d0d049740491b6115976fbc87"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "status": "frozen before observing option returns for these rules",
+  "window": ["2024-01-01", "2025-12-31"],
+  "outcome_cutoff": "2025-12-31",
+  "oos": "2026 is not requested or evaluated",
+  "entry": "Close of second trading session strictly after filing date; delays 1 and 3 are sensitivities",
+  "selection": "Historical option chain and spot proxy from session strictly before filing; no future prices for contract selection",
+  "primary_bucket": "3-6m",
+  "bucket_sensitivity": ["1m", "2m"],
+  "primary_otm": 0.05,
+  "otm_sensitivity": [0.03, 0.10],
+  "horizons": [1, 2, 3, 5, 10, 21, 42, 63, "exp"],
+  "primary_horizon": 21,
+  "prices": "Same-session positive-volume daily trade closes only. They are marks, not executable NBBO fills.",
+  "costs": "5% of actual entry and exit premium per option leg plus $0.65 per contract per side; 0%, 2.5%, and 10% haircuts also shown. All synthetic-stock option legs included.",
+  "normalization": "P&L per preselected stock-equivalent notional at entry, matching challenge convention; also report return on option premium or cash-secured collateral. No annualized Sharpe from overlapping events.",
+  "placebo": "Same company, same year, up to 5 deterministic dates at offsets -42,+42,-63,+63,-84,+84,-105,+105,-126,+126 sessions; exclude within 10 sessions of same-family filings. Date matching, no returns-based selection; earnings/regime matching imperfect. Symmetric dates specified before any option evaluation to permit controls for early-2024 events.",
+  "paired_inference": "Compare event net return against mean net placebo return at same parameters and horizon. Cluster bootstrap by economic issuer; small cluster counts are descriptive only.",
+  "departure_rule": "Second distinct executive departure within 90 calendar days; exclude planned retirement, same-person repeated notice, not-yet-joined appointee cancellation, and internal role transfer without exit from management. Distinct roles required. Use 90-day issuer cooldown. All manual decisions must be tied to contemporaneous source text before returns.",
+  "credit_rule": "AXP U.S. Consumer or COF Domestic Card: current 30+day delinquency rate below immediately preceding month while current annualized net write-off/charge-off rate above preceding month. Long ATM call per starter. No tuning thresholds. Require comparable portfolios; exclude known reclassification/acquisition transitions and missing previous-month measurements. Issuer cooldown 30 calendar days.",
+  "liquidity_rule": "Credit-facility completion/extension preserving or increasing capacity, with completed maturity extension or replacement extending funding runway; facts must be explicit in text. See liquidity agent spec for exact exclusions frozen before returns.",
+  "claim_limit": "Development event study only. Statistical significance alone is not proof of live alpha, particularly with backfilled labels, synthetic stock, stale trade-data limitations, and prior unrelated scans in this shared repo."
+}

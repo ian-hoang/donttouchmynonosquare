@@ -1,0 +1,727 @@
+{
+  "0001104659-25-009673": {
+    "eligible": false,
+    "expected_ticker": "ABBV",
+    "expected_date": "2025-02-05",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001104659-24-007725": {
+    "eligible": false,
+    "expected_ticker": "ABT",
+    "expected_date": "2024-01-29",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001467373-24-000157": {
+    "eligible": false,
+    "expected_ticker": "ACN",
+    "expected_date": "2024-05-17",
+    "reason_code": "old_maturity_missing",
+    "reason": "Capacity rises from $3.0b to $5.5b, but old maturity is absent; new five-year term alone does not prove an extension."
+  },
+  "0000005272-24-000105": {
+    "eligible": false,
+    "expected_ticker": "AIG",
+    "expected_date": "2024-09-27",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-067902": {
+    "eligible": false,
+    "expected_ticker": "AMD",
+    "expected_date": "2025-03-31",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0001053507-25-000010": {
+    "eligible": false,
+    "expected_ticker": "AMT",
+    "expected_date": "2025-01-28",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-309718": {
+    "eligible": false,
+    "expected_ticker": "AMT",
+    "expected_date": "2025-12-05",
+    "reason_code": "repayment_not_extension",
+    "reason": "Repayment of existing facility, without a maturity extension."
+  },
+  "0001193125-25-005318": {
+    "eligible": false,
+    "expected_ticker": "AVGO",
+    "expected_date": "2025-01-13",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0000012927-24-000037": {
+    "eligible": true,
+    "expected_ticker": "BA",
+    "expected_date": "2024-05-17",
+    "reason_code": "qualifies",
+    "reason": "Executed five-year $4b replacement of two facilities totaling $4b and maturing in 2024.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 4000000000.0,
+        "new_capacity_usd": 4000000000.0,
+        "old_maturity": [
+          "2024-08-22",
+          "2024-10-30"
+        ],
+        "new_maturity": "2029-05-15",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old facilities are $0.8b plus $3.2b. New maturity is five calendar years after May 15, 2024, from stated term; day convention not independently checked."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0000012927-24-000068": {
+    "eligible": false,
+    "expected_ticker": "BA",
+    "expected_date": "2024-10-15",
+    "reason_code": "new_or_supplemental_only",
+    "reason": "Supplemental credit capacity, with no maturity-extension comparison in the excerpt."
+  },
+  "0000012927-25-000064": {
+    "eligible": true,
+    "expected_ticker": "BA",
+    "expected_date": "2025-08-28",
+    "reason_code": "qualifies",
+    "reason": "Executed $3b 364-day replacement of $3b facility expiring at signing.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 3000000000.0,
+        "new_capacity_usd": 3000000000.0,
+        "old_maturity": "2025-08-25",
+        "new_maturity": "2026-08-24",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "New date calculated as stated signing date plus 364 calendar days."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0001075531-24-000029": {
+    "eligible": false,
+    "expected_ticker": "BKNG",
+    "expected_date": "2024-05-10",
+    "reason_code": "capacity_missing",
+    "reason": "Explicit maturity extension, but neither old nor new committed capacity is present in the excerpt."
+  },
+  "0001193125-24-151944": {
+    "eligible": true,
+    "expected_ticker": "BLK",
+    "expected_date": "2024-05-31",
+    "reason_code": "qualifies",
+    "reason": "Actual maturity extension plus $0.4b increase to $5.4b committed revolving capacity.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 5000000000.0,
+        "new_capacity_usd": 5400000000.0,
+        "old_maturity": null,
+        "new_maturity": "2029-03-31",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old capacity is $5.4b minus $0.4b. Old maturity not given, but extension is explicit."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "One non-extending lender: not all committed dollars receive the new maturity."
+    ]
+  },
+  "0001193125-24-254116": {
+    "eligible": false,
+    "expected_ticker": "BLK",
+    "expected_date": "2024-11-08",
+    "reason_code": "commercial_paper_only",
+    "reason": "Commercial-paper program does not itself establish a committed revolving-facility maturity extension."
+  },
+  "0001193125-25-073567": {
+    "eligible": true,
+    "expected_ticker": "BLK",
+    "expected_date": "2025-04-07",
+    "reason_code": "qualifies",
+    "reason": "Actual maturity extension plus $0.5b increase to $5.9b committed revolving capacity.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 5400000000.0,
+        "new_capacity_usd": 5900000000.0,
+        "old_maturity": "2029-03-31",
+        "new_maturity": "2030-03-31",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old extended-lender maturity corroborated by prior filing. Non-extending lender remains March 31, 2028."
+      }
+    ],
+    "prior_accessions": [
+      "0001193125-24-151944"
+    ],
+    "audit_flags": [
+      "One non-extending lender: not all committed dollars receive the new maturity.",
+      "Leverage-covenant threshold also changes."
+    ]
+  },
+  "0001104659-24-096572": {
+    "eligible": false,
+    "expected_ticker": "CAT",
+    "expected_date": "2024-09-04",
+    "reason_code": "old_capacity_missing",
+    "reason": "Extension is explicit, but earlier capacity of the extended facilities is not established by available excerpts."
+  },
+  "0001104659-25-087011": {
+    "eligible": false,
+    "expected_ticker": "CAT",
+    "expected_date": "2025-09-03",
+    "reason_code": "old_capacity_missing",
+    "reason": "Extension is explicit, but earlier capacity of the extended facilities is not established by available excerpts."
+  },
+  "0000950103-24-006839": {
+    "eligible": false,
+    "expected_ticker": "CMCSA",
+    "expected_date": "2024-05-17",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-24-251243": {
+    "eligible": false,
+    "expected_ticker": "CRM",
+    "expected_date": "2024-11-05",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-145772": {
+    "eligible": false,
+    "expected_ticker": "CRM",
+    "expected_date": "2025-06-24",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0001193125-24-028353": {
+    "eligible": false,
+    "expected_ticker": "CSCO",
+    "expected_date": "2024-02-08",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-045574": {
+    "eligible": true,
+    "expected_ticker": "DIS",
+    "expected_date": "2025-03-04",
+    "reason_code": "qualifies",
+    "reason": "Executed 364-day replacement of the prior $5.25b 364-day facility established March 1, 2024.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 5250000000.0,
+        "new_capacity_usd": 5250000000.0,
+        "old_maturity": "2025-02-28",
+        "new_maturity": null,
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old maturity inferred from dated 364-day term. New exact signing/expiration dates absent; a new 364-day replacement is explicit in 2025 filing."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "New exact maturity absent; no numerical runway score assigned."
+    ]
+  },
+  "0000032604-25-000048": {
+    "eligible": false,
+    "expected_ticker": "EMR",
+    "expected_date": "2025-02-14",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-269610": {
+    "eligible": false,
+    "expected_ticker": "FDX",
+    "expected_date": "2025-11-06",
+    "reason_code": "no_maturity_extension",
+    "reason": "Amendment anticipates a spin-off; no maturity extension or capacity increase established."
+  },
+  "0001193125-24-080620": {
+    "eligible": false,
+    "expected_ticker": "GM",
+    "expected_date": "2024-03-28",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-062882": {
+    "eligible": false,
+    "expected_ticker": "GM",
+    "expected_date": "2025-03-26",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0000354950-24-000114": {
+    "eligible": false,
+    "expected_ticker": "HD",
+    "expected_date": "2024-05-09",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0000354950-24-000260": {
+    "eligible": false,
+    "expected_ticker": "HD",
+    "expected_date": "2024-12-19",
+    "reason_code": "capacity_reduction",
+    "reason": "Disclosed termination/replacement reduces available capacity rather than preserving it."
+  },
+  "0000354950-25-000130": {
+    "eligible": false,
+    "expected_ticker": "HD",
+    "expected_date": "2025-05-06",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-24-174346": {
+    "eligible": false,
+    "expected_ticker": "HON",
+    "expected_date": "2024-07-02",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-24-199003": {
+    "eligible": false,
+    "expected_ticker": "HON",
+    "expected_date": "2024-08-12",
+    "reason_code": "capacity_reduction",
+    "reason": "Disclosed termination/replacement reduces available capacity rather than preserving it."
+  },
+  "0001193125-25-055636": {
+    "eligible": true,
+    "expected_ticker": "HON",
+    "expected_date": "2025-03-17",
+    "reason_code": "qualifies",
+    "reason": "Executed $3b 364-day replacement of $1.5b 364-day agreement from March 18, 2024.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 1500000000.0,
+        "new_capacity_usd": 3000000000.0,
+        "old_maturity": "2025-03-17",
+        "new_maturity": "2026-03-16",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Maturities calculated from disclosed agreement dates and 364-day terms. Replacement linked by same filing termination."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0001193125-25-115181": {
+    "eligible": false,
+    "expected_ticker": "HON",
+    "expected_date": "2025-05-08",
+    "reason_code": "term_loan_only",
+    "reason": "Delayed-draw term loan for corporate separation, rather than revolving-facility extension."
+  },
+  "0000950157-24-000918": {
+    "eligible": true,
+    "expected_ticker": "IBM",
+    "expected_date": "2024-06-21",
+    "reason_code": "qualifies",
+    "reason": "Executed one-year extensions of existing $2.5b and $7.5b revolving agreements.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 2500000000.0,
+        "new_capacity_usd": 2500000000.0,
+        "old_maturity": "2026-06-20",
+        "new_maturity": "2027-06-20",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Old date derived from explicitly one-year extension; stated existing commitment held constant."
+      },
+      {
+        "old_capacity_usd": 7500000000.0,
+        "new_capacity_usd": 7500000000.0,
+        "old_maturity": "2028-06-22",
+        "new_maturity": "2029-06-22",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Old date derived from explicitly one-year extension; stated existing commitment held constant."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "Capacity preservation uses existing-sized-amendment proxy; full agreement not re-audited."
+    ]
+  },
+  "0000950157-25-000533": {
+    "eligible": true,
+    "expected_ticker": "IBM",
+    "expected_date": "2025-06-20",
+    "reason_code": "qualifies",
+    "reason": "Executed maturity extensions on existing $2.5b and $7.5b agreements; old dates available from prior filing.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 2500000000.0,
+        "new_capacity_usd": 2500000000.0,
+        "old_maturity": "2027-06-20",
+        "new_maturity": "2028-06-20",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Prior 2024 filing establishes old maturity; capacity-preservation amendment proxy."
+      },
+      {
+        "old_capacity_usd": 7500000000.0,
+        "new_capacity_usd": 7500000000.0,
+        "old_maturity": "2029-06-22",
+        "new_maturity": "2030-06-22",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Prior 2024 filing establishes old maturity; capacity-preservation amendment proxy."
+      }
+    ],
+    "prior_accessions": [
+      "0000950157-24-000918"
+    ],
+    "audit_flags": [
+      "Capacity preservation uses existing-sized-amendment proxy; full agreement not re-audited."
+    ]
+  },
+  "0000896878-25-000006": {
+    "eligible": false,
+    "expected_ticker": "INTU",
+    "expected_date": "2025-01-31",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-24-270689": {
+    "eligible": false,
+    "expected_ticker": "LIN",
+    "expected_date": "2024-12-04",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-306646": {
+    "eligible": false,
+    "expected_ticker": "LIN",
+    "expected_date": "2025-12-03",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0000936468-24-000101": {
+    "eligible": true,
+    "expected_ticker": "LMT",
+    "expected_date": "2024-08-27",
+    "reason_code": "qualifies",
+    "reason": "Executed one-year extension of existing $3b revolving agreement.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 3000000000.0,
+        "new_capacity_usd": 3000000000.0,
+        "old_maturity": "2028-08-24",
+        "new_maturity": "2029-08-24",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Explicit maturity dates; existing-sized-amendment capacity proxy."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "Same filing also reports F-35 aircraft acceptance/payment arrangement.",
+      "Financial maintenance covenant removed.",
+      "Capacity preservation uses existing-sized-amendment proxy."
+    ]
+  },
+  "0001193125-25-192837": {
+    "eligible": true,
+    "expected_ticker": "LMT",
+    "expected_date": "2025-08-29",
+    "reason_code": "qualifies",
+    "reason": "Executed one-year extension of existing $3b revolving agreement.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 3000000000.0,
+        "new_capacity_usd": 3000000000.0,
+        "old_maturity": "2029-08-24",
+        "new_maturity": "2030-08-24",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Explicit maturity dates; existing-sized-amendment capacity proxy."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "SOFR credit-spread adjustment also removed.",
+      "Capacity preservation uses existing-sized-amendment proxy."
+    ]
+  },
+  "0001193125-25-312904": {
+    "eligible": false,
+    "expected_ticker": "LMT",
+    "expected_date": "2025-12-09",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0000060667-25-000162": {
+    "eligible": false,
+    "expected_ticker": "LOW",
+    "expected_date": "2025-08-20",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0001193125-25-208264": {
+    "eligible": false,
+    "expected_ticker": "LOW",
+    "expected_date": "2025-09-19",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0000060667-25-000199": {
+    "eligible": false,
+    "expected_ticker": "LOW",
+    "expected_date": "2025-10-09",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0001141391-25-000199": {
+    "eligible": true,
+    "expected_ticker": "MA",
+    "expected_date": "2025-11-12",
+    "reason_code": "qualifies",
+    "reason": "Executed one-year maturity extension explicitly preserving $8b committed capacity.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 8000000000.0,
+        "new_capacity_usd": 8000000000.0,
+        "old_maturity": "2029-11-07",
+        "new_maturity": "2030-11-07",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Both old and new capacities and maturity dates directly stated."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0001103982-25-000065": {
+    "eligible": true,
+    "expected_ticker": "MDLZ",
+    "expected_date": "2025-02-20",
+    "reason_code": "qualifies",
+    "reason": "Executed replacement of $4.5b five-year and $1.5b 364-day facilities at unchanged commitments.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 4500000000.0,
+        "new_capacity_usd": 4500000000.0,
+        "old_maturity": "2027-02-23",
+        "new_maturity": "2030-02-19",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Dates inferred from disclosed agreement dates and stated five-year terms."
+      },
+      {
+        "old_capacity_usd": 1500000000.0,
+        "new_capacity_usd": 1500000000.0,
+        "old_maturity": "2025-02-19",
+        "new_maturity": "2026-02-18",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Dates calculated from agreement dates and 364-day terms."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "Old five-year agreement may have amendments not captured in excerpt; 364-day renewal independently qualifies."
+    ]
+  },
+  "0000764180-25-000101": {
+    "eligible": true,
+    "expected_ticker": "MO",
+    "expected_date": "2025-07-23",
+    "reason_code": "qualifies",
+    "reason": "Executed one-year extension of existing $3b revolving agreement.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 3000000000.0,
+        "new_capacity_usd": 3000000000.0,
+        "old_maturity": "2028-10-24",
+        "new_maturity": "2029-10-24",
+        "capacity_preservation_proxy": true,
+        "measurement_note": "Both maturity dates directly stated; existing-sized-amendment capacity proxy."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": [
+      "Capacity preservation uses existing-sized-amendment proxy."
+    ]
+  },
+  "0001065280-24-000127": {
+    "eligible": false,
+    "expected_ticker": "NFLX",
+    "expected_date": "2024-04-18",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-327462": {
+    "eligible": false,
+    "expected_ticker": "NFLX",
+    "expected_date": "2025-12-22",
+    "reason_code": "acquisition_financing",
+    "reason": "Acquisition or acquisition-linked financing in the same filing; excluded by frozen rule."
+  },
+  "0000320187-24-000009": {
+    "eligible": true,
+    "expected_ticker": "NKE",
+    "expected_date": "2024-03-11",
+    "reason_code": "qualifies",
+    "reason": "Executed $1b replacement of $1b facility expiring March 8, 2024.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 1000000000.0,
+        "new_capacity_usd": 1000000000.0,
+        "old_maturity": "2024-03-08",
+        "new_maturity": "2025-03-07",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old expiration directly stated; new date calculated from March 8, 2024 plus 364 days."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0000320187-25-000008": {
+    "eligible": true,
+    "expected_ticker": "NKE",
+    "expected_date": "2025-03-10",
+    "reason_code": "qualifies",
+    "reason": "Executed $1b 364-day replacement of prior $1b 364-day agreement from March 8, 2024.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 1000000000.0,
+        "new_capacity_usd": 1000000000.0,
+        "old_maturity": "2025-03-07",
+        "new_maturity": "2026-03-06",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Dates calculated from disclosed signing dates and 364-day terms."
+      }
+    ],
+    "prior_accessions": [
+      "0000320187-24-000009"
+    ],
+    "audit_flags": [
+      "Same filing also replaces a $2b longer-term revolver; qualification rests on 364-day facility."
+    ]
+  },
+  "0001104659-25-052457": {
+    "eligible": true,
+    "expected_ticker": "PEP",
+    "expected_date": "2025-05-23",
+    "reason_code": "qualifies",
+    "reason": "Executed renewal of two $5b facilities at unchanged commitments and later expirations.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 5000000000.0,
+        "new_capacity_usd": 5000000000.0,
+        "old_maturity": "2029-05-24",
+        "new_maturity": "2030-05-23",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old date inferred from dated five-year term; new date directly stated."
+      },
+      {
+        "old_capacity_usd": 5000000000.0,
+        "new_capacity_usd": 5000000000.0,
+        "old_maturity": "2025-05-23",
+        "new_maturity": "2026-05-22",
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old date calculated from 364-day term; new date directly stated."
+      }
+    ],
+    "prior_accessions": [],
+    "audit_flags": []
+  },
+  "0001104659-24-006244": {
+    "eligible": false,
+    "expected_ticker": "PM",
+    "expected_date": "2024-01-24",
+    "reason_code": "not_effective_by_filing",
+    "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+  },
+  "0001104659-24-129362": {
+    "eligible": false,
+    "expected_ticker": "PM",
+    "expected_date": "2024-12-17",
+    "reason_code": "not_effective_by_filing",
+    "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+  },
+  "0001104659-25-120310": {
+    "eligible": false,
+    "expected_ticker": "PM",
+    "expected_date": "2025-12-11",
+    "reason_code": "not_effective_by_filing",
+    "reason": "Agreement or extension explicitly becomes effective after the filing date; not an effective extension at event time."
+  },
+  "0001193125-25-283161": {
+    "eligible": false,
+    "expected_ticker": "PYPL",
+    "expected_date": "2025-11-14",
+    "reason_code": "commercial_paper_only",
+    "reason": "Commercial-paper program does not itself establish a committed revolving-facility maturity extension."
+  },
+  "0000804328-24-000061": {
+    "eligible": false,
+    "expected_ticker": "QCOM",
+    "expected_date": "2024-08-09",
+    "reason_code": "old_capacity_missing",
+    "reason": "Old and new maturities are available, but old committed capacity is missing."
+  },
+  "0001213900-25-054811": {
+    "eligible": false,
+    "expected_ticker": "SBUX",
+    "expected_date": "2025-06-16",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0001193125-25-262515": {
+    "eligible": false,
+    "expected_ticker": "T",
+    "expected_date": "2025-11-03",
+    "reason_code": "maturity_missing",
+    "reason": "Old and new $12b revolving commitments are present, but an actual maturity extension is not established."
+  },
+  "0000027419-24-000171": {
+    "eligible": false,
+    "expected_ticker": "TGT",
+    "expected_date": "2024-10-15",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  },
+  "0000027419-25-000121": {
+    "eligible": true,
+    "expected_ticker": "TGT",
+    "expected_date": "2025-10-09",
+    "reason_code": "qualifies",
+    "reason": "Executed 364-day replacement of prior October 15, 2024 $1b revolver, preserving $1b committed capacity.",
+    "effective_by_filing": true,
+    "facilities": [
+      {
+        "old_capacity_usd": 1000000000.0,
+        "new_capacity_usd": 1000000000.0,
+        "old_maturity": "2025-10-14",
+        "new_maturity": null,
+        "capacity_preservation_proxy": false,
+        "measurement_note": "Old capacity established by matching prior agreement-date filing; exact new signing/expiration date absent from excerpt, but new 364-day replacement explicit."
+      }
+    ],
+    "prior_accessions": [
+      "0000027419-24-000171"
+    ],
+    "audit_flags": [
+      "New exact maturity absent; no numerical runway score assigned.",
+      "Optional $0.5b accordion excluded from committed capacity."
+    ]
+  },
+  "0001552781-24-000539": {
+    "eligible": false,
+    "expected_ticker": "UBER",
+    "expected_date": "2024-09-27",
+    "reason_code": "insufficient_old_terms",
+    "reason": "Available filing excerpts do not establish both a completed maturity extension and nondecreasing committed capacity."
+  }
+}

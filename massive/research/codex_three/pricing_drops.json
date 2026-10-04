@@ -1,0 +1,22 @@
+[
+  {
+    "ticker": "HON",
+    "date": "2025-09-16",
+    "reason": "3-6m: no paired strikes near pre-event proxy"
+  },
+  {
+    "ticker": "HON",
+    "date": "2025-08-15",
+    "reason": "3-6m: no paired strikes near pre-event proxy"
+  },
+  {
+    "ticker": "BLK",
+    "date": "2025-07-09",
+    "reason": "no same-session near-dated pair found after broadened fixed pre-event search"
+  },
+  {
+    "ticker": "MDLZ",
+    "date": "2025-02-20",
+    "reason": "2m: no expiry in fixed bucket"
+  }
+]

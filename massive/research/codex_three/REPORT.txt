@@ -1,0 +1,143 @@
+MASSIVE: THREE STRATEGY DEVELOPMENT TESTS
+Verdict: none has demonstrated convincing tradable alpha in this test.
+Window: 2024-01-01 through 2025-12-31. No 2026 outcomes evaluated.
+
+Primary setup: 21 trading sessions; enter at the close of the second trading session after filing;
+3-6month expiry bucket (nearest 120 calendar days); 5% OTM put/collar wings; long call is ATM.
+Costs: 5% of EACH actual entry and exit option premium, plus $0.65 per contract per side.
+Collar includes the ATM call/put synthetic-stock legs in costs. 4% bond carry is modeled.
+Headline returns are arithmetic mean P&L divided by stock-equivalent entry notional.
+They are not annual returns, Sharpe ratios, or demonstrated live fills.
+
+PRIMARY RESULTS
+Strategy | Qualified events | Fresh-price events | Gross mean | Net mean | Paired events | Mean net edge vs calendar controls
+Liquidity runway / cash-secured put | 17 | 11 | -1.26% | -1.67% | 10 | -2.14%
+  Issuer-cluster bootstrap interval for edge: [-6.15%, +0.45%]; small-sample descriptive interval.
+Second resignation / collar | 2 | 1 | +1.65% | -1.51% | 1 | +0.83%
+Credit turnaround / ATM long call | 3 | 2 | -1.99% | -2.64% | 1 | +1.97%
+  ATM call mean return on premium plus entry costs: -37.83%.
+
+The liquidity comparison uses a matched subset, so its mean event-minus-control edge is not
+the difference between the all-event mean and an unrelated benchmark mean.
+Credit calendar controls are especially weak: the 10-session buffer eliminates all COF controls,
+and the incomplete tag calendar misses actual AXP monthly reports. Do not label that positive
+one-event relative result an alpha finding. The supplementary disclosure-day comparison is separate.
+
+ALL PRESCRIBED HORIZONS AT PRIMARY PARAMETERS
+Returns and sample sizes below show why selecting a positive horizon is not validation.
+
+Liquidity runway / cash-secured put
+Horizon | Fresh n | Net mean | Paired n | Mean net edge
+1 | 10 | -0.38% | 8 | -0.08%
+2 | 10 | -0.42% | 9 | -0.12%
+3 | 9 | -0.83% | 9 | -0.55%
+5 | 10 | -0.45% | 9 | -0.37%
+10 | 11 | -0.16% | 10 | -0.10%
+21 | 11 | -1.67% | 10 | -2.14%
+42 | 11 | -0.62% | 10 | -1.20%
+63 | 6 | +1.54% | 5 | +2.71%
+exp | 4 | +2.58% | 3 | +1.99%
+
+Second resignation / collar
+Horizon | Fresh n | Net mean | Paired n | Mean net edge
+1 | 1 | -3.35% | 1 | -0.20%
+2 | 1 | -3.28% | 1 | +0.41%
+3 | 1 | -3.30% | 1 | -0.01%
+5 | 1 | -3.50% | 1 | -0.24%
+10 | 1 | -2.59% | 1 | -0.06%
+21 | 1 | -1.51% | 1 | +0.83%
+42 | 1 | -0.58% | 1 | -0.13%
+63 | 1 | +2.43% | 1 | +0.57%
+exp | 1 | +2.53% | 1 | +0.05%
+
+Credit turnaround / ATM long call
+Horizon | Fresh n | Net mean | Paired n | Mean net edge
+1 | 2 | -0.96% | 1 | +0.73%
+2 | 2 | -1.38% | 1 | -1.02%
+3 | 2 | -0.48% | 1 | +0.37%
+5 | 2 | -0.02% | 1 | +1.01%
+10 | 1 | -2.36% | 0 | NA
+21 | 2 | -2.64% | 1 | +1.97%
+42 | 2 | -3.07% | 1 | -1.61%
+63 | 2 | +2.62% | 1 | +15.67%
+exp | 2 | +0.69% | 1 | +4.80%
+
+COST SENSITIVITY AT THE PRIMARY 21-SESSION HORIZON
+0% haircut still includes commissions.
+liquidity | premium haircut 0% | n=11 | net=-1.27%
+liquidity | premium haircut 2.5% | n=11 | net=-1.47%
+liquidity | premium haircut 5% | n=11 | net=-1.67%
+liquidity | premium haircut 10% | n=11 | net=-2.07%
+departures | premium haircut 0% | n=1 | net=+1.56%
+departures | premium haircut 2.5% | n=1 | net=+0.03%
+departures | premium haircut 5% | n=1 | net=-1.51%
+departures | premium haircut 10% | n=1 | net=-4.58%
+credit | premium haircut 0% | n=2 | net=-2.00%
+credit | premium haircut 2.5% | n=2 | net=-2.32%
+credit | premium haircut 5% | n=2 | net=-2.64%
+credit | premium haircut 10% | n=2 | net=-3.29%
+
+SAME EVENT COHORT AT 21, 42 AND 63 SESSIONS
+Control availability may still vary by horizon.
+credit | 21 sessions | paired n=1 | net=-0.75% | edge=+1.97%
+credit | 42 sessions | paired n=1 | net=-1.32% | edge=-1.61%
+credit | 63 sessions | paired n=1 | net=+7.20% | edge=+15.67%
+departures | 21 sessions | paired n=1 | net=-1.51% | edge=+0.83%
+departures | 42 sessions | paired n=1 | net=-0.58% | edge=-0.13%
+departures | 63 sessions | paired n=1 | net=+2.43% | edge=+0.57%
+liquidity | 21 sessions | paired n=4 | net=-4.72% | edge=-5.23%
+liquidity | 42 sessions | paired n=4 | net=-3.28% | edge=-4.22%
+liquidity | 63 sessions | paired n=4 | net=+2.01% | edge=+1.27%
+
+LIQUIDITY CAPACITY-EVIDENCE CHECK
+Exclude existing-amendment capacity-preservation proxies: fresh n=8, net mean=-2.54%.
+This subset is a disclosure-quality sensitivity, not a replacement strategy.
+
+SUPPLEMENTARY CREDIT-DISCLOSURE BENCHMARK
+Specified before viewing credit-return results, after observing lack of calendar controls.
+Non-trigger monthly credit reports from the same issuer/year; this is NOT an ordinary-day baseline.
+21 sessions: paired n=1, event net=-0.75%, control net=-3.47%, edge=+2.73%.
+
+INTERPRETATION
+Liquidity: negative mean and negative matched edge at the fixed primary horizon. No validated edge.
+Departures: 27 apparent date clusters shrink to 2 distinct eligible departure sequences; too sparse.
+Credit: 43 reports shrink to 3 clean divergence events after accounting-change filters; too sparse.
+Positive longer-horizon cells exist. They cannot establish repeatable alpha from these small samples.
+No OOS evaluation or annualized Sharpe is warranted by this development evidence.
+
+DATA AND EXECUTION LIMITATIONS
+- Option trade closes are not executable bid/ask quotes
+- Strict freshness causes selection and missingness; n varies by horizon and parameters
+- Different ordinary dates have different market/earnings conditions
+- AI tags are retrospective and exact historical vendor availability is unknown
+- Synthetic-stock parity assumes fixed 4% rate, no dividends, no early assignment
+- Expiry results use fresh last-trade marks on expiry session, not independently observed settlement
+- No outcomes after 2025-12-31; late events are censored
+- Small issuer counts make confidence intervals unreliable, particularly one-issuer credit signal
+- No multiplicity-adjusted significance claim; shared repo contains prior unrelated scans
+- Event membership and credit-table extraction were manually source-reviewed before their outcomes.
+  This is a reproducible historical screen, not a finished automatic sealed-window classifier.
+- Same-session daily option prints can occur at different times. They do not guarantee simultaneous fills.
+- Positive daily volume alone does not establish capacity; early assignment and dividends are not fully modeled.
+- The credit signal is unadjusted for monthly seasonality. Both qualifying COF filings concern early-year months.
+
+VERIFICATION AND REPRODUCTION
+8 focused unit tests pass, including signs, all-leg costs, stale-price rejection, pre-event search and OOS blocking.
+Saved-data checks passed for 57,764 observations (many parameter/horizon views of the same events).
+Observed parameter/horizon result cells: 1900; these are not independent trials.
+Raw option marks are in ignored massive/.massive_cache/codex_three/. No credentials appear in reports.
+Run from repository root with massive/.venv/bin/python:
+  massive/research/codex_three/liquidity.py
+  massive/research/codex_three/departures.py
+  massive/research/codex_three/cof_credit_metrics_build.py
+  massive/research/codex_three/axp_credit_metrics_build.py
+  massive/research/codex_three/credit.py
+  massive/research/codex_three/backtest.py
+  massive/research/codex_three/credit_controls.py
+  massive/research/codex_three/summarize.py
+  massive/research/codex_three/report.py
+The cached filing survey is required by data.py; rebuild with the existing count_events.py if absent.
+See engineering_corrections.json for the documented coverage and audit-field fixes.
+Source evidence: liquidity_screened.json, departures_audit.json, cof_credit_metrics.json, axp_credit_metrics.json.
+Detailed numbers: summary.json, primary_price_audit.json and credit_controls_summary.json.
+Source URLs in the metric JSON files identify the original SEC exhibits; no full filings are needed in Git.
