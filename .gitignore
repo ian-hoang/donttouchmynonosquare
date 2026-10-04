@@ -19,3 +19,15 @@ __pycache__/
 .pytest_cache/
 .ipynb_checkpoints/
 .DS_Store
+
+# Massive 8-K challenge: API key and licensed raw API responses stay local
+massive/.env
+massive/.massive_cache/
+
+# Raw third-party / licensed data dumps and pickles stay local (track rule: no licensed raw data in the repo)
+*.pkl
+alpha_ideas/kalshi_cpi/raw/
+research/sp500_alpha/intraday/daily_corrected.json
+research/sp500_alpha/intraday/frozen_daily.json
+research/stock_loan_alpha/data_audit/paired_quote_examples.json
+vrp/out/features_*.csv
