@@ -20,13 +20,15 @@ from gqh import RESULTS, analysis, ledger, metrics, report, research
 from gqh.checks import data_quality, lookahead_check
 
 FINAL = {
-    "strategy": "example_tsmom",
-    "params": {"lookback": 60},
+    "strategy": "roll_oi",
+    "params": {},  # the pre-registered defaults in strategies/roll_oi.py
     # Neighbouring values to show the result isn't a lucky spike (the plateau check)
-    "plateau": {"lookback": [20, 40, 60, 90, 120, 180, 250]},
+    "plateau": {"liq_dte": [3, 4, 5, 6, 7, 8]},
     # Capacity estimate. Turnover, Sharpe, vol and costs come from the backtest; ADV comes from the
     # strategy's dollar_volume(). Set any key here to override, or set "capacity" to None to skip.
-    "capacity": {"aum": 10e6},
+    # adv_per_name: the thinnest leg traded (GF front contract, median $/day over its last 5 days before expiry,
+    # in-sample), applied to every leg so the estimate is conservative. The default average-ADV would overstate it.
+    "capacity": {"aum": 10e6, "adv_per_name": 67e6},
 }
 
 LOCK = RESULTS / "OOS_LOCK.json"
@@ -55,7 +57,7 @@ def capacity_inputs(strat, prep, is_run, overrides: dict) -> dict:
     gross = metrics.summarize(is_run.gross, is_run.turnover, is_run.periods_per_year)
     returns = metrics.daily_frame(strat.asset_returns(prep.in_sample))
     inputs = {"aum": 10e6, "names": returns.shape[1], "turnover": net["turnover"],
-              "gross_sharpe": gross["sharpe"], "strategy_vol": net["ann_vol"], "fixed_bps": strat.cost_bps,
+              "gross_sharpe": gross["sharpe"], "strategy_vol": net["ann_vol"], "fixed_bps": is_run.cost_bps,
               "daily_vol": float(returns.tail(252).std().mean())}
     dollar_volume = strat.dollar_volume(prep.in_sample)
     if dollar_volume is not None:
@@ -68,7 +70,23 @@ def main():
     p = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     p.add_argument("--final", action="store_true", help="evaluate the out-of-sample period")
     p.add_argument("--relock", metavar="REASON", help="re-evaluate out-of-sample after a change, with a reason")
+    p.add_argument("--strategy", help="in-sample report for another strategy (not allowed with --final)")
+    p.add_argument("--set", nargs="*", default=[], metavar="KEY=VALUE", help="override params (in-sample only)")
+    p.add_argument("--plateau", metavar="KEY=V1,V2", help="plateau values to show (in-sample only)")
     args = p.parse_args()
+
+    final = dict(FINAL)
+    if args.strategy or args.set or args.plateau:
+        if args.final:
+            raise SystemExit("--strategy/--set/--plateau are for in-sample reports. For --final, edit FINAL instead.")
+        from run import parse_sets, parse_value
+        if args.strategy:
+            final = {"strategy": args.strategy, "params": {}, "plateau": None, "capacity": None}
+        final["params"] = {**final["params"], **parse_sets(args.set)}
+        if args.plateau:
+            key, _, values = args.plateau.partition("=")
+            final["plateau"] = {key: [parse_value(v) for v in values.split(",")]}
+    FINAL.update(final)
 
     strat = strategies.get(FINAL["strategy"])
     params = research.params_for(strat, FINAL["params"])
@@ -78,7 +96,7 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     md = [f"# {strat.name}: results\n",
           f"Generated {datetime.now():%Y-%m-%d %H:%M} by `run_all.py{' --final' if args.final else ''}`. "
-          f"Params: `{json.dumps(params)}`. Costs: {strat.cost_bps:g} bps per side.\n",
+          f"Params: `{json.dumps(params)}`. Costs: {research.cost_label(strat)}.\n",
           f"Out-of-sample starts {oos:%Y-%m-%d} (most recent 20% or 2 years, whichever is shorter).\n"]
 
     if args.final:
