@@ -1,0 +1,102 @@
+matches per tournament: {2006: 64, 2010: 64, 2014: 64, 2018: 64, 2022: 64, 2026: 104} | knockout: {2006: 16, 2010: 16, 2014: 16, 2018: 16, 2022: 16, 2026: 32}
+round names: ['Final', 'Match for third place', 'Matchday 1', 'Matchday 10', 'Matchday 11', 'Matchday 12', 'Matchday 13', 'Matchday 14', 'Matchday 15', 'Matchday 16', 'Matchday 17', 'Matchday 2', 'Matchday 3', 'Matchday 4', 'Matchday 5', 'Matchday 6', 'Matchday 7', 'Matchday 8', 'Matchday 9', 'Quarter-final', 'Quarter-finals', 'Quarterfinals', 'Round of 16', 'Round of 32', 'Semi-final', 'Semi-finals', 'Semifinals', 'Third-place play-off']
+cross-check: 424/424 matches found in martj42; disagreements: 0
+
+teams with a country ETF: ['Argentina', 'Australia', 'Austria', 'Belgium', 'Brazil', 'Canada', 'Chile', 'Colombia', 'Denmark', 'Egypt', 'England', 'France', 'Germany', 'Greece', 'Italy', 'Japan', 'Mexico', 'Netherlands', 'New Zealand', 'Nigeria', 'Norway', 'Peru', 'Poland', 'Portugal', 'Qatar', 'Russia', 'Saudi Arabia', 'South Africa', 'South Korea', 'Spain', 'Sweden', 'Switzerland', 'Turkey', 'United States']
+teams without one (excluded): ['Algeria', 'Angola', 'Bosnia and Herzegovina', 'Cameroon', 'Cape Verde', 'Costa Rica', 'Croatia', 'Curaçao', 'Czech Republic', 'DR Congo', 'Ecuador', 'Ghana', 'Haiti', 'Honduras', 'Iceland', 'Iran', 'Iraq', 'Ivory Coast', 'Jordan', 'Morocco', 'North Korea', 'Panama', 'Paraguay', 'Scotland', 'Senegal', 'Serbia', 'Slovakia', 'Slovenia', 'Togo', 'Trinidad and Tobago', 'Tunisia', 'Ukraine', 'Uruguay', 'Uzbekistan', 'Wales']
+
+mapped events by tournament (knockout losses / group losses / all wins):
+      KO losses  group losses  wins
+year                               
+2006         13            11    43
+2010         11            18    38
+2014         13            20    45
+2018         14            24    41
+2022         12            23    37
+2026         21            17    67
+
+all knockout losses (timing audit):
+  2006 Round of 16            Sweden        EWD      Germany 2-0 Sweden                            ends Sat 2006-06-24 16:55 ET -> home session Mon 06-26 -> US Mon 2006-06-26
+  2006 Round of 16            Mexico        EWW      Argentina 2-1 Mexico                          ends Sat 2006-06-24 17:30 ET -> home session Mon 06-26 -> US Mon 2006-06-26
+  2006 Round of 16            Netherlands   EWN      Portugal 1-0 Netherlands                      ends Sun 2006-06-25 16:55 ET -> home session Mon 06-26 -> US Mon 2006-06-26
+  2006 Round of 16            Australia     EWA      Italy 1-0 Australia                           ends Mon 2006-06-26 16:55 ET -> home session Tue 06-27 -> US Tue 2006-06-27
+  2006 Round of 16            Switzerland   EWL      Switzerland 0-0 Ukraine (p 0.0-3.0)           ends Mon 2006-06-26 17:45 ET -> home session Tue 06-27 -> US Tue 2006-06-27
+  2006 Round of 16            Spain         EWP      Spain 1-3 France                              ends Tue 2006-06-27 16:55 ET -> home session Wed 06-28 -> US Wed 2006-06-28
+  2006 Quarterfinals          Argentina     ARGT     Germany 1-1 Argentina (p 4.0-2.0)             ends Fri 2006-06-30 17:45 ET -> home session Mon 07-03 -> US Mon 2006-07-03
+  2006 Quarterfinals          Brazil        EWZ      Brazil 0-1 France                             ends Sat 2006-07-01 16:55 ET -> home session Mon 07-03 -> US Mon 2006-07-03
+  2006 Quarterfinals          England       EWU      England 0-0 Portugal (p 1.0-3.0)              ends Sat 2006-07-01 17:45 ET -> home session Mon 07-03 -> US Mon 2006-07-03
+  2006 Semifinals             Germany       EWG      Germany 0-2 Italy                             ends Tue 2006-07-04 17:30 ET -> home session Wed 07-05 -> US Wed 2006-07-05
+  2006 Semifinals             Portugal      PGAL     Portugal 0-1 France                           ends Wed 2006-07-05 16:55 ET -> home session Thu 07-06 -> US Thu 2006-07-06
+  2006 Third-place play-off   Portugal      PGAL     Germany 3-1 Portugal                          ends Sat 2006-07-08 16:55 ET -> home session Mon 07-10 -> US Mon 2006-07-10
+  2006 Final                  France        EWQ      Italy 1-1 France (p 5.0-3.0)                  ends Sun 2006-07-09 17:45 ET -> home session Mon 07-10 -> US Mon 2006-07-10
+  2010 Round of 16            South Korea   EWY      Uruguay 2-1 South Korea                       ends Sat 2010-06-26 11:55 ET -> home session Mon 06-28 -> US Mon 2010-06-28
+  2010 Round of 16            United States SPY      United States 1-2 Ghana                       ends Sat 2010-06-26 17:00 ET -> home session Mon 06-28 -> US Mon 2010-06-28
+  2010 Round of 16            England       EWU      Germany 4-1 England                           ends Sun 2010-06-27 11:55 ET -> home session Mon 06-28 -> US Mon 2010-06-28
+  2010 Round of 16            Mexico        EWW      Argentina 3-1 Mexico                          ends Sun 2010-06-27 16:25 ET -> home session Mon 06-28 -> US Mon 2010-06-28
+  2010 Round of 16            Chile         ECH      Brazil 3-0 Chile                              ends Mon 2010-06-28 16:25 ET -> home session Tue 06-29 -> US Tue 2010-06-29
+  2010 Round of 16            Japan         EWJ      Paraguay 0-0 Japan (p 5.0-3.0)                ends Tue 2010-06-29 12:45 ET -> home session Wed 06-30 -> US Wed 2010-06-30
+  2010 Round of 16            Portugal      PGAL     Spain 1-0 Portugal                            ends Tue 2010-06-29 16:25 ET -> home session Wed 06-30 -> US Wed 2010-06-30
+  2010 Quarterfinals          Brazil        EWZ      Netherlands 2-1 Brazil                        ends Fri 2010-07-02 11:55 ET -> home session Mon 07-05 -> US Tue 2010-07-06
+  2010 Quarterfinals          Argentina     ARGT     Argentina 0-4 Germany                         ends Sat 2010-07-03 11:55 ET -> home session Mon 07-05 -> US Tue 2010-07-06
+  2010 Semifinals             Germany       EWG      Germany 0-1 Spain                             ends Wed 2010-07-07 16:25 ET -> home session Thu 07-08 -> US Thu 2010-07-08
+  2010 Final                  Netherlands   EWN      Netherlands 0-1 Spain                         ends Sun 2010-07-11 17:00 ET -> home session Mon 07-12 -> US Mon 2010-07-12
+  2014 Round of 16            Chile         ECH      Brazil 1-1 Chile (p 3.0-2.0)                  ends Sat 2014-06-28 14:45 ET -> home session Mon 06-30 -> US Mon 2014-06-30
+  2014 Round of 16            Mexico        EWW      Netherlands 2-1 Mexico                        ends Sun 2014-06-29 13:55 ET -> home session Mon 06-30 -> US Mon 2014-06-30
+  2014 Round of 16            Greece        GREK     Costa Rica 1-1 Greece (p 5.0-3.0)             ends Sun 2014-06-29 18:45 ET -> home session Mon 06-30 -> US Mon 2014-06-30
+  2014 Round of 16            Nigeria       NGE      France 2-0 Nigeria                            ends Mon 2014-06-30 13:55 ET -> home session Tue 07-01 -> US Tue 2014-07-01
+  2014 Round of 16            Switzerland   EWL      Argentina 1-0 Switzerland                     ends Tue 2014-07-01 14:30 ET -> home session Wed 07-02 -> US Wed 2014-07-02
+  2014 Round of 16            United States SPY      Belgium 2-1 United States                     ends Tue 2014-07-01 18:30 ET -> home session Wed 07-02 -> US Wed 2014-07-02
+  2014 Quarter-finals         France        EWQ      France 0-1 Germany                            ends Fri 2014-07-04 13:55 ET -> home session Mon 07-07 -> US Mon 2014-07-07
+  2014 Quarter-finals         Colombia      GXG|COLO Brazil 2-1 Colombia                           ends Fri 2014-07-04 17:55 ET -> home session Mon 07-07 -> US Mon 2014-07-07
+  2014 Quarter-finals         Belgium       EWK      Argentina 1-0 Belgium                         ends Sat 2014-07-05 13:55 ET -> home session Mon 07-07 -> US Mon 2014-07-07
+  2014 Semi-finals            Brazil        EWZ      Brazil 1-7 Germany                            ends Tue 2014-07-08 17:55 ET -> home session Wed 07-09 -> US Wed 2014-07-09
+  2014 Semi-finals            Netherlands   EWN      Netherlands 0-0 Argentina (p 2.0-4.0)         ends Wed 2014-07-09 18:45 ET -> home session Thu 07-10 -> US Thu 2014-07-10
+  2014 Match for third place  Brazil        EWZ      Brazil 0-3 Netherlands                        ends Sat 2014-07-12 17:55 ET -> home session Mon 07-14 -> US Mon 2014-07-14
+  2014 Final                  Argentina     ARGT     Germany 1-0 Argentina                         ends Sun 2014-07-13 17:30 ET -> home session Mon 07-14 -> US Mon 2014-07-14
+  2018 Round of 16            Argentina     ARGT     France 4-3 Argentina                          ends Sat 2018-06-30 11:55 ET -> home session Mon 07-02 -> US Mon 2018-07-02
+  2018 Round of 16            Portugal      PGAL     Uruguay 2-1 Portugal                          ends Sat 2018-06-30 15:55 ET -> home session Mon 07-02 -> US Mon 2018-07-02
+  2018 Round of 16            Spain         EWP      Spain 1-1 Russia (p 3.0-4.0)                  ends Sun 2018-07-01 12:45 ET -> home session Mon 07-02 -> US Mon 2018-07-02
+  2018 Round of 16            Denmark       EDEN     Croatia 1-1 Denmark (p 3.0-2.0)               ends Sun 2018-07-01 16:45 ET -> home session Mon 07-02 -> US Mon 2018-07-02
+  2018 Round of 16            Mexico        EWW      Brazil 2-0 Mexico                             ends Mon 2018-07-02 11:55 ET -> home session Tue 07-03 -> US Tue 2018-07-03
+  2018 Round of 16            Japan         EWJ      Belgium 3-2 Japan                             ends Mon 2018-07-02 15:55 ET -> home session Tue 07-03 -> US Tue 2018-07-03
+  2018 Round of 16            Switzerland   EWL      Sweden 1-0 Switzerland                        ends Tue 2018-07-03 11:55 ET -> home session Wed 07-04 -> US Thu 2018-07-05
+  2018 Round of 16            Colombia      GXG|COLO Colombia 1-1 England (p 3.0-4.0)              ends Tue 2018-07-03 16:45 ET -> home session Wed 07-04 -> US Thu 2018-07-05
+  2018 Quarter-finals         Brazil        EWZ      Brazil 1-2 Belgium                            ends Fri 2018-07-06 15:55 ET -> home session Mon 07-09 -> US Mon 2018-07-09
+  2018 Quarter-finals         Sweden        EWD      Sweden 0-2 England                            ends Sat 2018-07-07 11:55 ET -> home session Mon 07-09 -> US Mon 2018-07-09
+  2018 Quarter-finals         Russia        RSX      Russia 2-2 Croatia (p 3.0-4.0)                ends Sat 2018-07-07 16:45 ET -> home session Mon 07-09 -> US Mon 2018-07-09
+  2018 Semi-finals            Belgium       EWK      France 1-0 Belgium                            ends Tue 2018-07-10 15:55 ET -> home session Wed 07-11 -> US Wed 2018-07-11
+  2018 Semi-finals            England       EWU      Croatia 2-1 England                           ends Wed 2018-07-11 16:30 ET -> home session Thu 07-12 -> US Thu 2018-07-12
+  2018 Match for third place  England       EWU      Belgium 2-0 England                           ends Sat 2018-07-14 11:55 ET -> home session Mon 07-16 -> US Mon 2018-07-16
+  2022 Round of 16            United States SPY      Netherlands 3-1 United States                 ends Sat 2022-12-03 11:55 ET -> home session Mon 12-05 -> US Mon 2022-12-05
+  2022 Round of 16            Australia     EWA      Argentina 2-1 Australia                       ends Sat 2022-12-03 15:55 ET -> home session Mon 12-05 -> US Mon 2022-12-05
+  2022 Round of 16            Poland        EPOL     France 3-1 Poland                             ends Sun 2022-12-04 11:55 ET -> home session Mon 12-05 -> US Mon 2022-12-05
+  2022 Round of 16            Japan         EWJ      Japan 1-1 Croatia (p 1.0-3.0)                 ends Mon 2022-12-05 12:45 ET -> home session Tue 12-06 -> US Tue 2022-12-06
+  2022 Round of 16            South Korea   EWY      Brazil 4-1 South Korea                        ends Mon 2022-12-05 15:55 ET -> home session Tue 12-06 -> US Tue 2022-12-06
+  2022 Round of 16            Spain         EWP      Morocco 0-0 Spain (p 3.0-0.0)                 ends Tue 2022-12-06 12:45 ET -> home session Wed 12-07 -> US Wed 2022-12-07
+  2022 Round of 16            Switzerland   EWL      Portugal 6-1 Switzerland                      ends Tue 2022-12-06 15:55 ET -> home session Wed 12-07 -> US Wed 2022-12-07
+  2022 Quarter-finals         Brazil        EWZ      Croatia 1-1 Brazil (p 4.0-2.0)                ends Fri 2022-12-09 12:45 ET -> home session Mon 12-12 -> US Mon 2022-12-12
+  2022 Quarter-finals         Netherlands   EWN      Netherlands 2-2 Argentina (p 3.0-4.0)         ends Fri 2022-12-09 16:45 ET -> home session Mon 12-12 -> US Mon 2022-12-12
+  2022 Quarter-finals         Portugal      PGAL     Morocco 1-0 Portugal                          ends Sat 2022-12-10 11:55 ET -> home session Mon 12-12 -> US Mon 2022-12-12
+  2022 Quarter-finals         England       EWU      England 1-2 France                            ends Sat 2022-12-10 15:55 ET -> home session Mon 12-12 -> US Mon 2022-12-12
+  2022 Final                  France        EWQ      Argentina 3-3 France (p 4.0-2.0)              ends Sun 2022-12-18 12:45 ET -> home session Mon 12-19 -> US Mon 2022-12-19
+  2026 Round of 32            South Africa  EZA      South Africa 0-1 Canada                       ends Sun 2026-06-28 16:55 ET -> home session Mon 06-29 -> US Mon 2026-06-29
+  2026 Round of 32            Japan         EWJ      Brazil 2-1 Japan                              ends Mon 2026-06-29 14:55 ET -> home session Tue 06-30 -> US Tue 2026-06-30
+  2026 Round of 32            Germany       EWG      Germany 1-1 Paraguay (p 3.0-4.0)              ends Mon 2026-06-29 19:15 ET -> home session Tue 06-30 -> US Tue 2026-06-30
+  2026 Round of 32            Netherlands   EWN      Netherlands 1-1 Morocco (p 2.0-3.0)           ends Mon 2026-06-29 23:45 ET -> home session Tue 06-30 -> US Tue 2026-06-30
+  2026 Round of 32            Sweden        EWD      France 3-0 Sweden                             ends Tue 2026-06-30 18:55 ET -> home session Wed 07-01 -> US Wed 2026-07-01
+  2026 Round of 32            Austria       EWO      Spain 3-0 Austria                             ends Thu 2026-07-02 16:55 ET -> home session Fri 07-03 -> US Mon 2026-07-06
+  2026 Round of 32            Australia     EWA      Australia 1-1 Egypt (p 2.0-4.0)               ends Fri 2026-07-03 16:45 ET -> home session Mon 07-06 -> US Mon 2026-07-06
+  2026 Round of 16            Canada        EWC      Canada 0-3 Morocco                            ends Sat 2026-07-04 14:55 ET -> home session Mon 07-06 -> US Mon 2026-07-06
+  2026 Round of 16            Brazil        EWZ      Brazil 1-2 Norway                             ends Sun 2026-07-05 17:55 ET -> home session Mon 07-06 -> US Mon 2026-07-06
+  2026 Round of 16            Mexico        EWW      Mexico 2-3 England                            ends Sun 2026-07-05 21:55 ET -> home session Mon 07-06 -> US Mon 2026-07-06
+  2026 Round of 16            Portugal      PGAL     Portugal 0-1 Spain                            ends Mon 2026-07-06 16:55 ET -> home session Tue 07-07 -> US Tue 2026-07-07
+  2026 Round of 16            United States SPY      United States 1-4 Belgium                     ends Mon 2026-07-06 21:55 ET -> home session Tue 07-07 -> US Tue 2026-07-07
+  2026 Round of 16            Egypt         EGPT     Argentina 3-2 Egypt                           ends Tue 2026-07-07 13:55 ET -> home session Wed 07-08 -> US Wed 2026-07-08
+  2026 Round of 16            Colombia      GXG|COLO Switzerland 0-0 Colombia (p 4.0-3.0)          ends Tue 2026-07-07 18:45 ET -> home session Wed 07-08 -> US Wed 2026-07-08
+  2026 Quarter-final          Belgium       EWK      Spain 2-1 Belgium                             ends Fri 2026-07-10 16:55 ET -> home session Mon 07-13 -> US Mon 2026-07-13
+  2026 Quarter-final          Norway        NORW     Norway 1-2 England                            ends Sat 2026-07-11 19:30 ET -> home session Mon 07-13 -> US Mon 2026-07-13
+  2026 Quarter-final          Switzerland   EWL      Argentina 3-1 Switzerland                     ends Sat 2026-07-11 23:30 ET -> home session Mon 07-13 -> US Mon 2026-07-13
+  2026 Semi-final             France        EWQ      France 0-2 Spain                              ends Tue 2026-07-14 16:55 ET -> home session Wed 07-15 -> US Wed 2026-07-15
+  2026 Semi-final             England       EWU      England 1-2 Argentina                         ends Wed 2026-07-15 16:55 ET -> home session Thu 07-16 -> US Thu 2026-07-16
+  2026 Match for third place  France        EWQ      France 4-6 England                            ends Sat 2026-07-18 18:55 ET -> home session Mon 07-20 -> US Mon 2026-07-20
+  2026 Final                  Argentina     ARGT     Spain 1-0 Argentina                           ends Sun 2026-07-19 17:30 ET -> home session Mon 07-20 -> US Mon 2026-07-20
