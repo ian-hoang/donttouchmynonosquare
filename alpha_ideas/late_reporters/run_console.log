@@ -1,0 +1,34 @@
+=== DATA ===
+late signals in the universe: E+3 2,924 (1,061 firms), E+5 869
+E+3: released within 60 trading days 96.0%; median holding 3 days (mean 7.7); median peers 24
+
+=== PRIMARY: short late reporters from E+3 to release day +1 (prediction: CAR < 0) ===
+N 2,924 events in 57 months | mean CAR -0.052% | t (clustered by month) -0.24 | share negative 0.49 | median +0.000%
+tradable short, net of 0.43% mean cost: -0.378% per event (t -1.75)
+VERDICT: FAIL
+
+=== ROBUSTNESS (reported only) ===
+                                                             N  mean_%      t
+variant                                                                      
+2a waiting part (E+3 -> day before release)               2808  -0.033 -0.341
+2b release reaction (day 0 -> +1)                         2808  -0.115 -0.665
+3 stricter threshold (E+5)                                 869  -0.229 -0.430
+5 O >= 2022-07-01 (skip COVID base year)                  2375   0.048  0.189
+7 signals with no release within 60 days                   116   2.254  1.413
+1 post-release drift (+2..+63), releases >= 7 days late   2133   0.110  0.240
+1b post-release drift, on-time releases (|delay| <= 3)   12594   0.143  0.571
+4 post-release drift, early releases (<= -7 days)         1114  -0.536 -1.294
+1c late minus on-time post drift                         14727  -0.034 -0.075
+6 calendar-time (daily mean AR of open shorts, summed by month): +0.184%/month, NW t +0.29, months 60, avg positions held 18.0
+
+largest late-signal moves:
+  EOSE   O 2026-01-21 hold 26d delay 42.0 CAR -107.26%
+  HOLO   O 2024-03-15 hold 60d delay nan CAR  -91.97%
+  FTAI   O 2025-11-04 hold 60d delay nan CAR  +72.27%
+  ALNY   O 2024-05-07 hold 60d delay nan CAR  +66.53%
+  LRN    O 2025-10-27 hold  3d delay 7.0 CAR  -55.93%
+  AAP    O 2025-03-03 hold 60d delay nan CAR  +54.96%
+  OKLO   O 2025-08-18 hold 60d delay nan CAR  +54.39%
+  APPS   O 2022-11-07 hold  4d delay 8.0 CAR  +54.23%
+  APLS   O 2023-01-12 hold 60d delay nan CAR  +53.51%
+  TLRY   O 2021-11-12 hold 40d delay 62.0 CAR  -53.46%
