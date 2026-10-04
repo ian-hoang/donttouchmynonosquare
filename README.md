@@ -20,7 +20,7 @@ uv run python run.py example_tsmom   # runs on synthetic data, no key needed
 
 Liquidity Fatigue, Queue Sacrifice, and The Missing Beat now have separate modules in
 `microstrategies/`, written hypotheses in `hypotheses/`, and focused synthetic tests. They are
-**untested research hypotheses**, with untuned defaults. This path uses `run_micro.py`; the original
+**unvalidated research hypotheses**, with frozen first-screen results below. This path uses `run_micro.py`; the original
 `run.py` / `run_all.py` remain the separate daily-strategy workflow.
 
 Run all three, their ordinary baselines, and normal/double costs without credentials:
@@ -87,7 +87,7 @@ risk limits, trial logging, and holdout access. Announce changes to those shared
 
 Each variant/cost/sample run logs a start and success/failure in private
 `results/micro/ledger.jsonl`. Combine those logs across teammates; the demo uses a separate log.
-Real data has not yet been downloaded or evaluated by these prototypes.
+The first real-data screen completed all 24 fixed comparisons; results and limitations are below.
 
 ### Intraday limitations to keep visible
 
@@ -150,6 +150,43 @@ and five-session block-bootstrap intervals. Results stay in ignored
 `results/micro/runs/opening_2026/`. Twenty days of reused history support an
 exploratory screen, not a validated alpha claim. No deployment or live orders are
 part of this workflow.
+
+### First screen: no demonstrated alpha
+
+The frozen run `20261003T014240892932Z` evaluated all three signals and their
+baselines under base costs, doubled costs, three-second latency, and an optimistic
+spread-only scenario. It used Databento ESU6 MBO, August 3–28, 2026, 09:30–10:30 ET
+only: 20 in-sample sessions, with one contract maximum. The five reserved sessions
+were not downloaded or evaluated. Parameters were not tuned after observing P&L.
+
+| Signal | Closed trades (base) | Base net P&L | Double-cost net P&L | Spread-only P&L | Interpretation |
+|---|---:|---:|---:|---:|---|
+| Liquidity Fatigue | 0 | $0.00 | $0.00 | $0.00 | Inconclusive: no qualifying signals |
+| Queue Sacrifice | 54 | -$2,307.50 | -$3,377.50 | -$975.00 | Current implementation failed this screen |
+| Missing Beat | 0 | $0.00 | $0.00 | $0.00 | Inconclusive: no qualifying signals |
+
+Base execution crosses the observed spread on a later one-second grid quote,
+charges an assumed $2.50 per contract per side, and adds one adverse tick per side.
+Queue Sacrifice won 2 of 54 flat-to-flat trades and lost $2,325.00 with three-second
+latency. Removing fees and extra slippage still produced a loss in a separate
+spread-only rerun; its different risk exits make this a distinct simulation, not
+an accounting addback. Its ordinary cancellation baseline made one trade and lost
+$30.00, so this is not a well-powered matched comparison of cancellation mechanisms.
+
+Fatigue detected 459 bursts, but its deterioration score never reached the required
+two components. Missing Beat never reached its required three confirmed cadence
+bursts. Their $0 results represent inactivity, not successful risk management or
+positive alpha. No signal reached the preregistered 100-closed-episode minimum.
+Even a profitable short screen would require independent validation.
+
+Private artifacts are in
+`results/micro/runs/opening_2026/20261003T014240892932Z/`: `comparison.csv`,
+`comparison.json`, `base_equity.png`, every fill and equity curve, diagnostics,
+daily evidence and the immutable run manifest. All 24 completed runs reconcile
+to the trial ledger. Data preparation processed 90,344,171 MBO records; a separate
+120-second MBP-1 check exactly matched reconstructed best prices and sizes.
+The full test suite passed 153 tests after the replay correction described above.
+Licensed raw data and quote-derived artifacts remain ignored by Git.
 
 ## Reproduce our results (judges start here)
 
