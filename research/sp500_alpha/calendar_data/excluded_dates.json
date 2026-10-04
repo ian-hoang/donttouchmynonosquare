@@ -1,0 +1,146 @@
+[
+  {
+    "date": "2010-05-09",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2010.htm",
+    "source_label": "May 9 Conference Call - 2010",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/press/monetary/20100509a.htm"
+  },
+  {
+    "date": "2010-10-15",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2010.htm",
+    "source_label": "October 15 Conference Call - 2010",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": null
+  },
+  {
+    "date": "2011-08-01",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2011.htm",
+    "source_label": "August 1 Conference Call - 2011",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": null
+  },
+  {
+    "date": "2011-11-28",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2011.htm",
+    "source_label": "November 28 Conference Call - 2011",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": null
+  },
+  {
+    "date": "2013-10-16",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2013.htm",
+    "source_label": "October 16 (unscheduled) - 2013",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": null
+  },
+  {
+    "date": "2014-03-04",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2014.htm",
+    "source_label": "March 4 (unscheduled) - 2014",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": null
+  },
+  {
+    "date": "2019-10-04",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2019.htm",
+    "source_label": "October 4 (unscheduled) - 2019",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20191011a.htm"
+  },
+  {
+    "date": "2020-03-02",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 2 (unscheduled) Meeting - 2020",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200303a.htm"
+  },
+  {
+    "date": "2020-03-15",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 15 (unscheduled) Meeting - 2020",
+    "classification": "unscheduled",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200315a.htm"
+  },
+  {
+    "date": "2020-03-18",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 17-18 (cancelled) Meeting - 2020",
+    "classification": "scheduled_cancelled",
+    "scheduled": false,
+    "statement_url": null,
+    "advance_schedule_source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20190517a.htm",
+    "advance_schedule_release_date": "2019-05-17"
+  },
+  {
+    "date": "2020-03-19",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 19 (notation vote) - 2020",
+    "classification": "notation_vote",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200319b.htm"
+  },
+  {
+    "date": "2020-03-23",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 23 (notation vote) - 2020",
+    "classification": "notation_vote",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200323a.htm"
+  },
+  {
+    "date": "2020-03-31",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "March 31 (notation vote) - 2020",
+    "classification": "notation_vote",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200331a.htm"
+  },
+  {
+    "date": "2020-08-27",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomchistorical2020.htm",
+    "source_label": "August 27 (notation vote) - 2020",
+    "classification": "notation_vote",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20200827a.htm"
+  },
+  {
+    "date": "2025-08-22",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "source_label": "2025 August 22 (notation vote)",
+    "classification": "notation_vote",
+    "scheduled": false,
+    "statement_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20250822a.htm",
+    "advance_schedule_source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240809a.htm",
+    "advance_schedule_release_date": "2024-08-09"
+  },
+  {
+    "date": "2026-10-28",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "source_label": "2026 October 27-28",
+    "classification": "scheduled_future",
+    "scheduled": false,
+    "statement_url": null,
+    "advance_schedule_source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240809a.htm",
+    "advance_schedule_release_date": "2024-08-09"
+  },
+  {
+    "date": "2026-12-09",
+    "source_url": "https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm",
+    "source_label": "2026 December 8-9*",
+    "classification": "scheduled_future",
+    "scheduled": false,
+    "statement_url": null,
+    "advance_schedule_source_url": "https://www.federalreserve.gov/newsevents/pressreleases/monetary20240809a.htm",
+    "advance_schedule_release_date": "2024-08-09"
+  }
+]

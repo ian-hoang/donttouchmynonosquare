@@ -1,0 +1,25 @@
+{
+  "unresolved_execution_dates": {
+    "momentum": [],
+    "extreme_reversal": [],
+    "always_long": []
+  },
+  "noncalendar_original_invalid_dates": [
+    "2019-08-12",
+    "2020-03-09",
+    "2020-03-12",
+    "2020-03-16",
+    "2020-03-18",
+    "2021-05-05",
+    "2023-06-05"
+  ],
+  "position_changes": {
+    "momentum": 7,
+    "extreme_reversal": 3,
+    "always_long": 7
+  },
+  "cash_source_sha256": "998d87d4d4d0997ec8f8e6f2d11a20794693b1efb831224c34863d9263a0e032",
+  "cash_rule": "Lagged DGS3MO annual yield *28/(1440*365) on all active notional;27minutes in delayed-entry sensitivity. Original cash-zero P&L Sharpe is not an excess-return Sharpe.",
+  "bootstrap_implementation": "Original first run used fixed circular10-day blocks despite protocol saying stationary; corrected results use stationary geometric blocks mean10, matching protocol. No signal/configuration changed on outcomes.",
+  "accounting_assertions": "long,short,flat hand-calculated cashflows passed"
+}

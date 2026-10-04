@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "independent_max_cash_reconciliation_error": 5.035977364287181e-11,
+  "scheduled_event_count": 133,
+  "cancelled_March2020_excluded": true,
+  "cross_provider_sensitivity": {
+    "pre_fomc_overnight": {
+      "development": {
+        "sessions": 3021,
+        "net_sharpe_massive": 0.5583573080167762,
+        "net_sharpe_yahoo_same_dates": 0.5410485097685532,
+        "net_pnl_difference_bps_allocated_capital": 35.363587243330635
+      },
+      "validation": {
+        "sessions": 501,
+        "net_sharpe_massive": 1.4047874186137834,
+        "net_sharpe_yahoo_same_dates": 1.4046786977132795,
+        "net_pnl_difference_bps_allocated_capital": 0.02695689447877736
+      },
+      "holdout": {
+        "sessions": 689,
+        "net_sharpe_massive": 0.7705932470163332,
+        "net_sharpe_yahoo_same_dates": 0.7705851334801663,
+        "net_pnl_difference_bps_allocated_capital": 0.002563897478165592
+      }
+    },
+    "turn_month_overnight": {
+      "development": {
+        "sessions": 3021,
+        "net_sharpe_massive": 0.4604079774302769,
+        "net_sharpe_yahoo_same_dates": 0.4536336715916457,
+        "net_pnl_difference_bps_allocated_capital": 35.52119753544238
+      },
+      "validation": {
+        "sessions": 501,
+        "net_sharpe_massive": -1.2183724114994277,
+        "net_sharpe_yahoo_same_dates": -1.2182870745925518,
+        "net_pnl_difference_bps_allocated_capital": -0.104840572963471
+      },
+      "holdout": {
+        "sessions": 689,
+        "net_sharpe_massive": -1.0606891648391559,
+        "net_sharpe_yahoo_same_dates": -1.0604808763169329,
+        "net_pnl_difference_bps_allocated_capital": -0.268676212508177
+      }
+    }
+  },
+  "limits": [
+    "Does not verify auction fills, quote capacity, or historical calendar announcement vintages.",
+    "Both provider OHLC sets may use differing opening/closing trade definitions; no price source selected by profitability."
+  ]
+}

@@ -1,0 +1,492 @@
+{
+  "purpose": "Cross-provider sensitivity of the already frozen eighth hypothesis; no new rules or parameter selection. All feeds reported without choosing the better result.",
+  "overlap": {
+    "start": "2005-01-03",
+    "end": "2026-09-30",
+    "sessions": 5470,
+    "holdout_start": "2024-01-01",
+    "holdout_sessions": 689
+  },
+  "signal_adjustment": "Native Yahoo retained as reference. Both causal indexes use adjusted_index[t]=adjusted_index[t-1]*close[t]/(close[t-1]-recorded_ex_date_dividend[t]), the forward-recursive counterpart of dividend price adjustment. Actual P&L always uses raw prices and separate dividend cash; indicators never use future prices.",
+  "warmup": "Yahoo2004 raw/adjusted history retained in both feeds; fromJan3,2005 onward each reconstructed index uses its own OHLC with the same recorded Yahoo dividend events.",
+  "limitations": [
+    "Massive cache is a raw daily OHLC aggregate list, without a retained response envelope documenting original adjusted flag; SPY has no recorded splits over this period.",
+    "This isolates OHLC-vendor sensitivity, not fully independent dividend or risk-free-rate provenance.",
+    "Yahoo2004 warmup makes the Massive test hybrid for early2005 signals.",
+    "Ex-date dividend cash-credit and assumed1bp/3bp fills remain the original approximations; this is not an executable auction-fill/capacity test.",
+    "Both price histories are current downloads or caches, not preserved contemporaneous vintages.",
+    "Original selected candidate failedvalidation; cross-provider agreement does not cure research selection, insignificant alpha, or failed frozen gate."
+  ],
+  "source_sha256": {
+    "data/cache/world_cup/aggs_SPY.json": "8e421928eb47a197cb17fe9a2e6f4af038775c974e69e9ecb5eae5804cd0bddd",
+    "research/sp500_alpha/sectors/data/SPY.json": "69e38f0459dc2f21d2b7e3cbb4ba34659a7fb124620f5f0ba8c1c93bd476bf0a",
+    "research/sp500_alpha/sectors/data/DGS3MO.csv": "998d87d4d4d0997ec8f8e6f2d11a20794693b1efb831224c34863d9263a0e032",
+    "research/sp500_alpha/pullback/PROTOCOL.json": "7f4eeb555ae9e32c537a71fe215ea175c599743c3e93eca32d84ec9352e0bb8b",
+    "research/sp500_alpha/pullback/study.py": "7203f63bada1e4fb3f30cd8bd47c3f86b196980cdc6f7447fd6e7804024dea1d",
+    "research/sp500_alpha/pullback/price_source_sensitivity.py": "613f241e7d0dc007af8830de40354bcad7d38b99383d16328ce9660cedc1d6dc"
+  },
+  "price_comparison": {
+    "open": {
+      "median_absolute_difference_bps": 0.00021814502038086658,
+      "max_absolute_difference_bps": 389.6383718366725
+    },
+    "close": {
+      "median_absolute_difference_bps": 0.00021845081299431968,
+      "max_absolute_difference_bps": 73.62240403597231
+    }
+  },
+  "results": {
+    "yahoo_native_adjustment": {
+      "periods": {
+        "development": {
+          "base": {
+            "days": 4280,
+            "entry_count": 218,
+            "closed_trade_count": 218,
+            "invested_close_sessions": 671,
+            "mean_close_exposure": 0.15676814341259196,
+            "mean_daily_excess_bps": 1.4657241705441528,
+            "arithmetic_annual_excess": 0.036936249097712655,
+            "annual_excess_vol": 0.06754279218652813,
+            "excess_sharpe": 0.5468570057883961,
+            "total_wealth_cagr": 0.0476686623206497,
+            "total_wealth_max_drawdown": -0.11655764087209464,
+            "hac_mean_t": 2.513282629211865,
+            "hac_mean_p": 0.011961346522404335,
+            "market_beta": 0.1216739600290724,
+            "market_alpha_annual": 0.02392790606705208,
+            "market_alpha_hac_t": 1.683635092080919,
+            "market_alpha_hac_p": 0.09225221247714535,
+            "total_fees_initial_capital_units": 0.06281316423762179
+          },
+          "stress": {
+            "days": 4280,
+            "entry_count": 218,
+            "closed_trade_count": 218,
+            "invested_close_sessions": 671,
+            "mean_close_exposure": 0.15676814341259196,
+            "mean_daily_excess_bps": 1.2619617335659863,
+            "arithmetic_annual_excess": 0.031801435685862856,
+            "annual_excess_vol": 0.06753949386586247,
+            "excess_sharpe": 0.4708568848475891,
+            "total_wealth_cagr": 0.04230384712243529,
+            "total_wealth_max_drawdown": -0.1172641121638126,
+            "hac_mean_t": 2.17155984225855,
+            "hac_mean_p": 0.029888878788775528,
+            "market_beta": 0.12163562806754825,
+            "market_alpha_annual": 0.01879719078190438,
+            "market_alpha_hac_t": 1.3274406416055697,
+            "market_alpha_hac_p": 0.18436296315345047,
+            "total_fees_initial_capital_units": 0.17941434638571704
+          }
+        },
+        "validation": {
+          "base": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.37568623542346435,
+            "arithmetic_annual_excess": -0.009467293132671301,
+            "annual_excess_vol": 0.05278888163076741,
+            "excess_sharpe": -0.1793425592701588,
+            "total_wealth_cagr": 0.02614718461030563,
+            "total_wealth_max_drawdown": -0.05624458927437603,
+            "hac_mean_t": -0.2571279155991283,
+            "hac_mean_p": 0.7970800283089681,
+            "market_beta": 0.0651565215261205,
+            "market_alpha_annual": -0.009366903691937196,
+            "market_alpha_hac_t": -0.26518874076235327,
+            "market_alpha_hac_p": 0.7908640680649179,
+            "total_fees_initial_capital_units": 0.008733118950721472
+          },
+          "stress": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.5272629723011785,
+            "arithmetic_annual_excess": -0.013287026901989697,
+            "annual_excess_vol": 0.05285128119967663,
+            "excess_sharpe": -0.2514040643932582,
+            "total_wealth_cagr": 0.02223196391388882,
+            "total_wealth_max_drawdown": -0.05737641658408754,
+            "hac_mean_t": -0.3612728369374203,
+            "hac_mean_p": 0.7178954974080107,
+            "market_beta": 0.06521800075597828,
+            "market_alpha_annual": -0.013186542737575482,
+            "market_alpha_hac_t": -0.37399755825052955,
+            "market_alpha_hac_p": 0.7084061328163866,
+            "total_fees_initial_capital_units": 0.023919218073151106
+          }
+        },
+        "holdout_overlap": {
+          "base": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.17124886649396892,
+            "mean_daily_excess_bps": 2.459295988344497,
+            "arithmetic_annual_excess": 0.06197425890628132,
+            "annual_excess_vol": 0.06481648985084859,
+            "excess_sharpe": 0.956149570100022,
+            "total_wealth_cagr": 0.11041756435593553,
+            "total_wealth_max_drawdown": -0.044324585726334575,
+            "hac_mean_t": 1.8013417711127644,
+            "hac_mean_p": 0.07164902784815812,
+            "market_beta": 0.16420020562878065,
+            "market_alpha_annual": 0.0370354204798827,
+            "market_alpha_hac_t": 1.0985598412503532,
+            "market_alpha_hac_p": 0.2719601023975976,
+            "total_fees_initial_capital_units": 0.023457103270227053
+          },
+          "stress": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.17124886649396892,
+            "mean_daily_excess_bps": 2.215518384462259,
+            "arithmetic_annual_excess": 0.055831063288448925,
+            "annual_excess_vol": 0.06486223025309563,
+            "excess_sharpe": 0.8607638539500316,
+            "total_wealth_cagr": 0.10361615928549917,
+            "total_wealth_max_drawdown": -0.04508882035625883,
+            "hac_mean_t": 1.6295685499870696,
+            "hac_mean_p": 0.10319271586331828,
+            "market_beta": 0.16422794928460846,
+            "market_alpha_annual": 0.03088801113681532,
+            "market_alpha_hac_t": 0.9203152890636926,
+            "market_alpha_hac_p": 0.3574080216984479,
+            "total_fees_initial_capital_units": 0.06344525757896635
+          }
+        }
+      },
+      "closed_trades": 279,
+      "final_open_trade": null,
+      "final_pending_action": "entry"
+    },
+    "yahoo_causal_adjustment": {
+      "periods": {
+        "development": {
+          "base": {
+            "days": 4280,
+            "entry_count": 218,
+            "closed_trade_count": 218,
+            "invested_close_sessions": 671,
+            "mean_close_exposure": 0.15676814341259196,
+            "mean_daily_excess_bps": 1.4657241705441528,
+            "arithmetic_annual_excess": 0.036936249097712655,
+            "annual_excess_vol": 0.06754279218652813,
+            "excess_sharpe": 0.5468570057883961,
+            "total_wealth_cagr": 0.0476686623206497,
+            "total_wealth_max_drawdown": -0.11655764087209464,
+            "hac_mean_t": 2.513282629211865,
+            "hac_mean_p": 0.011961346522404335,
+            "market_beta": 0.1216739600290724,
+            "market_alpha_annual": 0.02392790606705208,
+            "market_alpha_hac_t": 1.683635092080919,
+            "market_alpha_hac_p": 0.09225221247714535,
+            "total_fees_initial_capital_units": 0.06281316423762179
+          },
+          "stress": {
+            "days": 4280,
+            "entry_count": 218,
+            "closed_trade_count": 218,
+            "invested_close_sessions": 671,
+            "mean_close_exposure": 0.15676814341259196,
+            "mean_daily_excess_bps": 1.2619617335659863,
+            "arithmetic_annual_excess": 0.031801435685862856,
+            "annual_excess_vol": 0.06753949386586247,
+            "excess_sharpe": 0.4708568848475891,
+            "total_wealth_cagr": 0.04230384712243529,
+            "total_wealth_max_drawdown": -0.1172641121638126,
+            "hac_mean_t": 2.17155984225855,
+            "hac_mean_p": 0.029888878788775528,
+            "market_beta": 0.12163562806754825,
+            "market_alpha_annual": 0.01879719078190438,
+            "market_alpha_hac_t": 1.3274406416055697,
+            "market_alpha_hac_p": 0.18436296315345047,
+            "total_fees_initial_capital_units": 0.17941434638571704
+          }
+        },
+        "validation": {
+          "base": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.37568623542346435,
+            "arithmetic_annual_excess": -0.009467293132671301,
+            "annual_excess_vol": 0.05278888163076741,
+            "excess_sharpe": -0.1793425592701588,
+            "total_wealth_cagr": 0.02614718461030563,
+            "total_wealth_max_drawdown": -0.05624458927437603,
+            "hac_mean_t": -0.2571279155991283,
+            "hac_mean_p": 0.7970800283089681,
+            "market_beta": 0.0651565215261205,
+            "market_alpha_annual": -0.009366903691937196,
+            "market_alpha_hac_t": -0.26518874076235327,
+            "market_alpha_hac_p": 0.7908640680649179,
+            "total_fees_initial_capital_units": 0.008733118950721472
+          },
+          "stress": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.5272629723011785,
+            "arithmetic_annual_excess": -0.013287026901989697,
+            "annual_excess_vol": 0.05285128119967663,
+            "excess_sharpe": -0.2514040643932582,
+            "total_wealth_cagr": 0.02223196391388882,
+            "total_wealth_max_drawdown": -0.05737641658408754,
+            "hac_mean_t": -0.3612728369374203,
+            "hac_mean_p": 0.7178954974080107,
+            "market_beta": 0.06521800075597828,
+            "market_alpha_annual": -0.013186542737575482,
+            "market_alpha_hac_t": -0.37399755825052955,
+            "market_alpha_hac_p": 0.7084061328163866,
+            "total_fees_initial_capital_units": 0.023919218073151106
+          }
+        },
+        "holdout_overlap": {
+          "base": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.17124886649396892,
+            "mean_daily_excess_bps": 2.459295988344497,
+            "arithmetic_annual_excess": 0.06197425890628132,
+            "annual_excess_vol": 0.06481648985084859,
+            "excess_sharpe": 0.956149570100022,
+            "total_wealth_cagr": 0.11041756435593553,
+            "total_wealth_max_drawdown": -0.044324585726334575,
+            "hac_mean_t": 1.8013417711127644,
+            "hac_mean_p": 0.07164902784815812,
+            "market_beta": 0.16420020562878065,
+            "market_alpha_annual": 0.0370354204798827,
+            "market_alpha_hac_t": 1.0985598412503532,
+            "market_alpha_hac_p": 0.2719601023975976,
+            "total_fees_initial_capital_units": 0.023457103270227053
+          },
+          "stress": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.17124886649396892,
+            "mean_daily_excess_bps": 2.215518384462259,
+            "arithmetic_annual_excess": 0.055831063288448925,
+            "annual_excess_vol": 0.06486223025309563,
+            "excess_sharpe": 0.8607638539500316,
+            "total_wealth_cagr": 0.10361615928549917,
+            "total_wealth_max_drawdown": -0.04508882035625883,
+            "hac_mean_t": 1.6295685499870696,
+            "hac_mean_p": 0.10319271586331828,
+            "market_beta": 0.16422794928460846,
+            "market_alpha_annual": 0.03088801113681532,
+            "market_alpha_hac_t": 0.9203152890636926,
+            "market_alpha_hac_p": 0.3574080216984479,
+            "total_fees_initial_capital_units": 0.06344525757896635
+          }
+        }
+      },
+      "closed_trades": 279,
+      "final_open_trade": null,
+      "final_pending_action": "entry"
+    },
+    "massive_causal_adjustment": {
+      "periods": {
+        "development": {
+          "base": {
+            "days": 4280,
+            "entry_count": 219,
+            "closed_trade_count": 219,
+            "invested_close_sessions": 672,
+            "mean_close_exposure": 0.15700178767294964,
+            "mean_daily_excess_bps": 1.4534132475855868,
+            "arithmetic_annual_excess": 0.036626013839156785,
+            "annual_excess_vol": 0.06734966953329519,
+            "excess_sharpe": 0.5438187609970416,
+            "total_wealth_cagr": 0.04735715017376374,
+            "total_wealth_max_drawdown": -0.11655768105346775,
+            "hac_mean_t": 2.4941062073383855,
+            "hac_mean_p": 0.012627475475879769,
+            "market_beta": 0.12140742252573203,
+            "market_alpha_annual": 0.02364738962962456,
+            "market_alpha_hac_t": 1.6648144737663197,
+            "market_alpha_hac_p": 0.09594977540079942,
+            "total_fees_initial_capital_units": 0.0630732504424248
+          },
+          "stress": {
+            "days": 4280,
+            "entry_count": 219,
+            "closed_trade_count": 219,
+            "invested_close_sessions": 672,
+            "mean_close_exposure": 0.15700178767294964,
+            "mean_daily_excess_bps": 1.248718998997908,
+            "arithmetic_annual_excess": 0.03146771877474728,
+            "annual_excess_vol": 0.0673474301911348,
+            "excess_sharpe": 0.4672445360638199,
+            "total_wealth_cagr": 0.04196939001135758,
+            "total_wealth_max_drawdown": -0.11726415231305676,
+            "hac_mean_t": 2.150327008413127,
+            "hac_mean_p": 0.031529357480750295,
+            "market_beta": 0.12135710496553906,
+            "market_alpha_annual": 0.018494473583163872,
+            "market_alpha_hac_t": 1.3066847836765099,
+            "market_alpha_hac_p": 0.19131978859944,
+            "total_fees_initial_capital_units": 0.18012799865920817
+          }
+        },
+        "validation": {
+          "base": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.3756829218002939,
+            "arithmetic_annual_excess": -0.009467209629367406,
+            "annual_excess_vol": 0.0527888556599972,
+            "excess_sharpe": -0.17934106566628139,
+            "total_wealth_cagr": 0.02614727166644859,
+            "total_wealth_max_drawdown": -0.05624446223128765,
+            "hac_mean_t": -0.25712568337331326,
+            "hac_mean_p": 0.7970817514533708,
+            "market_beta": 0.06515650767322455,
+            "market_alpha_annual": -0.009366819493980244,
+            "market_alpha_hac_t": -0.2651863886847326,
+            "market_alpha_hac_p": 0.7908658799095437,
+            "total_fees_initial_capital_units": 0.008689121476145084
+          },
+          "stress": {
+            "days": 501,
+            "entry_count": 19,
+            "closed_trade_count": 19,
+            "invested_close_sessions": 54,
+            "mean_close_exposure": 0.10778443113772455,
+            "mean_daily_excess_bps": -0.5272596593298973,
+            "arithmetic_annual_excess": -0.013286943415113411,
+            "annual_excess_vol": 0.05285125497272019,
+            "excess_sharpe": -0.2514026094928423,
+            "total_wealth_cagr": 0.022232050637871925,
+            "total_wealth_max_drawdown": -0.05737628969336073,
+            "hac_mean_t": -0.36127062000686494,
+            "hac_mean_p": 0.7178971545155277,
+            "market_beta": 0.06521798690915857,
+            "market_alpha_annual": -0.013186458555361187,
+            "market_alpha_hac_t": -0.37399521866957974,
+            "market_alpha_hac_p": 0.708407873440666,
+            "total_fees_initial_capital_units": 0.02378919541093283
+          }
+        },
+        "holdout_overlap": {
+          "base": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.1712488664935846,
+            "mean_daily_excess_bps": 2.4595415316259532,
+            "arithmetic_annual_excess": 0.06198044659697403,
+            "annual_excess_vol": 0.0648162326186208,
+            "excess_sharpe": 0.9562488298520442,
+            "total_wealth_cagr": 0.11042445140562873,
+            "total_wealth_max_drawdown": -0.04432454846679823,
+            "hac_mean_t": 1.8014798957464044,
+            "hac_mean_p": 0.07162727326242468,
+            "market_beta": 0.16419918493168068,
+            "market_alpha_annual": 0.037041763900648866,
+            "market_alpha_hac_t": 1.098724664143253,
+            "market_alpha_hac_p": 0.27188818107578394,
+            "total_fees_initial_capital_units": 0.023339197551089035
+          },
+          "stress": {
+            "days": 689,
+            "entry_count": 42,
+            "closed_trade_count": 42,
+            "invested_close_sessions": 118,
+            "mean_close_exposure": 0.1712488664935846,
+            "mean_daily_excess_bps": 2.215763877887455,
+            "arithmetic_annual_excess": 0.055837249722763875,
+            "annual_excess_vol": 0.06486195622055299,
+            "excess_sharpe": 0.8608628690275391,
+            "total_wealth_cagr": 0.1036230041514079,
+            "total_wealth_max_drawdown": -0.045088783126519094,
+            "hac_mean_t": 1.6297116520263368,
+            "hac_mean_p": 0.10316245354991006,
+            "market_beta": 0.16422692738001415,
+            "market_alpha_annual": 0.03089435348471805,
+            "market_alpha_hac_t": 0.9204848857886233,
+            "market_alpha_hac_p": 0.3573194277193473,
+            "total_fees_initial_capital_units": 0.06310110636098998
+          }
+        }
+      },
+      "closed_trades": 280,
+      "final_open_trade": null,
+      "final_pending_action": "entry"
+    }
+  },
+  "trade_comparisons": {
+    "yahoo_native_adjustment_versus_yahoo_causal_adjustment": {
+      "same_closed_trade_timings": 279,
+      "only_first": [],
+      "only_second": [],
+      "holdout_closed_trade_timings": {
+        "same_closed_trade_timings": 42,
+        "only_first": [],
+        "only_second": []
+      },
+      "all_session_action_differences": 0,
+      "holdout_action_differences": 0,
+      "holdout_excess_sharpe_difference_second_minus_first": 0.0
+    },
+    "yahoo_causal_adjustment_versus_massive_causal_adjustment": {
+      "same_closed_trade_timings": 279,
+      "only_first": [],
+      "only_second": [
+        [
+          "2010-12-01",
+          "2010-12-02",
+          "sma5"
+        ]
+      ],
+      "holdout_closed_trade_timings": {
+        "same_closed_trade_timings": 42,
+        "only_first": [],
+        "only_second": []
+      },
+      "all_session_action_differences": 2,
+      "holdout_action_differences": 0,
+      "holdout_excess_sharpe_difference_second_minus_first": 9.925975202218495e-05
+    },
+    "yahoo_native_adjustment_versus_massive_causal_adjustment": {
+      "same_closed_trade_timings": 279,
+      "only_first": [],
+      "only_second": [
+        [
+          "2010-12-01",
+          "2010-12-02",
+          "sma5"
+        ]
+      ],
+      "holdout_closed_trade_timings": {
+        "same_closed_trade_timings": 42,
+        "only_first": [],
+        "only_second": []
+      },
+      "all_session_action_differences": 2,
+      "holdout_action_differences": 0,
+      "holdout_excess_sharpe_difference_second_minus_first": 9.925975202218495e-05
+    }
+  }
+}

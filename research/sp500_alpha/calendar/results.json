@@ -1,0 +1,651 @@
+{
+  "status": "historical_assumed_execution_screen",
+  "spec": {
+    "created": "2026-10-03",
+    "frozen_before_outcomes": true,
+    "purpose": "Two fixed SPY calendar-premium candidates; no threshold sweep or optimization",
+    "candidates": {
+      "pre_fomc_overnight": "Long SPY at the closing auction before a scheduled FOMC announcement; exit announcement-day opening auction, excluding unscheduled/emergency decisions",
+      "turn_month_overnight": "Long SPY from previous close to open on the last trading day or first three trading days of each calendar month"
+    },
+    "baselines": [
+      "Always-long SPY overnight with same entry/exit cost assumptions",
+      "SPY buy-and-hold excess total return, diagnostic only"
+    ],
+    "data": "Independent public SPY daily raw OHLC and actual ex-date distributions, 2004-2026 Yahoo raw chart archive; cross-check available Massive SPY daily OHLC on overlap. Official Federal Reserve meeting calendars for scheduled FOMC dates. Prior-observation FRED DGS3MO yield as cash opportunity-cost proxy.",
+    "sample": {
+      "development": [
+        "2010-01-01",
+        "2021-12-31"
+      ],
+      "validation": [
+        "2022-01-01",
+        "2023-12-31"
+      ],
+      "holdout": [
+        "2024-01-01",
+        "2026-10-02"
+      ]
+    },
+    "holdout_caveat": "Historical chronological holdout for these fixed rules; underlying index data have been inspected in prior unrelated research, not globally untouched history. Literature selection is a further source of selection bias.",
+    "signal_timing": "Calendar signal is known before the entry auction. No same-day return or closing price enters the decision. Use exact scheduled meeting dates, not inferred policy-rate changes. Reconstructed historical meeting calendars do not establish their original announcement vintage; report limitations and cancelled meetings separately.",
+    "accounting": "One unit long notional at entry; gross overnight total return = (raw open + ex-date cash dividend)/previous raw close - 1. SPY has no splits in source; fail if a split exists. Keep flat days at zero excess return. Cash earns reference rate outside exposure. Subtract prior-observation DGS3MO * actual elapsed entry-to-exit calendar hours / (365*24) for cash tied in SPY. Dividend payment-date financing is omitted and disclosed. No short borrow or leverage.",
+    "capital": "One unit initial stock notional per unit allocated capital; reported annual mean is arithmetic252*daily mean and maximum drawdown is fixed-capital cumulative-PnL drawdown. No premium-based denominators.",
+    "costs": "Base1bp per side of actual traded notional; stress3bp/side. Exit notional ratio equals open/entry close. These are assumed auction execution costs, not quote-verified fills or capacity evidence.",
+    "calendar": "Session index from price history, mapped to known exchange sessions. Early-close entry at13:00ET for Thanksgiving Friday, July3 and ChristmasEve where session exists. Other entries16:00ET, exits09:30ET. Unexpected closures and revised calendars remain a limitation; examine affected cases rather than assuming impossible exits.",
+    "statistics": "Daily excess Sharpe sqrt252 mean/std with idle days, HACmean t lag5, circular20-sessionblockbootstrap95% Sharpe CI2000 draws, seed420077; annual outcomes, active trade count, netbp/trade and roundtrip break-evenbps. Predeclare both cost variants; no winner tuning. Holm adjustment across the six primary candidates of the broader batch is done in the final aggregator, not claimed here.",
+    "diagnostics": "HAC calendar regression of overnight excess returns on FOMC and turn-month flags plus weekday indicators; full-window market-beta regression, and paired comparison to overnight baseline. Record missing inputs. FOMC sample is small; positive Sharpe alone cannot validate it.",
+    "no_performance_promise": true
+  },
+  "source_hashes": {
+    "research/sp500_alpha/calendar/PROTOCOL.json": "0f88a7f6ef25e0d884eec610bc2b68bdcedb7dfd0dbcaf3d52b919b85f1189fa",
+    "research/sp500_alpha/calendar_data/dates.json": "25d9e7b5460110ba6d4f67cf118faa5710e943b59b48658239227e0fb4e19203",
+    "research/sp500_alpha/sectors/data/SPY.json": "69e38f0459dc2f21d2b7e3cbb4ba34659a7fb124620f5f0ba8c1c93bd476bf0a",
+    "research/sp500_alpha/sectors/data/DGS3MO.csv": "998d87d4d4d0997ec8f8e6f2d11a20794693b1efb831224c34863d9263a0e032"
+  },
+  "results": {
+    "pre_fomc_overnight_cost1": {
+      "development": {
+        "days": 3021,
+        "trades": 95,
+        "sharpe": 0.5410485082496116,
+        "annual_mean_excess": 0.008278025092008326,
+        "annual_vol": 0.015299968423883493,
+        "net_bps_per_trade": 10.446079282772411,
+        "max_drawdown_allocated_capital": -0.031329066233607004,
+        "hac_t": 1.8790983019482912,
+        "hac_p_two_sided": 0.06023107196714665,
+        "sharpe_ci95": [
+          -0.024366412304013842,
+          1.1123316427497831
+        ],
+        "break_even_per_side_bps": 6.219763971614019,
+        "market_beta": 0.008859371348959026,
+        "market_adjusted_alpha_annual": 0.006952451416097131,
+        "market_adjusted_alpha_hac_t": 1.6292317039154718
+      },
+      "validation": {
+        "days": 501,
+        "trades": 16,
+        "sharpe": 1.404678691751258,
+        "annual_mean_excess": 0.02207182980196839,
+        "annual_vol": 0.01571308081455321,
+        "net_bps_per_trade": 27.4255623283387,
+        "max_drawdown_allocated_capital": -0.008231047595772582,
+        "hac_t": 2.0228350618438005,
+        "hac_p_two_sided": 0.04309015547973288,
+        "sharpe_ci95": [
+          0.39134744578508895,
+          2.078751004848944
+        ],
+        "break_even_per_side_bps": 14.692119689519124,
+        "market_beta": 0.0065439965723733656,
+        "market_adjusted_alpha_annual": 0.02208186571135765,
+        "market_adjusted_alpha_hac_t": 2.016652927374187
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 22,
+        "sharpe": 0.7694681438062995,
+        "annual_mean_excess": 0.008310877150128772,
+        "annual_vol": 0.010800807307002554,
+        "net_bps_per_trade": 10.358614918360356,
+        "max_drawdown_allocated_capital": -0.006629289102949214,
+        "hac_t": 1.2826920920788236,
+        "hac_p_two_sided": 0.19959997149895703,
+        "sharpe_ci95": [
+          -0.41362432845727726,
+          1.5117994403459398
+        ],
+        "break_even_per_side_bps": 6.1758792347424905,
+        "market_beta": 0.007276053324320551,
+        "market_adjusted_alpha_annual": 0.007185216505912856,
+        "market_adjusted_alpha_hac_t": 1.1543025157358546
+      }
+    },
+    "pre_fomc_overnight_cost3": {
+      "development": {
+        "days": 3021,
+        "trades": 95,
+        "sharpe": 0.33757003367159993,
+        "annual_mean_excess": 0.005106224551974077,
+        "annual_vol": 0.01512641538834455,
+        "net_bps_per_trade": 6.443569077491097,
+        "max_drawdown_allocated_capital": -0.03452312346192787,
+        "hac_t": 1.1703154423564934,
+        "hac_p_two_sided": 0.24187404971829007,
+        "sharpe_ci95": [
+          -0.21586696726723084,
+          0.909332202034174
+        ],
+        "break_even_per_side_bps": 6.219763971614019,
+        "market_beta": 0.008747251933965933,
+        "market_adjusted_alpha_annual": 0.003797426619986393,
+        "market_adjusted_alpha_hac_t": 0.8956463242188809
+      },
+      "validation": {
+        "days": 501,
+        "trades": 16,
+        "sharpe": 1.2402954209894328,
+        "annual_mean_excess": 0.018847810394825217,
+        "annual_vol": 0.015196226702013921,
+        "net_bps_per_trade": 23.419526309046216,
+        "max_drawdown_allocated_capital": -0.011029818346661842,
+        "hac_t": 1.7780923054780384,
+        "hac_p_two_sided": 0.07538869598402861,
+        "sharpe_ci95": [
+          0.037529868265300165,
+          1.977036734409272
+        ],
+        "break_even_per_side_bps": 14.692119689519124,
+        "market_beta": 0.006313784461619626,
+        "market_adjusted_alpha_annual": 0.018857493249646327,
+        "market_adjusted_alpha_hac_t": 1.772865853358063
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 22,
+        "sharpe": 0.48313126694452097,
+        "annual_mean_excess": 0.005099489568153146,
+        "annual_vol": 0.010555080817691586,
+        "net_bps_per_trade": 6.355965533177892,
+        "max_drawdown_allocated_capital": -0.007828148456406437,
+        "hac_t": 0.80247453537642,
+        "hac_p_two_sided": 0.4222785128012082,
+        "sharpe_ci95": [
+          -0.8486007814305214,
+          1.3148191777000129
+        ],
+        "break_even_per_side_bps": 6.1758792347424905,
+        "market_beta": 0.00762867730191691,
+        "market_adjusted_alpha_annual": 0.003919275319655587,
+        "market_adjusted_alpha_hac_t": 0.6370400597015307
+      }
+    },
+    "turn_month_overnight_cost1": {
+      "development": {
+        "days": 3021,
+        "trades": 576,
+        "sharpe": 0.4536336714698227,
+        "annual_mean_excess": 0.02017421123311652,
+        "annual_vol": 0.04447247305904315,
+        "net_bps_per_trade": 4.198791069723118,
+        "max_drawdown_allocated_capital": -0.13585251744954358,
+        "hac_t": 1.5762783902292206,
+        "hac_p_two_sided": 0.11496165956213268,
+        "sharpe_ci95": [
+          -0.09910564223376696,
+          1.04923221347976
+        ],
+        "break_even_per_side_bps": 3.0987263708463733,
+        "market_beta": 0.07271364594606679,
+        "market_adjusted_alpha_annual": 0.009294512081894205,
+        "market_adjusted_alpha_hac_t": 0.7297060029469776
+      },
+      "validation": {
+        "days": 501,
+        "trades": 96,
+        "sharpe": -1.2182870792574452,
+        "annual_mean_excess": -0.05135286140214465,
+        "annual_vol": 0.042151691728885936,
+        "net_bps_per_trade": -10.634831168350889,
+        "max_drawdown_allocated_capital": -0.11939528311546535,
+        "hac_t": -1.9734446890932504,
+        "hac_p_two_sided": 0.048444920360269636,
+        "sharpe_ci95": [
+          -2.280341382882564,
+          -0.09547807381541568
+        ],
+        "break_even_per_side_bps": -4.319399156056446,
+        "market_beta": 0.04891666219936179,
+        "market_adjusted_alpha_annual": -0.05127784253805635,
+        "market_adjusted_alpha_hac_t": -1.9616773342371556
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 134,
+        "sharpe": -0.9777325933112606,
+        "annual_mean_excess": -0.04895419218929775,
+        "annual_vol": 0.05006910122890137,
+        "net_bps_per_trade": -10.01757486460695,
+        "max_drawdown_allocated_capital": -0.1762731220568447,
+        "hac_t": -1.4746216756283528,
+        "hac_p_two_sided": 0.14031428409037078,
+        "sharpe_ci95": [
+          -1.9747132295792547,
+          0.28890102659693695
+        ],
+        "break_even_per_side_bps": -4.010408815709631,
+        "market_beta": 0.09533198506319873,
+        "market_adjusted_alpha_annual": -0.0637027734513301,
+        "market_adjusted_alpha_hac_t": -1.8962738178460739
+      }
+    },
+    "turn_month_overnight_cost3": {
+      "development": {
+        "days": 3021,
+        "trades": 576,
+        "sharpe": 0.02138070901885797,
+        "annual_mean_excess": 0.0009490168358300571,
+        "annual_vol": 0.04438659330675218,
+        "net_bps_per_trade": 0.19751569809872427,
+        "max_drawdown_allocated_capital": -0.1967029227923671,
+        "hac_t": 0.07452552966021997,
+        "hac_p_two_sided": 0.9405922279162415,
+        "sharpe_ci95": [
+          -0.5094668487103092,
+          0.6070934020163272
+        ],
+        "break_even_per_side_bps": 3.0987263708463733,
+        "market_beta": 0.07256150714002052,
+        "market_adjusted_alpha_annual": -0.009907918714179937,
+        "market_adjusted_alpha_hac_t": -0.7759653490450374
+      },
+      "validation": {
+        "days": 501,
+        "trades": 96,
+        "sharpe": -1.6583208649557437,
+        "annual_mean_excess": -0.07066062902611642,
+        "annual_vol": 0.04260974490482707,
+        "net_bps_per_trade": -14.633339592462107,
+        "max_drawdown_allocated_capital": -0.14945109958661876,
+        "hac_t": -2.6290480795479425,
+        "hac_p_two_sided": 0.008562425413066276,
+        "sharpe_ci95": [
+          -2.681042686256446,
+          -0.5612790004613905
+        ],
+        "break_even_per_side_bps": -4.319399156056446,
+        "market_beta": 0.04872886872040283,
+        "market_adjusted_alpha_annual": -0.0705858981631476,
+        "market_adjusted_alpha_hac_t": -2.6082814948171897
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 134,
+        "sharpe": -1.3580474295435954,
+        "annual_mean_excess": -0.06849518933739746,
+        "annual_vol": 0.05043652220630978,
+        "net_bps_per_trade": -14.01628045254135,
+        "max_drawdown_allocated_capital": -0.21278560459846263,
+        "hac_t": -2.0313331884374373,
+        "hac_p_two_sided": 0.0422212068624065,
+        "sharpe_ci95": [
+          -2.295602698420763,
+          -0.2529062028168683
+        ],
+        "break_even_per_side_bps": -4.010408815709631,
+        "market_beta": 0.0954202310964853,
+        "market_adjusted_alpha_annual": -0.0832574229301991,
+        "market_adjusted_alpha_hac_t": -2.4315329483867214
+      }
+    },
+    "all_overnight_cost1": {
+      "development": {
+        "days": 3021,
+        "trades": 3021,
+        "sharpe": 0.40804438363850476,
+        "annual_mean_excess": 0.0450611493008689,
+        "annual_vol": 0.11043198021514625,
+        "net_bps_per_trade": 1.7881408452725756,
+        "max_drawdown_allocated_capital": -0.33553052351271495,
+        "hac_t": 1.5067665699079837,
+        "hac_p_two_sided": 0.13187050129209052,
+        "sharpe_ci95": [
+          -0.1780492721202527,
+          1.0486357840018388
+        ],
+        "break_even_per_side_bps": 1.8939278579729066,
+        "market_beta": 0.4543316772623763,
+        "market_adjusted_alpha_annual": -0.022917727279617797,
+        "market_adjusted_alpha_hac_t": -0.9487853782386757
+      },
+      "validation": {
+        "days": 501,
+        "trades": 501,
+        "sharpe": -1.0617279756066706,
+        "annual_mean_excess": -0.11740445215915209,
+        "annual_vol": 0.11057865560344425,
+        "net_bps_per_trade": -4.658906831712384,
+        "max_drawdown_allocated_capital": -0.291354971330387,
+        "hac_t": -1.6435322873136136,
+        "hac_p_two_sided": 0.10027285074095338,
+        "sharpe_ci95": [
+          -2.182745570857205,
+          0.0074036402067638365
+        ],
+        "break_even_per_side_bps": -1.3296975451765212,
+        "market_beta": 0.31222725956081016,
+        "market_adjusted_alpha_annual": -0.11692561870452668,
+        "market_adjusted_alpha_hac_t": -2.102287305608378
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 691,
+        "sharpe": 0.6309094719645464,
+        "annual_mean_excess": 0.06210421208158032,
+        "annual_vol": 0.0984360115694542,
+        "net_bps_per_trade": 2.464452860380171,
+        "max_drawdown_allocated_capital": -0.18849053799518709,
+        "hac_t": 1.048210198540854,
+        "hac_p_two_sided": 0.294541772800169,
+        "sharpe_ci95": [
+          -0.5414582770147963,
+          1.8750066221633908
+        ],
+        "break_even_per_side_bps": 2.2318907438358084,
+        "market_beta": 0.3503267347199831,
+        "market_adjusted_alpha_annual": 0.007906008699422006,
+        "market_adjusted_alpha_hac_t": 0.17515125009516236
+      }
+    },
+    "all_overnight_cost3": {
+      "development": {
+        "days": 3021,
+        "trades": 3021,
+        "sharpe": -0.5049810672526264,
+        "annual_mean_excess": -0.05575492640137109,
+        "annual_vol": 0.11040993418764875,
+        "net_bps_per_trade": -2.212497079419488,
+        "max_drawdown_allocated_capital": -1.0485143619175374,
+        "hac_t": -1.8647201372175868,
+        "hac_p_two_sided": 0.06222064263532549,
+        "sharpe_ci95": [
+          -0.9886972114313556,
+          0.015967637134579327
+        ],
+        "break_even_per_side_bps": 1.8939278579729066,
+        "market_beta": 0.45424035975349264,
+        "market_adjusted_alpha_annual": -0.1237201397002142,
+        "market_adjusted_alpha_hac_t": -5.122986028884037
+      },
+      "validation": {
+        "days": 501,
+        "trades": 501,
+        "sharpe": -1.9735970182799638,
+        "annual_mean_excess": -0.21819388931354144,
+        "annual_vol": 0.11055645468278147,
+        "net_bps_per_trade": -8.65848767117228,
+        "max_drawdown_allocated_capital": -0.4733197741402848,
+        "hac_t": -3.0550911083633583,
+        "hac_p_two_sided": 0.0022499216288701055,
+        "sharpe_ci95": [
+          -3.0936776106675867,
+          -0.9073816566696227
+        ],
+        "break_even_per_side_bps": -1.3296975451765212,
+        "market_beta": 0.3121643396557525,
+        "market_adjusted_alpha_annual": -0.2177151523532309,
+        "market_adjusted_alpha_hac_t": -3.9152454047632474
+      },
+      "holdout": {
+        "days": 691,
+        "trades": 691,
+        "sharpe": -0.39346379141087506,
+        "annual_mean_excess": -0.03872325560147555,
+        "annual_vol": 0.09841631287753932,
+        "net_bps_per_trade": -1.5366371270426806,
+        "max_drawdown_allocated_capital": -0.22661372073161526,
+        "hac_t": -0.6537107737408929,
+        "hac_p_two_sided": 0.5132981608082795,
+        "sharpe_ci95": [
+          -1.4507753873803269,
+          0.713723027818937
+        ],
+        "break_even_per_side_bps": 2.2318907438358084,
+        "market_beta": 0.3502566801603815,
+        "market_adjusted_alpha_annual": -0.09291062101184112,
+        "market_adjusted_alpha_hac_t": -2.0587683956106124
+      }
+    }
+  },
+  "calendar_diagnostics": {
+    "development": {
+      "coef": {
+        "const": 9.43276963141156e-05,
+        "pre_fomc_overnight": 0.0008614246943294964,
+        "turn_month_overnight": 0.00028642155174848986,
+        "weekday_1": 0.0005657217528721283,
+        "weekday_2": 0.00022059167266086274,
+        "weekday_3": 8.89296711918884e-06,
+        "weekday_4": 0.00019834237264083264
+      },
+      "hac_t": {
+        "const": 0.23615298856732014,
+        "pre_fomc_overnight": 1.3908551590741083,
+        "turn_month_overnight": 0.9306777749022196,
+        "weekday_1": 1.1122021164387395,
+        "weekday_2": 0.5206701058563841,
+        "weekday_3": 0.022210724562709987,
+        "weekday_4": 0.39035041025088174
+      }
+    },
+    "validation": {
+      "coef": {
+        "const": -0.0010690742905425821,
+        "pre_fomc_overnight": 0.0031930996371069284,
+        "turn_month_overnight": -0.0008710169272301279,
+        "weekday_1": 0.0017908712144136594,
+        "weekday_2": 0.0010910254769936078,
+        "weekday_3": 0.0003630540743307262,
+        "weekday_4": 0.0009799472340023304
+      },
+      "hac_t": {
+        "const": -1.600518434636649,
+        "pre_fomc_overnight": 2.4195580391814895,
+        "turn_month_overnight": -1.4237861799151799,
+        "weekday_1": 1.8660058347504644,
+        "weekday_2": 1.1649616999323624,
+        "weekday_3": 0.3507924441790232,
+        "weekday_4": 1.2556049209519047
+      }
+    },
+    "holdout": {
+      "coef": {
+        "const": 0.000674305219552068,
+        "pre_fomc_overnight": 0.00012388759195668488,
+        "turn_month_overnight": -0.001523849426438121,
+        "weekday_1": -0.0006597195718982773,
+        "weekday_2": 0.0006567133536018776,
+        "weekday_3": 0.0004121931445759306,
+        "weekday_4": -7.254118974277905e-05
+      },
+      "hac_t": {
+        "const": 1.0754567031338267,
+        "pre_fomc_overnight": 0.13288264536648497,
+        "turn_month_overnight": -2.205583440321431,
+        "weekday_1": -0.7732174023350769,
+        "weekday_2": 0.7441433028092692,
+        "weekday_3": 0.5032918926920379,
+        "weekday_4": -0.10173532582404407
+      }
+    }
+  },
+  "spy_buy_hold_diagnostic": {
+    "development": {
+      "sharpe": 0.8830534886803743,
+      "annual_mean_excess": 0.14962389809599158,
+      "hac_t": 3.367965186291222,
+      "note": "Buy-and-hold ignores initial/final commissions; total-return daily risk differs from sparse overnight exposure."
+    },
+    "validation": {
+      "sharpe": -0.00786389398325918,
+      "annual_mean_excess": -0.0015336055387953,
+      "hac_t": -0.011509617042466965,
+      "note": "Buy-and-hold ignores initial/final commissions; total-return daily risk differs from sparse overnight exposure."
+    },
+    "holdout": {
+      "sharpe": 0.9958499628089222,
+      "annual_mean_excess": 0.15470758583548894,
+      "hac_t": 1.8653513107331696,
+      "note": "Buy-and-hold ignores initial/final commissions; total-return daily risk differs from sparse overnight exposure."
+    }
+  },
+  "paired_net_vs_all_overnight": {
+    "development": {
+      "pre_fomc_overnight": {
+        "annual_mean_difference": -0.03678312420886058,
+        "hac_t": -1.2434624588698344,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      },
+      "turn_month_overnight": {
+        "annual_mean_difference": -0.024886938067752377,
+        "hac_t": -0.8840594651218637,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      }
+    },
+    "validation": {
+      "pre_fomc_overnight": {
+        "annual_mean_difference": 0.1394762819611205,
+        "hac_t": 1.9254245080577705,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      },
+      "turn_month_overnight": {
+        "annual_mean_difference": 0.06605159075700744,
+        "hac_t": 0.9723514262328712,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      }
+    },
+    "holdout": {
+      "pre_fomc_overnight": {
+        "annual_mean_difference": -0.05379333493145156,
+        "hac_t": -0.9062343444881684,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      },
+      "turn_month_overnight": {
+        "annual_mean_difference": -0.11105840427087808,
+        "hac_t": -2.414521415872447,
+        "note": "Difference includes less market exposure and fewer trading costs; calendar regression is the incremental signal diagnostic."
+      }
+    }
+  },
+  "annual_pnl_fixed_capital": {
+    "pre_fomc_overnight_cost1": {
+      "2010": 0.000893293628510567,
+      "2011": 0.009958210616804474,
+      "2012": 0.026633629201081137,
+      "2013": 0.0055297684674501385,
+      "2014": -0.003086903088451589,
+      "2015": 0.007646614912979423,
+      "2016": -0.007255695646410031,
+      "2017": 0.008541639093726476,
+      "2018": -7.3593483862966944e-06,
+      "2019": 0.008311703332767791,
+      "2020": 0.04948210860108581,
+      "2021": -0.007409256584820008,
+      "2022": 0.04379701270347281,
+      "2023": 8.388702186910857e-05,
+      "2024": 0.017593270908408717,
+      "2025": 0.006338978305774503,
+      "2026": -0.0011432963937904371
+    },
+    "pre_fomc_overnight_cost3": {
+      "2010": -0.00230720931566937,
+      "2011": 0.006755897225077101,
+      "2012": 0.02342797907347017,
+      "2013": 0.002328340772813669,
+      "2014": -0.006286606876842875,
+      "2015": 0.0044447633272126814,
+      "2016": -0.01045457494315563,
+      "2017": 0.00533957947547102,
+      "2018": -0.003207742081456592,
+      "2019": 0.005109653543971673,
+      "2020": 0.04667192217099655,
+      "2021": -0.010608096135722974,
+      "2022": 0.04058786102731701,
+      "2023": -0.0031166189328430648,
+      "2024": 0.01438926704219658,
+      "2025": 0.0031372564908998973,
+      "2026": -0.0035433993601051137
+    },
+    "turn_month_overnight_cost1": {
+      "2010": 0.08055134690229669,
+      "2011": -0.021337925058406843,
+      "2012": 0.056880412898893035,
+      "2013": 0.016827799921181455,
+      "2014": 0.0049741597377686,
+      "2015": 0.001670871188469111,
+      "2016": -0.05592687621859158,
+      "2017": 0.04246183757652065,
+      "2018": 0.001994721147922948,
+      "2019": 0.04055134615798143,
+      "2020": 0.01583345744901708,
+      "2021": 0.05736921391299903,
+      "2022": -0.07658596305525103,
+      "2023": -0.025508416160917525,
+      "2024": -0.059914009935745575,
+      "2025": -0.07737526651774437,
+      "2026": 0.0030537732677568194
+    },
+    "turn_month_overnight_cost3": {
+      "2010": 0.0613332696688002,
+      "2011": -0.04053559811398839,
+      "2012": 0.0376670856628134,
+      "2013": -0.002377503453386812,
+      "2014": -0.014228766547766407,
+      "2015": -0.017531399358942046,
+      "2016": -0.07511771301835204,
+      "2017": 0.023251140961261633,
+      "2018": -0.017208279967422732,
+      "2019": 0.021340643918982556,
+      "2020": -0.0033717794533775812,
+      "2021": 0.038155803911864725,
+      "2022": -0.09577320899248483,
+      "2023": -0.044706851095151365,
+      "2024": -0.07910568889868669,
+      "2025": -0.09656310663315555,
+      "2026": -0.012149362532211883
+    },
+    "all_overnight_cost1": {
+      "2010": 0.02762098532300356,
+      "2011": 0.007302245468054084,
+      "2012": 0.010109609436857073,
+      "2013": 0.084918321470643,
+      "2014": 0.0552978125260729,
+      "2015": -0.022451227550101052,
+      "2016": -0.08214067047150689,
+      "2017": 0.083817055072628,
+      "2018": 0.07403442145967817,
+      "2019": 0.07505683156177803,
+      "2020": 0.11274194214562354,
+      "2021": 0.1138900229141146,
+      "2022": -0.20051567132211243,
+      "2023": -0.03289556094667799,
+      "2024": 0.12431333018283956,
+      "2025": 0.0024664020683490876,
+      "2026": 0.043513960401081235
+    },
+    "all_overnight_cost3": {
+      "2010": -0.0731909637750359,
+      "2011": -0.09350523955492368,
+      "2012": -0.08989818155763729,
+      "2013": -0.01590484811965237,
+      "2014": -0.04551952008187494,
+      "2015": -0.12325282503885203,
+      "2016": -0.18293059620571828,
+      "2017": -0.016607430042001235,
+      "2018": -0.026389892435625777,
+      "2019": -0.025767949554387295,
+      "2020": 0.011512347018189274,
+      "2021": 0.013059731654891993,
+      "2022": -0.3008857072223352,
+      "2023": -0.13290452510339598,
+      "2024": 0.023472397683646614,
+      "2025": -0.09754863192493167,
+      "2026": -0.03210539123736412
+    }
+  },
+  "cross_provider": {
+    "sessions": 4211,
+    "median_max_ohlc_difference_bps": 0.0002977852919805457,
+    "max_difference_bps": 137.1481176752032,
+    "sessions_above_1bp": 76
+  },
+  "limits": [
+    "Auction prices plus assumed slippage, not actual fills or capacity.",
+    "Historical meeting calendars lack original publication vintages.",
+    "DGS3MO is a cash proxy; dividend pay-date financing omitted.",
+    "Calendar is reconstructed, including special closures; no claim of perfect historical calendar knowledge.",
+    "These two rules and four other batch candidates count as multiple trials."
+  ]
+}

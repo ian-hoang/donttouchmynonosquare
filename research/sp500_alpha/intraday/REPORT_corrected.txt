@@ -1,0 +1,48 @@
+SPY INTRADAY: INDEPENDENT TIMING/CASH AUDIT
+{
+  "unresolved_execution_dates": {
+    "momentum": [],
+    "extreme_reversal": [],
+    "always_long": []
+  },
+  "noncalendar_original_invalid_dates": [
+    "2019-08-12",
+    "2020-03-09",
+    "2020-03-12",
+    "2020-03-16",
+    "2020-03-18",
+    "2021-05-05",
+    "2023-06-05"
+  ],
+  "position_changes": {
+    "momentum": 7,
+    "extreme_reversal": 3,
+    "always_long": 7
+  },
+  "cash_source_sha256": "998d87d4d4d0997ec8f8e6f2d11a20794693b1efb831224c34863d9263a0e032",
+  "cash_rule": "Lagged DGS3MO annual yield *28/(1440*365) on all active notional;27minutes in delayed-entry sensitivity. Original cash-zero P&L Sharpe is not an excess-return Sharpe.",
+  "bootstrap_implementation": "Original first run used fixed circular10-day blocks despite protocol saying stationary; corrected results use stationary geometric blocks mean10, matching protocol. No signal/configuration changed on outcomes.",
+  "accounting_assertions": "long,short,flat hand-calculated cashflows passed"
+}
+
+MOMENTUM
+development: corrected base excess-P&L Sharpe -1.4109; stress -3.5779; delayed -1.3786; borrow2% -1.4800; annual arithmetic excess P&L -6.474%; compounded excess P&L annualized -6.368%; excess-P&L drawdown -37.193%; active 1740/1763
+validation: corrected base excess-P&L Sharpe -1.6659; stress -3.9092; delayed -1.7781; borrow2% -1.7396; annual arithmetic excess P&L -7.438%; compounded excess P&L annualized -7.262%; excess-P&L drawdown -14.578%; active 498/501
+holdout: corrected base excess-P&L Sharpe -1.7198; stress -4.7519; delayed -1.8170; borrow2% -1.8091; annual arithmetic excess P&L -5.638%; compounded excess P&L annualized -5.533%; excess-P&L drawdown -14.519%; active 682/691
+Holdout stationary-bootstrap95%SharpeCI [-2.9737835833001736, -0.4564807166263339]
+Passes frozen gate on corrected returns: False
+EXTREME_REVERSAL
+development: corrected base excess-P&L Sharpe -0.3077; stress -0.5445; delayed -0.2340; borrow2% -0.3150; annual arithmetic excess P&L -0.805%; compounded excess P&L annualized -0.836%; excess-P&L drawdown -11.153%; active 110/1763
+validation: corrected base excess-P&L Sharpe -1.0063; stress -1.3474; delayed -0.9247; borrow2% -1.0143; annual arithmetic excess P&L -1.306%; compounded excess P&L annualized -1.306%; excess-P&L drawdown -3.133%; active 25/501
+holdout: corrected base excess-P&L Sharpe -0.8059; stress -1.1872; delayed -0.6855; borrow2% -0.8143; annual arithmetic excess P&L -1.108%; compounded excess P&L annualized -1.111%; excess-P&L drawdown -5.191%; active 39/691
+Holdout stationary-bootstrap95%SharpeCI [-1.8017295775922, 0.3691256762458638]
+Passes frozen gate on corrected returns: False
+ALWAYS_LONG
+development: corrected base excess-P&L Sharpe -1.4919; stress -3.6651; delayed -1.4319; borrow2% -1.4919; annual arithmetic excess P&L -6.844%; compounded excess P&L annualized -6.714%; excess-P&L drawdown -38.624%; active 1744/1763
+validation: corrected base excess-P&L Sharpe -1.6349; stress -3.8791; delayed -1.9088; borrow2% -1.6349; annual arithmetic excess P&L -7.300%; compounded excess P&L annualized -7.133%; excess-P&L drawdown -14.787%; active 498/501
+holdout: corrected base excess-P&L Sharpe -1.3929; stress -4.4271; delayed -1.4691; borrow2% -1.3929; annual arithmetic excess P&L -4.565%; compounded excess P&L annualized -4.514%; excess-P&L drawdown -13.617%; active 682/691
+Holdout stationary-bootstrap95%SharpeCI [-2.6511460139108145, -0.1809554975343679]
+
+No quotation-based fill/capacity validation. Fixed return signs/windows/thresholds; no search after outcomes.
+Compounded excess P&L is a statistic of the trading overlay, not actual total portfolio wealth including idle cash yield.
+Borrow2% sensitivity is an additional assumption, not a repair of the frozen1% assumption.

@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-03",
+  "frozen_before_outcomes": true,
+  "purpose": "Two fixed SPY calendar-premium candidates; no threshold sweep or optimization",
+  "candidates": {
+    "pre_fomc_overnight": "Long SPY at the closing auction before a scheduled FOMC announcement; exit announcement-day opening auction, excluding unscheduled/emergency decisions",
+    "turn_month_overnight": "Long SPY from previous close to open on the last trading day or first three trading days of each calendar month"
+  },
+  "baselines": ["Always-long SPY overnight with same entry/exit cost assumptions", "SPY buy-and-hold excess total return, diagnostic only"],
+  "data": "Independent public SPY daily raw OHLC and actual ex-date distributions, 2004-2026 Yahoo raw chart archive; cross-check available Massive SPY daily OHLC on overlap. Official Federal Reserve meeting calendars for scheduled FOMC dates. Prior-observation FRED DGS3MO yield as cash opportunity-cost proxy.",
+  "sample": {"development": ["2010-01-01", "2021-12-31"], "validation": ["2022-01-01", "2023-12-31"], "holdout": ["2024-01-01", "2026-10-02"]},
+  "holdout_caveat": "Historical chronological holdout for these fixed rules; underlying index data have been inspected in prior unrelated research, not globally untouched history. Literature selection is a further source of selection bias.",
+  "signal_timing": "Calendar signal is known before the entry auction. No same-day return or closing price enters the decision. Use exact scheduled meeting dates, not inferred policy-rate changes. Reconstructed historical meeting calendars do not establish their original announcement vintage; report limitations and cancelled meetings separately.",
+  "accounting": "One unit long notional at entry; gross overnight total return = (raw open + ex-date cash dividend)/previous raw close - 1. SPY has no splits in source; fail if a split exists. Keep flat days at zero excess return. Cash earns reference rate outside exposure. Subtract prior-observation DGS3MO * actual elapsed entry-to-exit calendar hours / (365*24) for cash tied in SPY. Dividend payment-date financing is omitted and disclosed. No short borrow or leverage.",
+  "capital": "One unit initial stock notional per unit allocated capital; reported annual mean is arithmetic252*daily mean and maximum drawdown is fixed-capital cumulative-PnL drawdown. No premium-based denominators.",
+  "costs": "Base1bp per side of actual traded notional; stress3bp/side. Exit notional ratio equals open/entry close. These are assumed auction execution costs, not quote-verified fills or capacity evidence.",
+  "calendar": "Session index from price history, mapped to known exchange sessions. Early-close entry at13:00ET for Thanksgiving Friday, July3 and ChristmasEve where session exists. Other entries16:00ET, exits09:30ET. Unexpected closures and revised calendars remain a limitation; examine affected cases rather than assuming impossible exits.",
+  "statistics": "Daily excess Sharpe sqrt252 mean/std with idle days, HACmean t lag5, circular20-sessionblockbootstrap95% Sharpe CI2000 draws, seed420077; annual outcomes, active trade count, netbp/trade and roundtrip break-evenbps. Predeclare both cost variants; no winner tuning. Holm adjustment across the six primary candidates of the broader batch is done in the final aggregator, not claimed here.",
+  "diagnostics": "HAC calendar regression of overnight excess returns on FOMC and turn-month flags plus weekday indicators; full-window market-beta regression, and paired comparison to overnight baseline. Record missing inputs. FOMC sample is small; positive Sharpe alone cannot validate it.",
+  "no_performance_promise": true
+}

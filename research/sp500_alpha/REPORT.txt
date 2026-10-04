@@ -1,0 +1,113 @@
+S&P 500 ALPHA SEARCH: EIGHT COMPLETED CANDIDATES
+Research date: October 3, 2026
+
+OUTCOME
+No candidate establishes a reliable live alpha or Sharpe2. The strongest recent lead
+is the fixed SPY pullback-in-uptrend rule: recent net excess Sharpe0.99, falling only
+to0.89 when assumed execution costs are tripled. It nevertheless failed the2022-2023
+validation period. Retain it as a research candidate; do not label it validated.
+Pre-FOMC overnight is the other positive lead but has only22recent trades and weak
+incremental evidence after controlling ordinary calendar effects.
+
+These are actual historical return tests, not data-readiness exercises. They use ETF
+daily histories and about2.37million SPY minute bars. No unavailable stock-loan dataset
+was assumed, no simulated prices were used for performance, and no paid data purchase
+was made. Synthetic tests were used only to verify accounting/timing.
+
+COMPLETE SCORECARD: NET EXCESS SHARPE
+Candidate                       Development  2022-23  2024-Oct2,2026  Cost stress
+Sector residual reversal1day       -1.23       -1.18       -1.27          -3.17
+Sector residual reversal5day       -0.54       -1.19        0.15          -0.79
+SPY late-session momentum          -1.41       -1.67       -1.72          -4.75
+SPY late-session extreme reversal  -0.31       -1.01       -0.81          -1.19
+SPY overnight beforeFOMC            0.54        1.40        0.77           0.48
+SPY month-turn overnight            0.45       -1.22       -0.98          -1.36
+SPY noise-band/VWAP breakout       -0.07        0.81       -0.68          -2.19
+SPY pullback within uptrend         0.55       -0.18        0.99           0.89
+
+Development ends2021; it begins2005for sectors/pullback,2010for calendars,2015for
+intraday/breakout. Recent period contains691sessions including flatdays. Base/stress
+costs are1/3bp per side except sectors2/5bp. Funding is measured relative to cash;
+short-carry assumptions and capital accounting are fully described in each protocol.
+Annual means are not leveraged or presented as standalone alpha regression estimates.
+
+THE PULLBACK RULE, FIXED BEFORE ITS RETURNS
+1. At close, SPY is above its200-session moving average.
+2. Its three-session total return is below -1.5times the standard deviation of daily
+   returns over the previous20sessions, excluding today's return from volatility.
+3. Buy SPY at the following session's open, fully funded, with no short or leverage.
+4. Keep the number of shares fixed. Exit at the following open after either a close
+   at/above the five-session average or the fifth held session, whichever comes first.
+5. Keep idle capital in the assumed cash benchmark. Charge1bp per side, stress3bp.
+
+RECENT PULLBACK EVIDENCE AND LIMITS
+43entries,42completed exits;120invested closing sessions out of691. Mean market
+exposure about17.4%. Annual arithmetic excess return6.42%, annual excess vol6.49%,
+actual wealth CAGR including modeled cash interest11.29%, actual-wealth drawdown4.43%.
+These are different accounting quantities and must not be interchanged.
+
+The primary stationary10-session block-bootstrap Sharpe interval is[-0.059,2.080].
+The comparison chart's common20-session circular-bootstrap interval is[0.026,2.079];
+this sensitivity itself cautions against a significance claim. Mean HAC two-sided
+p=0.0617. Positive-mean Holm p across all eightprimary hypotheses=0.2468. Estimated
+annual market-adjusted alpha3.87% has HACp=0.2506; a positive strategy return is not
+proof of alpha beyond equity exposure. No candidate passes this batch's adjusted
+positive-mean significance screen.
+
+The five best recent days contribute56.6%of the sum of daily excess returns. Dropping
+those days leaves a positive2.81%annualized mean, a post-hoc concentration diagnostic,
+not a modified trading rule or new significance test. Both2022and2023were negative.
+This inconsistent validation is the main reason not to promote the recent result.
+
+One backtest position enteredOctober1and remains marked atOctober2close with a
+next-open exit pending. It has not been given an invented future fill. No live order
+was placed. The study includes this unrealized P&L and reports the open position.
+
+WHAT WAS VERIFIED
+Independent ledger and dividend-entitlement checks, five-session holding and next-open
+execution tests, five prefix-causality replays, and peer code review for the pullback.
+An independent price-feed sensitivity on identical2024-September30,2026dates gives
+Yahoo/Massive excessSharpes0.95615/0.95625, with all42trade timings matching. Both
+retain negative validation. This supports data consistency, not alpha significance.
+Other studies include contract/signal checks, full bidirectional trading costs,
+chronological splits and declared baselines. Source-definition correction to the
+published breakout also fails; it remains separately reported and is not a new alpha.
+Intraday eligibility was corrected to avoid excluding sessions using future full-day
+bar completeness; original results remain preserved and failures remain failures.
+
+Historical auction/opening prices plus slippage are execution assumptions, not NBBO-
+confirmed fills or institutional capacity. Finalized minute aggregates can include
+late revisions unavailable at signal time. The slower rule uses previous-day data
+and executes the next morning, reducing but not proving away vendor-vintage concerns.
+Dividend cash is recognized ex-date, an approximation to actual payment-date funding.
+
+SELECTION DISCIPLINE
+Each family's rule was fixed before its own outcomes. The breakout was added after
+earlier sector/calendar results; the pullback was added after seven earlier candidates.
+All eight and the source-definition/accounting diagnostics are disclosed. This
+chronological holdout is not globally untouched: prior research and published source
+selection already used overlapping history. The batch-level multiplicity adjustment
+does not correct the full history of ideas and author choices.
+
+PRACTICAL RESEARCH DECISION
+Prioritize the unchanged SPY pullback rule for an independently recorded forward
+paper test and execution validation, alongside an explicit SPY/cash benchmark. Keep
+pre-FOMC overnight as a secondary small-sample lead. Do not tune new lookbacks or
+thresholds on the already-inspected2024-2026period to force Sharpe2.
+
+FILES
+comparison.json /comparison.png: complete recent comparison and conditional inference.
+trial_registry.json: eight primary ideas plus all declared diagnostics.
+pullback/REPORT.txt,study.py,PROTOCOL.json,daily.json,trades.json,verification.json.
+calendar/REPORT.txt;sectors/REPORT.txt;intraday/REPORT_corrected.txt;
+noise_breakout/REPORT.txt;peer_review.txt;data_audit.txt.
+Reproduce comparison:.venv/bin/python research/sp500_alpha/summarize.py
+
+PRIMARY REFERENCES USED TO CHOOSE/AUDIT CANDIDATES
+The noise-band study is an independently coded adaptation of Zarattini/Aziz/Barbon:
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824172
+The authors' earlier overnight anomaly was screened out using their July2026update:
+https://libertystreeteconomics.newyorkfed.org/2026/07/the-disappearing-overnight-drift/
+Official FOMC sources and individual statement/advance-calendar URLs are retained
+in calendar_data/dates.json and calendar_data/manifest.json. Provider conventions,
+cash sources and additional primary links are retained in each family report.

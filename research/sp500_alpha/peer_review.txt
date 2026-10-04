@@ -1,0 +1,62 @@
+Independent peer review of SPY intraday and noise-band implementations
+Review timestamp: 2026-10-03T16:53:48.269860+00:00
+
+Conclusion: no unresolved material code/accounting error found in the reviewed final implementations. One material research-validation limitation remains: finalized historical aggregate VWAP/price fields are not a record of what was received at each signal timestamp. A positive noise-band result is a historical candidate, not verified executable alpha.
+
+Reviewed file versions (SHA256):
+intraday/PROTOCOL.json: f0173bedc6b5c8898d5ec4c7036b3d722b102ce3fee72b602f03251e768489ba
+intraday/run.py: 34ef581e59af9eff4cb2830721a2d81bcbab7f98e18f2533e835837084b2183d
+intraday/verify.py: 97310d629b62166cafbbf45cb836563a73340da65ecce491cb98ee79b905e97a
+intraday/verification.json: b1ff575a6bfecdcdd23c5cc88b732ada16afe033c7e0be8787d319d7aa394fd0
+intraday/results_corrected.json: bed434696cf4275b4262a4aa8a08d66c695af92c2e79b2171c32f0b864229daa
+noise_breakout/PROTOCOL.json: aad99721e8550bb2a2c86227e70d93971637bfe1aaa47bd02e448b3685f33cd0
+noise_breakout/run.py: c0c08aa00c7e2d12a6cd103561743aef95125ed2105cad908e93431d9e49f186
+noise_breakout/test_engine.py: edd233d49c886029ab51ace493d795525b2481f68e0984a549018117e070d650
+
+Intraday momentum / extreme reversal:
+The original full-session coverage filter was noncausal for entry eligibility. The separate correction audit preserves original results, removes that filter, derives each signal using only its required observed bars, and refuses unknown execution outcomes rather than silently marking them flat. Seven noncalendar sessions were restored; corrected results report no unresolved execution date. Corrected holdout Sharpes remain negative.
+The 15:29 minute closes at 15:30; the 15:31 opening-price proxy allows a full minute of processing. The morning momentum input is known after 10:00. Dividend adjustment applies to the previous-close-to-morning signal; actual positions are intraday and earn/pay no dividend. Fee notional on the exit follows price drift, and the short position pays one minimum borrow day. Corrected excess P&L deducts lagged DGS3MO for 28 minutes of capital usage (27 minutes in delayed-entry sensitivity). The original cash-zero series is preserved and distinguished. The stationary bootstrap implementation now matches the original stated protocol. Compounded excess P&L is labeled separately from total-wealth CAGR.
+
+Noise-band/VWAP implementation:
+The trailing 14-session mean is shifted one session, so current-day returns do not enter their own noise estimate. Cumulative VWAP uses only preceding/current completed minutes. Its units are sum(price times volume)/sum(volume); neither share volume nor turnover is mislabeled as an execution quote.
+Completed minute index 29 corresponds to 09:59–10:00; entry at index 31 is the 10:01 opening-price proxy. The same rule applies at each half-hour through 15:30. Share count is retained while direction is unchanged. Reversal closes the old position before sizing the new position. Fees are charged to both legs; entry sizing reserves the opening fee and caps entry exposure. Borrow is charged on maximum observed opening-mark short notional during the day; funding charges absolute notional-minutes using lagged DGS3MO. The cash ledger equals independently reconstructed holding P&L minus fees.
+Data-quality decisions use the prefix observed by each half-hour. A subsequently missing exit cannot erase an earlier entry; it makes the outcome unresolved. Delayed fills use the first later observed opening price. The final 15:59 opening exit is a trade-print assumption, not NBBO execution proof. Causal entry checks pass; real-time vendor data availability remains a separate issue.
+
+Independent checks performed in this review:
+- A short round trip with 3 bp fees matched hand-calculated cash P&L, entry/exit indices and borrow arithmetic.
+- Removing the future final exit preserved the earlier entry and flagged the session unresolved.
+- Removing both scheduled entry-minute opening prints executed at the next observed opening price, and correctly counted a delayed fill.
+- Independently summed cumulative VWAP matched the vectorized volume weighting.
+- Read the implementer’s seven synthetic tests covering flat/long/reversal, delayed risk exit, missing final exit, future perturbation and lagged noise.
+
+Material data observation and interpretation:
+January 2026 sample has 7,800 RTH minute bars, all positive volume. 274 vendor minute VWAP values lie outside that minute’s OHLC range. Largest sampled gap: 2026-01-20 15:41 ET, high 677.22, low 677.03, vendor VWAP 684.8542 (112.73 bp above high). This is not automatically data corruption: the vendor documents different trade-condition eligibility for price and volume. Average-price and odd-lot trades can update volume without updating OHLC. Do not silently clamp, delete or retune on these observations.
+The vendor also documents minute-bar recalculation for late trades and end-of-day inclusion of trades arriving outside its update buffer. Consequently, finalized REST minute VWAP and OHLC may differ from their live signal-time values. A one-minute processing delay does not by itself eliminate this issue. As-received tape reconstruction or prospective shadow capture would be needed to establish availability and executable performance. No raw-trade replay or live fill/capacity audit was performed here.
+
+Primary sources checked 2026-10-03:
+Trade-condition field rules: https://massive.com/knowledge-base/article/how-does-massive-create-the-open-high-low-close-volume-aggregate-bars
+Volume prices outside OHLC: https://massive.com/knowledge-base/article/how-does-massive-handle-fractional-share-trades
+Historical/live aggregate update behavior: https://www.massive.com/blog/aggregate-bar-delays
+
+This review added no strategy variants, changed no implementation files, and performed no parameter search. The independent synthetic tests were executed from a read-only importing script. Peer review does not establish the profitability of any strategy.
+
+Additional source-definition comparison reviewed:
+noise_breakout/PROTOCOL.json: aad99721e8550bb2a2c86227e70d93971637bfe1aaa47bd02e448b3685f33cd0
+noise_breakout/run.py: c0c08aa00c7e2d12a6cd103561743aef95125ed2105cad908e93431d9e49f186
+noise_breakout/SOURCE_DEFINITION_PROTOCOL.json: 38c3b4854e2fe1c89e566f12c2cc88bc046bc6f83143ddbed743f669e9662893
+noise_breakout/source_definition_check.py: 74db4dc34a2885f78ba1c1585f3815be205ae48c3aaeec389e55d890dbe14db8
+noise_breakout/source_definition_results.json: 02e1fcbf531aa6f8b56b181099492011cbcb736797e314dc0a0a7bc56b895dda
+The original vendor minute VWAP is a legitimate source definition, not proven corrupt merely because it differs from OHLC. The author tutorial instead constructs cumulative HLC3 times volume and adjusts the previous-close anchor by the current ex-date dividend. The one separately recorded comparison implements both source-definition changes and retains all other timing, state, sizing and cost rules. It is a post-audit correctness comparison, not a newly pristine strategy trial. It also fails: historical holdout Sharpe -0.723 at 1 bp and -2.260 at 3 bp. Both definitions retain finalized historical OHLCV availability limitations. Reviewed final diagnostics correctly report seven observed data-gap lockouts, only one occurring after entry, and zero actual delayed fills.
+
+Eighth-candidate pullback review completed 2026-10-03T16:59:20.077086+00:00:
+pullback/PROTOCOL.json: 7f4eeb555ae9e32c537a71fe215ea175c599743c3e93eca32d84ec9352e0bb8b
+pullback/study.py: 7203f63bada1e4fb3f30cd8bd47c3f86b196980cdc6f7447fd6e7804024dea1d
+pullback/verification.json: 1f4a1a718afe5f697cb776a56585b85d13ff62ad085e4eda6460f977c2ff2740
+pullback/results.json: 11c104da9d0414b964fee903471ed6ebf2f18b0226d44888bfa018f74025d530
+pullback/manifest.json: d86e9e737faffb75b947b511b61feaeac0dfdcf14a8fc235d00cc7d307b3ae8d
+No material implementation error found. Adjusted closes drive lagged signals; raw opening/closing prices and ex-date cash distributions drive the ledger. The 20-day standard deviation excludes the signal day; the entry decision can fill only at the following open. Share count remains fixed. The entry session counts as held close 1; the fifth held close queues an exit for the following open, with intervening overnight/weekend exposure retained. Recovery at the entry-day close also waits until the next open. No same-open re-entry is allowed.
+Dividend entitlement is based on shares coming into the ex-date: an ex-date open seller receives the dividend, and a new ex-date open buyer does not. Exact overnight/intraday cash accrual uses lagged DGS3MO and actual UTC elapsed time. Flat-day portfolio cash returns equal the cash benchmark, leaving zero excess return. The independent live ledger and all 279 completed trade reconstructions match exactly, and five historical prefix replays have zero NAV/share/excess difference.
+Additional independent synthetic checks passed: a fixed-share long held for exactly five closes exits at the sixth open; ex-date purchase/sale dividend entitlements; hand-calculated completed-trade P&L and final NAV; positive idle cash return with zero excess return; entry-day exit decision cannot execute before the next opening session. The first synthetic test harness attempt used pandas chained assignment and failed to install its intended fixture dividends; the corrected explicit .loc fixture passed. This was a review-harness error, not an implementation defect.
+The final dataset contains an open trade entered 2026-10-01, marked at the 2026-10-02 close, with two held closes and a queued future opening exit. The study reports the mark and pending action without assuming that unobserved fill. Daily marked returns are valid historical observations; the trade is not called completed. Dividend payment on the ex-date remains an explicit approximation to actual later payment.
+This was the eighth primary hypothesis selected after earlier families failed, with historical prices already inspected. It is not a pristine discovery trial; source-driven comparisons and prior unrecorded research add selection beyond a simple eight-test adjustment. Holdout Sharpe 0.990 is not evidence of Sharpe 2, and validation Sharpe is -0.179. Holdout mean HAC p=0.0617 and market-alpha p=0.2506; the stated unadjusted gate already fails. Keep the promising recent segment separate from a validated alpha claim.
+Calendar correction: an earlier informal review suggestion that 2009-07-02 required an NYSE early close was wrong. The NYSE announcement stated normal business hours, and the implementer checked historical exchange calendar rules. No July 2 early-close modification or outstanding defect is asserted.

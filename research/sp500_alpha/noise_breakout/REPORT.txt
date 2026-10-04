@@ -1,0 +1,57 @@
+SPY NOISE-BAND INTRADAY TREND — FIXED ADAPTATION TEST
+As of 2026-10-03. Decision: reject this version at tested execution costs.
+
+The fixed unlevered strategy failed the recent historical holdout: net excess Sharpe -0.68 for 2024-01-01–2026-10-02 and -2.19 at 3 bp/side. The source-definition comparison also failed (-0.72 and -2.26). These results do not validate an alpha or establish that every implementation of the published strategy fails.
+
+What was tested
+SPY only; 14 previous-session same-clock absolute open-to-current moves define gap-adjusted bands. At half-hour decisions, go long above both upper band and RTH VWAP, short below both lower band and VWAP, otherwise flatten. Positions may reenter later. Completed 09:59 minute information at 10:00 produces a 10:01 open fill after one full minute processing. Mandatory flatten at 15:59 open. No same-bar fills. Fixed shares between decisions; entry notional capped to current/day-start equity with fee reserve. No volatility leverage.
+
+This adapts Zarattini/Aziz/Barbon, Beat the Market, source revision 2025-09-22. We use different costs, processing delay, sizing and calendar/data-gap treatment, and cannot call this a faithful replication of their reported performance. The original run uses vendor minute VWAP. A subsequent source audit confirmed the author tutorial uses volume-weighted HLC3 and an ex-dividend adjustment to previous close; those two corrections were tested together once and reported separately.
+
+Primary metrics (all sessions, flat dates included; excess over cash)
+period | days | annual mean | Sharpe | 95% block bootstrap CI | drawdown | HAC t | 3 bp Sharpe
+development | 1763 | -0.43% | -0.071 | [-0.775,0.588] | -18.49% | -0.211 | -1.436
+validation | 501 | 5.86% | 0.810 | [-0.302,1.894] | -5.50% | 1.370 | -0.444
+historical_holdout | 691 | -3.76% | -0.684 | [-1.887,0.449] | -13.23% | -1.219 | -2.191
+post_revision_descriptive | 259 | -6.33% | -1.180 | [-3.198,0.583] | -7.37% | -1.352 | -2.817
+full | 2955 | -0.14% | -0.023 | [-0.528,0.492] | -18.49% | -0.090 | -1.393
+
+Development 2015–2021; validation 2022–2023; historical holdout 2024–2026-10-02; post-revision descriptive 2025-09-23–2026-10-02. The latter has 259 sessions, about one year, and is not a long validation history. For holdout, market regression annual alpha is -3.80%, HAC t -1.250.
+
+Costs and cash
+1 bp/side primary, 3 bp/side stress, charged on all turnover including both legs of a reversal. Fee reserve also reduces entry quantity. Short carry costs 2%/365 times maximum short notional reached that day. This is a cost assumption, not observed historical borrowing or guaranteed availability. Capital held outside positions earns the common cash benchmark; excess P&L deducts lagged DGS3MO annual yield/365 times absolute marked capital-minutes/1440. No interest is credited on restricted short proceeds. Cash-opportunity cost uses only exposure time, not a full day for an intraday trade. The zero-interest-account sensitivity subtracts the full session-to-session cash opportunity cost and performs worse.
+
+Historical holdout turnover averages 429.3 dollars traded per dollar NAV/year, so 1 bp/side costs approximately 4.29%/year before short carry/funding. This materially erodes the small gross drift. Compounding excess return series in results.json is a synthetic excess-growth display, not an actual cash-account CAGR.
+
+Post-source audit correctness comparison (not another selected winner)
+period | author HLC3+dividend anchor Sharpe | 3 bp Sharpe
+development | -0.097 | -1.487
+validation | 0.820 | -0.435
+historical_holdout | -0.723 | -2.260
+post_revision_descriptive | -1.281 | -2.941
+full | -0.044 | -1.435
+
+106 of 2,955 daily returns change, correlation 0.9923. The original primary remains preserved, and neither definition passes. No parameter sweep, sign flip, regime filter or alternate holding time was introduced. The overall batch must record seven primary candidates plus this one correctness comparison; this seventh candidate was added after root observed other strategy results, so the historical screen has selection bias. Bonferroni 7 statistics are only screening diagnostics and do not erase the larger research selection history.
+
+Accounting, timing and data checks
+Seven synthetic tests pass: flat/no-trade cashflow, long trade exact P&L, close-first reversal, short fee, delayed data-gap liquidation, missing final exit detection, future data perturbation and lagged history checks (some combined in tests). Every resolved historical day passes an independent holdings-mark identity against the explicit cash ledger. Maximum entry gross was 0.99990001. There are no unresolved outcomes and no actual delayed executions after the counter correction. Seven observed-prefix gaps cause risk lockouts; only 2019-08-12 had a position before the observed gap. All other gap lockouts occurred before an entry. Two pending flatten instructions while already flat were initially counted as delayed fills; correcting that diagnostic did not change any return.
+
+No entry uses future full-session coverage. Signal/history use only completed bars or earlier days. A missing observed prefix stops new entries and closes any existing position at first available minute open after processing. Missing end-of-day execution would remain unresolved, never converted to zero. Prespecified conservative holiday exclusions keep 31 dates flat. Full historical REST bars are revised data: a mechanical timestamp lag does not prove that every price/volume/VWAP value was available in that form at the historical signal time.
+
+49,081 of 1,148,259 finite minute VWAP values lie outside the bar OHLC range. Massive allows trade conditions to update volume without updating OHLC, so that fact alone does not demonstrate corruption. Official documentation also says late trades may revise minute bars, including end-of-day revisions. Both source definitions need point-in-time trade/quote verification before any live-validation claim. Costs are applied to trade-print fill proxies; no executable NBBO or capacity assessment was established.
+
+Reproduce
+From /Users/hqdatt/Documents/GQH:
+.venv/bin/python -m pytest research/sp500_alpha/noise_breakout/test_engine.py -q
+.venv/bin/python research/sp500_alpha/noise_breakout/run.py
+.venv/bin/python research/sp500_alpha/noise_breakout/source_definition_check.py
+
+Sources
+Paper: https://concretumgroup.com/wp-content/uploads/2026/02/Beat-the-Market.pdf
+Revision metadata: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4824172
+Author implementation definition: https://concretumgroup.com/python-backtesting-beat-the-market-an-effective-intraday-momentum-strategy-for-the-sp500-etf-spy/
+Trade eligibility: https://www.massive.com/blog/understanding-trade-eligibility
+Aggregate revisions: https://www.massive.com/blog/aggregate-bar-delays
+
+Artifacts
+PROTOCOL.json/hash frozen before outcomes, with documented pre-run funding and entry-causality amendments. SOURCE_DEFINITION_PROTOCOL.json is explicitly a post-first-result audit. results.json, daily.json, ledger.json are primary; source_definition_results.json/source_definition_daily.json retain the comparison separately. Input hashes are in the intraday manifest.

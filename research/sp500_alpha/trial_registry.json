@@ -1,0 +1,56 @@
+{
+  "as_of": "2026-10-03",
+  "primary_hypotheses": 8,
+  "entries": [
+    {
+      "name": "sector_residual_1day",
+      "protocol": "sectors/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes",
+      "status": "reject"
+    },
+    {
+      "name": "sector_residual_5day",
+      "protocol": "sectors/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes",
+      "status": "reject"
+    },
+    {
+      "name": "late_session_momentum",
+      "protocol": "intraday/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes; causal eligibility corrected with original retained",
+      "status": "reject"
+    },
+    {
+      "name": "late_session_extreme_reversal",
+      "protocol": "intraday/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes; causal eligibility corrected with original retained",
+      "status": "reject"
+    },
+    {
+      "name": "pre_fomc_overnight",
+      "protocol": "calendar/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes",
+      "status": "positive but statistically weak"
+    },
+    {
+      "name": "turn_month_overnight",
+      "protocol": "calendar/PROTOCOL.json",
+      "selection_context": "fixed before own outcomes",
+      "status": "reject"
+    },
+    {
+      "name": "noise_band_vwap_breakout",
+      "protocol": "noise_breakout/PROTOCOL.json",
+      "selection_context": "added after sector/calendar outcomes, source-selected; fixed before own outcomes",
+      "status": "reject tested version; author-definition sensitivity also fails"
+    },
+    {
+      "name": "pullback_within_uptrend",
+      "protocol": "pullback/PROTOCOL.json",
+      "selection_context": "Added after seven earlier candidates; fixed before own outcomes, no retuning",
+      "status": "strongest recent lead, but negative validation and nonsignificant market alpha; not validated"
+    }
+  ],
+  "additional_checks": "Raw-return sector reversal1/5day, always-long windows, buy-and-hold, execution-cost stresses, delay checks and accounting corrections are diagnostics, not hidden additional discovery candidates. All remain reported. Seven primary hypotheses is not the total count of numeric comparisons or the full historical research search. Author-definition noise breakout comparison is one post-source-audit diagnostic. Pullback concentration check is diagnostic only and does not change its rule. Eight primary hypotheses is not the total number of numerical comparisons.",
+  "selection_warning": "Family-level multiple-test adjustment is conditional on this batch and does not correct published-author selection or prior ideas researched in this workspace. Chronological holdout is not globally pristine."
+}

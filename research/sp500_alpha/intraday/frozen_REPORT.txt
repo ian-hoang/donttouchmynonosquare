@@ -1,0 +1,109 @@
+SPY INTRADAY: TWO FROZEN SIGNALS
+Source: Massive split-adjusted one-minute trade aggregates, 2015-01-02 to 2026-10-02.
+Entry 15:31 minute open; exit 15:59 minute open. These are price proxies with assumed costs, not verified quote fills.
+Net: 1bp per side plus one minimum day of 1% annualized borrow when short. Stress: 3bp per side. Cash yield excluded.
+Every SPY daily session retained, including flat, excluded and missing-data days.
+
+{
+  "minute_rows": 2369369,
+  "daily_sessions": 2955,
+  "first_session": "2015-01-02",
+  "last_session": "2026-10-02",
+  "dividend_records": 47,
+  "split_records": 0,
+  "calendar_excluded_count": 31,
+  "data_invalid_count": 30,
+  "eligible_count": 2917,
+  "missing_sessions": [
+    "2015-11-27",
+    "2015-12-24",
+    "2016-11-25",
+    "2017-07-03",
+    "2017-11-24",
+    "2018-07-03",
+    "2018-11-23",
+    "2018-12-24",
+    "2019-07-03",
+    "2019-08-12",
+    "2019-11-29",
+    "2019-12-24",
+    "2020-03-09",
+    "2020-03-12",
+    "2020-03-16",
+    "2020-03-18",
+    "2020-11-27",
+    "2020-12-24",
+    "2021-05-05",
+    "2021-11-26",
+    "2022-11-25",
+    "2023-06-05",
+    "2023-07-03",
+    "2023-11-24",
+    "2024-07-03",
+    "2024-11-29",
+    "2024-12-24",
+    "2025-07-03",
+    "2025-11-28",
+    "2025-12-24"
+  ],
+  "excluded_dates": [
+    "2015-07-02",
+    "2015-11-27",
+    "2015-12-24",
+    "2016-11-25",
+    "2017-07-03",
+    "2017-11-24",
+    "2018-07-02",
+    "2018-07-03",
+    "2018-11-23",
+    "2018-12-24",
+    "2019-07-02",
+    "2019-07-03",
+    "2019-11-29",
+    "2019-12-24",
+    "2020-07-02",
+    "2020-11-27",
+    "2020-12-24",
+    "2021-07-02",
+    "2021-11-26",
+    "2022-11-25",
+    "2023-07-03",
+    "2023-11-24",
+    "2024-07-02",
+    "2024-07-03",
+    "2024-11-29",
+    "2024-12-24",
+    "2025-07-02",
+    "2025-07-03",
+    "2025-11-28",
+    "2025-12-24",
+    "2026-07-02"
+  ],
+  "protocol_sha256": "f0173bedc6b5c8898d5ec4c7036b3d722b102ce3fee72b602f03251e768489ba"
+}
+
+MOMENTUM
+development: gross Sharpe -0.315; base Sharpe -1.513; stress Sharpe -3.764; +1min entry Sharpe -1.463; base annual mean -6.66%; active 1734/1763; HAC p 0.0000
+validation: gross Sharpe -0.455; base Sharpe -1.648; stress Sharpe -3.886; +1min entry Sharpe -1.760; base annual mean -7.36%; active 497/501; HAC p 0.0335
+holdout: gross Sharpe -0.095; base Sharpe -1.702; stress Sharpe -4.734; +1min entry Sharpe -1.799; base annual mean -5.58%; active 682/691; HAC p 0.0064
+Passes frozen research gate: False
+Holdout base uncertainty: [-2.940100697702568, -0.3890813341864069]
+
+EXTREME_REVERSAL
+development: gross Sharpe -0.291; base Sharpe -0.425; stress Sharpe -0.674; +1min entry Sharpe -0.339; base annual mean -1.04%; active 109/1763; HAC p 0.2232
+validation: gross Sharpe -0.814; base Sharpe -1.005; stress Sharpe -1.346; +1min entry Sharpe -0.923; base annual mean -1.30%; active 25/501; HAC p 0.1363
+holdout: gross Sharpe -0.594; base Sharpe -0.804; stress Sharpe -1.185; +1min entry Sharpe -0.683; base annual mean -1.10%; active 39/691; HAC p 0.2249
+Passes frozen research gate: False
+Holdout base uncertainty: [-1.7995247350026096, 0.47645815593637836]
+
+ALWAYS_LONG
+development: gross Sharpe -0.373; base Sharpe -1.502; stress Sharpe -3.759; +1min entry Sharpe -1.421; base annual mean -6.61%; active 1738/1763; HAC p 0.0001
+validation: gross Sharpe -0.497; base Sharpe -1.617; stress Sharpe -3.856; +1min entry Sharpe -1.891; base annual mean -7.22%; active 497/501; HAC p 0.0179
+holdout: gross Sharpe 0.143; base Sharpe -1.375; stress Sharpe -4.409; +1min entry Sharpe -1.451; base annual mean -4.51%; active 682/691; HAC p 0.0221
+Holdout base uncertainty: [-2.5306723998491036, -0.13741055772930758]
+
+No parameter fitting or selection performed. Both hypotheses reported irrespective of result.
+Neither a replication of exact close-auction fills nor an institutional capacity study.
+Late-session strategies at 1x have low absolute volatility and returns; leverage scales execution, financing, drawdown and tail risk.
+Source paper: https://www.sciencedirect.com/science/article/pii/S0304405X18301351
+Source data conventions: https://www.massive.com/docs/rest/stocks/aggregates/custom-bars

@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+**/raw/
+**/data/
+**/daily.json
+**/features.parquet
+**/trades.json
